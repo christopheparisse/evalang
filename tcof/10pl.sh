@@ -1,0 +1,1 @@
+flo +tCHI: $1/$2.cha +d -f | longtier -f | awk -f lgln.awk | sort -r | head -10 > $1/$2.10pl.txt

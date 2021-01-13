@@ -1,0 +1,60 @@
+#### Commandes à faire fichier par fichier
+
+#temps verbaux
+freq -t* +tCHI +t%mor: +s"*FUT" +d4 ORIA*.cex | combo -y -w +stokens
+freq -t* +tCHI +t%mor: +s"*COND" +d4 ORIA*.cex | combo -y -w +stokens
+freq -t* +tCHI +t%mor: +s"*SUBJ" +d4 ORIA*.cex | combo -y -w +stokens
+freq -t* +tCHI +t%mor: +s"*IMPF" +d4 ORIA*.cex | combo -y -w +stokens
+# mots grammaticaux
+combo +tCHI +t%mor: +s"pro:rel*" ORIA*.cex | combo -y +w +s"times"
+combo +tCHI +t%mor: +s"!%mor:^conj*" ORIA*.cex | combo -y +w +s"times"
+combo +tCHI +t%mor: +s"*\|comme" ORIA*.cex | combo -y +w +s"times"
+# gerondif
+combo +tCHI +t%mor: +s"*PPRE" ORIA*.cex | combo -y +w +s"times"
+# prep + verb INF
+combo +tCHI +t%mor: +s"prep*^*INF" ORIA*.cex | combo -y +w +s"times"
+
+# Coordination de constituant (le papa et la maman)
+combo +tCHI +t%mor: +s"n*^conj*^det*" *.cex
+
+# Modifieurs nominaux : adjectif dépend d’un nom, complément du nom
+combo +tCHI +t%mor: +s"n*^adj*" *.cex # uniquement les postposés
+combo +tCHI +t%mor: +s"n*^prep*^n**" *.cex
+
+# clivée
+combo +tCHI +s"c'est^*^qu*" *.cex # mais soustraire
+combo +tCHI +s"c'est^qu*" *.cex
+combo +tCHI +s"*y\+a*^*^qu*" *.cex # mais soustraire
+combo +tCHI +s"*y\+a*^qu*" *.cex
+
+# v + v:inf sauf avec avoir et modaux ?
+combo +tCHI +t%mor: +s"v\|*^*INF" ORIA*.cex | combo -y +w +s"times"
+
+# discours indirect
+combo +tCHI +s"di*^*^qu*" ORIA*.cex | combo -y +w +s"times"
+
+#plus que
+combo +tCHI +s"plu*^*^qu*" ORIA*.cex | combo -y +w +s"times"
+
+# pronom objet
+combo +tCHI +t%mor: +s"pro:obj*" ORIA*.cex | combo -y +w +s"times"
+
+
+#### Commandes globales
+
+#temps verbaux
+freq -t* +tCHI +t%mor: +s"*FUT" +d3 *cex
+freq -t* +tCHI +t%mor: +s"*COND" +d3 *cex
+freq -t* +tCHI +t%mor: +s"*SUBJ" +d3 *cex
+freq -t* +tCHI +t%mor: +s"*IMPF" +d3 *cex
+# mots grammaticaux
+combo +tCHI +t%mor: +s"pro:rel*" +d6 *cex
+combo +tCHI +t%mor: +s"!%mor:^conj*" +d6 *cex
+combo +tCHI +t%mor: +s"*\|comme" +d6 *cex
+# gerondif
+combo +tCHI +t%mor: +s"*PPRE" +d6 *cex
+# prep + verb INF
+combo +tCHI +t%mor: +s"prep*^*INF" +d6 *cex
+
+.... idem pour le reste
+
