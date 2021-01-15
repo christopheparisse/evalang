@@ -12,6 +12,7 @@ Les sous-dossiers de TCOF contiennent:
   - chi-long-metaok : Les corpus longitudinaux des enfants
   - chi-trans-metaok : Les corpus transversaux des enfants
   - chi-phi-metaok : Les corpus des entretiens Philo des enfants
+  - divers : des programmes et des résultats divers
 
 ### 10 énoncés les plus longs
 Les 10 énoncés les plus longs ont été extraits des fichiers du dossier tcof/chi-phi-metaok
