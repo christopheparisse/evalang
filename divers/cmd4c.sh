@@ -1,8 +1,8 @@
 #temps verbaux
-freq "-t*" "+t$2:" +t%ref: +s"VER:FUTU*" +d4 $1
-freq "-t*" "+t$2:" +t%ref: +s"VER:COND*" +d4 $1
-freq "-t*" "+t$2:" +t%ref: +s"VER:SUBJ*" +d4 $1
-freq "-t*" "+t$2:" +t%ref: +s"VER:IMPF*" +d4 $1
+freq "-t*" "+t$2:" +t%ref: +s"VER:futu*" +d4 $1
+freq "-t*" "+t$2:" +t%ref: +s"VER:cond*" +d4 $1
+freq "-t*" "+t$2:" +t%ref: +s"VER:subj*" +d4 $1
+freq "-t*" "+t$2:" +t%ref: +s"VER:impf*" +d4 $1
 # mots grammaticaux
 combo "+t$2:" +t%ref: +s"PRO:REL_*" $1
 combo "+t$2:" +t%ref: +s"KON_*" $1
