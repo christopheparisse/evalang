@@ -5,7 +5,7 @@ freq "-t*" "+t$2:" +t%mor: +s"*SUBJ" +d4 $1
 freq "-t*" "+t$2:" +t%mor: +s"*IMPF" +d4 $1
 # mots grammaticaux
 combo "+t$2:" +t%mor: +s"pro:rel*" $1
-combo "+t$2:" +t%mor: +s"!%mor:^conj*" $1
+combo "+t$2:" +t%mor: +s"conj*" $1
 combo "+t$2:" +t%mor: +s"*\|comme" $1
 # gerondif
 combo "+t$2:" +t%mor: +s"*PPRE" $1
@@ -26,7 +26,7 @@ combo "+t$2:" +s"*y\+a*^*^qu*" $1 # mais soustraire
 combo "+t$2:" +s"*y\+a*^qu*" $1
 
 # v + v:inf sauf avec avoir et modaux ?
-combo "+t$2:" +t%mor: +s"v\|*^*INF" $1
+combo "+t$2:" +t%mor: +s"v\*|*^*INF" $1
 
 # discours indirect
 combo "+t$2:" +s"di*^*^qu*" $1

@@ -1,171 +1,544 @@
-sh ./exemple.sh chi-trans-metaok adele1_tar
-sh ./exemple.sh chi-trans-metaok adeline1_gif
-sh ./exemple.sh chi-trans-metaok adeline1_sch
-sh ./exemple.sh chi-trans-metaok Adelphe1_Per_Anon
-sh ./exemple.sh chi-trans-metaok Aela1_Ber_Anon
-sh ./exemple.sh chi-trans-metaok Alban1_Tah_Anon
-sh ./exemple.sh chi-trans-metaok alexandre1_bod
-sh ./exemple.sh chi-trans-metaok alexandre1_dag
-sh ./exemple.sh chi-trans-metaok alexandre1_lin
-sh ./exemple.sh chi-trans-metaok alexis1_ras
-sh ./exemple.sh chi-trans-metaok alice1_cor
-sh ./exemple.sh chi-trans-metaok Alicia1_Bre_Anon
-sh ./exemple.sh chi-trans-metaok aline1_gan
-sh ./exemple.sh chi-trans-metaok aline1_ron
-sh ./exemple.sh chi-trans-metaok alissa1_cas
-sh ./exemple.sh chi-trans-metaok Alix1_Lec_Anon
-sh ./exemple.sh chi-trans-metaok alona1_leb
-sh ./exemple.sh chi-trans-metaok amelie1_bec
-sh ./exemple.sh chi-trans-metaok anais1_men
-sh ./exemple.sh chi-trans-metaok andrea1_car
-sh ./exemple.sh chi-trans-metaok andrea1_uri
-sh ./exemple.sh chi-trans-metaok anne1_roi
-sh ./exemple.sh chi-trans-metaok antoine1_nus
-sh ./exemple.sh chi-trans-metaok Antonin1_Jer_Anon
-sh ./exemple.sh chi-trans-metaok antonin1_jou
-sh ./exemple.sh chi-trans-metaok armelle1_del
-sh ./exemple.sh chi-trans-metaok awen1_cin
-sh ./exemple.sh chi-trans-metaok Axel1_Gar_Anon
-sh ./exemple.sh chi-trans-metaok Axel1_Jac_Anon
-sh ./exemple.sh chi-trans-metaok baptiste1_gri
-sh ./exemple.sh chi-trans-metaok Baptiste1_Kul_Anon
-sh ./exemple.sh chi-trans-metaok Baptiste1_Lec_Anon
-sh ./exemple.sh chi-trans-metaok baptiste1_lel
-sh ./exemple.sh chi-trans-metaok baptiste1_zie
-sh ./exemple.sh chi-trans-metaok benedicte1_let
-sh ./exemple.sh chi-trans-metaok bengaly1_can
-sh ./exemple.sh chi-trans-metaok camille1_bar
-sh ./exemple.sh chi-trans-metaok camille1_mer
-sh ./exemple.sh chi-trans-metaok Camille1_Sil_Anon
-sh ./exemple.sh chi-trans-metaok Capucine1_San_Anon
-sh ./exemple.sh chi-trans-metaok Carla1_Con_Anon
-sh ./exemple.sh chi-trans-metaok Cassandre1_And_Anon
-sh ./exemple.sh chi-trans-metaok cecile1_dan
-sh ./exemple.sh chi-trans-metaok celene1_ber
-sh ./exemple.sh chi-trans-metaok charlotte1_gir
-sh ./exemple.sh chi-trans-metaok charlotte1_leb
-sh ./exemple.sh chi-trans-metaok chloe1_fau
-sh ./exemple.sh chi-trans-metaok Claire1_Kam_Anon
-sh ./exemple.sh chi-trans-metaok clara1_dum
-sh ./exemple.sh chi-trans-metaok clara1_lau
-sh ./exemple.sh chi-trans-metaok clelie1_dup
-sh ./exemple.sh chi-trans-metaok clemence1_bra
-sh ./exemple.sh chi-trans-metaok clemence1_hal
-sh ./exemple.sh chi-trans-metaok clement1_med
-sh ./exemple.sh chi-trans-metaok Clementin1_Bat_Anon
-sh ./exemple.sh chi-trans-metaok clementine1_bas
-sh ./exemple.sh chi-trans-metaok cleophee1_pie
-sh ./exemple.sh chi-trans-metaok Cloe1_Tsc_Anon
-sh ./exemple.sh chi-trans-metaok constance1_sch
-sh ./exemple.sh chi-trans-metaok constant1_pap
-sh ./exemple.sh chi-trans-metaok Coralie1_Arn_Anon
-sh ./exemple.sh chi-trans-metaok Corentin1_Ber_Anon
-sh ./exemple.sh chi-trans-metaok corentin1_boi
-sh ./exemple.sh chi-trans-metaok Dania1_Col_Anon
-sh ./exemple.sh chi-trans-metaok elea1_cur
-sh ./exemple.sh chi-trans-metaok Elif1_Ber_Anon
-sh ./exemple.sh chi-trans-metaok Eliott1_Chi_Anon
-sh ./exemple.sh chi-trans-metaok Elise1_Hel_Anon
-sh ./exemple.sh chi-trans-metaok Elliot1_Dem_Anon
-sh ./exemple.sh chi-trans-metaok emilie1_rig
-sh ./exemple.sh chi-trans-metaok Emy1_Sam_Anon
-sh ./exemple.sh chi-trans-metaok Engi1_Hur_Anon
-sh ./exemple.sh chi-trans-metaok Enzo1_Nov_Anon
-sh ./exemple.sh chi-trans-metaok Erwan1_Fer_Anon
-sh ./exemple.sh chi-trans-metaok Ester1_Zeh_Anon
-sh ./exemple.sh chi-trans-metaok Eva1_Goe_Anon
-sh ./exemple.sh chi-trans-metaok Eva1_Mat_Anon
-sh ./exemple.sh chi-trans-metaok fantine1_mon
-sh ./exemple.sh chi-trans-metaok florian1_sai
-sh ./exemple.sh chi-trans-metaok gabriel1_rez
-sh ./exemple.sh chi-trans-metaok gaelle1_bou
-sh ./exemple.sh chi-trans-metaok gaetan1_bau
-sh ./exemple.sh chi-trans-metaok guillaume1_pol
-sh ./exemple.sh chi-trans-metaok heloise1_gue
-sh ./exemple.sh chi-trans-metaok hibraime1_ber
-sh ./exemple.sh chi-trans-metaok Hugo1_Hyp_Anon
-sh ./exemple.sh chi-trans-metaok ines1_hor
-sh ./exemple.sh chi-trans-metaok Jeanne1_Dre_Anon
-sh ./exemple.sh chi-trans-metaok jeanne1_hil
-sh ./exemple.sh chi-trans-metaok jeremy1_pat
-sh ./exemple.sh chi-trans-metaok jessica1_cha
-sh ./exemple.sh chi-trans-metaok Joachim1_Alt_Anon
-sh ./exemple.sh chi-trans-metaok jonathan1_fra
-sh ./exemple.sh chi-trans-metaok jordan1_ton
-sh ./exemple.sh chi-trans-metaok Joseph1_Cla_Anon
-sh ./exemple.sh chi-trans-metaok jules1_per
-sh ./exemple.sh chi-trans-metaok juliette1_sto
-sh ./exemple.sh chi-trans-metaok kelly1_ham
-sh ./exemple.sh chi-trans-metaok laura1_bah
-sh ./exemple.sh chi-trans-metaok laura1_can
-sh ./exemple.sh chi-trans-metaok laura1_llo
-sh ./exemple.sh chi-trans-metaok laureen1_gud
-sh ./exemple.sh chi-trans-metaok laurie1_jam
-sh ./exemple.sh chi-trans-metaok laurine1_car
-sh ./exemple.sh chi-trans-metaok laurine1_gil
-sh ./exemple.sh chi-trans-metaok laurine2_car
-sh ./exemple.sh chi-trans-metaok leo1_par
-sh ./exemple.sh chi-trans-metaok leo1_rom
-sh ./exemple.sh chi-trans-metaok leo1_roy
-sh ./exemple.sh chi-trans-metaok lilou1_hua
-sh ./exemple.sh chi-trans-metaok lisa1_rhe
-sh ./exemple.sh chi-trans-metaok loris1_peu
-sh ./exemple.sh chi-trans-metaok lorraine1_spo
-sh ./exemple.sh chi-trans-metaok lou1_tho
-sh ./exemple.sh chi-trans-metaok louis1_cas
-sh ./exemple.sh chi-trans-metaok louis1_lho
-sh ./exemple.sh chi-trans-metaok louis1_tro
-sh ./exemple.sh chi-trans-metaok louis1_utn
-sh ./exemple.sh chi-trans-metaok louis2_utn
-sh ./exemple.sh chi-trans-metaok louise1_geo
-sh ./exemple.sh chi-trans-metaok louise1_sch
-sh ./exemple.sh chi-trans-metaok luana1_alb
-sh ./exemple.sh chi-trans-metaok luca1_bar
-sh ./exemple.sh chi-trans-metaok lucie1_led
-sh ./exemple.sh chi-trans-metaok lucie1_vic
-sh ./exemple.sh chi-trans-metaok lucile1_flo
-sh ./exemple.sh chi-trans-metaok maelle1_pap
-sh ./exemple.sh chi-trans-metaok manon1_ern
-sh ./exemple.sh chi-trans-metaok manon1_kho
-sh ./exemple.sh chi-trans-metaok manon1_lag
-sh ./exemple.sh chi-trans-metaok manon1_rej
-sh ./exemple.sh chi-trans-metaok margaux1_gil
-sh ./exemple.sh chi-trans-metaok margot1_koe
-sh ./exemple.sh chi-trans-metaok marianne1_ste
-sh ./exemple.sh chi-trans-metaok marianne1_vat
-sh ./exemple.sh chi-trans-metaok marion1_gui
-sh ./exemple.sh chi-trans-metaok mathieu1_car
-sh ./exemple.sh chi-trans-metaok mathilde1_ham
-sh ./exemple.sh chi-trans-metaok mathilde1_ric
-sh ./exemple.sh chi-trans-metaok maurine1_her
-sh ./exemple.sh chi-trans-metaok melanie1_lem
-sh ./exemple.sh chi-trans-metaok morgane1_mar
-sh ./exemple.sh chi-trans-metaok moustapha1_abd
-sh ./exemple.sh chi-trans-metaok naomi1_sli
-sh ./exemple.sh chi-trans-metaok nathan1_mai
-sh ./exemple.sh chi-trans-metaok nolan1_rej
-sh ./exemple.sh chi-trans-metaok ophelie1_baq
-sh ./exemple.sh chi-trans-metaok oscar1_fri
-sh ./exemple.sh chi-trans-metaok pauline1_man
-sh ./exemple.sh chi-trans-metaok raphael1_leg
-sh ./exemple.sh chi-trans-metaok remi1_did
-sh ./exemple.sh chi-trans-metaok robin1_lem
-sh ./exemple.sh chi-trans-metaok romy1_tha
-sh ./exemple.sh chi-trans-metaok rose1_rou
-sh ./exemple.sh chi-trans-metaok samuel1_len
-sh ./exemple.sh chi-trans-metaok sarah1_fra
-sh ./exemple.sh chi-trans-metaok sebastien1_bou
-sh ./exemple.sh chi-trans-metaok thibaud1_son
-sh ./exemple.sh chi-trans-metaok thibault1_cor
-sh ./exemple.sh chi-trans-metaok thibault1_lev
-sh ./exemple.sh chi-trans-metaok thibaut1_der
-sh ./exemple.sh chi-trans-metaok thomas1_pel
-sh ./exemple.sh chi-trans-metaok tidiane1_ecc
-sh ./exemple.sh chi-trans-metaok valentin1_bit
-sh ./exemple.sh chi-trans-metaok valentin1_lan
-sh ./exemple.sh chi-trans-metaok valentine1_bah
-sh ./exemple.sh chi-trans-metaok victoire1_duc
-sh ./exemple.sh chi-trans-metaok walid1_mat
-sh ./exemple.sh chi-trans-metaok xaviere1_leg
-sh ./exemple.sh chi-trans-metaok yassine1_nic
-sh ./exemple.sh chi-trans-metaok youssef1_tor
+sh $1 adu-metaok 1crossfit_mao_15 $2 $3 ADU
+sh $1 adu-metaok 2crossfit_mao_15 $2 $3 ADU
+sh $1 adu-metaok 39_45_eva_14 $2 $3 ADU
+sh $1 adu-metaok acc_del_07 $2 $3 ADU
+sh $1 adu-metaok accident_cat_14 $2 $3 ADU
+sh $1 adu-metaok acc_kom_07 $2 $3 ADU
+sh $1 adu-metaok ago_ram_07 $2 $3 ADU
+sh $1 adu-metaok alg_jac_06 $2 $3 ADU
+sh $1 adu-metaok ang_jul_07 $2 $3 ADU
+sh $1 adu-metaok apiculteur_sd $2 $3 ADU
+sh $1 adu-metaok apprendreaulycee $2 $3 ADU
+sh $1 adu-metaok aqua_05 $2 $3 ADU
+sh $1 adu-metaok architecte_pie_13 $2 $3 ADU
+sh $1 adu-metaok armee_mer_15 $2 $3 ADU
+sh $1 adu-metaok australie_mes_sd $2 $3 ADU
+sh $1 adu-metaok automobile_gue_08 $2 $3 ADU
+sh $1 adu-metaok ave_bat_08 $2 $3 ADU
+sh $1 adu-metaok aviation_cfo_15 $2 $3 ADU
+sh $1 adu-metaok avoixnue_06 $2 $3 ADU
+sh $1 adu-metaok bmx_min $2 $3 ADU
+sh $1 adu-metaok boxe_sd $2 $3 ADU
+sh $1 adu-metaok bulletin_gur_09 $2 $3 ADU
+sh $1 adu-metaok cadeaux_bon_08 $2 $3 ADU
+sh $1 adu-metaok cafe_leg_06 $2 $3 ADU
+sh $1 adu-metaok carr_mar_06 $2 $3 ADU
+sh $1 adu-metaok cartables_bar_08 $2 $3 ADU
+sh $1 adu-metaok cha_hey_07 $2 $3 ADU
+sh $1 adu-metaok chee_alb_sd $2 $3 ADU
+sh $1 adu-metaok christine_pru $2 $3 ADU
+sh $1 adu-metaok cine_sao_07 $2 $3 ADU
+sh $1 adu-metaok comb_bach_08 $2 $3 ADU
+sh $1 adu-metaok communication_bon_sd $2 $3 ADU
+sh $1 adu-metaok comptines_cou_10 $2 $3 ADU
+sh $1 adu-metaok confavc_dau_12 $2 $3 ADU
+sh $1 adu-metaok consultation_ger_08 $2 $3 ADU
+sh $1 adu-metaok conv_cai_06 $2 $3 ADU
+sh $1 adu-metaok conversation_kri_08_part1 $2 $3 ADU
+sh $1 adu-metaok conversation_kri_08_part2 $2 $3 ADU
+sh $1 adu-metaok conversation_mat_08 $2 $3 ADU
+sh $1 adu-metaok coree_ghu_14 $2 $3 ADU
+sh $1 adu-metaok corpus_kem_12 $2 $3 ADU
+sh $1 adu-metaok corpus_las_12 $2 $3 ADU
+sh $1 adu-metaok cours_mau_15 $2 $3 ADU
+sh $1 adu-metaok dav_gan_06 $2 $3 ADU
+sh $1 adu-metaok decesprofesseur_sd $2 $3 ADU
+sh $1 adu-metaok deltaplane_tus $2 $3 ADU
+sh $1 adu-metaok democratie_ben_sd $2 $3 ADU
+sh $1 adu-metaok deuilradio_sd $2 $3 ADU
+sh $1 adu-metaok dos_cou_14 $2 $3 ADU
+sh $1 adu-metaok ecoles_cim_13 $2 $3 ADU
+sh $1 adu-metaok educ_pot_08 $2 $3 ADU
+sh $1 adu-metaok emploi_cha_08 $2 $3 ADU
+sh $1 adu-metaok emplois_gri_13 $2 $3 ADU
+sh $1 adu-metaok employeducnrs $2 $3 ADU
+sh $1 adu-metaok enfant_lem_10 $2 $3 ADU
+sh $1 adu-metaok ent_cha_06 $2 $3 ADU
+sh $1 adu-metaok entrefilles_bou_13 $2 $3 ADU
+sh $1 adu-metaok erasmusespagne_sd $2 $3 ADU
+sh $1 adu-metaok ergotherapie_sch $2 $3 ADU
+sh $1 adu-metaok escalade_mic $2 $3 ADU
+sh $1 adu-metaok etudes_gil_13 $2 $3 ADU
+sh $1 adu-metaok etudesmedecine_sim $2 $3 ADU
+sh $1 adu-metaok etudes_rem_13 $2 $3 ADU
+sh $1 adu-metaok etudiantesalariee_sd $2 $3 ADU
+sh $1 adu-metaok etudiantes_jer_13 $2 $3 ADU
+sh $1 adu-metaok experiences_yer_12 $2 $3 ADU
+sh $1 adu-metaok explorationssonores $2 $3 ADU
+sh $1 adu-metaok famille_fer_08_1 $2 $3 ADU
+sh $1 adu-metaok famille_fer_08_2 $2 $3 ADU
+sh $1 adu-metaok famille_lem_13 $2 $3 ADU
+sh $1 adu-metaok famille_pru $2 $3 ADU
+sh $1 adu-metaok famille_ren_12 $2 $3 ADU
+sh $1 adu-metaok fete_lec_07 $2 $3 ADU
+sh $1 adu-metaok film_tre_15 $2 $3 ADU
+sh $1 adu-metaok footballeurprofessionnel_sd $2 $3 ADU
+sh $1 adu-metaok foot_mar_12 $2 $3 ADU
+sh $1 adu-metaok fraise_ber_13 $2 $3 ADU
+sh $1 adu-metaok garcons_tou_15 $2 $3 ADU
+sh $1 adu-metaok gestapo_sd $2 $3 ADU
+sh $1 adu-metaok gothique_cho_12 $2 $3 ADU
+sh $1 adu-metaok grandsparents_bar_13 $2 $3 ADU
+sh $1 adu-metaok groupe_sav_10 $2 $3 ADU
+sh $1 adu-metaok guerre_coc_sd $2 $3 ADU
+sh $1 adu-metaok hallucinogenes_cag_03 $2 $3 ADU
+sh $1 adu-metaok hamster_phi_12 $2 $3 ADU
+sh $1 adu-metaok homosexualite_bas_15 $2 $3 ADU
+sh $1 adu-metaok homosexualite_fer_15 $2 $3 ADU
+sh $1 adu-metaok hopital_bon_12 $2 $3 ADU
+sh $1 adu-metaok how_pro_14 $2 $3 ADU
+sh $1 adu-metaok hus_hus_sd $2 $3 ADU
+sh $1 adu-metaok immigration_ait_15 $2 $3 ADU
+sh $1 adu-metaok incen_prov $2 $3 ADU
+sh $1 adu-metaok infirmier_aud_14 $2 $3 ADU
+sh $1 adu-metaok informaticien_bio_10 $2 $3 ADU
+sh $1 adu-metaok internat_bea $2 $3 ADU
+sh $1 adu-metaok ion_ard_07 $2 $3 ADU
+sh $1 adu-metaok jeu_thi_14 $2 $3 ADU
+sh $1 adu-metaok joueurmusique_02 $2 $3 ADU
+sh $1 adu-metaok kabylie_mel_15 $2 $3 ADU
+sh $1 adu-metaok lang_duc_08 $2 $3 ADU
+sh $1 adu-metaok lecturecroco_sd $2 $3 ADU
+sh $1 adu-metaok licence_sim_14 $2 $3 ADU
+sh $1 adu-metaok loisirs_nat_06 $2 $3 ADU
+sh $1 adu-metaok mac_cle_sd $2 $3 ADU
+sh $1 adu-metaok mai_web_07 $2 $3 ADU
+sh $1 adu-metaok mar_ferr_sd $2 $3 ADU
+sh $1 adu-metaok mariage_elo_14 $2 $3 ADU
+sh $1 adu-metaok masc_dom_sd $2 $3 ADU
+sh $1 adu-metaok mat_tho_sd $2 $3 ADU
+sh $1 adu-metaok memoire_yun_15 $2 $3 ADU
+sh $1 adu-metaok metiers_pue_12 $2 $3 ADU
+sh $1 adu-metaok micr_bou_08 $2 $3 ADU
+sh $1 adu-metaok mili_89 $2 $3 ADU
+sh $1 adu-metaok moufle_bre_15 $2 $3 ADU
+sh $1 adu-metaok moz_car_sd $2 $3 ADU
+sh $1 adu-metaok msf_blan_06 $2 $3 ADU
+sh $1 adu-metaok nat_hou_07 $2 $3 ADU
+sh $1 adu-metaok nesrine1_sed $2 $3 ADU
+sh $1 adu-metaok nonno_crz_14 $2 $3 ADU
+sh $1 adu-metaok nourriture_des_07 $2 $3 ADU
+sh $1 adu-metaok orthophonie2_san_10 $2 $3 ADU
+sh $1 adu-metaok orthophonie_san_10 $2 $3 ADU
+sh $1 adu-metaok orthophoniste_gom_12 $2 $3 ADU
+sh $1 adu-metaok orthophoniste_lat_12 $2 $3 ADU
+sh $1 adu-metaok orthophoniste_sow_13 $2 $3 ADU
+sh $1 adu-metaok ouvrier_pal_10 $2 $3 ADU
+sh $1 adu-metaok papi_mar_14 $2 $3 ADU
+sh $1 adu-metaok paralysie $2 $3 ADU
+sh $1 adu-metaok parents_esp_14 $2 $3 ADU
+sh $1 adu-metaok paternel_gos_14 $2 $3 ADU
+sh $1 adu-metaok pediatrie_lam_08 $2 $3 ADU
+sh $1 adu-metaok pedi_gra_06 $2 $3 ADU
+sh $1 adu-metaok photographie_cou_14 $2 $3 ADU
+sh $1 adu-metaok police_mar_14 $2 $3 ADU
+sh $1 adu-metaok politique_car_14 $2 $3 ADU
+sh $1 adu-metaok politique_ham_15 $2 $3 ADU
+sh $1 adu-metaok politique_rem_12 $2 $3 ADU
+sh $1 adu-metaok pompe_bli_sd $2 $3 ADU
+sh $1 adu-metaok pomp_prov_sd $2 $3 ADU
+sh $1 adu-metaok pom_tho_08 $2 $3 ADU
+sh $1 adu-metaok pri_mam_06 $2 $3 ADU
+sh $1 adu-metaok professeur_cez_08 $2 $3 ADU
+sh $1 adu-metaok prov_pin_89 $2 $3 ADU
+sh $1 adu-metaok psychologie_rou_13 $2 $3 ADU
+sh $1 adu-metaok psychologue_dum_08 $2 $3 ADU
+sh $1 adu-metaok quen_quen_sd $2 $3 ADU
+sh $1 adu-metaok rae_ash_sd $2 $3 ADU
+sh $1 adu-metaok raei_leh_sd $2 $3 ADU
+sh $1 adu-metaok rdvdansunbar_lor_13 $2 $3 ADU
+sh $1 adu-metaok recherchecancer_06 $2 $3 ADU
+sh $1 adu-metaok repas_fel_13 $2 $3 ADU
+sh $1 adu-metaok reso_rich_06 $2 $3 ADU
+sh $1 adu-metaok rock_baz_sd $2 $3 ADU
+sh $1 adu-metaok rwanda_lam_sd $2 $3 ADU
+sh $1 adu-metaok salledebain_sch_13 $2 $3 ADU
+sh $1 adu-metaok sculpture_sd $2 $3 ADU
+sh $1 adu-metaok separation_per_14 $2 $3 ADU
+sh $1 adu-metaok showgirl_vos_15 $2 $3 ADU
+sh $1 adu-metaok siderurgie_guy_10 $2 $3 ADU
+sh $1 adu-metaok siderurgie_mar_10 $2 $3 ADU
+sh $1 adu-metaok siderurgie_per_10 $2 $3 ADU
+sh $1 adu-metaok sncf_dez_11 $2 $3 ADU
+sh $1 adu-metaok sousse_bur $2 $3 ADU
+sh $1 adu-metaok spiritualite_cel_14 $2 $3 ADU
+sh $1 adu-metaok sports_pet_07 $2 $3 ADU
+sh $1 adu-metaok stag_bad_08 $2 $3 ADU
+sh $1 adu-metaok stage_son_12 $2 $3 ADU
+sh $1 adu-metaok tatouagepolynesie_06 $2 $3 ADU
+sh $1 adu-metaok teatime_lam_12 $2 $3 ADU
+sh $1 adu-metaok telephone_lam_13 $2 $3 ADU
+sh $1 adu-metaok tel_maz_07 $2 $3 ADU
+sh $1 adu-metaok testssncf_qab_12 $2 $3 ADU
+sh $1 adu-metaok theorielinguistique_07 $2 $3 ADU
+sh $1 adu-metaok tourisme_arn_15 $2 $3 ADU
+sh $1 adu-metaok tromboniste $2 $3 ADU
+sh $1 adu-metaok tunisie_mun_08 $2 $3 ADU
+sh $1 adu-metaok vampiretatouage_sd $2 $3 ADU
+sh $1 adu-metaok voyage_con_15 $2 $3 ADU
+sh $1 adu-metaok voyage_gou_13 $2 $3 ADU
+sh $1 adu-metaok voyage_hab_14 $2 $3 ADU
+sh $1 adu-metaok voyage_leo_13 $2 $3 ADU
+sh $1 adu-metaok voyage_mel_15 $2 $3 ADU
+sh $1 adu-metaok voyages_ric_06 $2 $3 ADU
+sh $1 chi-long-metaok adrien1_bia $2 $3 BOTH
+sh $1 chi-long-metaok adrien2_bia $2 $3 BOTH
+sh $1 chi-long-metaok adrien3_bia $2 $3 BOTH
+sh $1 chi-long-metaok Akoub15_Can_Anon $2 $3 BOTH
+sh $1 chi-long-metaok Akoub16_Can_Anon $2 $3 BOTH
+sh $1 chi-long-metaok Alhem1_Can_Anon $2 $3 BOTH
+sh $1 chi-long-metaok Alhem2_Can_Anon $2 $3 BOTH
+sh $1 chi-long-metaok Alhem3_Can_Anon $2 $3 BOTH
+sh $1 chi-long-metaok Alhem4_Can_Anon $2 $3 BOTH
+sh $1 chi-long-metaok Cassandra11_Can_Anon $2 $3 BOTH
+sh $1 chi-long-metaok Cassandra12_Can_Anon $2 $3 BOTH
+sh $1 chi-long-metaok celia10_can $2 $3 BOTH
+sh $1 chi-long-metaok celia11_can $2 $3 BOTH
+sh $1 chi-long-metaok celia12_can $2 $3 BOTH
+sh $1 chi-long-metaok celia1_can $2 $3 BOTH
+sh $1 chi-long-metaok celia1_gav $2 $3 BOTH
+sh $1 chi-long-metaok celia2_can $2 $3 BOTH
+sh $1 chi-long-metaok celia2_gav $2 $3 BOTH
+sh $1 chi-long-metaok celia3_can $2 $3 BOTH
+sh $1 chi-long-metaok celia3_gav $2 $3 BOTH
+sh $1 chi-long-metaok celia4_can $2 $3 BOTH
+sh $1 chi-long-metaok celia5_can $2 $3 BOTH
+sh $1 chi-long-metaok celia6_can $2 $3 BOTH
+sh $1 chi-long-metaok celia7_can $2 $3 BOTH
+sh $1 chi-long-metaok celia8_can $2 $3 BOTH
+sh $1 chi-long-metaok celia9_can $2 $3 BOTH
+sh $1 chi-long-metaok fanny1_cha $2 $3 BOTH
+sh $1 chi-long-metaok fanny2_cha $2 $3 BOTH
+sh $1 chi-long-metaok fanny3_cha $2 $3 BOTH
+sh $1 chi-long-metaok Ferdinand3_Can_Anon $2 $3 BOTH
+sh $1 chi-long-metaok Ferdinand4_Can_Anon $2 $3 BOTH
+sh $1 chi-long-metaok gaelle1_sow $2 $3 BOTH
+sh $1 chi-long-metaok gaelle2_sow $2 $3 BOTH
+sh $1 chi-long-metaok gaelle3_sow $2 $3 BOTH
+sh $1 chi-long-metaok gaelle4_sow $2 $3 BOTH
+sh $1 chi-long-metaok gaelle5_sow $2 $3 BOTH
+sh $1 chi-long-metaok gaelle6_sow $2 $3 BOTH
+sh $1 chi-long-metaok garance1_sow $2 $3 BOTH
+sh $1 chi-long-metaok garance2_sow $2 $3 BOTH
+sh $1 chi-long-metaok garance3_sow $2 $3 BOTH
+sh $1 chi-long-metaok garance4_sow $2 $3 BOTH
+sh $1 chi-long-metaok garance5_sow $2 $3 BOTH
+sh $1 chi-long-metaok garance6_sow $2 $3 BOTH
+sh $1 chi-long-metaok hector1_aub $2 $3 BOTH
+sh $1 chi-long-metaok hector2_aub $2 $3 BOTH
+sh $1 chi-long-metaok hector3_aub $2 $3 BOTH
+sh $1 chi-long-metaok hugo1_bar $2 $3 BOTH
+sh $1 chi-long-metaok hugo1_gre $2 $3 BOTH
+sh $1 chi-long-metaok hugo2_bar $2 $3 BOTH
+sh $1 chi-long-metaok hugo2_gre $2 $3 BOTH
+sh $1 chi-long-metaok hugo3_bar $2 $3 BOTH
+sh $1 chi-long-metaok hugo3_gre $2 $3 BOTH
+sh $1 chi-long-metaok india1_bru $2 $3 BOTH
+sh $1 chi-long-metaok india2_bru $2 $3 BOTH
+sh $1 chi-long-metaok india3_bru $2 $3 BOTH
+sh $1 chi-long-metaok lionel1_can $2 $3 BOTH
+sh $1 chi-long-metaok lionel2_can $2 $3 BOTH
+sh $1 chi-long-metaok lionel3_can $2 $3 BOTH
+sh $1 chi-long-metaok lionel4_can $2 $3 BOTH
+sh $1 chi-long-metaok lionel5_can $2 $3 BOTH
+sh $1 chi-long-metaok lionel6_can $2 $3 BOTH
+sh $1 chi-long-metaok lionel7_can $2 $3 BOTH
+sh $1 chi-long-metaok lionel8_can $2 $3 BOTH
+sh $1 chi-long-metaok lionel9_can $2 $3 BOTH
+sh $1 chi-long-metaok louise1_sow $2 $3 BOTH
+sh $1 chi-long-metaok louise2_sow $2 $3 BOTH
+sh $1 chi-long-metaok louise3_sow $2 $3 BOTH
+sh $1 chi-long-metaok louise4_sow $2 $3 BOTH
+sh $1 chi-long-metaok louise5_sow $2 $3 BOTH
+sh $1 chi-long-metaok louise6_sow $2 $3 BOTH
+sh $1 chi-long-metaok lucie1_can $2 $3 BOTH
+sh $1 chi-long-metaok lucie2_can $2 $3 BOTH
+sh $1 chi-long-metaok lucie3_can $2 $3 BOTH
+sh $1 chi-long-metaok lucie4_can $2 $3 BOTH
+sh $1 chi-long-metaok lucie5_can $2 $3 BOTH
+sh $1 chi-long-metaok lucie6_can $2 $3 BOTH
+sh $1 chi-long-metaok lucie7_can $2 $3 BOTH
+sh $1 chi-long-metaok lucie8_can $2 $3 BOTH
+sh $1 chi-long-metaok lucille1_cha $2 $3 BOTH
+sh $1 chi-long-metaok lucille2_cha $2 $3 BOTH
+sh $1 chi-long-metaok lucille3_cha $2 $3 BOTH
+sh $1 chi-long-metaok maelle1_rou $2 $3 BOTH
+sh $1 chi-long-metaok maelle2_rou $2 $3 BOTH
+sh $1 chi-long-metaok maelle3_rou $2 $3 BOTH
+sh $1 chi-long-metaok marie1_gue $2 $3 BOTH
+sh $1 chi-long-metaok marie2_gue $2 $3 BOTH
+sh $1 chi-long-metaok marie3_gue $2 $3 BOTH
+sh $1 chi-long-metaok sarah10_can $2 $3 BOTH
+sh $1 chi-long-metaok sarah11_can $2 $3 BOTH
+sh $1 chi-long-metaok sarah12_can $2 $3 BOTH
+sh $1 chi-long-metaok sarah1_can $2 $3 BOTH
+sh $1 chi-long-metaok sarah2_can $2 $3 BOTH
+sh $1 chi-long-metaok sarah3_can $2 $3 BOTH
+sh $1 chi-long-metaok sarah4_can $2 $3 BOTH
+sh $1 chi-long-metaok sarah5_can $2 $3 BOTH
+sh $1 chi-long-metaok sarah6_can $2 $3 BOTH
+sh $1 chi-long-metaok sarah7_can $2 $3 BOTH
+sh $1 chi-long-metaok sarah8_can $2 $3 BOTH
+sh $1 chi-long-metaok sarah9_can $2 $3 BOTH
+sh $1 chi-long-metaok valentine1_sow $2 $3 BOTH
+sh $1 chi-long-metaok valentine2_sow $2 $3 BOTH
+sh $1 chi-long-metaok valentine3_sow $2 $3 BOTH
+sh $1 chi-long-metaok valentine4_sow $2 $3 BOTH
+sh $1 chi-long-metaok valentine5_sow $2 $3 BOTH
+sh $1 chi-long-metaok valentine6_sow $2 $3 BOTH
+sh $1 chi-long-metaok vincent10_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent11_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent12_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent13_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent14_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent15_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent16_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent17_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent18_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent19_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent1_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent20_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent21_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent22_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent2_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent3_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent4_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent5_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent6_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent7_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent8_can $2 $3 BOTH
+sh $1 chi-long-metaok vincent9_can $2 $3 BOTH
+sh $1 chi-phi-metaok alexandre_lorraine_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok alexandre_tristan_cm2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok amelie_mathieu_cm1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok amel_ophelia_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok antoine_quentin_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok arthur_paul_ce1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok aurelia_lea_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok axel_adam_cm1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok benjamin_valentin_ce1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok cassiope_anais_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok chloe_nathan_cm1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok clara_mathilde_cm1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok clemence_marine_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok damien_benjamin_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok dany_flavien_cm1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok elodie_charlotte_cm2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok ema_chiara_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok eva_kiyane_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok farah_vanessa_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok florent_tony_cm1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok gaetan_corentin_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok gregori_hugo_cm2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok gregory_clement_cm2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok hugo_julien_ce1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok jeremy_kilian_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok julianne_laura_cm1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok kenza_gabrielle_ce1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok laura_logan_cm1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok lea_anissa_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok leandro_lucas_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok lina_alexandre_cm1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok loic_theo_ce1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok louame_carla_cm2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok marina_margaux_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok marine_alicia_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok mathieu_nicolas_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok maxime_cynthia_cm1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok maxime_lucas_cm1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok maxime_pierre_ce1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok melissa_capucine_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok noemie_angeline_cm1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok nolan_dylan_ce1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok oceane_zoe_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok ophlie_emel_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok pauline_mani_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok pierre_yanis_ce1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok robin_thibaut_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok romain_mehdi_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok roxane_elena_cm2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok sarah_carla_cm2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok sarah_celine_ce1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok sarah_julien_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok sebastien_kevin_cm2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok serena_fabien_ce1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok severine_camille_ce1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok solene_sofia_cm1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok thomas_allan_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok valentine_camille_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok valentin_manel_ce1_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok vincent_yvelise_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok walid_logan_ce2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok xavier_thomas_cm2_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok yaelle_aurelia_cp_proinf $2 $3 BOTH
+sh $1 chi-phi-metaok yaelle_elena_cp_proinf $2 $3 BOTH
+sh $1 chi-trans-metaok adeline1_gif $2 $3 BOTH
+sh $1 chi-trans-metaok adeline1_sch $2 $3 BOTH
+sh $1 chi-trans-metaok Adelphe1_Per_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Aela1_Ber_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Alban1_Tah_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok alexandre1_bod $2 $3 BOTH
+sh $1 chi-trans-metaok alexandre1_dag $2 $3 BOTH
+sh $1 chi-trans-metaok alexandre1_lin $2 $3 BOTH
+sh $1 chi-trans-metaok alexis1_ras $2 $3 BOTH
+sh $1 chi-trans-metaok alice1_cor $2 $3 BOTH
+sh $1 chi-trans-metaok Alicia1_Bre_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok aline1_gan $2 $3 BOTH
+sh $1 chi-trans-metaok aline1_ron $2 $3 BOTH
+sh $1 chi-trans-metaok alissa1_cas $2 $3 BOTH
+sh $1 chi-trans-metaok Alix1_Lec_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok alona1_leb $2 $3 BOTH
+sh $1 chi-trans-metaok amelie1_bec $2 $3 BOTH
+sh $1 chi-trans-metaok anais1_men $2 $3 BOTH
+sh $1 chi-trans-metaok andrea1_car $2 $3 BOTH
+sh $1 chi-trans-metaok andrea1_uri $2 $3 BOTH
+sh $1 chi-trans-metaok anne1_roi $2 $3 BOTH
+sh $1 chi-trans-metaok antoine1_nus $2 $3 BOTH
+sh $1 chi-trans-metaok Antonin1_Jer_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok antonin1_jou $2 $3 BOTH
+sh $1 chi-trans-metaok armelle1_del $2 $3 BOTH
+sh $1 chi-trans-metaok awen1_cin $2 $3 BOTH
+sh $1 chi-trans-metaok Axel1_Gar_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Axel1_Jac_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok baptiste1_gri $2 $3 BOTH
+sh $1 chi-trans-metaok Baptiste1_Kul_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Baptiste1_Lec_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok baptiste1_lel $2 $3 BOTH
+sh $1 chi-trans-metaok baptiste1_zie $2 $3 BOTH
+sh $1 chi-trans-metaok benedicte1_let $2 $3 BOTH
+sh $1 chi-trans-metaok bengaly1_can $2 $3 BOTH
+sh $1 chi-trans-metaok camille1_bar $2 $3 BOTH
+sh $1 chi-trans-metaok camille1_mer $2 $3 BOTH
+sh $1 chi-trans-metaok Camille1_Sil_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Capucine1_San_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Carla1_Con_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Cassandre1_And_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok cecile1_dan $2 $3 BOTH
+sh $1 chi-trans-metaok celene1_ber $2 $3 BOTH
+sh $1 chi-trans-metaok charlotte1_gir $2 $3 BOTH
+sh $1 chi-trans-metaok charlotte1_leb $2 $3 BOTH
+sh $1 chi-trans-metaok chloe1_fau $2 $3 BOTH
+sh $1 chi-trans-metaok Claire1_Kam_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok clara1_dum $2 $3 BOTH
+sh $1 chi-trans-metaok clara1_lau $2 $3 BOTH
+sh $1 chi-trans-metaok clelie1_dup $2 $3 BOTH
+sh $1 chi-trans-metaok clemence1_bra $2 $3 BOTH
+sh $1 chi-trans-metaok clemence1_hal $2 $3 BOTH
+sh $1 chi-trans-metaok clement1_med $2 $3 BOTH
+sh $1 chi-trans-metaok Clementin1_Bat_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok clementine1_bas $2 $3 BOTH
+sh $1 chi-trans-metaok cleophee1_pie $2 $3 BOTH
+sh $1 chi-trans-metaok Cloe1_Tsc_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok constance1_sch $2 $3 BOTH
+sh $1 chi-trans-metaok constant1_pap $2 $3 BOTH
+sh $1 chi-trans-metaok Coralie1_Arn_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Corentin1_Ber_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok corentin1_boi $2 $3 BOTH
+sh $1 chi-trans-metaok Dania1_Col_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok elea1_cur $2 $3 BOTH
+sh $1 chi-trans-metaok Elif1_Ber_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Eliott1_Chi_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Elise1_Hel_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Elliot1_Dem_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok emilie1_rig $2 $3 BOTH
+sh $1 chi-trans-metaok Emy1_Sam_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Engi1_Hur_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Enzo1_Nov_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Erwan1_Fer_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Ester1_Zeh_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Eva1_Goe_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok Eva1_Mat_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok fantine1_mon $2 $3 BOTH
+sh $1 chi-trans-metaok florian1_sai $2 $3 BOTH
+sh $1 chi-trans-metaok gabriel1_rez $2 $3 BOTH
+sh $1 chi-trans-metaok gaelle1_bou $2 $3 BOTH
+sh $1 chi-trans-metaok gaetan1_bau $2 $3 BOTH
+sh $1 chi-trans-metaok guillaume1_pol $2 $3 BOTH
+sh $1 chi-trans-metaok heloise1_gue $2 $3 BOTH
+sh $1 chi-trans-metaok hibraime1_ber $2 $3 BOTH
+sh $1 chi-trans-metaok Hugo1_Hyp_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok ines1_hor $2 $3 BOTH
+sh $1 chi-trans-metaok Jeanne1_Dre_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok jeanne1_hil $2 $3 BOTH
+sh $1 chi-trans-metaok jeremy1_pat $2 $3 BOTH
+sh $1 chi-trans-metaok jessica1_cha $2 $3 BOTH
+sh $1 chi-trans-metaok Joachim1_Alt_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok jonathan1_fra $2 $3 BOTH
+sh $1 chi-trans-metaok jordan1_ton $2 $3 BOTH
+sh $1 chi-trans-metaok Joseph1_Cla_Anon $2 $3 BOTH
+sh $1 chi-trans-metaok jules1_per $2 $3 BOTH
+sh $1 chi-trans-metaok juliette1_sto $2 $3 BOTH
+sh $1 chi-trans-metaok kelly1_ham $2 $3 BOTH
+sh $1 chi-trans-metaok laura1_bah $2 $3 BOTH
+sh $1 chi-trans-metaok laura1_can $2 $3 BOTH
+sh $1 chi-trans-metaok laura1_llo $2 $3 BOTH
+sh $1 chi-trans-metaok laureen1_gud $2 $3 BOTH
+sh $1 chi-trans-metaok laurie1_jam $2 $3 BOTH
+sh $1 chi-trans-metaok laurine1_car $2 $3 BOTH
+sh $1 chi-trans-metaok laurine1_gil $2 $3 BOTH
+sh $1 chi-trans-metaok laurine2_car $2 $3 BOTH
+sh $1 chi-trans-metaok leo1_par $2 $3 BOTH
+sh $1 chi-trans-metaok leo1_rom $2 $3 BOTH
+sh $1 chi-trans-metaok leo1_roy $2 $3 BOTH
+sh $1 chi-trans-metaok lilou1_hua $2 $3 BOTH
+sh $1 chi-trans-metaok lisa1_rhe $2 $3 BOTH
+sh $1 chi-trans-metaok loris1_peu $2 $3 BOTH
+sh $1 chi-trans-metaok lorraine1_spo $2 $3 BOTH
+sh $1 chi-trans-metaok lou1_tho $2 $3 BOTH
+sh $1 chi-trans-metaok louis1_cas $2 $3 BOTH
+sh $1 chi-trans-metaok louis1_lho $2 $3 BOTH
+sh $1 chi-trans-metaok louis1_tro $2 $3 BOTH
+sh $1 chi-trans-metaok louis1_utn $2 $3 BOTH
+sh $1 chi-trans-metaok louis2_utn $2 $3 BOTH
+sh $1 chi-trans-metaok louise1_geo $2 $3 BOTH
+sh $1 chi-trans-metaok louise1_sch $2 $3 BOTH
+sh $1 chi-trans-metaok luana1_alb $2 $3 BOTH
+sh $1 chi-trans-metaok luca1_bar $2 $3 BOTH
+sh $1 chi-trans-metaok lucie1_led $2 $3 BOTH
+sh $1 chi-trans-metaok lucie1_vic $2 $3 BOTH
+sh $1 chi-trans-metaok lucile1_flo $2 $3 BOTH
+sh $1 chi-trans-metaok maelle1_pap $2 $3 BOTH
+sh $1 chi-trans-metaok manon1_ern $2 $3 BOTH
+sh $1 chi-trans-metaok manon1_kho $2 $3 BOTH
+sh $1 chi-trans-metaok manon1_lag $2 $3 BOTH
+sh $1 chi-trans-metaok manon1_rej $2 $3 BOTH
+sh $1 chi-trans-metaok margaux1_gil $2 $3 BOTH
+sh $1 chi-trans-metaok margot1_koe $2 $3 BOTH
+sh $1 chi-trans-metaok marianne1_ste $2 $3 BOTH
+sh $1 chi-trans-metaok marianne1_vat $2 $3 BOTH
+sh $1 chi-trans-metaok marion1_gui $2 $3 BOTH
+sh $1 chi-trans-metaok mathieu1_car $2 $3 BOTH
+sh $1 chi-trans-metaok mathilde1_ham $2 $3 BOTH
+sh $1 chi-trans-metaok mathilde1_ric $2 $3 BOTH
+sh $1 chi-trans-metaok maurine1_her $2 $3 BOTH
+sh $1 chi-trans-metaok melanie1_lem $2 $3 BOTH
+sh $1 chi-trans-metaok morgane1_mar $2 $3 BOTH
+sh $1 chi-trans-metaok moustapha1_abd $2 $3 BOTH
+sh $1 chi-trans-metaok naomi1_sli $2 $3 BOTH
+sh $1 chi-trans-metaok nathan1_mai $2 $3 BOTH
+sh $1 chi-trans-metaok nolan1_rej $2 $3 BOTH
+sh $1 chi-trans-metaok ophelie1_baq $2 $3 BOTH
+sh $1 chi-trans-metaok oscar1_fri $2 $3 BOTH
+sh $1 chi-trans-metaok pauline1_man $2 $3 BOTH
+sh $1 chi-trans-metaok raphael1_leg $2 $3 BOTH
+sh $1 chi-trans-metaok remi1_did $2 $3 BOTH
+sh $1 chi-trans-metaok robin1_lem $2 $3 BOTH
+sh $1 chi-trans-metaok romy1_tha $2 $3 BOTH
+sh $1 chi-trans-metaok rose1_rou $2 $3 BOTH
+sh $1 chi-trans-metaok samuel1_len $2 $3 BOTH
+sh $1 chi-trans-metaok sarah1_fra $2 $3 BOTH
+sh $1 chi-trans-metaok sebastien1_bou $2 $3 BOTH
+sh $1 chi-trans-metaok thibaud1_son $2 $3 BOTH
+sh $1 chi-trans-metaok thibault1_cor $2 $3 BOTH
+sh $1 chi-trans-metaok thibault1_lev $2 $3 BOTH
+sh $1 chi-trans-metaok thibaut1_der $2 $3 BOTH
+sh $1 chi-trans-metaok thomas1_pel $2 $3 BOTH
+sh $1 chi-trans-metaok tidiane1_ecc $2 $3 BOTH
+sh $1 chi-trans-metaok valentin1_bit $2 $3 BOTH
+sh $1 chi-trans-metaok valentin1_lan $2 $3 BOTH
+sh $1 chi-trans-metaok valentine1_bah $2 $3 BOTH
+sh $1 chi-trans-metaok victoire1_duc $2 $3 BOTH
+sh $1 chi-trans-metaok walid1_mat $2 $3 BOTH
+sh $1 chi-trans-metaok xaviere1_leg $2 $3 BOTH
+sh $1 chi-trans-metaok yassine1_nic $2 $3 BOTH
+sh $1 chi-trans-metaok youssef1_tor $2 $3 BOTH

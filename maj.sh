@@ -1,3 +1,3 @@
 git add .
-git commit -m "Calcul des 10 énoncés les plus longs"
+git commit -m "Calcul de tous les fichiers"
 git push origin

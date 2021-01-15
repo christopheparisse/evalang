@@ -1,13 +1,14 @@
 #temps verbaux
 freq "-t*" "+t$2:" +t%ref: +s"VER:FUTU*" +d4 $1
-freq "-t*" "+t$2:" +t%ref: +s"VER:COND" +d4 $1
-freq "-t*" "+t$2:" +t%ref: +s"VER:SUBJ" +d4 $1
-freq "-t*" "+t$2:" +t%ref: +s"VER:IMPF" +d4 $1
+freq "-t*" "+t$2:" +t%ref: +s"VER:COND*" +d4 $1
+freq "-t*" "+t$2:" +t%ref: +s"VER:SUBJ*" +d4 $1
+freq "-t*" "+t$2:" +t%ref: +s"VER:IMPF*" +d4 $1
 # mots grammaticaux
 combo "+t$2:" +t%ref: +s"PRO:REL_*" $1
 combo "+t$2:" +t%ref: +s"KON_*" $1
 combo "+t$2:" +t%ref: +s"*\_comme" $1
 # gerondif
+echo "times 0 0 0"
 # combo "+t$2:" +t%mor: +s"*PPRE" $1
 # prep + verb INF
 combo "+t$2:" +t%ref: +s"PRP_*^VER:infi_*" $1
@@ -35,4 +36,5 @@ combo "+t$2:" +s"di*^*^qu*" $1
 combo "+t$2:" +s"plu*^*^qu*" $1
 
 # pronom objet
+echo "times 0 0 0"
 # combo "+t$2:" +t%ref: +s"pro:obj*" $1
