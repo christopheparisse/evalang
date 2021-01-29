@@ -37,3 +37,35 @@ title("INF Adultes Perceo")
 
 cor.test(as.numeric(clan.chi$annees), clan.chi$INF)
 cor.test(as.numeric(perceo.chi$annees), perceo.chi$INF)
+cor.test(as.numeric(clan.chi$INF), perceo.chi$INF)
+
+cmp <- function(champ) {
+  print(cor.test(as.numeric(clan.chi$annees), clan.chi[,champ]))
+  print(cor.test(as.numeric(perceo.chi$annees), perceo.chi[,champ]))
+  print(cor.test(as.numeric(clan.chi$INF), perceo.chi[,champ]))
+}
+
+cmp("INF")
+
+cmpp <- function(champ) {
+  print((cor.test(as.numeric(clan.chi$annees), clan.chi[,champ]))$p.value)
+  print((cor.test(as.numeric(perceo.chi$annees), perceo.chi[,champ]))$p.value)
+  print((cor.test(as.numeric(clan.chi$INF), perceo.chi[,champ]))$p.value)
+}
+
+cmpp(("FUT"))
+cmpp(("CONJ"))
+cmpp(("SUBJ"))
+cmpp(("INF"))
+cmpp(("prorel"))
+cmpp(("conj"))
+cmpp(("comme"))
+cmpp(("prep+inf"))
+cmpp(("n+conj+det"))
+cmpp(("n+adj"))
+cmpp(("n+prep+n"))
+cmpp(("cest+++que"))
+cmpp(("ya+++que"))
+cmpp(("v+inf"))
+cmpp(("dit+qu"))
+cmpp(("plus+qu"))
