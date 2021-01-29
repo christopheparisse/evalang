@@ -1,3 +1,3 @@
 git add .
-git commit -m "Données TCOF avec insertion des metadata (2)"
+git commit -m "Analyse TCOF sur analyseur CLAN & PERCEO"
 git push origin
