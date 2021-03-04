@@ -4,6 +4,8 @@ clan <- read.xlsx("tcofCLANMOR.xlsx")
 perceo <- read.xlsx("tcofTTGPERCEO.xlsx")
 clan$annees <- as.numeric(clan$annees)
 perceo$annees <- as.numeric(perceo$annees)
+clan$utt <- as.numeric(clan$utt)
+perceo$utt <- as.numeric(perceo$utt)
 
 clan.chi <- clan[clan['loc']=='CHI',]
 clan.chi.trans <- clan.chi[clan.chi['dossier']=='TRANS',]
@@ -22,6 +24,11 @@ str(perceo.chi)
 tab <- tapply(clan.chi$INF, clan.chi$annees, mean)
 barplot(tab)
 title("INF Enfants CLAN")
+
+clan.chi$INFTOKEN <- clan.chi$INF / clan.chi$token
+tab <- tapply(clan.chi$INFTOKEN, clan.chi$annees, mean)
+barplot(tab)
+title("INF Enfants CLAN / Token")
 
 tab <- tapply(clan.adu$INF, clan.adu$annees, mean)
 barplot(tab)
