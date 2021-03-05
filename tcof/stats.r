@@ -21,11 +21,10 @@ perceo.chi <- perceo[perceo['loc']=='CHI',]
 perceo.chi.trans <- perceo.chi[perceo.chi['dossier']=='TRANS',]
 str(perceo.chi)
 
+clan.chi$INFTOKEN <- clan.chi$INF / clan.chi$token
 tab <- tapply(clan.chi$INF, clan.chi$annees, mean)
 barplot(tab)
 title("INF Enfants CLAN")
-
-clan.chi$INFTOKEN <- clan.chi$INF / clan.chi$token
 tab <- tapply(clan.chi$INFTOKEN, clan.chi$annees, mean)
 barplot(tab)
 title("INF Enfants CLAN / Token")
@@ -34,9 +33,13 @@ tab <- tapply(clan.adu$INF, clan.adu$annees, mean)
 barplot(tab)
 title("INF Adultes CLAN")
 
+perceo.chi$INFTOKEN <- perceo.chi$INF / perceo.chi$token
 tab <- tapply(perceo.chi$INF, perceo.chi$annees, mean)
 barplot(tab)
 title("INF Enfants Perceo")
+tab <- tapply(perceo.chi$INFTOKEN, perceo.chi$annees, mean)
+barplot(tab)
+title("INF Enfants Perceo / Token")
 
 tab <- tapply(perceo.adu$INF, perceo.adu$annees, mean)
 barplot(tab)
@@ -44,7 +47,7 @@ title("INF Adultes Perceo")
 
 cor.test(as.numeric(clan.chi$annees), clan.chi$INF)
 cor.test(as.numeric(perceo.chi$annees), perceo.chi$INF)
-cor.test(as.numeric(clan.chi$INF), perceo.chi$INF)
+cor.test(clan.chi$INF, perceo.chi$INF)
 
 cmp <- function(champ) {
   print(cor.test(as.numeric(clan.chi$annees), clan.chi[,champ]))
@@ -61,7 +64,7 @@ cmpp <- function(champ) {
 }
 
 cmpp("FUT")
-cmpp("COND")
+cmpp("CONJ")
 cmpp("SUBJ")
 cmpp("INF")
 cmpp("prorel")
@@ -77,23 +80,38 @@ cmpp("v+inf")
 cmpp("dit+qu")
 cmpp("plus+qu")
 
-
 pres <- function(champ) {
+  token <- clan.chi[,champ] / clan.chi$token
   tab <- tapply(clan.chi[,champ], clan.chi$annees, mean)
   barplot(tab)
   title(paste(champ, "Enfants CLAN", ""))
+  tab <- tapply(token, clan.chi$annees, mean)
+  barplot(tab)
+  title(paste(champ, "Enfants CLAN / Token", ""))
   
+  token <- clan.adu[,champ] / clan.chi$token
   tab <- tapply(clan.adu[,champ], clan.adu$annees, mean)
   barplot(tab)
   title(paste(champ, "Adultes CLAN", ""))
+  tab <- tapply(token, clan.adu$annees, mean)
+  barplot(tab)
+  title(paste(champ, "Adultes CLAN / Token", ""))
   
+  token <- perceo.chi[,champ] / perceo.chi$token
   tab <- tapply(perceo.chi[,champ], perceo.chi$annees, mean)
   barplot(tab)
   title(paste(champ, "Enfants PERCEO", ""))
+  tab <- tapply(token, perceo.chi$annees, mean)
+  barplot(tab)
+  title(paste(champ, "Enfants PERCEO / Token", ""))
   
+  token <- perceo.adu[,champ] / perceo.adu$token
   tab <- tapply(perceo.adu[,champ], perceo.adu$annees, mean)
   barplot(tab)
   title(paste(champ, "Adultes PERCEO", ""))
+  tab <- tapply(token, perceo.adu$annees, mean)
+  barplot(tab)
+  title(paste(champ, "Adultes PERCEO / Token", ""))
 }
 
 pres("FUT")
