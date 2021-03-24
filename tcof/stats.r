@@ -115,7 +115,7 @@ pres <- function(champ) {
 }
 
 pres("FUT")
-pres("COND")
+pres("CONJ")
 pres("SUBJ")
 pres("INF")
 pres("prorel")

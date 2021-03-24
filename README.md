@@ -30,3 +30,10 @@ Les noms de fichiers sont directement triés et tous les répertoires ont été 
   -  CLAN: fichier tcofCLANMOR.csv
   -  TreeTagger+Perceo: fichier tcofTTGPERCEO.csv
 
+### A faire pour la prochaine réunion
+Faire une somme des indices (soit les meilleurs, soit tous)
+Pour pondérer la somme, chaque est pondéré par la fréquence de l'indice dans tout le corpus (ou sur le corpus de sa catégorie).
+
+Revoir les conversions des valeurs des ages (pas les mêmes résultats pour CLAN et pour PERCEO alors qu'on devrait avoir les mêmes).
+Conversions d'âges vers CLAN, mélange entre données x.y où x est l'année et y le nombre de mois et x.y où y est une valeur décimale
+
