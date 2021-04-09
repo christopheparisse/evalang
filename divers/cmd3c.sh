@@ -20,10 +20,10 @@ combo "+t$2:" +t%mor: +s"n*^adj*" $1 # uniquement les postposés
 combo "+t$2:" +t%mor: +s"n*^prep*^n**" $1
 
 # clivée
-combo "+t$2:" +s"c'est^*^qu*" $1 # mais soustraire
-combo "+t$2:" +s"c'est^qu*" $1
+combo "+t$2:" +s"*est^*^qu*" $1 # mais soustraire
+#combo "+t$2:" +s"c'est^qu*" $1
 combo "+t$2:" +s"*y\+a*^*^qu*" $1 # mais soustraire
-combo "+t$2:" +s"*y\+a*^qu*" $1
+#combo "+t$2:" +s"*y\+a*^qu*" $1
 
 # v + v:inf sauf avec avoir et modaux ?
 combo "+t$2:" +t%mor: +s"v\*|*^*INF" $1

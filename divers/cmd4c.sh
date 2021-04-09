@@ -8,8 +8,8 @@ combo "+t$2:" +t%ref: +s"PRO:REL_*" $1
 combo "+t$2:" +t%ref: +s"KON_*" $1
 combo "+t$2:" +t%ref: +s"*\_comme" $1
 # gerondif
-echo "times 0 0 0"
-# combo "+t$2:" +t%mor: +s"*PPRE" $1
+# echo "times 0 0 0"
+combo "+t$2:" +t%mor: +s"*PPRE" $1
 # prep + verb INF
 combo "+t$2:" +t%ref: +s"PRP_*^VER:infi_*" $1
 
@@ -21,10 +21,10 @@ combo "+t$2:" +t%ref: +s"NOM_*^ADJ_*" $1 # uniquement les postposés
 combo "+t$2:" +t%ref: +s"NOM_*^PRP_*^NOM_*" $1
 
 # clivée
-combo "+t$2:" +s"c'est^*^qu*" $1 # mais soustraire
-combo "+t$2:" +s"c'est^qu*" $1
+combo "+t$2:" +s"*est^*^qu*" $1 # mais soustraire
+#combo "+t$2:" +s"c'est^qu*" $1
 combo "+t$2:" +s"*y\+a*^*^qu*" $1 # mais soustraire
-combo "+t$2:" +s"*y\+a*^qu*" $1
+#combo "+t$2:" +s"*y\+a*^qu*" $1
 
 # v + v:inf sauf avec avoir et modaux ?
 combo "+t$2:" +t%ref: +s"VER*^VER:infi*" $1
@@ -36,5 +36,4 @@ combo "+t$2:" +s"di*^*^qu*" $1
 combo "+t$2:" +s"plu*^*^qu*" $1
 
 # pronom objet
-echo "times 0 0 0"
-# combo "+t$2:" +t%ref: +s"pro:obj*" $1
+combo "+t$2:" +t%ref: +s"PRO:obj*" $1
