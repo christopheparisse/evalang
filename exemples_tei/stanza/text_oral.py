@@ -12,6 +12,10 @@ vers un format conllu en 13 colonnes inspiré des travaux d'ORFEO
 import sys
 import os
 
+if len(sys.argv) != 2:
+    print("Must have one argument, the name of the text file to process.")
+    exit(1)
+
 import stanza 
 from stanza.utils.conll import CoNLL
 
@@ -29,7 +33,7 @@ with open(input_file, "r", encoding="utf-8") as f,\
     nlp = stanza.Pipeline("fr", package=pack)
     for line in f.readlines():
         # récupérer les informations des colonnes 1 et 2 du fichier de base
-        speaker = line.split()[0]
+        speaker = line.split()[0][1:-1]
         xmlid = line.split()[1]
         sent = " ".join(line.split()[2:])
         # créer un Document annoté avec stanza pour chaque ligne du fichier 
