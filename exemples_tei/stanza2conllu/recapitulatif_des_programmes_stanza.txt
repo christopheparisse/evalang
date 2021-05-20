@@ -1,0 +1,13 @@
+--- Programmes à lancer en ligne de commande --- 
+    
+stanza_oral2conllu_withconv.py : 
+(traite les fichiers de l'oral : tei/xml, cha ou trs)
+Programme à lancer en ligne de commande, il faut être dans le même dossier que le fichier "teicorpo.jar" (pour cette version du programme) qui effectue la conversion des formats de l'oral comme .xml (tei) .cha ou .trs vers le format .text)
+Exemple cmd : 
+python stanza_oral2conllu_withconv.py -i LEONARD-13-2_11_30.cha -o LEONARD-13-2_11_30.conllu         
+
+stanza_ecrit2conllu_withconv.py : 
+(traite les fichiers tei de l'écrit ou txt)
+Programme à lancer en ligne de commande, dans le même dossier que le fichier jar "saxon" et que la feuille de style xsl "tei-to-text" (nécessite également que le dossier "common" soit accessible ..\common)
+Exemple cmd : 
+python stanza_ecrit2conllu_withconv.py -i tei_canadaviki_all.xml -o tei_canadaviki_all.conllu  
