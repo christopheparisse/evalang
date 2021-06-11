@@ -1,3 +1,3 @@
 git add .
-git commit -m "Analyse TCOF sur analyseur CLAN & PERCEO - Version nettoyée mai 2021"
+git commit -m "Réorganisation des résultats et résultats pour le corpus décomplexé"
 git push origin

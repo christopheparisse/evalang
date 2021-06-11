@@ -1,3 +1,3 @@
 git add .
-git commit -m "Prise en compte des fréquences + développement Stanza"
+git commit -m "Réorganisation des résultats et résultats pour le corpus décomplexé"
 git push origin

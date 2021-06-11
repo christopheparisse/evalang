@@ -1,24 +1,117 @@
-# evalang
+# EVALANG
 Données partagées pour le projet Evalang
 
-## TCOF
+## Données
+
+### TCOF
 Le dossier tcof contient les transcriptions de TCOF dans lesquelles on a inséré les informations des métadonnées.
-Ces transcriptions sont au format TEICORPO (extension tei_corpo2.xml).
-Les fichiers sont aussi disponibles au format CHAT (extension tei_corpo2.cha).
+Ces transcriptions sont au format TEICORPO (extension tei_corpo2.xml). Dans tous les fichiers TEI, on a intégré les métadonnées de TCOF.
 
-### Sous-dossiers
-Les sous-dossiers de TCOF contiennent:
-  - adu-metaok : Les corpus des adultes
-  - chi-long-metaok : Les corpus longitudinaux des enfants
-  - chi-trans-metaok : Les corpus transversaux des enfants
-  - chi-phi-metaok : Les corpus des entretiens Philo des enfants
-  - divers : des programmes et des résultats divers
+### Groupe Décomplexés
+Ce dossier contient les enregistrements d'enfants réalisées pour le projet Complexité
+Les transcriptions originales sont au format CLAN.
 
-### 10 énoncés les plus longs
-Les 10 énoncés les plus longs ont été extraits de tous les fichiers.
+## Traitements
+Pour chaque dossier, les fichiers dans le format de départ sont convertis en TEI (format TEI_CORPO). A partir de cette conversion (que l'origine soit CLAN ou TRANSCRIBER) on peut réaliser toute une série de traitements.
+
+Tous les dossiers contenant des fichiers à traiter contiennent toute une série de répertoires, chaque répertoire contenant des fichiers d'un seul format. Les noms et contenus de ces dossiers sont:
+
+### Fichiers de départ
+
+#### tei_corpo
+Fichiers orginaux des transcriptions TRANSCRIBER convertis avec TEI_CORPO. Les transcriptions suivent le modèle TCOF.
+#### clan
+Fichiers originaux des transcriptions. Tous ces fichiers suivent les conventions classiques des transcriptions CHAT/CLAN.
+
+### Fichiers de traitements
+
+#### tei_corpo_base
+Fichiers issus de la conversion et du nettoyage vers tei_corpo. Les fichiers dits "_base" servent de point de départ à tous les traitements, analyses syntaxiques ou traitements statistiques (ou recherches).
+
+#### Traitements avec TreeTagger
+
+#### ttg_perceo
+Analyse syntaxique avec TreeTagger et le modèle PERCEO. Ces fichiers sont au format TEI, format syntaxique "ref"
+
+#### ttg_perceo_clan
+Conversions des fichiers *ttg_perceo* au format CLAN pour permettre la recherche d'éléments et le calcul de statistiques
+
+#### Traitements avec Stanza
+
+#### conllu
+Analyse syntaxique par Stanza au format conllu
+
+#### conllu_clan
+Conversions des fichiers *conllu* au format CLAN pour permettre la recherche d'éléments et le calcul de statistiques
+
+
+### Autres répertoires
+Tous les autres répertoires non mentionnés ci-dessus sont des répertoires contenant des fichiers intermédiaires utilisés pour les calculs ou transformations
+
+# Commandes et traitements
+Les commandes de traitement de l'ensemble des répertoires se font dans le sous-système Ubuntu sous Windows pour bénéficier de la puissance du shell et des commandes unix. A peu près la même chose peut être réalisée avec PowerShell sous Windows (ce sera pour une seconde version).
+
+## Commandes à lancer
+##### (les commandes disponibles peuvent dépendre du format de départ jusqu'à arriver à construire tei_corpo_base)
+
+### Chainer toutes les commandes
+sh fullbuild.sh
+
+### Clan vers Tei_corpo_base
+sh ../commands/clantotei.sh
+
+### Tei_corpo vers Tei_corpo_base
+sh ../commands/teicorpototei.sh
+
+### Tei_corpo_base vers ttg_perceo
+sh ../commands/teibasetottg.sh
+
+### Ttg_perceo vers ttg_perceo_clan
+sh ../commands/ttgtoclan.sh
+
+### Tei_corpo_base vers conllu et conllu_clan
+sh ../commands/teitoconllu.sh
+
+
+## 10/20 énoncés les plus longs
+Les 10 ou 20 énoncés les plus longs ont été extraits de tous les fichiers.
 Dans le dossier adultes, ce calcul n'a été fait que pour les adultes, pour les autres dossiers il a été fait séparément pour les enfants et pour les adultes.
 Les fichiers en question ont une extension .txt (dont ils peuvent être visualisés par n'importe quel éditeur).
-Leur nom se termine par .10pl.txt
+Leur nom se termine par .[nombre]pl.txt (par exemple .20pl.txt)
+
+sh ../commands/callnth.sh 20
+
+Les fichiers figurent dans les dossiers appelés **lg20**
+
+## Utilisation des analyses syntaxiques pour générer fichier CSV
+
+sh ../commands/process.sh
+
+## Résultats statistiques
+Ils sont dans chaque répertoire sous forme de fichier .csv (un pour perceo et un pour stanza)
+
+## Questions pour le 18 juin
+Sur les données envoyées, on analysera plus spécifiquement:
+  - les énoncés les plus longs (20 énoncés les + longs)
+  - Quelles analyses morphologiques et syntaxiques ?
+  - Où est-ce qu’ils se situent dans le corpus ?
+  - Extraction des énoncés d’au moins 4 mots?
+
+
+## Recherche des énoncés de plus de 4 mots
+
+Cette recherche se réalise simplement à l'aide d'une commande CLAN à réaliser dans un des dossiers contenant des fichiers CLAN (clan, conllu_clan, ttg_perceo_clan).
+
+    kwal +tCHI +x>4w TDL_GP5_NOAH_JS.tei_corpo-gsd.conllu.cex +o%
+    # récupère tous les énoncés de plus de 4 mots et affiche toutes les lignes secondaires pour le fichier TDL_GP5_NOAH_JS.tei_corpo-gsd.conllu.cex
+
+    kwal +tCHI +x>10w TDL_GP5_NOAH_JS.tei_corpo-gsd.conllu.cex +d
+    # même chose mais les énoncés de plus de 10 mots et affichage seulement des lignes principales
+
+    kwal +tCHI +x>10w *.tei_corpo-gsd.conllu.cex +d +f
+    # même chose mais pour tous les fichiers du répertoire et crée des fichiers résultats ayant pour extension .kwal.cex
+
+# Informations complémentaires
 
 ### Calcul des éléments permettant de mesurer la complexité
 Pour tous les fichiers, j'ai fait passer une version mise à jour de l'analyseur treetagger avec Perceo. Après les valeurs ont été extraites et directement insérées dans les fichiers .csv qui sont dans le répertoire TCOF.
@@ -26,9 +119,12 @@ Pour tous les fichiers, j'ai fait passer une version mise à jour de l'analyseur
 Les calculs ont été améliorés pour inclure le nombre d'énoncés et de mots pouvoir obtenir des résultats en pourcentage.
 
 Ces fichiers sont complétement débuggés et semblent corrects maintenant (à vérifier si des erreurs subsistent).
-Les noms de fichiers sont directement triés et tous les répertoires ont été analysés. On peut donc facilement comparer les deux analyseurs.
+Les noms de fichiers sont directement triés et tous les répertoires ont été analysés. On peut donc facilement comparer les trois analyseurs.
   -  CLAN: fichier tcofCLANMOR.csv
   -  TreeTagger+Perceo: fichier tcofTTGPERCEO.csv
+  -  Stanza: fichier tcofSTANZA.csv
+
+(Attention comparaison triple à finir)
 
 ### Modifications faites à vérifier
 Faire une somme des indices (soit les meilleurs, soit tous)
