@@ -93,9 +93,15 @@ Ils sont dans chaque répertoire sous forme de fichier .csv (un pour perceo et u
 ## Questions pour le 18 juin
 Sur les données envoyées, on analysera plus spécifiquement:
   - les énoncés les plus longs (20 énoncés les + longs)
+    - voir dossier "lg20" sous "GroupesDecomplexes"
   - Quelles analyses morphologiques et syntaxiques ?
+    - à faire. Voir statistiques ?
   - Où est-ce qu’ils se situent dans le corpus ?
+    - à faire avec les recherches avec CLAN, par exemple:
+      - combo +tCHI: +t%morph +s"*Tense=Imp*^*=Inf*" *cex # dans conllu_clan
+      - combo +tCHI: +t%ref +s"*impf*^v*inf*" *cha # dans ttg_perceo_clan
   - Extraction des énoncés d’au moins 4 mots?
+    - avec clan voir ci-dessous
 
 
 ## Recherche des énoncés de plus de 4 mots
