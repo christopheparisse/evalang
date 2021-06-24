@@ -1,11 +1,5 @@
 ## init
 
-#library('openxlsx')
-setwd("/brainstorm/evalang/GroupeDecomplexes")
-setwd("/brainstorm/evalang/tcof")
-dataperceo <- read.csv("stat-ttg_perceo_clan.csv") # à modifier la création
-datastanza <- read.csv("stat-conllu_clan.csv") # à modifier la création
-
 update1 <- function(data) {
   #supprimer les annees a zero ou a NA
   
@@ -45,6 +39,84 @@ update12 <- function(data2) {
   cbind(data2, data3)
 }
 
+update2 <- function(data) {
+  t5 <- cbind(data, year=as.factor(trunc(data$annee)))
+  sommetot <- sapply(c(1:length(row.names(t5))), function (x) { sum(t5[x, c(12:29)]) })
+  besttot <- sapply(c(1:length(row.names(t5))), function (x) { sum(t5[x, c(12:29)]) })
+  cbind(t5, sommetot, besttot)
+}
+
+stat1 <- function(data) {
+  data.adu <<- data[data['loc'] != 'CHI',]
+  str(data.adu)
+  
+  data.chi <<- data[data['loc']=='CHI',]
+  data.chi.trans <<- data.chi[data.chi['corpus']=='TRANS',]
+  data.chi.long <<- data.chi[data.chi['corpus']=='LONG',]
+  data.chi.phi <<- data.chi[data.chi['corpus']=='PHI',]
+  str(data.chi)
+  str(data.chi.trans)
+}
+
+sdraw <- function(data) {
+  plot(x=data$annee, y=data$sommetot)
+  print(aggregate(sommetot ~ year, data, mean))
+  bt <- ddply(data, .(year), summarize, mean=mean(sommetot), sd=sd(sommetot))
+  barplot(bt$mean, names.arg=bt$year)
+  cor.test(x=data$annee, y=data$sommetot)
+}
+
+sdrawIMPF <- function(data) {
+  plot(x=data$annee, y=data$IMPF)
+  print(aggregate(IMPF ~ year, data, mean))
+  bt <- ddply(data, .(year), summarize, mean=mean(IMPF), sd=sd(IMPF))
+  barplot(bt$mean, names.arg=bt$year)
+  cor.test(x=data$annee, y=data$IMPF)
+}
+
+sdrawFUT <- function(data) {
+  plot(x=data$annee, y=data$FUT)
+  print(aggregate(FUT ~ year, data, mean))
+  bt <- ddply(data, .(year), summarize, mean=mean(FUT), sd=sd(FUT))
+  barplot(bt$mean, names.arg=bt$year)
+  cor.test(x=data$annee, y=data$FUT)
+}
+
+
+sdrawconj <- function(data) {
+  plot(x=data$annee, y=data$conj)
+  print(aggregate(conj ~ year, data, mean))
+  bt <- ddply(data, .(year), summarize, mean=mean(conj), sd=sd(conj))
+  barplot(bt$mean, names.arg=bt$year)
+  cor.test(x=data$annee, y=data$conj)
+}
+
+sdraw(data.chi.trans)
+sdrawIMPF(data.chi.trans)
+sdrawFUT(data.chi.trans)
+sdrawconj(data.chi.trans)
+
+scdraw <- function(data, ctgy) {
+  plot(x=data$annee, y=data[,ctgy])
+  # library(lazyeval)
+  print(aggregate(formula(paste(c('IMPF ~ ', ctgy), sep="")), data, mean))
+  fld <<- ctgy
+  bt <- ddply(data, .(year), summarize, 
+              mean=mean(get(fld)), 
+              sd=sd(get(fld))
+              )
+  barplot(bt$mean, names.arg=bt$year)
+  cor.test(x=data$annee, y=data[,ctgy])
+}
+scdraw(data.chi.long, 'sommetot')
+scdraw(data.chi.trans, 'conj')
+
+#library('openxlsx')
+setwd("/brainstorm/evalang/GroupeDecomplexes")
+setwd("/brainstorm/evalang/tcof")
+dataperceo <- read.csv("stat-ttg_perceo_clan.csv") # à modifier la création
+datastanza <- read.csv("stat-conllu_clan.csv") # à modifier la création
+
 dataperceo1 <- update1(dataperceo)
 datastanza1 <- update1(datastanza)
 
@@ -54,29 +126,12 @@ datastanza2 <- update12(datastanza1)
 write.csv(dataperceo2, file="nx-dataperceo-percent.csv")
 write.csv(datastanza2, file="nx-datatanza-percent.csv")
 
-update2 <- function(data) {
-  t5 <- cbind(data, year=as.factor(trunc(data$annee)))
-  sommetot <- sapply(c(1:length(row.names(t5))), function (x) { sum(t5[x, c(12:29)]) })
-  besttot <- sapply(c(1:length(row.names(t5))), function (x) { sum(t5[x, c(12:29)]) })
-  cbind(t5, sommetot, besttot)
-}
-
 dataperceo3 <- update2(dataperceo2)
 datastanza3 <- update2(datastanza2)
 
 ## end init
   
 # statistiques
-
-stat1 <- function(data) {
-  data.adu <<- data[data['loc'] != 'CHI',]
-  str(data.adu)
-  
-  data.chi <<- data[data['loc']=='CHI',]
-  data.chi.trans <<- data.chi[data.chi['corpus']=='TRANS',]
-  str(data.chi)
-  str(data.chi.trans)
-}
 
 stat1(datastanza3)
 library(plyr)
