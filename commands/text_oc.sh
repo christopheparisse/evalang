@@ -1,0 +1,1 @@
+python3 ../commands/stanza/text_oral_complex.py $1  $(dirname $1)/../clan/$(basename $1 .tei_corpo.txt).cha

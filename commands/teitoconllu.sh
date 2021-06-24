@@ -6,7 +6,7 @@ rm -rf text
 mkdir text
 java -cp ../commands/teicorpo.jar fr.ortolang.teicorpo.TeiCorpo ./tei_corpo_base -normalize clan -o ./text -to text -n 1 -raw -tiernames -tierxmlid
 # process text
-find ./text -name "*txt" -exec python3 ../commands/stanza/text_oral_complex.py {} \;
+find ./text -name "*txt" -exec sh ../commands/text_oc.sh {} \;
 
 rm -rf conllu
 mkdir conllu

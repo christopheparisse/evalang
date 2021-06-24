@@ -1,4 +1,4 @@
-echo "fichier	corpus	loc	utt	token	age	annee	FUT	COND	SUBJ	IMPF	prorel	conj	comme	PPRE	prep+inf	n+conj+det	n+adj	n+prep+n	cest+++que	ya+++qu	v+inf	dit+qu	plus+qu	proobj	x" > stat-$1.csv
+echo "fichier	corpus	loc	utt	token	age	annee	nbx	sumx	nbsx	sumsx	FUT	COND	SUBJ	IMPF	prorel	conj	comme	PPRE	prep+inf	n+conj+det	n+adj	n+prep+n	cest+++que	ya+++qu	v+inf	dit+qu	plus+qu	proobj	x" > stat-$1.csv
 find ./$1 -name "TDL_GP5*$3" -exec sh ../commands/tocsv_line.sh {} CHI TDL_GP5 tocsv_line_$2 \; | sort >> stat-$1.csv
 find ./$1 -name "TDL_GP6*$3" -exec sh ../commands/tocsv_line.sh {} CHI TDL_GP6 tocsv_line_$2 \; | sort >> stat-$1.csv
 find ./$1 -name "TDL_GP8*$3" -exec sh ../commands/tocsv_line.sh {} CHI TDL_GP8 tocsv_line_$2 \; | sort >> stat-$1.csv

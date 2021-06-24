@@ -12,8 +12,8 @@ vers un format conllu en 13 colonnes inspiré des travaux d'ORFEO
 import sys
 import os
 
-if len(sys.argv) != 2:
-    print("Must have one argument, the name of the text file to process.")
+if len(sys.argv) != 3:
+    print("Must have two argument, the name of the text file to process and the name of the original chat file.")
     exit(1)
 
 import stanza 
@@ -22,16 +22,26 @@ from stanza.utils.conll import CoNLL
 pack = "gsd" # choix du modele : gsd, partut, sequoia, spoken
 input_file = sys.argv[1]
 pth, ext = os.path.splitext(input_file)
+input_file_clan = sys.argv[2]
 ouput_file_conll = pth + "-" + pack + ".conllu"
 ouput_file_clan = pth + "-" + pack + ".conllu.cex"
 print('From ' + input_file + ' to ' + ouput_file_conll + ' and ' + ouput_file_clan)
 
 with open(input_file, "r", encoding="utf-8") as in_file,\
+    open(input_file_clan, "r", encoding="utf-8") as in_clan,\
     open(ouput_file_conll, "w", encoding="utf-8") as out_conll,\
     open(ouput_file_clan, "w", encoding="utf-8") as out_clan : 
+    # get headers from the clan input file
     # initialize the output of the clan output file
-    out_clan.write("@Begin\n")
-    out_clan.write(f"@Comment:\tFichier généré après analyse Stanza à partir du fichier {input_file}\n")
+    for line in in_clan.readlines():
+        linetype = line[0:1]
+        if (linetype == "@"):
+            out_clan.write(line)
+        else:
+            break
+    # out_clan.write("@Begin\n")
+    # out_clan.write(f"@Comment:\tFichier généré après analyse Stanza à partir du fichier {input_file}\n")
+
     # télécharge le package si besoin (gsd, partut, sequoia, spoken)
     stanza.download("fr", package=pack) 
     # invoque le Pipeline selon le modele souhaité 
@@ -84,4 +94,4 @@ with open(input_file, "r", encoding="utf-8") as in_file,\
             out_conll.write(f"#sent_id = {speaker} {xmlid}\n")
             out_conll.write(f"#text = {text_input}\n")
             out_conll.write("".join(["\t".join([e for e in sent])+"\t"+"_"+"\t"+"_"+"\t"+speaker+'\n' for sent in sentence])+"\n")
-    out_clan.write("@End\n")
+    out_clan.write("@End")

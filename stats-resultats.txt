@@ -1,0 +1,60 @@
+> aggregate(sommetot ~ year, data.chi, mean)
+   year  sommetot
+1     1   8.00000
+2     2  46.38889
+3     3  86.37500
+4     4  86.50000
+5     5 105.07609
+6     6 102.64000
+7     7 165.42857
+8     8 176.66667
+9     9 152.70000
+10   10 118.15385
+11   11 146.33333
+12   20 179.00000
+
+voir rapport sommetot year.pdf
+
+> cor.test(x=data.chi$annee, y=data.chi$sommetot)
+
+   Pearson's product-moment correlation
+
+data:  data.chi$annee and data.chi$sommetot
+t = 5.2603, df = 360, p-value = 2.473e-07
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.1687380 0.3603197
+sample estimates:
+      cor 
+0.2671668 
+
+> aggregate(besttot ~ year, data.chi, mean)
+   year   besttot
+1     1   8.00000
+2     2  46.38889
+3     3  86.37500
+4     4  86.50000
+5     5 105.07609
+6     6 102.64000
+7     7 165.42857
+8     8 176.66667
+9     9 152.70000
+10   10 118.15385
+11   11 146.33333
+12   20 179.00000
+> 
+
+
+
+> cor.test(x=data.chi$annee, y=data.chi$besttot)
+
+   Pearson's product-moment correlation
+
+data:  data.chi$annee and data.chi$besttot
+t = 5.2603, df = 360, p-value = 2.473e-07
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.1687380 0.3603197
+sample estimates:
+      cor 
+0.2671668 
