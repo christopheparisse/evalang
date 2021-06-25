@@ -87,6 +87,8 @@ data.chi[which(is.nan(data.chi$dsx)), 'dsx'] <- 1.0
 #library('openxlsx')
 setwd("/brainstorm/evalang/GroupeDecomplexes")
 setwd("/brainstorm/evalang/tcof")
+# attention trans, long et phi ne fonctionnent qu'avec tcof
+
 dataperceo <- read.csv("stat-ttg_perceo_clan.csv") # à modifier la création
 datastanza <- read.csv("stat-conllu_clan.csv") # à modifier la création
 
@@ -110,6 +112,23 @@ stat1(dataperceo3)
 stat1(datastanza3)
 library(plyr)
 
+scdraw(data.chi, 'sommetot')
+scdraw(data.chi, 'besttot')
+scdraw(data.chi, 'FUT')
+scdraw(data.chi, 'IMPF')
+scdraw(data.chi, 'SUBJ')
+scdraw(data.chi, 'CONJ')
+scdraw(data.chi, 'prorel')
+scdraw(data.chi, 'conj')
+scdraw(data.chi, 'prep.inf')
+scdraw(data.chi, 'n.conj.det')
+scdraw(data.chi, 'n.adj')
+scdraw(data.chi, 'n.prep.n')
+
+scdraw(data.chi, 'dx')
+scdraw(data.chi, 'dsx')
+
+# tcof seulement
 scdraw(data.chi.long, 'sommetot')
 scdraw(data.chi.long, 'besttot')
 scdraw(data.chi.long, 'FUT')
@@ -136,25 +155,8 @@ scdraw(data.chi.trans, 'n.conj.det')
 scdraw(data.chi.trans, 'n.adj')
 scdraw(data.chi.trans, 'n.prep.n')
 
-scdraw(data.chi, 'sommetot')
-scdraw(data.chi, 'besttot')
-scdraw(data.chi, 'FUT')
-scdraw(data.chi, 'IMPF')
-scdraw(data.chi, 'SUBJ')
-scdraw(data.chi, 'CONJ')
-scdraw(data.chi, 'prorel')
-scdraw(data.chi, 'conj')
-scdraw(data.chi, 'prep.inf')
-scdraw(data.chi, 'n.conj.det')
-scdraw(data.chi, 'n.adj')
-scdraw(data.chi, 'n.prep.n')
-
 scdraw(data.chi.long, 'dx')
 scdraw(data.chi.long, 'dsx')
 
 scdraw(data.chi.trans, 'dx')
 scdraw(data.chi.trans, 'dsx')
-
-scdraw(data.chi, 'dx')
-scdraw(data.chi, 'dsx')
-
