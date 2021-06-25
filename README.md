@@ -78,6 +78,7 @@ Les 10 ou 20 énoncés les plus longs ont été extraits de tous les fichiers.
 Dans le dossier adultes, ce calcul n'a été fait que pour les adultes, pour les autres dossiers il a été fait séparément pour les enfants et pour les adultes.
 Les fichiers en question ont une extension .txt (dont ils peuvent être visualisés par n'importe quel éditeur).
 Leur nom se termine par .[nombre]pl.txt (par exemple .20pl.txt)
+Correction pour supprimer les lignes secondaires.
 
 sh ../commands/callnth.sh 20
 
