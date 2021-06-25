@@ -39,7 +39,7 @@ update12 <- function(data2) {
   }
   
   data3 <- as.data.frame(t(sapply(c(1:length(data2[,1])), percentrow)))
-  colnames(data3) <- colnames(data2)[12:29]
+  #colnames(data3) <- colnames(data2)[12:29]
   rownames(data3) <- rownames(data2)
   
   cbind(data2, data3)
@@ -63,9 +63,9 @@ stat1 <- function(data) {
   
   data.chi <<- data[data['loc']=='CHI',]
 
-#  data.chi.trans <<- data.chi[data.chi['corpus']=='TRANS',]
-#  data.chi.long <<- data.chi[data.chi['corpus']=='LONG',]
-#  data.chi.phi <<- data.chi[data.chi['corpus']=='PHI',]
+  data.chi.trans <<- data.chi[data.chi['corpus']=='TRANS',]
+  data.chi.long <<- data.chi[data.chi['corpus']=='LONG',]
+  data.chi.phi <<- data.chi[data.chi['corpus']=='PHI',]
   #str(data.chi)
   #str(data.chi.trans)
 }
