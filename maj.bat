@@ -1,3 +1,3 @@
 git add .
-git commit -m "Réorganisation des resultats et resultats pour le corpus decomplexe"
+git commit -m "Reorganisation des resultats et resultats pour le corpus decomplexe"
 git push origin
