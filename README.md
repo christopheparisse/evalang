@@ -48,7 +48,7 @@ Conversions des fichiers *conllu* au format CLAN pour permettre la recherche d'�
 ### Autres répertoires
 Tous les autres répertoires non mentionnés ci-dessus sont des répertoires contenant des fichiers intermédiaires utilisés pour les calculs ou transformations
 
-# Commandes et traitements
+# ESSAI : Commandes
 Les commandes de traitement de l'ensemble des répertoires se font dans le sous-système Ubuntu sous Windows pour bénéficier de la puissance du shell et des commandes unix. A peu près la même chose peut être réalisée avec PowerShell sous Windows (ce sera pour une seconde version).
 
 ## Commandes à lancer
