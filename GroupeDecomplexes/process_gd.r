@@ -15,9 +15,9 @@ update1 <- function(data) {
   data2$annee[data2$annee == 'missing'] = '40'
   data2$annee <- as.numeric(data2$annee)
 
-  #data2$plus.qu <- as.character(data2$plus.qu)
-  #data2$plus.qu[data2$plus.qu == 'x'] = '0'
-  #data2$plus.qu <- as.numeric(data2$plus.qu)
+  data2$plus.qu <- as.character(data2$plus.qu)
+  data2$plus.qu[data2$plus.qu == 'x'] = '0'
+  data2$plus.qu <- as.numeric(data2$plus.qu)
   
   return(data2)
 }
@@ -58,10 +58,10 @@ stat1 <- function(data) {
   data$dsx = data$sumsx / as.numeric(data$nbsx)
   data[which(is.nan(data$dsx)), 'dsx'] <- 1.0
   
-  data.adu <<- data[data['loc'] != 'CHI',]
+  data.adu <<- data[data['loc'] != ' CHI ',]
   #str(data.adu)
   
-  data.chi <<- data[data['loc']=='CHI',]
+  data.chi <<- data[data['loc']==' CHI ',]
 
 #  data.chi.trans <<- data.chi[data.chi['corpus']=='TRANS',]
 #  data.chi.long <<- data.chi[data.chi['corpus']=='LONG',]
@@ -91,15 +91,15 @@ scdraw <- function(data, ctgy, varbl="") {
 
 
 #library('openxlsx')
-###setwd("/brainstorm/evalang/GroupeDecomplexes")
-setwd("/brainstorm/evalang/tcof")
+setwd("/brainstorm/evalang/GroupeDecomplexes")
+####setwd("/brainstorm/evalang/tcof")
 # attention trans, long et phi ne fonctionnent qu'avec tcof
 
-dataperceo <- read.csv("stat-ttg_perceo_clan.csv") # à modifier la création
-datastanza <- read.csv("stat-conllu_clan.csv") # à modifier la création
+#dataperceo <- read.csv("stat-ttg_perceo_clan.csv") # à modifier la création
+#datastanza <- read.csv("stat-conllu_clan.csv") # à modifier la création
 
-#dataperceo <- read.delim("stat-ttg_perceo_clan.csv") # à modifier la création
-#datastanza <- read.delim("stat-conllu_clan.csv") # à modifier la création
+dataperceo <- read.delim("stat-ttg_perceo_clan.csv") # à modifier la création
+datastanza <- read.delim("stat-conllu_clan.csv") # à modifier la création
 
 dataperceo1 <- update1(dataperceo)
 datastanza1 <- update1(datastanza)
@@ -119,6 +119,11 @@ datastanza3 <- update2(datastanza2)
 
 stat1(dataperceo3)
 stat1(datastanza3)
+
+data.chi.TDL <- data.chi[data.chi['corpus']==' TDL_GP5 ' | data.chi['corpus']==' TDL_GP6 ' | data.chi['corpus']==' TDL_GP8 ',]
+data.chi.TV <- data.chi[data.chi['corpus']!=' TDL_GP5 ' & data.chi['corpus']!=' TDL_GP6 ' & data.chi['corpus']!=' TDL_GP8 ',]
+
+
 library(plyr)
 
 scdraw(data.chi, 'sommetot')
@@ -136,6 +141,9 @@ scdraw(data.chi, 'n.prep.n')
 
 scdraw(data.chi, 'dx')
 scdraw(data.chi, 'dsx')
+
+scdraw(data.chi.TDL, 'sommetot')
+scdraw(data.chi.TV, 'sommetot')
 
 # tcof seulement
 scdraw(data.chi.long, 'sommetot')
