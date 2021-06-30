@@ -1,5 +1,5 @@
 echo "génère l'analyse en parties du discours TTG"
-java.exe -cp ../../evalang/commands/teicorpo.jar fr.ortolang.teicorpo.TeiTreeTagger -syntaxformat ref -program ../../evalang/commands/tree-tagger.exe -model ../../evalang/commands/french-spoken.par ./tei_corpo_base -target perceo | tee erreurs_ttg_perceo.log
+java -cp ../../evalang/commands/teicorpo.jar fr.ortolang.teicorpo.TeiTreeTagger -syntaxformat ref -program ../../evalang/commands/tree-tagger.exe -model ../../evalang/commands/french-spoken.par ./tei_corpo_base -target perceo | tee erreurs_ttg_perceo.log
 
 # move the results to a new directory
 rm -rf ttg_perceo
