@@ -58,19 +58,19 @@ Les commandes de traitement de l'ensemble des répertoires se font dans le sous-
 sh fullbuild.sh
 
 ### Clan vers Tei_corpo_base
-sh ../commands/clantotei.sh
+sh ../../evalang/commands/clantotei.sh
 
 ### Tei_corpo vers Tei_corpo_base
-sh ../commands/teicorpototei.sh
+sh ../../evalang/commands/teicorpototei.sh
 
 ### Tei_corpo_base vers ttg_perceo
-sh ../commands/teibasetottg.sh
+sh ../../evalang/commands/teibasetottg.sh
 
 ### Ttg_perceo vers ttg_perceo_clan
-sh ../commands/ttgtoclan.sh
+sh ../../evalang/commands/ttgtoclan.sh
 
 ### Tei_corpo_base vers conllu et conllu_clan
-sh ../commands/teitoconllu.sh
+sh ../../evalang/commands/teitoconllu.sh
 
 # Commentaire et essai
 
@@ -81,13 +81,13 @@ Les fichiers en question ont une extension .txt (dont ils peuvent être visualis
 Leur nom se termine par .[nombre]pl.txt (par exemple .20pl.txt)
 Correction pour supprimer les lignes secondaires.
 
-sh ../commands/callnth.sh 20
+sh ../../evalang/commands/callnth.sh 20
 
 Les fichiers figurent dans les dossiers appelés **lg20**
 
 ## Utilisation des analyses syntaxiques pour générer fichier CSV
 
-sh ../commands/process.sh
+sh ../../evalang/commands/process.sh
 
 ## Résultats statistiques
 Ils sont dans chaque répertoire sous forme de fichier .csv (un pour perceo et un pour stanza)

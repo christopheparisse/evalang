@@ -1,6 +1,6 @@
-sh ../commands/teicorpototei.sh
-sh ../commands/teibasetottg.sh
-sh ../commands/ttgtoclan.sh
-sh ../commands/teitoconllu.sh
+sh ../../evalang/commands/teicorpototei.sh
+sh ../../evalang/commands/teibasetottg.sh
+sh ../../evalang/commands/ttgtoclan.sh
+sh ../../evalang/commands/teitoconllu.sh
 
-sh ../commands/process.sh
+sh ../../evalang/commands/process.sh
