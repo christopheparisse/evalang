@@ -30,7 +30,7 @@ with open(input_file, "r", encoding="utf-8") as f,\
     # télécharge le package si besoin (gsd, partut, sequoia, spoken)
     stanza.download("fr", package=pack) 
     # invoque le Pipeline selon le modele souhaité 
-    nlp = stanza.Pipeline("fr", package=pack)
+    nlp = stanza.Pipeline("fr", package=pack, use_gpu=False)
     for line in f.readlines():
         # récupérer les informations des colonnes 1 et 2 du fichier de base
         speaker = line.split()[0][1:-1]
