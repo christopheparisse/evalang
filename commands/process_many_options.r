@@ -39,7 +39,7 @@ update12 <- function(data2) {
   }
   
   data3 <- as.data.frame(t(sapply(c(1:length(data2[,1])), percentrow)))
-  colnames(data3) <- colnames(data2)[12:29]
+  colnames(data3) <- paste("pc-", colnames(data2)[12:29], "")
   rownames(data3) <- rownames(data2)
   
   cbind(data2, data3)
@@ -95,11 +95,11 @@ scdraw <- function(data, ctgy, varbl="") {
 setwd("/brainstorm/evalang/tcof")
 # attention trans, long et phi ne fonctionnent qu'avec tcof
 
-dataperceo <- read.csv("stat-ttg_perceo_clan.csv") # à modifier la création
-datastanza <- read.csv("stat-conllu_clan.csv") # à modifier la création
+dataperceo <- read.csv("stat-ttg_perceo_clan.csv") # ? modifier la cr?ation
+datastanza <- read.csv("stat-conllu_clan.csv") # ? modifier la cr?ation
 
-#dataperceo <- read.delim("stat-ttg_perceo_clan.csv") # à modifier la création
-#datastanza <- read.delim("stat-conllu_clan.csv") # à modifier la création
+#dataperceo <- read.delim("stat-ttg_perceo_clan.csv") # ? modifier la cr?ation
+#datastanza <- read.delim("stat-conllu_clan.csv") # ? modifier la cr?ation
 
 dataperceo1 <- update1(dataperceo)
 datastanza1 <- update1(datastanza)
