@@ -6,7 +6,7 @@ if [ -s @@1c ]
 then
     echo "@Participants:\tCHI Target_Child" > @@1h
     kwal +t@ID +s"*CHI\|*" -o* -o@ -o% +d $FN.cha >> @@1h
-    cat @@1h @@1c > ../LG20/$FN.$2pl-CHI.cha
+    cat @@1h @@1c > ../$3_lg$2/$FN.$2pl-CHI.cha
     longtier -f @@1 | awk -f ../../evalang/commands/lgln.awk | sort -r | head -$2 | awk -f ../../evalang/commands/totext3.awk > $FN.$2pl-CHI.txt
 else
     rm -f @@1c
@@ -18,7 +18,7 @@ if [ -s @@2c ]
 then
     echo "@Participants:\tADU Target_Adult" > @@2h
     echo "@ID:	fra|change_corpus_later|ADU|40;0.0||||Adult|||" >> @@2h
-    cat @@2h @@2c > ../LG20/$FN.$2pl-ADU.cha
+    cat @@2h @@2c > ../$3_lg$2/$FN.$2pl-ADU.cha
     longtier -f @@2 | awk -f ../../evalang/commands/lgln.awk | sort -r | head -$2 | awk -f ../../evalang/commands/totext3.awk > $FN.$2pl-ADU.txt
 else
     rm -f @@2c

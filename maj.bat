@@ -1,3 +1,3 @@
 git add .
-git commit -m "Deplacement corpus decomplexe"
+git commit -m "Ajout corpus colaje"
 git push origin
