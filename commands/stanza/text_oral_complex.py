@@ -90,7 +90,7 @@ with open(input_file, "r", encoding="utf-8") as in_file,\
             out_clan.write(str(trace[len(sentence)]) + "\n")
             out_clan.write("%morph:\n")
             for i in range(len(sentence)):
-                out_clan.write("\t" + sentence[i][1] + "_§_" + sentence[i][2] + "/" + sentence[i][3] + "_$_" + sentence[i][5] + "\n")
+                out_clan.write("\t" + sentence[i][1] + "_§_" + sentence[i][2] + "_&_" + sentence[i][3] + "_$_" + sentence[i][5] + "_!_" + sentence[i][7] + "\n")
             out_conll.write(f"#sent_id = {speaker} {xmlid}\n")
             out_conll.write(f"#text = {text_input}\n")
             out_conll.write("".join(["\t".join([e for e in sent])+"\t"+"_"+"\t"+"_"+"\t"+speaker+'\n' for sent in sentence])+"\n")
