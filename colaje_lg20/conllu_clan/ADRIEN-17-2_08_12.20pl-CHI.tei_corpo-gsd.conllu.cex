@@ -9,262 +9,119 @@
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 4, 5, 2, 3, 1, 0]
 %%details: 0 tout 1 tout 2 cassé 3 tout 4 tout 5 ça 2 tout 3 tout 1 ! 0
-%morph:
-	tout_§_tout_&_DET_$_Gender=Masc|Number=Sing_!_advmod
-	tout_§_tout_&_ADV_$___!_advmod
-	cassé_§_cassé_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	tout_§_tout_&_ADV_$___!_advmod
-	tout_§_tout_&_DET_$_Gender=Masc|Number=Sing_!_det
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obl
-	tout_§_tout_&_DET_$_Gender=Masc|Number=Sing_!_det
-	tout_§_tout_&_PRON_$_Gender=Masc|Number=Sing_!_obj
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	tout<DET/advmod-Masc-Sing> tout<ADV/advmod> cassé<VERB/root-Masc-Sing-Past-Part> tout<ADV/advmod> tout<DET/det-Masc-Sing> ça<PRON/obl-Masc-Sing-3-Dem> tout<DET/det-Masc-Sing> tout<PRON/obj-Masc-Sing> !<PUNCT/punct> 
 *CHI: x x x x x x x x ..
 %lng: 9
 %cpxx: 7
 %cpxdt: [0, 7, 6, 5, 4, 3, 4, 2, 1, 0]
 %%details: 0 x 7 x 6 x 5 x 4 x 3 x 4 x 2 x 1 .. 0
-%morph:
-	x_§_x_&_NUM_$___!_root
-	x_§_x_&_NUM_$___!_nmod
-	x_§_x_&_NUM_$___!_nmod
-	x_§_x_&_NUM_$___!_nmod
-	x_§_x_&_NUM_$___!_nmod
-	x_§_x_&_SYM_$___!_case
-	x_§_x_&_NUM_$___!_nmod
-	x_§_x_&_X_$___!_appos
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	x<NUM/root> x<NUM/nmod> x<NUM/nmod> x<NUM/nmod> x<NUM/nmod> x<SYM/case> x<NUM/nmod> x<X/appos> ..<PUNCT/punct> 
 *CHI: x pue x pue x pue x pue !
 %lng: 8
 %cpxx: 4
 %cpxdt: [0, 1, 3, 4, 2, 3, 2, 2, 1, 0]
 %%details: 0 x 1 pue 3 x 4 pue 2 x 3 pue 2 x 2 pue 1 ! 0
-%morph:
-	x_§_x_&_PROPN_$___!_nsubj
-	pue_§_poevoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	x_§_x_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	pue_§_poevoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	x_§_x_&_X_$___!_obj
-	pue_§_poevoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	x_§_x_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	pue_§_pue_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	x<PROPN/nsubj> pue<VERB/root-Ind-Sing-3-Pres-Fin> x<NOUN/obj-Masc-Sing> pue<VERB/conj-Ind-Sing-3-Pres-Fin> x<X/obj> pue<VERB/conj-Ind-Sing-3-Pres-Fin> x<NOUN/obj-Masc-Sing> pue<ADJ/amod-Masc-Sing> !<PUNCT/punct> 
 *CHI: ecoute la bouteille oh x fermé !
 %lng: 6
 %cpxx: 4
 %cpxdt: [0, 2, 3, 4, 3, 2, 1, 0]
 %%details: 0 ecoute 2 la 3 bouteille 4 oh 3 x 2 fermé 1 ! 0
-%morph:
-	ecoute_§_ecouter_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	bouteille_§_bouteille_&_NOUN_$_Gender=Fem|Number=Sing_!_nmod
-	oh_§_oh_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	x_§_x_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	fermé_§_fermer_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_acl
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	ecoute<VERB/root-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> bouteille<NOUN/nmod-Fem-Sing> oh<NOUN/obj-Masc-Sing> x<NOUN/nmod-Masc-Sing> fermé<VERB/acl-Masc-Sing-Past-Part> !<PUNCT/punct> 
 *CHI: x donner ça maman x donner ça !
 %lng: 7
 %cpxx: 4
 %cpxdt: [0, 1, 4, 3, 3, 2, 2, 1, 0]
 %%details: 0 x 1 donner 4 ça 3 maman 3 x 2 donner 2 ça 1 ! 0
-%morph:
-	x_§_x_&_ADP_$___!_mark
-	donner_§_donner_&_VERB_$_VerbForm=Inf_!_root
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obj
-	maman_§_maman_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	x_§_x_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	donner_§_donner_&_VERB_$_VerbForm=Inf_!_xcomp
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obj
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	x<ADP/mark> donner<VERB/root-Inf> ça<PRON/obj-Masc-Sing-3-Dem> maman<NOUN/obj-Fem-Sing> x<NOUN/nmod-Masc-Sing> donner<VERB/xcomp-Inf> ça<PRON/obj-Masc-Sing-3-Dem> !<PUNCT/punct> 
 *CHI: x trous x trous x trous !
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 3, 1, 0]
 %%details: 0 x 1 trous 2 x 3 trous 2 x 3 trous 1 ! 0
-%morph:
-	x_§_x_&_NUM_$___!_nummod
-	trous_§_trou_&_NOUN_$_Gender=Masc|Number=Plur_!_root
-	x_§_x_&_SYM_$___!_case
-	trous_§_trou_&_NOUN_$_Gender=Masc|Number=Plur_!_nmod
-	x_§_x_&_NUM_$___!_nummod
-	trous_§_trou_&_NOUN_$_Gender=Masc|Number=Plur_!_appos
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	x<NUM/nummod> trous<NOUN/root-Masc-Plur> x<SYM/case> trous<NOUN/nmod-Masc-Plur> x<NUM/nummod> trous<NOUN/appos-Masc-Plur> !<PUNCT/punct> 
 *CHI: trous x trous trous x trous !
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 2, 3, 2, 2, 3, 1, 0]
 %%details: 0 trous 2 x 3 trous 2 trous 2 x 3 trous 1 ! 0
-%morph:
-	trous_§_trou_&_NOUN_$_Gender=Masc|Number=Plur_!_root
-	x_§_x_&_NUM_$___!_nummod
-	trous_§_trou_&_NOUN_$_Gender=Masc|Number=Plur_!_nmod
-	trous_§_trou_&_NOUN_$_Gender=Masc|Number=Plur_!_nmod
-	x_§_x_&_NUM_$___!_nummod
-	trous_§_trou_&_NOUN_$_Gender=Masc|Number=Plur_!_nmod
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	trous<NOUN/root-Masc-Plur> x<NUM/nummod> trous<NOUN/nmod-Masc-Plur> trous<NOUN/nmod-Masc-Plur> x<NUM/nummod> trous<NOUN/nmod-Masc-Plur> !<PUNCT/punct> 
 *CHI: ta u ta u ta u ..
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 3, 3, 2, 3, 1, 0]
 %%details: 0 ta 1 u 3 ta 3 u 2 ta 3 u 1 .. 0
-%morph:
-	ta_§_ta_&_DET_$_Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	u_§_u_&_NOUN_$_Gender=Fem|Number=Sing_!_root
-	ta_§_ta_&_X_$___!_appos
-	u_§_u_&_X_$___!_flat:name
-	ta_§_ta_&_DET_$_Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	u_§_u_&_NOUN_$_Gender=Masc|Number=Sing_!_appos
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	ta<DET/det-Fem-Sing-Yes-Prs> u<NOUN/root-Fem-Sing> ta<X/appos> u<X/flat:name> ta<DET/det-Fem-Sing-Yes-Prs> u<NOUN/appos-Masc-Sing> ..<PUNCT/punct> 
 *CHI: ouvre papa s'il te plaît !
 %lng: 6
 %cpxx: 5
 %cpxdt: [0, 3, 2, 3, 4, 5, 1, 0]
 %%details: 0 ouvre 3 papa 2 s' 3 il 4 te 5 plaît 1 ! 0
-%morph:
-	ouvre_§_ouvrir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	papa_§_papa_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	s'_§_si_&_SCONJ_$___!_mark
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	te_§_lui_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_iobj
-	plaît_§_plaire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	ouvre<VERB/root-Ind-Sing-3-Pres-Fin> papa<NOUN/obj-Masc-Sing> s'<SCONJ/mark> il<PRON/nsubj-Masc-Sing-3-Prs> te<PRON/iobj-Sing-2-Prs> plaît<VERB/advcl-Ind-Sing-3-Pres-Fin> !<PUNCT/punct> 
 *CHI: oh oh doudou oh doudou ..
 %lng: 6
 %cpxx: 2
 %cpxdt: [0, 2, 1, 2, 2, 1, 0]
 %%details: 0 oh 2 oh 1 doudou 2 oh 2 doudou 1 .. 0
-%morph:
-	oh_§_oh_&_INTJ_$___!_root
-	oh_§_oh_&_INTJ_$___!_fixed
-	doudou_§_doudou_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	oh_§_oh_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:arg
-	doudou_§_doudou_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	oh<INTJ/root> oh<INTJ/fixed> doudou<NOUN/nmod-Masc-Sing> oh<NOUN/obl:arg-Masc-Sing> doudou<NOUN/nmod-Masc-Sing> ..<PUNCT/punct> 
 *CHI: me mettre dessus dans l'eau !
 %lng: 6
 %cpxx: 4
 %cpxdt: [0, 1, 3, 2, 3, 4, 1, 0]
 %%details: 0 me 1 mettre 3 dessus 2 dans 3 l' 4 eau 1 ! 0
-%morph:
-	me_§_se_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_expl:comp
-	mettre_§_mettre_&_VERB_$_VerbForm=Inf_!_root
-	dessus_§_dessus_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	dans_§_dans_&_ADP_$___!_case
-	l'_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	eau_§_eau_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:arg
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	me<PRON/expl:comp-Sing-1-Prs> mettre<VERB/root-Inf> dessus<NOUN/obj-Masc-Sing> dans<ADP/case> l'<DET/det-Def-Fem-Sing-Art> eau<NOUN/obl:arg-Fem-Sing> !<PUNCT/punct> 
 *CHI: me mettre dessus dans l'eau !
 %lng: 6
 %cpxx: 4
 %cpxdt: [0, 1, 3, 2, 3, 4, 1, 0]
 %%details: 0 me 1 mettre 3 dessus 2 dans 3 l' 4 eau 1 ! 0
-%morph:
-	me_§_se_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_expl:comp
-	mettre_§_mettre_&_VERB_$_VerbForm=Inf_!_root
-	dessus_§_dessus_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	dans_§_dans_&_ADP_$___!_case
-	l'_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	eau_§_eau_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:arg
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	me<PRON/expl:comp-Sing-1-Prs> mettre<VERB/root-Inf> dessus<NOUN/obj-Masc-Sing> dans<ADP/case> l'<DET/det-Def-Fem-Sing-Art> eau<NOUN/obl:arg-Fem-Sing> !<PUNCT/punct> 
 *CHI: cassé ça a cassé ça !
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 1, 0]
 %%details: 0 cassé 1 ça 2 a 3 cassé 2 ça 1 ! 0
-%morph:
-	cassé_§_cassé_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_advcl
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	cassé_§_cassé_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obj
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	cassé<VERB/advcl-Masc-Sing-Past-Part> ça<PRON/nsubj-Masc-Sing-3-Dem> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> cassé<VERB/root-Masc-Sing-Past-Part> ça<PRON/obj-Masc-Sing-3-Dem> !<PUNCT/punct> 
 *CHI: allo oui oui oui !
 %lng: 4
 %cpxx: 4
 %cpxdt: [0, 4, 3, 2, 1, 0]
 %%details: 0 allo 4 oui 3 oui 2 oui 1 ! 0
-%morph:
-	allo_§_allo_&_INTJ_$___!_root
-	oui_§_oui_&_INTJ_$___!_fixed
-	oui_§_oui_&_INTJ_$___!_conj
-	oui_§_oui_&_INTJ_$___!_conj
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	allo<INTJ/root> oui<INTJ/fixed> oui<INTJ/conj> oui<INTJ/conj> !<PUNCT/punct> 
 *CHI: x pipi x x baignoire !
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 3, 1, 0, 0]
 %%details: 0 x 1 de 2 les 3 pipi 2 x 3 x 1 baignoire 0 ! 0
-%morph:
-	x_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Plur|PronType=Art_!_det
-	pipi_§_pipi_&_NOUN_$_Gender=Masc|Number=Plur_!_root
-	x_§_x_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	x_§_x_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	baignoire_§_baignoire_&_NOUN_$_Gender=Fem|Number=Sing_!_nmod
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	x<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> pipi<NOUN/root-Masc-Plur> x<NOUN/nmod-Masc-Sing> x<NOUN/nmod-Masc-Sing> baignoire<NOUN/nmod-Fem-Sing> !<PUNCT/punct> 
 *CHI: x pipi x baignoire Adrien !
 %lng: 7
 %cpxx: 4
 %cpxdt: [0, 1, 2, 4, 3, 2, 1, 0, 0]
 %%details: 0 x 1 de 2 les 4 pipi 3 x 2 baignoire 1 Adrien 0 ! 0
-%morph:
-	x_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Plur|PronType=Art_!_det
-	pipi_§_pipi_&_NOUN_$_Gender=Masc|Number=Plur_!_root
-	x_§_x_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	baignoire_§_baignoire_&_NOUN_$_Gender=Fem|Number=Sing_!_nmod
-	Adrien_§_Adrien_&_PROPN_$___!_appos
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	x<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> pipi<NOUN/root-Masc-Plur> x<NOUN/nmod-Masc-Sing> baignoire<NOUN/nmod-Fem-Sing> Adrien<PROPN/appos> !<PUNCT/punct> 
 *CHI: x joue aux lego papa !
 %lng: 7
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 2, 1, 0, 0]
 %%details: 0 x 1 joue 2 aux 3 à 4 les 2 lego 1 papa 0 ! 0
-%morph:
-	x_§_x_&_PROPN_$___!_nsubj
-	joue_§_jouer_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	aux_§___&___$___!__
-	à_§_à_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	lego_§_lego_&_NOUN_$_Gender=Masc|Number=Plur_!_obl:arg
-	papa_§_papa_&_NOUN_$_Gender=Masc|Number=Sing_!_appos
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	x<PROPN/nsubj> joue<VERB/root-Ind-Sing-3-Pres-Fin> aux<_/_> à<ADP/case> les<DET/det-Def-Masc-Plur-Art> lego<NOUN/obl:arg-Masc-Plur> papa<NOUN/appos-Masc-Sing> !<PUNCT/punct> 
 *CHI: s'il te plaît papa !
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 1, 0]
 %%details: 0 s' 1 il 2 te 3 plaît 2 papa 1 ! 0
-%morph:
-	s'_§_si_&_SCONJ_$___!_mark
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	te_§_lui_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_iobj
-	plaît_§_plaire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	papa_§_papa_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	s'<SCONJ/mark> il<PRON/nsubj-Masc-Sing-3-Prs> te<PRON/iobj-Sing-2-Prs> plaît<VERB/root-Ind-Sing-3-Pres-Fin> papa<NOUN/obj-Masc-Sing> !<PUNCT/punct> 
 *CHI: s'il te plaît papa !
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 1, 0]
 %%details: 0 s' 1 il 2 te 3 plaît 2 papa 1 ! 0
-%morph:
-	s'_§_si_&_SCONJ_$___!_mark
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	te_§_lui_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_iobj
-	plaît_§_plaire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	papa_§_papa_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	s'<SCONJ/mark> il<PRON/nsubj-Masc-Sing-3-Prs> te<PRON/iobj-Sing-2-Prs> plaît<VERB/root-Ind-Sing-3-Pres-Fin> papa<NOUN/obj-Masc-Sing> !<PUNCT/punct> 
 *CHI: s'il te plaît papa !
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 1, 0]
 %%details: 0 s' 1 il 2 te 3 plaît 2 papa 1 ! 0
-%morph:
-	s'_§_si_&_SCONJ_$___!_mark
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	te_§_lui_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_iobj
-	plaît_§_plaire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	papa_§_papa_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	s'<SCONJ/mark> il<PRON/nsubj-Masc-Sing-3-Prs> te<PRON/iobj-Sing-2-Prs> plaît<VERB/root-Ind-Sing-3-Pres-Fin> papa<NOUN/obj-Masc-Sing> !<PUNCT/punct> 
 @End

@@ -5,143 +5,59 @@
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 3, 4, 3, 2, 3, 4, 5, 1, 0, 0]
 %%details: 0 xxx 1 de 2 les 3 très 3 très 4 longtemps 3 bah 2 moi 3 j' 4 ai 5 pas 1 été 0 . 0
-%morph:
-	xxx_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	très_§_très_&_ADV_$___!_advmod
-	très_§_très_&_ADV_$___!_advmod
-	longtemps_§_longtemps_&_ADV_$___!_advmod
-	bah_§_bah_&_INTJ_$___!_discourse
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_obl
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	été_§_être_&_AUX_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	._§_._&_PUNCT_$___!_punct
+%morph:	xxx<_/_> de<ADP/case> les<DET/det-Def-Masc-Plur-Art> très<ADV/advmod> très<ADV/advmod> longtemps<ADV/advmod> bah<INTJ/discourse> moi<PRON/obl-Sing-1> j'<PRON/nsubj-Sing-1-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> été<AUX/root-Masc-Sing-Past-Part> .<PUNCT/punct> 
 *CHI: oui c'est quand quand j'étais en vacance j'ai été.
 %lng: 12
 %cpxx: 6
 %cpxdt: [0, 1, 2, 3, 4, 3, 4, 5, 6, 2, 3, 4, 1, 0]
 %%details: 0 oui 1 c' 2 est 3 quand 4 quand 3 j' 4 étais 5 en 6 vacance 2 j' 3 ai 4 été 1 . 0
-%morph:
-	oui_§_oui_&_INTJ_$___!_root
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_fixed
-	quand_§_quand_&_SCONJ_$___!_fixed
-	quand_§_quand_&_SCONJ_$___!_fixed
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	étais_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin_!_cop
-	en_§_en_&_ADP_$___!_case
-	vacance_§_vacance_&_NOUN_$_Gender=Fem|Number=Sing_!_fixed
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	été_§_être_&_AUX_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_fixed
-	._§_._&_PUNCT_$___!_punct
+%morph:	oui<INTJ/root> c'<PRON/nsubj-Sing-3-Dem> est<AUX/fixed-Ind-Sing-3-Pres-Fin> quand<SCONJ/fixed> quand<SCONJ/fixed> j'<PRON/nsubj-Sing-1-Prs> étais<AUX/cop-Ind-Sing-1-Imp-Fin> en<ADP/case> vacance<NOUN/fixed-Fem-Sing> j'<PRON/nsubj-Sing-1-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> été<AUX/fixed-Masc-Sing-Past-Part> .<PUNCT/punct> 
 *CHI: * ans mon frère et ma soeur * ans.
 %lng: 9
 %cpxx: 4
 %cpxdt: [0, 1, 1, 2, 2, 3, 4, 2, 3, 1, 0]
 %%details: 0 * 1 ans 1 mon 2 frère 2 et 3 ma 4 soeur 2 * 3 ans 1 . 0
-%morph:
-	*_§_*_&_SYM_$___!_nummod
-	ans_§_an_&_NOUN_$_Gender=Masc|Number=Plur_!_root
-	mon_§_son_&_DET_$_Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	frère_§_frère_&_NOUN_$_Gender=Masc|Number=Sing_!_appos
-	et_§_et_&_CCONJ_$___!_cc
-	ma_§_son_&_DET_$_Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	soeur_§_soeur_&_NOUN_$_Gender=Fem|Number=Sing_!_conj
-	*_§_*_&_SYM_$___!_nmod
-	ans_§_an_&_NOUN_$_Gender=Masc|Number=Plur_!_orphan
-	._§_._&_PUNCT_$___!_punct
+%morph:	*<SYM/nummod> ans<NOUN/root-Masc-Plur> mon<DET/det-Masc-Sing-Yes-Prs> frère<NOUN/appos-Masc-Sing> et<CCONJ/cc> ma<DET/det-Fem-Sing-Yes-Prs> soeur<NOUN/conj-Fem-Sing> *<SYM/nmod> ans<NOUN/orphan-Masc-Plur> .<PUNCT/punct> 
 *CHI: ça fait longtemps que je n'ai pas regardé.
 %lng: 9
 %cpxx: 7
 %cpxdt: [0, 1, 3, 2, 3, 4, 5, 6, 7, 1, 0]
 %%details: 0 ça 1 fait 3 longtemps 2 que 3 je 4 n' 5 ai 6 pas 7 regardé 1 . 0
-%morph:
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	longtemps_§_longtemps_&_ADV_$___!_advmod
-	que_§_que_&_SCONJ_$___!_mark
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	n'_§_ne_&_ADV_$_Polarity=Neg_!_advmod
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	regardé_§_regarder_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_ccomp
-	._§_._&_PUNCT_$___!_punct
+%morph:	ça<PRON/nsubj-Masc-Sing-3-Dem> fait<VERB/root-Ind-Sing-3-Pres-Fin> longtemps<ADV/advmod> que<SCONJ/mark> je<PRON/nsubj-Sing-1-Prs> n'<ADV/advmod-Neg> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> regardé<VERB/ccomp-Masc-Sing-Past-Part> .<PUNCT/punct> 
 *CHI: parce que il n'y avait pas d'école.
 %lng: 9
 %cpxx: 4
 %cpxdt: [0, 2, 1, 2, 3, 4, 3, 2, 3, 1, 0]
 %%details: 0 parce 2 que 1 il 2 n' 3 y 4 avait 3 pas 2 d' 3 école 1 . 0
-%morph:
-	parce_§_parce_&_ADV_$___!_mark
-	que_§_que_&_SCONJ_$___!_fixed
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_expl:subj
-	n'_§_ne_&_ADV_$_Polarity=Neg_!_advmod
-	y_§_y_&_PRON_$___!_expl:comp
-	avait_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	d'_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Sing|PronType=Art_!_det
-	école_§_école_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	parce<ADV/mark> que<SCONJ/fixed> il<PRON/expl:subj-Masc-Sing-3-Prs> n'<ADV/advmod-Neg> y<PRON/expl:comp> avait<VERB/root-Ind-Sing-3-Imp-Fin> pas<ADV/advmod-Neg> d'<DET/det-Ind-Fem-Sing-Art> école<NOUN/obj-Fem-Sing> .<PUNCT/punct> 
 *CHI: et et j'ai pas regardé ce matin.
 %lng: 8
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 4, 5, 2, 3, 1, 0]
 %%details: 0 et 1 et 2 j' 3 ai 4 pas 5 regardé 2 ce 3 matin 1 . 0
-%morph:
-	et_§_et_&_CCONJ_$___!_cc
-	et_§_et_&_CCONJ_$___!_cc
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	regardé_§_regarder_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	ce_§_ce_&_DET_$_Gender=Masc|Number=Sing|PronType=Dem_!_det
-	matin_§_matin_&_NOUN_$_Gender=Masc|Number=Sing_!_obl
-	._§_._&_PUNCT_$___!_punct
+%morph:	et<CCONJ/cc> et<CCONJ/cc> j'<PRON/nsubj-Sing-1-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> regardé<VERB/root-Masc-Sing-Past-Part> ce<DET/det-Masc-Sing-Dem> matin<NOUN/obl-Masc-Sing> .<PUNCT/punct> 
 *CHI: un frère et une soeur.
 %lng: 5
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 1, 0]
 %%details: 0 un 1 frère 2 et 3 une 4 soeur 1 . 0
-%morph:
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	frère_§_frère_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	et_§_et_&_CCONJ_$___!_cc
-	une_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Sing|PronType=Art_!_det
-	soeur_§_soeur_&_NOUN_$_Gender=Fem|Number=Sing_!_conj
-	._§_._&_PUNCT_$___!_punct
+%morph:	un<DET/det-Ind-Masc-Sing-Art> frère<NOUN/root-Masc-Sing> et<CCONJ/cc> une<DET/det-Ind-Fem-Sing-Art> soeur<NOUN/conj-Fem-Sing> .<PUNCT/punct> 
 *CHI: je me rappelle plus.
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 2, 2, 1, 0]
 %%details: 0 je 1 me 2 rappelle 2 plus 1 . 0
-%morph:
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	me_§_se_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_obj
-	rappelle_§_rappeler_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	plus_§_plus_&_ADV_$___!_advmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	je<PRON/nsubj-Sing-1-Prs> me<PRON/obj-Sing-1-Prs> rappelle<VERB/root-Ind-Sing-1-Pres-Fin> plus<ADV/advmod> .<PUNCT/punct> 
 *CHI: un petit chien.
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 0]
 %%details: 0 un 1 petit 2 chien 1 . 0
-%morph:
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	petit_§_petit_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	chien_§_chien_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	._§_._&_PUNCT_$___!_punct
+%morph:	un<DET/det-Ind-Masc-Sing-Art> petit<ADJ/amod-Masc-Sing> chien<NOUN/root-Masc-Sing> .<PUNCT/punct> 
 *CHI: un deux deux.
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 0]
 %%details: 0 un 1 deux 2 deux 1 . 0
-%morph:
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	deux_§_deux_&_NUM_$___!_nummod
-	deux_§_deux_&_NUM_$___!_root
-	._§_._&_PUNCT_$___!_punct
+%morph:	un<DET/det-Ind-Masc-Sing-Art> deux<NUM/nummod> deux<NUM/root> .<PUNCT/punct> 
 @End

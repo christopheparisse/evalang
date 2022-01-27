@@ -5,31 +5,17 @@
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 0]
 %%details: 0 si 1 euh 2 euh 1 si. 0
-%morph:
-	si_§_si_&_SCONJ_$___!_mark
-	euh_§_euh_&_INTJ_$___!_root
-	euh_§_euh_&_INTJ_$___!_fixed
-	si._§_si._&_PUNCT_$___!_punct
+%morph:	si<SCONJ/mark> euh<INTJ/root> euh<INTJ/fixed> si.<PUNCT/punct> 
 *CHI: j'ai trop chaud.
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 0]
 %%details: 0 j' 1 ai 2 trop 3 chaud 1 . 0
-%morph:
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	trop_§_trop_&_ADV_$___!_advmod
-	chaud_§_chaud_&_ADJ_$_Gender=Masc|Number=Sing_!_root
-	._§_._&_PUNCT_$___!_punct
+%morph:	j'<PRON/nsubj-Sing-1-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> trop<ADV/advmod> chaud<ADJ/root-Masc-Sing> .<PUNCT/punct> 
 *CHI: j'ai pas envie.
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 1, 3, 2, 1, 0]
 %%details: 0 j' 1 ai 3 pas 2 envie 1 . 0
-%morph:
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	ai_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	envie_§_envie_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	j'<PRON/nsubj-Sing-1-Prs> ai<VERB/root-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> envie<NOUN/obj-Fem-Sing> .<PUNCT/punct> 
 @End

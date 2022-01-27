@@ -5,163 +5,59 @@
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 2, 3, 4, 5, 3, 4, 2, 3, 2, 3, 1, 0]
 %%details: 0 si 1 ils 2 donnent 3 aussi 2 à 3 manger 4 des 5 é- 3 des 4 gé- 2 des 3 épluchures 2 de 3 carottes 1 . 0
-%morph:
-	si_§_si_&_SCONJ_$___!_mark
-	ils_§_il_&_PRON_$_Gender=Masc|Number=Plur|Person=3|PronType=Prs_!_nsubj
-	donnent_§_donner_&_VERB_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	aussi_§_aussi_&_ADV_$___!_advmod
-	à_§_à_&_ADP_$___!_mark
-	manger_§_manger_&_VERB_$_VerbForm=Inf_!_xcomp
-	des_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Plur|PronType=Art_!_det
-	é-_§_é-_&_NOUN_$_Gender=Masc|Number=Plur_!_obj
-	des_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Plur|PronType=Art_!_det
-	gé-_§_gé-_&_NOUN_$_Gender=Masc|Number=Plur_!_obl
-	des_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Plur|PronType=Art_!_det
-	épluchures_§_épluchure_&_NOUN_$_Gender=Fem|Number=Plur_!_obj
-	de_§_de_&_ADP_$___!_case
-	carottes_§_carotte_&_NOUN_$_Gender=Fem|Number=Plur_!_nmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	si<SCONJ/mark> ils<PRON/nsubj-Masc-Plur-3-Prs> donnent<VERB/root-Ind-Plur-3-Pres-Fin> aussi<ADV/advmod> à<ADP/mark> manger<VERB/xcomp-Inf> des<DET/det-Ind-Masc-Plur-Art> é-<NOUN/obj-Masc-Plur> des<DET/det-Ind-Masc-Plur-Art> gé-<NOUN/obl-Masc-Plur> des<DET/det-Ind-Fem-Plur-Art> épluchures<NOUN/obj-Fem-Plur> de<ADP/case> carottes<NOUN/nmod-Fem-Plur> .<PUNCT/punct> 
 *ADU: il nettoie le bac la caisse de Monsieur et Madame Tortue ?
 %lng: 11
 %cpxx: 4
 %cpxdt: [0, 1, 3, 4, 2, 3, 2, 3, 2, 3, 2, 1, 0]
 %%details: 0 il 1 nettoie 3 le 4 bac 2 la 3 caisse 2 de 3 Monsieur 2 et 3 Madame 2 Tortue 1 ? 0
-%morph:
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	nettoie_§_nettoyer_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	bac_§_bac_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	caisse_§_caisse_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	de_§_de_&_ADP_$___!_case
-	Monsieur_§_monsieur_&_PROPN_$___!_nmod
-	et_§_et_&_CCONJ_$___!_cc
-	Madame_§_madame_&_NOUN_$_Gender=Fem|Number=Sing_!_conj
-	Tortue_§_Tortue_&_PROPN_$___!_flat:name
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	il<PRON/nsubj-Masc-Sing-3-Prs> nettoie<VERB/root-Ind-Sing-3-Pres-Fin> le<DET/det-Def-Masc-Sing-Art> bac<NOUN/obj-Masc-Sing> la<DET/det-Def-Fem-Sing-Art> caisse<NOUN/obj-Fem-Sing> de<ADP/case> Monsieur<PROPN/nmod> et<CCONJ/cc> Madame<NOUN/conj-Fem-Sing> Tortue<PROPN/flat:name> ?<PUNCT/punct> 
 *ADU: les deux tortues sont dans la caisse dans la cour ?
 %lng: 10
 %cpxx: 5
 %cpxdt: [0, 1, 2, 1, 2, 3, 4, 3, 4, 5, 1, 0]
 %%details: 0 les 1 deux 2 tortues 1 sont 2 dans 3 la 4 caisse 3 dans 4 la 5 cour 1 ? 0
-%morph:
-	les_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Plur|PronType=Art_!_det
-	deux_§_deux_&_NUM_$___!_nummod
-	tortues_§_tortue_&_NOUN_$_Gender=Fem|Number=Plur_!_nsubj
-	sont_§_être_&_AUX_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	dans_§_dans_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	caisse_§_caisse_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:mod
-	dans_§_dans_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	cour_§_cour_&_NOUN_$_Gender=Fem|Number=Sing_!_root
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	les<DET/det-Def-Fem-Plur-Art> deux<NUM/nummod> tortues<NOUN/nsubj-Fem-Plur> sont<AUX/cop-Ind-Plur-3-Pres-Fin> dans<ADP/case> la<DET/det-Def-Fem-Sing-Art> caisse<NOUN/obl:mod-Fem-Sing> dans<ADP/case> la<DET/det-Def-Fem-Sing-Art> cour<NOUN/root-Fem-Sing> ?<PUNCT/punct> 
 *ADU: pourquoi est-ce qu'ils leur demandent un bout de ?
 %lng: 10
 %cpxx: 4
 %cpxdt: [0, 3, 2, 1, 2, 3, 4, 2, 3, 2, 1, 0]
 %%details: 0 pourquoi 3 est 2 -ce 1 qu' 2 ils 3 leur 4 demandent 2 un 3 bout 2 de 1 ? 0
-%morph:
-	pourquoi_§_pourquoi_&_ADV_$___!_root
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	-ce_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_expl:subj
-	qu'_§_que_&_SCONJ_$___!_mark
-	ils_§_il_&_PRON_$_Gender=Masc|Number=Plur|Person=3|PronType=Prs_!_nsubj
-	leur_§_lui_&_PRON_$_Number=Plur|Person=3|PronType=Prs_!_iobj
-	demandent_§_demander_&_VERB_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_advcl:cleft
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	bout_§_bout_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	de_§_de_&_ADP_$___!_advmod
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	pourquoi<ADV/root> est<AUX/cop-Ind-Sing-3-Pres-Fin> -ce<PRON/expl:subj-Sing-3-Dem> qu'<SCONJ/mark> ils<PRON/nsubj-Masc-Plur-3-Prs> leur<PRON/iobj-Plur-3-Prs> demandent<VERB/advcl:cleft-Ind-Plur-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> bout<NOUN/obj-Masc-Sing> de<ADP/advmod> ?<PUNCT/punct> 
 *ADU: oui Monsieur et Madame tortue ont rentrés leurs têtes.
 %lng: 9
 %cpxx: 4
 %cpxdt: [0, 1, 3, 4, 3, 2, 3, 2, 3, 1, 0]
 %%details: 0 oui 1 Monsieur 3 et 4 Madame 3 tortue 2 ont 3 rentrés 2 leurs 3 têtes 1 . 0
-%morph:
-	oui_§_oui_&_INTJ_$___!_discourse
-	Monsieur_§_monsieur_&_PROPN_$___!_nsubj
-	et_§_et_&_CCONJ_$___!_cc
-	Madame_§_madame_&_NOUN_$_Gender=Fem|Number=Sing_!_conj
-	tortue_§_tortu_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	ont_§_avoir_&_AUX_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	rentrés_§_rentrer_&_VERB_$_Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part_!_root
-	leurs_§_son_&_DET_$_Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs_!_det
-	têtes_§_tête_&_NOUN_$_Gender=Fem|Number=Plur_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	oui<INTJ/discourse> Monsieur<PROPN/nsubj> et<CCONJ/cc> Madame<NOUN/conj-Fem-Sing> tortue<ADJ/amod-Fem-Sing> ont<AUX/aux:tense-Ind-Plur-3-Pres-Fin> rentrés<VERB/root-Masc-Plur-Past-Part> leurs<DET/det-Fem-Plur-Yes-Prs> têtes<NOUN/obj-Fem-Plur> .<PUNCT/punct> 
 *ADU: ils sont allés rejoindre leurs amis Anaïs et Karim.
 %lng: 9
 %cpxx: 3
 %cpxdt: [0, 1, 2, 2, 2, 3, 2, 2, 3, 1, 0]
 %%details: 0 ils 1 sont 2 allés 2 rejoindre 2 leurs 3 amis 2 Anaïs 2 et 3 Karim 1 . 0
-%morph:
-	ils_§_il_&_PRON_$_Gender=Masc|Number=Plur|Person=3|PronType=Prs_!_nsubj
-	sont_§_être_&_AUX_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	allés_§_aller_&_VERB_$_Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part_!_root
-	rejoindre_§_rejoindre_&_VERB_$_VerbForm=Inf_!_xcomp
-	leurs_§_son_&_DET_$_Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs_!_det
-	amis_§_ami_&_NOUN_$_Gender=Masc|Number=Plur_!_obj
-	Anaïs_§_Anaïs_&_PROPN_$___!_appos
-	et_§_et_&_CCONJ_$___!_cc
-	Karim_§_Karim_&_PROPN_$___!_conj
-	._§_._&_PUNCT_$___!_punct
+%morph:	ils<PRON/nsubj-Masc-Plur-3-Prs> sont<AUX/aux:tense-Ind-Plur-3-Pres-Fin> allés<VERB/root-Masc-Plur-Past-Part> rejoindre<VERB/xcomp-Inf> leurs<DET/det-Masc-Plur-Yes-Prs> amis<NOUN/obj-Masc-Plur> Anaïs<PROPN/appos> et<CCONJ/cc> Karim<PROPN/conj> .<PUNCT/punct> 
 *ADU: ah Ma- Monsieur Tortue il choisit la pomme ?
 %lng: 8
 %cpxx: 3
 %cpxdt: [0, 2, 1, 3, 2, 3, 2, 3, 1, 0]
 %%details: 0 ah 2 Ma- 1 Monsieur 3 Tortue 2 il 3 choisit 2 la 3 pomme 1 ? 0
-%morph:
-	ah_§_ah_&_INTJ_$___!_discourse
-	Ma-_§_ma-_&_INTJ_$___!_fixed
-	Monsieur_§_monsieur_&_PROPN_$___!_obl:mod
-	Tortue_§_Tortue_&_PROPN_$___!_flat:name
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	choisit_§_choisir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	pomme_§_pomme_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	ah<INTJ/discourse> Ma-<INTJ/fixed> Monsieur<PROPN/obl:mod> Tortue<PROPN/flat:name> il<PRON/nsubj-Masc-Sing-3-Prs> choisit<VERB/root-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> pomme<NOUN/obj-Fem-Sing> ?<PUNCT/punct> 
 *ADU: ils donnent une pomme à moitié pourrie ?
 %lng: 7
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 3, 4, 2, 1, 0]
 %%details: 0 ils 1 donnent 2 une 3 pomme 3 à 4 moitié 2 pourrie 1 ? 0
-%morph:
-	ils_§_il_&_PRON_$_Gender=Masc|Number=Plur|Person=3|PronType=Prs_!_nsubj
-	donnent_§_donner_&_VERB_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	une_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Sing|PronType=Art_!_det
-	pomme_§_pomme_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	à_§_à_&_ADP_$___!_case
-	moitié_§_moitié_&_NOUN_$_Gender=Fem|Number=Sing_!_nmod
-	pourrie_§_pourri_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	ils<PRON/nsubj-Masc-Plur-3-Prs> donnent<VERB/root-Ind-Plur-3-Pres-Fin> une<DET/det-Ind-Fem-Sing-Art> pomme<NOUN/obj-Fem-Sing> à<ADP/case> moitié<NOUN/nmod-Fem-Sing> pourrie<ADJ/amod-Fem-Sing> ?<PUNCT/punct> 
 *ADU: est ce que tu crois ? attends attends.
 %lng: 8
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 1, 2, 2, 1, 0]
 %%details: 0 est 1 ce 2 que 3 tu 4 crois 1 ? 2 attends 2 attends 1 . 0
-%morph:
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	ce_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	que_§_que_&_PRON_$_PronType=Rel_!_obj
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	crois_§_croire_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	?_§_?_&_PUNCT_$___!_punct
-	attends_§_attendre_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_ccomp
-	attends_§_attendre_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	._§_._&_PUNCT_$___!_punct
+%morph:	est<AUX/cop-Ind-Sing-3-Pres-Fin> ce<PRON/nsubj-Sing-3-Dem> que<PRON/obj-Rel> tu<PRON/nsubj-Sing-2-Prs> crois<VERB/acl:relcl-Ind-Sing-1-Pres-Fin> ?<PUNCT/punct> attends<VERB/ccomp-Ind-Sing-1-Pres-Fin> attends<VERB/root-Ind-Sing-1-Pres-Fin> .<PUNCT/punct> 
 *ADU: regarde cette image tu l'a pas regardée.
 %lng: 8
 %cpxx: 6
 %cpxdt: [0, 3, 4, 2, 3, 4, 5, 6, 1, 0]
 %%details: 0 regarde 3 cette 4 image 2 tu 3 l' 4 a 5 pas 6 regardée 1 . 0
-%morph:
-	regarde_§_regarder_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	cette_§_ce_&_DET_$_Gender=Fem|Number=Sing|PronType=Dem_!_det
-	image_§_image_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	l'_§_le_&_PRON_$_Number=Sing|Person=3|PronType=Prs_!_obj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	regardée_§_regarder_&_VERB_$_Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part_!_parataxis
-	._§_._&_PUNCT_$___!_punct
+%morph:	regarde<VERB/root-Ind-Sing-1-Pres-Fin> cette<DET/det-Fem-Sing-Dem> image<NOUN/obj-Fem-Sing> tu<PRON/nsubj-Sing-2-Prs> l'<PRON/obj-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> regardée<VERB/parataxis-Fem-Sing-Past-Part> .<PUNCT/punct> 
 @End

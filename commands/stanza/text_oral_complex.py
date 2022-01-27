@@ -12,6 +12,15 @@ vers un format conllu en 13 colonnes inspiré des travaux d'ORFEO
 import sys
 import os
 
+def feats(fts):
+    fv = ""
+    tx = fts.split("|")
+    for fw in tx:
+        x = fw.split("=")
+        if (len(x) > 1):
+            fv = fv + "-" + x[1]
+    return fv
+
 if len(sys.argv) != 3:
     print("Must have two argument, the name of the text file to process and the name of the original chat file.")
     exit(1)
@@ -51,12 +60,14 @@ with open(input_file, "r", encoding="utf-8") as in_file,\
         speaker = line.split()[0][1:-1]
         xmlid = line.split()[1]
         text_input = " ".join(line.split()[2:])
+        if (text_input.strip() == ''):
+            continue
         # créer un Document annoté avec stanza pour chaque ligne du fichier 
         doc = nlp(text_input)
         # convertir le Document en Python Object 
         dicts = doc.to_dict()
         # convertir le Python Object en CoNLL
-        conll = CoNLL.convert_dict(dicts) 
+        conll = CoNLL.convert_dict(dicts)
         # ecrire le resultat dans un fichier conllu et ajouter les informations manquantes : 
         # colonnes 11, 12 et 13
         for sentence in conll:
@@ -88,9 +99,15 @@ with open(input_file, "r", encoding="utf-8") as in_file,\
             for i in range(len(sentence)):
                 out_clan.write(str(trace[i]) + " " + sentence[i][1] + " ")
             out_clan.write(str(trace[len(sentence)]) + "\n")
-            out_clan.write("%morph:\n")
+            out_clan.write("%morph:\t")
             for i in range(len(sentence)):
-                out_clan.write("\t" + sentence[i][1] + "_§_" + sentence[i][2] + "_&_" + sentence[i][3] + "_$_" + sentence[i][5] + "_!_" + sentence[i][7] + "\n")
+                # sentence[i][1] = word
+                # sentence[i][2] = lemma
+                # sentence[i][3] = POS
+                # sentence[i][5] = FEATS
+                # sentence[i][7] = DEPREL
+                out_clan.write(sentence[i][1] + "<" + sentence[i][3] + "/" + sentence[i][7] + feats(sentence[i][5]) + "> ")
+            out_clan.write("\n")
             out_conll.write(f"#sent_id = {speaker} {xmlid}\n")
             out_conll.write(f"#text = {text_input}\n")
             out_conll.write("".join(["\t".join([e for e in sent])+"\t"+"_"+"\t"+"_"+"\t"+speaker+'\n' for sent in sentence])+"\n")

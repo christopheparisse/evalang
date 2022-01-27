@@ -5,181 +5,65 @@
 %cpxx: 7
 %cpxdt: [0, 1, 2, 3, 1, 2, 3, 3, 4, 5, 5, 6, 7, 3, 4, 2, 3, 4, 5, 6, 1, 0, 0]
 %%details: 0 xxx 1 de 2 les 3 la 1 maman 2 ça 3 la 3 papa 4 et 5 ça 5 ça 6 un 7 une 3 vache 4 deux 2 vaches 3 et 4 ça 5 c' 6 est 1 quoi 0 ? 0
-%morph:
-	xxx_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Plur|PronType=Art_!_det
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	maman_§_maman_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:mod
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obl:mod
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	papa_§_papa_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	et_§_et_&_CCONJ_$___!_cc
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	une_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Sing|PronType=Art_!_det
-	vache_§_vache_&_NOUN_$_Gender=Fem|Number=Sing_!_conj
-	deux_§_deux_&_NUM_$___!_nummod
-	vaches_§_vache_&_NOUN_$_Gender=Fem|Number=Plur_!_orphan
-	et_§_et_&_CCONJ_$___!_cc
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	quoi_§_quoi_&_PRON_$___!_conj
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	xxx<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> la<DET/det-Def-Fem-Sing-Art> maman<NOUN/obl:mod-Fem-Sing> ça<PRON/obl:mod-Masc-Sing-3-Dem> la<DET/det-Def-Fem-Sing-Art> papa<VERB/root-Ind-Sing-3-Pres-Fin> et<CCONJ/cc> ça<PRON/nsubj-Masc-Sing-3-Dem> ça<PRON/nsubj-Masc-Sing-3-Dem> un<DET/det-Ind-Masc-Sing-Art> une<DET/det-Ind-Fem-Sing-Art> vache<NOUN/conj-Fem-Sing> deux<NUM/nummod> vaches<NOUN/orphan-Fem-Plur> et<CCONJ/cc> ça<PRON/nsubj-Masc-Sing-3-Dem> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> quoi<PRON/conj> ?<PUNCT/punct> 
 *CHI: ben il fait quoi ? il fait xxx les cadeaux gâteaux.
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 2, 2, 1, 0]
 %%details: 0 ben 1 il 2 fait 2 quoi 1 ? 0
-%morph:
-	ben_§_ben_&_INTJ_$___!_discourse
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	quoi_§_quoi_&_PRON_$___!_obj
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	ben<INTJ/discourse> il<PRON/nsubj-Masc-Sing-3-Prs> fait<VERB/root-Ind-Sing-3-Pres-Fin> quoi<PRON/obj> ?<PUNCT/punct> 
 *CHI: ben il fait quoi ? il fait xxx les cadeaux gâteaux.
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 1, 3, 2, 3, 2, 1, 0]
 %%details: 0 il 1 fait 3 xxx 2 les 3 cadeaux 2 gâteaux 1 . 0
-%morph:
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	xxx_§_xxx_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	cadeaux_§_cadeau_&_NOUN_$_Gender=Masc|Number=Plur_!_obj
-	gâteaux_§_gâteau_&_ADJ_$_Gender=Masc|Number=Plur_!_amod
-	._§_._&_PUNCT_$___!_punct
+%morph:	il<PRON/nsubj-Masc-Sing-3-Prs> fait<VERB/root-Ind-Sing-3-Pres-Fin> xxx<NOUN/obj-Masc-Sing> les<DET/det-Def-Masc-Plur-Art> cadeaux<NOUN/obj-Masc-Plur> gâteaux<ADJ/amod-Masc-Plur> .<PUNCT/punct> 
 *CHI: eh ben et m- et et puis Amélie qui va xxx.
 %lng: 11
 %cpxx: 5
 %cpxdt: [0, 2, 3, 4, 2, 3, 4, 5, 2, 3, 2, 1, 0]
 %%details: 0 eh 2 ben 3 et 4 m- 2 et 3 et 4 puis 5 Amélie 2 qui 3 va 2 xxx 1 . 0
-%morph:
-	eh_§_eh_&_INTJ_$___!_root
-	ben_§_ben_&_PROPN_$___!_obl:arg
-	et_§_et_&_CCONJ_$___!_cc
-	m-_§_m-_&_PROPN_$___!_conj
-	et_§_et_&_CCONJ_$___!_cc
-	et_§_et_&_CCONJ_$___!_cc
-	puis_§_puis_&_ADV_$___!_cc
-	Amélie_§_Amélie_&_PROPN_$___!_conj
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	va_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	xxx_§_xxx_&_NOUN_$_Gender=Masc|Number=Sing_!_xcomp
-	._§_._&_PUNCT_$___!_punct
+%morph:	eh<INTJ/root> ben<PROPN/obl:arg> et<CCONJ/cc> m-<PROPN/conj> et<CCONJ/cc> et<CCONJ/cc> puis<ADV/cc> Amélie<PROPN/conj> qui<PRON/nsubj-Rel> va<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> xxx<NOUN/xcomp-Masc-Sing> .<PUNCT/punct> 
 *CHI: ça regarde xxx regarde la voiture regarde ça c'est c'est.
 %lng: 12
 %cpxx: 6
 %cpxdt: [0, 1, 3, 4, 2, 3, 3, 6, 5, 4, 3, 2, 1, 0]
 %%details: 0 ça 1 regarde 3 xxx 4 regarde 2 la 3 voiture 3 regarde 6 ça 5 c' 4 est 3 c' 2 est 1 . 0
-%morph:
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	regarde_§_regarder_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	xxx_§_xxx_&_PRON_$___!_nsubj
-	regarde_§_regarder_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	voiture_§_voiture_&_NOUN_$_Gender=Fem|Number=Sing_!_nsubj
-	regarde_§_regarder_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obj
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	._§_._&_PUNCT_$___!_punct
+%morph:	ça<PRON/nsubj-Masc-Sing-3-Dem> regarde<VERB/root-Ind-Sing-3-Pres-Fin> xxx<PRON/nsubj> regarde<VERB/conj-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> voiture<NOUN/nsubj-Fem-Sing> regarde<VERB/conj-Ind-Sing-3-Pres-Fin> ça<PRON/obj-Masc-Sing-3-Dem> c'<PRON/nsubj-Sing-3-Dem> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> c'<PRON/nsubj-Sing-3-Dem> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> .<PUNCT/punct> 
 *CHI: euh oui avec le le chat et le chien.
 %lng: 9
 %cpxx: 4
 %cpxdt: [0, 2, 1, 2, 3, 4, 2, 3, 4, 1, 0]
 %%details: 0 euh 2 oui 1 avec 2 le 3 le 4 chat 2 et 3 le 4 chien 1 . 0
-%morph:
-	euh_§_euh_&_INTJ_$___!_discourse
-	oui_§_oui_&_INTJ_$___!_fixed
-	avec_§_avec_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	chat_§_chat_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	et_§_et_&_CCONJ_$___!_cc
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	chien_§_chien_&_NOUN_$_Gender=Masc|Number=Sing_!_conj
-	._§_._&_PUNCT_$___!_punct
+%morph:	euh<INTJ/discourse> oui<INTJ/fixed> avec<ADP/case> le<DET/det-Def-Masc-Sing-Art> le<DET/det-Def-Masc-Sing-Art> chat<NOUN/root-Masc-Sing> et<CCONJ/cc> le<DET/det-Def-Masc-Sing-Art> chien<NOUN/conj-Masc-Sing> .<PUNCT/punct> 
 *CHI: euh ça ç'est Babar euh euh non un monsieur.
 %lng: 10
 %cpxx: 6
 %cpxdt: [0, 1, 2, 3, 4, 2, 3, 4, 5, 6, 1, 0]
 %%details: 0 euh 1 ça 2 ç' 3 est 4 Babar 2 euh 3 euh 4 non 5 un 6 monsieur 1 . 0
-%morph:
-	euh_§_euh_&_INTJ_$___!_discourse
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_dislocated
-	ç'_§_çe_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	Babar_§_Babar_&_PROPN_$___!_root
-	euh_§_euh_&_INTJ_$___!_advmod
-	euh_§_euh_&_INTJ_$___!_discourse
-	non_§_non_&_ADV_$___!_advmod
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	monsieur_§_monsieur_&_NOUN_$_Gender=Masc|Number=Sing_!_conj
-	._§_._&_PUNCT_$___!_punct
+%morph:	euh<INTJ/discourse> ça<PRON/dislocated-Masc-Sing-3-Dem> ç'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> Babar<PROPN/root> euh<INTJ/advmod> euh<INTJ/discourse> non<ADV/advmod> un<DET/det-Ind-Masc-Sing-Art> monsieur<NOUN/conj-Masc-Sing> .<PUNCT/punct> 
 *CHI: un euh un chameau un un xxx hippopotame.
 %lng: 8
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 2, 3, 4, 2, 1, 0]
 %%details: 0 un 1 euh 2 un 3 chameau 2 un 3 un 4 xxx 2 hippopotame 1 . 0
-%morph:
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	euh_§_euh_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	chameau_§_chameau_&_NOUN_$_Gender=Masc|Number=Sing_!_appos
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	xxx_§_xxx_&_NOUN_$_Gender=Masc|Number=Sing_!_conj
-	hippopotame_§_hippopotame_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	un<DET/det-Ind-Masc-Sing-Art> euh<NOUN/root-Masc-Sing> un<DET/det-Ind-Masc-Sing-Art> chameau<NOUN/appos-Masc-Sing> un<DET/det-Ind-Masc-Sing-Art> un<DET/det-Ind-Masc-Sing-Art> xxx<NOUN/conj-Masc-Sing> hippopotame<NOUN/nmod-Masc-Sing> .<PUNCT/punct> 
 *CHI: regarde elle elle est où la maman ?
 %lng: 7
 %cpxx: 5
 %cpxdt: [0, 4, 3, 2, 3, 4, 5, 1, 0]
 %%details: 0 regarde 4 elle 3 elle 2 est 3 où 4 la 5 maman 1 ? 0
-%morph:
-	regarde_§_regarder_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_obj
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	où_§_où_&_ADV_$_PronType=Rel_!_advmod
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	maman_§_maman_&_NOUN_$_Gender=Fem|Number=Sing_!_nsubj
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	regarde<VERB/root-Ind-Sing-3-Pres-Fin> elle<PRON/obj-Fem-Sing-3-Prs> elle<PRON/nsubj-Fem-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> où<ADV/advmod-Rel> la<DET/det-Def-Fem-Sing-Art> maman<NOUN/nsubj-Fem-Sing> ?<PUNCT/punct> 
 *CHI: regarde * ça c'est un lapin * ça.
 %lng: 9
 %cpxx: 7
 %cpxdt: [0, 2, 3, 4, 5, 6, 7, 2, 3, 1, 0]
 %%details: 0 regarde 2 * 3 ça 4 c' 5 est 6 un 7 lapin 2 * 3 ça 1 . 0
-%morph:
-	regarde_§_regarder_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	*_§_*_&_PUNCT_$___!_punct
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_dislocated
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	lapin_§_lapin_&_NOUN_$_Gender=Masc|Number=Sing_!_ccomp
-	*_§_*_&_PUNCT_$___!_punct
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	regarde<VERB/root-Ind-Sing-1-Pres-Fin> *<PUNCT/punct> ça<PRON/dislocated-Masc-Sing-3-Dem> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> lapin<NOUN/ccomp-Masc-Sing> *<PUNCT/punct> ça<PRON/nmod-Masc-Sing-3-Dem> .<PUNCT/punct> 
 *CHI: oui xxx regarde ça ça c'est quoi ?
 %lng: 8
 %cpxx: 4
 %cpxdt: [0, 1, 2, 4, 3, 2, 3, 4, 1, 0]
 %%details: 0 oui 1 xxx 2 regarde 4 ça 3 ça 2 c' 3 est 4 quoi 1 ? 0
-%morph:
-	oui_§_oui_&_INTJ_$___!_discourse
-	xxx_§_xxx_&_INTJ_$___!_nsubj
-	regarde_§_regarder_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obj
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obj
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	quoi_§_quoi_&_PRON_$___!_parataxis
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	oui<INTJ/discourse> xxx<INTJ/nsubj> regarde<VERB/root-Ind-Sing-1-Pres-Fin> ça<PRON/obj-Masc-Sing-3-Dem> ça<PRON/obj-Masc-Sing-3-Dem> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> quoi<PRON/parataxis> ?<PUNCT/punct> 
 @End

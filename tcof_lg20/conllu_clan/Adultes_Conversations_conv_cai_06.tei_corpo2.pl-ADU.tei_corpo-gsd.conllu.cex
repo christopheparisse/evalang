@@ -5,402 +5,59 @@
 %cpxx: 6
 %cpxdt: [0, 1, 2, 3, 4, 3, 2, 3, 2, 3, 1, 3, 4, 2, 3, 4, 5, 2, 3, 4, 5, 6, 5, 6, 5, 4, 5, 6, 1, 3, 2, 3, 4, 3, 4, 3, 2, 3, 4, 2, 3, 4, 1, 2, 3, 2, 1, 0, 0]
 %%details: 0 même 1 si 2 je 3 les 4 ai 3 pas 2 euh 3 tout 2 de 3 suite 1 tout 3 de 4 suite 2 je 3 m' 4 en 5 fous 2 mais 3 si 4 je 5 les 6 ai 5 avant 6 fin 5 décembre 4 ça 5 m' 6 arrange 1 parce 3 que 2 j' 3 ai 4 fait 3 des 4 cartes 3 bancaires 2 pour 3 la 4 fin 2 du 3 de 4 le 1 mois 2 je 3 te 2 dis 1 pas 0 . 0
-%morph:
-	même_§_même_&_ADV_$___!_advmod
-	si_§_si_&_SCONJ_$___!_mark
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	les_§_le_&_PRON_$_Number=Plur|Person=3|PronType=Prs_!_obj
-	ai_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_advcl
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	euh_§_euh_&_ADV_$___!_advmod
-	tout_§_tout_&_ADV_$___!_obj
-	de_§_de_&_ADP_$___!_case
-	suite_§_suite_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:arg
-	tout_§_tout_&_ADV_$___!_advmod
-	de_§_de_&_ADP_$___!_case
-	suite_§_suite_&_NOUN_$_Gender=Fem|Number=Sing_!_fixed
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	m'_§_lui_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_iobj
-	en_§_en_&_PRON_$_Person=3_!_iobj
-	fous_§_fou_&_VERB_$_Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	mais_§_mais_&_CCONJ_$___!_cc
-	si_§_si_&_SCONJ_$___!_mark
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	les_§_le_&_PRON_$_Number=Plur|Person=3|PronType=Prs_!_obj
-	ai_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_advcl
-	avant_§_avant_&_ADP_$___!_case
-	fin_§_fin_&_NOUN_$_Gender=Fem|Number=Sing_!_obl
-	décembre_§_décembre_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	m'_§_lui_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_iobj
-	arrange_§_arranger_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	parce_§_parce_&_ADV_$___!_mark
-	que_§_que_&_SCONJ_$___!_fixed
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	fait_§_faire_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_advcl
-	des_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Plur|PronType=Art_!_det
-	cartes_§_carte_&_NOUN_$_Gender=Fem|Number=Plur_!_obj
-	bancaires_§_bancaire_&_ADJ_$_Gender=Fem|Number=Plur_!_amod
-	pour_§_pour_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	fin_§_fin_&_NOUN_$_Gender=Fem|Number=Sing_!_obl
-	du_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	mois_§_mois_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	te_§_lui_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_iobj
-	dis_§_dire_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_conj
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	même<ADV/advmod> si<SCONJ/mark> je<PRON/nsubj-Sing-1-Prs> les<PRON/obj-Plur-3-Prs> ai<VERB/advcl-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> euh<ADV/advmod> tout<ADV/obj> de<ADP/case> suite<NOUN/obl:arg-Fem-Sing> tout<ADV/advmod> de<ADP/case> suite<NOUN/fixed-Fem-Sing> je<PRON/nsubj-Sing-1-Prs> m'<PRON/iobj-Sing-1-Prs> en<PRON/iobj-3> fous<VERB/root-Ind-Plur-1-Pres-Fin> mais<CCONJ/cc> si<SCONJ/mark> je<PRON/nsubj-Sing-1-Prs> les<PRON/obj-Plur-3-Prs> ai<VERB/advcl-Ind-Sing-1-Pres-Fin> avant<ADP/case> fin<NOUN/obl-Fem-Sing> décembre<NOUN/nmod-Masc-Sing> ça<PRON/nsubj-Masc-Sing-3-Dem> m'<PRON/iobj-Sing-1-Prs> arrange<VERB/conj-Ind-Sing-3-Pres-Fin> parce<ADV/mark> que<SCONJ/fixed> j'<PRON/nsubj-Sing-1-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> fait<VERB/advcl-Masc-Sing-Past-Part> des<DET/det-Ind-Fem-Plur-Art> cartes<NOUN/obj-Fem-Plur> bancaires<ADJ/amod-Fem-Plur> pour<ADP/case> la<DET/det-Def-Fem-Sing-Art> fin<NOUN/obl-Fem-Sing> du<_/_> de<ADP/case> le<DET/det-Def-Masc-Sing-Art> mois<NOUN/nmod-Masc-Sing> je<PRON/nsubj-Sing-1-Prs> te<PRON/iobj-Sing-2-Prs> dis<VERB/conj-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> .<PUNCT/punct> 
 *ADU: cinquante pour Laëtitia cinquante pour Fred tu vas l'encaisser le chèque mais là je lui ai déjà donné cent euros cinquante euros que je vais sortir aussi hein un pour moi pour toi.
 %lng: 34
 %cpxx: 8
 %cpxdt: [0, 3, 4, 3, 2, 3, 1, 2, 3, 4, 3, 4, 2, 3, 4, 5, 6, 7, 8, 3, 4, 2, 3, 2, 3, 4, 3, 5, 4, 5, 3, 4, 2, 3, 1, 0]
 %%details: 0 cinquante 3 pour 4 Laëtitia 3 cinquante 2 pour 3 Fred 1 tu 2 vas 3 l' 4 encaisser 3 le 4 chèque 2 mais 3 là 4 je 5 lui 6 ai 7 déjà 8 donné 3 cent 4 euros 2 cinquante 3 euros 2 que 3 je 4 vais 3 sortir 5 aussi 4 hein 5 un 3 pour 4 moi 2 pour 3 toi 1 . 0
-%morph:
-	cinquante_§_cinquante_&_NUM_$___!_obl:mod
-	pour_§_pour_&_ADP_$___!_case
-	Laëtitia_§_Laëtitia_&_PROPN_$___!_nmod
-	cinquante_§_cinquante_&_NUM_$___!_nmod
-	pour_§_pour_&_ADP_$___!_case
-	Fred_§_Fred_&_PROPN_$___!_nmod
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	vas_§_vair_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_root
-	l'_§_le_&_PRON_$_Number=Sing|Person=3|PronType=Prs_!_obj
-	encaisser_§_encaisser_&_VERB_$_VerbForm=Inf_!_xcomp
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	chèque_§_chèque_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	mais_§_mais_&_CCONJ_$___!_cc
-	là_§_là_&_ADV_$___!_advmod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	lui_§_lui_&_PRON_$_Number=Sing|Person=3|PronType=Prs_!_iobj
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	déjà_§_déjà_&_ADV_$___!_advmod
-	donné_§_donner_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_conj
-	cent_§_cent_&_NUM_$___!_nummod
-	euros_§_euro_&_NOUN_$_Gender=Masc|Number=Plur_!_obj
-	cinquante_§_cinquante_&_NUM_$___!_nummod
-	euros_§_euro_&_NOUN_$_Gender=Masc|Number=Plur_!_obj
-	que_§_que_&_PRON_$_PronType=Rel_!_obj
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	vais_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	sortir_§_sortir_&_VERB_$_VerbForm=Inf_!_xcomp
-	aussi_§_aussi_&_ADV_$___!_advmod
-	hein_§_hein_&_ADV_$___!_advmod
-	un_§_un_&_PRON_$_Gender=Masc|Number=Sing_!_obj
-	pour_§_pour_&_ADP_$___!_case
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_obl
-	pour_§_pour_&_ADP_$___!_case
-	toi_§_soi_&_PRON_$_Number=Sing|Person=2_!_obl
-	._§_._&_PUNCT_$___!_punct
+%morph:	cinquante<NUM/obl:mod> pour<ADP/case> Laëtitia<PROPN/nmod> cinquante<NUM/nmod> pour<ADP/case> Fred<PROPN/nmod> tu<PRON/nsubj-Sing-2-Prs> vas<VERB/root-Ind-Sing-2-Pres-Fin> l'<PRON/obj-Sing-3-Prs> encaisser<VERB/xcomp-Inf> le<DET/det-Def-Masc-Sing-Art> chèque<NOUN/obj-Masc-Sing> mais<CCONJ/cc> là<ADV/advmod> je<PRON/nsubj-Sing-1-Prs> lui<PRON/iobj-Sing-3-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> déjà<ADV/advmod> donné<VERB/conj-Masc-Sing-Past-Part> cent<NUM/nummod> euros<NOUN/obj-Masc-Plur> cinquante<NUM/nummod> euros<NOUN/obj-Masc-Plur> que<PRON/obj-Rel> je<PRON/nsubj-Sing-1-Prs> vais<VERB/acl:relcl-Ind-Sing-1-Pres-Fin> sortir<VERB/xcomp-Inf> aussi<ADV/advmod> hein<ADV/advmod> un<PRON/obj-Masc-Sing> pour<ADP/case> moi<PRON/obl-Sing-1> pour<ADP/case> toi<PRON/obl-Sing-2> .<PUNCT/punct> 
 *ADU: parce que tous les ans c'est elle qui fait le moins cher je dis après tout elle peut dispatcher après avec tout le monde ça fait moins cher pour les autres aussi.
 %lng: 33
 %cpxx: 6
 %cpxdt: [0, 2, 1, 2, 3, 2, 3, 4, 2, 3, 2, 4, 3, 1, 2, 3, 4, 4, 5, 3, 2, 3, 4, 5, 6, 3, 4, 3, 4, 2, 3, 4, 2, 1, 0]
 %%details: 0 parce 2 que 1 tous 2 les 3 ans 2 c' 3 est 4 elle 2 qui 3 fait 2 le 4 moins 3 cher 1 je 2 dis 3 après 4 tout 4 elle 5 peut 3 dispatcher 2 après 3 avec 4 tout 5 le 6 monde 3 ça 4 fait 3 moins 4 cher 2 pour 3 les 4 autres 2 aussi 1 . 0
-%morph:
-	parce_§_parce_&_ADV_$___!_mark
-	que_§_que_&_SCONJ_$___!_fixed
-	tous_§_tout_&_ADJ_$_Gender=Masc|Number=Plur_!_amod
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	ans_§_an_&_NOUN_$_Gender=Masc|Number=Plur_!_nsubj
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_advcl
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	moins_§_moins_&_ADV_$___!_fixed
-	cher_§_cher_&_ADJ_$_Gender=Masc|Number=Sing_!_obj
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	dis_§_dire_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	après_§_après_&_ADP_$___!_case
-	tout_§_tout_&_PRON_$_Gender=Masc|Number=Sing_!_obl
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	peut_§_pouvoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	dispatcher_§_dispatcher_&_VERB_$_VerbForm=Inf_!_xcomp
-	après_§_après_&_ADP_$___!_case
-	avec_§_avec_&_ADP_$___!_case
-	tout_§_tout_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	monde_§_monde_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	moins_§_moins_&_ADV_$___!_advmod
-	cher_§_cher_&_ADJ_$_Gender=Masc|Number=Sing_!_xcomp
-	pour_§_pour_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Number=Plur|PronType=Art_!_det
-	autres_§_autre_&_PRON_$_Number=Plur_!_obl
-	aussi_§_aussi_&_ADV_$___!_advmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	parce<ADV/mark> que<SCONJ/fixed> tous<ADJ/amod-Masc-Plur> les<DET/det-Def-Masc-Plur-Art> ans<NOUN/nsubj-Masc-Plur> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> elle<PRON/advcl-Fem-Sing-3-Prs> qui<PRON/nsubj-Rel> fait<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> le<DET/det-Def-Masc-Sing-Art> moins<ADV/fixed> cher<ADJ/obj-Masc-Sing> je<PRON/nsubj-Sing-1-Prs> dis<VERB/root-Ind-Sing-1-Pres-Fin> après<ADP/case> tout<PRON/obl-Masc-Sing> elle<PRON/nsubj-Fem-Sing-3-Prs> peut<VERB/advcl-Ind-Sing-3-Pres-Fin> dispatcher<VERB/xcomp-Inf> après<ADP/case> avec<ADP/case> tout<ADJ/amod-Masc-Sing> le<DET/det-Def-Masc-Sing-Art> monde<NOUN/obl:mod-Masc-Sing> ça<PRON/nsubj-Masc-Sing-3-Dem> fait<VERB/conj-Ind-Sing-3-Pres-Fin> moins<ADV/advmod> cher<ADJ/xcomp-Masc-Sing> pour<ADP/case> les<DET/det-Def-Plur-Art> autres<PRON/obl-Plur> aussi<ADV/advmod> .<PUNCT/punct> 
 *ADU: vendredi donc demain matin je vais lui dire que si euh vendredi je l'ai pas qu'elle mette ce qu'elle veut dessus quitte à ce que je paie une surtaxe tu vois.
 %lng: 34
 %cpxx: 9
 %cpxdt: [0, 4, 3, 2, 1, 2, 2, 3, 3, 4, 5, 6, 7, 8, 9, 4, 3, 4, 5, 3, 3, 4, 5, 4, 3, 5, 4, 3, 4, 5, 3, 4, 2, 3, 1, 0]
 %%details: 0 vendredi 4 donc 3 demain 2 matin 1 je 2 vais 2 lui 3 dire 3 que 4 si 5 euh 6 vendredi 7 je 8 l' 9 ai 4 pas 3 qu' 4 elle 5 mette 3 ce 3 qu' 4 elle 5 veut 4 dessus 3 quitte 5 à 4 ce 3 que 4 je 5 paie 3 une 4 surtaxe 2 tu 3 vois 1 . 0
-%morph:
-	vendredi_§_vendredi_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	donc_§_donc_&_ADV_$___!_advmod
-	demain_§_demain_&_ADV_$___!_advmod
-	matin_§_matin_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	vais_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	lui_§_lui_&_PRON_$_Number=Sing|Person=3|PronType=Prs_!_iobj
-	dire_§_dire_&_VERB_$_VerbForm=Inf_!_xcomp
-	que_§_que_&_SCONJ_$___!_mark
-	si_§_si_&_SCONJ_$___!_mark
-	euh_§_euh_&_INTJ_$___!_discourse
-	vendredi_§_vendredi_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	l'_§_le_&_PRON_$_Number=Sing|Person=3|PronType=Prs_!_obj
-	ai_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_ccomp
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	qu'_§_que_&_SCONJ_$___!_mark
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	mette_§_mettre_&_VERB_$_Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_ccomp
-	ce_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_obj
-	qu'_§_que_&_PRON_$_PronType=Rel_!_obj
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	veut_§_vouloir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	dessus_§_dessus_&_ADV_$___!_advmod
-	quitte_§_quitte_&_ADJ_$_Gender=Masc|Number=Sing_!_case
-	à_§_à_&_ADP_$___!_fixed
-	ce_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_obl:mod
-	que_§_que_&_PRON_$_PronType=Rel_!_obj
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	paie_§_payer_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	une_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Sing|PronType=Art_!_det
-	surtaxe_§_surtaxe_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	vois_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_ccomp
-	._§_._&_PUNCT_$___!_punct
+%morph:	vendredi<NOUN/obl:mod-Masc-Sing> donc<ADV/advmod> demain<ADV/advmod> matin<NOUN/nmod-Masc-Sing> je<PRON/nsubj-Sing-1-Prs> vais<VERB/root-Ind-Sing-1-Pres-Fin> lui<PRON/iobj-Sing-3-Prs> dire<VERB/xcomp-Inf> que<SCONJ/mark> si<SCONJ/mark> euh<INTJ/discourse> vendredi<NOUN/obl:mod-Masc-Sing> je<PRON/nsubj-Sing-1-Prs> l'<PRON/obj-Sing-3-Prs> ai<VERB/ccomp-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> qu'<SCONJ/mark> elle<PRON/nsubj-Fem-Sing-3-Prs> mette<VERB/ccomp-Sub-Sing-3-Pres-Fin> ce<PRON/obj-Sing-3-Dem> qu'<PRON/obj-Rel> elle<PRON/nsubj-Fem-Sing-3-Prs> veut<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> dessus<ADV/advmod> quitte<ADJ/case-Masc-Sing> à<ADP/fixed> ce<PRON/obl:mod-Sing-3-Dem> que<PRON/obj-Rel> je<PRON/nsubj-Sing-1-Prs> paie<VERB/acl:relcl-Ind-Sing-1-Pres-Fin> une<DET/det-Ind-Fem-Sing-Art> surtaxe<NOUN/obj-Fem-Sing> tu<PRON/nsubj-Sing-2-Prs> vois<VERB/ccomp-Ind-Sing-1-Pres-Fin> .<PUNCT/punct> 
 *ADU: c'est comme pour toi hein si tu veux faire un cadeau que tu préfères je v- je veux bien mais c'est toujours moi qui avance tout tout tout je peux pas.
 %lng: 33
 %cpxx: 7
 %cpxdt: [0, 1, 2, 3, 4, 4, 3, 4, 5, 5, 5, 6, 5, 6, 7, 5, 4, 5, 6, 3, 2, 3, 4, 5, 6, 3, 4, 2, 3, 4, 5, 6, 2, 1, 0]
 %%details: 0 c' 1 est 2 comme 3 pour 4 toi 4 hein 3 si 4 tu 5 veux 5 faire 5 un 6 cadeau 5 que 6 tu 7 préfères 5 je 4 v- 5 je 6 veux 3 bien 2 mais 3 c' 4 est 5 toujours 6 moi 3 qui 4 avance 2 tout 3 tout 4 tout 5 je 6 peux 2 pas 1 . 0
-%morph:
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	comme_§_comme_&_SCONJ_$___!_mark
-	pour_§_pour_&_ADP_$___!_case
-	toi_§_soi_&_PRON_$_Number=Sing|Person=2_!_advcl
-	hein_§_hein_&_ADV_$___!_advmod
-	si_§_si_&_SCONJ_$___!_mark
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	veux_§_vouloir_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_advcl
-	faire_§_faire_&_VERB_$_VerbForm=Inf_!_xcomp
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	cadeau_§_cadeau_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	que_§_que_&_PRON_$_PronType=Rel_!_obj
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	préfères_§_préférer_&_VERB_$_Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	v-_§_v-_&_PUNCT_$___!_punct
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	veux_§_vouloir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	bien_§_bien_&_ADV_$___!_advmod
-	mais_§_mais_&_CCONJ_$___!_cc
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	toujours_§_toujours_&_ADV_$___!_advmod
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_conj
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	avance_§_avancer_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	tout_§_tout_&_DET_$_Gender=Masc|Number=Sing_!_advmod
-	tout_§_tout_&_DET_$_Gender=Masc|Number=Sing_!_advmod
-	tout_§_tout_&_ADV_$___!_advmod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	peux_§_pouvoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_advcl:cleft
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> comme<SCONJ/mark> pour<ADP/case> toi<PRON/advcl-Sing-2> hein<ADV/advmod> si<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> veux<VERB/advcl-Ind-Sing-2-Pres-Fin> faire<VERB/xcomp-Inf> un<DET/det-Ind-Masc-Sing-Art> cadeau<NOUN/obj-Masc-Sing> que<PRON/obj-Rel> tu<PRON/nsubj-Sing-2-Prs> préfères<VERB/acl:relcl-Ind-Plur-2-Pres-Fin> je<PRON/nsubj-Sing-1-Prs> v-<PUNCT/punct> je<PRON/nsubj-Sing-1-Prs> veux<VERB/root-Ind-Sing-1-Pres-Fin> bien<ADV/advmod> mais<CCONJ/cc> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> toujours<ADV/advmod> moi<PRON/conj-Sing-1> qui<PRON/nsubj-Rel> avance<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> tout<DET/advmod-Masc-Sing> tout<DET/advmod-Masc-Sing> tout<ADV/advmod> je<PRON/nsubj-Sing-1-Prs> peux<VERB/advcl:cleft-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> .<PUNCT/punct> 
 *ADU: pour papa pour moi ce qu'elle a acheté pour Mathis bon ça la Jasmine elle va me redonner puis mémère elle m'a donné un chèque donc ça va recompenser hein.
 %lng: 32
 %cpxx: 7
 %cpxdt: [0, 1, 3, 4, 2, 2, 3, 4, 5, 3, 4, 2, 3, 1, 2, 2, 3, 3, 4, 2, 3, 4, 5, 6, 7, 3, 4, 2, 3, 4, 2, 2, 1, 0]
 %%details: 0 pour 1 papa 3 pour 4 moi 2 ce 2 qu' 3 elle 4 a 5 acheté 3 pour 4 Mathis 2 bon 3 ça 1 la 2 Jasmine 2 elle 3 va 3 me 4 redonner 2 puis 3 mémère 4 elle 5 m' 6 a 7 donné 3 un 4 chèque 2 donc 3 ça 4 va 2 recompenser 2 hein 1 . 0
-%morph:
-	pour_§_pour_&_ADP_$___!_case
-	papa_§_papa_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	pour_§_pour_&_ADP_$___!_case
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_nmod
-	ce_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_appos
-	qu'_§_que_&_PRON_$_PronType=Rel_!_obj
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	acheté_§_acheter_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_acl:relcl
-	pour_§_pour_&_ADP_$___!_case
-	Mathis_§_Mathis_&_PROPN_$___!_obl
-	bon_§_bon_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obl
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	Jasmine_§_Jasmine_&_PROPN_$___!_nsubj
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	va_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	me_§_se_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_obj
-	redonner_§_redonner_&_VERB_$_VerbForm=Inf_!_xcomp
-	puis_§_puis_&_ADV_$___!_cc
-	mémère_§_mémère_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:mod
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	m'_§_lui_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_iobj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	donné_§_donner_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_conj
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	chèque_§_chèque_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	donc_§_donc_&_ADV_$___!_advmod
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	va_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	recompenser_§_recompenser_&_VERB_$_VerbForm=Inf_!_xcomp
-	hein_§_hein_&_ADV_$___!_advmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	pour<ADP/case> papa<NOUN/obl:mod-Masc-Sing> pour<ADP/case> moi<PRON/nmod-Sing-1> ce<PRON/appos-Sing-3-Dem> qu'<PRON/obj-Rel> elle<PRON/nsubj-Fem-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> acheté<VERB/acl:relcl-Masc-Sing-Past-Part> pour<ADP/case> Mathis<PROPN/obl> bon<ADJ/amod-Masc-Sing> ça<PRON/obl-Masc-Sing-3-Dem> la<DET/det-Def-Fem-Sing-Art> Jasmine<PROPN/nsubj> elle<PRON/nsubj-Fem-Sing-3-Prs> va<VERB/root-Ind-Sing-3-Pres-Fin> me<PRON/obj-Sing-1-Prs> redonner<VERB/xcomp-Inf> puis<ADV/cc> mémère<NOUN/obl:mod-Fem-Sing> elle<PRON/nsubj-Fem-Sing-3-Prs> m'<PRON/iobj-Sing-1-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> donné<VERB/conj-Masc-Sing-Past-Part> un<DET/det-Ind-Masc-Sing-Art> chèque<NOUN/obj-Masc-Sing> donc<ADV/advmod> ça<PRON/nsubj-Masc-Sing-3-Dem> va<VERB/conj-Ind-Sing-3-Pres-Fin> recompenser<VERB/xcomp-Inf> hein<ADV/advmod> .<PUNCT/punct> 
 *ADU: non mais en général je j'ai toujours payé la fois où tu m'as dit que tu as eu la lettre de rappel c'était déjà débité de mon compte.
 %lng: 31
 %cpxx: 7
 %cpxdt: [0, 1, 2, 4, 3, 4, 5, 6, 7, 3, 4, 3, 4, 5, 6, 7, 3, 4, 5, 6, 3, 4, 3, 4, 2, 3, 4, 5, 2, 3, 4, 1, 0]
 %%details: 0 non 1 mais 2 en 4 général 3 je 4 j' 5 ai 6 toujours 7 payé 3 la 4 fois 3 où 4 tu 5 m' 6 as 7 dit 3 que 4 tu 5 as 6 eu 3 la 4 lettre 3 de 4 rappel 2 c' 3 était 4 déjà 5 débité 2 de 3 mon 4 compte 1 . 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	mais_§_mais_&_CCONJ_$___!_cc
-	en_§_en_&_ADP_$___!_advmod
-	général_§_général_&_NOUN_$_Gender=Masc|Number=Sing_!_fixed
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	toujours_§_toujours_&_ADV_$___!_advmod
-	payé_§_payer_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	fois_§_fois_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	où_§_où_&_ADV_$_PronType=Rel_!_advmod
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	m'_§_lui_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_iobj
-	as_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_aux:tense
-	dit_§_dire_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_acl:relcl
-	que_§_que_&_SCONJ_$___!_mark
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	as_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_aux:tense
-	eu_§_avoir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_ccomp
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	lettre_§_lettre_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	de_§_de_&_ADP_$___!_case
-	rappel_§_rappel_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj:pass
-	était_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin_!_aux:pass
-	déjà_§_déjà_&_ADV_$___!_advmod
-	débité_§_débiter_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_conj
-	de_§_de_&_ADP_$___!_case
-	mon_§_son_&_DET_$_Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	compte_§_compte_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:arg
-	._§_._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> mais<CCONJ/cc> en<ADP/advmod> général<NOUN/fixed-Masc-Sing> je<PRON/nsubj-Sing-1-Prs> j'<PRON/nsubj-Sing-1-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> toujours<ADV/advmod> payé<VERB/root-Masc-Sing-Past-Part> la<DET/det-Def-Fem-Sing-Art> fois<NOUN/obj-Fem-Sing> où<ADV/advmod-Rel> tu<PRON/nsubj-Sing-2-Prs> m'<PRON/iobj-Sing-1-Prs> as<AUX/aux:tense-Ind-Sing-2-Pres-Fin> dit<VERB/acl:relcl-Masc-Sing-Past-Part> que<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> as<AUX/aux:tense-Ind-Sing-2-Pres-Fin> eu<VERB/ccomp-Masc-Sing-Past-Part> la<DET/det-Def-Fem-Sing-Art> lettre<NOUN/obj-Fem-Sing> de<ADP/case> rappel<NOUN/nmod-Masc-Sing> c'<PRON/nsubj:pass-Sing-3-Dem> était<AUX/aux:pass-Ind-Sing-3-Imp-Fin> déjà<ADV/advmod> débité<VERB/conj-Masc-Sing-Past-Part> de<ADP/case> mon<DET/det-Masc-Sing-Yes-Prs> compte<NOUN/obl:arg-Masc-Sing> .<PUNCT/punct> 
 *ADU: hum ça va vite hein moi j'espère que la tata elle va me les donner euh pour Noël quoi parce que des fois eh ben elle me donne.
 %lng: 29
 %cpxx: 7
 %cpxdt: [0, 1, 2, 4, 3, 4, 2, 3, 2, 3, 4, 4, 5, 2, 3, 4, 4, 3, 4, 2, 3, 5, 4, 5, 7, 6, 5, 6, 7, 1, 0]
 %%details: 0 hum 1 ça 2 va 4 vite 3 hein 4 moi 2 j' 3 espère 2 que 3 la 4 tata 4 elle 5 va 2 me 3 les 4 donner 4 euh 3 pour 4 Noël 2 quoi 3 parce 5 que 4 des 5 fois 7 eh 6 ben 5 elle 6 me 7 donne 1 . 0
-%morph:
-	hum_§_hum_&_INTJ_$___!_discourse
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	va_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	vite_§_vite_&_ADV_$___!_advmod
-	hein_§_hein_&_ADV_$___!_advmod
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_obl
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	espère_§_espérer_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_conj
-	que_§_que_&_SCONJ_$___!_mark
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	tata_§_tata_&_NOUN_$_Gender=Fem|Number=Sing_!_nsubj
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	va_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_ccomp
-	me_§_se_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_obj
-	les_§_le_&_PRON_$_Number=Plur|Person=3|PronType=Prs_!_obj
-	donner_§_donner_&_VERB_$_VerbForm=Inf_!_xcomp
-	euh_§_euh_&_INTJ_$___!_advmod
-	pour_§_pour_&_ADP_$___!_case
-	Noël_§_Noël_&_PROPN_$___!_obl
-	quoi_§_quoi_&_PRON_$___!_obj
-	parce_§_parce_&_ADV_$___!_mark
-	que_§_que_&_SCONJ_$___!_fixed
-	des_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Plur|PronType=Art_!_det
-	fois_§_fois_&_NOUN_$_Gender=Fem|Number=Plur_!_obl:mod
-	eh_§_eh_&_INTJ_$___!_discourse
-	ben_§_ben_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	me_§_se_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_obj
-	donne_§_donner_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	._§_._&_PUNCT_$___!_punct
+%morph:	hum<INTJ/discourse> ça<PRON/nsubj-Masc-Sing-3-Dem> va<VERB/root-Ind-Sing-3-Pres-Fin> vite<ADV/advmod> hein<ADV/advmod> moi<PRON/obl-Sing-1> j'<PRON/nsubj-Sing-1-Prs> espère<VERB/conj-Ind-Sing-1-Pres-Fin> que<SCONJ/mark> la<DET/det-Def-Fem-Sing-Art> tata<NOUN/nsubj-Fem-Sing> elle<PRON/nsubj-Fem-Sing-3-Prs> va<VERB/ccomp-Ind-Sing-3-Pres-Fin> me<PRON/obj-Sing-1-Prs> les<PRON/obj-Plur-3-Prs> donner<VERB/xcomp-Inf> euh<INTJ/advmod> pour<ADP/case> Noël<PROPN/obl> quoi<PRON/obj> parce<ADV/mark> que<SCONJ/fixed> des<DET/det-Ind-Fem-Plur-Art> fois<NOUN/obl:mod-Fem-Plur> eh<INTJ/discourse> ben<NOUN/nmod-Masc-Sing> elle<PRON/nsubj-Fem-Sing-3-Prs> me<PRON/obj-Sing-1-Prs> donne<VERB/advcl-Ind-Sing-3-Pres-Fin> .<PUNCT/punct> 
 *ADU: non d'abord je voulais les faire mais Laëtitia elle a dit moi je m'y les connais mieux je les prends moi bon elle s'est occupée de ça.
 %lng: 30
 %cpxx: 7
 %cpxdt: [0, 1, 3, 2, 3, 4, 5, 3, 4, 5, 6, 7, 4, 3, 4, 5, 6, 7, 4, 3, 4, 5, 4, 3, 2, 3, 4, 5, 2, 3, 1, 0]
 %%details: 0 non 1 d' 3 abord 2 je 3 voulais 4 les 5 faire 3 mais 4 Laëtitia 5 elle 6 a 7 dit 4 moi 3 je 4 m' 5 y 6 les 7 connais 4 mieux 3 je 4 les 5 prends 4 moi 3 bon 2 elle 3 s' 4 est 5 occupée 2 de 3 ça 1 . 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	d'_§_de_&_ADP_$___!_advmod
-	abord_§_abord_&_NOUN_$_Gender=Masc|Number=Sing_!_fixed
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	voulais_§_vouloir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin_!_root
-	les_§_le_&_PRON_$_Number=Plur|Person=3|PronType=Prs_!_obj
-	faire_§_faire_&_VERB_$_VerbForm=Inf_!_xcomp
-	mais_§_mais_&_CCONJ_$___!_cc
-	Laëtitia_§_Laëtitia_&_PROPN_$___!_nsubj
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	dit_§_dire_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_conj
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_obj
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	m'_§_lui_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_iobj
-	y_§_y_&_PRON_$___!_iobj
-	les_§_le_&_PRON_$_Number=Plur|Person=3|PronType=Prs_!_obj
-	connais_§_connaître_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_ccomp
-	mieux_§_mieux_&_ADV_$___!_advmod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	les_§_le_&_PRON_$_Number=Plur|Person=3|PronType=Prs_!_obj
-	prends_§_prendre_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_conj
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_obl
-	bon_§_bon_&_ADJ_$_Gender=Masc|Number=Sing_!_xcomp
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	s'_§_se_&_PRON_$_Person=3|PronType=Prs_!_expl:comp
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	occupée_§_occuper_&_VERB_$_Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part_!_conj
-	de_§_de_&_ADP_$___!_case
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obl:arg
-	._§_._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> d'<ADP/advmod> abord<NOUN/fixed-Masc-Sing> je<PRON/nsubj-Sing-1-Prs> voulais<VERB/root-Ind-Sing-1-Imp-Fin> les<PRON/obj-Plur-3-Prs> faire<VERB/xcomp-Inf> mais<CCONJ/cc> Laëtitia<PROPN/nsubj> elle<PRON/nsubj-Fem-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> dit<VERB/conj-Masc-Sing-Past-Part> moi<PRON/obj-Sing-1> je<PRON/nsubj-Sing-1-Prs> m'<PRON/iobj-Sing-1-Prs> y<PRON/iobj> les<PRON/obj-Plur-3-Prs> connais<VERB/ccomp-Ind-Sing-1-Pres-Fin> mieux<ADV/advmod> je<PRON/nsubj-Sing-1-Prs> les<PRON/obj-Plur-3-Prs> prends<VERB/conj-Ind-Sing-1-Pres-Fin> moi<PRON/obl-Sing-1> bon<ADJ/xcomp-Masc-Sing> elle<PRON/nsubj-Fem-Sing-3-Prs> s'<PRON/expl:comp-3-Prs> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> occupée<VERB/conj-Fem-Sing-Past-Part> de<ADP/case> ça<PRON/obl:arg-Masc-Sing-3-Dem> .<PUNCT/punct> 
 *ADU: mémère elle m'a fait un chèque mais je l'ai pas encore encaissé elle m'a fait un chèque de deux cents euros cinquante pour toi cinquante pour Mathis.
 %lng: 30
 %cpxx: 9
 %cpxdt: [0, 1, 2, 3, 4, 4, 5, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5, 4, 5, 4, 5, 6, 7, 4, 3, 4, 2, 2, 3, 1, 0]
 %%details: 0 mémère 1 elle 2 m' 3 a 4 fait 4 un 5 chèque 3 mais 4 je 5 l' 6 ai 7 pas 8 encore 9 encaissé 2 elle 3 m' 4 a 5 fait 4 un 5 chèque 4 de 5 deux 6 cents 7 euros 4 cinquante 3 pour 4 toi 2 cinquante 2 pour 3 Mathis 1 . 0
-%morph:
-	mémère_§_mémère_&_NOUN_$_Gender=Fem|Number=Sing_!_advcl
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	m'_§_lui_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_iobj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	fait_§_faire_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	chèque_§_chèque_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	mais_§_mais_&_CCONJ_$___!_cc
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	l'_§_le_&_PRON_$_Number=Sing|Person=3|PronType=Prs_!_obj
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	encore_§_encore_&_ADV_$___!_advmod
-	encaissé_§_encaisser_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_conj
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	m'_§_lui_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_iobj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	fait_§_faire_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_conj
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	chèque_§_chèque_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	de_§_de_&_ADP_$___!_case
-	deux_§_deux_&_NUM_$___!_nummod
-	cents_§_cents_&_NUM_$___!_nummod
-	euros_§_euro_&_NOUN_$_Gender=Masc|Number=Plur_!_nmod
-	cinquante_§_cinquante_&_NUM_$___!_nummod
-	pour_§_pour_&_ADP_$___!_case
-	toi_§_soi_&_PRON_$_Number=Sing|Person=2_!_obl
-	cinquante_§_cinquante_&_NUM_$___!_obl
-	pour_§_pour_&_ADP_$___!_case
-	Mathis_§_Mathis_&_PROPN_$___!_nmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	mémère<NOUN/advcl-Fem-Sing> elle<PRON/nsubj-Fem-Sing-3-Prs> m'<PRON/iobj-Sing-1-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> fait<VERB/root-Masc-Sing-Past-Part> un<DET/det-Ind-Masc-Sing-Art> chèque<NOUN/obj-Masc-Sing> mais<CCONJ/cc> je<PRON/nsubj-Sing-1-Prs> l'<PRON/obj-Sing-3-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> encore<ADV/advmod> encaissé<VERB/conj-Masc-Sing-Past-Part> elle<PRON/nsubj-Fem-Sing-3-Prs> m'<PRON/iobj-Sing-1-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> fait<VERB/conj-Masc-Sing-Past-Part> un<DET/det-Ind-Masc-Sing-Art> chèque<NOUN/obj-Masc-Sing> de<ADP/case> deux<NUM/nummod> cents<NUM/nummod> euros<NOUN/nmod-Masc-Plur> cinquante<NUM/nummod> pour<ADP/case> toi<PRON/obl-Sing-2> cinquante<NUM/obl> pour<ADP/case> Mathis<PROPN/nmod> .<PUNCT/punct> 
 @End

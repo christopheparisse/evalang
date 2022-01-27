@@ -14,832 +14,381 @@
 @Comment:	ADU education: Etudes Supérieures, dialect: native, role: , scope: local, check: no, ageinfo: 26
 @Comment:	CHI education: Maternelle, dialect: native, role: , scope: local, check: no, ageinfo: 4.10.8
 *ADU: Sarah nous sommes le ¤C¤
-%lng: 6
+%lng: 5
 %cpxx: 4
-%cpxdt: [0, 1, 2, 3, 4, 2, 0]
-%%details: 0 Sarah 1 nous 2 sommes 3 le 4 ¤ 2 C¤ 0
-%morph:
-	Sarah_§_Sarah/PROPN_$__
-	nous_§_il/PRON_$_Number=Plur|Person=1|PronType=Prs
-	sommes_§_être/AUX_$_Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin
-	le_§_le/DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art
-	¤_§_¤/SYM_$_Gender=Masc|Number=Sing
-	C¤_§_C¤/PROPN_$_Gender=Masc|Number=Sing
+%cpxdt: [0, 1, 2, 3, 4, 0]
+%%details: 0 Sarah 1 nous 2 sommes 3 le 4 ¤C¤ 0
+%morph:	Sarah<PROPN/nsubj> nous<PRON/nsubj-Plur-1-Prs> sommes<AUX/cop-Ind-Plur-1-Pres-Fin> le<DET/det-Def-Masc-Sing-Art> ¤C¤<NOUN/root-Masc-Sing> 
 *ADU: il est cinq heures trente
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 0]
 %%details: 0 il 1 est 2 cinq 3 heures 1 trente 0
-%morph:
-	il_§_il/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
-	est_§_être/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	cinq_§_cinq/NUM_$_Number=Plur
-	heures_§_heure/NOUN_$_Gender=Fem|Number=Plur
-	trente_§_trente/NUM_$_Number=Plur
+%morph:	il<PRON/nsubj-Masc-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> cinq<NUM/nummod> heures<NOUN/root-Fem-Plur> trente<NUM/nmod> 
 *ADU: et voilà $$$
 %lng: 3
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 et 1 voilà 1 $$$ 0
-%morph:
-	et_§_et/CCONJ_$__
-	voilà_§_voilà/VERB_$__
-	$$$_§_$$$/NOUN_$_Gender=Masc|Number=Sing
+%morph:	et<CCONJ/cc> voilà<VERB/root> $$$<SYM/nsubj> 
 *ADU: xxx hein j'espère que personne va nous déranger
-%lng: 9
+%lng: 11
 %cpxx: 3
-%cpxdt: [0, 2, 1, 2, 1, 2, 3, 1, 2, 0]
-%%details: 0 xxx 2 hein 1 j' 2 espère 1 que 2 personne 3 va 1 nous 2 déranger 0
-%morph:
-	xxx_§_xxx/ADV_$__
-	hein_§_hein/INTJ_$__
-	j'_§_il/PRON_$_Number=Sing|Person=1|PronType=Prs
-	espère_§_espérer/VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin
-	que_§_que/SCONJ_$__
-	personne_§_personne/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Neg
-	va_§_aller/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	nous_§_il/PRON_$_Number=Plur|Person=1|PronType=Prs
-	déranger_§_déranger/VERB_$_VerbForm=Inf
+%cpxdt: [0, 1, 2, 1, 2, 1, 2, 3, 1, 2, 0, 0]
+%%details: 0 xxx 1 de 2 les 1 hein 2 j' 1 espère 2 que 3 personne 1 va 2 nous 0 déranger 0
+%morph:	xxx<_/_> de<ADP/case> les<DET/det-Def-Masc-Plur-Art> hein<NOUN/obl:mod-Masc-Plur> j'<PRON/nsubj-Sing-1-Prs> espère<VERB/root-Ind-Sing-1-Pres-Fin> que<SCONJ/mark> personne<PRON/nsubj-Sing-Neg> va<VERB/ccomp-Ind-Sing-3-Pres-Fin> nous<PRON/nsubj-Plur-1-Prs> déranger<VERB/xcomp-Inf> 
 *ADU: allez je t'aiderai si tu y arrives pas hein ?
 %lng: 10
 %cpxx: 5
 %cpxdt: [0, 2, 3, 4, 2, 3, 4, 5, 3, 2, 1, 0]
 %%details: 0 allez 2 je 3 t' 4 aiderai 2 si 3 tu 4 y 5 arrives 3 pas 2 hein 1 ? 0
-%morph:
-	allez_§_aller/VERB_$_Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin
-	je_§_il/PRON_$_Number=Sing|Person=1|PronType=Prs
-	t'_§_lui/PRON_$_Number=Sing|Person=2|PronType=Prs
-	aiderai_§_aider/VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin
-	si_§_si/SCONJ_$__
-	tu_§_il/PRON_$_Number=Sing|Person=2|PronType=Prs
-	y_§_y/PRON_$_Person=3|PronType=Prs
-	arrives_§_arriver/VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin
-	pas_§_pas/ADV_$_Polarity=Neg
-	hein_§_hein/INTJ_$__
-	?_§_?/PUNCT_$__
+%morph:	allez<VERB/root-Imp-Plur-2-Pres-Fin> je<PRON/nsubj-Sing-1-Prs> t'<PRON/iobj-Sing-2-Prs> aiderai<VERB/conj-Ind-Sing-1-Fut-Fin> si<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> y<PRON/iobj> arrives<VERB/advcl-Ind-Plur-2-Pres-Fin> pas<ADV/advmod-Neg> hein<INTJ/discourse> ?<PUNCT/punct> 
 *ADU: je t'aiderai vas-y
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 0]
 %%details: 0 je 1 t' 2 aiderai 1 vas-y 0
-%morph:
-	je_§_il/PRON_$_Number=Sing|Person=1|PronType=Prs
-	t'_§_lui/PRON_$_Number=Sing|Person=2|PronType=Prs
-	aiderai_§_aider/VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin
-	vas-y_§_vas-y/PRON_$_Number=Sing|Person=1|PronType=Prs
+%morph:	je<PRON/nsubj-Sing-1-Prs> t'<PRON/iobj-Sing-2-Prs> aiderai<VERB/root-Ind-Sing-1-Fut-Fin> vas-y<PRON/obj-Sing-1-Prs> 
 *CHI: "Le dîner de Bébé-Leïla"
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 1, 2, 2, 3, 1, 0]
 %%details: 0 " 1 Le 2 dîner 2 de 3 Bébé-Leïla 1 " 0
-%morph:
-	"_§_"/PUNCT_$__
-	Le_§_le/DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art
-	dîner_§_dîner/NOUN_$_Gender=Masc|Number=Sing
-	de_§_de/ADP_$__
-	Bébé-Leïla_§_Bébé-Leïla/PROPN_$__
-	"_§_"/PUNCT_$__
+%morph:	"<PUNCT/punct> Le<DET/det-Def-Masc-Sing-Art> dîner<NOUN/root-Masc-Sing> de<ADP/case> Bébé-Leïla<PROPN/nmod> "<PUNCT/punct> 
 *ADU: oui c'est bien "Le dîner de Bébé-Leïla"
 %lng: 10
 %cpxx: 6
 %cpxdt: [0, 1, 2, 3, 4, 5, 6, 2, 3, 1, 0]
 %%details: 0 oui 1 c' 2 est 3 bien 4 " 5 Le 6 dîner 2 de 3 Bébé-Leïla 1 " 0
-%morph:
-	oui_§_oui/INTJ_$__
-	c'_§_ce/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem
-	est_§_être/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	bien_§_bien/ADV_$__
-	"_§_"/PUNCT_$__
-	Le_§_le/DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art
-	dîner_§_dîner/NOUN_$_Gender=Masc|Number=Sing
-	de_§_de/ADP_$__
-	Bébé-Leïla_§_Bébé-Leïla/PROPN_$__
-	"_§_"/PUNCT_$__
+%morph:	oui<INTJ/discourse> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> bien<ADV/advmod> "<PUNCT/punct> Le<DET/det-Def-Masc-Sing-Art> dîner<NOUN/root-Masc-Sing> de<ADP/case> Bébé-Leïla<PROPN/nmod> "<PUNCT/punct> 
 *ADU: te redise les prénoms ?
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 0]
 %%details: 0 te 1 redise 2 les 3 prénoms 1 ? 0
-%morph:
-	te_§_lui/PRON_$_Number=Sing|Person=2|PronType=Prs
-	redise_§_redire/VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin
-	les_§_le/DET_$_Definite=Def|Number=Plur|PronType=Art
-	prénoms_§_prénom/NOUN_$_Gender=Masc|Number=Plur
-	?_§_?/PUNCT_$__
+%morph:	te<PRON/iobj-Sing-2-Prs> redise<VERB/root-Ind-Sing-3-Pres-Fin> les<DET/det-Def-Masc-Plur-Art> prénoms<NOUN/obj-Masc-Plur> ?<PUNCT/punct> 
 *ADU: Dorothée Karim Bébé-Leïla et la maman
 %lng: 6
 %cpxx: 3
-%cpxdt: [0, 2, 2, 1, 2, 3, 0]
-%%details: 0 Dorothée 2 Karim 2 Bébé-Leïla 1 et 2 la 3 maman 0
-%morph:
-	Dorothée_§_Dorothée/PROPN_$__
-	Karim_§_Karim/PROPN_$__
-	Bébé-Leïla_§_Bébé-Leïla/PROPN_$__
-	et_§_et/CCONJ_$__
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	maman_§_maman/NOUN_$_Gender=Fem|Number=Sing
+%cpxdt: [0, 3, 2, 1, 2, 3, 0]
+%%details: 0 Dorothée 3 Karim 2 Bébé-Leïla 1 et 2 la 3 maman 0
+%morph:	Dorothée<PROPN/root> Karim<PROPN/flat:name> Bébé-Leïla<PROPN/flat:name> et<CCONJ/cc> la<DET/det-Def-Fem-Sing-Art> maman<NOUN/conj-Fem-Sing> 
 *CHI: il essaie de consoler sa petite soeur
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 1, 2, 1, 2, 3, 0]
 %%details: 0 il 1 essaie 1 de 2 consoler 1 sa 2 petite 3 soeur 0
-%morph:
-	il_§_il/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
-	essaie_§_essayer/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	de_§_de/ADP_$__
-	consoler_§_consoler/VERB_$_VerbForm=Inf
-	sa_§_son/DET_$_Gender=Fem|Number=Sing|PossNumber=Sing|PossPerson=3|PronType=Prs
-	petite_§_petit/ADJ_$_Gender=Fem|Number=Sing
-	soeur_§_sœur/NOUN_$_Gender=Fem|Number=Sing
+%morph:	il<PRON/nsubj-Masc-Sing-3-Prs> essaie<VERB/root-Ind-Sing-3-Pres-Fin> de<ADP/mark> consoler<VERB/xcomp-Inf> sa<DET/det-Fem-Sing-Yes-Prs> petite<ADJ/amod-Fem-Sing> soeur<NOUN/obj-Fem-Sing> 
 *ADU: Karim essaie de consoler sa petite soeur
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 1, 2, 1, 2, 3, 0]
 %%details: 0 Karim 1 essaie 1 de 2 consoler 1 sa 2 petite 3 soeur 0
-%morph:
-	Karim_§_Karim/PROPN_$__
-	essaie_§_essayer/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	de_§_de/ADP_$__
-	consoler_§_consoler/VERB_$_VerbForm=Inf
-	sa_§_son/DET_$_Gender=Fem|Number=Sing|PossNumber=Sing|PossPerson=3|PronType=Prs
-	petite_§_petit/ADJ_$_Gender=Fem|Number=Sing
-	soeur_§_sœur/NOUN_$_Gender=Fem|Number=Sing
+%morph:	Karim<PROPN/nsubj> essaie<VERB/root-Ind-Sing-3-Pres-Fin> de<ADP/mark> consoler<VERB/xcomp-Inf> sa<DET/det-Fem-Sing-Yes-Prs> petite<ADJ/amod-Fem-Sing> soeur<NOUN/obj-Fem-Sing> 
 *ADU: parce qu'elle pleure pleure et pleure
 %lng: 7
 %cpxx: 2
 %cpxdt: [0, 2, 1, 2, 1, 1, 2, 0]
 %%details: 0 parce 2 qu' 1 elle 2 pleure 1 pleure 1 et 2 pleure 0
-%morph:
-	parce_§_parce/ADV_$__
-	qu'_§_que/SCONJ_$__
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	pleure_§_pleurer/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	pleure_§_pleurer/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	et_§_et/CCONJ_$__
-	pleure_§_pleurer/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
+%morph:	parce<ADV/mark> qu'<SCONJ/fixed> elle<PRON/nsubj-Fem-Sing-3-Prs> pleure<VERB/advcl-Ind-Sing-3-Pres-Fin> pleure<VERB/root-Ind-Sing-3-Pres-Fin> et<CCONJ/cc> pleure<VERB/conj-Ind-Sing-3-Pres-Fin> 
 *CHI: elle pleure toujours
 %lng: 3
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 elle 1 pleure 1 toujours 0
-%morph:
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	pleure_§_pleurer/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	toujours_§_toujours/ADV_$__
+%morph:	elle<PRON/nsubj-Fem-Sing-3-Prs> pleure<VERB/root-Ind-Sing-3-Pres-Fin> toujours<ADV/advmod> 
 *ADU: oui Karim demande à Bébé-Leïla si elle a mal
 %lng: 9
 %cpxx: 3
 %cpxdt: [0, 1, 2, 2, 3, 1, 2, 3, 1, 0]
 %%details: 0 oui 1 Karim 2 demande 2 à 3 Bébé-Leïla 1 si 2 elle 3 a 1 mal 0
-%morph:
-	oui_§_oui/INTJ_$__
-	Karim_§_Karim/PROPN_$__
-	demande_§_demander/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	à_§_à/ADP_$__
-	Bébé-Leïla_§_Bébé-Leïla/PROPN_$__
-	si_§_si/SCONJ_$__
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	a_§_avoir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	mal_§_mal/ADV_$__
+%morph:	oui<INTJ/discourse> Karim<PROPN/nsubj> demande<VERB/root-Ind-Sing-3-Pres-Fin> à<ADP/case> Bébé-Leïla<PROPN/obl:arg> si<SCONJ/mark> elle<PRON/nsubj-Fem-Sing-3-Prs> a<VERB/advcl-Ind-Sing-3-Pres-Fin> mal<ADV/advmod> 
 *CHI: elle elle re- il
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 0]
 %%details: 0 elle 1 elle 2 re- 1 il 0
-%morph:
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	re-_§_revoir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	il_§_il/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
+%morph:	elle<PRON/nsubj-Fem-Sing-3-Prs> elle<PRON/nsubj-Fem-Sing-3-Prs> re-<VERB/root-Ind-Sing-3-Pres-Fin> il<PRON/obj-Masc-Sing-3-Prs> 
 *ADU: sa couche est bien sèche oui est toute sèche elle n'a pas fait pipi
 %lng: 15
-%cpxx: 6
-%cpxdt: [0, 1, 1, 2, 3, 3, 2, 3, 4, 1, 2, 3, 4, 5, 6, 0]
-%%details: 0 sa 1 couche 1 est 2 bien 3 sèche 3 oui 2 est 3 toute 4 sèche 1 elle 2 n' 3 a 4 pas 5 fait 6 pipi 0
-%morph:
-	sa_§_son/DET_$_Gender=Fem|Number=Sing|PossNumber=Sing|PossPerson=3|PronType=Prs
-	couche_§_couche/NOUN_$_Gender=Fem|Number=Sing
-	est_§_être/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	bien_§_bien/ADV_$__
-	sèche_§_sec/ADJ_$_Gender=Fem|Number=Sing
-	oui_§_oui/ADV_$__
-	est_§_être/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	toute_§_tout/DET_$_Gender=Fem|Number=Sing|PronType=Ind
-	sèche_§_sec/ADJ_$_Gender=Fem|Number=Sing
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	n'_§_ne/ADV_$_Polarity=Neg
-	a_§_avoir/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	pas_§_pas/ADV_$_Polarity=Neg
-	fait_§_faire/AUX_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part
-	pipi_§_pipir/VERB_$_VerbForm=Inf
+%cpxx: 5
+%cpxdt: [0, 1, 1, 2, 3, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 0]
+%%details: 0 sa 1 couche 1 est 2 bien 3 sèche 2 oui 3 est 4 toute 5 sèche 1 elle 2 n' 3 a 4 pas 5 fait 1 pipi 0
+%morph:	sa<DET/det-Fem-Sing-Yes-Prs> couche<NOUN/nsubj-Fem-Sing> est<AUX/cop-Ind-Sing-3-Pres-Fin> bien<ADV/advmod> sèche<ADJ/root-Fem-Sing> oui<ADV/advmod> est<AUX/cop-Ind-Sing-3-Pres-Fin> toute<DET/det-Fem-Sing> sèche<ADJ/conj-Fem-Sing> elle<PRON/nsubj-Fem-Sing-3-Prs> n'<ADV/advmod-Neg> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> fait<VERB/conj-Masc-Sing-Past-Part> pipi<VERB/xcomp-Inf> 
 *CHI: elle ap- elle a- il appelle Dorothée
 %lng: 8
-%cpxx: 4
-%cpxdt: [0, 1, 2, 1, 2, 3, 4, 1, 0]
-%%details: 0 elle 1 ap- 2 elle 1 a 2 - 3 il 4 appelle 1 Dorothée 0
-%morph:
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	ap-_§_apoir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	a_§_à/ADP_$__
-	-_§_-/PUNCT_$__
-	il_§_il/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
-	appelle_§_appeler/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	Dorothée_§_Dorothée/PROPN_$__
+%cpxx: 3
+%cpxdt: [0, 1, 2, 3, 1, 2, 3, 1, 0]
+%%details: 0 elle 1 ap- 2 elle 3 a 1 - 2 il 3 appelle 1 Dorothée 0
+%morph:	elle<PRON/nsubj-Fem-Sing-3-Prs> ap-<VERB/root-Ind-Sing-3-Pres-Fin> elle<PRON/nsubj-Fem-Sing-3-Prs> a<VERB/obj-Ind-Sing-3-Pres-Fin> -<PUNCT/punct> il<PRON/nsubj-Masc-Sing-3-Prs> appelle<VERB/parataxis-Ind-Sing-3-Pres-Fin> Dorothée<PROPN/xcomp> 
 *ADU: Karim appelle Dorothée oui
 %lng: 4
 %cpxx: 1
 %cpxdt: [0, 1, 1, 1, 0]
 %%details: 0 Karim 1 appelle 1 Dorothée 1 oui 0
-%morph:
-	Karim_§_Karim/PROPN_$__
-	appelle_§_appeler/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	Dorothée_§_Dorothée/PROPN_$__
-	oui_§_oui/ADV_$__
+%morph:	Karim<PROPN/nsubj> appelle<VERB/root-Ind-Sing-3-Pres-Fin> Dorothée<PROPN/xcomp> oui<PROPN/flat:name> 
 *CHI: parce qu'elle
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 2, 1, 0]
 %%details: 0 parce 2 qu' 1 elle 0
-%morph:
-	parce_§_parce/ADV_$__
-	qu'_§_que/SCONJ_$__
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
+%morph:	parce<ADV/mark> qu'<SCONJ/fixed> elle<PRON/root-Fem-Sing-3-Prs> 
 *ADU: oui il dit viens m'aider Dorothée
 %lng: 7
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 1, 2, 1, 0]
 %%details: 0 oui 1 il 2 dit 1 viens 1 m' 2 aider 1 Dorothée 0
-%morph:
-	oui_§_oui/INTJ_$__
-	il_§_il/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
-	dit_§_dire/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	viens_§_venir/VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin
-	m'_§_lui/PRON_$_Number=Sing|Person=1|PronType=Prs
-	aider_§_aider/VERB_$_VerbForm=Inf
-	Dorothée_§_Dorothée/PROPN_$__
+%morph:	oui<INTJ/discourse> il<PRON/nsubj-Masc-Sing-3-Prs> dit<VERB/root-Ind-Sing-3-Pres-Fin> viens<VERB/parataxis-Ind-Sing-1-Pres-Fin> m'<PRON/iobj-Sing-1-Prs> aider<VERB/xcomp-Inf> Dorothée<PROPN/obj> 
 *ADU: Bébé-Leïla n'arrête pas de pleurer
 %lng: 6
 %cpxx: 2
 %cpxdt: [0, 1, 2, 2, 1, 2, 0]
 %%details: 0 Bébé-Leïla 1 n' 2 arrête 2 pas 1 de 2 pleurer 0
-%morph:
-	Bébé-Leïla_§_Bébé-Leïla/PROPN_$__
-	n'_§_ne/ADV_$_Polarity=Neg
-	arrête_§_arrêter/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	pas_§_pas/ADV_$_Polarity=Neg
-	de_§_de/ADP_$__
-	pleurer_§_pleurer/VERB_$_VerbForm=Inf
+%morph:	Bébé-Leïla<PROPN/nsubj> n'<ADV/advmod-Neg> arrête<VERB/root-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> de<ADP/mark> pleurer<VERB/xcomp-Inf> 
 *ADU: j'ai besoin de toi parce qu'elle arrête pas de pleurer xxx
 %lng: 13
 %cpxx: 4
 %cpxdt: [0, 1, 3, 3, 4, 2, 4, 3, 4, 3, 2, 3, 1, 0]
 %%details: 0 j' 1 ai 3 besoin 3 de 4 toi 2 parce 4 qu' 3 elle 4 arrête 3 pas 2 de 3 pleurer 1 xxx 0
-%morph:
-	j'_§_il/PRON_$_Number=Sing|Person=1|PronType=Prs
-	ai_§_avoir/VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin
-	besoin_§_besoin/NOUN_$_Gender=Masc|Number=Sing
-	de_§_de/ADP_$__
-	toi_§_lui/PRON_$_Number=Sing|Person=1|PronType=Prs
-	parce_§_parce/ADV_$__
-	qu'_§_que/SCONJ_$__
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	arrête_§_arrêter/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	pas_§_pas/ADV_$_Polarity=Neg
-	de_§_de/ADP_$__
-	pleurer_§_pleurer/VERB_$_VerbForm=Inf
-	xxx_§_xxx/PUNCT_$__
+%morph:	j'<PRON/nsubj-Sing-1-Prs> ai<VERB/root-Ind-Sing-1-Pres-Fin> besoin<NOUN/obj-Masc-Sing> de<ADP/case> toi<PRON/nmod-Sing-2> parce<ADV/mark> qu'<SCONJ/fixed> elle<PRON/nsubj-Fem-Sing-3-Prs> arrête<VERB/advcl-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> de<ADP/mark> pleurer<VERB/xcomp-Inf> xxx<PUNCT/punct> 
 *CHI: elle arrive
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 elle 1 arrive 0
-%morph:
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	arrive_§_arriver/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
+%morph:	elle<PRON/nsubj-Fem-Sing-3-Prs> arrive<VERB/root-Ind-Sing-3-Pres-Fin> 
 *ADU: oui Dorothée est arrivée
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 0]
 %%details: 0 oui 1 Dorothée 2 est 3 arrivée 0
-%morph:
-	oui_§_oui/ADV_$__
-	Dorothée_§_Dorothée/PROPN_$__
-	est_§_être/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	arrivée_§_arriver/VERB_$_Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part
+%morph:	oui<INTJ/discourse> Dorothée<PROPN/nsubj> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> arrivée<VERB/root-Fem-Sing-Past-Part> 
 *CHI: elle lui dit peut-être elle a faim ?
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 3, 2, 1, 0]
 %%details: 0 elle 1 lui 2 dit 3 peut-être 2 elle 3 a 2 faim 1 ? 0
-%morph:
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	lui_§_lui/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
-	dit_§_dire/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	peut-être_§_peut-être/ADV_$__
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	a_§_avoir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	faim_§_faim/NOUN_$_Gender=Fem|Number=Sing
-	?_§_?/PUNCT_$__
+%morph:	elle<PRON/nsubj-Fem-Sing-3-Prs> lui<PRON/iobj-Sing-3-Prs> dit<VERB/root-Ind-Sing-3-Pres-Fin> peut-être<ADV/advmod> elle<PRON/nsubj-Fem-Sing-3-Prs> a<VERB/ccomp-Ind-Sing-3-Pres-Fin> faim<NOUN/obj-Fem-Sing> ?<PUNCT/punct> 
 *ADU: oui Dorothée dit à Karim que Bébé-Leïla a sûrement faim
 %lng: 10
 %cpxx: 3
 %cpxdt: [0, 1, 2, 2, 3, 1, 2, 3, 2, 1, 0]
 %%details: 0 oui 1 Dorothée 2 dit 2 à 3 Karim 1 que 2 Bébé-Leïla 3 a 2 sûrement 1 faim 0
-%morph:
-	oui_§_oui/INTJ_$__
-	Dorothée_§_Dorothée/PROPN_$__
-	dit_§_dire/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	à_§_à/ADP_$__
-	Karim_§_Karim/PROPN_$__
-	que_§_que/SCONJ_$__
-	Bébé-Leïla_§_Bébé-Leïla/PROPN_$__
-	a_§_avoir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	sûrement_§_sûrement/ADV_$__
-	faim_§_faim/NOUN_$_Gender=Fem|Number=Sing
+%morph:	oui<INTJ/discourse> Dorothée<PROPN/nsubj> dit<VERB/root-Ind-Sing-3-Pres-Fin> à<ADP/case> Karim<PROPN/obl:arg> que<SCONJ/mark> Bébé-Leïla<PROPN/nsubj> a<VERB/ccomp-Ind-Sing-3-Pres-Fin> sûrement<ADV/advmod> faim<NOUN/obj-Fem-Sing> 
 *ADU: et quand Bébé-Leïla a faim
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 0]
 %%details: 0 et 1 quand 2 Bébé-Leïla 3 a 1 faim 0
-%morph:
-	et_§_et/CCONJ_$__
-	quand_§_quand/SCONJ_$__
-	Bébé-Leïla_§_Bébé-Leïla/PROPN_$__
-	a_§_avoir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	faim_§_faim/NOUN_$_Gender=Fem|Number=Sing
+%morph:	et<CCONJ/cc> quand<SCONJ/mark> Bébé-Leïla<PROPN/nsubj> a<VERB/root-Ind-Sing-3-Pres-Fin> faim<NOUN/obj-Fem-Sing> 
 *CHI: il faut lui donner à manger
 %lng: 6
 %cpxx: 2
 %cpxdt: [0, 1, 1, 2, 1, 2, 0]
 %%details: 0 il 1 faut 1 lui 2 donner 1 à 2 manger 0
-%morph:
-	il_§_il/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
-	faut_§_falloir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	lui_§_lui/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
-	donner_§_donner/VERB_$_VerbForm=Inf
-	à_§_à/ADP_$__
-	manger_§_manger/VERB_$_VerbForm=Inf
+%morph:	il<PRON/expl:subj-Masc-Sing-3-Prs> faut<VERB/root-Ind-Sing-3-Pres-Fin> lui<PRON/iobj-Sing-3-Prs> donner<VERB/ccomp-Inf> à<ADP/mark> manger<VERB/xcomp-Inf> 
 *ADU: eh oui
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 eh 1 oui 0
-%morph:
-	eh_§_eh/INTJ_$__
-	oui_§_oui/ADV_$__
+%morph:	eh<INTJ/root> oui<SYM/parataxis> 
 *CHI: il prend la la casserole que que la que que m'en rappelle plus
 %lng: 14
 %cpxx: 7
 %cpxdt: [0, 1, 1, 2, 3, 1, 2, 3, 4, 4, 5, 6, 7, 1, 0]
 %%details: 0 il 1 prend 1 la 2 la 3 casserole 1 que 2 que 3 la 4 que 4 que 5 m' 6 en 7 rappelle 1 plus 0
-%morph:
-	il_§_il/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
-	prend_§_prendre/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	casserole_§_casserole/NOUN_$_Gender=Fem|Number=Sing
-	que_§_que/SCONJ_$__
-	que_§_que/SCONJ_$__
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	que_§_que/PRON_$_PronType=Rel
-	que_§_que/PRON_$_PronType=Rel
-	m'_§_lui/PRON_$_Number=Sing|Person=1|PronType=Prs
-	en_§_en/PRON_$_Person=3|PronType=Prs
-	rappelle_§_rappeler/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	plus_§_plus/ADV_$__
+%morph:	il<PRON/nsubj-Masc-Sing-3-Prs> prend<VERB/root-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> la<DET/det-Def-Fem-Sing-Art> casserole<NOUN/obj-Fem-Sing> que<SCONJ/mark> que<SCONJ/mark> la<DET/det-Def-Fem-Sing-Art> que<PRON/obj-Rel> que<PRON/obj-Rel> m'<PRON/iobj-Sing-1-Prs> en<PRON/iobj-3> rappelle<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> plus<ADV/advmod> 
 *ADU: Karim prend la petite casserole de purée oui vas-y
 %lng: 9
-%cpxx: 3
-%cpxdt: [0, 1, 1, 2, 3, 2, 3, 1, 2, 0]
-%%details: 0 Karim 1 prend 1 la 2 petite 3 casserole 2 de 3 purée 1 oui 2 vas-y 0
-%morph:
-	Karim_§_Karim/PROPN_$__
-	prend_§_prendre/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	petite_§_petit/ADJ_$_Gender=Fem|Number=Sing
-	casserole_§_casserole/NOUN_$_Gender=Fem|Number=Sing
-	de_§_de/ADP_$__
-	purée_§_purée/NOUN_$_Gender=Fem|Number=Sing
-	oui_§_oui/ADV_$__
-	vas-y_§_vas-y/NOUN_$_Gender=Masc|Number=Sing
+%cpxx: 4
+%cpxdt: [0, 1, 2, 3, 4, 2, 3, 2, 1, 0]
+%%details: 0 Karim 1 prend 2 la 3 petite 4 casserole 2 de 3 purée 2 oui 1 vas-y 0
+%morph:	Karim<PROPN/nsubj> prend<VERB/root-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> petite<ADJ/amod-Fem-Sing> casserole<NOUN/obj-Fem-Sing> de<ADP/case> purée<NOUN/nmod-Fem-Sing> oui<ADJ/amod-Fem-Sing> vas-y<SYM/parataxis> 
 *CHI: que la que la
 %lng: 4
-%cpxx: 1
-%cpxdt: [0, 1, 1, 1, 0]
-%%details: 0 que 1 la 1 que 1 la 0
-%morph:
-	que_§_que/SCONJ_$__
-	la_§_le/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	que_§_que/PRON_$_PronType=Rel
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
+%cpxx: 2
+%cpxdt: [0, 1, 2, 1, 0]
+%%details: 0 que 1 la 2 que 1 la 0
+%morph:	que<SCONJ/mark> la<DET/det-Def-Fem-Sing-Art> que<PRON/root-Rel> la<DET/nsubj-Def-Fem-Sing-Art> 
 *ADU: que sa maman
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 1, 2, 0]
 %%details: 0 que 1 sa 2 maman 0
-%morph:
-	que_§_que/SCONJ_$__
-	sa_§_son/DET_$_Gender=Fem|Number=Sing|PossNumber=Sing|PossPerson=3|PronType=Prs
-	maman_§_maman/NOUN_$_Gender=Fem|Number=Sing
+%morph:	que<SCONJ/case> sa<DET/det-Fem-Sing-Yes-Prs> maman<NOUN/root-Fem-Sing> 
 *CHI: je m'en rappelle plus
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 0]
 %%details: 0 je 1 m' 2 en 3 rappelle 1 plus 0
-%morph:
-	je_§_il/PRON_$_Number=Sing|Person=1|PronType=Prs
-	m'_§_lui/PRON_$_Number=Sing|Person=1|PronType=Prs
-	en_§_en/PRON_$_Person=3|PronType=Prs
-	rappelle_§_rappeler/VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin
-	plus_§_plus/ADV_$__
+%morph:	je<PRON/nsubj-Sing-1-Prs> m'<PRON/iobj-Sing-1-Prs> en<PRON/obj-3> rappelle<VERB/root-Ind-Sing-1-Pres-Fin> plus<ADV/advmod> 
 *ADU: c'est la maman de Karim qui avait chauffé la casserole
 %lng: 11
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 3, 1, 2, 3, 1, 2, 0]
 %%details: 0 c' 1 est 2 la 3 maman 2 de 3 Karim 1 qui 2 avait 3 chauffé 1 la 2 casserole 0
-%morph:
-	c'_§_ce/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem
-	est_§_être/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	maman_§_maman/NOUN_$_Gender=Fem|Number=Sing
-	de_§_de/ADP_$__
-	Karim_§_Karim/PROPN_$__
-	qui_§_qui/PRON_$_PronType=Rel
-	avait_§_avoir/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin
-	chauffé_§_chauffer/VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	casserole_§_casserole/NOUN_$_Gender=Fem|Number=Sing
+%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> maman<NOUN/root-Fem-Sing> de<ADP/case> Karim<PROPN/nmod> qui<PRON/nsubj-Rel> avait<AUX/aux:tense-Ind-Sing-3-Imp-Fin> chauffé<VERB/acl:relcl-Masc-Sing-Past-Part> la<DET/det-Def-Fem-Sing-Art> casserole<NOUN/obj-Fem-Sing> 
 *ADU: avant de partir au supermarché donc Karim *
 %lng: 10
-%cpxx: 3
-%cpxdt: [0, 1, 2, 1, 2, 3, 1, 2, 1, 0, 0]
-%%details: 0 avant 1 de 2 partir 1 au 2 à 3 le 1 supermarché 2 donc 1 Karim 0 * 0
-%morph:
-	avant_§_avant/ADV_$__
-	de_§_de/ADP_$__
-	partir_§_partir/VERB_$_VerbForm=Inf
-	au_§__/__$__
-	à_§_à/ADP_$__
-	le_§_le/DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art
-	supermarché_§_supermarché/NOUN_$_Gender=Masc|Number=Sing
-	donc_§_donc/ADV_$__
-	Karim_§_Karim/PROPN_$__
-	*_§_*/PUNCT_$__
+%cpxx: 4
+%cpxdt: [0, 2, 3, 2, 3, 4, 2, 3, 1, 0, 0]
+%%details: 0 avant 2 de 3 partir 2 au 3 à 4 le 2 supermarché 3 donc 1 Karim 0 * 0
+%morph:	avant<ADV/root> de<ADP/mark> partir<VERB/ccomp-Inf> au<_/_> à<ADP/case> le<DET/det-Def-Masc-Sing-Art> supermarché<NOUN/obl:arg-Masc-Sing> donc<ADV/advmod> Karim<PROPN/appos> *<PUNCT/punct> 
 *CHI: quand elle voit la quand elle voit la purée elle rigole
 %lng: 11
-%cpxx: 4
-%cpxdt: [0, 1, 2, 3, 2, 3, 4, 2, 3, 1, 2, 0]
-%%details: 0 quand 1 elle 2 voit 3 la 2 quand 3 elle 4 voit 2 la 3 purée 1 elle 2 rigole 0
-%morph:
-	quand_§_quand/SCONJ_$__
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	voit_§_voir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	quand_§_quand/SCONJ_$__
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	voit_§_voir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	purée_§_purée/NOUN_$_Gender=Fem|Number=Sing
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	rigole_§_rigoler/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
+%cpxx: 5
+%cpxdt: [0, 1, 2, 2, 3, 4, 5, 2, 3, 1, 2, 0]
+%%details: 0 quand 1 elle 2 voit 2 la 3 quand 4 elle 5 voit 2 la 3 purée 1 elle 2 rigole 0
+%morph:	quand<SCONJ/mark> elle<PRON/nsubj-Fem-Sing-3-Prs> voit<VERB/advcl-Ind-Sing-3-Pres-Fin> la<DET/obj-Def-Fem-Sing-Art> quand<SCONJ/mark> elle<PRON/nsubj-Fem-Sing-3-Prs> voit<VERB/advcl-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> purée<NOUN/obj-Fem-Sing> elle<PRON/nsubj-Fem-Sing-3-Prs> rigole<VERB/root-Ind-Sing-3-Pres-Fin> 
 *ADU: oui quand Bébé-Leïla voit la purée elle rigole
 %lng: 8
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 3, 4, 2, 3, 0]
 %%details: 0 oui 1 quand 2 Bébé-Leïla 3 voit 3 la 4 purée 2 elle 3 rigole 0
-%morph:
-	oui_§_oui/ADV_$__
-	quand_§_quand/SCONJ_$__
-	Bébé-Leïla_§_Bébé-Leïla/PROPN_$__
-	voit_§_voir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	purée_§_purée/NOUN_$_Gender=Fem|Number=Sing
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	rigole_§_rigoler/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
+%morph:	oui<INTJ/discourse> quand<SCONJ/mark> Bébé-Leïla<PROPN/nsubj> voit<VERB/advcl-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> purée<NOUN/obj-Fem-Sing> elle<PRON/nsubj-Fem-Sing-3-Prs> rigole<VERB/root-Ind-Sing-3-Pres-Fin> 
 *CHI: elle tape avec sa cuillère
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 1, 2, 3, 0]
 %%details: 0 elle 1 tape 1 avec 2 sa 3 cuillère 0
-%morph:
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	tape_§_taper/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	avec_§_avec/ADP_$__
-	sa_§_son/DET_$_Gender=Fem|Number=Sing|PossNumber=Sing|PossPerson=3|PronType=Prs
-	cuillère_§_cuillère/NOUN_$_Gender=Fem|Number=Sing
+%morph:	elle<PRON/nsubj-Fem-Sing-3-Prs> tape<VERB/root-Ind-Sing-3-Pres-Fin> avec<ADP/case> sa<DET/det-Fem-Sing-Yes-Prs> cuillère<NOUN/obl:mod-Fem-Sing> 
 *ADU: oui tourne la page si tu as fini voilà
 %lng: 9
-%cpxx: 5
-%cpxdt: [0, 1, 3, 4, 2, 3, 4, 5, 1, 0]
-%%details: 0 oui 1 tourne 3 la 4 page 2 si 3 tu 4 as 5 fini 1 voilà 0
-%morph:
-	oui_§_oui/INTJ_$__
-	tourne_§_tourner/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	page_§_page/NOUN_$_Gender=Fem|Number=Sing
-	si_§_si/SCONJ_$__
-	tu_§_il/PRON_$_Number=Sing|Person=2|PronType=Prs
-	as_§_avoir/AUX_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin
-	fini_§_finir/VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part
-	voilà_§_voilà/VERB_$__
+%cpxx: 4
+%cpxdt: [0, 1, 2, 3, 1, 2, 3, 4, 1, 0]
+%%details: 0 oui 1 tourne 2 la 3 page 1 si 2 tu 3 as 4 fini 1 voilà 0
+%morph:	oui<INTJ/discourse> tourne<VERB/root-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> page<NOUN/nsubj-Fem-Sing> si<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> as<AUX/aux:tense-Ind-Sing-2-Pres-Fin> fini<VERB/advcl-Masc-Sing-Past-Part> voilà<VERB/xcomp> 
 *CHI: elle veut que faire des bêtises
 %lng: 6
 %cpxx: 2
 %cpxdt: [0, 1, 1, 2, 1, 2, 0]
 %%details: 0 elle 1 veut 1 que 2 faire 1 des 2 bêtises 0
-%morph:
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	veut_§_vouloir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	que_§_que/ADV_$__
-	faire_§_faire/VERB_$_VerbForm=Inf
-	des_§_un/DET_$_Definite=Ind|Number=Plur|PronType=Art
-	bêtises_§_bêtise/NOUN_$_Gender=Fem|Number=Plur
+%morph:	elle<PRON/nsubj-Fem-Sing-3-Prs> veut<VERB/root-Ind-Sing-3-Pres-Fin> que<SCONJ/mark> faire<VERB/ccomp-Inf> des<DET/det-Ind-Fem-Plur-Art> bêtises<NOUN/obj-Fem-Plur> 
 *ADU: oui Dorothée coupe de la viande dans une assiette
 %lng: 9
 %cpxx: 4
 %cpxdt: [0, 1, 2, 2, 4, 3, 1, 2, 3, 0]
 %%details: 0 oui 1 Dorothée 2 coupe 2 de 4 la 3 viande 1 dans 2 une 3 assiette 0
-%morph:
-	oui_§_oui/INTJ_$__
-	Dorothée_§_Dorothée/PROPN_$__
-	coupe_§_couper/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	de_§_de/ADP_$__
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	viande_§_viande/NOUN_$_Gender=Fem|Number=Sing
-	dans_§_dans/ADP_$__
-	une_§_un/DET_$_Definite=Ind|Gender=Fem|Number=Sing|PronType=Art
-	assiette_§_assiette/NOUN_$_Gender=Fem|Number=Sing
+%morph:	oui<INTJ/discourse> Dorothée<PROPN/nsubj> coupe<VERB/root-Ind-Sing-3-Pres-Fin> de<ADP/det> la<DET/fixed-Def-Fem-Sing-Art> viande<NOUN/obj-Fem-Sing> dans<ADP/case> une<DET/det-Ind-Fem-Sing-Art> assiette<NOUN/obl:mod-Fem-Sing> 
 *ADU: mais Bébé-Leïla ne veut pas manger elle veut faire des
 %lng: 10
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 3, 2, 1, 2, 1, 1, 0]
 %%details: 0 mais 1 Bébé-Leïla 2 ne 3 veut 3 pas 2 manger 1 elle 2 veut 1 faire 1 des 0
-%morph:
-	mais_§_mais/CCONJ_$__
-	Bébé-Leïla_§_Bébé-Leïla/PROPN_$__
-	ne_§_ne/ADV_$_Polarity=Neg
-	veut_§_vouloir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	pas_§_pas/ADV_$_Polarity=Neg
-	manger_§_manger/VERB_$_VerbForm=Inf
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	veut_§_vouloir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	faire_§_faire/VERB_$_VerbForm=Inf
-	des_§_un/DET_$_Definite=Ind|Number=Plur|PronType=Art
+%morph:	mais<CCONJ/cc> Bébé-Leïla<PROPN/nsubj> ne<ADV/advmod-Neg> veut<VERB/root-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> manger<VERB/xcomp-Inf> elle<PRON/nsubj-Fem-Sing-3-Prs> veut<VERB/conj-Ind-Sing-3-Pres-Fin> faire<VERB/xcomp-Inf> des<DET/obj-Ind-Masc-Plur-Art> 
 *ADU: bêtises
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 bêtises 0
-%morph:
-	bêtises_§_bêtise/NOUN_$_Gender=Fem|Number=Plur
+%morph:	bêtises<NOUN/root-Fem-Plur> 
 *CHI: bêtises
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 bêtises 0
-%morph:
-	bêtises_§_bêtise/NOUN_$_Gender=Fem|Number=Plur
+%morph:	bêtises<NOUN/root-Fem-Plur> 
 *ADU: ah attends voilà on a raté on a sauté une page
 %lng: 11
 %cpxx: 3
 %cpxdt: [0, 1, 2, 1, 2, 3, 1, 2, 3, 1, 2, 0]
 %%details: 0 ah 1 attends 2 voilà 1 on 2 a 3 raté 1 on 2 a 3 sauté 1 une 2 page 0
-%morph:
-	ah_§_ah/INTJ_$__
-	attends_§_attendre/VERB_$_Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin
-	voilà_§_voilà/VERB_$__
-	on_§_on/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Ind
-	a_§_avoir/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	raté_§_rater/VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part
-	on_§_on/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Ind
-	a_§_avoir/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	sauté_§_sauter/VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part
-	une_§_un/DET_$_Definite=Ind|Gender=Fem|Number=Sing|PronType=Art
-	page_§_page/NOUN_$_Gender=Fem|Number=Sing
+%morph:	ah<PRON/nsubj-Sing-1> attends<VERB/root-Ind-Sing-1-Pres-Fin> voilà<VERB/parataxis> on<PRON/nsubj-Masc-Sing-3> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> raté<VERB/conj-Masc-Sing-Past-Part> on<PRON/nsubj-Masc-Sing-3> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> sauté<VERB/conj-Masc-Sing-Past-Part> une<DET/det-Ind-Fem-Sing-Art> page<NOUN/obj-Fem-Sing> 
 *CHI: elle faisait des bêtises
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 1, 2, 0]
 %%details: 0 elle 1 faisait 1 des 2 bêtises 0
-%morph:
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	faisait_§_faire/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin
-	des_§_un/DET_$_Definite=Ind|Number=Plur|PronType=Art
-	bêtises_§_bêtise/NOUN_$_Gender=Fem|Number=Plur
+%morph:	elle<PRON/nsubj-Fem-Sing-3-Prs> faisait<VERB/root-Ind-Sing-3-Imp-Fin> des<DET/det-Ind-Fem-Plur-Art> bêtises<NOUN/obj-Fem-Plur> 
 *ADU: qu'est-ce qu'elle a fait comme bêtises ?
 %lng: 9
 %cpxx: 5
 %cpxdt: [0, 4, 3, 2, 3, 4, 5, 2, 3, 1, 0]
 %%details: 0 qu' 4 est 3 -ce 2 qu' 3 elle 4 a 5 fait 2 comme 3 bêtises 1 ? 0
-%morph:
-	qu'_§_que/PRON_$_Person=3|PronType=Int
-	est_§_être/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	-ce_§_ce/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem
-	qu'_§_que/SCONJ_$__
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	a_§_avoir/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	fait_§_faire/VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part
-	comme_§_comme/ADP_$__
-	bêtises_§_bêtise/NOUN_$_Gender=Fem|Number=Plur
-	?_§_?/PUNCT_$__
+%morph:	qu'<PRON/root-Int> est<AUX/cop-Ind-Sing-3-Pres-Fin> -ce<PRON/expl:subj-Sing-3-Dem> qu'<PRON/obj-Rel> elle<PRON/nsubj-Fem-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> fait<VERB/advcl:cleft-Masc-Sing-Past-Part> comme<ADP/case> bêtises<NOUN/obl:mod-Fem-Plur> ?<PUNCT/punct> 
 *CHI: elle a jeté son assiette en l'air
 %lng: 8
 %cpxx: 3
 %cpxdt: [0, 1, 2, 2, 3, 1, 2, 3, 0]
 %%details: 0 elle 1 a 2 jeté 2 son 3 assiette 1 en 2 l' 3 air 0
-%morph:
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	a_§_avoir/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	jeté_§_jeter/VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part
-	son_§_son/DET_$_Number=Sing|PossNumber=Sing|PossPerson=3|PronType=Prs
-	assiette_§_assiette/NOUN_$_Gender=Fem|Number=Sing
-	en_§_en/ADP_$__
-	l'_§_le/DET_$_Definite=Def|Number=Sing|PronType=Art
-	air_§_air/NOUN_$_Gender=Masc|Number=Sing
+%morph:	elle<PRON/nsubj-Fem-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> jeté<VERB/root-Masc-Sing-Past-Part> son<DET/det-Fem-Sing-Yes-Prs> assiette<NOUN/obj-Fem-Sing> en<ADP/case> l'<DET/det-Def-Masc-Sing-Art> air<NOUN/obl-Masc-Sing> 
 *ADU: oui pour s'amuser Bébé-Leïla a lancé son assiette en l'air
 %lng: 12
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 3, 2, 3, 2, 3, 1, 2, 3, 0]
-%%details: 0 oui 1 pour 2 s' 3 amuser 3 Bébé-Leïla 2 a 3 lancé 2 son 3 assiette 1 en 2 l' 3 air 0
-%morph:
-	oui_§_oui/ADV_$__
-	pour_§_pour/ADP_$__
-	s'_§_se/PRON_$_Person=3|PronType=Prs
-	amuser_§_amuser/VERB_$_VerbForm=Inf
-	Bébé-Leïla_§_Bébé-Leïla/PROPN_$__
-	a_§_avoir/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	lancé_§_lancer/VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part
-	son_§_son/DET_$_Number=Sing|PossNumber=Sing|PossPerson=3|PronType=Prs
-	assiette_§_assiette/NOUN_$_Gender=Fem|Number=Sing
-	en_§_en/ADP_$__
-	l'_§_le/DET_$_Definite=Def|Number=Sing|PronType=Art
-	air_§_air/NOUN_$_Gender=Masc|Number=Sing
+%cpxx: 4
+%cpxdt: [0, 1, 2, 3, 2, 3, 4, 2, 3, 1, 2, 3, 0]
+%%details: 0 oui 1 pour 2 s' 3 amuser 2 Bébé-Leïla 3 a 4 lancé 2 son 3 assiette 1 en 2 l' 3 air 0
+%morph:	oui<INTJ/discourse> pour<ADP/mark> s'<PRON/obj-3-Prs> amuser<VERB/advcl-Inf> Bébé-Leïla<PROPN/nsubj> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> lancé<VERB/root-Masc-Sing-Past-Part> son<DET/det-Fem-Sing-Yes-Prs> assiette<NOUN/obj-Fem-Sing> en<ADP/case> l'<DET/det-Def-Masc-Sing-Art> air<NOUN/obl-Masc-Sing> 
 *ADU: et Bébé-Leïla rit en voyant les morceaux de viande partout sur la table
 %lng: 13
 %cpxx: 4
-%cpxdt: [0, 1, 2, 1, 2, 2, 3, 2, 3, 1, 2, 3, 4, 0]
-%%details: 0 et 1 Bébé-Leïla 2 rit 1 en 2 voyant 2 les 3 morceaux 2 de 3 viande 1 partout 2 sur 3 la 4 table 0
-%morph:
-	et_§_et/CCONJ_$__
-	Bébé-Leïla_§_Bébé-Leïla/PROPN_$__
-	rit_§_rire/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	en_§_en/ADP_$__
-	voyant_§_voir/VERB_$_Tense=Pres|VerbForm=Part
-	les_§_le/DET_$_Definite=Def|Number=Plur|PronType=Art
-	morceaux_§_morceau/NOUN_$_Gender=Masc|Number=Plur
-	de_§_de/ADP_$__
-	viande_§_viande/NOUN_$_Gender=Fem|Number=Sing
-	partout_§_partout/ADV_$__
-	sur_§_sur/ADP_$__
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	table_§_table/NOUN_$_Gender=Fem|Number=Sing
+%cpxdt: [0, 1, 2, 1, 2, 1, 2, 2, 3, 1, 2, 3, 4, 0]
+%%details: 0 et 1 Bébé-Leïla 2 rit 1 en 2 voyant 1 les 2 morceaux 2 de 3 viande 1 partout 2 sur 3 la 4 table 0
+%morph:	et<CCONJ/cc> Bébé-Leïla<PROPN/nsubj> rit<VERB/root-Ind-Sing-3-Pres-Fin> en<ADP/mark> voyant<VERB/advcl-Pres-Part> les<DET/det-Def-Masc-Plur-Art> morceaux<NOUN/obj-Masc-Plur> de<ADP/case> viande<NOUN/nmod-Fem-Sing> partout<ADV/advmod> sur<ADP/case> la<DET/det-Def-Fem-Sing-Art> table<NOUN/nmod-Fem-Sing> 
 *CHI: Karim il
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 Karim 1 il 0
-%morph:
-	Karim_§_Karim/PROPN_$__
-	il_§_il/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
+%morph:	Karim<PROPN/root> il<PRON/appos-Masc-Sing-3-Prs> 
 *CHI: qu'il y a sur la table
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 2, 3, 0]
 %%details: 0 qu' 1 il 2 y 3 a 1 sur 2 la 3 table 0
-%morph:
-	qu'_§_que/SCONJ_$__
-	il_§_il/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
-	y_§_y/PRON_$_Person=3|PronType=Prs
-	a_§_avoir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	sur_§_sur/ADP_$__
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	table_§_table/NOUN_$_Gender=Fem|Number=Sing
+%morph:	qu'<SCONJ/mark> il<PRON/expl:subj-Masc-Sing-3-Prs> y<PRON/expl:comp> a<VERB/root-Ind-Sing-3-Pres-Fin> sur<ADP/case> la<DET/det-Def-Fem-Sing-Art> table<NOUN/obl-Fem-Sing> 
 *ADU: oui
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 oui 0
-%morph:
-	oui_§_oui/ADV_$__
+%morph:	oui<SYM/root> 
 *CHI: il
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 il 0
-%morph:
-	il_§_il/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
+%morph:	il<PRON/root-Masc-Sing-3-Prs> 
 *ADU: il se dépêche de ramasser tous les morceaux de viande sur la table
 %lng: 13
 %cpxx: 3
 %cpxdt: [0, 1, 2, 1, 2, 1, 2, 3, 2, 3, 1, 2, 3, 0]
 %%details: 0 il 1 se 2 dépêche 1 de 2 ramasser 1 tous 2 les 3 morceaux 2 de 3 viande 1 sur 2 la 3 table 0
-%morph:
-	il_§_il/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
-	se_§_se/PRON_$_Person=3|PronType=Prs
-	dépêche_§_dépêcher/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	de_§_de/ADP_$__
-	ramasser_§_ramasser/VERB_$_VerbForm=Inf
-	tous_§_tout/ADJ_$_Gender=Masc|Number=Plur
-	les_§_le/DET_$_Definite=Def|Number=Plur|PronType=Art
-	morceaux_§_morceau/NOUN_$_Gender=Masc|Number=Plur
-	de_§_de/ADP_$__
-	viande_§_viande/NOUN_$_Gender=Fem|Number=Sing
-	sur_§_sur/ADP_$__
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	table_§_table/NOUN_$_Gender=Fem|Number=Sing
+%morph:	il<PRON/nsubj-Masc-Sing-3-Prs> se<PRON/expl:comp-3-Prs> dépêche<VERB/root-Ind-Sing-3-Pres-Fin> de<ADP/mark> ramasser<VERB/xcomp-Inf> tous<ADJ/amod-Masc-Plur> les<DET/det-Def-Masc-Plur-Art> morceaux<NOUN/obj-Masc-Plur> de<ADP/case> viande<NOUN/nmod-Fem-Sing> sur<ADP/case> la<DET/det-Def-Fem-Sing-Art> table<NOUN/nmod-Fem-Sing> 
 *CHI: il y a un petit un yaourt rose
 %lng: 8
-%cpxx: 3
-%cpxdt: [0, 1, 2, 1, 3, 2, 3, 1, 0]
-%%details: 0 il 1 y 2 a 1 un 3 petit 2 un 3 yaourt 1 rose 0
-%morph:
-	il_§_il/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs
-	y_§_y/PRON_$_Person=3|PronType=Prs
-	a_§_avoir/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	un_§_un/DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art
-	petit_§_petit/ADJ_$_Gender=Masc|Number=Sing
-	un_§_un/DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art
-	yaourt_§_yaourt/NOUN_$_Gender=Masc|Number=Sing
-	rose_§_rose/ADJ_$_Gender=Masc|Number=Sing
+%cpxx: 4
+%cpxdt: [0, 1, 2, 1, 2, 3, 4, 1, 0]
+%%details: 0 il 1 y 2 a 1 un 2 petit 3 un 4 yaourt 1 rose 0
+%morph:	il<PRON/expl:subj-Masc-Sing-3-Prs> y<PRON/expl:comp> a<VERB/root-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> petit<ADJ/amod-Masc-Sing> un<DET/det-Ind-Masc-Sing-Art> yaourt<NOUN/obj-Masc-Sing> rose<ADJ/amod-Masc-Sing> 
 *CHI: ce sera le le dessert de Bébé-Leïla
 %lng: 7
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 1, 2, 0]
 %%details: 0 ce 1 sera 2 le 3 le 4 dessert 1 de 2 Bébé-Leïla 0
-%morph:
-	ce_§_ce/PRON_$_Gender=Masc|Person=3|PronType=Dem
-	sera_§_être/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin
-	le_§_le/DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art
-	le_§_le/DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art
-	dessert_§_dessert/NOUN_$_Gender=Masc|Number=Sing
-	de_§_de/ADP_$__
-	Bébé-Leïla_§_Bébé-Leïla/PROPN_$__
+%morph:	ce<PRON/nsubj-Sing-3-Dem> sera<AUX/cop-Ind-Sing-3-Fut-Fin> le<DET/det-Def-Masc-Sing-Art> le<DET/det-Def-Masc-Sing-Art> dessert<NOUN/root-Masc-Sing> de<ADP/case> Bébé-Leïla<PROPN/nmod> 
 *ADU: oui pendant que Bébé-Leïla mange
 %lng: 5
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 0]
 %%details: 0 oui 1 pendant 2 que 3 Bébé-Leïla 4 mange 0
-%morph:
-	oui_§_oui/ADV_$__
-	pendant_§_pendant/ADP_$__
-	que_§_que/SCONJ_$__
-	Bébé-Leïla_§_Bébé-Leïla/PROPN_$__
-	mange_§_manger/VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
+%morph:	oui<INTJ/root> pendant<ADP/mark> que<SCONJ/mark> Bébé-Leïla<PROPN/nsubj> mange<VERB/ccomp-Ind-Sing-3-Pres-Fin> 
 *ADU: la maman de Karim et de Leïla est rentrée à la maison
 %lng: 12
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 2, 3, 4, 1, 2, 1, 2, 3, 0]
 %%details: 0 la 1 maman 2 de 3 Karim 2 et 3 de 4 Leïla 1 est 2 rentrée 1 à 2 la 3 maison 0
-%morph:
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	maman_§_maman/NOUN_$_Gender=Fem|Number=Sing
-	de_§_de/ADP_$__
-	Karim_§_Karim/PROPN_$__
-	et_§_et/CCONJ_$__
-	de_§_de/ADP_$__
-	Leïla_§_Leïla/PROPN_$__
-	est_§_être/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	rentrée_§_rentrer/VERB_$_Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part
-	à_§_à/ADP_$__
-	la_§_le/DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art
-	maison_§_maison/NOUN_$_Gender=Fem|Number=Sing
+%morph:	la<DET/det-Def-Fem-Sing-Art> maman<NOUN/nsubj-Fem-Sing> de<ADP/case> Karim<PROPN/nmod> et<CCONJ/cc> de<ADP/case> Leïla<PROPN/conj> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> rentrée<VERB/root-Fem-Sing-Past-Part> à<ADP/case> la<DET/det-Def-Fem-Sing-Art> maison<NOUN/obl:arg-Fem-Sing> 
 *ADU: et c'est elle qui a ramené un petit yaourt rose
 %lng: 11
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 0]
 %%details: 0 et 1 c' 2 est 3 elle 1 qui 2 a 3 ramené 1 un 2 petit 3 yaourt 1 rose 0
-%morph:
-	et_§_et/CCONJ_$__
-	c'_§_ce/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem
-	est_§_être/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	elle_§_il/PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs
-	qui_§_qui/PRON_$_PronType=Rel
-	a_§_avoir/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	ramené_§_ramener/VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part
-	un_§_un/DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art
-	petit_§_petit/ADJ_$_Gender=Masc|Number=Sing
-	yaourt_§_yaourt/NOUN_$_Gender=Masc|Number=Sing
-	rose_§_rose/ADJ_$_Gender=Masc|Number=Sing
+%morph:	et<CCONJ/cc> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> elle<PRON/root-Fem-Sing-3-Prs> qui<PRON/nsubj-Rel> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> ramené<VERB/acl:relcl-Masc-Sing-Past-Part> un<DET/det-Ind-Masc-Sing-Art> petit<ADJ/amod-Masc-Sing> yaourt<NOUN/obj-Masc-Sing> rose<ADJ/amod-Masc-Sing> 
 *ADU: c'est très bien Sarah c'est fini c'est très très bien bravo $$$
 %lng: 15
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 3, 1, 2, 3, 1, 2, 3, 4, 5, 4, 1, 0]
 %%details: 0 c' 1 est 2 très 3 bien 3 Sarah 1 c' 2 est 3 fini 1 c' 2 est 3 très 4 très 5 bien 4 bravo 1 $$$ 0
-%morph:
-	c'_§_ce/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem
-	est_§_être/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	très_§_très/ADV_$__
-	bien_§_bien/ADV_$__
-	Sarah_§_Sarah/PROPN_$__
-	c'_§_ce/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem
-	est_§_être/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	fini_§_finir/VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part
-	c'_§_ce/PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem
-	est_§_être/AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin
-	très_§_très/ADV_$__
-	très_§_très/ADV_$__
-	bien_§_bien/ADV_$__
-	bravo_§_bravo/INTJ_$__
-	$$$_§_$$$/NOUN_$_Gender=Masc|Number=Sing
+%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> très<ADV/advmod> bien<ADV/advmod> Sarah<PROPN/root> c'<PRON/nsubj-Sing-3-Dem> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> fini<VERB/acl:relcl-Masc-Sing-Past-Part> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> très<ADV/advmod> très<ADV/advmod> bien<ADV/advmod> bravo<INTJ/parataxis> $$$<PUNCT/punct> 
 @End

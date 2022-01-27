@@ -13,7 +13,7 @@
 @Comment:	ADU education: Etudes Supérieures, dialect: native, role: , scope: local, check: no, ageinfo: 40 ans ?
 @Comment:	CHI education: Maternelle, dialect: native, role: Apprenant, scope: local, check: no, ageinfo: 5.10.2
 @Comment:	ADU3 education: Inconnu, dialect: native, role: , scope: local, check: no, ageinfo: 40 ans ?
-@Comment:	TeiCorpo version: 1.40.38
+@Comment:	TeiCorpo version: 1.40.39
 @Comment:	ADU ageinfo: 40;02.12
 @Comment:	CHI ageinfo: 5;10.01
 @Comment:	ADU3 ageinfo: 40;02.12
@@ -122,7 +122,7 @@
 *CHI:	on avait heu [=!longue prononciation /previous/COM] on avait heu on avait qui d'autres heu 158329_168591
 %ref:	PRO:cls_on_on VER:impf_avoir_avait NOM_<unknown>_heu PRO:cls_on_on VER:impf_avoir_avait NOM_<unknown>_heu PRO:cls_on_on VER:impf_avoir_avait PRO:int_qui_qui DET:ind_un_d' ADJ_autre_autres NOM_<unknown>_heu
 *CHI:	on avait "vite lequilles" * il y avait [=!javE /previous/PHO] les filles qui av- il y avait [=!javE /previous/PHO] même le pingouin 168591_173573
-%ref:	PRO:cls_on_on AUX:impf_avoir_avait VER:pper_<unknown>_. ADV_vite_vite NOM_<unknown>_lequilles NAM_<unknown>_. PRO:clsi_il_il PRO:clo_y_y VER:impf_avoir_avait ADV_même_même DET:def_le_le NOM_pingouin_pingouin
+%ref:	PRO:cls_on_on AUX:impf_avoir_avait VER:pper_<unknown>_. ADV_vite_vite NOM_lequille_lequilles NAM_<unknown>_. PRO:clsi_il_il PRO:clo_y_y VER:impf_avoir_avait ADV_même_même DET:def_le_le NOM_pingouin_pingouin
 *CHI:	il y avait [=!javE /previous/PHO] c- il y avait [=!javE /previous/PHO] Modia par contre il y avait [=!javE /previous/PHO] qui d'autres 173573_178800
 %ref:	PRO:clsi_il_il PRO:clo_y_y VER:impf_avoir_avait PRO:rel_qui_qui PRP_un_d' ADJ_autre_autres
 *ADU:	et c'est qui qui conduisait ? 178800_179841
@@ -206,7 +206,7 @@
 *ADU3:	cadeaux 294777_295975
 %ref:	NOM_cadeau_cadeaux
 *ADU3:	quand tu prends le cadeau tu as [=!ta /previous/PHO] des muffines des fois 295975_298201
-%ref:	KON_quand_quand PRO:cls_tu_tu VER:pres_prendre_prends DET:def_le_le NOM_cadeau_cadeau PRO:cls_tu_tu VER:pres_avoir_as DET:ind_un_des NOM_<unknown>_muffines PRP:det_du_des NOM_fois_fois
+%ref:	KON_quand_quand PRO:cls_tu_tu VER:pres_prendre_prends DET:def_le_le NOM_cadeau_cadeau PRO:cls_tu_tu VER:pres_avoir_as DET:ind_un_des NOM_muffine_muffines PRP:det_du_des NOM_fois_fois
 *ADU3:	et tu lance sur heu [=!b /previous/N] une autre voiture elle explose 298201_300452
 %ref:	KON_et_et PRO:cls_tu_tu VER:pres_lancer_lance PRP_sur_sur NOM_<unknown>_heu DET:ind_un_une ADJ_autre_autre NOM_voiture_voiture PRO:cls_elle_elle VER:pres_exploser_explose
 *ADU:	[=!b /instantaneous/N] ah d'accord 300452_301693
@@ -218,7 +218,7 @@
 *ADU:	les autres 302554_302933
 %ref:	DET:def_le_les ADJ_autre_autres
 *CHI:	en fait il y a [=!ja /previous/PHO] les muffines 302933_305014
-%ref:	PRO:clo_en_en VER:pres_faire_fait PRO:clsi_il_il PRO:clo_y_y VER:pres_avoir_a DET:def_le_les NOM_<unknown>_muffines
+%ref:	PRO:clo_en_en VER:pres_faire_fait PRO:clsi_il_il PRO:clo_y_y VER:pres_avoir_a DET:def_le_les NOM_muffine_muffines
 *CHI:	il y a [=!ja /previous/PHO] les boulets il y a [=!ja /previous/PHO] les chewing gum 305014_306845
 %ref:	PRO:clsi_il_il PRO:clo_y_y VER:pres_avoir_a DET:def_le_les NOM_<unknown>_chewing NOM_<unknown>_gum
 *ADU:	d'accord 306845_308027
@@ -282,7 +282,7 @@
 *CHI:	oui 381149_381812
 %ref:	FNO_oui_oui
 *ADU:	mmh tu fais quoi comme jeux cache-cache ? 381812_385994
-%ref:	NOM_<unknown>_mmh PRO:cls_tu_tu VER:pres_faire_fais INT_quoi_quoi KON_comme_comme NOM_jeu_jeux VER:impe_<unknown>_cache-cache VER:impe_<unknown>_.
+%ref:	NOM_<unknown>_mmh PRO:cls_tu_tu VER:pres_faire_fais INT_quoi_quoi KON_comme_comme NOM_jeu_jeux VER:impe_cache-cacher_cache-cache VER:impe_<unknown>_.
 *CHI:	mmh non on a des jeux de société 385994_390185
 %ref:	NOM_<unknown>_mmh FNO_non_non PRO:cls_on_on VER:pres_avoir_a DET:ind_un_des NOM_jeu_jeux PRP_de_de NOM_société_société
 *ADU:	ah oui quoi comme jeux ? 390185_392049
@@ -486,7 +486,7 @@
 *ADU:	tu vas où ? 719592_720322
 %ref:	PRO:cls_tu_tu VER:pres_aller_vas PRO:int_où_où NOM:sig_<unknown>_.
 *CHI:	chez Fabien et Philippe 720322_721840
-%ref:	PRP_chez_chez NOM_<unknown>_Fabien KON_et_et NOM_<unknown>_Philippe
+%ref:	PRP_chez_chez NOM_<unknown>_Fabien KON_et_et NOM_Philippe_Philippe
 *ADU:	c'est des amis ? 721840_723523
 %ref:	PRO:cls_ce_c' VER:pres_être_est DET:ind_un_des NOM_ami_amis NAM_<unknown>_.
 *CHI:	oui 723523_724280
@@ -506,7 +506,7 @@
 *ADU:	tu aimes [=!tEm /previous/PHO] bien jouer à quoi dehors ? 745156_747689
 %ref:	PRO:cls_tu_tu VER:pres_aimer_aimes ADV_bien_bien VER:infi_jouer_jouer PRP_à_à INT_quoi_quoi ADV_dehors_dehors VER:simp_<unknown>_.
 *CHI:	bah à cache-cache avec les filles 747689_753231
-%ref:	INT_bah_bah PRP_à_à NOM_<unknown>_cache-cache PRP_avec_avec DET:def_le_les NOM_fille_filles
+%ref:	INT_bah_bah PRP_à_à NOM_cache-cache_cache-cache PRP_avec_avec DET:def_le_les NOM_fille_filles
 *ADU:	ah oui ? 753231_754060
 %ref:	INT_ah_ah FNO_oui_oui NAM_<unknown>_.
 *CHI:	[=!b /previous/N] on a même joué à un jeu avec papa Alma et moi on a joué à un jeu avec papa 754060_761283
@@ -514,7 +514,7 @@
 *ADU:	mmh mmh 761283_762246
 %ref:	NOM_<unknown>_mmh NOM_<unknown>_mmh
 *CHI:	en fait on devait nous cacher papa il [=!i /previous/PHO] devait compter comme à cache-cache 762246_769058
-%ref:	PRP_en_en NOM_fait_fait PRO:cls_on_on VER:impf_devoir_devait PRO:clo_nous_nous VER:infi_cacher_cacher NOM_papa_papa PRO:cls_il_il VER:impf_devoir_devait VER:infi_compter_compter KON_comme_comme PRP_à_à NOM_<unknown>_cache-cache
+%ref:	PRP_en_en NOM_fait_fait PRO:cls_on_on VER:impf_devoir_devait PRO:clo_nous_nous VER:infi_cacher_cacher NOM_papa_papa PRO:cls_il_il VER:impf_devoir_devait VER:infi_compter_compter KON_comme_comme PRP_à_à NOM_cache-cache_cache-cache
 *ADU:	mmh mmh 769058_769529
 %ref:	NOM_<unknown>_mmh NOM_<unknown>_mmh
 *CHI:	sauf que quand il [=!i /previous/PHO] nous trouvait il [=!i /previous/PHO] nous prenaient et heu il prenait une ficelle il nous attachaient 769529_775871
@@ -556,7 +556,7 @@
 *CHI:	oui 812118_813186
 %ref:	FNO_oui_oui
 *ADU:	la maitresse était gentille ? 813186_815851
-%ref:	DET:def_le_la NOM_<unknown>_maitresse VER:impf_être_était ADJ_gentil_gentille NAM_<unknown>_.
+%ref:	DET:def_le_la NOM_maitresse_maitresse VER:impf_être_était ADJ_gentil_gentille NAM_<unknown>_.
 *CHI:	oui 815851_816324
 %ref:	FNO_oui_oui
 *ADU:	[=!rire /instantaneous/N] 816324_818345

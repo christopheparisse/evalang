@@ -5,125 +5,59 @@
 %cpxx: 6
 %cpxdt: [0, 1, 2, 3, 2, 3, 5, 4, 5, 4, 5, 6, 1, 0, 0]
 %%details: 0 ah 1 ah 2 à 3 les 2 {il 3 y 5 a 4 elle 5 est 4 là 5 } 6 la 1 lune 0 . 0
-%morph:
-	ah_§_ah_&_INTJ_$___!_discourse
-	ah_§___&___$___!__
-	à_§_à_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	{il_§_{il_&_NOUN_$_Gender=Masc|Number=Plur_!_nsubj
-	y_§_y_&_PRON_$___!_expl:comp
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	là_§_là_&_ADV_$___!_advmod
-	}_§_}_&_PUNCT_$___!_punct
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	lune_§_lune_&_NOUN_$_Gender=Fem|Number=Sing_!_parataxis
-	._§_._&_PUNCT_$___!_punct
+%morph:	ah<INTJ/discourse> ah<_/_> à<ADP/case> les<DET/det-Def-Masc-Plur-Art> {il<NOUN/nsubj-Masc-Plur> y<PRON/expl:comp> a<VERB/root-Ind-Sing-3-Pres-Fin> elle<PRON/nsubj-Fem-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> là<ADV/advmod> }<PUNCT/punct> la<DET/det-Def-Fem-Sing-Art> lune<NOUN/parataxis-Fem-Sing> .<PUNCT/punct> 
 *CHI: tu as vu ça a vu.
 %lng: 6
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 2, 1, 0]
 %%details: 0 tu 1 as 2 vu 1 ça 2 a 1 vu. 0
-%morph:
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	as_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_aux:tense
-	vu_§_voir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obj
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_xcomp
-	vu._§_vu._&_X_$___!_obj
+%morph:	tu<PRON/nsubj-Sing-2-Prs> as<AUX/aux:tense-Ind-Sing-2-Pres-Fin> vu<VERB/root-Masc-Sing-Past-Part> ça<PRON/obj-Masc-Sing-3-Dem> a<VERB/xcomp-Ind-Sing-3-Pres-Fin> vu.<X/obj> 
 *CHI: mm il a perdu une maman.
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 3, 1, 0]
 %%details: 0 mm 1 il 2 a 3 perdu 2 une 3 maman 1 . 0
-%morph:
-	mm_§_mm_&_NOUN_$_Gender=Masc|Number=Plur_!_obl:mod
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	perdu_§_perdre_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	une_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Sing|PronType=Art_!_det
-	maman_§_maman_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	mm<NOUN/obl:mod-Masc-Plur> il<PRON/nsubj-Masc-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> perdu<VERB/root-Masc-Sing-Past-Part> une<DET/det-Ind-Fem-Sing-Art> maman<NOUN/obj-Fem-Sing> .<PUNCT/punct> 
 *CHI: ça est tu as vu ?
 %lng: 5
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 1, 0]
 %%details: 0 ça 1 est 2 tu 3 as 4 vu 1 ? 0
-%morph:
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	as_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_aux:tense
-	vu_§_voir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	ça<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> tu<PRON/nsubj-Sing-2-Prs> as<AUX/aux:tense-Ind-Sing-2-Pres-Fin> vu<VERB/root-Masc-Sing-Past-Part> ?<PUNCT/punct> 
 *CHI: tu as vu là vu.
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 1, 0]
 %%details: 0 tu 1 as 2 vu 3 là 2 vu 1 . 0
-%morph:
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	as_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_aux:tense
-	vu_§_voir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	là_§_là_&_ADV_$___!_advmod
-	vu_§_voir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_xcomp
-	._§_._&_PUNCT_$___!_punct
+%morph:	tu<PRON/nsubj-Sing-2-Prs> as<AUX/aux:tense-Ind-Sing-2-Pres-Fin> vu<VERB/root-Masc-Sing-Past-Part> là<ADV/advmod> vu<VERB/xcomp-Masc-Sing-Past-Part> .<PUNCT/punct> 
 *CHI: regarde dur tire Babouche.
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 3, 2, 2, 1, 0]
 %%details: 0 regarde 3 dur 2 tire 2 Babouche 1 . 0
-%morph:
-	regarde_§_regarder_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	dur_§_dur_&_ADJ_$_Gender=Masc|Number=Sing_!_xcomp
-	tire_§_tirer_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	Babouche_§_Babouche_&_PROPN_$___!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	regarde<VERB/root-Ind-Sing-3-Pres-Fin> dur<ADJ/xcomp-Masc-Sing> tire<VERB/conj-Ind-Sing-3-Pres-Fin> Babouche<PROPN/obj> .<PUNCT/punct> 
 *CHI: * ouais ça a vu.
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 0]
 %%details: 0 * 1 ouais 2 ça 3 a 1 vu. 0
-%morph:
-	*_§_*_&_PUNCT_$___!_punct
-	ouais_§_ouais_&_INTJ_$___!_discourse
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	vu._§_vu._&_X_$___!_obj
+%morph:	*<PUNCT/punct> ouais<INTJ/discourse> ça<PRON/nsubj-Masc-Sing-3-Dem> a<VERB/root-Ind-Sing-3-Pres-Fin> vu.<X/obj> 
 *CHI: la là et ça.
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 0]
 %%details: 0 la 1 là 2 et 3 ça 1 . 0
-%morph:
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	là_§_là_&_ADV_$___!_root
-	et_§_et_&_CCONJ_$___!_cc
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_conj
-	._§_._&_PUNCT_$___!_punct
+%morph:	la<DET/det-Def-Fem-Sing-Art> là<ADV/root> et<CCONJ/cc> ça<PRON/conj-Masc-Sing-3-Dem> .<PUNCT/punct> 
 *CHI: il les bateaux le bateau.
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 2, 3, 1, 0]
 %%details: 0 il 1 les 2 bateaux 2 le 3 bateau 1 . 0
-%morph:
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	bateaux_§_bateau_&_NOUN_$_Gender=Masc|Number=Plur_!_root
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	bateau_§_bateau_&_NOUN_$_Gender=Masc|Number=Sing_!_appos
-	._§_._&_PUNCT_$___!_punct
+%morph:	il<PRON/nsubj-Masc-Sing-3-Prs> les<DET/det-Def-Masc-Plur-Art> bateaux<NOUN/root-Masc-Plur> le<DET/det-Def-Masc-Sing-Art> bateau<NOUN/appos-Masc-Sing> .<PUNCT/punct> 
 *CHI: euh elle est pas là.
 %lng: 5
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 1, 0]
 %%details: 0 euh 1 elle 2 est 3 pas 4 là 1 . 0
-%morph:
-	euh_§_euh_&_INTJ_$___!_discourse
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	là_§_là_&_ADV_$___!_root
-	._§_._&_PUNCT_$___!_punct
+%morph:	euh<INTJ/discourse> elle<PRON/nsubj-Fem-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> là<ADV/root> .<PUNCT/punct> 
 @End

@@ -5,150 +5,65 @@
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 0]
 %%details: 0 de 1 couleur 2 différente 1 ? 0
-%morph:
-	de_§_de_&_ADP_$___!_case
-	couleur_§_couleur_&_NOUN_$_Gender=Fem|Number=Sing_!_root
-	différente_§_différent_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	de<ADP/case> couleur<NOUN/root-Fem-Sing> différente<ADJ/amod-Fem-Sing> ?<PUNCT/punct> 
 *ADU: de couleur différente ? ou deux six de la même couleur ?
 %lng: 7
 %cpxx: 5
 %cpxdt: [0, 1, 2, 2, 3, 4, 5, 1, 0]
 %%details: 0 ou 1 deux 2 six 2 de 3 la 4 même 5 couleur 1 ? 0
-%morph:
-	ou_§_ou_&_CCONJ_$___!_cc
-	deux_§_deux_&_NUM_$___!_nummod
-	six_§_six_&_NUM_$___!_root
-	de_§_de_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	même_§_même_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	couleur_§_couleur_&_NOUN_$_Gender=Fem|Number=Sing_!_nmod
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	ou<CCONJ/cc> deux<NUM/nummod> six<NUM/root> de<ADP/case> la<DET/det-Def-Fem-Sing-Art> même<ADJ/amod-Fem-Sing> couleur<NOUN/nmod-Fem-Sing> ?<PUNCT/punct> 
 *ADU: je dois mettre $ du vert alors ?
 %lng: 9
 %cpxx: 5
 %cpxdt: [0, 1, 2, 4, 3, 4, 5, 2, 1, 0, 0]
 %%details: 0 je 1 dois 2 mettre 4 $ 3 du 4 de 5 le 2 vert 1 alors 0 ? 0
-%morph:
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	dois_§_devoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	mettre_§_mettre_&_VERB_$_VerbForm=Inf_!_xcomp
-	$_§_$_&_SYM_$___!_obj
-	du_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	vert_§_vert_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:arg
-	alors_§_alors_&_ADV_$___!_advmod
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	je<PRON/nsubj-Sing-1-Prs> dois<VERB/root-Ind-Sing-1-Pres-Fin> mettre<VERB/xcomp-Inf> $<SYM/obj> du<_/_> de<ADP/case> le<DET/det-Def-Masc-Sing-Art> vert<NOUN/obl:arg-Masc-Sing> alors<ADV/advmod> ?<PUNCT/punct> 
 *ADU: j'ai pas le droit de mettre deux six.
 %lng: 9
 %cpxx: 3
 %cpxdt: [0, 1, 3, 2, 3, 2, 3, 2, 3, 1, 0]
 %%details: 0 j' 1 ai 3 pas 2 le 3 droit 2 de 3 mettre 2 deux 3 six 1 . 0
-%morph:
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	ai_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	droit_§_droit_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	de_§_de_&_ADP_$___!_mark
-	mettre_§_mettre_&_VERB_$_VerbForm=Inf_!_acl
-	deux_§_deux_&_NUM_$___!_nummod
-	six_§_six_&_NUM_$___!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	j'<PRON/nsubj-Sing-1-Prs> ai<VERB/root-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> le<DET/det-Def-Masc-Sing-Art> droit<NOUN/obj-Masc-Sing> de<ADP/mark> mettre<VERB/acl-Inf> deux<NUM/nummod> six<NUM/obj> .<PUNCT/punct> 
 *ADU: tu as pas le droit de jouer.
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 3, 2, 3, 2, 3, 1, 0]
 %%details: 0 tu 1 as 3 pas 2 le 3 droit 2 de 3 jouer 1 . 0
-%morph:
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	as_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	droit_§_droit_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	de_§_de_&_ADP_$___!_mark
-	jouer_§_jouer_&_VERB_$_VerbForm=Inf_!_acl
-	._§_._&_PUNCT_$___!_punct
+%morph:	tu<PRON/nsubj-Sing-2-Prs> as<VERB/root-Ind-Sing-2-Pres-Fin> pas<ADV/advmod-Neg> le<DET/det-Def-Masc-Sing-Art> droit<NOUN/obj-Masc-Sing> de<ADP/mark> jouer<VERB/acl-Inf> .<PUNCT/punct> 
 *ADU: hum qu'est-ce qu'on doit faire alors ?
 %lng: 9
 %cpxx: 4
 %cpxdt: [0, 1, 4, 3, 2, 3, 4, 3, 2, 1, 0]
 %%details: 0 hum 1 qu' 4 est 3 -ce 2 qu' 3 on 4 doit 3 faire 2 alors 1 ? 0
-%morph:
-	hum_§_hum_&_INTJ_$___!_discourse
-	qu'_§_que_&_PRON_$_PronType=Int_!_root
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	-ce_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_expl:subj
-	qu'_§_que_&_PRON_$_PronType=Rel_!_obj
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	doit_§_devoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl:cleft
-	faire_§_faire_&_VERB_$_VerbForm=Inf_!_xcomp
-	alors_§_alors_&_ADV_$___!_advmod
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	hum<INTJ/discourse> qu'<PRON/root-Int> est<AUX/cop-Ind-Sing-3-Pres-Fin> -ce<PRON/expl:subj-Sing-3-Dem> qu'<PRON/obj-Rel> on<PRON/nsubj-Masc-Sing-3> doit<VERB/advcl:cleft-Ind-Sing-3-Pres-Fin> faire<VERB/xcomp-Inf> alors<ADV/advmod> ?<PUNCT/punct> 
 *ADU: tu veux que je mélange ?
 %lng: 5
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 1, 0]
 %%details: 0 tu 1 veux 2 que 3 je 4 mélange 1 ? 0
-%morph:
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	veux_§_vouloir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	que_§_que_&_SCONJ_$___!_mark
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	mélange_§_mélanger_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_ccomp
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	tu<PRON/nsubj-Sing-2-Prs> veux<VERB/root-Ind-Sing-1-Pres-Fin> que<SCONJ/mark> je<PRON/nsubj-Sing-1-Prs> mélange<VERB/ccomp-Ind-Sing-1-Pres-Fin> ?<PUNCT/punct> 
 *ADU: par exemple c'est un six vert.
 %lng: 7
 %cpxx: 5
 %cpxdt: [0, 2, 1, 2, 3, 4, 5, 1, 0]
 %%details: 0 par 2 exemple 1 c' 2 est 3 un 4 six 5 vert 1 . 0
-%morph:
-	par_§_par_&_ADP_$___!_advmod
-	exemple_§_exemple_&_NOUN_$_Gender=Masc|Number=Sing_!_fixed
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	six_§_six_&_NUM_$___!_nummod
-	vert_§_vert_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	._§_._&_PUNCT_$___!_punct
+%morph:	par<ADP/advmod> exemple<NOUN/fixed-Masc-Sing> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> six<NUM/nummod> vert<NOUN/root-Masc-Sing> .<PUNCT/punct> 
 *ADU: on en fait une autre ?
 %lng: 5
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 1, 0]
 %%details: 0 on 1 en 2 fait 3 une 4 autre 1 ? 0
-%morph:
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	en_§_en_&_PRON_$_Person=3_!_nmod
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	une_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Sing|PronType=Art_!_det
-	autre_§_autre_&_PRON_$_Number=Sing_!_obj
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	on<PRON/nsubj-Masc-Sing-3> en<PRON/nmod-3> fait<VERB/root-Ind-Sing-3-Pres-Fin> une<DET/det-Ind-Fem-Sing-Art> autre<PRON/obj-Sing> ?<PUNCT/punct> 
 *ADU: je peux pas jouer moi xxx.
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 1, 3, 2, 3, 2, 1, 0]
 %%details: 0 je 1 peux 3 pas 2 jouer 3 moi 2 xxx 1 . 0
-%morph:
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	peux_§_pouvoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	jouer_§_jouer_&_VERB_$_VerbForm=Inf_!_xcomp
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_obj
-	xxx_§_xxx_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	je<PRON/nsubj-Sing-1-Prs> peux<VERB/root-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> jouer<VERB/xcomp-Inf> moi<PRON/obj-Sing-1> xxx<NOUN/obj-Masc-Sing> .<PUNCT/punct> 
 *ADU: et j'ai pas le droit là.
 %lng: 7
 %cpxx: 4
 %cpxdt: [0, 1, 2, 4, 3, 4, 2, 1, 0]
 %%details: 0 et 1 j' 2 ai 4 pas 3 le 4 droit 2 là 1 . 0
-%morph:
-	et_§_et_&_CCONJ_$___!_cc
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	ai_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	droit_§_droit_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	là_§_là_&_ADV_$___!_advmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	et<CCONJ/cc> j'<PRON/nsubj-Sing-1-Prs> ai<VERB/root-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> le<DET/det-Def-Masc-Sing-Art> droit<NOUN/obj-Masc-Sing> là<ADV/advmod> .<PUNCT/punct> 
 @End

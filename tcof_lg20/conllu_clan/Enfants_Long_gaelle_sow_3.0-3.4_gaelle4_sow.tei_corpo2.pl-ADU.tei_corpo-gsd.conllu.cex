@@ -5,181 +5,65 @@
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 3, 2, 3, 1, 0]
 %%details: 0 qui 1 c' 2 est 3 le 4 garçon 3 -là 2 qui 3 arrive 1 ? 0
-%morph:
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	garçon_§_garçon_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	-là_§_là_&_ADV_$___!_advmod
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	arrive_§_arriver_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	qui<PRON/nsubj-Rel> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> le<DET/det-Def-Masc-Sing-Art> garçon<NOUN/root-Masc-Sing> -là<ADV/advmod> qui<PRON/nsubj-Rel> arrive<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> ?<PUNCT/punct> 
 *ADU: qui c'est le garçon-là qui arrive ? qui a sonné à la porte ?
 %lng: 6
 %cpxx: 4
 %cpxdt: [0, 1, 2, 2, 3, 4, 1, 0]
 %%details: 0 qui 1 a 2 sonné 2 à 3 la 4 porte 1 ? 0
-%morph:
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	sonné_§_sonné_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	à_§_à_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	porte_§_porte_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:arg
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	qui<PRON/nsubj-Rel> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> sonné<VERB/root-Masc-Sing-Past-Part> à<ADP/case> la<DET/det-Def-Fem-Sing-Art> porte<NOUN/obl:arg-Fem-Sing> ?<PUNCT/punct> 
 *ADU: oui très bien elle met du dentifrice sur sa brosse à dents.
 %lng: 14
 %cpxx: 5
 %cpxdt: [0, 2, 3, 1, 2, 3, 4, 5, 2, 3, 4, 2, 3, 1, 0, 0]
 %%details: 0 oui 2 très 3 bien 1 elle 2 met 3 du 4 de 5 le 2 dentifrice 3 sur 4 sa 2 brosse 3 à 1 dents 0 . 0
-%morph:
-	oui_§_oui_&_INTJ_$___!_discourse
-	très_§_très_&_ADV_$___!_advmod
-	bien_§_bien_&_ADV_$___!_fixed
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	met_§_mettre_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	du_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	dentifrice_§_dentifrice_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:arg
-	sur_§_sur_&_ADP_$___!_case
-	sa_§_son_&_DET_$_Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	brosse_§_brosse_&_NOUN_$_Gender=Fem|Number=Sing_!_obl
-	à_§_à_&_ADP_$___!_case
-	dents_§_dent_&_NOUN_$_Gender=Fem|Number=Plur_!_nmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	oui<INTJ/discourse> très<ADV/advmod> bien<ADV/fixed> elle<PRON/nsubj-Fem-Sing-3-Prs> met<VERB/root-Ind-Sing-3-Pres-Fin> du<_/_> de<ADP/case> le<DET/det-Def-Masc-Sing-Art> dentifrice<NOUN/obl:arg-Masc-Sing> sur<ADP/case> sa<DET/det-Fem-Sing-Yes-Prs> brosse<NOUN/obl-Fem-Sing> à<ADP/case> dents<NOUN/nmod-Fem-Plur> .<PUNCT/punct> 
 *ADU: il lui dit regarde Anaïs moi j'ai déjà mis mon manteau.
 %lng: 12
 %cpxx: 5
 %cpxdt: [0, 1, 2, 2, 3, 3, 2, 3, 4, 5, 2, 3, 1, 0]
 %%details: 0 il 1 lui 2 dit 2 regarde 3 Anaïs 3 moi 2 j' 3 ai 4 déjà 5 mis 2 mon 3 manteau 1 . 0
-%morph:
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	lui_§_lui_&_PRON_$_Number=Sing|Person=3|PronType=Prs_!_iobj
-	dit_§_dire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	regarde_§_regarder_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	Anaïs_§_Anaïs_&_PROPN_$___!_obj
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_nmod
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	déjà_§_déjà_&_ADV_$___!_advmod
-	mis_§_mettre_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_conj
-	mon_§_son_&_DET_$_Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	manteau_§_manteau_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	il<PRON/nsubj-Masc-Sing-3-Prs> lui<PRON/iobj-Sing-3-Prs> dit<VERB/root-Ind-Sing-3-Pres-Fin> regarde<VERB/advcl-Ind-Sing-3-Pres-Fin> Anaïs<PROPN/obj> moi<PRON/nmod-Sing-1> j'<PRON/nsubj-Sing-1-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> déjà<ADV/advmod> mis<VERB/conj-Masc-Sing-Past-Part> mon<DET/det-Masc-Sing-Yes-Prs> manteau<NOUN/obj-Masc-Sing> .<PUNCT/punct> 
 *ADU: hein ? et que dit Karim à Ludovic et Anaïs ?
 %lng: 10
 %cpxx: 4
 %cpxdt: [0, 3, 2, 3, 4, 3, 2, 3, 2, 3, 1, 0]
 %%details: 0 hein 3 ? 2 et 3 que 4 dit 3 Karim 2 à 3 Ludovic 2 et 3 Anaïs 1 ? 0
-%morph:
-	hein_§_hein_&_INTJ_$___!_root
-	?_§_?_&_PUNCT_$___!_punct
-	et_§_et_&_CCONJ_$___!_cc
-	que_§_que_&_PRON_$_PronType=Rel_!_obj
-	dit_§_dire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	Karim_§_Karim_&_PROPN_$___!_nsubj
-	à_§_à_&_ADP_$___!_case
-	Ludovic_§_Ludovic_&_PROPN_$___!_obl:arg
-	et_§_et_&_CCONJ_$___!_cc
-	Anaïs_§_Anaïs_&_PROPN_$___!_conj
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	hein<INTJ/root> ?<PUNCT/punct> et<CCONJ/cc> que<PRON/obj-Rel> dit<VERB/conj-Ind-Sing-3-Pres-Fin> Karim<PROPN/nsubj> à<ADP/case> Ludovic<PROPN/obl:arg> et<CCONJ/cc> Anaïs<PROPN/conj> ?<PUNCT/punct> 
 *ADU: ouais alors dans son sac elle a mis quoi ?
 %lng: 9
 %cpxx: 4
 %cpxdt: [0, 2, 1, 2, 3, 2, 3, 4, 2, 1, 0]
 %%details: 0 ouais 2 alors 1 dans 2 son 3 sac 2 elle 3 a 4 mis 2 quoi 1 ? 0
-%morph:
-	ouais_§_ouais_&_INTJ_$___!_discourse
-	alors_§_alors_&_ADV_$___!_fixed
-	dans_§_dans_&_ADP_$___!_case
-	son_§_son_&_DET_$_Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	sac_§_sac_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	mis_§_mettre_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	quoi_§_quoi_&_PRON_$___!_obj
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	ouais<INTJ/discourse> alors<ADV/fixed> dans<ADP/case> son<DET/det-Masc-Sing-Yes-Prs> sac<NOUN/obl:mod-Masc-Sing> elle<PRON/nsubj-Fem-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> mis<VERB/root-Masc-Sing-Past-Part> quoi<PRON/obj> ?<PUNCT/punct> 
 *ADU: Ludovic très bien il fait des grimaces devant la glace.
 %lng: 10
 %cpxx: 4
 %cpxdt: [0, 2, 3, 1, 2, 3, 4, 2, 3, 4, 1, 0]
 %%details: 0 Ludovic 2 très 3 bien 1 il 2 fait 3 des 4 grimaces 2 devant 3 la 4 glace 1 . 0
-%morph:
-	Ludovic_§_Ludovic_&_PROPN_$___!_advcl
-	très_§_très_&_ADV_$___!_advmod
-	bien_§_bien_&_ADV_$___!_advmod
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	des_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Plur|PronType=Art_!_det
-	grimaces_§_grimace_&_NOUN_$_Gender=Fem|Number=Plur_!_obj
-	devant_§_devant_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	glace_§_glace_&_NOUN_$_Gender=Fem|Number=Sing_!_obl
-	._§_._&_PUNCT_$___!_punct
+%morph:	Ludovic<PROPN/advcl> très<ADV/advmod> bien<ADV/advmod> il<PRON/nsubj-Masc-Sing-3-Prs> fait<VERB/root-Ind-Sing-3-Pres-Fin> des<DET/det-Ind-Fem-Plur-Art> grimaces<NOUN/obj-Fem-Plur> devant<ADP/case> la<DET/det-Def-Fem-Sing-Art> glace<NOUN/obl-Fem-Sing> .<PUNCT/punct> 
 *ADU: dans la cuisine et que font-ils dans la cuisine ?
 %lng: 10
 %cpxx: 4
 %cpxdt: [0, 1, 2, 2, 3, 4, 3, 2, 3, 4, 1, 0]
 %%details: 0 dans 1 la 2 cuisine 2 et 3 que 4 font 3 -ils 2 dans 3 la 4 cuisine 1 ? 0
-%morph:
-	dans_§_dans_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	cuisine_§_cuisine_&_NOUN_$_Gender=Fem|Number=Sing_!_root
-	et_§_et_&_CCONJ_$___!_cc
-	que_§_que_&_PRON_$_PronType=Rel_!_obj
-	font_§_faire_&_VERB_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	-ils_§_il_&_PRON_$_Gender=Masc|Number=Plur|Person=3|PronType=Prs_!_nsubj
-	dans_§_dans_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	cuisine_§_cuisine_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:mod
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	dans<ADP/case> la<DET/det-Def-Fem-Sing-Art> cuisine<NOUN/root-Fem-Sing> et<CCONJ/cc> que<PRON/obj-Rel> font<VERB/conj-Ind-Plur-3-Pres-Fin> -ils<PRON/nsubj-Masc-Plur-3-Prs> dans<ADP/case> la<DET/det-Def-Fem-Sing-Art> cuisine<NOUN/obl:mod-Fem-Sing> ?<PUNCT/punct> 
 *ADU: oui et ce dessin il est pour qui ?
 %lng: 8
 %cpxx: 5
 %cpxdt: [0, 3, 4, 5, 2, 3, 4, 5, 1, 0]
 %%details: 0 oui 3 et 4 ce 5 dessin 2 il 3 est 4 pour 5 qui 1 ? 0
-%morph:
-	oui_§_oui_&_INTJ_$___!_root
-	et_§_et_&_CCONJ_$___!_cc
-	ce_§_ce_&_DET_$_Gender=Masc|Number=Sing|PronType=Dem_!_det
-	dessin_§_dessin_&_NOUN_$_Gender=Masc|Number=Sing_!_conj
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	pour_§_pour_&_ADP_$___!_case
-	qui_§_qui_&_PRON_$_PronType=Rel_!_obl:arg
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	oui<INTJ/root> et<CCONJ/cc> ce<DET/det-Masc-Sing-Dem> dessin<NOUN/conj-Masc-Sing> il<PRON/nsubj-Masc-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> pour<ADP/case> qui<PRON/obl:arg-Rel> ?<PUNCT/punct> 
 *ADU: non non elle ne se brosse pas les dents.
 %lng: 9
 %cpxx: 4
 %cpxdt: [0, 2, 1, 2, 3, 4, 3, 2, 3, 1, 0]
 %%details: 0 non 2 non 1 elle 2 ne 3 se 4 brosse 3 pas 2 les 3 dents 1 . 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	non_§_non_&_ADV_$___!_fixed
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	ne_§_ne_&_ADV_$_Polarity=Neg_!_advmod
-	se_§_se_&_PRON_$_Person=3|PronType=Prs_!_expl:comp
-	brosse_§_brosser_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	les_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Plur|PronType=Art_!_det
-	dents_§_dent_&_NOUN_$_Gender=Fem|Number=Plur_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> non<ADV/fixed> elle<PRON/nsubj-Fem-Sing-3-Prs> ne<ADV/advmod-Neg> se<PRON/expl:comp-3-Prs> brosse<VERB/root-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> les<DET/det-Def-Fem-Plur-Art> dents<NOUN/obj-Fem-Plur> .<PUNCT/punct> 
 *ADU: hein ? et maman leur maman que fait-elle ?
 %lng: 9
 %cpxx: 3
 %cpxdt: [0, 2, 1, 2, 2, 3, 2, 3, 2, 1, 0]
 %%details: 0 hein 2 ? 1 et 2 maman 2 leur 3 maman 2 que 3 fait 2 -elle 1 ? 0
-%morph:
-	hein_§_hein_&_INTJ_$___!_root
-	?_§_?_&_PUNCT_$___!_punct
-	et_§_et_&_CCONJ_$___!_cc
-	maman_§_maman_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	leur_§_son_&_DET_$_Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	maman_§_maman_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	que_§_que_&_PRON_$_PronType=Rel_!_obj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	-elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	hein<INTJ/root> ?<PUNCT/punct> et<CCONJ/cc> maman<VERB/conj-Ind-Sing-3-Pres-Fin> leur<DET/det-Fem-Sing-Yes-Prs> maman<NOUN/obj-Fem-Sing> que<PRON/obj-Rel> fait<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> -elle<PRON/nsubj-Fem-Sing-3-Prs> ?<PUNCT/punct> 
 @End

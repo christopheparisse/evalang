@@ -5,261 +5,119 @@
 %cpxx: 2
 %cpxdt: [0, 1, 2, 2, 1, 2, 1, 1, 2, 1, 0]
 %%details: 0 un 1 deux 2 trois 2 quatre 1 cinq 2 six 1 sept 1 huit 2 neuf 1 .. 0
-%morph:
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	deux_§_deux_&_NUM_$___!_nummod
-	trois_§_trois_&_NUM_$___!_nummod
-	quatre_§_quatre_&_NUM_$___!_nummod
-	cinq_§_cinq_&_NUM_$___!_nummod
-	six_§_six_&_NUM_$___!_nummod
-	sept_§_sept_&_NUM_$___!_nummod
-	huit_§_huit_&_NUM_$___!_nummod
-	neuf_§_neuf_&_NUM_$___!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	un<DET/det-Ind-Masc-Sing-Art> deux<NUM/nummod> trois<NUM/nummod> quatre<NUM/nummod> cinq<NUM/nummod> six<NUM/nummod> sept<NUM/nummod> huit<NUM/nummod> neuf<NUM/root> ..<PUNCT/punct> 
 *CHI: on n'a pas éteint la voiture ..
 %lng: 8
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 2, 3, 1, 0]
 %%details: 0 on 1 n' 2 a 3 pas 4 éteint 2 la 3 voiture 1 .. 0
-%morph:
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	n'_§_ne_&_ADV_$_Polarity=Neg_!_advmod
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	éteint_§_éteindre_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	voiture_§_voiture_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	on<PRON/nsubj-Masc-Sing-3> n'<ADV/advmod-Neg> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> éteint<VERB/root-Masc-Sing-Past-Part> la<DET/det-Def-Fem-Sing-Art> voiture<NOUN/obj-Fem-Sing> ..<PUNCT/punct> 
 *CHI: vois pas le pantalon d'Antoine ..
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 3, 2, 3, 2, 3, 1, 0]
 %%details: 0 vois 3 pas 2 le 3 pantalon 2 d' 3 Antoine 1 .. 0
-%morph:
-	vois_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	pantalon_§_pantalon_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	d'_§_de_&_ADP_$___!_case
-	Antoine_§_Antoine_&_PROPN_$___!_nmod
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	vois<VERB/root-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> le<DET/det-Def-Masc-Sing-Art> pantalon<NOUN/obj-Masc-Sing> d'<ADP/case> Antoine<PROPN/nmod> ..<PUNCT/punct> 
 *CHI: tu as vu ɛ roule vite ..
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 2, 2, 3, 2, 1, 0]
 %%details: 0 tu 1 as 2 vu 2 ɛ 3 roule 2 vite 1 .. 0
-%morph:
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	as_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_aux:tense
-	vu_§_voir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	ɛ_§_ɛ_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	roule_§_rouler_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	vite_§_vite_&_ADV_$___!_advmod
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	tu<PRON/nsubj-Sing-2-Prs> as<AUX/aux:tense-Ind-Sing-2-Pres-Fin> vu<VERB/root-Masc-Sing-Past-Part> ɛ<NOUN/obj-Masc-Sing> roule<VERB/conj-Ind-Sing-3-Pres-Fin> vite<ADV/advmod> ..<PUNCT/punct> 
 *CHI: oui mais le train il tourne ..
 %lng: 7
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 3, 4, 1, 0]
 %%details: 0 oui 1 mais 2 le 3 train 3 il 4 tourne 1 .. 0
-%morph:
-	oui_§_oui_&_INTJ_$___!_discourse
-	mais_§_mais_&_CCONJ_$___!_cc
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	train_§_train_&_NOUN_$_Gender=Masc|Number=Sing_!_nsubj
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	tourne_§_tourner_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	oui<INTJ/discourse> mais<CCONJ/cc> le<DET/det-Def-Masc-Sing-Art> train<NOUN/nsubj-Masc-Sing> il<PRON/nsubj-Masc-Sing-3-Prs> tourne<VERB/root-Ind-Sing-3-Pres-Fin> ..<PUNCT/punct> 
 *CHI: ouais veux la musique de Antoine ..
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 3, 1, 0]
 %%details: 0 ouais 1 veux 2 la 3 musique 2 de 3 Antoine 1 .. 0
-%morph:
-	ouais_§_ouais_&_PRON_$_Number=Sing|Person=1_!_nsubj
-	veux_§_vouloir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	musique_§_musique_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	de_§_de_&_ADP_$___!_case
-	Antoine_§_Antoine_&_PROPN_$___!_nmod
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	ouais<PRON/nsubj-Sing-1> veux<VERB/root-Ind-Sing-1-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> musique<NOUN/obj-Fem-Sing> de<ADP/case> Antoine<PROPN/nmod> ..<PUNCT/punct> 
 *CHI: oh non c'est pas un poisson !
 %lng: 7
 %cpxx: 5
 %cpxdt: [0, 2, 1, 2, 3, 4, 5, 1, 0]
 %%details: 0 oh 2 non 1 c' 2 est 3 pas 4 un 5 poisson 1 ! 0
-%morph:
-	oh_§_oh_&_INTJ_$___!_discourse
-	non_§_non_&_ADV_$___!_fixed
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	poisson_§_poisson_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	oh<INTJ/discourse> non<ADV/fixed> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> un<DET/det-Ind-Masc-Sing-Art> poisson<NOUN/root-Masc-Sing> !<PUNCT/punct> 
 *CHI: mais non c'est pas un poisson !
 %lng: 7
 %cpxx: 6
 %cpxdt: [0, 1, 2, 3, 4, 5, 6, 1, 0]
 %%details: 0 mais 1 non 2 c' 3 est 4 pas 5 un 6 poisson 1 ! 0
-%morph:
-	mais_§_mais_&_CCONJ_$___!_cc
-	non_§_non_&_ADV_$___!_advmod
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	poisson_§_poisson_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	mais<CCONJ/cc> non<ADV/advmod> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> un<DET/det-Ind-Masc-Sing-Art> poisson<NOUN/root-Masc-Sing> !<PUNCT/punct> 
 *CHI: le truc pour appuyer la moto ?
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 3, 1, 0]
 %%details: 0 le 1 truc 2 pour 3 appuyer 2 la 3 moto 1 ? 0
-%morph:
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	truc_§_truc_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	pour_§_pour_&_ADP_$___!_mark
-	appuyer_§_appuyer_&_VERB_$_VerbForm=Inf_!_acl
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	moto_§_moto_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	le<DET/det-Def-Masc-Sing-Art> truc<NOUN/root-Masc-Sing> pour<ADP/mark> appuyer<VERB/acl-Inf> la<DET/det-Def-Fem-Sing-Art> moto<NOUN/obj-Fem-Sing> ?<PUNCT/punct> 
 *CHI: l arrive pas à monter là ..
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 3, 2, 3, 2, 1, 0]
 %%details: 0 l 1 arrive 3 pas 2 à 3 monter 2 là 1 .. 0
-%morph:
-	l_§_le_&_PRON_$_Number=Sing|Person=3|PronType=Prs_!_obj
-	arrive_§_arriver_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	à_§_à_&_ADP_$___!_mark
-	monter_§_monter_&_VERB_$_VerbForm=Inf_!_xcomp
-	là_§_là_&_ADV_$___!_advmod
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	l<PRON/obj-Sing-3-Prs> arrive<VERB/root-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> à<ADP/mark> monter<VERB/xcomp-Inf> là<ADV/advmod> ..<PUNCT/punct> 
 *CHI: hé ɛ remonte dans la maison ..
 %lng: 7
 %cpxx: 4
 %cpxdt: [0, 1, 2, 2, 3, 4, 1, 0]
 %%details: 0 hé 1 ɛ 2 remonte 2 dans 3 la 4 maison 1 .. 0
-%morph:
-	hé_§_hé_&_INTJ_$___!_discourse
-	ɛ_§_ɛ_&_X_$___!_nsubj
-	remonte_§_remonter_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	dans_§_dans_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	maison_§_maison_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:arg
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	hé<INTJ/discourse> ɛ<X/nsubj> remonte<VERB/root-Ind-Sing-3-Pres-Fin> dans<ADP/case> la<DET/det-Def-Fem-Sing-Art> maison<NOUN/obl:arg-Fem-Sing> ..<PUNCT/punct> 
 *CHI: après il va et va descendre ..
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 2, 2, 3, 2, 1, 0]
 %%details: 0 après 1 il 2 va 2 et 3 va 2 descendre 1 .. 0
-%morph:
-	après_§_après_&_ADV_$___!_advmod
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	va_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	et_§_et_&_CCONJ_$___!_cc
-	va_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	descendre_§_descendre_&_VERB_$_VerbForm=Inf_!_xcomp
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	après<ADV/advmod> il<PRON/nsubj-Masc-Sing-3-Prs> va<VERB/root-Ind-Sing-3-Pres-Fin> et<CCONJ/cc> va<VERB/conj-Ind-Sing-3-Pres-Fin> descendre<VERB/xcomp-Inf> ..<PUNCT/punct> 
 *CHI: alors on va faire le virage ..
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 2, 2, 2, 3, 1, 0]
 %%details: 0 alors 1 on 2 va 2 faire 2 le 3 virage 1 .. 0
-%morph:
-	alors_§_alors_&_ADV_$___!_advmod
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	va_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	faire_§_faire_&_VERB_$_VerbForm=Inf_!_xcomp
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	virage_§_virage_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	alors<ADV/advmod> on<PRON/nsubj-Masc-Sing-3> va<VERB/root-Ind-Sing-3-Pres-Fin> faire<VERB/xcomp-Inf> le<DET/det-Def-Masc-Sing-Art> virage<NOUN/obj-Masc-Sing> ..<PUNCT/punct> 
 *CHI: va pas chercher les Tchoupi ..
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 3, 2, 2, 3, 1, 0]
 %%details: 0 va 3 pas 2 chercher 2 les 3 Tchoupi 1 .. 0
-%morph:
-	va_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	chercher_§_chercher_&_VERB_$_VerbForm=Inf_!_xcomp
-	les_§_le_&_DET_$_Definite=Def|Number=Plur|PronType=Art_!_det
-	Tchoupi_§_Tchoupi_&_PROPN_$___!_obj
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	va<VERB/root-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> chercher<VERB/xcomp-Inf> les<DET/det-Def-Plur-Art> Tchoupi<PROPN/obj> ..<PUNCT/punct> 
 *CHI: tu vas la faire démarrer ?
 %lng: 5
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 1, 0]
 %%details: 0 tu 1 vas 2 la 3 faire 4 démarrer 1 ? 0
-%morph:
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	vas_§_vair_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_root
-	la_§_le_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_obj
-	faire_§_faire_&_AUX_$_VerbForm=Inf_!_aux:caus
-	démarrer_§_démarrer_&_VERB_$_VerbForm=Inf_!_xcomp
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	tu<PRON/nsubj-Sing-2-Prs> vas<VERB/root-Ind-Sing-2-Pres-Fin> la<PRON/obj-Fem-Sing-3-Prs> faire<AUX/aux:caus-Inf> démarrer<VERB/xcomp-Inf> ?<PUNCT/punct> 
 *CHI: tatie et Camille et Juliette ..
 %lng: 6
 %cpxx: 4
 %cpxdt: [0, 3, 4, 2, 3, 1, 0]
 %%details: 0 tatie 3 et 4 Camille 2 et 3 Juliette 1 .. 0
-%morph:
-	tatie_§_tatie_&_PROPN_$___!_root
-	et_§_et_&_CCONJ_$___!_cc
-	Camille_§_Camille_&_PROPN_$___!_conj
-	et_§_et_&_CCONJ_$___!_cc
-	Juliette_§_Juliette_&_PROPN_$___!_conj
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	tatie<PROPN/root> et<CCONJ/cc> Camille<PROPN/conj> et<CCONJ/cc> Juliette<PROPN/conj> ..<PUNCT/punct> 
 *CHI: pas avec maman avec papa ..
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 1, 2, 2, 3, 1, 0]
 %%details: 0 pas 1 avec 2 maman 2 avec 3 papa 1 .. 0
-%morph:
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	avec_§_avec_&_ADP_$___!_case
-	maman_§_maman_&_NOUN_$_Gender=Fem|Number=Sing_!_root
-	avec_§_avec_&_ADP_$___!_case
-	papa_§_papa_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	pas<ADV/advmod-Neg> avec<ADP/case> maman<NOUN/root-Fem-Sing> avec<ADP/case> papa<NOUN/nmod-Masc-Sing> ..<PUNCT/punct> 
 *CHI: parc que il est yy ..
 %lng: 6
 %cpxx: 5
 %cpxdt: [0, 2, 3, 4, 5, 1, 0]
 %%details: 0 parc 2 que 3 il 4 est 5 yy 1 .. 0
-%morph:
-	parc_§_parc_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	que_§_que_&_PRON_$_PronType=Rel_!_obj
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	yy_§_yy_&_NOUN_$_Gender=Masc|Number=Sing_!_acl:relcl
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	parc<NOUN/root-Masc-Sing> que<PRON/obj-Rel> il<PRON/nsubj-Masc-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> yy<NOUN/acl:relcl-Masc-Sing> ..<PUNCT/punct> 
 *CHI: on va t'aider un petit peu ..
 %lng: 8
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 3, 2, 1, 0]
 %%details: 0 on 1 va 2 t' 3 aider 2 un 3 petit 2 peu 1 .. 0
-%morph:
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	va_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	t'_§_lui_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_iobj
-	aider_§_aider_&_VERB_$_VerbForm=Inf_!_xcomp
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_advmod
-	petit_§_petit_&_ADJ_$_Gender=Masc|Number=Sing_!_fixed
-	peu_§_peu_&_ADV_$___!_fixed
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	on<PRON/nsubj-Masc-Sing-3> va<VERB/root-Ind-Sing-3-Pres-Fin> t'<PRON/iobj-Sing-2-Prs> aider<VERB/xcomp-Inf> un<DET/advmod-Ind-Masc-Sing-Art> petit<ADJ/fixed-Masc-Sing> peu<ADV/fixed> ..<PUNCT/punct> 
 *CHI: oh oui y a besoin papa ..
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 2, 1, 0]
 %%details: 0 oh 1 oui 2 y 3 a 2 besoin 2 papa 1 .. 0
-%morph:
-	oh_§_oh_&_INTJ_$___!_discourse
-	oui_§_oui_&_PRON_$_Number=Sing|Person=3_!_expl:subj
-	y_§_y_&_PRON_$___!_expl:comp
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	besoin_§_besoin_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	papa_§_papa_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	oh<INTJ/discourse> oui<PRON/expl:subj-Sing-3> y<PRON/expl:comp> a<VERB/root-Ind-Sing-3-Pres-Fin> besoin<NOUN/obj-Masc-Sing> papa<ADJ/amod-Masc-Sing> ..<PUNCT/punct> 
 @End

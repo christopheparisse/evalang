@@ -5,406 +5,59 @@
 %cpxx: 8
 %cpxdt: [0, 2, 1, 3, 2, 2, 3, 3, 4, 5, 6, 7, 8, 2, 3, 4, 2, 1, 2, 3, 4, 5, 3, 2, 3, 2, 3, 4, 1, 2, 3, 2, 3, 4, 5, 6, 7, 6, 2, 3, 4, 1, 0, 0, 0]
 %%details: 0 ben 2 euh 1 par 3 exemple 2 moi 2 la 3 famille 3 ça 4 c' 5 est 6 c' 7 est 8 une 2 des 3 de 4 les 2 valeurs 1 principales 2 donc 3 ça 4 c' 5 est 3 clair 2 euh 3 le 2 respect 3 des 4 de 1 les 2 parents 3 c' 2 est 3 euh 4 c' 5 est 6 vraiment 7 très 6 très 2 très 3 ancré 4 dans 1 la 0 culture 0 . 0
-%morph:
-	ben_§_ben_&_INTJ_$___!_discourse
-	euh_§_euh_&_INTJ_$___!_fixed
-	par_§_par_&_ADP_$___!_advmod
-	exemple_§_exemple_&_NOUN_$_Gender=Masc|Number=Sing_!_fixed
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_obl:mod
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	famille_§_famille_&_NOUN_$_Gender=Fem|Number=Sing_!_dislocated
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_dislocated
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	une_§_un_&_PRON_$_Gender=Fem|Number=Sing_!_root
-	des_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Plur|PronType=Art_!_det
-	valeurs_§_valeur_&_NOUN_$_Gender=Fem|Number=Plur_!_nmod
-	principales_§_principal_&_ADJ_$_Gender=Fem|Number=Plur_!_amod
-	donc_§_donc_&_ADV_$___!_advmod
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	clair_§_clair_&_ADJ_$_Gender=Masc|Number=Sing_!_conj
-	euh_§_euh_&_ADV_$___!_advmod
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	respect_§_respect_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	des_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	parents_§_parent_&_NOUN_$_Gender=Masc|Number=Plur_!_nmod
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	euh_§_euh_&_INTJ_$___!_discourse
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj:pass
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:pass
-	vraiment_§_vraiment_&_ADV_$___!_advmod
-	très_§_très_&_ADV_$___!_advmod
-	très_§_très_&_ADV_$___!_advmod
-	très_§_très_&_ADV_$___!_advmod
-	ancré_§_ancrer_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_conj
-	dans_§_dans_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	culture_§_culture_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:mod
-	._§_._&_PUNCT_$___!_punct
+%morph:	ben<INTJ/discourse> euh<INTJ/fixed> par<ADP/advmod> exemple<NOUN/fixed-Masc-Sing> moi<PRON/obl:mod-Sing-1> la<DET/det-Def-Fem-Sing-Art> famille<NOUN/dislocated-Fem-Sing> ça<PRON/dislocated-Masc-Sing-3-Dem> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> une<PRON/root-Fem-Sing> des<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> valeurs<NOUN/nmod-Fem-Plur> principales<ADJ/amod-Fem-Plur> donc<ADV/advmod> ça<PRON/nsubj-Masc-Sing-3-Dem> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> clair<ADJ/conj-Masc-Sing> euh<ADV/advmod> le<DET/det-Def-Masc-Sing-Art> respect<NOUN/obl:mod-Masc-Sing> des<_/_> de<ADP/case> les<DET/det-Def-Masc-Plur-Art> parents<NOUN/nmod-Masc-Plur> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> euh<INTJ/discourse> c'<PRON/nsubj:pass-Sing-3-Dem> est<AUX/aux:pass-Ind-Sing-3-Pres-Fin> vraiment<ADV/advmod> très<ADV/advmod> très<ADV/advmod> très<ADV/advmod> ancré<VERB/conj-Masc-Sing-Past-Part> dans<ADP/case> la<DET/det-Def-Fem-Sing-Art> culture<NOUN/obl:mod-Fem-Sing> .<PUNCT/punct> 
 *ADU: non mais euh non j'aimerais j'aimerais euh je veux apprendre la cuisine marocaine moi je j'ai déjà j'ai déjà des bases forcément mais j'aimerais être aussi calée que ma mère ça c'est clair.
 %lng: 39
 %cpxx: 7
 %cpxdt: [0, 3, 2, 1, 2, 3, 2, 3, 2, 3, 4, 3, 3, 4, 3, 2, 3, 4, 5, 3, 2, 3, 5, 4, 5, 3, 2, 3, 4, 2, 3, 4, 2, 3, 4, 4, 5, 6, 7, 1, 0]
 %%details: 0 non 3 mais 2 euh 1 non 2 j' 3 aimerais 2 j' 3 aimerais 2 euh 3 je 4 veux 3 apprendre 3 la 4 cuisine 3 marocaine 2 moi 3 je 4 j' 5 ai 3 déjà 2 j' 3 ai 5 déjà 4 des 5 bases 3 forcément 2 mais 3 j' 4 aimerais 2 être 3 aussi 4 calée 2 que 3 ma 4 mère 4 ça 5 c' 6 est 7 clair 1 . 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	mais_§_mais_&_CCONJ_$___!_fixed
-	euh_§_euh_&_INTJ_$___!_fixed
-	non_§_non_&_ADV_$___!_advmod
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	aimerais_§_aimer_&_VERB_$_Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_parataxis
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	aimerais_§_aimer_&_VERB_$_Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	euh_§_soi_&_PRON_$_Number=Sing|PronType=Prs_!_obj
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	veux_§_vouloir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_conj
-	apprendre_§_apprendre_&_VERB_$_VerbForm=Inf_!_xcomp
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	cuisine_§_cuisine_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	marocaine_§_marocain_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_obj
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	ai_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_parataxis
-	déjà_§_déjà_&_ADV_$___!_advmod
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	ai_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_ccomp
-	déjà_§_déjà_&_ADV_$___!_advmod
-	des_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Plur|PronType=Art_!_det
-	bases_§_base_&_NOUN_$_Gender=Fem|Number=Plur_!_obj
-	forcément_§_forcément_&_ADV_$___!_advmod
-	mais_§_mais_&_CCONJ_$___!_cc
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	aimerais_§_aimer_&_VERB_$_Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_conj
-	être_§_être_&_AUX_$_VerbForm=Inf_!_aux:pass
-	aussi_§_aussi_&_ADV_$___!_advmod
-	calée_§_caler_&_VERB_$_Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part_!_xcomp
-	que_§_que_&_SCONJ_$___!_mark
-	ma_§_son_&_DET_$_Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	mère_§_mère_&_NOUN_$_Gender=Fem|Number=Sing_!_nsubj
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	clair_§_clair_&_ADJ_$_Gender=Masc|Number=Sing_!_ccomp
-	._§_._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> mais<CCONJ/fixed> euh<INTJ/fixed> non<ADV/advmod> j'<PRON/nsubj-Sing-1-Prs> aimerais<VERB/parataxis-Cnd-Sing-1-Pres-Fin> j'<PRON/nsubj-Sing-1-Prs> aimerais<VERB/root-Cnd-Sing-1-Pres-Fin> euh<PRON/obj-Sing-Prs> je<PRON/nsubj-Sing-1-Prs> veux<VERB/conj-Ind-Sing-1-Pres-Fin> apprendre<VERB/xcomp-Inf> la<DET/det-Def-Fem-Sing-Art> cuisine<NOUN/obj-Fem-Sing> marocaine<ADJ/amod-Fem-Sing> moi<PRON/obj-Sing-1> je<PRON/nsubj-Sing-1-Prs> j'<PRON/nsubj-Sing-1-Prs> ai<VERB/parataxis-Ind-Sing-1-Pres-Fin> déjà<ADV/advmod> j'<PRON/nsubj-Sing-1-Prs> ai<VERB/ccomp-Ind-Sing-1-Pres-Fin> déjà<ADV/advmod> des<DET/det-Ind-Fem-Plur-Art> bases<NOUN/obj-Fem-Plur> forcément<ADV/advmod> mais<CCONJ/cc> j'<PRON/nsubj-Sing-1-Prs> aimerais<VERB/conj-Cnd-Sing-1-Pres-Fin> être<AUX/aux:pass-Inf> aussi<ADV/advmod> calée<VERB/xcomp-Fem-Sing-Past-Part> que<SCONJ/mark> ma<DET/det-Fem-Sing-Yes-Prs> mère<NOUN/nsubj-Fem-Sing> ça<PRON/nsubj-Masc-Sing-3-Dem> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> clair<ADJ/ccomp-Masc-Sing> .<PUNCT/punct> 
 *ADU: euh voilà moi ma ma culture entre guillemets d'origine c'est c'est la France moi euh ma mère elle met la chaîne marocaine c'est pas pour autant que je la regarde je la.
 %lng: 36
 %cpxx: 7
 %cpxdt: [0, 1, 4, 3, 4, 5, 3, 4, 3, 4, 2, 3, 4, 5, 6, 7, 4, 3, 4, 5, 5, 6, 3, 4, 3, 2, 3, 4, 5, 4, 2, 3, 4, 5, 2, 3, 1, 0]
 %%details: 0 euh 1 voilà 4 moi 3 ma 4 ma 5 culture 3 entre 4 guillemets 3 d' 4 origine 2 c' 3 est 4 c' 5 est 6 la 7 France 4 moi 3 euh 4 ma 5 mère 5 elle 6 met 3 la 4 chaîne 3 marocaine 2 c' 3 est 4 pas 5 pour 4 autant 2 que 3 je 4 la 5 regarde 2 je 3 la 1 . 0
-%morph:
-	euh_§_euh_&_INTJ_$___!_discourse
-	voilà_§_voilà_&_VERB_$___!_root
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_obj
-	ma_§_son_&_DET_$_Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	ma_§_son_&_DET_$_Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	culture_§_culture_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	entre_§_entre_&_ADP_$___!_case
-	guillemets_§_guillemet_&_NOUN_$_Gender=Masc|Number=Plur_!_nmod
-	d'_§_de_&_ADP_$___!_case
-	origine_§_origine_&_NOUN_$_Gender=Fem|Number=Sing_!_nmod
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	France_§_France_&_PROPN_$___!_conj
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_nmod
-	euh_§_euh_&_INTJ_$___!_discourse
-	ma_§_son_&_DET_$_Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	mère_§_mère_&_NOUN_$_Gender=Fem|Number=Sing_!_nsubj
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	met_§_mettre_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	chaîne_§_chaîne_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	marocaine_§_marocain_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_expl:subj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	pour_§_pour_&_ADP_$___!_advmod
-	autant_§_autant_&_ADV_$___!_fixed
-	que_§_que_&_SCONJ_$___!_mark
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	la_§_le_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_obj
-	regarde_§_regarder_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_advcl:cleft
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	la_§_le_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	euh<INTJ/discourse> voilà<VERB/root> moi<PRON/obj-Sing-1> ma<DET/det-Fem-Sing-Yes-Prs> ma<DET/det-Fem-Sing-Yes-Prs> culture<NOUN/obj-Fem-Sing> entre<ADP/case> guillemets<NOUN/nmod-Masc-Plur> d'<ADP/case> origine<NOUN/nmod-Fem-Sing> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> France<PROPN/conj> moi<PRON/nmod-Sing-1> euh<INTJ/discourse> ma<DET/det-Fem-Sing-Yes-Prs> mère<NOUN/nsubj-Fem-Sing> elle<PRON/nsubj-Fem-Sing-3-Prs> met<VERB/conj-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> chaîne<NOUN/obj-Fem-Sing> marocaine<ADJ/amod-Fem-Sing> c'<PRON/expl:subj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> pour<ADP/advmod> autant<ADV/fixed> que<SCONJ/mark> je<PRON/nsubj-Sing-1-Prs> la<PRON/obj-Fem-Sing-3-Prs> regarde<VERB/advcl:cleft-Ind-Sing-1-Pres-Fin> je<PRON/nsubj-Sing-1-Prs> la<PRON/obj-Fem-Sing-3-Prs> .<PUNCT/punct> 
 *ADU: et euh ouais non c'est vrai que ben là-bas on est des les des les jeunes qui se qui se la pètent qu- parce qu'ils viennent de l'étranger et tout ça.
 %lng: 36
 %cpxx: 7
 %cpxdt: [0, 1, 3, 2, 3, 4, 5, 2, 3, 5, 4, 5, 6, 7, 2, 3, 4, 5, 2, 3, 4, 5, 6, 7, 3, 2, 4, 3, 4, 2, 3, 4, 2, 3, 4, 1, 0, 0]
 %%details: 0 et 1 euh 3 ouais 2 non 3 c' 4 est 5 vrai 2 que 3 ben 5 là-bas 4 on 5 est 6 des 7 les 2 des 3 de 4 les 5 les 2 jeunes 3 qui 4 se 5 qui 6 se 7 la 3 pètent 2 qu- 4 parce 3 qu' 4 ils 2 viennent 3 de 4 l' 2 étranger 3 et 4 tout 1 ça 0 . 0
-%morph:
-	et_§_et_&_CCONJ_$___!_cc
-	euh_§_euh_&_INTJ_$___!_discourse
-	ouais_§_ouais_&_INTJ_$___!_fixed
-	non_§_non_&_ADV_$___!_advmod
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_expl:subj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	vrai_§_vrai_&_ADJ_$_Gender=Masc|Number=Sing_!_root
-	que_§_que_&_SCONJ_$___!_mark
-	ben_§_ben_&_INTJ_$___!_discourse
-	là-bas_§_là-bas_&_ADV_$___!_fixed
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	des_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Plur|PronType=Art_!_det
-	les_§_le_&_PRON_$_Number=Plur|Person=3|PronType=Prs_!_csubj
-	des_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	jeunes_§_jeune_&_NOUN_$_Gender=Masc|Number=Plur_!_nmod
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	se_§_se_&_PRON_$_Person=3|PronType=Prs_!_expl:comp
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	se_§_se_&_PRON_$_Person=3|PronType=Prs_!_expl:comp
-	la_§_le_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_obj
-	pètent_§_péter_&_VERB_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	qu-_§_qu-_&_ADV_$___!_advmod
-	parce_§_parce_&_ADV_$___!_mark
-	qu'_§_que_&_SCONJ_$___!_fixed
-	ils_§_il_&_PRON_$_Gender=Masc|Number=Plur|Person=3|PronType=Prs_!_nsubj
-	viennent_§_venir_&_VERB_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	de_§_de_&_ADP_$___!_case
-	l'_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	étranger_§_étranger_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:arg
-	et_§_et_&_CCONJ_$___!_cc
-	tout_§_tout_&_DET_$_Gender=Masc|Number=Sing_!_det
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_conj
-	._§_._&_PUNCT_$___!_punct
+%morph:	et<CCONJ/cc> euh<INTJ/discourse> ouais<INTJ/fixed> non<ADV/advmod> c'<PRON/expl:subj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> vrai<ADJ/root-Masc-Sing> que<SCONJ/mark> ben<INTJ/discourse> là-bas<ADV/fixed> on<PRON/nsubj-Masc-Sing-3> est<AUX/cop-Ind-Sing-3-Pres-Fin> des<DET/det-Ind-Masc-Plur-Art> les<PRON/csubj-Plur-3-Prs> des<_/_> de<ADP/case> les<DET/det-Def-Masc-Plur-Art> les<DET/det-Def-Masc-Plur-Art> jeunes<NOUN/nmod-Masc-Plur> qui<PRON/nsubj-Rel> se<PRON/expl:comp-3-Prs> qui<PRON/nsubj-Rel> se<PRON/expl:comp-3-Prs> la<PRON/obj-Fem-Sing-3-Prs> pètent<VERB/acl:relcl-Ind-Plur-3-Pres-Fin> qu-<ADV/advmod> parce<ADV/mark> qu'<SCONJ/fixed> ils<PRON/nsubj-Masc-Plur-3-Prs> viennent<VERB/advcl-Ind-Plur-3-Pres-Fin> de<ADP/case> l'<DET/det-Def-Masc-Sing-Art> étranger<NOUN/obl:arg-Masc-Sing> et<CCONJ/cc> tout<DET/det-Masc-Sing> ça<PRON/conj-Masc-Sing-3-Dem> .<PUNCT/punct> 
 *ADU: après si tu coupes le jeûne deux heures après euh c'est pas bon enfin vaut vaut mieux le couper le plus tôt possible donc si tu as pas la possibilité.
 %lng: 31
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 3, 4, 2, 3, 2, 3, 1, 2, 3, 4, 1, 2, 2, 3, 2, 3, 3, 5, 4, 3, 2, 3, 4, 5, 3, 2, 3, 1, 0]
 %%details: 0 après 1 si 2 tu 3 coupes 3 le 4 jeûne 2 deux 3 heures 2 après 3 euh 1 c' 2 est 3 pas 4 bon 1 enfin 2 vaut 2 vaut 3 mieux 2 le 3 couper 3 le 5 plus 4 tôt 3 possible 2 donc 3 si 4 tu 5 as 3 pas 2 la 3 possibilité 1 . 0
-%morph:
-	après_§_après_&_ADP_$___!_mark
-	si_§_si_&_SCONJ_$___!_mark
-	tu_§_il_&_PRON_$_Number=Plur|Person=2|PronType=Prs_!_nsubj
-	coupes_§_coupe_&_NOUN_$_Gender=Fem|Number=Plur_!_advcl
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	jeûne_§_jeûne_&_NOUN_$_Gender=Masc|Number=Sing_!_appos
-	deux_§_deux_&_NUM_$___!_nummod
-	heures_§_heure_&_NOUN_$_Gender=Fem|Number=Plur_!_appos
-	après_§_après_&_ADP_$___!_case
-	euh_§_euh_&_INTJ_$___!_discourse
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	bon_§_bon_&_ADJ_$_Gender=Masc|Number=Sing_!_advcl
-	enfin_§_enfin_&_ADV_$___!_advmod
-	vaut_§_valoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	vaut_§_valoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_parataxis
-	mieux_§_mieux_&_ADV_$___!_advmod
-	le_§_le_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_obj
-	couper_§_couper_&_VERB_$_VerbForm=Inf_!_xcomp
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_advmod
-	plus_§_plus_&_ADV_$___!_fixed
-	tôt_§_tôt_&_ADV_$___!_advmod
-	possible_§_possible_&_ADJ_$_Gender=Masc|Number=Sing_!_advcl
-	donc_§_donc_&_ADV_$___!_advmod
-	si_§_si_&_SCONJ_$___!_mark
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	as_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_advcl
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	possibilité_§_possibilité_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	après<ADP/mark> si<SCONJ/mark> tu<PRON/nsubj-Plur-2-Prs> coupes<NOUN/advcl-Fem-Plur> le<DET/det-Def-Masc-Sing-Art> jeûne<NOUN/appos-Masc-Sing> deux<NUM/nummod> heures<NOUN/appos-Fem-Plur> après<ADP/case> euh<INTJ/discourse> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> bon<ADJ/advcl-Masc-Sing> enfin<ADV/advmod> vaut<VERB/root-Ind-Sing-3-Pres-Fin> vaut<VERB/parataxis-Ind-Sing-3-Pres-Fin> mieux<ADV/advmod> le<PRON/obj-Masc-Sing-3-Prs> couper<VERB/xcomp-Inf> le<DET/advmod-Def-Masc-Sing-Art> plus<ADV/fixed> tôt<ADV/advmod> possible<ADJ/advcl-Masc-Sing> donc<ADV/advmod> si<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> as<VERB/advcl-Ind-Sing-2-Pres-Fin> pas<ADV/advmod-Neg> la<DET/det-Def-Fem-Sing-Art> possibilité<NOUN/obj-Fem-Sing> .<PUNCT/punct> 
 *ADU: après il y a il y a forcément des exceptions mais euh via ce que j'ai vu effectivement c'est c'est moins famille quand même hein c'est bien moins famille.
 %lng: 33
 %cpxx: 9
 %cpxdt: [0, 1, 2, 3, 3, 4, 3, 3, 2, 3, 1, 2, 3, 4, 5, 6, 7, 8, 5, 4, 5, 6, 7, 8, 9, 2, 4, 3, 4, 5, 6, 7, 7, 1, 0]
 %%details: 0 après 1 il 2 y 3 a 3 il 4 y 3 a 3 forcément 2 des 3 exceptions 1 mais 2 euh 3 via 4 ce 5 que 6 j' 7 ai 8 vu 5 effectivement 4 c' 5 est 6 c' 7 est 8 moins 9 famille 2 quand 4 même 3 hein 4 c' 5 est 6 bien 7 moins 7 famille 1 . 0
-%morph:
-	après_§_après_&_ADV_$___!_advmod
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_expl:subj
-	y_§_y_&_PRON_$___!_expl:comp
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_expl:subj
-	y_§_y_&_PRON_$___!_fixed
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_fixed
-	forcément_§_forcément_&_ADV_$___!_advmod
-	des_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Plur|PronType=Art_!_det
-	exceptions_§_exception_&_NOUN_$_Gender=Fem|Number=Plur_!_obj
-	mais_§_mais_&_CCONJ_$___!_cc
-	euh_§_euh_&_INTJ_$___!_discourse
-	via_§_via_&_ADP_$___!_case
-	ce_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_obl:mod
-	que_§_que_&_PRON_$_PronType=Rel_!_obj
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	vu_§_voir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_acl:relcl
-	effectivement_§_effectivement_&_ADV_$___!_advmod
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	moins_§_moins_&_ADV_$___!_advmod
-	famille_§_famille_&_NOUN_$_Gender=Fem|Number=Sing_!_conj
-	quand_§_quand_&_SCONJ_$___!_mark
-	même_§_même_&_ADV_$___!_fixed
-	hein_§_hein_&_INTJ_$___!_discourse
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	bien_§_bien_&_ADV_$___!_advmod
-	moins_§_moins_&_ADV_$___!_advmod
-	famille_§_famille_&_NOUN_$_Gender=Fem|Number=Sing_!_advcl
-	._§_._&_PUNCT_$___!_punct
+%morph:	après<ADV/advmod> il<PRON/expl:subj-Masc-Sing-3-Prs> y<PRON/expl:comp> a<VERB/root-Ind-Sing-3-Pres-Fin> il<PRON/expl:subj-Masc-Sing-3-Prs> y<PRON/fixed> a<VERB/fixed-Ind-Sing-3-Pres-Fin> forcément<ADV/advmod> des<DET/det-Ind-Fem-Plur-Art> exceptions<NOUN/obj-Fem-Plur> mais<CCONJ/cc> euh<INTJ/discourse> via<ADP/case> ce<PRON/obl:mod-Sing-3-Dem> que<PRON/obj-Rel> j'<PRON/nsubj-Sing-1-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> vu<VERB/acl:relcl-Masc-Sing-Past-Part> effectivement<ADV/advmod> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> moins<ADV/advmod> famille<NOUN/conj-Fem-Sing> quand<SCONJ/mark> même<ADV/fixed> hein<INTJ/discourse> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> bien<ADV/advmod> moins<ADV/advmod> famille<NOUN/advcl-Fem-Sing> .<PUNCT/punct> 
 *ADU: et euh autre question est-ce que tu penses que le fait que ta mère vienne euh enfin son pays d'origine c'était le Maroc donc euh la France pays d'accueil.
 %lng: 33
 %cpxx: 8
 %cpxdt: [0, 1, 2, 3, 3, 4, 2, 3, 4, 2, 3, 4, 5, 6, 7, 7, 6, 5, 4, 5, 6, 7, 5, 6, 7, 8, 4, 3, 2, 3, 4, 2, 3, 1, 0]
 %%details: 0 et 1 euh 2 autre 3 question 3 est 4 -ce 2 que 3 tu 4 penses 2 que 3 le 4 fait 5 que 6 ta 7 mère 7 vienne 6 euh 5 enfin 4 son 5 pays 6 d' 7 origine 5 c' 6 était 7 le 8 Maroc 4 donc 3 euh 2 la 3 France 4 pays 2 d' 3 accueil 1 . 0
-%morph:
-	et_§_et_&_CCONJ_$___!_cc
-	euh_§_son_&_DET_$_Gender=Fem|Number=Sing|PronType=Dem_!_det
-	autre_§_autre_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	question_§_question_&_NOUN_$_Gender=Fem|Number=Sing_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	-ce_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_root
-	que_§_que_&_PRON_$_PronType=Rel_!_obj
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	penses_§_penser_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	que_§_que_&_SCONJ_$___!_mark
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	fait_§_fait_&_NOUN_$_Gender=Masc|Number=Sing_!_nsubj
-	que_§_que_&_SCONJ_$___!_mark
-	ta_§_ta_&_DET_$_Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	mère_§_mère_&_NOUN_$_Gender=Fem|Number=Sing_!_nsubj
-	vienne_§_venir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl
-	euh_§_euh_&_INTJ_$___!_discourse
-	enfin_§_enfin_&_ADV_$___!_advmod
-	son_§_son_&_DET_$_Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	pays_§_pays_&_NOUN_$_Gender=Masc|Number=Sing_!_dislocated
-	d'_§_de_&_ADP_$___!_case
-	origine_§_origine_&_NOUN_$_Gender=Fem|Number=Sing_!_nmod
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	était_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin_!_cop
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	Maroc_§_Maroc_&_PROPN_$___!_ccomp
-	donc_§_donc_&_ADV_$___!_advmod
-	euh_§_euh_&_INTJ_$___!_discourse
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	France_§_France_&_PROPN_$___!_nsubj
-	pays_§_pays_&_NOUN_$_Gender=Masc|Number=Sing_!_appos
-	d'_§_de_&_ADP_$___!_case
-	accueil_§_accueil_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	et<CCONJ/cc> euh<DET/det-Fem-Sing-Dem> autre<ADJ/amod-Fem-Sing> question<NOUN/nsubj-Fem-Sing> est<AUX/cop-Ind-Sing-3-Pres-Fin> -ce<PRON/root-Sing-3-Dem> que<PRON/obj-Rel> tu<PRON/nsubj-Sing-2-Prs> penses<VERB/acl:relcl-Ind-Sing-2-Pres-Fin> que<SCONJ/mark> le<DET/det-Def-Masc-Sing-Art> fait<NOUN/nsubj-Masc-Sing> que<SCONJ/mark> ta<DET/det-Fem-Sing-Yes-Prs> mère<NOUN/nsubj-Fem-Sing> vienne<VERB/acl-Ind-Sing-3-Pres-Fin> euh<INTJ/discourse> enfin<ADV/advmod> son<DET/det-Masc-Sing-Yes-Prs> pays<NOUN/dislocated-Masc-Sing> d'<ADP/case> origine<NOUN/nmod-Fem-Sing> c'<PRON/nsubj-Sing-3-Dem> était<AUX/cop-Ind-Sing-3-Imp-Fin> le<DET/det-Def-Masc-Sing-Art> Maroc<PROPN/ccomp> donc<ADV/advmod> euh<INTJ/discourse> la<DET/det-Def-Fem-Sing-Art> France<PROPN/nsubj> pays<NOUN/appos-Masc-Sing> d'<ADP/case> accueil<NOUN/nmod-Masc-Sing> .<PUNCT/punct> 
 *ADU: ou dans n'importe quel autre pays on te repère à des kilomètres je sais pas comment ils font ils doivent avoir un sixième sens mais euh mais voilà.
 %lng: 29
 %cpxx: 5
 %cpxdt: [0, 1, 2, 5, 4, 3, 4, 2, 3, 4, 3, 4, 5, 2, 3, 4, 3, 4, 5, 2, 3, 2, 3, 4, 5, 2, 3, 2, 3, 1, 0]
 %%details: 0 ou 1 dans 2 n' 5 importe 4 quel 3 autre 4 pays 2 on 3 te 4 repère 3 à 4 des 5 kilomètres 2 je 3 sais 4 pas 3 comment 4 ils 5 font 2 ils 3 doivent 2 avoir 3 un 4 sixième 5 sens 2 mais 3 euh 2 mais 3 voilà 1 . 0
-%morph:
-	ou_§_ou_&_CCONJ_$___!_cc
-	dans_§_dans_&_ADP_$___!_case
-	n'_§_ne_&_ADV_$_Polarity=Neg_!_det
-	importe_§_importer_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_fixed
-	quel_§_quel_&_DET_$_Gender=Masc|Number=Sing_!_fixed
-	autre_§_autre_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	pays_§_pays_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	te_§_lui_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_iobj
-	repère_§_repère_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	à_§_à_&_ADP_$___!_case
-	des_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Plur|PronType=Art_!_det
-	kilomètres_§_kilomètre_&_NOUN_$_Gender=Masc|Number=Plur_!_obl:mod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	sais_§_savoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	comment_§_comment_&_ADV_$___!_advmod
-	ils_§_il_&_PRON_$_Gender=Masc|Number=Plur|Person=3|PronType=Prs_!_nsubj
-	font_§_faire_&_VERB_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_ccomp
-	ils_§_il_&_PRON_$_Gender=Masc|Number=Plur|Person=3|PronType=Prs_!_nsubj
-	doivent_§_devoir_&_VERB_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_ccomp
-	avoir_§_avoir_&_VERB_$_VerbForm=Inf_!_xcomp
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	sixième_§_sixième_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	sens_§_sens_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	mais_§_mais_&_CCONJ_$___!_cc
-	euh_§_euh_&_INTJ_$___!_conj
-	mais_§_mais_&_CCONJ_$___!_cc
-	voilà_§_voilà_&_VERB_$___!_conj
-	._§_._&_PUNCT_$___!_punct
+%morph:	ou<CCONJ/cc> dans<ADP/case> n'<ADV/det-Neg> importe<VERB/fixed-Ind-Sing-3-Pres-Fin> quel<DET/fixed-Masc-Sing> autre<ADJ/amod-Masc-Sing> pays<NOUN/obl:mod-Masc-Sing> on<PRON/nsubj-Masc-Sing-3> te<PRON/iobj-Sing-2-Prs> repère<VERB/advcl-Ind-Sing-3-Pres-Fin> à<ADP/case> des<DET/det-Ind-Masc-Plur-Art> kilomètres<NOUN/obl:mod-Masc-Plur> je<PRON/nsubj-Sing-1-Prs> sais<VERB/root-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> comment<ADV/advmod> ils<PRON/nsubj-Masc-Plur-3-Prs> font<VERB/ccomp-Ind-Plur-3-Pres-Fin> ils<PRON/nsubj-Masc-Plur-3-Prs> doivent<VERB/ccomp-Ind-Plur-3-Pres-Fin> avoir<VERB/xcomp-Inf> un<DET/det-Ind-Masc-Sing-Art> sixième<ADJ/amod-Masc-Sing> sens<NOUN/obj-Masc-Sing> mais<CCONJ/cc> euh<INTJ/conj> mais<CCONJ/cc> voilà<VERB/conj> .<PUNCT/punct> 
 *ADU: il te faut un papier marocain il il faut que tu sois de nationalité marocaine sinon c'est vraiment la croix et la bannière pour entrer dans le pays.
 %lng: 29
 %cpxx: 7
 %cpxdt: [0, 1, 2, 4, 5, 4, 3, 4, 5, 3, 4, 5, 3, 4, 3, 2, 3, 4, 5, 6, 7, 3, 4, 5, 2, 3, 2, 3, 4, 1, 0]
 %%details: 0 il 1 te 2 faut 4 un 5 papier 4 marocain 3 il 4 il 5 faut 3 que 4 tu 5 sois 3 de 4 nationalité 3 marocaine 2 sinon 3 c' 4 est 5 vraiment 6 la 7 croix 3 et 4 la 5 bannière 2 pour 3 entrer 2 dans 3 le 4 pays 1 . 0
-%morph:
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_expl:subj
-	te_§_lui_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_iobj
-	faut_§_falloir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	papier_§_papier_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	marocain_§_marocain_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_expl:subj
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_expl:subj
-	faut_§_falloir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	que_§_que_&_SCONJ_$___!_mark
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	sois_§_être_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_ccomp
-	de_§_de_&_ADP_$___!_case
-	nationalité_§_nationalité_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:arg
-	marocaine_§_marocain_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	sinon_§_sinon_&_SCONJ_$___!_cc
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	vraiment_§_vraiment_&_ADV_$___!_advmod
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	croix_§_croix_&_NOUN_$_Gender=Fem|Number=Sing_!_conj
-	et_§_et_&_CCONJ_$___!_cc
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	bannière_§_bannière_&_NOUN_$_Gender=Fem|Number=Sing_!_conj
-	pour_§_pour_&_ADP_$___!_mark
-	entrer_§_entrer_&_VERB_$_VerbForm=Inf_!_advcl
-	dans_§_dans_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	pays_§_pays_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:arg
-	._§_._&_PUNCT_$___!_punct
+%morph:	il<PRON/expl:subj-Masc-Sing-3-Prs> te<PRON/iobj-Sing-2-Prs> faut<VERB/root-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> papier<NOUN/obj-Masc-Sing> marocain<ADJ/amod-Masc-Sing> il<PRON/expl:subj-Masc-Sing-3-Prs> il<PRON/expl:subj-Masc-Sing-3-Prs> faut<VERB/conj-Ind-Sing-3-Pres-Fin> que<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> sois<VERB/ccomp-Ind-Sing-2-Pres-Fin> de<ADP/case> nationalité<NOUN/obl:arg-Fem-Sing> marocaine<ADJ/amod-Fem-Sing> sinon<SCONJ/cc> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> vraiment<ADV/advmod> la<DET/det-Def-Fem-Sing-Art> croix<NOUN/conj-Fem-Sing> et<CCONJ/cc> la<DET/det-Def-Fem-Sing-Art> bannière<NOUN/conj-Fem-Sing> pour<ADP/mark> entrer<VERB/advcl-Inf> dans<ADP/case> le<DET/det-Def-Masc-Sing-Art> pays<NOUN/obl:arg-Masc-Sing> .<PUNCT/punct> 
 *ADU: si tu devais faire euh une diffé- pas une différence mais euh enfin si un petit peu euh mettre en opposition la culture française et la culture marocaine.
 %lng: 28
 %cpxx: 9
 %cpxdt: [0, 1, 2, 2, 5, 4, 5, 3, 4, 5, 2, 3, 4, 5, 6, 9, 8, 7, 7, 3, 4, 2, 3, 3, 2, 3, 4, 2, 1, 0]
 %%details: 0 si 1 tu 2 devais 2 faire 5 euh 4 une 5 diffé- 3 pas 4 une 5 différence 2 mais 3 euh 4 enfin 5 si 6 un 9 petit 8 peu 7 euh 7 mettre 3 en 4 opposition 2 la 3 culture 3 française 2 et 3 la 4 culture 2 marocaine 1 . 0
-%morph:
-	si_§_si_&_SCONJ_$___!_mark
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	devais_§_devoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin_!_root
-	faire_§_faire_&_VERB_$_VerbForm=Inf_!_xcomp
-	euh_§_euh_&_INTJ_$___!_advmod
-	une_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Sing|PronType=Art_!_det
-	diffé-_§_diffé-_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	une_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Sing|PronType=Art_!_det
-	différence_§_différence_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	mais_§_mais_&_CCONJ_$___!_cc
-	euh_§_euh_&_INTJ_$___!_discourse
-	enfin_§_enfin_&_ADV_$___!_advmod
-	si_§_si_&_SCONJ_$___!_mark
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_advmod
-	petit_§_petit_&_ADJ_$_Gender=Masc|Number=Sing_!_fixed
-	peu_§_peu_&_ADV_$___!_fixed
-	euh_§_soi_&_PRON_$_Number=Sing|Person=3_!_obl:mod
-	mettre_§_mettre_&_VERB_$_VerbForm=Inf_!_conj
-	en_§_en_&_ADP_$___!_case
-	opposition_§_opposition_&_NOUN_$_Gender=Fem|Number=Sing_!_obl
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	culture_§_culture_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	française_§_français_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	et_§_et_&_CCONJ_$___!_cc
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	culture_§_culture_&_NOUN_$_Gender=Fem|Number=Sing_!_conj
-	marocaine_§_marocain_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	._§_._&_PUNCT_$___!_punct
+%morph:	si<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> devais<VERB/root-Ind-Sing-1-Imp-Fin> faire<VERB/xcomp-Inf> euh<INTJ/advmod> une<DET/det-Ind-Fem-Sing-Art> diffé-<NOUN/obj-Fem-Sing> pas<ADV/advmod-Neg> une<DET/det-Ind-Fem-Sing-Art> différence<NOUN/obj-Fem-Sing> mais<CCONJ/cc> euh<INTJ/discourse> enfin<ADV/advmod> si<SCONJ/mark> un<DET/advmod-Ind-Masc-Sing-Art> petit<ADJ/fixed-Masc-Sing> peu<ADV/fixed> euh<PRON/obl:mod-Sing-3> mettre<VERB/conj-Inf> en<ADP/case> opposition<NOUN/obl-Fem-Sing> la<DET/det-Def-Fem-Sing-Art> culture<NOUN/obj-Fem-Sing> française<ADJ/amod-Fem-Sing> et<CCONJ/cc> la<DET/det-Def-Fem-Sing-Art> culture<NOUN/conj-Fem-Sing> marocaine<ADJ/amod-Fem-Sing> .<PUNCT/punct> 
 @End

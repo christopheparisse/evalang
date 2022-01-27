@@ -5,188 +5,59 @@
 %cpxx: 7
 %cpxdt: [0, 1, 2, 3, 4, 3, 4, 2, 3, 4, 5, 6, 7, 1, 0]
 %%details: 0 si 1 on 2 n' 3 écrit 4 pas 3 le 4 nom 2 sous 3 le 4 sous 5 le 6 le 7 personnage 1 . 0
-%morph:
-	si_§_si_&_SCONJ_$___!_mark
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	n'_§_ne_&_ADV_$_Polarity=Neg_!_advmod
-	écrit_§_écrire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	nom_§_nom_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	sous_§_sous_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	sous_§_sous_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	personnage_§_personnage_&_NOUN_$_Gender=Masc|Number=Sing_!_obl
-	._§_._&_PUNCT_$___!_punct
+%morph:	si<SCONJ/mark> on<PRON/nsubj-Masc-Sing-3> n'<ADV/advmod-Neg> écrit<VERB/root-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> le<DET/det-Def-Masc-Sing-Art> nom<NOUN/obj-Masc-Sing> sous<ADP/case> le<DET/det-Def-Masc-Sing-Art> sous<ADP/case> le<DET/det-Def-Masc-Sing-Art> le<DET/det-Def-Masc-Sing-Art> personnage<NOUN/obl-Masc-Sing> .<PUNCT/punct> 
 *ADU: oui là on voit pas dans le panier qu'il y a le chat.
 %lng: 14
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 4, 3, 4, 5, 2, 3, 4, 5, 2, 3, 1, 0]
 %%details: 0 oui 1 là 2 on 3 voit 4 pas 3 dans 4 le 5 panier 2 qu' 3 il 4 y 5 a 2 le 3 chat 1 . 0
-%morph:
-	oui_§_oui_&_INTJ_$___!_discourse
-	là_§_là_&_ADV_$___!_advmod
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	voit_§_voir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	dans_§_dans_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	panier_§_panier_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	qu'_§_que_&_SCONJ_$___!_mark
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_expl:subj
-	y_§_y_&_PRON_$___!_expl:comp
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_ccomp
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	chat_§_chat_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	oui<INTJ/discourse> là<ADV/advmod> on<PRON/nsubj-Masc-Sing-3> voit<VERB/root-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> dans<ADP/case> le<DET/det-Def-Masc-Sing-Art> panier<NOUN/obl:mod-Masc-Sing> qu'<SCONJ/mark> il<PRON/expl:subj-Masc-Sing-3-Prs> y<PRON/expl:comp> a<VERB/ccomp-Ind-Sing-3-Pres-Fin> le<DET/det-Def-Masc-Sing-Art> chat<NOUN/obj-Masc-Sing> .<PUNCT/punct> 
 *ADU: non Karim dit à Nicolas non je n'ai pas vu ton chat.
 %lng: 13
 %cpxx: 7
 %cpxdt: [0, 1, 2, 3, 4, 2, 3, 4, 5, 6, 7, 2, 3, 1, 0]
 %%details: 0 non 1 Karim 2 dit 3 à 4 Nicolas 2 non 3 je 4 n' 5 ai 6 pas 7 vu 2 ton 3 chat 1 . 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	Karim_§_Karim_&_PROPN_$___!_nsubj
-	dit_§_dire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	à_§_à_&_ADP_$___!_case
-	Nicolas_§_Nicolas_&_PROPN_$___!_obl:arg
-	non_§_non_&_ADV_$___!_advmod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	n'_§_ne_&_ADV_$_Polarity=Neg_!_advmod
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	vu_§_voir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_conj
-	ton_§_son_&_DET_$_Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	chat_§_chat_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> Karim<PROPN/nsubj> dit<VERB/root-Ind-Sing-3-Pres-Fin> à<ADP/case> Nicolas<PROPN/obl:arg> non<ADV/advmod> je<PRON/nsubj-Sing-1-Prs> n'<ADV/advmod-Neg> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> vu<VERB/conj-Masc-Sing-Past-Part> ton<DET/det-Masc-Sing-Yes-Prs> chat<NOUN/obj-Masc-Sing> .<PUNCT/punct> 
 *ADU: Ni- Nicolas demande aux poules si elles ont vu son chat.
 %lng: 13
 %cpxx: 5
 %cpxdt: [0, 2, 1, 3, 4, 5, 2, 3, 4, 5, 2, 3, 1, 0, 0]
 %%details: 0 Ni- 2 Nicolas 1 demande 3 aux 4 à 5 les 2 poules 3 si 4 elles 5 ont 2 vu 3 son 1 chat 0 . 0
-%morph:
-	Ni-_§_Ni-_&_PROPN_$___!_nsubj
-	Nicolas_§_Nicolas_&_PROPN_$___!_flat:name
-	demande_§_demander_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	aux_§___&___$___!__
-	à_§_à_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Plur|PronType=Art_!_det
-	poules_§_poule_&_NOUN_$_Gender=Fem|Number=Plur_!_obl:arg
-	si_§_si_&_SCONJ_$___!_mark
-	elles_§_il_&_PRON_$_Gender=Fem|Number=Plur|Person=3|PronType=Prs_!_nsubj
-	ont_§_avoir_&_AUX_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	vu_§_voir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_advcl
-	son_§_son_&_DET_$_Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	chat_§_chat_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	Ni-<PROPN/nsubj> Nicolas<PROPN/flat:name> demande<VERB/root-Ind-Sing-3-Pres-Fin> aux<_/_> à<ADP/case> les<DET/det-Def-Fem-Plur-Art> poules<NOUN/obl:arg-Fem-Plur> si<SCONJ/mark> elles<PRON/nsubj-Fem-Plur-3-Prs> ont<AUX/aux:tense-Ind-Plur-3-Pres-Fin> vu<VERB/advcl-Masc-Sing-Past-Part> son<DET/det-Masc-Sing-Yes-Prs> chat<NOUN/obj-Masc-Sing> .<PUNCT/punct> 
 *ADU: et Karim est-ce qu'il a vu le chat à Nicolas ?
 %lng: 12
 %cpxx: 5
 %cpxdt: [0, 1, 3, 4, 2, 3, 4, 5, 3, 4, 2, 3, 1, 0]
 %%details: 0 et 1 Karim 3 est 4 -ce 2 qu' 3 il 4 a 5 vu 3 le 4 chat 2 à 3 Nicolas 1 ? 0
-%morph:
-	et_§_et_&_CCONJ_$___!_cc
-	Karim_§_Karim_&_PROPN_$___!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	-ce_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_root
-	qu'_§_que_&_PRON_$_PronType=Rel_!_obj
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	vu_§_voir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_acl:relcl
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	chat_§_chat_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	à_§_à_&_ADP_$___!_case
-	Nicolas_§_Nicolas_&_PROPN_$___!_obl:arg
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	et<CCONJ/cc> Karim<PROPN/nsubj> est<AUX/cop-Ind-Sing-3-Pres-Fin> -ce<PRON/root-Sing-3-Dem> qu'<PRON/obj-Rel> il<PRON/nsubj-Masc-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> vu<VERB/acl:relcl-Masc-Sing-Past-Part> le<DET/det-Def-Masc-Sing-Art> chat<NOUN/obj-Masc-Sing> à<ADP/case> Nicolas<PROPN/obl:arg> ?<PUNCT/punct> 
 *ADU: ah oui tu as déjà vu les les les les noms.
 %lng: 11
 %cpxx: 6
 %cpxdt: [0, 2, 1, 2, 3, 4, 2, 3, 4, 5, 6, 1, 0]
 %%details: 0 ah 2 oui 1 tu 2 as 3 déjà 4 vu 2 les 3 les 4 les 5 les 6 noms 1 . 0
-%morph:
-	ah_§_ah_&_INTJ_$___!_discourse
-	oui_§_oui_&_INTJ_$___!_fixed
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	as_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_aux:tense
-	déjà_§_déjà_&_ADV_$___!_advmod
-	vu_§_voir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	noms_§_nom_&_NOUN_$_Gender=Masc|Number=Plur_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	ah<INTJ/discourse> oui<INTJ/fixed> tu<PRON/nsubj-Sing-2-Prs> as<AUX/aux:tense-Ind-Sing-2-Pres-Fin> déjà<ADV/advmod> vu<VERB/root-Masc-Sing-Past-Part> les<DET/det-Def-Masc-Plur-Art> les<DET/det-Def-Masc-Plur-Art> les<DET/det-Def-Masc-Plur-Art> les<DET/det-Def-Masc-Plur-Art> noms<NOUN/obj-Masc-Plur> .<PUNCT/punct> 
 *ADU: oui ils ont mis les noms en dessous des personnages.
 %lng: 12
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 3, 4, 2, 3, 2, 3, 4, 1, 0, 0]
 %%details: 0 oui 1 ils 2 ont 3 mis 3 les 4 noms 2 en 3 dessous 2 des 3 de 4 les 1 personnages 0 . 0
-%morph:
-	oui_§_oui_&_INTJ_$___!_discourse
-	ils_§_il_&_PRON_$_Gender=Masc|Number=Plur|Person=3|PronType=Prs_!_nsubj
-	ont_§_avoir_&_AUX_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	mis_§_mettre_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	noms_§_nom_&_NOUN_$_Gender=Masc|Number=Plur_!_obj
-	en_§_en_&_ADP_$___!_case
-	dessous_§_dessous_&_NOUN_$_Gender=Masc|Number=Sing_!_obl
-	des_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	personnages_§_personnage_&_NOUN_$_Gender=Masc|Number=Plur_!_nmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	oui<INTJ/discourse> ils<PRON/nsubj-Masc-Plur-3-Prs> ont<AUX/aux:tense-Ind-Plur-3-Pres-Fin> mis<VERB/root-Masc-Sing-Past-Part> les<DET/det-Def-Masc-Plur-Art> noms<NOUN/obj-Masc-Plur> en<ADP/case> dessous<NOUN/obl-Masc-Sing> des<_/_> de<ADP/case> les<DET/det-Def-Masc-Plur-Art> personnages<NOUN/nmod-Masc-Plur> .<PUNCT/punct> 
 *ADU: oui il a la clé qui ouvre sur le toit.
 %lng: 10
 %cpxx: 4
 %cpxdt: [0, 1, 2, 2, 3, 2, 3, 2, 3, 4, 1, 0]
 %%details: 0 oui 1 il 2 a 2 la 3 clé 2 qui 3 ouvre 2 sur 3 le 4 toit 1 . 0
-%morph:
-	oui_§_oui_&_INTJ_$___!_discourse
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	clé_§_clé_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	ouvre_§_ouvrir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	sur_§_sur_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	toit_§_toit_&_NOUN_$_Gender=Masc|Number=Sing_!_obl
-	._§_._&_PUNCT_$___!_punct
+%morph:	oui<INTJ/discourse> il<PRON/nsubj-Masc-Sing-3-Prs> a<VERB/root-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> clé<NOUN/obj-Fem-Sing> qui<PRON/nsubj-Rel> ouvre<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> sur<ADP/case> le<DET/det-Def-Masc-Sing-Art> toit<NOUN/obl-Masc-Sing> .<PUNCT/punct> 
 *ADU: mais le chat de Nicolas n'est pas dans la cave.
 %lng: 11
 %cpxx: 7
 %cpxdt: [0, 1, 2, 3, 4, 2, 3, 4, 5, 6, 7, 1, 0]
 %%details: 0 mais 1 le 2 chat 3 de 4 Nicolas 2 n' 3 est 4 pas 5 dans 6 la 7 cave 1 . 0
-%morph:
-	mais_§_mais_&_CCONJ_$___!_cc
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	chat_§_chat_&_NOUN_$_Gender=Masc|Number=Sing_!_nsubj
-	de_§_de_&_ADP_$___!_case
-	Nicolas_§_Nicolas_&_PROPN_$___!_nmod
-	n'_§_ne_&_ADV_$_Polarity=Neg_!_advmod
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	dans_§_dans_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	cave_§_cave_&_NOUN_$_Gender=Fem|Number=Sing_!_root
-	._§_._&_PUNCT_$___!_punct
+%morph:	mais<CCONJ/cc> le<DET/det-Def-Masc-Sing-Art> chat<NOUN/nsubj-Masc-Sing> de<ADP/case> Nicolas<PROPN/nmod> n'<ADV/advmod-Neg> est<AUX/cop-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> dans<ADP/case> la<DET/det-Def-Fem-Sing-Art> cave<NOUN/root-Fem-Sing> .<PUNCT/punct> 
 *ADU: elles disent sans arrêt cot cot codec cot cot codec.
 %lng: 10
 %cpxx: 4
 %cpxdt: [0, 1, 3, 4, 2, 3, 4, 2, 3, 4, 1, 0]
 %%details: 0 elles 1 disent 3 sans 4 arrêt 2 cot 3 cot 4 codec 2 cot 3 cot 4 codec 1 . 0
-%morph:
-	elles_§_il_&_PRON_$_Gender=Fem|Number=Plur|Person=3|PronType=Prs_!_nsubj
-	disent_§_dire_&_VERB_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	sans_§_sans_&_ADP_$___!_case
-	arrêt_§_arrêt_&_NOUN_$_Gender=Masc|Number=Sing_!_obl
-	cot_§_cot_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	cot_§_cot_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	codec_§_codec_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	cot_§_cot_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	cot_§_cot_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	codec_§_codec_&_NOUN_$_Gender=Masc|Number=Sing_!_appos
-	._§_._&_PUNCT_$___!_punct
+%morph:	elles<PRON/nsubj-Fem-Plur-3-Prs> disent<VERB/root-Ind-Plur-3-Pres-Fin> sans<ADP/case> arrêt<NOUN/obl-Masc-Sing> cot<ADJ/amod-Masc-Sing> cot<ADJ/amod-Masc-Sing> codec<NOUN/obj-Masc-Sing> cot<ADJ/amod-Masc-Sing> cot<ADJ/amod-Masc-Sing> codec<NOUN/appos-Masc-Sing> .<PUNCT/punct> 
 @End

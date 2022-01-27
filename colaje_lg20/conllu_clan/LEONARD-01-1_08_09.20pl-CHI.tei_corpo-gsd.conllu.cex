@@ -5,192 +5,119 @@
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 1, 0]
 %%details: 0 e 1 coco 2 xxx 3 e 4 coco 1 .. 0
-%morph:
-	e_§_e_&_X_$___!_nmod
-	coco_§_coco_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	xxx_§_xxx_&_X_$___!_nmod
-	e_§_e_&_X_$___!_nmod
-	coco_§_coco_&_NOUN_$_Gender=Masc|Number=Sing_!_appos
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	e<X/nmod> coco<NOUN/root-Masc-Sing> xxx<X/nmod> e<X/nmod> coco<NOUN/appos-Masc-Sing> ..<PUNCT/punct> 
 *CHI: ø bateau regarde yy ..
 %lng: 5
 %cpxx: 2
 %cpxdt: [0, 1, 1, 2, 1, 0]
 %%details: 0 ø 1 bateau 1 regarde 2 yy 1 .. 0
-%morph:
-	ø_§_ø_&_X_$___!_nmod
-	bateau_§_bateau_&_NOUN_$_Gender=Masc|Number=Sing_!_nsubj
-	regarde_§_regarder_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	yy_§_yy_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	ø<X/nmod> bateau<NOUN/nsubj-Masc-Sing> regarde<VERB/root-Ind-Sing-3-Pres-Fin> yy<NOUN/obj-Masc-Sing> ..<PUNCT/punct> 
 *CHI: oh tombé tombé ..
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 0]
 %%details: 0 oh 1 tombé 2 tombé 1 .. 0
-%morph:
-	oh_§_oh_&_INTJ_$___!_discourse
-	tombé_§_tomber_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	tombé_§_tomber_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_xcomp
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	oh<INTJ/discourse> tombé<VERB/root-Masc-Sing-Past-Part> tombé<VERB/xcomp-Masc-Sing-Past-Part> ..<PUNCT/punct> 
 *CHI: non les mains ..
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 0]
 %%details: 0 non 1 les 2 mains 1 .. 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	les_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Plur|PronType=Art_!_det
-	mains_§_main_&_NOUN_$_Gender=Fem|Number=Plur_!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> les<DET/det-Def-Fem-Plur-Art> mains<NOUN/root-Fem-Plur> ..<PUNCT/punct> 
 *CHI: bébé é bébé ..
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 2, 3, 1, 0]
 %%details: 0 bébé 2 é 3 bébé 1 .. 0
-%morph:
-	bébé_§_bébé_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	é_§_é_&_ADP_$___!_case
-	bébé_§_bébé_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	bébé<NOUN/root-Masc-Sing> é<ADP/case> bébé<NOUN/nmod-Masc-Sing> ..<PUNCT/punct> 
 *CHI: a pas bébé ..
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 0]
 %%details: 0 a 1 pas 2 bébé 1 .. 0
-%morph:
-	a_§_à_&_ADP_$___!_case
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	bébé_§_bébé_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	a<ADP/case> pas<ADV/advmod-Neg> bébé<NOUN/root-Masc-Sing> ..<PUNCT/punct> 
 *CHI: ah non yy ..
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 2, 3, 1, 0]
 %%details: 0 ah 2 non 3 yy 1 .. 0
-%morph:
-	ah_§_ah_&_INTJ_$___!_root
-	non_§_non_&_ADV_$___!_advmod
-	yy_§_yy_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:arg
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	ah<INTJ/root> non<ADV/advmod> yy<NOUN/obl:arg-Masc-Sing> ..<PUNCT/punct> 
 *CHI: ah ah ah ..
 %lng: 6
 %cpxx: 4
 %cpxdt: [0, 2, 3, 4, 1, 0, 0]
 %%details: 0 ah 2 ah 3 à 4 les 1 ah 0 .. 0
-%morph:
-	ah_§_ah_&_INTJ_$___!_root
-	ah_§___&___$___!__
-	à_§_à_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	ah_§_ah_&_NOUN_$_Gender=Masc|Number=Plur_!_obl:arg
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	ah<INTJ/root> ah<_/_> à<ADP/case> les<DET/det-Def-Masc-Plur-Art> ah<NOUN/obl:arg-Masc-Plur> ..<PUNCT/punct> 
 *CHI: pour papa ..
 %lng: 3
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 pour 1 papa 1 .. 0
-%morph:
-	pour_§_pour_&_ADP_$___!_case
-	papa_§_papa_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	pour<ADP/case> papa<NOUN/root-Masc-Sing> ..<PUNCT/punct> 
 *CHI: ouh ouh !
 %lng: 2
 %cpxx: 2
 %cpxdt: [0, 2, 1, 0]
 %%details: 0 ouh 2 ouh 1 ! 0
-%morph:
-	ouh_§_ouh_&_INTJ_$___!_root
-	ouh_§_ouh_&_INTJ_$___!_fixed
-	!_§_!_&_PUNCT_$___!_punct
+%morph:	ouh<INTJ/root> ouh<INTJ/fixed> !<PUNCT/punct> 
 *CHI: oh coco ..
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 2, 1, 0]
 %%details: 0 oh 2 coco 1 .. 0
-%morph:
-	oh_§_oh_&_INTJ_$___!_root
-	coco_§_coco_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:arg
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	oh<INTJ/root> coco<NOUN/obl:arg-Masc-Sing> ..<PUNCT/punct> 
 *CHI: non papa ..
 %lng: 3
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 non 1 papa 1 .. 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	papa_§_papa_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> papa<NOUN/root-Masc-Sing> ..<PUNCT/punct> 
 *CHI: non non ..
 %lng: 3
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 non 1 non 1 .. 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	non_§_non_&_ADV_$___!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> non<ADV/root> ..<PUNCT/punct> 
 *CHI: non non ..
 %lng: 3
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 non 1 non 1 .. 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	non_§_non_&_ADV_$___!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> non<ADV/root> ..<PUNCT/punct> 
 *CHI: non non ..
 %lng: 3
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 non 1 non 1 .. 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	non_§_non_&_ADV_$___!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> non<ADV/root> ..<PUNCT/punct> 
 *CHI: non non ..
 %lng: 3
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 non 1 non 1 .. 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	non_§_non_&_ADV_$___!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> non<ADV/root> ..<PUNCT/punct> 
 *CHI: non non ..
 %lng: 3
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 non 1 non 1 .. 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	non_§_non_&_ADV_$___!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> non<ADV/root> ..<PUNCT/punct> 
 *CHI: non dodo ..
 %lng: 3
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 non 1 dodo 1 .. 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	dodo_§_dodo_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> dodo<NOUN/root-Masc-Sing> ..<PUNCT/punct> 
 *CHI: non coco ..
 %lng: 3
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 non 1 coco 1 .. 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	coco_§_coco_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> coco<NOUN/root-Masc-Sing> ..<PUNCT/punct> 
 *CHI: non bateau ..
 %lng: 3
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 non 1 bateau 1 .. 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	bateau_§_bateau_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> bateau<NOUN/root-Masc-Sing> ..<PUNCT/punct> 
 @End

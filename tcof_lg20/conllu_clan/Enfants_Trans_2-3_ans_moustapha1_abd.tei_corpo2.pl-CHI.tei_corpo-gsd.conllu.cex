@@ -5,164 +5,59 @@
 %cpxx: 5
 %cpxdt: [0, 1, 2, 1, 2, 3, 3, 4, 5, 2, 3, 2, 3, 1, 0]
 %%details: 0 la 1 voiture 2 i- 1 il 2 il 3 attend 3 deux 4 dix 5 minutes 2 dix 3 minutes 2 dix 3 minutes 1 . 0
-%morph:
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	voiture_§_voiture_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:mod
-	i-_§_i-_&_PROPN_$___!_appos
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	attend_§_attendre_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	deux_§_deux_&_NUM_$___!_nummod
-	dix_§_dix_&_NUM_$___!_nummod
-	minutes_§_minute_&_NOUN_$_Gender=Fem|Number=Plur_!_obj
-	dix_§_dix_&_NUM_$___!_nummod
-	minutes_§_minute_&_NOUN_$_Gender=Fem|Number=Plur_!_obl
-	dix_§_dix_&_NUM_$___!_nummod
-	minutes_§_minute_&_NOUN_$_Gender=Fem|Number=Plur_!_nmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	la<DET/det-Def-Fem-Sing-Art> voiture<NOUN/obl:mod-Fem-Sing> i-<PROPN/appos> il<PRON/nsubj-Masc-Sing-3-Prs> il<PRON/nsubj-Masc-Sing-3-Prs> attend<VERB/root-Ind-Sing-3-Pres-Fin> deux<NUM/nummod> dix<NUM/nummod> minutes<NOUN/obj-Fem-Plur> dix<NUM/nummod> minutes<NOUN/obl-Fem-Plur> dix<NUM/nummod> minutes<NOUN/nmod-Fem-Plur> .<PUNCT/punct> 
 *CHI: avec le camion c'est de tu tu vas monter dans le camion.
 %lng: 13
 %cpxx: 5
 %cpxdt: [0, 1, 2, 1, 2, 3, 4, 4, 5, 2, 2, 3, 4, 1, 0]
 %%details: 0 avec 1 le 2 camion 1 c' 2 est 3 de 4 tu 4 tu 5 vas 2 monter 2 dans 3 le 4 camion 1 . 0
-%morph:
-	avec_§_avec_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	camion_§_camion_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	de_§_de_&_ADP_$___!_case
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	vas_§_vair_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_root
-	monter_§_monter_&_VERB_$_VerbForm=Inf_!_xcomp
-	dans_§_dans_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	camion_§_camion_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	._§_._&_PUNCT_$___!_punct
+%morph:	avec<ADP/case> le<DET/det-Def-Masc-Sing-Art> camion<NOUN/obl:mod-Masc-Sing> c'<PRON/nsubj-Sing-3-Dem> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> de<ADP/case> tu<PRON/nsubj-Sing-2-Prs> tu<PRON/nsubj-Sing-2-Prs> vas<VERB/root-Ind-Sing-2-Pres-Fin> monter<VERB/xcomp-Inf> dans<ADP/case> le<DET/det-Def-Masc-Sing-Art> camion<NOUN/obl:mod-Masc-Sing> .<PUNCT/punct> 
 *CHI: non non la la voiture il il est xxx de ça.
 %lng: 11
 %cpxx: 5
 %cpxdt: [0, 1, 1, 2, 3, 2, 3, 4, 5, 2, 3, 1, 0]
 %%details: 0 non 1 non 1 la 2 la 3 voiture 2 il 3 il 4 est 5 xxx 2 de 3 ça 1 . 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	non_§_non_&_ADV_$___!_advmod
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	voiture_§_voiture_&_NOUN_$_Gender=Fem|Number=Sing_!_root
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	xxx_§_xxx_&_NOUN_$_Gender=Masc|Number=Sing_!_conj
-	de_§_de_&_ADP_$___!_case
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> non<ADV/advmod> la<DET/det-Def-Fem-Sing-Art> la<DET/det-Def-Fem-Sing-Art> voiture<NOUN/root-Fem-Sing> il<PRON/nsubj-Masc-Sing-3-Prs> il<PRON/nsubj-Masc-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> xxx<NOUN/conj-Masc-Sing> de<ADP/case> ça<PRON/nmod-Masc-Sing-3-Dem> .<PUNCT/punct> 
 *CHI: ben là ben là on re- on xxx on xxx de.
 %lng: 11
 %cpxx: 4
 %cpxdt: [0, 2, 1, 2, 3, 4, 3, 2, 3, 4, 2, 1, 0]
 %%details: 0 ben 2 là 1 ben 2 là 3 on 4 re- 3 on 2 xxx 3 on 4 xxx 2 de 1 . 0
-%morph:
-	ben_§_ben_&_INTJ_$___!_discourse
-	là_§_là_&_ADV_$___!_fixed
-	ben_§_ben_&_INTJ_$___!_discourse
-	là_§_là_&_ADV_$___!_advmod
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	re-_§_rever_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	xxx_§_xxx_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	xxx_§_xxx_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	de_§_de_&_ADP_$___!_advmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	ben<INTJ/discourse> là<ADV/fixed> ben<INTJ/discourse> là<ADV/advmod> on<PRON/nsubj-Masc-Sing-3> re-<VERB/root-Ind-Sing-3-Pres-Fin> on<PRON/nsubj-Masc-Sing-3> xxx<NOUN/obj-Masc-Sing> on<PRON/nsubj-Masc-Sing-3> xxx<VERB/conj-Ind-Sing-3-Pres-Fin> de<ADP/advmod> .<PUNCT/punct> 
 *CHI: il a couru il a couru de dans de ça.
 %lng: 10
 %cpxx: 5
 %cpxdt: [0, 1, 2, 2, 3, 4, 2, 3, 4, 5, 1, 0]
 %%details: 0 il 1 a 2 couru 2 il 3 a 4 couru 2 de 3 dans 4 de 5 ça 1 . 0
-%morph:
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	couru_§_courir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	couru_§_courir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_conj
-	de_§_de_&_ADP_$___!_case
-	dans_§_dans_&_ADP_$___!_case
-	de_§_de_&_ADP_$___!_case
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obl:arg
-	._§_._&_PUNCT_$___!_punct
+%morph:	il<PRON/nsubj-Masc-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> couru<VERB/root-Masc-Sing-Past-Part> il<PRON/nsubj-Masc-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> couru<VERB/conj-Masc-Sing-Past-Part> de<ADP/case> dans<ADP/case> de<ADP/case> ça<PRON/obl:arg-Masc-Sing-3-Dem> .<PUNCT/punct> 
 *CHI: moi non je vais conduire de avec le monsieur.
 %lng: 9
 %cpxx: 5
 %cpxdt: [0, 2, 1, 2, 2, 2, 3, 4, 5, 1, 0]
 %%details: 0 moi 2 non 1 je 2 vais 2 conduire 2 de 3 avec 4 le 5 monsieur 1 . 0
-%morph:
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_dislocated
-	non_§_non_&_ADV_$___!_advmod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	vais_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	conduire_§_conduire_&_VERB_$_VerbForm=Inf_!_xcomp
-	de_§_de_&_ADP_$___!_case
-	avec_§_avec_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	monsieur_§_monsieur_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:arg
-	._§_._&_PUNCT_$___!_punct
+%morph:	moi<PRON/dislocated-Sing-1> non<ADV/advmod> je<PRON/nsubj-Sing-1-Prs> vais<VERB/root-Ind-Sing-1-Pres-Fin> conduire<VERB/xcomp-Inf> de<ADP/case> avec<ADP/case> le<DET/det-Def-Masc-Sing-Art> monsieur<NOUN/obl:arg-Masc-Sing> .<PUNCT/punct> 
 *CHI: il il a pas de tapis tapis volant.
 %lng: 8
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 3, 3, 2, 1, 0]
 %%details: 0 il 1 il 2 a 3 pas 2 de 3 tapis 3 tapis 2 volant 1 . 0
-%morph:
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	de_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	tapis_§_tapis_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	tapis_§_tapis_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	volant_§_volant_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	._§_._&_PUNCT_$___!_punct
+%morph:	il<PRON/nsubj-Masc-Sing-3-Prs> il<PRON/nsubj-Masc-Sing-3-Prs> a<VERB/root-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> de<DET/det-Ind-Masc-Sing-Art> tapis<NOUN/obj-Masc-Sing> tapis<NOUN/nmod-Masc-Sing> volant<ADJ/amod-Masc-Sing> .<PUNCT/punct> 
 *CHI: il et le camion il il saute.
 %lng: 7
 %cpxx: 4
 %cpxdt: [0, 2, 3, 4, 1, 2, 3, 1, 0]
 %%details: 0 il 2 et 3 le 4 camion 1 il 2 il 3 saute 1 . 0
-%morph:
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	et_§_et_&_CCONJ_$___!_cc
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	camion_§_camion_&_NOUN_$_Gender=Masc|Number=Sing_!_conj
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	saute_§_sauter_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	._§_._&_PUNCT_$___!_punct
+%morph:	il<PRON/nsubj-Masc-Sing-3-Prs> et<CCONJ/cc> le<DET/det-Def-Masc-Sing-Art> camion<NOUN/conj-Masc-Sing> il<PRON/nsubj-Masc-Sing-3-Prs> il<PRON/nsubj-Masc-Sing-3-Prs> saute<VERB/root-Ind-Sing-3-Pres-Fin> .<PUNCT/punct> 
 *CHI: non je je préfère la voiture ça.
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 3, 1, 0]
 %%details: 0 non 1 je 2 je 3 préfère 2 la 3 voiture 1 ça. 0
-%morph:
-	non_§_non_&_ADV_$___!_advmod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	préfère_§_préférer_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	voiture_§_voiture_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	ça._§_ça._&_PUNCT_$___!_punct
+%morph:	non<ADV/advmod> je<PRON/nsubj-Sing-1-Prs> je<PRON/nsubj-Sing-1-Prs> préfère<VERB/root-Ind-Sing-1-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> voiture<NOUN/obj-Fem-Sing> ça.<PUNCT/punct> 
 *CHI: le camion le camion il fait xxx.
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 2, 2, 1, 0]
 %%details: 0 le 1 camion 2 le 3 camion 1 il 2 fait 2 xxx 1 . 0
-%morph:
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	camion_§_camion_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	camion_§_camion_&_NOUN_$_Gender=Masc|Number=Sing_!_appos
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	xxx_§_xxx_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	le<DET/det-Def-Masc-Sing-Art> camion<NOUN/obl:mod-Masc-Sing> le<DET/det-Def-Masc-Sing-Art> camion<NOUN/appos-Masc-Sing> il<PRON/nsubj-Masc-Sing-3-Prs> fait<VERB/root-Ind-Sing-3-Pres-Fin> xxx<NOUN/obj-Masc-Sing> .<PUNCT/punct> 
 @End

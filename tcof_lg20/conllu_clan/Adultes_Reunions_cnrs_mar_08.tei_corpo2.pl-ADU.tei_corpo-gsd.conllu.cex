@@ -5,395 +5,59 @@
 %cpxx: 6
 %cpxdt: [0, 1, 2, 2, 3, 4, 3, 4, 3, 4, 5, 3, 4, 3, 2, 3, 4, 5, 6, 3, 2, 3, 4, 3, 3, 2, 3, 4, 3, 4, 5, 2, 3, 3, 4, 5, 2, 3, 4, 2, 3, 4, 1, 0]
 %%details: 0 on 1 l' 2 a 2 on 3 l' 4 a 3 le 4 format 3 de 4 la 5 transcription 3 D 4 .T 3 .D 2 . 3 mais 4 on 5 n' 6 a 3 pas 2 la 3 la 4 D 3 .T 3 .D 2 . 3 de 4 transcriber 3 qui 4 est 5 prévue 2 on 3 a 3 juste 4 le 5 format 2 à 3 le 4 signaler 2 que 3 c' 4 est 1 . 0
-%morph:
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	l'_§_le_&_PRON_$_Number=Sing|Person=3|PronType=Prs_!_obj
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	l'_§_le_&_PRON_$_Number=Sing|Person=3|PronType=Prs_!_obj
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	format_§_format_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	de_§_de_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	transcription_§_transcription_&_NOUN_$_Gender=Fem|Number=Sing_!_nmod
-	D_§_D_&_PROPN_$___!_appos
-	.T_§_.T_&_X_$___!_flat:name
-	.D_§_.D_&_X_$___!_flat:name
-	._§_._&_PUNCT_$___!_punct
-	mais_§_mais_&_CCONJ_$___!_cc
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	n'_§_ne_&_ADV_$_Polarity=Neg_!_advmod
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	D_§_D_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	.T_§_.T_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	.D_§_.D_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	._§_._&_PUNCT_$___!_punct
-	de_§_de_&_ADP_$___!_case
-	transcriber_§_transcriber_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj:pass
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:pass
-	prévue_§_prévoir_&_VERB_$_Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part_!_acl:relcl
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	juste_§_juste_&_ADV_$___!_advmod
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	format_§_format_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	à_§_à_&_ADP_$___!_mark
-	le_§_le_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_obj
-	signaler_§_signaler_&_VERB_$_VerbForm=Inf_!_xcomp
-	que_§_que_&_PRON_$_PronType=Rel_!_obj
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_ccomp
-	._§_._&_PUNCT_$___!_punct
+%morph:	on<PRON/nsubj-Masc-Sing-3> l'<PRON/obj-Sing-3-Prs> a<VERB/root-Ind-Sing-3-Pres-Fin> on<PRON/nsubj-Masc-Sing-3> l'<PRON/obj-Sing-3-Prs> a<VERB/conj-Ind-Sing-3-Pres-Fin> le<DET/det-Def-Masc-Sing-Art> format<NOUN/obj-Masc-Sing> de<ADP/case> la<DET/det-Def-Fem-Sing-Art> transcription<NOUN/nmod-Fem-Sing> D<PROPN/appos> .T<X/flat:name> .D<X/flat:name> .<PUNCT/punct> mais<CCONJ/cc> on<PRON/nsubj-Masc-Sing-3> n'<ADV/advmod-Neg> a<VERB/conj-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> la<DET/det-Def-Fem-Sing-Art> la<DET/det-Def-Fem-Sing-Art> D<NOUN/obj-Fem-Sing> .T<NOUN/nmod-Masc-Sing> .D<NOUN/nmod-Masc-Sing> .<PUNCT/punct> de<ADP/case> transcriber<NOUN/nmod-Masc-Sing> qui<PRON/nsubj:pass-Rel> est<AUX/aux:pass-Ind-Sing-3-Pres-Fin> prévue<VERB/acl:relcl-Fem-Sing-Past-Part> on<PRON/nsubj-Masc-Sing-3> a<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> juste<ADV/advmod> le<DET/det-Def-Masc-Sing-Art> format<NOUN/obj-Masc-Sing> à<ADP/mark> le<PRON/obj-Masc-Sing-3-Prs> signaler<VERB/xcomp-Inf> que<PRON/obj-Rel> c'<PRON/nsubj-Sing-3-Dem> est<VERB/ccomp-Ind-Sing-3-Pres-Fin> .<PUNCT/punct> 
 *ADU: alors que si euh ¤P¤ elle prend mon fichier de transcription qui est en X .M .L . là ce sera écrit que c'est pas U .T .F . huit ce sera écrit mettons admettons macroman.
 %lng: 39
 %cpxx: 7
 %cpxdt: [0, 2, 1, 2, 5, 4, 5, 4, 5, 3, 4, 4, 5, 3, 4, 5, 6, 6, 7, 2, 1, 2, 3, 4, 2, 3, 4, 5, 6, 4, 3, 2, 3, 4, 5, 6, 4, 3, 2, 1, 0]
 %%details: 0 alors 2 que 1 si 2 euh 5 ¤ 4 P 5 ¤ 4 elle 5 prend 3 mon 4 fichier 4 de 5 transcription 3 qui 4 est 5 en 6 X 6 .M 7 .L 2 . 1 là 2 ce 3 sera 4 écrit 2 que 3 c' 4 est 5 pas 6 U 4 .T 3 .F 2 . 3 huit 4 ce 5 sera 6 écrit 4 mettons 3 admettons 2 macroman 1 . 0
-%morph:
-	alors_§_alors_&_ADV_$___!_mark
-	que_§_que_&_SCONJ_$___!_fixed
-	si_§_si_&_SCONJ_$___!_mark
-	euh_§_euh_&_INTJ_$___!_advmod
-	¤_§_¤_&_SYM_$___!_fixed
-	P_§_P_&_PROPN_$___!_nsubj
-	¤_§_¤_&_PUNCT_$___!_punct
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	prend_§_prendre_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	mon_§_son_&_DET_$_Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	fichier_§_fichier_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	de_§_de_&_ADP_$___!_case
-	transcription_§_transcription_&_NOUN_$_Gender=Fem|Number=Sing_!_nmod
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	en_§_en_&_ADP_$___!_case
-	X_§_X_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	.M_§_.M_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	.L_§_.L_&_NOUN_$_Gender=Masc|Number=Sing_!_acl:relcl
-	._§_._&_PUNCT_$___!_punct
-	là_§_là_&_ADV_$___!_advmod
-	ce_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	sera_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin_!_aux:tense
-	écrit_§_écrire_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	que_§_que_&_SCONJ_$___!_mark
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	U_§_U_&_NOUN_$_Gender=Masc|Number=Sing_!_ccomp
-	.T_§_.T_&_X_$___!_appos
-	.F_§_.F_&_X_$___!_appos
-	._§_._&_PUNCT_$___!_punct
-	huit_§_huit_&_NUM_$___!_nsubj:pass
-	ce_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj:pass
-	sera_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin_!_aux:pass
-	écrit_§_écrire_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_advcl
-	mettons_§_mettre_&_VERB_$_Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	admettons_§_admettre_&_VERB_$_Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin_!_parataxis
-	macroman_§_macroman_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	alors<ADV/mark> que<SCONJ/fixed> si<SCONJ/mark> euh<INTJ/advmod> ¤<SYM/fixed> P<PROPN/nsubj> ¤<PUNCT/punct> elle<PRON/nsubj-Fem-Sing-3-Prs> prend<VERB/advcl-Ind-Sing-3-Pres-Fin> mon<DET/det-Masc-Sing-Yes-Prs> fichier<NOUN/obj-Masc-Sing> de<ADP/case> transcription<NOUN/nmod-Fem-Sing> qui<PRON/nsubj-Rel> est<AUX/cop-Ind-Sing-3-Pres-Fin> en<ADP/case> X<NOUN/obl:mod-Masc-Sing> .M<NOUN/nmod-Masc-Sing> .L<NOUN/acl:relcl-Masc-Sing> .<PUNCT/punct> là<ADV/advmod> ce<PRON/nsubj-Sing-3-Dem> sera<AUX/aux:tense-Ind-Sing-3-Fut-Fin> écrit<VERB/root-Masc-Sing-Past-Part> que<SCONJ/mark> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> U<NOUN/ccomp-Masc-Sing> .T<X/appos> .F<X/appos> .<PUNCT/punct> huit<NUM/nsubj:pass> ce<PRON/nsubj:pass-Sing-3-Dem> sera<AUX/aux:pass-Ind-Sing-3-Fut-Fin> écrit<VERB/advcl-Masc-Sing-Past-Part> mettons<VERB/acl:relcl-Ind-Plur-2-Pres-Fin> admettons<VERB/parataxis-Ind-Plur-2-Pres-Fin> macroman<NOUN/obj-Masc-Sing> .<PUNCT/punct> 
 *ADU: et comme c'est quand même un un truc d'identification des corpus euh enfin loin de nous euh loin de quelqu'un qui pourrait nous dire au fait j'arrive pas à ouvrir le fichier machin.
 %lng: 40
 %cpxx: 7
 %cpxdt: [0, 1, 2, 3, 4, 6, 5, 6, 7, 4, 5, 4, 5, 6, 3, 4, 5, 5, 6, 4, 3, 3, 4, 3, 4, 3, 4, 3, 4, 3, 2, 3, 3, 2, 3, 2, 3, 2, 1, 0, 0, 0]
 %%details: 0 et 1 comme 2 c' 3 est 4 quand 6 même 5 un 6 un 7 truc 4 d' 5 identification 4 des 5 de 6 les 3 corpus 4 euh 5 enfin 5 loin 6 de 4 nous 3 euh 3 loin 4 de 3 quelqu'un 4 qui 3 pourrait 4 nous 3 dire 4 au 3 à 2 le 3 fait 3 j' 2 arrive 3 pas 2 à 3 ouvrir 2 le 1 fichier 0 machin 0 . 0
-%morph:
-	et_§_et_&_CCONJ_$___!_cc
-	comme_§_comme_&_SCONJ_$___!_mark
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	quand_§_quand_&_SCONJ_$___!_mark
-	même_§_même_&_ADV_$___!_fixed
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	truc_§_truc_&_NOUN_$_Gender=Masc|Number=Sing_!_advcl
-	d'_§_de_&_ADP_$___!_case
-	identification_§_identification_&_NOUN_$_Gender=Fem|Number=Sing_!_nmod
-	des_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	corpus_§_corpus_&_NOUN_$_Gender=Masc|Number=Plur_!_nmod
-	euh_§_euh_&_INTJ_$___!_advmod
-	enfin_§_enfin_&_ADV_$___!_advmod
-	loin_§_loin_&_ADV_$___!_advmod
-	de_§_de_&_ADP_$___!_case
-	nous_§_il_&_PRON_$_Number=Plur|Person=1|PronType=Prs_!_obl:arg
-	euh_§_euh_&_INTJ_$___!_conj
-	loin_§_loin_&_ADV_$___!_conj
-	de_§_de_&_ADP_$___!_case
-	quelqu'un_§_quelqu'un_&_PRON_$_Gender=Masc|Number=Sing_!_obl:arg
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	pourrait_§_pouvoir_&_VERB_$_Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	nous_§_il_&_PRON_$_Number=Plur|Person=1|PronType=Prs_!_obj
-	dire_§_dire_&_VERB_$_VerbForm=Inf_!_xcomp
-	au_§___&___$___!__
-	à_§_à_&_ADP_$___!_advmod
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_fixed
-	fait_§_fait_&_NOUN_$_Gender=Masc|Number=Sing_!_fixed
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	arrive_§_arriver_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	à_§_à_&_ADP_$___!_mark
-	ouvrir_§_ouvrir_&_VERB_$_VerbForm=Inf_!_xcomp
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	fichier_§_fichier_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	machin_§_machin_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	._§_._&_PUNCT_$___!_punct
+%morph:	et<CCONJ/cc> comme<SCONJ/mark> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> quand<SCONJ/mark> même<ADV/fixed> un<DET/det-Ind-Masc-Sing-Art> un<DET/det-Ind-Masc-Sing-Art> truc<NOUN/advcl-Masc-Sing> d'<ADP/case> identification<NOUN/nmod-Fem-Sing> des<_/_> de<ADP/case> les<DET/det-Def-Masc-Plur-Art> corpus<NOUN/nmod-Masc-Plur> euh<INTJ/advmod> enfin<ADV/advmod> loin<ADV/advmod> de<ADP/case> nous<PRON/obl:arg-Plur-1-Prs> euh<INTJ/conj> loin<ADV/conj> de<ADP/case> quelqu'un<PRON/obl:arg-Masc-Sing> qui<PRON/nsubj-Rel> pourrait<VERB/acl:relcl-Cnd-Sing-3-Pres-Fin> nous<PRON/obj-Plur-1-Prs> dire<VERB/xcomp-Inf> au<_/_> à<ADP/advmod> le<DET/fixed-Def-Masc-Sing-Art> fait<NOUN/fixed-Masc-Sing> j'<PRON/nsubj-Sing-1-Prs> arrive<VERB/root-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> à<ADP/mark> ouvrir<VERB/xcomp-Inf> le<DET/det-Def-Masc-Sing-Art> fichier<NOUN/obj-Masc-Sing> machin<ADJ/amod-Masc-Sing> .<PUNCT/punct> 
 *ADU: mais alors à ce moment-là tout ce qu'on fait ça sert à rien puisque notre fiche elle a été créée sur nos besoins donc euh à quoi ça sert de.
 %lng: 32
 %cpxx: 7
 %cpxdt: [0, 1, 2, 3, 4, 4, 3, 4, 5, 6, 7, 4, 5, 3, 4, 2, 3, 4, 4, 5, 6, 7, 2, 3, 4, 3, 4, 2, 3, 3, 4, 2, 1, 0]
 %%details: 0 mais 1 alors 2 à 3 ce 4 moment 4 -là 3 tout 4 ce 5 qu' 6 on 7 fait 4 ça 5 sert 3 à 4 rien 2 puisque 3 notre 4 fiche 4 elle 5 a 6 été 7 créée 2 sur 3 nos 4 besoins 3 donc 4 euh 2 à 3 quoi 3 ça 4 sert 2 de 1 . 0
-%morph:
-	mais_§_mais_&_CCONJ_$___!_cc
-	alors_§_alors_&_ADV_$___!_advmod
-	à_§_à_&_ADP_$___!_case
-	ce_§_ce_&_DET_$_Gender=Masc|Number=Sing|PronType=Dem_!_det
-	moment_§_moment_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	-là_§_là_&_ADV_$___!_advmod
-	tout_§_tout_&_DET_$_Gender=Masc|Number=Sing_!_det
-	ce_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	qu'_§_que_&_PRON_$_PronType=Rel_!_obj
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	sert_§_servir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	à_§_à_&_ADP_$___!_case
-	rien_§_rien_&_PRON_$_Number=Sing_!_obl:arg
-	puisque_§_puisque_&_SCONJ_$___!_mark
-	notre_§_son_&_DET_$_Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	fiche_§_fiche_&_NOUN_$_Gender=Fem|Number=Sing_!_nsubj:pass
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj:pass
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	été_§_être_&_AUX_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_aux:pass
-	créée_§_créer_&_VERB_$_Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part_!_advcl
-	sur_§_sur_&_ADP_$___!_case
-	nos_§_son_&_DET_$_Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs_!_det
-	besoins_§_besoin_&_NOUN_$_Gender=Masc|Number=Plur_!_obl
-	donc_§_donc_&_ADV_$___!_advmod
-	euh_§_euh_&_INTJ_$___!_appos
-	à_§_à_&_ADP_$___!_case
-	quoi_§_quoi_&_PRON_$_PronType=Rel_!_obl:arg
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	sert_§_servir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	de_§_de_&_ADP_$___!_advmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	mais<CCONJ/cc> alors<ADV/advmod> à<ADP/case> ce<DET/det-Masc-Sing-Dem> moment<NOUN/obl:mod-Masc-Sing> -là<ADV/advmod> tout<DET/det-Masc-Sing> ce<PRON/nsubj-Sing-3-Dem> qu'<PRON/obj-Rel> on<PRON/nsubj-Masc-Sing-3> fait<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> ça<PRON/nsubj-Masc-Sing-3-Dem> sert<VERB/root-Ind-Sing-3-Pres-Fin> à<ADP/case> rien<PRON/obl:arg-Sing> puisque<SCONJ/mark> notre<DET/det-Fem-Sing-Yes-Prs> fiche<NOUN/nsubj:pass-Fem-Sing> elle<PRON/nsubj:pass-Fem-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> été<AUX/aux:pass-Masc-Sing-Past-Part> créée<VERB/advcl-Fem-Sing-Past-Part> sur<ADP/case> nos<DET/det-Masc-Plur-Yes-Prs> besoins<NOUN/obl-Masc-Plur> donc<ADV/advmod> euh<INTJ/appos> à<ADP/case> quoi<PRON/obl:arg-Rel> ça<PRON/nsubj-Masc-Sing-3-Dem> sert<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> de<ADP/advmod> .<PUNCT/punct> 
 *ADU: ouais mais dans combien de temps on aura les fichiers en X .M .L . dans combien de temps on aura les fichiers en X .M .L ..
 %lng: 29
 %cpxx: 6
 %cpxdt: [0, 1, 2, 3, 4, 5, 3, 4, 3, 4, 3, 4, 3, 4, 2, 3, 4, 5, 6, 4, 5, 2, 3, 3, 4, 5, 2, 3, 1, 0]
 %%details: 0 ouais 1 mais 2 dans 3 combien 4 de 5 temps 3 on 4 aura 3 les 4 fichiers 3 en 4 X 3 .M 4 .L 2 . 3 dans 4 combien 5 de 6 temps 4 on 5 aura 2 les 3 fichiers 3 en 4 X 5 .M 2 . 3 L 1 .. 0
-%morph:
-	ouais_§_ouais_&_INTJ_$___!_discourse
-	mais_§_mais_&_CCONJ_$___!_cc
-	dans_§_dans_&_ADP_$___!_case
-	combien_§_combien_&_ADV_$___!_obl:mod
-	de_§_de_&_ADP_$___!_case
-	temps_§_temps_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:arg
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	aura_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin_!_root
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	fichiers_§_fichier_&_NOUN_$_Gender=Masc|Number=Plur_!_obj
-	en_§_en_&_ADP_$___!_case
-	X_§_X_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	.M_§_.M_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	.L_§_.L_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	._§_._&_PUNCT_$___!_punct
-	dans_§_dans_&_ADP_$___!_case
-	combien_§_combien_&_ADV_$___!_obl:mod
-	de_§_de_&_ADP_$___!_case
-	temps_§_temps_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:arg
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	aura_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin_!_conj
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	fichiers_§_fichier_&_NOUN_$_Gender=Masc|Number=Plur_!_obj
-	en_§_en_&_ADP_$___!_case
-	X_§_X_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	.M_§_.M_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	._§_._&_PUNCT_$___!_punct
-	L_§_L_&_PROPN_$___!_appos
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	ouais<INTJ/discourse> mais<CCONJ/cc> dans<ADP/case> combien<ADV/obl:mod> de<ADP/case> temps<NOUN/obl:arg-Masc-Sing> on<PRON/nsubj-Masc-Sing-3> aura<VERB/root-Ind-Sing-3-Fut-Fin> les<DET/det-Def-Masc-Plur-Art> fichiers<NOUN/obj-Masc-Plur> en<ADP/case> X<NOUN/nmod-Masc-Sing> .M<NOUN/nmod-Masc-Sing> .L<NOUN/nmod-Masc-Sing> .<PUNCT/punct> dans<ADP/case> combien<ADV/obl:mod> de<ADP/case> temps<NOUN/obl:arg-Masc-Sing> on<PRON/nsubj-Masc-Sing-3> aura<VERB/conj-Ind-Sing-3-Fut-Fin> les<DET/det-Def-Masc-Plur-Art> fichiers<NOUN/obj-Masc-Plur> en<ADP/case> X<NOUN/nmod-Masc-Sing> .M<NOUN/nmod-Masc-Sing> .<PUNCT/punct> L<PROPN/appos> ..<PUNCT/punct> 
 *ADU: moi je le sais pas je vais sur Internet pour moi le formulaire il avait toujours la même tête tout ça je mets U .T .F . huit.
 %lng: 28
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 3, 2, 3, 4, 5, 3, 4, 2, 3, 3, 4, 4, 3, 4, 5, 2, 3, 3, 4, 2, 4, 3, 2, 3, 1, 0]
 %%details: 0 moi 1 je 2 le 3 sais 3 pas 2 je 3 vais 4 sur 5 Internet 3 pour 4 moi 2 le 3 formulaire 3 il 4 avait 4 toujours 3 la 4 même 5 tête 2 tout 3 ça 3 je 4 mets 2 U 4 .T 3 .F 2 . 3 huit 1 . 0
-%morph:
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_dislocated
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	le_§_le_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_obj
-	sais_§_savoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	vais_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_conj
-	sur_§_sur_&_ADP_$___!_case
-	Internet_§_Internet_&_PROPN_$___!_obl
-	pour_§_pour_&_ADP_$___!_case
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_obl
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	formulaire_§_formulaire_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	avait_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin_!_conj
-	toujours_§_toujours_&_ADV_$___!_advmod
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	même_§_même_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	tête_§_tête_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	tout_§_tout_&_DET_$_Gender=Masc|Number=Sing_!_det
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obj
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	mets_§_mettre_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_conj
-	U_§_U_&_PROPN_$___!_obj
-	.T_§_.T_&_X_$___!_flat:name
-	.F_§_.F_&_X_$___!_flat:name
-	._§_._&_PUNCT_$___!_punct
-	huit_§_huit_&_NUM_$___!_appos
-	._§_._&_PUNCT_$___!_punct
+%morph:	moi<PRON/dislocated-Sing-1> je<PRON/nsubj-Sing-1-Prs> le<PRON/obj-Masc-Sing-3-Prs> sais<VERB/root-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> je<PRON/nsubj-Sing-1-Prs> vais<VERB/conj-Ind-Sing-1-Pres-Fin> sur<ADP/case> Internet<PROPN/obl> pour<ADP/case> moi<PRON/obl-Sing-1> le<DET/det-Def-Masc-Sing-Art> formulaire<NOUN/obj-Masc-Sing> il<PRON/nsubj-Masc-Sing-3-Prs> avait<VERB/conj-Ind-Sing-3-Imp-Fin> toujours<ADV/advmod> la<DET/det-Def-Fem-Sing-Art> même<ADJ/amod-Fem-Sing> tête<NOUN/obj-Fem-Sing> tout<DET/det-Masc-Sing> ça<PRON/obj-Masc-Sing-3-Dem> je<PRON/nsubj-Sing-1-Prs> mets<VERB/conj-Ind-Sing-1-Pres-Fin> U<PROPN/obj> .T<X/flat:name> .F<X/flat:name> .<PUNCT/punct> huit<NUM/appos> .<PUNCT/punct> 
 *ADU: je pense ça vaut le coup de pas f- de pas écrire de connerie parce que là ça enduit vraiment d'erreurs hein si tu mets un mauvais encodage.
 %lng: 29
 %cpxx: 6
 %cpxdt: [0, 1, 3, 2, 4, 5, 4, 5, 6, 3, 4, 5, 3, 4, 2, 4, 3, 4, 5, 5, 4, 5, 3, 2, 3, 4, 2, 3, 4, 1, 0]
 %%details: 0 je 1 pense 3 ça 2 vaut 4 le 5 coup 4 de 5 pas 6 f- 3 de 4 pas 5 écrire 3 de 4 connerie 2 parce 4 que 3 là 4 ça 5 enduit 5 vraiment 4 d' 5 erreurs 3 hein 2 si 3 tu 4 mets 2 un 3 mauvais 4 encodage 1 . 0
-%morph:
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	pense_§_penser_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	vaut_§_valoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_xcomp
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	coup_§_coup_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	de_§_de_&_ADP_$___!_case
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	f-_§_f-_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	de_§_de_&_ADP_$___!_mark
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	écrire_§_écrire_&_VERB_$_VerbForm=Inf_!_xcomp
-	de_§_de_&_ADP_$___!_case
-	connerie_§_connerie_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:arg
-	parce_§_parce_&_ADV_$___!_mark
-	que_§_que_&_SCONJ_$___!_fixed
-	là_§_là_&_ADV_$___!_advmod
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	enduit_§_enduire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	vraiment_§_vraiment_&_ADV_$___!_advmod
-	d'_§_de_&_ADP_$___!_case
-	erreurs_§_erreur_&_NOUN_$_Gender=Fem|Number=Plur_!_obl:arg
-	hein_§_hein_&_INTJ_$___!_discourse
-	si_§_si_&_SCONJ_$___!_mark
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	mets_§_mettre_&_VERB_$_Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin_!_advcl
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	mauvais_§_mauvais_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	encodage_§_encodage_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	._§_._&_PUNCT_$___!_punct
+%morph:	je<PRON/nsubj-Sing-1-Prs> pense<VERB/root-Ind-Sing-1-Pres-Fin> ça<PRON/nsubj-Masc-Sing-3-Dem> vaut<VERB/xcomp-Ind-Sing-3-Pres-Fin> le<DET/det-Def-Masc-Sing-Art> coup<NOUN/obj-Masc-Sing> de<ADP/case> pas<ADV/advmod-Neg> f-<NOUN/nmod-Masc-Sing> de<ADP/mark> pas<ADV/advmod-Neg> écrire<VERB/xcomp-Inf> de<ADP/case> connerie<NOUN/obl:arg-Fem-Sing> parce<ADV/mark> que<SCONJ/fixed> là<ADV/advmod> ça<PRON/nsubj-Masc-Sing-3-Dem> enduit<VERB/advcl-Ind-Sing-3-Pres-Fin> vraiment<ADV/advmod> d'<ADP/case> erreurs<NOUN/obl:arg-Fem-Plur> hein<INTJ/discourse> si<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> mets<VERB/advcl-Ind-Plur-2-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> mauvais<ADJ/amod-Masc-Sing> encodage<NOUN/obj-Masc-Sing> .<PUNCT/punct> 
 *ADU: et elle peut l'extraire et elle est sûre d'avoir la bonne information si c'est moi qui l'a met soit je sais pas la mettre soit je me gourre.
 %lng: 32
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 4, 2, 3, 4, 5, 2, 3, 3, 4, 5, 2, 3, 4, 5, 2, 3, 4, 5, 2, 3, 4, 4, 3, 4, 2, 3, 4, 5, 1, 0]
 %%details: 0 et 1 elle 2 peut 3 l' 4 extraire 2 et 3 elle 4 est 5 sûre 2 d' 3 avoir 3 la 4 bonne 5 information 2 si 3 c' 4 est 5 moi 2 qui 3 l' 4 a 5 met 2 soit 3 je 4 sais 4 pas 3 la 4 mettre 2 soit 3 je 4 me 5 gourre 1 . 0
-%morph:
-	et_§_et_&_CCONJ_$___!_cc
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	peut_§_pouvoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	l'_§_le_&_PRON_$_Number=Sing|Person=3|PronType=Prs_!_obj
-	extraire_§_extraire_&_VERB_$_VerbForm=Inf_!_xcomp
-	et_§_et_&_CCONJ_$___!_cc
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	sûre_§_sûr_&_ADJ_$_Gender=Fem|Number=Sing_!_conj
-	d'_§_de_&_ADP_$___!_mark
-	avoir_§_avoir_&_VERB_$_VerbForm=Inf_!_csubj
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	bonne_§_bon_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	information_§_information_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	si_§_si_&_SCONJ_$___!_mark
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_advcl
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	l'_§_le_&_PRON_$_Number=Sing|Person=3|PronType=Prs_!_obj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	met_§_mettre_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	soit_§_soit_&_ADV_$___!_advmod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	sais_§_savoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_conj
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	la_§_le_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_obj
-	mettre_§_mettre_&_VERB_$_VerbForm=Inf_!_xcomp
-	soit_§_soit_&_CCONJ_$___!_cc
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	me_§_se_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_obj
-	gourre_§_gourrer_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_conj
-	._§_._&_PUNCT_$___!_punct
+%morph:	et<CCONJ/cc> elle<PRON/nsubj-Fem-Sing-3-Prs> peut<VERB/root-Ind-Sing-3-Pres-Fin> l'<PRON/obj-Sing-3-Prs> extraire<VERB/xcomp-Inf> et<CCONJ/cc> elle<PRON/nsubj-Fem-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> sûre<ADJ/conj-Fem-Sing> d'<ADP/mark> avoir<VERB/csubj-Inf> la<DET/det-Def-Fem-Sing-Art> bonne<ADJ/amod-Fem-Sing> information<NOUN/obj-Fem-Sing> si<SCONJ/mark> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> moi<PRON/advcl-Sing-1> qui<PRON/nsubj-Rel> l'<PRON/obj-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> met<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> soit<ADV/advmod> je<PRON/nsubj-Sing-1-Prs> sais<VERB/conj-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> la<PRON/obj-Fem-Sing-3-Prs> mettre<VERB/xcomp-Inf> soit<CCONJ/cc> je<PRON/nsubj-Sing-1-Prs> me<PRON/obj-Sing-1-Prs> gourre<VERB/conj-Ind-Sing-1-Pres-Fin> .<PUNCT/punct> 
 *ADU: ouais mais tu sais si on le fait sur la fiche signalétique ben bon d'abord en plus les fiches signalétiques xxx elles sont censées être remplies automatiquement.
 %lng: 28
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 2, 3, 4, 5, 2, 3, 4, 3, 2, 3, 3, 5, 4, 3, 2, 3, 2, 1, 2, 3, 4, 2, 3, 2, 1, 0]
 %%details: 0 ouais 1 mais 2 tu 3 sais 2 si 3 on 4 le 5 fait 2 sur 3 la 4 fiche 3 signalétique 2 ben 3 bon 3 d' 5 abord 4 en 3 plus 2 les 3 fiches 2 signalétiques 1 xxx 2 elles 3 sont 4 censées 2 être 3 remplies 2 automatiquement 1 . 0
-%morph:
-	ouais_§_ouais_&_INTJ_$___!_root
-	mais_§_mais_&_CCONJ_$___!_cc
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	sais_§_savoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_conj
-	si_§_si_&_SCONJ_$___!_mark
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	le_§_le_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_obj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	sur_§_sur_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	fiche_§_fiche_&_NOUN_$_Gender=Fem|Number=Sing_!_obl
-	signalétique_§_signalétique_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	ben_§_ben_&_NOUN_$_Gender=Masc|Number=Sing_!_nsubj
-	bon_§_bon_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	d'_§_de_&_ADP_$___!_advmod
-	abord_§_abord_&_NOUN_$_Gender=Masc|Number=Sing_!_fixed
-	en_§_en_&_ADP_$___!_fixed
-	plus_§_plus_&_ADV_$___!_fixed
-	les_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Plur|PronType=Art_!_det
-	fiches_§_fiche_&_NOUN_$_Gender=Fem|Number=Plur_!_obl
-	signalétiques_§_signalétique_&_ADJ_$_Gender=Fem|Number=Plur_!_amod
-	xxx_§_xxx_&_PUNCT_$___!_punct
-	elles_§_il_&_PRON_$_Gender=Fem|Number=Plur|Person=3|PronType=Prs_!_nsubj
-	sont_§_être_&_AUX_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	censées_§_censé_&_ADJ_$_Gender=Fem|Number=Plur_!_ccomp
-	être_§_être_&_AUX_$_VerbForm=Inf_!_aux:pass
-	remplies_§_remplir_&_VERB_$_Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part_!_xcomp
-	automatiquement_§_automatiquement_&_ADV_$___!_advmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	ouais<INTJ/root> mais<CCONJ/cc> tu<PRON/nsubj-Sing-2-Prs> sais<VERB/conj-Ind-Sing-1-Pres-Fin> si<SCONJ/mark> on<PRON/nsubj-Masc-Sing-3> le<PRON/obj-Masc-Sing-3-Prs> fait<VERB/advcl-Ind-Sing-3-Pres-Fin> sur<ADP/case> la<DET/det-Def-Fem-Sing-Art> fiche<NOUN/obl-Fem-Sing> signalétique<ADJ/amod-Fem-Sing> ben<NOUN/nsubj-Masc-Sing> bon<ADJ/amod-Masc-Sing> d'<ADP/advmod> abord<NOUN/fixed-Masc-Sing> en<ADP/fixed> plus<ADV/fixed> les<DET/det-Def-Fem-Plur-Art> fiches<NOUN/obl-Fem-Plur> signalétiques<ADJ/amod-Fem-Plur> xxx<PUNCT/punct> elles<PRON/nsubj-Fem-Plur-3-Prs> sont<AUX/cop-Ind-Plur-3-Pres-Fin> censées<ADJ/ccomp-Fem-Plur> être<AUX/aux:pass-Inf> remplies<VERB/xcomp-Fem-Plur-Past-Part> automatiquement<ADV/advmod> .<PUNCT/punct> 
 *ADU: je suis d'accord mais à terme de toute façon ce sera automatique euh enfin je pense on n'a pas besoin de le mettre dans la fiche.
 %lng: 28
 %cpxx: 8
 %cpxdt: [0, 1, 2, 4, 3, 4, 7, 6, 7, 8, 5, 6, 7, 3, 4, 5, 6, 2, 3, 4, 3, 2, 2, 3, 4, 2, 3, 4, 1, 0]
 %%details: 0 je 1 suis 2 d' 4 accord 3 mais 4 à 7 terme 6 de 7 toute 8 façon 5 ce 6 sera 7 automatique 3 euh 4 enfin 5 je 6 pense 2 on 3 n' 4 a 3 pas 2 besoin 2 de 3 le 4 mettre 2 dans 3 la 4 fiche 1 . 0
-%morph:
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	suis_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_cop
-	d'_§_de_&_ADP_$___!_root
-	accord_§_accord_&_NOUN_$_Gender=Masc|Number=Sing_!_fixed
-	mais_§_mais_&_CCONJ_$___!_cc
-	à_§_à_&_ADP_$___!_advmod
-	terme_§_terme_&_NOUN_$_Gender=Masc|Number=Sing_!_fixed
-	de_§_de_&_ADP_$___!_case
-	toute_§_tout_&_DET_$_Gender=Fem|Number=Sing_!_det
-	façon_§_façon_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:arg
-	ce_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	sera_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin_!_cop
-	automatique_§_automatique_&_ADJ_$_Gender=Masc|Number=Sing_!_conj
-	euh_§_euh_&_INTJ_$___!_discourse
-	enfin_§_enfin_&_ADV_$___!_advmod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	pense_§_penser_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_conj
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	n'_§_ne_&_ADV_$_Polarity=Neg_!_advmod
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	besoin_§_besoin_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	de_§_de_&_ADP_$___!_mark
-	le_§_le_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_obj
-	mettre_§_mettre_&_VERB_$_VerbForm=Inf_!_acl
-	dans_§_dans_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	fiche_§_fiche_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:arg
-	._§_._&_PUNCT_$___!_punct
+%morph:	je<PRON/nsubj-Sing-1-Prs> suis<AUX/cop-Ind-Sing-1-Pres-Fin> d'<ADP/root> accord<NOUN/fixed-Masc-Sing> mais<CCONJ/cc> à<ADP/advmod> terme<NOUN/fixed-Masc-Sing> de<ADP/case> toute<DET/det-Fem-Sing> façon<NOUN/obl:arg-Fem-Sing> ce<PRON/nsubj-Sing-3-Dem> sera<AUX/cop-Ind-Sing-3-Fut-Fin> automatique<ADJ/conj-Masc-Sing> euh<INTJ/discourse> enfin<ADV/advmod> je<PRON/nsubj-Sing-1-Prs> pense<VERB/conj-Ind-Sing-1-Pres-Fin> on<PRON/nsubj-Masc-Sing-3> n'<ADV/advmod-Neg> a<VERB/conj-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> besoin<NOUN/obj-Masc-Sing> de<ADP/mark> le<PRON/obj-Masc-Sing-3-Prs> mettre<VERB/acl-Inf> dans<ADP/case> la<DET/det-Def-Fem-Sing-Art> fiche<NOUN/obl:arg-Fem-Sing> .<PUNCT/punct> 
 @End

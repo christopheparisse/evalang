@@ -5,485 +5,119 @@
 %cpxx: 5
 %cpxdt: [0, 1, 2, 1, 2, 3, 4, 2, 3, 4, 5, 2, 3, 4, 5, 3, 4, 5, 2, 3, 4, 4, 5, 2, 3, 4, 2, 3, 1, 0]
 %%details: 0 ça 1 en 2 fait 1 c' 2 est 3 une 4 piqûre 2 qu' 3 Ulysse 4 a 5 reçu 2 quand 3 il 4 est 5 allé 3 à 4 l' 5 hopital 2 alors 3 le 4 docteur 4 a 5 dit 2 qu' 3 il 4 pouvait 2 la 3 garder 1 .. 0
-%morph:
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	en_§_en_&_PRON_$_Person=3_!_iobj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_csubj
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	une_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Sing|PronType=Art_!_det
-	piqûre_§_piqûre_&_NOUN_$_Gender=Fem|Number=Sing_!_root
-	qu'_§_que_&_PRON_$_PronType=Rel_!_obj
-	Ulysse_§_Ulysse_&_PROPN_$___!_nsubj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	reçu_§_recevoir_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_acl:relcl
-	quand_§_quand_&_SCONJ_$___!_mark
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	allé_§_aller_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_advcl
-	à_§_à_&_ADP_$___!_case
-	l'_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	hopital_§_hopital_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:arg
-	alors_§_alors_&_ADV_$___!_advmod
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	docteur_§_docteur_&_NOUN_$_Gender=Masc|Number=Sing_!_nsubj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	dit_§_dire_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_advcl
-	qu'_§_que_&_SCONJ_$___!_mark
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	pouvait_§_pouvoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin_!_ccomp
-	la_§_le_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_obj
-	garder_§_garder_&_VERB_$_VerbForm=Inf_!_xcomp
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	ça<PRON/nsubj-Masc-Sing-3-Dem> en<PRON/iobj-3> fait<VERB/csubj-Ind-Sing-3-Pres-Fin> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> une<DET/det-Ind-Fem-Sing-Art> piqûre<NOUN/root-Fem-Sing> qu'<PRON/obj-Rel> Ulysse<PROPN/nsubj> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> reçu<VERB/acl:relcl-Masc-Sing-Past-Part> quand<SCONJ/mark> il<PRON/nsubj-Masc-Sing-3-Prs> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> allé<VERB/advcl-Masc-Sing-Past-Part> à<ADP/case> l'<DET/det-Def-Masc-Sing-Art> hopital<NOUN/obl:arg-Masc-Sing> alors<ADV/advmod> le<DET/det-Def-Masc-Sing-Art> docteur<NOUN/nsubj-Masc-Sing> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> dit<VERB/advcl-Masc-Sing-Past-Part> qu'<SCONJ/mark> il<PRON/nsubj-Masc-Sing-3-Prs> pouvait<VERB/ccomp-Ind-Sing-3-Imp-Fin> la<PRON/obj-Fem-Sing-3-Prs> garder<VERB/xcomp-Inf> ..<PUNCT/punct> 
 *ADU: tu ne peux pas sortir du bain tout de suite parce que Julie est là mais je t'assure que tu vas sortir juste après hein ..
 %lng: 29
 %cpxx: 7
 %cpxdt: [0, 1, 2, 4, 3, 5, 6, 7, 4, 5, 4, 3, 5, 4, 5, 6, 2, 3, 4, 5, 2, 3, 4, 2, 2, 3, 4, 1, 0, 0]
 %%details: 0 tu 1 ne 2 peux 4 pas 3 sortir 5 du 6 de 7 le 4 bain 5 tout 4 de 3 suite 5 parce 4 que 5 Julie 6 est 2 là 3 mais 4 je 5 t' 2 assure 3 que 4 tu 2 vas 2 sortir 3 juste 4 après 1 hein 0 .. 0
-%morph:
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	ne_§_ne_&_ADV_$_Polarity=Neg_!_advmod
-	peux_§_pouvoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	sortir_§_sortir_&_VERB_$_VerbForm=Inf_!_xcomp
-	du_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	bain_§_bain_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:arg
-	tout_§_tout_&_ADV_$___!_advmod
-	de_§_de_&_ADP_$___!_fixed
-	suite_§_suite_&_NOUN_$_Gender=Fem|Number=Sing_!_fixed
-	parce_§_parce_&_ADV_$___!_mark
-	que_§_que_&_SCONJ_$___!_fixed
-	Julie_§_Julie_&_PROPN_$___!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	là_§_là_&_ADV_$___!_advcl
-	mais_§_mais_&_CCONJ_$___!_cc
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	t'_§_lui_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_iobj
-	assure_§_assurer_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_conj
-	que_§_que_&_SCONJ_$___!_mark
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	vas_§_vair_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_ccomp
-	sortir_§_sortir_&_VERB_$_VerbForm=Inf_!_xcomp
-	juste_§_juste_&_ADV_$___!_advmod
-	après_§_après_&_ADP_$___!_case
-	hein_§_hein_&_INTJ_$___!_advmod
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	tu<PRON/nsubj-Sing-2-Prs> ne<ADV/advmod-Neg> peux<VERB/root-Ind-Sing-1-Pres-Fin> pas<ADV/advmod-Neg> sortir<VERB/xcomp-Inf> du<_/_> de<ADP/case> le<DET/det-Def-Masc-Sing-Art> bain<NOUN/obl:arg-Masc-Sing> tout<ADV/advmod> de<ADP/fixed> suite<NOUN/fixed-Fem-Sing> parce<ADV/mark> que<SCONJ/fixed> Julie<PROPN/nsubj> est<AUX/cop-Ind-Sing-3-Pres-Fin> là<ADV/advcl> mais<CCONJ/cc> je<PRON/nsubj-Sing-1-Prs> t'<PRON/iobj-Sing-2-Prs> assure<VERB/conj-Ind-Sing-1-Pres-Fin> que<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> vas<VERB/ccomp-Ind-Sing-2-Pres-Fin> sortir<VERB/xcomp-Inf> juste<ADV/advmod> après<ADP/case> hein<INTJ/advmod> ..<PUNCT/punct> 
 *ADU: oh tu as pas l'air très motivée à aller faire dodo mais moi je pense que tu es fatiguée ..
 %lng: 21
 %cpxx: 5
 %cpxdt: [0, 1, 2, 4, 3, 4, 3, 4, 3, 4, 3, 3, 2, 3, 4, 5, 2, 3, 4, 5, 1, 0]
 %%details: 0 oh 1 tu 2 as 4 pas 3 l' 4 air 3 très 4 motivée 3 à 4 aller 3 faire 3 dodo 2 mais 3 moi 4 je 5 pense 2 que 3 tu 4 es 5 fatiguée 1 .. 0
-%morph:
-	oh_§_oh_&_ADV_$_Polarity=Neg_!_advmod
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	as_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	l'_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	air_§_air_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	très_§_très_&_ADV_$___!_advmod
-	motivée_§_motiver_&_VERB_$_Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part_!_acl
-	à_§_à_&_ADP_$___!_mark
-	aller_§_aller_&_VERB_$_VerbForm=Inf_!_xcomp
-	faire_§_faire_&_VERB_$_VerbForm=Inf_!_xcomp
-	dodo_§_dodo_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	mais_§_mais_&_CCONJ_$___!_cc
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_obl:mod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	pense_§_penser_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_conj
-	que_§_que_&_SCONJ_$___!_mark
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj:pass
-	es_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_aux:pass
-	fatiguée_§_fatiguer_&_VERB_$_Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part_!_ccomp
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	oh<ADV/advmod-Neg> tu<PRON/nsubj-Sing-2-Prs> as<VERB/root-Ind-Sing-2-Pres-Fin> pas<ADV/advmod-Neg> l'<DET/det-Def-Masc-Sing-Art> air<NOUN/obj-Masc-Sing> très<ADV/advmod> motivée<VERB/acl-Fem-Sing-Past-Part> à<ADP/mark> aller<VERB/xcomp-Inf> faire<VERB/xcomp-Inf> dodo<NOUN/obj-Masc-Sing> mais<CCONJ/cc> moi<PRON/obl:mod-Sing-1> je<PRON/nsubj-Sing-1-Prs> pense<VERB/conj-Ind-Sing-1-Pres-Fin> que<SCONJ/mark> tu<PRON/nsubj:pass-Sing-2-Prs> es<AUX/aux:pass-Ind-Sing-2-Pres-Fin> fatiguée<VERB/ccomp-Fem-Sing-Past-Part> ..<PUNCT/punct> 
 *ADU: tu es une petite canaille parce qu'on a laissé Ulysse à la crèche et toi tu es là hein ..
 %lng: 21
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 4, 2, 4, 3, 4, 5, 4, 3, 4, 5, 2, 3, 4, 5, 3, 2, 1, 0]
 %%details: 0 tu 1 es 2 une 3 petite 4 canaille 2 parce 4 qu' 3 on 4 a 5 laissé 4 Ulysse 3 à 4 la 5 crèche 2 et 3 toi 4 tu 5 es 3 là 2 hein 1 .. 0
-%morph:
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	es_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_cop
-	une_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Sing|PronType=Art_!_det
-	petite_§_petit_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	canaille_§_canaille_&_NOUN_$_Gender=Fem|Number=Sing_!_root
-	parce_§_parce_&_ADV_$___!_mark
-	qu'_§_que_&_SCONJ_$___!_fixed
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	a_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	laissé_§_laisser_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_advcl
-	Ulysse_§_Ulysse_&_PROPN_$___!_obj
-	à_§_à_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	crèche_§_crèche_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:arg
-	et_§_et_&_CCONJ_$___!_cc
-	toi_§_soi_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	es_§_être_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_conj
-	là_§_là_&_ADV_$___!_advmod
-	hein_§_hein_&_ADV_$___!_advmod
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	tu<PRON/nsubj-Sing-2-Prs> es<AUX/cop-Ind-Sing-2-Pres-Fin> une<DET/det-Ind-Fem-Sing-Art> petite<ADJ/amod-Fem-Sing> canaille<NOUN/root-Fem-Sing> parce<ADV/mark> qu'<SCONJ/fixed> on<PRON/nsubj-Masc-Sing-3> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> laissé<VERB/advcl-Masc-Sing-Past-Part> Ulysse<PROPN/obj> à<ADP/case> la<DET/det-Def-Fem-Sing-Art> crèche<NOUN/obl:arg-Fem-Sing> et<CCONJ/cc> toi<PRON/nsubj-Sing-2-Prs> tu<PRON/nsubj-Sing-2-Prs> es<VERB/conj-Ind-Sing-2-Pres-Fin> là<ADV/advmod> hein<ADV/advmod> ..<PUNCT/punct> 
 *ADU: en fait quand il marche pas et que moi j'en ai un qui marche il le veut ..
 %lng: 19
 %cpxx: 9
 %cpxdt: [0, 2, 1, 2, 3, 4, 3, 4, 5, 6, 7, 8, 9, 3, 4, 2, 3, 4, 1, 0]
 %%details: 0 en 2 fait 1 quand 2 il 3 marche 4 pas 3 et 4 que 5 moi 6 j' 7 en 8 ai 9 un 3 qui 4 marche 2 il 3 le 4 veut 1 .. 0
-%morph:
-	en_§_en_&_ADP_$___!_advmod
-	fait_§_fait_&_NOUN_$_Gender=Masc|Number=Sing_!_fixed
-	quand_§_quand_&_SCONJ_$___!_mark
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	marche_§_marcher_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	et_§_et_&_CCONJ_$___!_cc
-	que_§_que_&_SCONJ_$___!_mark
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_nsubj
-	j'_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	en_§_en_&_PRON_$_Person=3_!_nmod
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	un_§_un_&_PRON_$_Gender=Masc|Number=Sing_!_conj
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	marche_§_marcher_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	le_§_le_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_obj
-	veut_§_vouloir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	en<ADP/advmod> fait<NOUN/fixed-Masc-Sing> quand<SCONJ/mark> il<PRON/nsubj-Masc-Sing-3-Prs> marche<VERB/advcl-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> et<CCONJ/cc> que<SCONJ/mark> moi<PRON/nsubj-Sing-1> j'<PRON/nsubj-Sing-1-Prs> en<PRON/nmod-3> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> un<PRON/conj-Masc-Sing> qui<PRON/nsubj-Rel> marche<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> il<PRON/nsubj-Masc-Sing-3-Prs> le<PRON/obj-Masc-Sing-3-Prs> veut<VERB/root-Ind-Sing-3-Pres-Fin> ..<PUNCT/punct> 
 *ADU: quand maman elle fait semblant de te manger elle te mord pas pour de vrai hein ..
 %lng: 17
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 2, 2, 3, 4, 1, 2, 3, 3, 2, 3, 4, 5, 1, 0]
 %%details: 0 quand 1 maman 2 elle 3 fait 2 semblant 2 de 3 te 4 manger 1 elle 2 te 3 mord 3 pas 2 pour 3 de 4 vrai 5 hein 1 .. 0
-%morph:
-	quand_§_quand_&_SCONJ_$___!_mark
-	maman_§_maman_&_NOUN_$_Gender=Fem|Number=Sing_!_nsubj
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	semblant_§_sembler_&_VERB_$_Tense=Pres|VerbForm=Part_!_xcomp
-	de_§_de_&_ADP_$___!_mark
-	te_§_lui_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_iobj
-	manger_§_manger_&_VERB_$_VerbForm=Inf_!_xcomp
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	te_§_lui_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_iobj
-	mord_§_moudir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	pour_§_pour_&_ADP_$___!_case
-	de_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	vrai_§_vrai_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	hein_§_hein_&_NOUN_$_Gender=Masc|Number=Sing_!_obl
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	quand<SCONJ/mark> maman<NOUN/nsubj-Fem-Sing> elle<PRON/nsubj-Fem-Sing-3-Prs> fait<VERB/advcl-Ind-Sing-3-Pres-Fin> semblant<VERB/xcomp-Pres-Part> de<ADP/mark> te<PRON/iobj-Sing-2-Prs> manger<VERB/xcomp-Inf> elle<PRON/nsubj-Fem-Sing-3-Prs> te<PRON/iobj-Sing-2-Prs> mord<VERB/root-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> pour<ADP/case> de<DET/det-Ind-Masc-Sing-Art> vrai<ADJ/amod-Masc-Sing> hein<NOUN/obl-Masc-Sing> ..<PUNCT/punct> 
 *ADU: oui hein je crois que là de toutes façons tu es partie pour regarder un peu ..
 %lng: 17
 %cpxx: 6
 %cpxdt: [0, 2, 1, 2, 2, 3, 4, 5, 6, 5, 6, 3, 2, 3, 2, 2, 1, 0]
 %%details: 0 oui 2 hein 1 je 2 crois 2 que 3 là 4 de 5 toutes 6 façons 5 tu 6 es 3 partie 2 pour 3 regarder 2 un 2 peu 1 .. 0
-%morph:
-	oui_§_oui_&_INTJ_$___!_discourse
-	hein_§_hein_&_INTJ_$___!_fixed
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	crois_§_croire_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	que_§_que_&_SCONJ_$___!_mark
-	là_§_là_&_ADV_$___!_advmod
-	de_§_de_&_ADP_$___!_case
-	toutes_§_tout_&_DET_$_Gender=Fem|Number=Plur_!_det
-	façons_§_façon_&_NOUN_$_Gender=Fem|Number=Plur_!_obl:mod
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	es_§_être_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_ccomp
-	partie_§_partie_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	pour_§_pour_&_ADP_$___!_mark
-	regarder_§_regarder_&_VERB_$_VerbForm=Inf_!_advcl
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_advmod
-	peu_§_peu_&_ADV_$___!_fixed
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	oui<INTJ/discourse> hein<INTJ/fixed> je<PRON/nsubj-Sing-1-Prs> crois<VERB/root-Ind-Sing-1-Pres-Fin> que<SCONJ/mark> là<ADV/advmod> de<ADP/case> toutes<DET/det-Fem-Plur> façons<NOUN/obl:mod-Fem-Plur> tu<PRON/nsubj-Sing-2-Prs> es<VERB/ccomp-Ind-Sing-2-Pres-Fin> partie<NOUN/obj-Fem-Sing> pour<ADP/mark> regarder<VERB/advcl-Inf> un<DET/advmod-Ind-Masc-Sing-Art> peu<ADV/fixed> ..<PUNCT/punct> 
 *ADU: ben maman met de l'eau parce que le bain n'est plus très très chaud ..
 %lng: 17
 %cpxx: 9
 %cpxdt: [0, 1, 1, 3, 5, 4, 2, 4, 3, 4, 4, 5, 6, 7, 8, 9, 1, 0]
 %%details: 0 ben 1 maman 1 met 3 de 5 l' 4 eau 2 parce 4 que 3 le 4 bain 4 n' 5 est 6 plus 7 très 8 très 9 chaud 1 .. 0
-%morph:
-	ben_§_ben_&_DET_$_Gender=Fem|Number=Sing|PronType=Art_!_det
-	maman_§_maman_&_NOUN_$_Gender=Fem|Number=Sing_!_nsubj
-	met_§_mettre_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	de_§_de_&_ADP_$___!_det
-	l'_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_fixed
-	eau_§_eau_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	parce_§_parce_&_ADV_$___!_mark
-	que_§_que_&_SCONJ_$___!_fixed
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	bain_§_bain_&_NOUN_$_Gender=Masc|Number=Sing_!_nsubj
-	n'_§_ne_&_ADV_$_Polarity=Neg_!_advmod
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	plus_§_plus_&_ADV_$_Polarity=Neg_!_advmod
-	très_§_très_&_ADV_$___!_advmod
-	très_§_très_&_ADV_$___!_advmod
-	chaud_§_chaud_&_ADJ_$_Gender=Masc|Number=Sing_!_advcl
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	ben<DET/det-Fem-Sing-Art> maman<NOUN/nsubj-Fem-Sing> met<VERB/root-Ind-Sing-3-Pres-Fin> de<ADP/det> l'<DET/fixed-Def-Fem-Sing-Art> eau<NOUN/obj-Fem-Sing> parce<ADV/mark> que<SCONJ/fixed> le<DET/det-Def-Masc-Sing-Art> bain<NOUN/nsubj-Masc-Sing> n'<ADV/advmod-Neg> est<AUX/cop-Ind-Sing-3-Pres-Fin> plus<ADV/advmod-Neg> très<ADV/advmod> très<ADV/advmod> chaud<ADJ/advcl-Masc-Sing> ..<PUNCT/punct> 
 *ADU: attends y a juste ce truc là qui fait du bruit sur ton bracelet en fait ..
 %lng: 19
 %cpxx: 6
 %cpxdt: [0, 1, 2, 4, 3, 4, 3, 2, 3, 4, 6, 5, 3, 4, 5, 2, 2, 1, 0, 0]
 %%details: 0 attends 1 y 2 a 4 juste 3 ce 4 truc 3 là 2 qui 3 fait 4 du 6 de 5 le 3 bruit 4 sur 5 ton 2 bracelet 2 en 1 fait 0 .. 0
-%morph:
-	attends_§_attends_&_INTJ_$___!_discourse
-	y_§_y_&_PRON_$___!_expl:comp
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	juste_§_juste_&_ADV_$___!_advmod
-	ce_§_ce_&_DET_$_Gender=Masc|Number=Sing|PronType=Dem_!_det
-	truc_§_truc_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	là_§_là_&_ADV_$___!_advmod
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	du_§___&___$___!__
-	de_§_de_&_ADP_$___!_det
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_fixed
-	bruit_§_bruit_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	sur_§_sur_&_ADP_$___!_case
-	ton_§_son_&_DET_$_Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs_!_det
-	bracelet_§_bracelet_&_NOUN_$_Gender=Masc|Number=Sing_!_obl
-	en_§_en_&_ADP_$___!_advmod
-	fait_§_fait_&_NOUN_$_Gender=Masc|Number=Sing_!_fixed
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	attends<INTJ/discourse> y<PRON/expl:comp> a<VERB/root-Ind-Sing-3-Pres-Fin> juste<ADV/advmod> ce<DET/det-Masc-Sing-Dem> truc<NOUN/obj-Masc-Sing> là<ADV/advmod> qui<PRON/nsubj-Rel> fait<VERB/acl:relcl-Ind-Sing-3-Pres-Fin> du<_/_> de<ADP/det> le<DET/fixed-Def-Masc-Sing-Art> bruit<NOUN/obj-Masc-Sing> sur<ADP/case> ton<DET/det-Masc-Sing-Yes-Prs> bracelet<NOUN/obl-Masc-Sing> en<ADP/advmod> fait<NOUN/fixed-Masc-Sing> ..<PUNCT/punct> 
 *ADU: ah ça c'est un grand mystère parce que l'eau du bain c'est quand même pas super ..
 %lng: 22
 %cpxx: 8
 %cpxdt: [0, 1, 2, 3, 4, 5, 6, 2, 4, 3, 4, 5, 6, 7, 4, 5, 6, 8, 7, 8, 1, 0, 0]
 %%details: 0 ah 1 ça 2 c' 3 est 4 un 5 grand 6 mystère 2 parce 4 que 3 l' 4 eau 5 du 6 de 7 le 4 bain 5 c' 6 est 8 quand 7 même 8 pas 1 super 0 .. 0
-%morph:
-	ah_§_ah_&_INTJ_$___!_discourse
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_dislocated
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	grand_§_grand_&_ADJ_$_Gender=Masc|Number=Sing_!_amod
-	mystère_§_mystère_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	parce_§_parce_&_ADV_$___!_mark
-	que_§_que_&_SCONJ_$___!_fixed
-	l'_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	eau_§_eau_&_NOUN_$_Gender=Fem|Number=Sing_!_nsubj
-	du_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	bain_§_bain_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	quand_§_quand_&_SCONJ_$___!_advmod
-	même_§_même_&_ADV_$___!_fixed
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	super_§_super_&_ADJ_$_Gender=Masc|Number=Sing_!_advcl
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	ah<INTJ/discourse> ça<PRON/dislocated-Masc-Sing-3-Dem> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> grand<ADJ/amod-Masc-Sing> mystère<NOUN/root-Masc-Sing> parce<ADV/mark> que<SCONJ/fixed> l'<DET/det-Def-Fem-Sing-Art> eau<NOUN/nsubj-Fem-Sing> du<_/_> de<ADP/case> le<DET/det-Def-Masc-Sing-Art> bain<NOUN/nmod-Masc-Sing> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> quand<SCONJ/advmod> même<ADV/fixed> pas<ADV/advmod-Neg> super<ADJ/advcl-Masc-Sing> ..<PUNCT/punct> 
 *ADU: et tu peux aller sur la table quand tu reviens du car wash comme ça ..
 %lng: 18
 %cpxx: 5
 %cpxdt: [0, 1, 2, 2, 3, 4, 5, 2, 3, 4, 2, 3, 3, 4, 2, 3, 1, 0, 0]
 %%details: 0 et 1 tu 2 peux 2 aller 3 sur 4 la 5 table 2 quand 3 tu 4 reviens 2 du 3 de 3 le 4 car 2 wash 3 comme 1 ça 0 .. 0
-%morph:
-	et_§_et_&_CCONJ_$___!_cc
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	peux_§_pouvoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	aller_§_aller_&_VERB_$_VerbForm=Inf_!_xcomp
-	sur_§_sur_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	table_§_table_&_NOUN_$_Gender=Fem|Number=Sing_!_obl
-	quand_§_quand_&_SCONJ_$___!_mark
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	reviens_§_revenir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_advcl
-	du_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_obl:arg
-	car_§_car_&_CCONJ_$___!_cc
-	wash_§_waire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_conj
-	comme_§_comme_&_ADP_$___!_case
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obl:mod
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	et<CCONJ/cc> tu<PRON/nsubj-Sing-2-Prs> peux<VERB/root-Ind-Sing-1-Pres-Fin> aller<VERB/xcomp-Inf> sur<ADP/case> la<DET/det-Def-Fem-Sing-Art> table<NOUN/obl-Fem-Sing> quand<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> reviens<VERB/advcl-Ind-Sing-1-Pres-Fin> du<_/_> de<ADP/case> le<DET/obl:arg-Def-Masc-Sing-Art> car<CCONJ/cc> wash<VERB/conj-Ind-Sing-3-Pres-Fin> comme<ADP/case> ça<PRON/obl:mod-Masc-Sing-3-Dem> ..<PUNCT/punct> 
 *ADU: Ulysse tu veux me donner les jouets qui sont derrière toi pour les ranger ..
 %lng: 15
 %cpxx: 5
 %cpxdt: [0, 1, 2, 2, 3, 2, 3, 2, 3, 4, 5, 2, 3, 4, 1, 0]
 %%details: 0 Ulysse 1 tu 2 veux 2 me 3 donner 2 les 3 jouets 2 qui 3 sont 4 derrière 5 toi 2 pour 3 les 4 ranger 1 .. 0
-%morph:
-	Ulysse_§_Ulysse_&_PROPN_$___!_nsubj
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	veux_§_vouloir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	me_§_se_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_expl:comp
-	donner_§_donner_&_VERB_$_VerbForm=Inf_!_xcomp
-	les_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Plur|PronType=Art_!_det
-	jouets_§_jouet_&_NOUN_$_Gender=Masc|Number=Plur_!_obj
-	qui_§_qui_&_PRON_$_PronType=Rel_!_nsubj
-	sont_§_être_&_AUX_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	derrière_§_derrière_&_ADP_$___!_case
-	toi_§_soi_&_PRON_$_Number=Sing|Person=2_!_acl:relcl
-	pour_§_pour_&_ADP_$___!_mark
-	les_§_le_&_PRON_$_Number=Plur|Person=3|PronType=Prs_!_obj
-	ranger_§_ranger_&_VERB_$_VerbForm=Inf_!_advcl
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	Ulysse<PROPN/nsubj> tu<PRON/nsubj-Sing-2-Prs> veux<VERB/root-Ind-Sing-1-Pres-Fin> me<PRON/expl:comp-Sing-1-Prs> donner<VERB/xcomp-Inf> les<DET/det-Def-Masc-Plur-Art> jouets<NOUN/obj-Masc-Plur> qui<PRON/nsubj-Rel> sont<AUX/cop-Ind-Plur-3-Pres-Fin> derrière<ADP/case> toi<PRON/acl:relcl-Sing-2> pour<ADP/mark> les<PRON/obj-Plur-3-Prs> ranger<VERB/advcl-Inf> ..<PUNCT/punct> 
 *ADU: Ulysse est rentré de la crèche et Ulysse et Julie sont dans le bain ..
 %lng: 15
 %cpxx: 7
 %cpxdt: [0, 1, 2, 3, 4, 5, 2, 3, 5, 6, 4, 5, 6, 7, 1, 0]
 %%details: 0 Ulysse 1 est 2 rentré 3 de 4 la 5 crèche 2 et 3 Ulysse 5 et 6 Julie 4 sont 5 dans 6 le 7 bain 1 .. 0
-%morph:
-	Ulysse_§_Ulysse_&_PROPN_$___!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_aux:tense
-	rentré_§_rentrer_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	de_§_de_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	crèche_§_crèche_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:arg
-	et_§_et_&_CCONJ_$___!_cc
-	Ulysse_§_Ulysse_&_PROPN_$___!_nsubj
-	et_§_et_&_CCONJ_$___!_cc
-	Julie_§_Julie_&_PROPN_$___!_conj
-	sont_§_être_&_AUX_$_Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	dans_§_dans_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	bain_§_bain_&_NOUN_$_Gender=Masc|Number=Sing_!_conj
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	Ulysse<PROPN/nsubj> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> rentré<VERB/root-Masc-Sing-Past-Part> de<ADP/case> la<DET/det-Def-Fem-Sing-Art> crèche<NOUN/obl:arg-Fem-Sing> et<CCONJ/cc> Ulysse<PROPN/nsubj> et<CCONJ/cc> Julie<PROPN/conj> sont<AUX/cop-Ind-Plur-3-Pres-Fin> dans<ADP/case> le<DET/det-Def-Masc-Sing-Art> bain<NOUN/conj-Masc-Sing> ..<PUNCT/punct> 
 *ADU: tu vas aller un petit peu te calmer tout seul dans la chambre moi je crois ..
 %lng: 17
 %cpxx: 5
 %cpxdt: [0, 1, 2, 2, 5, 4, 3, 4, 3, 4, 2, 3, 4, 3, 2, 3, 1, 0]
 %%details: 0 tu 1 vas 2 aller 2 un 5 petit 4 peu 3 te 4 calmer 3 tout 4 seul 2 dans 3 la 4 chambre 3 moi 2 je 3 crois 1 .. 0
-%morph:
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	vas_§_vair_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_root
-	aller_§_aller_&_VERB_$_VerbForm=Inf_!_xcomp
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_advmod
-	petit_§_petit_&_ADJ_$_Gender=Masc|Number=Sing_!_fixed
-	peu_§_peu_&_ADV_$___!_fixed
-	te_§_lui_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_iobj
-	calmer_§_calmer_&_VERB_$_VerbForm=Inf_!_xcomp
-	tout_§_tout_&_ADV_$___!_advmod
-	seul_§_seul_&_ADJ_$_Gender=Masc|Number=Sing_!_xcomp
-	dans_§_dans_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	chambre_§_chambre_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:mod
-	moi_§_soi_&_PRON_$_Number=Sing|Person=1_!_nmod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	crois_§_croire_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	tu<PRON/nsubj-Sing-2-Prs> vas<VERB/root-Ind-Sing-2-Pres-Fin> aller<VERB/xcomp-Inf> un<DET/advmod-Ind-Masc-Sing-Art> petit<ADJ/fixed-Masc-Sing> peu<ADV/fixed> te<PRON/iobj-Sing-2-Prs> calmer<VERB/xcomp-Inf> tout<ADV/advmod> seul<ADJ/xcomp-Masc-Sing> dans<ADP/case> la<DET/det-Def-Fem-Sing-Art> chambre<NOUN/obl:mod-Fem-Sing> moi<PRON/nmod-Sing-1> je<PRON/nsubj-Sing-1-Prs> crois<VERB/acl:relcl-Ind-Sing-1-Pres-Fin> ..<PUNCT/punct> 
 *ADU: ah mais si y a du savon dans l'eau tu vas t'intoxiquer Julie ..
 %lng: 16
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 4, 4, 5, 3, 4, 5, 2, 3, 2, 3, 2, 1, 0]
 %%details: 0 ah 1 mais 2 si 3 y 4 a 4 du 5 savon 3 dans 4 l' 5 eau 2 tu 3 vas 2 t' 3 intoxiquer 2 Julie 1 .. 0
-%morph:
-	ah_§_ah_&_INTJ_$___!_discourse
-	mais_§_mais_&_CCONJ_$___!_cc
-	si_§_si_&_SCONJ_$___!_mark
-	y_§_y_&_PRON_$___!_expl:comp
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	du_§_du_&_DET_$_Gender=Masc|Number=Sing_!_det
-	savon_§_savon_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	dans_§_dans_&_ADP_$___!_case
-	l'_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	eau_§_eau_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:mod
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	vas_§_vair_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_root
-	t'_§_lui_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_iobj
-	intoxiquer_§_intoxiquer_&_VERB_$_VerbForm=Inf_!_xcomp
-	Julie_§_Julie_&_PROPN_$___!_obj
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	ah<INTJ/discourse> mais<CCONJ/cc> si<SCONJ/mark> y<PRON/expl:comp> a<VERB/advcl-Ind-Sing-3-Pres-Fin> du<DET/det-Masc-Sing> savon<NOUN/obj-Masc-Sing> dans<ADP/case> l'<DET/det-Def-Fem-Sing-Art> eau<NOUN/obl:mod-Fem-Sing> tu<PRON/nsubj-Sing-2-Prs> vas<VERB/root-Ind-Sing-2-Pres-Fin> t'<PRON/iobj-Sing-2-Prs> intoxiquer<VERB/xcomp-Inf> Julie<PROPN/obj> ..<PUNCT/punct> 
 *ADU: Ulysse on peut aussi prendre la température en dessous du bras si on veut ..
 %lng: 17
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 2, 3, 4, 3, 4, 3, 4, 5, 2, 3, 4, 1, 0, 0]
 %%details: 0 Ulysse 1 on 2 peut 3 aussi 2 prendre 3 la 4 température 3 en 4 dessous 3 du 4 de 5 le 2 bras 3 si 4 on 1 veut 0 .. 0
-%morph:
-	Ulysse_§_Ulysse_&_PROPN_$___!_nsubj
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	peut_§_pouvoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	aussi_§_aussi_&_ADV_$___!_advmod
-	prendre_§_prendre_&_VERB_$_VerbForm=Inf_!_xcomp
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	température_§_température_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	en_§_en_&_ADP_$___!_case
-	dessous_§_dessous_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	du_§___&___$___!__
-	de_§_de_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	bras_§_bras_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	si_§_si_&_SCONJ_$___!_mark
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	veut_§_vouloir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	Ulysse<PROPN/nsubj> on<PRON/nsubj-Masc-Sing-3> peut<VERB/root-Ind-Sing-3-Pres-Fin> aussi<ADV/advmod> prendre<VERB/xcomp-Inf> la<DET/det-Def-Fem-Sing-Art> température<NOUN/obj-Fem-Sing> en<ADP/case> dessous<NOUN/nmod-Masc-Sing> du<_/_> de<ADP/case> le<DET/det-Def-Masc-Sing-Art> bras<NOUN/nmod-Masc-Sing> si<SCONJ/mark> on<PRON/nsubj-Masc-Sing-3> veut<VERB/advcl-Ind-Sing-3-Pres-Fin> ..<PUNCT/punct> 
 *ADU: tu sais bien que je mets de l'eau chaude dans le bain ..
 %lng: 14
 %cpxx: 5
 %cpxdt: [0, 1, 3, 2, 3, 4, 3, 5, 4, 3, 2, 3, 4, 1, 0]
 %%details: 0 tu 1 sais 3 bien 2 que 3 je 4 mets 3 de 5 l' 4 eau 3 chaude 2 dans 3 le 4 bain 1 .. 0
-%morph:
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	sais_§_savoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	bien_§_bien_&_ADV_$___!_advmod
-	que_§_que_&_SCONJ_$___!_mark
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	mets_§_mettre_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_ccomp
-	de_§_de_&_ADP_$___!_det
-	l'_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_fixed
-	eau_§_eau_&_NOUN_$_Gender=Fem|Number=Sing_!_obj
-	chaude_§_chaud_&_ADJ_$_Gender=Fem|Number=Sing_!_amod
-	dans_§_dans_&_ADP_$___!_case
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	bain_§_bain_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	tu<PRON/nsubj-Sing-2-Prs> sais<VERB/root-Ind-Sing-1-Pres-Fin> bien<ADV/advmod> que<SCONJ/mark> je<PRON/nsubj-Sing-1-Prs> mets<VERB/ccomp-Ind-Sing-1-Pres-Fin> de<ADP/det> l'<DET/fixed-Def-Fem-Sing-Art> eau<NOUN/obj-Fem-Sing> chaude<ADJ/amod-Fem-Sing> dans<ADP/case> le<DET/det-Def-Masc-Sing-Art> bain<NOUN/obl:mod-Masc-Sing> ..<PUNCT/punct> 
 *ADU: tes crayons je les ai mis là pour pas que Julie les prenne ..
 %lng: 14
 %cpxx: 5
 %cpxdt: [0, 1, 1, 2, 3, 4, 4, 3, 4, 2, 3, 4, 5, 1, 0]
 %%details: 0 tes 1 crayons 1 je 2 les 3 ai 4 mis 4 là 3 pour 4 pas 2 que 3 Julie 4 les 5 prenne 1 .. 0
-%morph:
-	tes_§_son_&_DET_$_Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs_!_det
-	crayons_§_crayon_&_NOUN_$_Gender=Masc|Number=Plur_!_obl:mod
-	je_§_il_&_PRON_$_Number=Sing|Person=1|PronType=Prs_!_nsubj
-	les_§_le_&_PRON_$_Number=Plur|Person=3|PronType=Prs_!_obj
-	ai_§_avoir_&_AUX_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_aux:tense
-	mis_§_mettre_&_VERB_$_Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part_!_root
-	là_§_là_&_ADV_$___!_advmod
-	pour_§_pour_&_ADP_$___!_case
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	que_§_que_&_SCONJ_$___!_mark
-	Julie_§_Julie_&_PROPN_$___!_nsubj
-	les_§_le_&_PRON_$_Number=Plur|Person=3|PronType=Prs_!_obj
-	prenne_§_prendre_&_VERB_$_Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_advcl
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	tes<DET/det-Masc-Plur-Yes-Prs> crayons<NOUN/obl:mod-Masc-Plur> je<PRON/nsubj-Sing-1-Prs> les<PRON/obj-Plur-3-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> mis<VERB/root-Masc-Sing-Past-Part> là<ADV/advmod> pour<ADP/case> pas<ADV/advmod-Neg> que<SCONJ/mark> Julie<PROPN/nsubj> les<PRON/obj-Plur-3-Prs> prenne<VERB/advcl-Sub-Sing-3-Pres-Fin> ..<PUNCT/punct> 
 *ADU: Pauline va revenir mais tu n'es pas très gentil tu sais Ulysse ..
 %lng: 14
 %cpxx: 8
 %cpxdt: [0, 1, 3, 2, 3, 4, 5, 6, 7, 8, 2, 3, 2, 1, 0]
 %%details: 0 Pauline 1 va 3 revenir 2 mais 3 tu 4 n' 5 es 6 pas 7 très 8 gentil 2 tu 3 sais 2 Ulysse 1 .. 0
-%morph:
-	Pauline_§_Pauline_&_PROPN_$___!_nsubj
-	va_§_aller_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	revenir_§_revenir_&_VERB_$_VerbForm=Inf_!_xcomp
-	mais_§_mais_&_CCONJ_$___!_cc
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	n'_§_ne_&_ADV_$_Polarity=Neg_!_advmod
-	es_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_cop
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	très_§_très_&_ADV_$___!_advmod
-	gentil_§_gentil_&_ADJ_$_Gender=Masc|Number=Sing_!_conj
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	sais_§_savoir_&_VERB_$_Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin_!_parataxis
-	Ulysse_§_Ulysse_&_PROPN_$___!_obj
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	Pauline<PROPN/nsubj> va<VERB/root-Ind-Sing-3-Pres-Fin> revenir<VERB/xcomp-Inf> mais<CCONJ/cc> tu<PRON/nsubj-Sing-2-Prs> n'<ADV/advmod-Neg> es<AUX/cop-Ind-Sing-2-Pres-Fin> pas<ADV/advmod-Neg> très<ADV/advmod> gentil<ADJ/conj-Masc-Sing> tu<PRON/nsubj-Sing-2-Prs> sais<VERB/parataxis-Ind-Sing-2-Pres-Fin> Ulysse<PROPN/obj> ..<PUNCT/punct> 
 *ADU: ouais normalement ouais mais c'est vrai qu'on le fait pas trop souvent ..
 %lng: 15
 %cpxx: 5
 %cpxdt: [0, 1, 2, 2, 3, 4, 5, 2, 3, 4, 5, 3, 2, 3, 1, 0]
 %%details: 0 ouais 1 normalement 2 ouais 2 mais 3 c' 4 est 5 vrai 2 qu' 3 on 4 le 5 fait 3 pas 2 trop 3 souvent 1 .. 0
-%morph:
-	ouais_§_ouais_&_INTJ_$___!_root
-	normalement_§_normalement_&_ADV_$___!_advmod
-	ouais_§_ouais_&_INTJ_$___!_fixed
-	mais_§_mais_&_CCONJ_$___!_cc
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_expl:subj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	vrai_§_vrai_&_ADJ_$_Gender=Masc|Number=Sing_!_conj
-	qu'_§_que_&_SCONJ_$___!_mark
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	le_§_le_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_obj
-	fait_§_faire_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_csubj
-	pas_§_pas_&_ADV_$_Polarity=Neg_!_advmod
-	trop_§_trop_&_ADV_$___!_advmod
-	souvent_§_souvent_&_ADV_$___!_advmod
-	.._§_.._&_PUNCT_$___!_punct
+%morph:	ouais<INTJ/root> normalement<ADV/advmod> ouais<INTJ/fixed> mais<CCONJ/cc> c'<PRON/expl:subj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> vrai<ADJ/conj-Masc-Sing> qu'<SCONJ/mark> on<PRON/nsubj-Masc-Sing-3> le<PRON/obj-Masc-Sing-3-Prs> fait<VERB/csubj-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> trop<ADV/advmod> souvent<ADV/advmod> ..<PUNCT/punct> 
 @End

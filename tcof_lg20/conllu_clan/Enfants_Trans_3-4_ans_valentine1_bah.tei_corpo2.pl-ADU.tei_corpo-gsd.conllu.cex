@@ -5,173 +5,59 @@
 %cpxx: 6
 %cpxdt: [0, 1, 2, 3, 4, 5, 6, 2, 3, 2, 3, 4, 2, 3, 4, 1, 0]
 %%details: 0 c' 1 est 2 un 3 c' 4 est 5 un 6 animal 2 tu 3 connais 2 * 3 le 4 nom 2 de 3 cet 4 animal 1 ? 0
-%morph:
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	c'_§_ce_&_PRON_$_Number=Sing|Person=3|PronType=Dem_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	un_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Sing|PronType=Art_!_det
-	animal_§_animal_&_NOUN_$_Gender=Masc|Number=Sing_!_root
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	connais_§_connaître_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_acl:relcl
-	*_§_*_&_PUNCT_$___!_punct
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	nom_§_nom_&_NOUN_$_Gender=Masc|Number=Sing_!_obj
-	de_§_de_&_ADP_$___!_case
-	cet_§_ce_&_DET_$_Gender=Masc|Number=Sing|PronType=Dem_!_det
-	animal_§_animal_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> animal<NOUN/root-Masc-Sing> tu<PRON/nsubj-Sing-2-Prs> connais<VERB/acl:relcl-Ind-Sing-1-Pres-Fin> *<PUNCT/punct> le<DET/det-Def-Masc-Sing-Art> nom<NOUN/obj-Masc-Sing> de<ADP/case> cet<DET/det-Masc-Sing-Dem> animal<NOUN/nmod-Masc-Sing> ?<PUNCT/punct> 
 *ADU: oh la la Caroline elle a plein de livres dans ses mains.
 %lng: 12
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 2, 3, 3, 3, 4, 2, 3, 4, 1, 0]
 %%details: 0 oh 1 la 2 la 3 Caroline 2 elle 3 a 3 plein 3 de 4 livres 2 dans 3 ses 4 mains 1 . 0
-%morph:
-	oh_§_oh_&_INTJ_$___!_discourse
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	Caroline_§_Caroline_&_PROPN_$___!_obl:mod
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	plein_§_plein_&_ADJ_$_Gender=Masc|Number=Sing_!_xcomp
-	de_§_de_&_ADP_$___!_case
-	livres_§_livre_&_NOUN_$_Gender=Masc|Number=Plur_!_obl:arg
-	dans_§_dans_&_ADP_$___!_case
-	ses_§_son_&_DET_$_Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs_!_det
-	mains_§_main_&_NOUN_$_Gender=Fem|Number=Plur_!_obl:mod
-	._§_._&_PUNCT_$___!_punct
+%morph:	oh<INTJ/discourse> la<DET/det-Def-Fem-Sing-Art> la<DET/det-Def-Fem-Sing-Art> Caroline<PROPN/obl:mod> elle<PRON/nsubj-Fem-Sing-3-Prs> a<VERB/root-Ind-Sing-3-Pres-Fin> plein<ADJ/xcomp-Masc-Sing> de<ADP/case> livres<NOUN/obl:arg-Masc-Plur> dans<ADP/case> ses<DET/det-Fem-Plur-Yes-Prs> mains<NOUN/obl:mod-Fem-Plur> .<PUNCT/punct> 
 *ADU: la dame il elle savait que ce chien appartient à Caroline ?
 %lng: 11
 %cpxx: 4
 %cpxdt: [0, 1, 1, 2, 3, 2, 3, 4, 4, 2, 3, 1, 0]
 %%details: 0 la 1 dame 1 il 2 elle 3 savait 2 que 3 ce 4 chien 4 appartient 2 à 3 Caroline 1 ? 0
-%morph:
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	dame_§_dame_&_NOUN_$_Gender=Fem|Number=Sing_!_dislocated
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	savait_§_savoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin_!_root
-	que_§_que_&_SCONJ_$___!_mark
-	ce_§_ce_&_DET_$_Gender=Masc|Number=Sing|PronType=Dem_!_det
-	chien_§_chien_&_NOUN_$_Gender=Masc|Number=Sing_!_nsubj
-	appartient_§_appartenir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_ccomp
-	à_§_à_&_ADP_$___!_case
-	Caroline_§_Caroline_&_PROPN_$___!_obl:arg
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	la<DET/det-Def-Fem-Sing-Art> dame<NOUN/dislocated-Fem-Sing> il<PRON/nsubj-Masc-Sing-3-Prs> elle<PRON/nsubj-Fem-Sing-3-Prs> savait<VERB/root-Ind-Sing-3-Imp-Fin> que<SCONJ/mark> ce<DET/det-Masc-Sing-Dem> chien<NOUN/nsubj-Masc-Sing> appartient<VERB/ccomp-Ind-Sing-3-Pres-Fin> à<ADP/case> Caroline<PROPN/obl:arg> ?<PUNCT/punct> 
 *ADU: oui on voit des maisons et des bateaux et après ?
 %lng: 10
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 4, 3, 4, 5, 2, 3, 1, 0]
 %%details: 0 oui 1 on 2 voit 3 des 4 maisons 3 et 4 des 5 bateaux 2 et 3 après 1 ? 0
-%morph:
-	oui_§_oui_&_INTJ_$___!_discourse
-	on_§_on_&_PRON_$_Gender=Masc|Number=Sing|Person=3_!_nsubj
-	voit_§_voir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	des_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Plur|PronType=Art_!_det
-	maisons_§_maison_&_NOUN_$_Gender=Fem|Number=Plur_!_obj
-	et_§_et_&_CCONJ_$___!_cc
-	des_§_un_&_DET_$_Definite=Ind|Gender=Masc|Number=Plur|PronType=Art_!_det
-	bateaux_§_bateau_&_NOUN_$_Gender=Masc|Number=Plur_!_conj
-	et_§_et_&_CCONJ_$___!_cc
-	après_§_après_&_ADV_$___!_conj
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	oui<INTJ/discourse> on<PRON/nsubj-Masc-Sing-3> voit<VERB/root-Ind-Sing-3-Pres-Fin> des<DET/det-Ind-Fem-Plur-Art> maisons<NOUN/obj-Fem-Plur> et<CCONJ/cc> des<DET/det-Ind-Masc-Plur-Art> bateaux<NOUN/conj-Masc-Plur> et<CCONJ/cc> après<ADV/conj> ?<PUNCT/punct> 
 *ADU: et le chien il est en train de jouer tout seul.
 %lng: 11
 %cpxx: 4
 %cpxdt: [0, 1, 2, 2, 3, 4, 3, 2, 3, 2, 3, 1, 0]
 %%details: 0 et 1 le 2 chien 2 il 3 est 4 en 3 train 2 de 3 jouer 2 tout 3 seul 1 . 0
-%morph:
-	et_§_et_&_CCONJ_$___!_cc
-	le_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	chien_§_chien_&_NOUN_$_Gender=Masc|Number=Sing_!_obl:mod
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	en_§_en_&_ADP_$___!_root
-	train_§_train_&_NOUN_$_Gender=Masc|Number=Sing_!_fixed
-	de_§_de_&_ADP_$___!_mark
-	jouer_§_jouer_&_VERB_$_VerbForm=Inf_!_xcomp
-	tout_§_tout_&_ADV_$___!_advmod
-	seul_§_seul_&_ADJ_$_Gender=Masc|Number=Sing_!_xcomp
-	._§_._&_PUNCT_$___!_punct
+%morph:	et<CCONJ/cc> le<DET/det-Def-Masc-Sing-Art> chien<NOUN/obl:mod-Masc-Sing> il<PRON/nsubj-Masc-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> en<ADP/root> train<NOUN/fixed-Masc-Sing> de<ADP/mark> jouer<VERB/xcomp-Inf> tout<ADV/advmod> seul<ADJ/xcomp-Masc-Sing> .<PUNCT/punct> 
 *ADU: oui ça se voit bien il est triste hein ?
 %lng: 9
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 2, 3, 4, 5, 2, 1, 0]
 %%details: 0 oui 1 ça 2 se 3 voit 2 bien 3 il 4 est 5 triste 2 hein 1 ? 0
-%morph:
-	oui_§_oui_&_INTJ_$___!_discourse
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	se_§_se_&_PRON_$_Person=3|PronType=Prs_!_expl:comp
-	voit_§_voir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	bien_§_bien_&_ADV_$___!_advmod
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	triste_§_triste_&_ADJ_$_Gender=Masc|Number=Sing_!_ccomp
-	hein_§_hein_&_ADV_$___!_advmod
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	oui<INTJ/discourse> ça<PRON/nsubj-Masc-Sing-3-Dem> se<PRON/expl:comp-3-Prs> voit<VERB/root-Ind-Sing-3-Pres-Fin> bien<ADV/advmod> il<PRON/nsubj-Masc-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> triste<ADJ/ccomp-Masc-Sing> hein<ADV/advmod> ?<PUNCT/punct> 
 *ADU: et Caroline il est en train de faire quoi ?
 %lng: 9
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 3, 2, 3, 2, 1, 0]
 %%details: 0 et 1 Caroline 2 il 3 est 4 en 3 train 2 de 3 faire 2 quoi 1 ? 0
-%morph:
-	et_§_et_&_CCONJ_$___!_cc
-	Caroline_§_Caroline_&_PROPN_$___!_nsubj
-	il_§_il_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	est_§_être_&_AUX_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_cop
-	en_§_en_&_ADP_$___!_root
-	train_§_train_&_NOUN_$_Gender=Masc|Number=Sing_!_fixed
-	de_§_de_&_ADP_$___!_mark
-	faire_§_faire_&_VERB_$_VerbForm=Inf_!_xcomp
-	quoi_§_quoi_&_PRON_$___!_obj
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	et<CCONJ/cc> Caroline<PROPN/nsubj> il<PRON/nsubj-Masc-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> en<ADP/root> train<NOUN/fixed-Masc-Sing> de<ADP/mark> faire<VERB/xcomp-Inf> quoi<PRON/obj> ?<PUNCT/punct> 
 *ADU: tu sais comment ça s'appelle ça et ça ?
 %lng: 9
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 4, 5, 2, 2, 3, 1, 0]
 %%details: 0 tu 1 sais 2 comment 3 ça 4 s' 5 appelle 2 ça 2 et 3 ça 1 ? 0
-%morph:
-	tu_§_il_&_PRON_$_Number=Sing|Person=2|PronType=Prs_!_nsubj
-	sais_§_savoir_&_VERB_$_Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin_!_root
-	comment_§_comment_&_ADV_$___!_advmod
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_nsubj
-	s'_§_se_&_PRON_$_Person=3|PronType=Prs_!_expl:comp
-	appelle_§_appeler_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_ccomp
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_obj
-	et_§_et_&_CCONJ_$___!_cc
-	ça_§_ça_&_PRON_$_Gender=Masc|Number=Sing|Person=3|PronType=Dem_!_conj
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	tu<PRON/nsubj-Sing-2-Prs> sais<VERB/root-Ind-Sing-1-Pres-Fin> comment<ADV/advmod> ça<PRON/nsubj-Masc-Sing-3-Dem> s'<PRON/expl:comp-3-Prs> appelle<VERB/ccomp-Ind-Sing-3-Pres-Fin> ça<PRON/obj-Masc-Sing-3-Dem> et<CCONJ/cc> ça<PRON/conj-Masc-Sing-3-Dem> ?<PUNCT/punct> 
 *ADU: oh oui elle a des jolies robes hein ?
 %lng: 8
 %cpxx: 4
 %cpxdt: [0, 2, 1, 2, 2, 3, 4, 2, 1, 0]
 %%details: 0 oh 2 oui 1 elle 2 a 2 des 3 jolies 4 robes 2 hein 1 ? 0
-%morph:
-	oh_§_oh_&_INTJ_$___!_discourse
-	oui_§_oui_&_INTJ_$___!_fixed
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	a_§_avoir_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	des_§_un_&_DET_$_Definite=Ind|Gender=Fem|Number=Plur|PronType=Art_!_det
-	jolies_§_joli_&_ADJ_$_Gender=Fem|Number=Plur_!_amod
-	robes_§_robe_&_NOUN_$_Gender=Fem|Number=Plur_!_obj
-	hein_§_hein_&_ADJ_$_Gender=Fem|Number=Plur_!_amod
-	?_§_?_&_PUNCT_$___!_punct
+%morph:	oh<INTJ/discourse> oui<INTJ/fixed> elle<PRON/nsubj-Fem-Sing-3-Prs> a<VERB/root-Ind-Sing-3-Pres-Fin> des<DET/det-Ind-Fem-Plur-Art> jolies<ADJ/amod-Fem-Plur> robes<NOUN/obj-Fem-Plur> hein<ADJ/amod-Fem-Plur> ?<PUNCT/punct> 
 *ADU: là elle regarde par la fenêtre de l'avion dehors.
 %lng: 10
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 4, 5, 3, 4, 5, 2, 1, 0]
 %%details: 0 là 1 elle 2 regarde 3 par 4 la 5 fenêtre 3 de 4 l' 5 avion 2 dehors 1 . 0
-%morph:
-	là_§_là_&_ADV_$___!_advmod
-	elle_§_il_&_PRON_$_Gender=Fem|Number=Sing|Person=3|PronType=Prs_!_nsubj
-	regarde_§_regarder_&_VERB_$_Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin_!_root
-	par_§_par_&_ADP_$___!_case
-	la_§_le_&_DET_$_Definite=Def|Gender=Fem|Number=Sing|PronType=Art_!_det
-	fenêtre_§_fenêtre_&_NOUN_$_Gender=Fem|Number=Sing_!_obl:arg
-	de_§_de_&_ADP_$___!_case
-	l'_§_le_&_DET_$_Definite=Def|Gender=Masc|Number=Sing|PronType=Art_!_det
-	avion_§_avion_&_NOUN_$_Gender=Masc|Number=Sing_!_nmod
-	dehors_§_dehors_&_ADV_$___!_advmod
-	._§_._&_PUNCT_$___!_punct
+%morph:	là<ADV/advmod> elle<PRON/nsubj-Fem-Sing-3-Prs> regarde<VERB/root-Ind-Sing-3-Pres-Fin> par<ADP/case> la<DET/det-Def-Fem-Sing-Art> fenêtre<NOUN/obl:arg-Fem-Sing> de<ADP/case> l'<DET/det-Def-Masc-Sing-Art> avion<NOUN/nmod-Masc-Sing> dehors<ADV/advmod> .<PUNCT/punct> 
 @End
