@@ -1,14 +1,15 @@
 #sent_id = CHI <au0>
 #text = un deux yy ..
 1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	start_char=0|end_char=2	_	_	CHI
-2	deux	deux	NUM	_	_	3	nummod	_	start_char=3|end_char=7	_	_	CHI
+2	deux	deux	NUM	_	Number=Plur	3	nummod	_	start_char=3|end_char=7	_	_	CHI
 3	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=8|end_char=10	_	_	CHI
-4	..	..	PUNCT	_	_	3	punct	_	start_char=11|end_char=13	_	_	CHI
+4	.	.	PUNCT	_	_	3	punct	_	start_char=11|end_char=12	_	_	CHI
+5	.	.	PUNCT	_	_	3	punct	_	start_char=12|end_char=13	_	_	CHI
 
 #sent_id = CHI <au1>
 #text = a l eau ..
 1	a	à	ADP	_	_	3	case	_	start_char=0|end_char=1	_	_	CHI
-2	l	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	start_char=2|end_char=3	_	_	CHI
+2	l	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	start_char=2|end_char=3	_	_	CHI
 3	eau	eau	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=4|end_char=7	_	_	CHI
 4	..	..	PUNCT	_	_	3	punct	_	start_char=8|end_char=10	_	_	CHI
 
@@ -16,43 +17,47 @@
 #text = yyy yy ..
 1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
-3	..	..	PUNCT	_	_	1	punct	_	start_char=7|end_char=9	_	_	CHI
+3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
+4	.	.	PUNCT	_	_	1	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au3>
 #text = yyy yy ..
 1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
-3	..	..	PUNCT	_	_	1	punct	_	start_char=7|end_char=9	_	_	CHI
+3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
+4	.	.	PUNCT	_	_	1	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au4>
 #text = yyy maman ..
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	maman	maman	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=4|end_char=9	_	_	CHI
-3	..	..	PUNCT	_	_	1	punct	_	start_char=10|end_char=12	_	_	CHI
+1	yyy	yyy	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	CHI
+2	maman	maman	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=4|end_char=9	_	_	CHI
+3	..	..	PUNCT	_	_	2	punct	_	start_char=10|end_char=12	_	_	CHI
 
 #sent_id = CHI <au5>
 #text = yyy chat ..
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	chat	chat	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=8	_	_	CHI
-3	..	..	PUNCT	_	_	1	punct	_	start_char=9|end_char=11	_	_	CHI
+1	yyy	yyy	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	CHI
+2	chat	chat	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=4|end_char=8	_	_	CHI
+3	..	..	PUNCT	_	_	2	punct	_	start_char=9|end_char=11	_	_	CHI
 
 #sent_id = CHI <au6>
 #text = yyy chat ?
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	chat	chat	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=8	_	_	CHI
+1	yyy	yyy	DET	_	Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	CHI
+2	chat	chat	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=4|end_char=8	_	_	CHI
 3	?	?	PUNCT	_	_	2	punct	_	start_char=9|end_char=10	_	_	CHI
 
 #sent_id = CHI <au7>
 #text = maman yy ..
 1	maman	maman	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=0|end_char=5	_	_	CHI
 2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=6|end_char=8	_	_	CHI
-3	..	..	PUNCT	_	_	1	punct	_	start_char=9|end_char=11	_	_	CHI
+3	.	.	PUNCT	_	_	1	punct	_	start_char=9|end_char=10	_	_	CHI
+4	.	.	PUNCT	_	_	1	punct	_	start_char=10|end_char=11	_	_	CHI
 
 #sent_id = CHI <au8>
 #text = maman yy ..
 1	maman	maman	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=0|end_char=5	_	_	CHI
 2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=6|end_char=8	_	_	CHI
-3	..	..	PUNCT	_	_	1	punct	_	start_char=9|end_char=11	_	_	CHI
+3	.	.	PUNCT	_	_	1	punct	_	start_char=9|end_char=10	_	_	CHI
+4	.	.	PUNCT	_	_	1	punct	_	start_char=10|end_char=11	_	_	CHI
 
 #sent_id = CHI <au9>
 #text = le chat ..
@@ -64,11 +69,12 @@
 #text = fleur yy ..
 1	fleur	fleur	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=0|end_char=5	_	_	CHI
 2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=6|end_char=8	_	_	CHI
-3	..	..	PUNCT	_	_	1	punct	_	start_char=9|end_char=11	_	_	CHI
+3	.	.	PUNCT	_	_	1	punct	_	start_char=9|end_char=10	_	_	CHI
+4	.	.	PUNCT	_	_	1	punct	_	start_char=10|end_char=11	_	_	CHI
 
 #sent_id = CHI <au11>
 #text = ə chat ..
-1	ə	ə	X	_	_	2	nmod	_	start_char=0|end_char=1	_	_	CHI
+1	ə	ə	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	_	start_char=0|end_char=1	_	_	CHI
 2	chat	chat	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=2|end_char=6	_	_	CHI
 3	..	..	PUNCT	_	_	2	punct	_	start_char=7|end_char=9	_	_	CHI
 

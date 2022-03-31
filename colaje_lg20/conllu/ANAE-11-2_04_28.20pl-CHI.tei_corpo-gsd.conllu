@@ -10,44 +10,46 @@
 8	chanson	chanson	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	start_char=31|end_char=38	_	_	CHI
 9	de	de	ADP	_	_	10	case	_	start_char=39|end_char=41	_	_	CHI
 10	Kirikou	Kirikou	PROPN	_	_	8	nmod	_	start_char=42|end_char=49	_	_	CHI
-11	..	..	PUNCT	_	_	3	punct	_	start_char=50|end_char=52	_	_	CHI
+11	.	.	PUNCT	_	_	3	punct	_	start_char=50|end_char=51	_	_	CHI
+12	.	.	PUNCT	_	_	3	punct	_	start_char=51|end_char=52	_	_	CHI
 
 #sent_id = CHI <au1>
 #text = hou hou hou ha ha ha hi hi hi !
 1	hou	hou	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	hou	hou	X	_	_	1	flat:foreign	_	start_char=4|end_char=7	_	_	CHI
-3	hou	hou	X	_	_	1	flat:foreign	_	start_char=8|end_char=11	_	_	CHI
-4	ha	ha	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12|end_char=14	_	_	CHI
-5	ha	ha	X	_	Foreign=Yes	1	flat:foreign	_	start_char=15|end_char=17	_	_	CHI
-6	ha	ha	X	_	Foreign=Yes	1	flat:foreign	_	start_char=18|end_char=20	_	_	CHI
-7	hi	hi	X	_	Foreign=Yes	1	flat:foreign	_	start_char=21|end_char=23	_	_	CHI
-8	hi	hi	X	_	Foreign=Yes	1	flat:foreign	_	start_char=24|end_char=26	_	_	CHI
-9	hi	hi	X	_	Foreign=Yes	1	flat:foreign	_	start_char=27|end_char=29	_	_	CHI
+2	hou	hou	X	_	_	4	nmod	_	start_char=4|end_char=7	_	_	CHI
+3	hou	hou	X	_	_	4	nmod	_	start_char=8|end_char=11	_	_	CHI
+4	ha	ha	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=12|end_char=14	_	_	CHI
+5	ha	ha	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	start_char=15|end_char=17	_	_	CHI
+6	ha	ha	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	start_char=18|end_char=20	_	_	CHI
+7	hi	hi	X	_	_	9	nmod	_	start_char=21|end_char=23	_	_	CHI
+8	hi	hi	X	_	_	9	nmod	_	start_char=24|end_char=26	_	_	CHI
+9	hi	hi	X	_	_	4	conj	_	start_char=27|end_char=29	_	_	CHI
 10	!	!	PUNCT	_	_	1	punct	_	start_char=30|end_char=31	_	_	CHI
 
 #sent_id = CHI <au2>
 #text = y a de la pizza dedans sur sa tête ..
-1	y	y	PRON	_	_	2	expl:comp	_	start_char=0|end_char=1	_	_	CHI
+1	y	y	PRON	_	Person=3|PronType=Prs	2	dep:comp	_	start_char=0|end_char=1	_	_	CHI
 2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=3	_	_	CHI
 3	de	de	ADP	_	_	5	det	_	start_char=4|end_char=6	_	_	CHI
 4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	fixed	_	start_char=7|end_char=9	_	_	CHI
 5	pizza	pizza	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=10|end_char=15	_	_	CHI
 6	dedans	dedans	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	start_char=16|end_char=22	_	_	CHI
 7	sur	sur	ADP	_	_	9	case	_	start_char=23|end_char=26	_	_	CHI
-8	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	9	det	_	start_char=27|end_char=29	_	_	CHI
-9	tête	tête	NOUN	_	Gender=Fem|Number=Sing	2	obl	_	start_char=30|end_char=34	_	_	CHI
-10	..	..	PUNCT	_	_	2	punct	_	start_char=35|end_char=37	_	_	CHI
+8	sa	son	DET	_	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=3|PronType=Prs	9	det	_	start_char=27|end_char=29	_	_	CHI
+9	tête	tête	NOUN	_	Gender=Fem|Number=Sing	2	obl:mod	_	start_char=30|end_char=34	_	_	CHI
+10	.	.	PUNCT	_	_	2	punct	_	start_char=35|end_char=36	_	_	CHI
+11	.	.	PUNCT	_	_	2	punct	_	start_char=36|end_char=37	_	_	CHI
 
 #sent_id = CHI <au3>
 #text = oh non tu as mis sur la momie !
 1	oh	oh	INTJ	_	_	5	discourse	_	start_char=0|end_char=2	_	_	CHI
-2	non	non	ADV	_	_	1	fixed	_	start_char=3|end_char=6	_	_	CHI
+2	non	non	ADV	_	Polarity=Neg	1	fixed	_	start_char=3|end_char=6	_	_	CHI
 3	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	5	nsubj	_	start_char=7|end_char=9	_	_	CHI
 4	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	5	aux:tense	_	start_char=10|end_char=12	_	_	CHI
-5	mis	mettre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=13|end_char=16	_	_	CHI
+5	mis	mettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	0	root	_	start_char=13|end_char=16	_	_	CHI
 6	sur	sur	ADP	_	_	8	case	_	start_char=17|end_char=20	_	_	CHI
 7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	start_char=21|end_char=23	_	_	CHI
-8	momie	momie	NOUN	_	Gender=Fem|Number=Sing	5	obl	_	start_char=24|end_char=29	_	_	CHI
+8	momie	momie	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	start_char=24|end_char=29	_	_	CHI
 9	!	!	PUNCT	_	_	5	punct	_	start_char=30|end_char=31	_	_	CHI
 
 #sent_id = CHI <au4>
@@ -61,7 +63,8 @@
 7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	start_char=24|end_char=26	_	_	CHI
 8	Père	père	NOUN	_	Gender=Masc|Number=Sing	6	appos	_	start_char=27|end_char=31	_	_	CHI
 9	Noël	Noël	PROPN	_	_	8	appos	_	start_char=32|end_char=36	_	_	CHI
-10	..	..	PUNCT	_	_	6	punct	_	start_char=37|end_char=39	_	_	CHI
+10	.	.	PUNCT	_	_	6	punct	_	start_char=37|end_char=38	_	_	CHI
+11	.	.	PUNCT	_	_	6	punct	_	start_char=38|end_char=39	_	_	CHI
 
 #sent_id = CHI <au5>
 #text = mais j'arrive pas à tourner la page ..
@@ -73,7 +76,8 @@
 6	tourner	tourner	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=20|end_char=27	_	_	CHI
 7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	start_char=28|end_char=30	_	_	CHI
 8	page	page	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	start_char=31|end_char=35	_	_	CHI
-9	..	..	PUNCT	_	_	3	punct	_	start_char=36|end_char=38	_	_	CHI
+9	.	.	PUNCT	_	_	3	punct	_	start_char=36|end_char=37	_	_	CHI
+10	.	.	PUNCT	_	_	3	punct	_	start_char=37|end_char=38	_	_	CHI
 
 #sent_id = CHI <au6>
 #text = mais il est grand et il fait peur ..
@@ -84,8 +88,9 @@
 5	et	et	CCONJ	_	_	7	cc	_	start_char=18|end_char=20	_	_	CHI
 6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	start_char=21|end_char=23	_	_	CHI
 7	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	start_char=24|end_char=28	_	_	CHI
-8	peur	peur	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	start_char=29|end_char=33	_	_	CHI
-9	..	..	PUNCT	_	_	4	punct	_	start_char=34|end_char=36	_	_	CHI
+8	peur	peur	NOUN	_	Gender=Fem|Number=Sing	7	obj:lvc	_	start_char=29|end_char=33	_	_	CHI
+9	.	.	PUNCT	_	_	4	punct	_	start_char=34|end_char=35	_	_	CHI
+10	.	.	PUNCT	_	_	4	punct	_	start_char=35|end_char=36	_	_	CHI
 
 #sent_id = CHI <au7>
 #text = mais il est dans mes bras le Père Noël ..
@@ -93,23 +98,24 @@
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	start_char=5|end_char=7	_	_	CHI
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	start_char=8|end_char=11	_	_	CHI
 4	dans	dans	ADP	_	_	6	case	_	start_char=12|end_char=16	_	_	CHI
-5	mes	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	6	det	_	start_char=17|end_char=20	_	_	CHI
-6	bras	bras	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=21|end_char=25	_	_	CHI
+5	mes	son	DET	_	Number=Plur|Number[psor]=Sing|Person[psor]=1|PronType=Prs	6	det	_	start_char=17|end_char=20	_	_	CHI
+6	bras	bras	NOUN	_	Gender=Masc|Number=Plur	8	obl:mod	_	start_char=21|end_char=25	_	_	CHI
 7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	start_char=26|end_char=28	_	_	CHI
-8	Père	père	NOUN	_	Gender=Masc|Number=Sing	6	appos	_	start_char=29|end_char=33	_	_	CHI
+8	Père	père	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=29|end_char=33	_	_	CHI
 9	Noël	Noël	PROPN	_	_	8	appos	_	start_char=34|end_char=38	_	_	CHI
-10	..	..	PUNCT	_	_	8	punct	_	start_char=39|end_char=41	_	_	CHI
+10	.	.	PUNCT	_	_	8	punct	_	start_char=39|end_char=40	_	_	CHI
+11	.	.	PUNCT	_	_	8	punct	_	start_char=40|end_char=41	_	_	CHI
 
 #sent_id = CHI <au8>
 #text = je va te montrer le loup à toi ..
 1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CHI
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=5	_	_	CHI
-3	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	iobj	_	start_char=6|end_char=8	_	_	CHI
+3	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obl:arg	_	start_char=6|end_char=8	_	_	CHI
 4	montrer	montrer	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=9|end_char=16	_	_	CHI
 5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=17|end_char=19	_	_	CHI
 6	loup	loup	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	start_char=20|end_char=24	_	_	CHI
 7	à	à	ADP	_	_	8	case	_	start_char=25|end_char=26	_	_	CHI
-8	toi	soi	PRON	_	Number=Sing|Person=2	4	obl:arg	_	start_char=27|end_char=30	_	_	CHI
+8	toi	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obl:arg	_	start_char=27|end_char=30	_	_	CHI
 9	..	..	PUNCT	_	_	2	punct	_	start_char=31|end_char=33	_	_	CHI
 
 #sent_id = CHI <au9>
@@ -122,25 +128,26 @@
 6	à	à	ADP	_	_	7	mark	_	start_char=29|end_char=30	_	_	CHI
 7	modeler	modeler	VERB	_	VerbForm=Inf	5	acl	_	start_char=31|end_char=38	_	_	CHI
 8	Petit	petit	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	start_char=39|end_char=44	_	_	CHI
-9	Ours	Ours	PROPN	_	_	7	obj	_	start_char=45|end_char=49	_	_	CHI
-10	Brun	Brun	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	start_char=50|end_char=54	_	_	CHI
-11	..	..	PUNCT	_	_	5	punct	_	start_char=55|end_char=57	_	_	CHI
+9	Ours	our	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	start_char=45|end_char=49	_	_	CHI
+10	Brun	Brun	PROPN	_	_	9	appos	_	start_char=50|end_char=54	_	_	CHI
+11	.	.	PUNCT	_	_	5	punct	_	start_char=55|end_char=56	_	_	CHI
+12	.	.	PUNCT	_	_	5	punct	_	start_char=56|end_char=57	_	_	CHI
 
 #sent_id = CHI <au10>
 #text = eux ils sont les enfants de Kirikou yy ?
-1	eux	soi	PRON	_	Gender=Masc|Number=Plur|Person=3	5	dislocated	_	start_char=0|end_char=3	_	_	CHI
+1	eux	lui	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	dislocated	_	start_char=0|end_char=3	_	_	CHI
 2	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	start_char=4|end_char=7	_	_	CHI
 3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=8|end_char=12	_	_	CHI
-4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	start_char=13|end_char=16	_	_	CHI
-5	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=17|end_char=24	_	_	CHI
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	start_char=13|end_char=16	_	_	CHI
+5	enfants	enfant	NOUN	_	Number=Plur	0	root	_	start_char=17|end_char=24	_	_	CHI
 6	de	de	ADP	_	_	7	case	_	start_char=25|end_char=27	_	_	CHI
 7	Kirikou	Kirikou	PROPN	_	_	5	nmod	_	start_char=28|end_char=35	_	_	CHI
-8	yy	yy	X	_	_	7	flat:name	_	start_char=36|end_char=38	_	_	CHI
+8	yy	yy	NOUN	_	Gender=Masc|Number=Sing	7	flat:name	_	start_char=36|end_char=38	_	_	CHI
 9	?	?	PUNCT	_	_	5	punct	_	start_char=39|end_char=40	_	_	CHI
 
 #sent_id = CHI <au11>
 #text = celui là est le bonhomme de neige le sapin ..
-1	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	nsubj	_	start_char=0|end_char=5	_	_	CHI
+1	celui	celui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=0|end_char=5	_	_	CHI
 2	là	là	ADV	_	_	1	advmod	_	start_char=6|end_char=8	_	_	CHI
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=9|end_char=12	_	_	CHI
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=13|end_char=15	_	_	CHI
@@ -149,7 +156,8 @@
 7	neige	neige	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	start_char=28|end_char=33	_	_	CHI
 8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	start_char=34|end_char=36	_	_	CHI
 9	sapin	sapin	NOUN	_	Gender=Masc|Number=Sing	5	appos	_	start_char=37|end_char=42	_	_	CHI
-10	..	..	PUNCT	_	_	5	punct	_	start_char=43|end_char=45	_	_	CHI
+10	.	.	PUNCT	_	_	5	punct	_	start_char=43|end_char=44	_	_	CHI
+11	.	.	PUNCT	_	_	5	punct	_	start_char=44|end_char=45	_	_	CHI
 
 #sent_id = CHI <au12>
 #text = bah le bébé il fait à quatre pattes ..
@@ -159,21 +167,22 @@
 4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	start_char=12|end_char=14	_	_	CHI
 5	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=15|end_char=19	_	_	CHI
 6	à	à	ADP	_	_	8	case	_	start_char=20|end_char=21	_	_	CHI
-7	quatre	quatre	NUM	_	_	8	nummod	_	start_char=22|end_char=28	_	_	CHI
+7	quatre	quatre	NUM	_	Number=Plur	8	nummod	_	start_char=22|end_char=28	_	_	CHI
 8	pattes	patte	NOUN	_	Gender=Fem|Number=Plur	5	obl:arg	_	start_char=29|end_char=35	_	_	CHI
-9	..	..	PUNCT	_	_	5	punct	_	start_char=36|end_char=38	_	_	CHI
+9	.	.	PUNCT	_	_	5	punct	_	start_char=36|end_char=37	_	_	CHI
+10	.	.	PUNCT	_	_	5	punct	_	start_char=37|end_char=38	_	_	CHI
 
 #sent_id = CHI <au13>
 #text = pendant que le loup n'y est pas ..
-1	pendant	pendant	ADP	_	_	8	mark	_	start_char=0|end_char=7	_	_	CHI
-2	que	que	SCONJ	_	_	8	mark	_	start_char=8|end_char=11	_	_	CHI
+1	pendant	pendant	ADP	_	_	7	mark	_	start_char=0|end_char=7	_	_	CHI
+2	que	que	SCONJ	_	_	7	mark	_	start_char=8|end_char=11	_	_	CHI
 3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=12|end_char=14	_	_	CHI
-4	loup	loup	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	start_char=15|end_char=19	_	_	CHI
-5	n'	ne	ADV	_	Polarity=Neg	8	advmod	_	start_char=20|end_char=22	_	_	CHI
-6	y	y	PRON	_	_	8	obl:mod	_	start_char=22|end_char=23	_	_	CHI
-7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	start_char=24|end_char=27	_	_	CHI
-8	pas	pas	ADV	_	Polarity=Neg	0	root	_	start_char=28|end_char=31	_	_	CHI
-9	..	..	PUNCT	_	_	8	punct	_	start_char=32|end_char=34	_	_	CHI
+4	loup	loup	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	start_char=15|end_char=19	_	_	CHI
+5	n'	ne	ADV	_	Polarity=Neg	7	advmod	_	start_char=20|end_char=22	_	_	CHI
+6	y	y	PRON	_	Person=3|PronType=Prs	7	obl:arg	_	start_char=22|end_char=23	_	_	CHI
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=24|end_char=27	_	_	CHI
+8	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	start_char=28|end_char=31	_	_	CHI
+9	..	..	PUNCT	_	_	7	punct	_	start_char=32|end_char=34	_	_	CHI
 
 #sent_id = CHI <au14>
 #text = oh la tortue a attrapé un ballon ..
@@ -184,7 +193,8 @@
 5	attrapé	attraper	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=15|end_char=22	_	_	CHI
 6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	start_char=23|end_char=25	_	_	CHI
 7	ballon	ballon	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	start_char=26|end_char=32	_	_	CHI
-8	..	..	PUNCT	_	_	5	punct	_	start_char=33|end_char=35	_	_	CHI
+8	.	.	PUNCT	_	_	5	punct	_	start_char=33|end_char=34	_	_	CHI
+9	.	.	PUNCT	_	_	5	punct	_	start_char=34|end_char=35	_	_	CHI
 
 #sent_id = CHI <au15>
 #text = mais il est là dans mes bras ..
@@ -193,9 +203,10 @@
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=8|end_char=11	_	_	CHI
 4	là	là	ADV	_	_	7	advmod	_	start_char=12|end_char=14	_	_	CHI
 5	dans	dans	ADP	_	_	7	case	_	start_char=15|end_char=19	_	_	CHI
-6	mes	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	7	det	_	start_char=20|end_char=23	_	_	CHI
+6	mes	son	DET	_	Number=Plur|Number[psor]=Sing|Person[psor]=1|PronType=Prs	7	det	_	start_char=20|end_char=23	_	_	CHI
 7	bras	bras	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=24|end_char=28	_	_	CHI
-8	..	..	PUNCT	_	_	7	punct	_	start_char=29|end_char=31	_	_	CHI
+8	.	.	PUNCT	_	_	7	punct	_	start_char=29|end_char=30	_	_	CHI
+9	.	.	PUNCT	_	_	7	punct	_	start_char=30|end_char=31	_	_	CHI
 
 #sent_id = CHI <au16>
 #text = j'arrive pas à enlever la page ..
@@ -206,18 +217,19 @@
 5	enlever	enlever	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=15|end_char=22	_	_	CHI
 6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=23|end_char=25	_	_	CHI
 7	page	page	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	start_char=26|end_char=30	_	_	CHI
-8	..	..	PUNCT	_	_	2	punct	_	start_char=31|end_char=33	_	_	CHI
+8	.	.	PUNCT	_	_	2	punct	_	start_char=31|end_char=32	_	_	CHI
+9	.	.	PUNCT	_	_	2	punct	_	start_char=32|end_char=33	_	_	CHI
 
 #sent_id = CHI <au17>
 #text = ils sont où les enfants de Kirikou ?
-1	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	start_char=0|end_char=3	_	_	CHI
-2	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=4|end_char=8	_	_	CHI
+1	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	start_char=0|end_char=3	_	_	CHI
+2	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=4|end_char=8	_	_	CHI
 3	où	où	ADV	_	PronType=Rel	5	advmod	_	start_char=9|end_char=11	_	_	CHI
-4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	start_char=12|end_char=15	_	_	CHI
-5	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=16|end_char=23	_	_	CHI
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	start_char=12|end_char=15	_	_	CHI
+5	enfants	enfant	NOUN	_	Number=Plur	2	nsubj	_	start_char=16|end_char=23	_	_	CHI
 6	de	de	ADP	_	_	7	case	_	start_char=24|end_char=26	_	_	CHI
 7	Kirikou	Kirikou	PROPN	_	_	5	nmod	_	start_char=27|end_char=34	_	_	CHI
-8	?	?	PUNCT	_	_	5	punct	_	start_char=35|end_char=36	_	_	CHI
+8	?	?	PUNCT	_	_	2	punct	_	start_char=35|end_char=36	_	_	CHI
 
 #sent_id = CHI <au18>
 #text = ils sont nés ici les de Kirikou ..
@@ -228,16 +240,18 @@
 5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	start_char=17|end_char=20	_	_	CHI
 6	de	de	ADP	_	_	7	case	_	start_char=21|end_char=23	_	_	CHI
 7	Kirikou	Kirikou	PROPN	_	_	3	obl:arg	_	start_char=24|end_char=31	_	_	CHI
-8	..	..	PUNCT	_	_	3	punct	_	start_char=32|end_char=34	_	_	CHI
+8	.	.	PUNCT	_	_	3	punct	_	start_char=32|end_char=33	_	_	CHI
+9	.	.	PUNCT	_	_	3	punct	_	start_char=33|end_char=34	_	_	CHI
 
 #sent_id = CHI <au19>
 #text = euh j'ai rien dans ma main ..
 1	euh	euh	INTJ	_	_	3	discourse	_	start_char=0|end_char=3	_	_	CHI
 2	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	start_char=4|end_char=6	_	_	CHI
 3	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=8	_	_	CHI
-4	rien	rien	PRON	_	Number=Sing	3	obj	_	start_char=9|end_char=13	_	_	CHI
+4	rien	rien	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Neg	3	obj	_	start_char=9|end_char=13	_	_	CHI
 5	dans	dans	ADP	_	_	7	case	_	start_char=14|end_char=18	_	_	CHI
-6	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	start_char=19|end_char=21	_	_	CHI
+6	ma	son	DET	_	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=1|PronType=Prs	7	det	_	start_char=19|end_char=21	_	_	CHI
 7	main	main	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	start_char=22|end_char=26	_	_	CHI
-8	..	..	PUNCT	_	_	3	punct	_	start_char=27|end_char=29	_	_	CHI
+8	.	.	PUNCT	_	_	3	punct	_	start_char=27|end_char=28	_	_	CHI
+9	.	.	PUNCT	_	_	3	punct	_	start_char=28|end_char=29	_	_	CHI
 

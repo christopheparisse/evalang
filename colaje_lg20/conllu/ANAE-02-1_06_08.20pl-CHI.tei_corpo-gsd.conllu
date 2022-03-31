@@ -1,37 +1,35 @@
 #sent_id = CHI <au0>
 #text = là là là là là là là là !
-1	là	là	ADV	_	_	3	advmod	_	start_char=0|end_char=2	_	_	CHI
+1	là	là	ADV	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	là	là	ADV	_	_	1	advmod	_	start_char=3|end_char=5	_	_	CHI
-3	là	là	ADV	_	_	4	advmod	_	start_char=6|end_char=8	_	_	CHI
-4	là	là	ADV	_	_	5	advmod	_	start_char=9|end_char=11	_	_	CHI
-5	là	là	ADV	_	_	6	advmod	_	start_char=12|end_char=14	_	_	CHI
-6	là	là	ADV	_	_	0	root	_	start_char=15|end_char=17	_	_	CHI
+3	là	là	ADV	_	_	1	advmod	_	start_char=6|end_char=8	_	_	CHI
+4	là	là	ADV	_	_	3	advmod	_	start_char=9|end_char=11	_	_	CHI
+5	là	là	ADV	_	_	4	advmod	_	start_char=12|end_char=14	_	_	CHI
+6	là	là	ADV	_	_	5	advmod	_	start_char=15|end_char=17	_	_	CHI
 7	là	là	ADV	_	_	6	advmod	_	start_char=18|end_char=20	_	_	CHI
 8	là	là	ADV	_	_	7	advmod	_	start_char=21|end_char=23	_	_	CHI
-9	!	!	PUNCT	_	_	7	punct	_	start_char=24|end_char=25	_	_	CHI
+9	!	!	PUNCT	_	_	4	punct	_	start_char=24|end_char=25	_	_	CHI
 
 #sent_id = CHI <au1>
 #text = oh il e tombé !
-1	oh	oh	INTJ	_	_	4	discourse	_	start_char=0|end_char=2	_	_	CHI
-2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=3|end_char=5	_	_	CHI
-3	e	e	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	start_char=6|end_char=7	_	_	CHI
-4	tombé	tomber	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=8|end_char=13	_	_	CHI
-5	!	!	PUNCT	_	_	4	punct	_	start_char=14|end_char=15	_	_	CHI
+1	oh	oh	INTJ	_	_	3	discourse	_	start_char=0|end_char=2	_	_	CHI
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=3|end_char=5	_	_	CHI
+3	e	e	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=7	_	_	CHI
+4	tombé	tomber	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	xcomp	_	start_char=8|end_char=13	_	_	CHI
+5	!	!	PUNCT	_	_	3	punct	_	start_char=14|end_char=15	_	_	CHI
 
 #sent_id = CHI <au2>
 #text = oh ah oh oh !
 1	oh	oh	INTJ	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
-2-3	ah	_	_	_	_	_	_	_	start_char=3|end_char=5	_	_	CHI
-2	à	à	ADP	_	_	4	case	_	_	_	_	CHI
-3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	_	_	CHI
-4	oh	oh	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	start_char=6|end_char=8	_	_	CHI
-5	oh	oh	INTJ	_	_	4	discourse	_	start_char=9|end_char=11	_	_	CHI
-6	!	!	PUNCT	_	_	1	punct	_	start_char=12|end_char=13	_	_	CHI
+2	ah	ah	INTJ	_	_	1	discourse	_	start_char=3|end_char=5	_	_	CHI
+3	oh	oh	INTJ	_	_	2	discourse	_	start_char=6|end_char=8	_	_	CHI
+4	oh	oh	INTJ	_	_	2	discourse	_	start_char=9|end_char=11	_	_	CHI
+5	!	!	PUNCT	_	_	2	punct	_	start_char=12|end_char=13	_	_	CHI
 
 #sent_id = CHI <au3>
 #text = hé hé lø yy !
 1	hé	hé	INTJ	_	_	4	discourse	_	start_char=0|end_char=2	_	_	CHI
-2	hé	hé	INTJ	_	_	1	fixed	_	start_char=3|end_char=5	_	_	CHI
+2	hé	hé	SYM	_	_	1	fixed	_	start_char=3|end_char=5	_	_	CHI
 3	lø	lø	X	_	_	4	nmod	_	start_char=6|end_char=8	_	_	CHI
 4	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=9|end_char=11	_	_	CHI
 5	!	!	PUNCT	_	_	4	punct	_	start_char=12|end_char=13	_	_	CHI
@@ -39,105 +37,109 @@
 #sent_id = CHI <au4>
 #text = et et et pas !
 1	et	et	CCONJ	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
-2	et	et	CCONJ	_	_	1	fixed	_	start_char=3|end_char=5	_	_	CHI
+2	et	et	CCONJ	_	_	4	cc	_	start_char=3|end_char=5	_	_	CHI
 3	et	et	CCONJ	_	_	4	cc	_	start_char=6|end_char=8	_	_	CHI
 4	pas	pas	ADV	_	Polarity=Neg	1	conj	_	start_char=9|end_char=12	_	_	CHI
 5	!	!	PUNCT	_	_	1	punct	_	start_char=13|end_char=14	_	_	CHI
 
 #sent_id = CHI <au5>
 #text = yyy bébé yy ?
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	bébé	bébé	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=8	_	_	CHI
-3	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=9|end_char=11	_	_	CHI
-4	?	?	PUNCT	_	_	1	punct	_	start_char=12|end_char=13	_	_	CHI
+1	yyy	yyy	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	CHI
+2	bébé	bébé	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=4|end_char=8	_	_	CHI
+3	yy	yy	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	start_char=9|end_char=11	_	_	CHI
+4	?	?	PUNCT	_	_	2	punct	_	start_char=12|end_char=13	_	_	CHI
 
 #sent_id = CHI <au6>
 #text = tin tin tin !
 1	tin	tin	X	_	Foreign=Yes	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	tin	tin	X	_	Foreign=Yes	1	flat:foreign	_	start_char=4|end_char=7	_	_	CHI
-3	tin	tin	X	_	_	1	flat:foreign	_	start_char=8|end_char=11	_	_	CHI
+3	tin	tin	X	_	Foreign=Yes	2	flat:foreign	_	start_char=8|end_char=11	_	_	CHI
 4	!	!	PUNCT	_	_	1	punct	_	start_char=12|end_char=13	_	_	CHI
 
 #sent_id = CHI <au7>
 #text = lø yyy hum ..
-1	lø	lø	X	_	_	2	nmod	_	start_char=0|end_char=2	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3|end_char=6	_	_	CHI
-3	hum	hum	X	_	_	2	appos	_	start_char=7|end_char=10	_	_	CHI
-4	..	..	PUNCT	_	_	2	punct	_	start_char=11|end_char=13	_	_	CHI
+1	lø	lø	X	_	_	3	nsubj	_	start_char=0|end_char=2	_	_	CHI
+2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=3|end_char=6	_	_	CHI
+3	hum	hum	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=7|end_char=10	_	_	CHI
+4	.	.	PUNCT	_	_	3	punct	_	start_char=11|end_char=12	_	_	CHI
+5	.	.	PUNCT	_	_	3	punct	_	start_char=12|end_char=13	_	_	CHI
 
 #sent_id = CHI <au8>
 #text = et et hop !
-1	et	et	CCONJ	_	_	3	cc	_	start_char=0|end_char=2	_	_	CHI
+1	et	et	CCONJ	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	et	et	CCONJ	_	_	3	cc	_	start_char=3|end_char=5	_	_	CHI
-3	hop	hop	INTJ	_	_	0	root	_	start_char=6|end_char=9	_	_	CHI
+3	hop	hop	INTJ	_	_	1	conj	_	start_char=6|end_char=9	_	_	CHI
 4	!	!	PUNCT	_	_	3	punct	_	start_char=10|end_char=11	_	_	CHI
 
 #sent_id = CHI <au9>
 #text = e pas ah !
-1	e	e	INTJ	_	_	3	cc	_	start_char=0|end_char=1	_	_	CHI
+1	e	e	INTJ	_	_	3	discourse	_	start_char=0|end_char=1	_	_	CHI
 2	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	start_char=2|end_char=5	_	_	CHI
 3	ah	ah	INTJ	_	_	0	root	_	start_char=6|end_char=8	_	_	CHI
 4	!	!	PUNCT	_	_	3	punct	_	start_char=9|end_char=10	_	_	CHI
 
 #sent_id = CHI <au10>
 #text = e mange quoi ?
-1	e	e	INTJ	_	_	2	discourse	_	start_char=0|end_char=1	_	_	CHI
+1	e	e	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	_	start_char=0|end_char=1	_	_	CHI
 2	mange	manger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=7	_	_	CHI
-3	quoi	quoi	PRON	_	_	2	nsubj	_	start_char=8|end_char=12	_	_	CHI
+3	quoi	quoi	PRON	_	Person=3|PronType=Int	2	obj	_	start_char=8|end_char=12	_	_	CHI
 4	?	?	PUNCT	_	_	2	punct	_	start_char=13|end_char=14	_	_	CHI
 
 #sent_id = CHI <au11>
 #text = e lɛ pomme !
-1	e	e	X	_	_	3	nmod	_	start_char=0|end_char=1	_	_	CHI
+1	e	e	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=1	_	_	CHI
 2	lɛ	lɛ	X	_	_	3	nmod	_	start_char=2|end_char=4	_	_	CHI
-3	pomme	pomme	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=5|end_char=10	_	_	CHI
-4	!	!	PUNCT	_	_	3	punct	_	start_char=11|end_char=12	_	_	CHI
+3	pomme	pomme	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	start_char=5|end_char=10	_	_	CHI
+4	!	!	PUNCT	_	_	1	punct	_	start_char=11|end_char=12	_	_	CHI
 
 #sent_id = CHI <au12>
 #text = yyy yy ..
 1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
-3	..	..	PUNCT	_	_	1	punct	_	start_char=7|end_char=9	_	_	CHI
+3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
+4	.	.	PUNCT	_	_	1	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au13>
 #text = yyy yy ..
 1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
-3	..	..	PUNCT	_	_	1	punct	_	start_char=7|end_char=9	_	_	CHI
+3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
+4	.	.	PUNCT	_	_	1	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au14>
 #text = yyy yy ..
 1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
-3	..	..	PUNCT	_	_	1	punct	_	start_char=7|end_char=9	_	_	CHI
+3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
+4	.	.	PUNCT	_	_	1	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au15>
 #text = yyy yy !
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
-3	!	!	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
+3	!	!	PUNCT	_	_	2	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = CHI <au16>
 #text = yyy yy !
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
-3	!	!	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
+3	!	!	PUNCT	_	_	2	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = CHI <au17>
 #text = yyy pomme !
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	pomme	pomme	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=4|end_char=9	_	_	CHI
-3	!	!	PUNCT	_	_	1	punct	_	start_char=10|end_char=11	_	_	CHI
+1	yyy	yyy	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	CHI
+2	pomme	pomme	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=4|end_char=9	_	_	CHI
+3	!	!	PUNCT	_	_	2	punct	_	start_char=10|end_char=11	_	_	CHI
 
 #sent_id = CHI <au18>
 #text = tu vois ?
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CHI
-2	vois	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CHI
+2	vois	voir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CHI
 3	?	?	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au19>
 #text = se Ael !
-1	se	se	PRON	_	Person=3|PronType=Prs	2	nummod	_	start_char=0|end_char=2	_	_	CHI
+1	se	se	PRON	_	Person=3|PronType=Prs	2	dep:comp	_	start_char=0|end_char=2	_	_	CHI
 2	Ael	Ael	PROPN	_	_	0	root	_	start_char=3|end_char=6	_	_	CHI
 3	!	!	PUNCT	_	_	2	punct	_	start_char=7|end_char=8	_	_	CHI
 

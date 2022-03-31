@@ -2,24 +2,25 @@
 #text = s'il te plait ..
 1	s'	si	SCONJ	_	_	4	mark	_	start_char=0|end_char=2	_	_	CHI
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=2|end_char=4	_	_	CHI
-3	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	iobj	_	start_char=5|end_char=7	_	_	CHI
+3	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obl:arg	_	start_char=5|end_char=7	_	_	CHI
 4	plait	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8|end_char=13	_	_	CHI
 5	..	..	PUNCT	_	_	4	punct	_	start_char=14|end_char=16	_	_	CHI
 
 #sent_id = CHI <au1>
 #text = o a cherche voiture ..
-1	o	o	PROPN	_	_	3	nsubj	_	start_char=0|end_char=1	_	_	CHI
+1	o	o	X	_	_	3	nsubj	_	start_char=0|end_char=1	_	_	CHI
 2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=2|end_char=3	_	_	CHI
 3	cherche	chercher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=4|end_char=11	_	_	CHI
 4	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=12|end_char=19	_	_	CHI
-5	..	..	PUNCT	_	_	3	punct	_	start_char=20|end_char=22	_	_	CHI
+5	.	.	PUNCT	_	_	3	punct	_	start_char=20|end_char=21	_	_	CHI
+6	.	.	PUNCT	_	_	3	punct	_	start_char=21|end_char=22	_	_	CHI
 
 #sent_id = CHI <au2>
 #text = pomme a pomme ..
-1	pomme	pomme	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=0|end_char=5	_	_	CHI
-2	a	à	ADP	_	_	3	case	_	start_char=6|end_char=7	_	_	CHI
-3	pomme	pomme	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=8|end_char=13	_	_	CHI
-4	..	..	PUNCT	_	_	1	punct	_	start_char=14|end_char=16	_	_	CHI
+1	pomme	pomme	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	start_char=0|end_char=5	_	_	CHI
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=6|end_char=7	_	_	CHI
+3	pomme	pomme	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=8|end_char=13	_	_	CHI
+4	..	..	PUNCT	_	_	3	punct	_	start_char=14|end_char=16	_	_	CHI
 
 #sent_id = CHI <au3>
 #text = hé a plus ..
@@ -44,33 +45,35 @@
 
 #sent_id = CHI <au6>
 #text = a pas bon ..
-1	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=0|end_char=1	_	_	CHI
+1	a	à	ADP	_	_	3	advmod	_	start_char=0|end_char=1	_	_	CHI
 2	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	start_char=2|end_char=5	_	_	CHI
 3	bon	bon	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=6|end_char=9	_	_	CHI
 4	..	..	PUNCT	_	_	3	punct	_	start_char=10|end_char=12	_	_	CHI
 
 #sent_id = CHI <au7>
 #text = ah vroum vroum ..
-1	ah	ah	INTJ	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
-2	vroum	vroum	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	start_char=3|end_char=8	_	_	CHI
-3	vroum	vroum	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	start_char=9|end_char=14	_	_	CHI
-4	..	..	PUNCT	_	_	1	punct	_	start_char=15|end_char=17	_	_	CHI
+1	ah	ah	INTJ	_	_	3	discourse	_	start_char=0|end_char=2	_	_	CHI
+2	vroum	vroum	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=3|end_char=8	_	_	CHI
+3	vroum	vroum	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=9|end_char=14	_	_	CHI
+4	..	..	PUNCT	_	_	3	punct	_	start_char=15|end_char=17	_	_	CHI
 
 #sent_id = CHI <au8>
 #text = yyy yy ..
 1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
-3	..	..	PUNCT	_	_	1	punct	_	start_char=7|end_char=9	_	_	CHI
+3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
+4	.	.	PUNCT	_	_	1	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au9>
 #text = yyy yy ..
 1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
-3	..	..	PUNCT	_	_	1	punct	_	start_char=7|end_char=9	_	_	CHI
+3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
+4	.	.	PUNCT	_	_	1	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au10>
 #text = veux pas ..
-1	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
+1	veux	vouloir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
 2	pas	pas	ADV	_	Polarity=Neg	1	advmod	_	start_char=5|end_char=8	_	_	CHI
 3	..	..	PUNCT	_	_	1	punct	_	start_char=9|end_char=11	_	_	CHI
 

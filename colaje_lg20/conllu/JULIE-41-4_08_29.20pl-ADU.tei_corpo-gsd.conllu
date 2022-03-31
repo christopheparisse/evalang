@@ -1,7 +1,7 @@
 #sent_id = ADU <au0>
 #text = je t'avais dit que quand je suis allée au magasin de jouets la fois passée j'ai vu qu'il existait la maison comme ça mais c'est la clinique vétérinaire des animaux ..
 1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	start_char=0|end_char=2	_	_	ADU
-2	t'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	4	iobj	_	start_char=3|end_char=5	_	_	ADU
+2	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obl:arg	_	start_char=3|end_char=5	_	_	ADU
 3	avais	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	4	aux:tense	_	start_char=5|end_char=10	_	_	ADU
 4	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=11|end_char=14	_	_	ADU
 5	que	que	SCONJ	_	_	20	mark	_	start_char=15|end_char=18	_	_	ADU
@@ -27,58 +27,60 @@
 24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	start_char=98|end_char=100	_	_	ADU
 25	maison	maison	NOUN	_	Gender=Fem|Number=Sing	23	nsubj	_	start_char=101|end_char=107	_	_	ADU
 26	comme	comme	ADP	_	_	27	case	_	start_char=108|end_char=113	_	_	ADU
-27	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	25	nmod	_	start_char=114|end_char=116	_	_	ADU
+27	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	23	obl:mod	_	start_char=114|end_char=116	_	_	ADU
 28	mais	mais	CCONJ	_	_	32	cc	_	start_char=117|end_char=121	_	_	ADU
-29	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	32	nsubj	_	start_char=122|end_char=124	_	_	ADU
+29	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	32	nsubj	_	start_char=122|end_char=124	_	_	ADU
 30	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	cop	_	start_char=124|end_char=127	_	_	ADU
 31	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	start_char=128|end_char=130	_	_	ADU
 32	clinique	clinique	NOUN	_	Gender=Fem|Number=Sing	23	conj	_	start_char=131|end_char=139	_	_	ADU
 33	vétérinaire	vétérinaire	ADJ	_	Gender=Fem|Number=Sing	32	amod	_	start_char=140|end_char=151	_	_	ADU
 34-35	des	_	_	_	_	_	_	_	start_char=152|end_char=155	_	_	ADU
 34	de	de	ADP	_	_	36	case	_	_	_	_	ADU
-35	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	_	_	_	_	ADU
+35	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	36	det	_	_	_	_	ADU
 36	animaux	animal	NOUN	_	Gender=Masc|Number=Plur	32	nmod	_	start_char=156|end_char=163	_	_	ADU
-37	..	..	PUNCT	_	_	4	punct	_	start_char=164|end_char=166	_	_	ADU
+37	.	.	PUNCT	_	_	4	punct	_	start_char=164|end_char=165	_	_	ADU
+38	.	.	PUNCT	_	_	4	punct	_	start_char=165|end_char=166	_	_	ADU
 
 #sent_id = ADU <au1>
 #text = tu vois le fermier il se met là il pousse le foin le foin tombe et il peut même mettre son tracteur en dessous et tout tombe dans la remorque ..
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	ADU
-2	vois	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	ADU
+2	vois	voir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	ADU
 3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=8|end_char=10	_	_	ADU
 4	fermier	fermier	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=11|end_char=18	_	_	ADU
 5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	start_char=19|end_char=21	_	_	ADU
-6	se	se	PRON	_	Person=3|PronType=Prs	7	obj	_	start_char=22|end_char=24	_	_	ADU
+6	se	se	PRON	_	Person=3|PronType=Prs	7	dep:comp	_	start_char=22|end_char=24	_	_	ADU
 7	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=25|end_char=28	_	_	ADU
-8	là	là	ADV	_	_	7	advmod	_	start_char=29|end_char=31	_	_	ADU
+8	là	là	ADV	_	_	10	advmod	_	start_char=29|end_char=31	_	_	ADU
 9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	start_char=32|end_char=34	_	_	ADU
 10	pousse	pousser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	start_char=35|end_char=41	_	_	ADU
 11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	start_char=42|end_char=44	_	_	ADU
 12	foin	foin	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	start_char=45|end_char=49	_	_	ADU
 13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	start_char=50|end_char=52	_	_	ADU
-14	foin	foin	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	_	start_char=53|end_char=57	_	_	ADU
-15	tombe	tomber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	start_char=58|end_char=63	_	_	ADU
+14	foin	foin	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	start_char=53|end_char=57	_	_	ADU
+15	tombe	tomber	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	start_char=58|end_char=63	_	_	ADU
 16	et	et	CCONJ	_	_	18	cc	_	start_char=64|end_char=66	_	_	ADU
 17	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	start_char=67|end_char=69	_	_	ADU
-18	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	conj	_	start_char=70|end_char=74	_	_	ADU
+18	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	start_char=70|end_char=74	_	_	ADU
 19	même	même	ADV	_	_	18	advmod	_	start_char=75|end_char=79	_	_	ADU
 20	mettre	mettre	VERB	_	VerbForm=Inf	18	xcomp	_	start_char=80|end_char=86	_	_	ADU
-21	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	22	det	_	start_char=87|end_char=90	_	_	ADU
+21	son	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=3|PronType=Prs	22	det	_	start_char=87|end_char=90	_	_	ADU
 22	tracteur	tracteur	NOUN	_	Gender=Masc|Number=Sing	20	obj	_	start_char=91|end_char=99	_	_	ADU
 23	en	en	ADP	_	_	24	case	_	start_char=100|end_char=102	_	_	ADU
-24	dessous	dessous	NOUN	_	Gender=Masc|Number=Sing	20	obl	_	start_char=103|end_char=110	_	_	ADU
+24	dessous	dessous	NOUN	_	Gender=Masc	20	obl:mod	_	start_char=103|end_char=110	_	_	ADU
 25	et	et	CCONJ	_	_	27	cc	_	start_char=111|end_char=113	_	_	ADU
-26	tout	tout	PRON	_	Gender=Masc|Number=Sing	27	nsubj	_	start_char=114|end_char=118	_	_	ADU
+26	tout	tout	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	27	nsubj	_	start_char=114|end_char=118	_	_	ADU
 27	tombe	tomber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	start_char=119|end_char=124	_	_	ADU
 28	dans	dans	ADP	_	_	30	case	_	start_char=125|end_char=129	_	_	ADU
 29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	start_char=130|end_char=132	_	_	ADU
 30	remorque	remorque	NOUN	_	Gender=Fem|Number=Sing	27	obl:arg	_	start_char=133|end_char=141	_	_	ADU
-31	..	..	PUNCT	_	_	2	punct	_	start_char=142|end_char=144	_	_	ADU
+31	.	.	PUNCT	_	_	2	punct	_	start_char=142|end_char=143	_	_	ADU
+32	.	.	PUNCT	_	_	2	punct	_	start_char=143|end_char=144	_	_	ADU
 
 #sent_id = ADU <au2>
 #text = est ce que tu es d'accord que si maintenant on dit que la fête d'anniversaire est finie euh on remette toutes les familles dans ton bac ?
 1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	start_char=0|end_char=3	_	_	ADU
-2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=4|end_char=6	_	_	ADU
-3	que	que	PRON	_	PronType=Rel	6	fixed	_	start_char=7|end_char=10	_	_	ADU
+2	ce	ce	PRON	_	Gender=Masc|Person=3|PronType=Dem	0	root	_	start_char=4|end_char=6	_	_	ADU
+3	que	que	PRON	_	PronType=Rel	6	mark	_	start_char=7|end_char=10	_	_	ADU
 4	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	6	nsubj	_	start_char=11|end_char=13	_	_	ADU
 5	es	être	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=14|end_char=16	_	_	ADU
 6	d'	de	ADP	_	_	2	acl:relcl	_	start_char=17|end_char=19	_	_	ADU
@@ -86,8 +88,8 @@
 8	que	que	SCONJ	_	_	12	mark	_	start_char=26|end_char=29	_	_	ADU
 9	si	si	SCONJ	_	_	12	mark	_	start_char=30|end_char=32	_	_	ADU
 10	maintenant	maintenant	ADV	_	_	12	advmod	_	start_char=33|end_char=43	_	_	ADU
-11	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	12	nsubj	_	start_char=44|end_char=46	_	_	ADU
-12	dit	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	start_char=47|end_char=50	_	_	ADU
+11	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	12	nsubj	_	start_char=44|end_char=46	_	_	ADU
+12	dit	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	_	start_char=47|end_char=50	_	_	ADU
 13	que	que	SCONJ	_	_	19	mark	_	start_char=51|end_char=54	_	_	ADU
 14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	start_char=55|end_char=57	_	_	ADU
 15	fête	fête	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	_	start_char=58|end_char=62	_	_	ADU
@@ -96,13 +98,13 @@
 18	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	start_char=78|end_char=81	_	_	ADU
 19	finie	fini	ADJ	_	Gender=Fem|Number=Sing	12	ccomp	_	start_char=82|end_char=87	_	_	ADU
 20	euh	euh	INTJ	_	_	22	discourse	_	start_char=88|end_char=91	_	_	ADU
-21	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	22	nsubj	_	start_char=92|end_char=94	_	_	ADU
+21	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	22	nsubj	_	start_char=92|end_char=94	_	_	ADU
 22	remette	remettre	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	conj	_	start_char=95|end_char=102	_	_	ADU
 23	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	25	amod	_	start_char=103|end_char=109	_	_	ADU
-24	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	start_char=110|end_char=113	_	_	ADU
+24	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	25	det	_	start_char=110|end_char=113	_	_	ADU
 25	familles	famille	NOUN	_	Gender=Fem|Number=Plur	22	obj	_	start_char=114|end_char=122	_	_	ADU
 26	dans	dans	ADP	_	_	28	case	_	start_char=123|end_char=127	_	_	ADU
-27	ton	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	28	det	_	start_char=128|end_char=131	_	_	ADU
+27	ton	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=2|PronType=Prs	28	det	_	start_char=128|end_char=131	_	_	ADU
 28	bac	bac	NOUN	_	Gender=Masc|Number=Sing	22	obl:mod	_	start_char=132|end_char=135	_	_	ADU
 29	?	?	PUNCT	_	_	2	punct	_	start_char=136|end_char=137	_	_	ADU
 
@@ -115,8 +117,8 @@
 5	vont	aller	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	start_char=17|end_char=21	_	_	ADU
 6	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	start_char=22|end_char=25	_	_	ADU
 7	dans	dans	ADP	_	_	9	case	_	start_char=26|end_char=30	_	_	ADU
-8	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	start_char=31|end_char=33	_	_	ADU
-9	enclos	enclos	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	start_char=33|end_char=39	_	_	ADU
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	start_char=31|end_char=33	_	_	ADU
+9	enclos	enclo	NOUN	_	Gender=Masc|Number=Sing	5	obl:arg	_	start_char=33|end_char=39	_	_	ADU
 10	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	11	nsubj	_	start_char=40|end_char=43	_	_	ADU
 11	vont	aller	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=44|end_char=48	_	_	ADU
 12	voir	voir	VERB	_	VerbForm=Inf	11	xcomp	_	start_char=49|end_char=53	_	_	ADU
@@ -127,16 +129,17 @@
 17	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	18	nsubj	_	start_char=71|end_char=74	_	_	ADU
 18	vont	aller	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	start_char=75|end_char=79	_	_	ADU
 19	avoir	avoir	VERB	_	VerbForm=Inf	18	xcomp	_	start_char=80|end_char=85	_	_	ADU
-20	peur	peur	NOUN	_	Gender=Fem|Number=Sing	19	obj	_	start_char=86|end_char=90	_	_	ADU
-21	et	et	CCONJ	_	_	24	cc	_	start_char=91|end_char=93	_	_	ADU
+20	peur	peur	NOUN	_	Gender=Fem|Number=Sing	19	obj:lvc	_	start_char=86|end_char=90	_	_	ADU
+21	et	et	CCONJ	_	_	23	cc	_	start_char=91|end_char=93	_	_	ADU
 22	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	23	nsubj	_	start_char=94|end_char=97	_	_	ADU
 23	vont	aller	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	start_char=98|end_char=102	_	_	ADU
-24	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	start_char=103|end_char=107	_	_	ADU
+24	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	xcomp	_	start_char=103|end_char=107	_	_	ADU
 25	être	être	AUX	_	VerbForm=Inf	26	aux:pass	_	start_char=108|end_char=112	_	_	ADU
-26	commencer	commencer	VERB	_	VerbForm=Inf	24	xcomp	_	start_char=113|end_char=122	_	_	ADU
+26	commencer	commencer	VERB	_	VerbForm=Inf	23	xcomp	_	start_char=113|end_char=122	_	_	ADU
 27	à	à	ADP	_	_	28	mark	_	start_char=123|end_char=124	_	_	ADU
 28	courir	courir	VERB	_	VerbForm=Inf	26	xcomp	_	start_char=125|end_char=131	_	_	ADU
-29	..	..	PUNCT	_	_	11	punct	_	start_char=132|end_char=134	_	_	ADU
+29	.	.	PUNCT	_	_	11	punct	_	start_char=132|end_char=133	_	_	ADU
+30	.	.	PUNCT	_	_	11	punct	_	start_char=133|end_char=134	_	_	ADU
 
 #sent_id = ADU <au4>
 #text = mais tu veux bien mettre celle là parce que tantôt tu m'as dit non mais c'est la dernière madame qui est dans la boîte ?
@@ -145,46 +148,46 @@
 3	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8|end_char=12	_	_	ADU
 4	bien	bien	ADV	_	_	3	advmod	_	start_char=13|end_char=17	_	_	ADU
 5	mettre	mettre	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=18|end_char=24	_	_	ADU
-6	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	5	obj	_	start_char=25|end_char=30	_	_	ADU
+6	celle	celui	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	5	obj	_	start_char=25|end_char=30	_	_	ADU
 7	là	là	ADV	_	_	5	advmod	_	start_char=31|end_char=33	_	_	ADU
 8	parce	parce	ADV	_	_	14	mark	_	start_char=34|end_char=39	_	_	ADU
 9	que	que	SCONJ	_	_	8	fixed	_	start_char=40|end_char=43	_	_	ADU
 10	tantôt	tantôt	ADV	_	_	14	advmod	_	start_char=44|end_char=50	_	_	ADU
 11	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	14	nsubj	_	start_char=51|end_char=53	_	_	ADU
-12	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	14	iobj	_	start_char=54|end_char=56	_	_	ADU
-13	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	14	aux:tense	_	start_char=56|end_char=58	_	_	ADU
+12	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	14	obl:arg	_	start_char=54|end_char=56	_	_	ADU
+13	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	aux:tense	_	start_char=56|end_char=58	_	_	ADU
 14	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	advcl	_	start_char=59|end_char=62	_	_	ADU
-15	non	non	ADV	_	_	14	advmod	_	start_char=63|end_char=66	_	_	ADU
+15	non	non	ADV	_	Polarity=Neg	14	advmod	_	start_char=63|end_char=66	_	_	ADU
 16	mais	mais	CCONJ	_	_	21	cc	_	start_char=67|end_char=71	_	_	ADU
-17	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	21	nsubj	_	start_char=72|end_char=74	_	_	ADU
+17	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	21	expl:subj	_	start_char=72|end_char=74	_	_	ADU
 18	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	start_char=74|end_char=77	_	_	ADU
 19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	start_char=78|end_char=80	_	_	ADU
 20	dernière	dernier	ADJ	_	Gender=Fem|Number=Sing	21	amod	_	start_char=81|end_char=89	_	_	ADU
 21	madame	madame	NOUN	_	Gender=Fem|Number=Sing	14	conj	_	start_char=90|end_char=96	_	_	ADU
 22	qui	qui	PRON	_	PronType=Rel	23	nsubj	_	start_char=97|end_char=100	_	_	ADU
-23	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	acl:relcl	_	start_char=101|end_char=104	_	_	ADU
+23	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	advcl:cleft	_	start_char=101|end_char=104	_	_	ADU
 24	dans	dans	ADP	_	_	26	case	_	start_char=105|end_char=109	_	_	ADU
 25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	start_char=110|end_char=112	_	_	ADU
-26	boîte	boîte	NOUN	_	Gender=Fem|Number=Sing	23	obl:mod	_	start_char=113|end_char=118	_	_	ADU
+26	boîte	boîte	NOUN	_	Gender=Fem|Number=Sing	23	obl:arg	_	start_char=113|end_char=118	_	_	ADU
 27	?	?	PUNCT	_	_	3	punct	_	start_char=119|end_char=120	_	_	ADU
 
 #sent_id = ADU <au5>
 #text = ben oui mais ils arrivent parce que c'est le matin et alors ils vont sonner et ils vont faire surprise bon anniversaire ..
 1	ben	ben	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
-2	oui	oui	INTJ	_	_	1	fixed	_	start_char=4|end_char=7	_	_	ADU
+2	oui	oui	ADV	_	_	1	fixed	_	start_char=4|end_char=7	_	_	ADU
 3	mais	mais	CCONJ	_	_	5	cc	_	start_char=8|end_char=12	_	_	ADU
 4	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	start_char=13|end_char=16	_	_	ADU
 5	arrivent	arriver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=17|end_char=25	_	_	ADU
 6	parce	parce	ADV	_	_	11	mark	_	start_char=26|end_char=31	_	_	ADU
 7	que	que	SCONJ	_	_	6	fixed	_	start_char=32|end_char=35	_	_	ADU
-8	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	11	nsubj	_	start_char=36|end_char=38	_	_	ADU
+8	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	11	nsubj	_	start_char=36|end_char=38	_	_	ADU
 9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	start_char=38|end_char=41	_	_	ADU
 10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	start_char=42|end_char=44	_	_	ADU
 11	matin	matin	NOUN	_	Gender=Masc|Number=Sing	5	advcl	_	start_char=45|end_char=50	_	_	ADU
 12	et	et	CCONJ	_	_	15	cc	_	start_char=51|end_char=53	_	_	ADU
 13	alors	alors	ADV	_	_	15	advmod	_	start_char=54|end_char=59	_	_	ADU
 14	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	nsubj	_	start_char=60|end_char=63	_	_	ADU
-15	vont	aller	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	start_char=64|end_char=68	_	_	ADU
+15	vont	aller	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	start_char=64|end_char=68	_	_	ADU
 16	sonner	sonner	VERB	_	VerbForm=Inf	15	xcomp	_	start_char=69|end_char=75	_	_	ADU
 17	et	et	CCONJ	_	_	19	cc	_	start_char=76|end_char=78	_	_	ADU
 18	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	19	nsubj	_	start_char=79|end_char=82	_	_	ADU
@@ -193,47 +196,49 @@
 21	surprise	surprise	NOUN	_	Gender=Fem|Number=Sing	20	obj:lvc	_	start_char=94|end_char=102	_	_	ADU
 22	bon	bon	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	start_char=103|end_char=106	_	_	ADU
 23	anniversaire	anniversaire	NOUN	_	Gender=Masc|Number=Sing	20	obj	_	start_char=107|end_char=119	_	_	ADU
-24	..	..	PUNCT	_	_	1	punct	_	start_char=120|end_char=122	_	_	ADU
+24	.	.	PUNCT	_	_	1	punct	_	start_char=120|end_char=121	_	_	ADU
+25	.	.	PUNCT	_	_	1	punct	_	start_char=121|end_char=122	_	_	ADU
 
 #sent_id = ADU <au6>
 #text = oui alors je propose que comme c'est à nouveau la nuit moi je vais ranger toutes les familles dans le bac ..
-1	oui	oui	INTJ	_	_	4	discourse	_	start_char=0|end_char=3	_	_	ADU
+1	oui	oui	INTJ	_	_	4	advmod	_	start_char=0|end_char=3	_	_	ADU
 2	alors	alors	ADV	_	_	1	fixed	_	start_char=4|end_char=9	_	_	ADU
 3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	start_char=10|end_char=12	_	_	ADU
 4	propose	proposer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13|end_char=20	_	_	ADU
 5	que	que	SCONJ	_	_	15	mark	_	start_char=21|end_char=24	_	_	ADU
 6	comme	comme	SCONJ	_	_	12	mark	_	start_char=25|end_char=30	_	_	ADU
-7	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	12	nsubj	_	start_char=31|end_char=33	_	_	ADU
+7	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	nsubj	_	start_char=31|end_char=33	_	_	ADU
 8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	start_char=33|end_char=36	_	_	ADU
 9	à	à	ADP	_	_	12	advmod	_	start_char=37|end_char=38	_	_	ADU
 10	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	9	fixed	_	start_char=39|end_char=46	_	_	ADU
 11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	start_char=47|end_char=49	_	_	ADU
 12	nuit	nuit	NOUN	_	Gender=Fem|Number=Sing	15	advcl	_	start_char=50|end_char=54	_	_	ADU
-13	moi	soi	PRON	_	Number=Sing|Person=1	12	nmod	_	start_char=55|end_char=58	_	_	ADU
+13	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	12	nmod	_	start_char=55|end_char=58	_	_	ADU
 14	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	15	nsubj	_	start_char=59|end_char=61	_	_	ADU
 15	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	ccomp	_	start_char=62|end_char=66	_	_	ADU
 16	ranger	ranger	VERB	_	VerbForm=Inf	15	xcomp	_	start_char=67|end_char=73	_	_	ADU
 17	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	19	amod	_	start_char=74|end_char=80	_	_	ADU
-18	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	start_char=81|end_char=84	_	_	ADU
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	start_char=81|end_char=84	_	_	ADU
 19	familles	famille	NOUN	_	Gender=Fem|Number=Plur	16	obj	_	start_char=85|end_char=93	_	_	ADU
 20	dans	dans	ADP	_	_	22	case	_	start_char=94|end_char=98	_	_	ADU
 21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	start_char=99|end_char=101	_	_	ADU
 22	bac	bac	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	start_char=102|end_char=105	_	_	ADU
-23	..	..	PUNCT	_	_	4	punct	_	start_char=106|end_char=108	_	_	ADU
+23	.	.	PUNCT	_	_	4	punct	_	start_char=106|end_char=107	_	_	ADU
+24	.	.	PUNCT	_	_	4	punct	_	start_char=107|end_char=108	_	_	ADU
 
 #sent_id = ADU <au7>
 #text = parce qu'on n'a plus beaucoup de madame donc on ne va plus savoir faire beaucoup de familles ..
 1	parce	parce	ADV	_	_	5	mark	_	start_char=0|end_char=5	_	_	ADU
 2	qu'	que	SCONJ	_	_	1	fixed	_	start_char=6|end_char=9	_	_	ADU
-3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	start_char=9|end_char=11	_	_	ADU
+3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	5	nsubj	_	start_char=9|end_char=11	_	_	ADU
 4	n'	ne	ADV	_	Polarity=Neg	5	advmod	_	start_char=12|end_char=14	_	_	ADU
 5	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	_	start_char=14|end_char=15	_	_	ADU
 6	plus	plus	ADV	_	Polarity=Neg	5	advmod	_	start_char=16|end_char=20	_	_	ADU
 7	beaucoup	beaucoup	ADV	_	_	5	obj	_	start_char=21|end_char=29	_	_	ADU
 8	de	de	ADP	_	_	9	case	_	start_char=30|end_char=32	_	_	ADU
-9	madame	madame	NOUN	_	Gender=Fem|Number=Sing	7	obl:arg	_	start_char=33|end_char=39	_	_	ADU
-10	donc	donc	ADV	_	_	13	advmod	_	start_char=40|end_char=44	_	_	ADU
-11	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	13	nsubj	_	start_char=45|end_char=47	_	_	ADU
+9	madame	madame	NOUN	_	Gender=Fem|Number=Sing	7	dep:comp	_	start_char=33|end_char=39	_	_	ADU
+10	donc	donc	ADV	_	_	5	advmod	_	start_char=40|end_char=44	_	_	ADU
+11	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	13	nsubj	_	start_char=45|end_char=47	_	_	ADU
 12	ne	ne	ADV	_	Polarity=Neg	13	advmod	_	start_char=48|end_char=50	_	_	ADU
 13	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=51|end_char=53	_	_	ADU
 14	plus	plus	ADV	_	Polarity=Neg	13	advmod	_	start_char=54|end_char=58	_	_	ADU
@@ -241,44 +246,43 @@
 16	faire	faire	VERB	_	VerbForm=Inf	15	xcomp	_	start_char=66|end_char=71	_	_	ADU
 17	beaucoup	beaucoup	ADV	_	_	16	obj	_	start_char=72|end_char=80	_	_	ADU
 18	de	de	ADP	_	_	19	case	_	start_char=81|end_char=83	_	_	ADU
-19	familles	famille	NOUN	_	Gender=Fem|Number=Plur	17	obl:arg	_	start_char=84|end_char=92	_	_	ADU
+19	familles	famille	NOUN	_	Gender=Fem|Number=Plur	17	dep:comp	_	start_char=84|end_char=92	_	_	ADU
 20	..	..	PUNCT	_	_	13	punct	_	start_char=93|end_char=95	_	_	ADU
 
 #sent_id = ADU <au8>
 #text = parce que les pis c'est la maman vache qui peut donner du lait à ses bébés par le pis ..
 1	parce	parce	ADV	_	_	8	mark	_	start_char=0|end_char=5	_	_	ADU
 2	que	que	SCONJ	_	_	1	fixed	_	start_char=6|end_char=9	_	_	ADU
-3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	start_char=10|end_char=13	_	_	ADU
-4	pis	pis	NOUN	_	Gender=Masc|Number=Plur	8	nsubj	_	start_char=14|end_char=17	_	_	ADU
-5	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	start_char=18|end_char=20	_	_	ADU
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	start_char=10|end_char=13	_	_	ADU
+4	pis	pi	NOUN	_	Gender=Masc|Number=Plur	8	dislocated	_	start_char=14|end_char=17	_	_	ADU
+5	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	8	expl:subj	_	start_char=18|end_char=20	_	_	ADU
 6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	start_char=20|end_char=23	_	_	ADU
 7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	start_char=24|end_char=26	_	_	ADU
 8	maman	maman	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=27|end_char=32	_	_	ADU
 9	vache	vache	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	start_char=33|end_char=38	_	_	ADU
 10	qui	qui	PRON	_	PronType=Rel	11	nsubj	_	start_char=39|end_char=42	_	_	ADU
-11	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	start_char=43|end_char=47	_	_	ADU
+11	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	advcl:cleft	_	start_char=43|end_char=47	_	_	ADU
 12	donner	donner	VERB	_	VerbForm=Inf	11	xcomp	_	start_char=48|end_char=54	_	_	ADU
-13-14	du	_	_	_	_	_	_	_	start_char=55|end_char=57	_	_	ADU
-13	de	de	ADP	_	_	15	det	_	_	_	_	ADU
-14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_	_	_	ADU
-15	lait	lait	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	start_char=58|end_char=62	_	_	ADU
-16	à	à	ADP	_	_	18	case	_	start_char=63|end_char=64	_	_	ADU
-17	ses	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	18	det	_	start_char=65|end_char=68	_	_	ADU
-18	bébés	bébé	NOUN	_	Gender=Masc|Number=Plur	12	obl:arg	_	start_char=69|end_char=74	_	_	ADU
-19	par	par	ADP	_	_	21	case	_	start_char=75|end_char=78	_	_	ADU
-20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	start_char=79|end_char=81	_	_	ADU
-21	pis	pis	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	start_char=82|end_char=85	_	_	ADU
-22	..	..	PUNCT	_	_	8	punct	_	start_char=86|end_char=88	_	_	ADU
+13	du	du	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	start_char=55|end_char=57	_	_	ADU
+14	lait	lait	NOUN	_	Gender=Masc|Number=Sing	12	obj	_	start_char=58|end_char=62	_	_	ADU
+15	à	à	ADP	_	_	17	case	_	start_char=63|end_char=64	_	_	ADU
+16	ses	son	DET	_	Number=Plur|Number[psor]=Sing|Person[psor]=3|PronType=Prs	17	det	_	start_char=65|end_char=68	_	_	ADU
+17	bébés	bébé	NOUN	_	Gender=Masc|Number=Plur	12	obl:arg	_	start_char=69|end_char=74	_	_	ADU
+18	par	par	ADP	_	_	20	case	_	start_char=75|end_char=78	_	_	ADU
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	start_char=79|end_char=81	_	_	ADU
+20	pis	pi	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	start_char=82|end_char=85	_	_	ADU
+21	.	.	PUNCT	_	_	8	punct	_	start_char=86|end_char=87	_	_	ADU
+22	.	.	PUNCT	_	_	8	punct	_	start_char=87|end_char=88	_	_	ADU
 
 #sent_id = ADU <au9>
 #text = ah ici au moins on a pensé à mettre une échelle parce qu'y a jamais une échelle de la ferme ..
 1	ah	ah	INTJ	_	_	8	discourse	_	start_char=0|end_char=2	_	_	ADU
-2	ici	ici	ADV	_	_	1	fixed	_	start_char=3|end_char=6	_	_	ADU
+2	ici	ici	ADV	_	_	8	advmod	_	start_char=3|end_char=6	_	_	ADU
 3-4	au	_	_	_	_	_	_	_	start_char=7|end_char=9	_	_	ADU
 3	à	à	ADP	_	_	8	advmod	_	_	_	_	ADU
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	fixed	_	_	_	_	ADU
 5	moins	moins	ADV	_	_	3	fixed	_	start_char=10|end_char=15	_	_	ADU
-6	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	8	nsubj	_	start_char=16|end_char=18	_	_	ADU
+6	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	8	nsubj	_	start_char=16|end_char=18	_	_	ADU
 7	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	start_char=19|end_char=20	_	_	ADU
 8	pensé	penser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=21|end_char=26	_	_	ADU
 9	à	à	ADP	_	_	10	mark	_	start_char=27|end_char=28	_	_	ADU
@@ -287,7 +291,7 @@
 12	échelle	échelle	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	start_char=40|end_char=47	_	_	ADU
 13	parce	parce	ADV	_	_	16	mark	_	start_char=48|end_char=53	_	_	ADU
 14	qu'	que	SCONJ	_	_	13	fixed	_	start_char=54|end_char=57	_	_	ADU
-15	y	y	PRON	_	_	16	expl:comp	_	start_char=57|end_char=58	_	_	ADU
+15	y	y	PRON	_	Person=3|PronType=Prs	16	dep:comp	_	start_char=57|end_char=58	_	_	ADU
 16	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	advcl	_	start_char=59|end_char=60	_	_	ADU
 17	jamais	jamais	ADV	_	Polarity=Neg	16	advmod	_	start_char=61|end_char=67	_	_	ADU
 18	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	start_char=68|end_char=71	_	_	ADU
@@ -295,28 +299,30 @@
 20	de	de	ADP	_	_	22	case	_	start_char=80|end_char=82	_	_	ADU
 21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	start_char=83|end_char=85	_	_	ADU
 22	ferme	ferme	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	start_char=86|end_char=91	_	_	ADU
-23	..	..	PUNCT	_	_	8	punct	_	start_char=92|end_char=94	_	_	ADU
+23	.	.	PUNCT	_	_	8	punct	_	start_char=92|end_char=93	_	_	ADU
+24	.	.	PUNCT	_	_	8	punct	_	start_char=93|end_char=94	_	_	ADU
 
 #sent_id = ADU <au10>
 #text = regarde je te mets les enfants qui ont tous les deux mis la petite veste la même ..
 1	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	ADU
 2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	start_char=8|end_char=10	_	_	ADU
-3	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	iobj	_	start_char=11|end_char=13	_	_	ADU
+3	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obl:arg	_	start_char=11|end_char=13	_	_	ADU
 4	mets	mettre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	ccomp	_	start_char=14|end_char=18	_	_	ADU
-5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	start_char=19|end_char=22	_	_	ADU
-6	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	start_char=23|end_char=30	_	_	ADU
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=19|end_char=22	_	_	ADU
+6	enfants	enfant	NOUN	_	Number=Plur	4	obj	_	start_char=23|end_char=30	_	_	ADU
 7	qui	qui	PRON	_	PronType=Rel	12	nsubj	_	start_char=31|end_char=34	_	_	ADU
 8	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	start_char=35|end_char=38	_	_	ADU
 9	tous	tout	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	start_char=39|end_char=43	_	_	ADU
 10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	start_char=44|end_char=47	_	_	ADU
-11	deux	deux	NUM	_	_	12	obl:mod	_	start_char=48|end_char=52	_	_	ADU
-12	mis	mettre	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	6	acl:relcl	_	start_char=53|end_char=56	_	_	ADU
+11	deux	deux	NUM	_	Number=Plur	12	obl:mod	_	start_char=48|end_char=52	_	_	ADU
+12	mis	mettre	VERB	_	Gender=Masc|Tense=Past|VerbForm=Part	6	acl:relcl	_	start_char=53|end_char=56	_	_	ADU
 13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	start_char=57|end_char=59	_	_	ADU
 14	petite	petit	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	start_char=60|end_char=66	_	_	ADU
 15	veste	veste	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	start_char=67|end_char=72	_	_	ADU
 16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	start_char=73|end_char=75	_	_	ADU
-17	même	même	ADJ	_	Gender=Fem|Number=Sing	12	xcomp	_	start_char=76|end_char=80	_	_	ADU
-18	..	..	PUNCT	_	_	1	punct	_	start_char=81|end_char=83	_	_	ADU
+17	même	même	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	start_char=76|end_char=80	_	_	ADU
+18	.	.	PUNCT	_	_	1	punct	_	start_char=81|end_char=82	_	_	ADU
+19	.	.	PUNCT	_	_	1	punct	_	start_char=82|end_char=83	_	_	ADU
 
 #sent_id = ADU <au11>
 #text = là ils ont déjà un papy là aussi là aussi euh là ils ont pas de papys ..
@@ -335,9 +341,10 @@
 13	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	14	nsubj	_	start_char=49|end_char=52	_	_	ADU
 14	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	start_char=53|end_char=56	_	_	ADU
 15	pas	pas	ADV	_	Polarity=Neg	14	advmod	_	start_char=57|end_char=60	_	_	ADU
-16	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	17	det	_	start_char=61|end_char=63	_	_	ADU
+16	de	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	17	det	_	start_char=61|end_char=63	_	_	ADU
 17	papys	papy	NOUN	_	Gender=Masc|Number=Plur	14	obj	_	start_char=64|end_char=69	_	_	ADU
-18	..	..	PUNCT	_	_	3	punct	_	start_char=70|end_char=72	_	_	ADU
+18	.	.	PUNCT	_	_	3	punct	_	start_char=70|end_char=71	_	_	ADU
+19	.	.	PUNCT	_	_	3	punct	_	start_char=71|end_char=72	_	_	ADU
 
 #sent_id = ADU <au12>
 #text = il a peut être une petite tête pour mettre la casquette à mon avis elle est trop grande ..
@@ -353,20 +360,21 @@
 10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	start_char=43|end_char=45	_	_	ADU
 11	casquette	casquette	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	start_char=46|end_char=55	_	_	ADU
 12	à	à	ADP	_	_	14	case	_	start_char=56|end_char=57	_	_	ADU
-13	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	14	det	_	start_char=58|end_char=61	_	_	ADU
+13	mon	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=1|PronType=Prs	14	det	_	start_char=58|end_char=61	_	_	ADU
 14	avis	avis	NOUN	_	Gender=Masc|Number=Sing	9	obl:arg	_	start_char=62|end_char=66	_	_	ADU
 15	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	start_char=67|end_char=71	_	_	ADU
 16	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	start_char=72|end_char=75	_	_	ADU
 17	trop	trop	ADV	_	_	18	advmod	_	start_char=76|end_char=80	_	_	ADU
 18	grande	grand	ADJ	_	Gender=Fem|Number=Sing	3	conj	_	start_char=81|end_char=87	_	_	ADU
-19	..	..	PUNCT	_	_	3	punct	_	start_char=88|end_char=90	_	_	ADU
+19	.	.	PUNCT	_	_	3	punct	_	start_char=88|end_char=89	_	_	ADU
+20	.	.	PUNCT	_	_	3	punct	_	start_char=89|end_char=90	_	_	ADU
 
 #sent_id = ADU <au13>
 #text = est ce que c'est pas la petite fille que tu voudrais bien qui donne à manger au petit âne ?
 1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	start_char=0|end_char=3	_	_	ADU
-2	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=4|end_char=6	_	_	ADU
-3	que	que	PRON	_	PronType=Rel	9	acl:relcl	_	start_char=7|end_char=10	_	_	ADU
-4	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=11|end_char=13	_	_	ADU
+2	ce	ce	PRON	_	Gender=Masc|Person=3|PronType=Dem	0	root	_	start_char=4|end_char=6	_	_	ADU
+3	que	que	PRON	_	PronType=Rel	9	mark	_	start_char=7|end_char=10	_	_	ADU
+4	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=11|end_char=13	_	_	ADU
 5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	start_char=13|end_char=16	_	_	ADU
 6	pas	pas	ADV	_	Polarity=Neg	9	advmod	_	start_char=17|end_char=20	_	_	ADU
 7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	start_char=21|end_char=23	_	_	ADU
@@ -384,53 +392,54 @@
 18	à	à	ADP	_	_	21	case	_	_	_	_	ADU
 19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_	_	_	ADU
 20	petit	petit	ADJ	_	Gender=Masc|Number=Sing	21	amod	_	start_char=80|end_char=85	_	_	ADU
-21	âne	âne	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	start_char=86|end_char=89	_	_	ADU
+21	âne	âne	NOUN	_	Gender=Masc|Number=Sing	17	obl:arg	_	start_char=86|end_char=89	_	_	ADU
 22	?	?	PUNCT	_	_	2	punct	_	start_char=90|end_char=91	_	_	ADU
 
 #sent_id = ADU <au14>
 #text = beh d'habitude quand tu joues il me semble que tu as déjà dit que c'était Philippine celle là ..
 1	beh	beh	INTJ	_	_	9	discourse	_	start_char=0|end_char=3	_	_	ADU
-2	d'	de	ADP	_	_	3	case	_	start_char=4|end_char=6	_	_	ADU
-3	habitude	habitude	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	start_char=6|end_char=14	_	_	ADU
+2	d'	de	ADP	_	_	1	fixed	_	start_char=4|end_char=6	_	_	ADU
+3	habitude	habitude	NOUN	_	Gender=Fem|Number=Sing	2	fixed	_	start_char=6|end_char=14	_	_	ADU
 4	quand	quand	SCONJ	_	_	6	mark	_	start_char=15|end_char=20	_	_	ADU
 5	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	6	nsubj	_	start_char=21|end_char=23	_	_	ADU
 6	joues	jouer	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	9	advcl	_	start_char=24|end_char=29	_	_	ADU
 7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	expl:subj	_	start_char=30|end_char=32	_	_	ADU
-8	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	9	expl:comp	_	start_char=33|end_char=35	_	_	ADU
+8	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	9	dep:comp	_	start_char=33|end_char=35	_	_	ADU
 9	semble	sembler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=36|end_char=42	_	_	ADU
 10	que	que	SCONJ	_	_	14	mark	_	start_char=43|end_char=46	_	_	ADU
 11	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	14	nsubj	_	start_char=47|end_char=49	_	_	ADU
 12	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	14	aux:tense	_	start_char=50|end_char=52	_	_	ADU
 13	déjà	déjà	ADV	_	_	14	advmod	_	start_char=53|end_char=57	_	_	ADU
-14	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	ccomp	_	start_char=58|end_char=61	_	_	ADU
+14	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	csubj	_	start_char=58|end_char=61	_	_	ADU
 15	que	que	SCONJ	_	_	18	mark	_	start_char=62|end_char=65	_	_	ADU
-16	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	18	nsubj	_	start_char=66|end_char=68	_	_	ADU
+16	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	18	nsubj	_	start_char=66|end_char=68	_	_	ADU
 17	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	18	cop	_	start_char=68|end_char=73	_	_	ADU
 18	Philippine	Philippine	PROPN	_	_	14	ccomp	_	start_char=74|end_char=84	_	_	ADU
-19	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	18	flat:name	_	start_char=85|end_char=90	_	_	ADU
-20	là	là	ADV	_	_	18	advmod	_	start_char=91|end_char=93	_	_	ADU
+19	celle	celui	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	18	flat:name	_	start_char=85|end_char=90	_	_	ADU
+20	là	là	ADV	_	_	19	advmod	_	start_char=91|end_char=93	_	_	ADU
 21	..	..	PUNCT	_	_	9	punct	_	start_char=94|end_char=96	_	_	ADU
 
 #sent_id = ADU <au15>
 #text = mais je me demande si y a pas des garçons qui ont une tête comme les messieurs ..
 1	mais	mais	CCONJ	_	_	4	cc	_	start_char=0|end_char=4	_	_	ADU
 2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	start_char=5|end_char=7	_	_	ADU
-3	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	4	expl:comp	_	start_char=8|end_char=10	_	_	ADU
+3	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	4	dep:comp	_	start_char=8|end_char=10	_	_	ADU
 4	demande	demander	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=11|end_char=18	_	_	ADU
-5	si	si	SCONJ	_	_	7	mark	_	start_char=19|end_char=21	_	_	ADU
-6	y	y	PRON	_	_	7	expl:comp	_	start_char=22|end_char=23	_	_	ADU
-7	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	start_char=24|end_char=25	_	_	ADU
+5	si	si	ADV	_	_	7	advmod	_	start_char=19|end_char=21	_	_	ADU
+6	y	y	PRON	_	Person=3|PronType=Prs	7	dep:comp	_	start_char=22|end_char=23	_	_	ADU
+7	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	xcomp	_	start_char=24|end_char=25	_	_	ADU
 8	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	start_char=26|end_char=29	_	_	ADU
-9	des	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	10	det	_	start_char=30|end_char=33	_	_	ADU
+9	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	10	det	_	start_char=30|end_char=33	_	_	ADU
 10	garçons	garçon	NOUN	_	Gender=Masc|Number=Plur	7	obj	_	start_char=34|end_char=41	_	_	ADU
 11	qui	qui	PRON	_	PronType=Rel	12	nsubj	_	start_char=42|end_char=45	_	_	ADU
 12	ont	avoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	start_char=46|end_char=49	_	_	ADU
 13	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	start_char=50|end_char=53	_	_	ADU
 14	tête	tête	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	start_char=54|end_char=58	_	_	ADU
 15	comme	comme	ADP	_	_	17	case	_	start_char=59|end_char=64	_	_	ADU
-16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	start_char=65|end_char=68	_	_	ADU
-17	messieurs	messieur	NOUN	_	Gender=Masc|Number=Plur	12	obl:mod	_	start_char=69|end_char=78	_	_	ADU
-18	..	..	PUNCT	_	_	4	punct	_	start_char=79|end_char=81	_	_	ADU
+16	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	17	det	_	start_char=65|end_char=68	_	_	ADU
+17	messieurs	messieur	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	start_char=69|end_char=78	_	_	ADU
+18	.	.	PUNCT	_	_	4	punct	_	start_char=79|end_char=80	_	_	ADU
+19	.	.	PUNCT	_	_	4	punct	_	start_char=80|end_char=81	_	_	ADU
 
 #sent_id = ADU <au16>
 #text = j'ai pas le roi est ce que tu prends le monsieur avec son chapeau avec la reine ?
@@ -440,19 +449,19 @@
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=9|end_char=11	_	_	ADU
 5	roi	roi	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=12|end_char=15	_	_	ADU
 6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=16|end_char=19	_	_	ADU
-7	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	2	parataxis	_	start_char=20|end_char=22	_	_	ADU
+7	ce	ce	PRON	_	Gender=Masc|Person=3|PronType=Dem	2	parataxis	_	start_char=20|end_char=22	_	_	ADU
 8	que	que	PRON	_	PronType=Rel	10	obj	_	start_char=23|end_char=26	_	_	ADU
 9	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	10	nsubj	_	start_char=27|end_char=29	_	_	ADU
 10	prends	prendre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	start_char=30|end_char=36	_	_	ADU
 11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	start_char=37|end_char=39	_	_	ADU
 12	monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	start_char=40|end_char=48	_	_	ADU
 13	avec	avec	ADP	_	_	15	case	_	start_char=49|end_char=53	_	_	ADU
-14	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	15	det	_	start_char=54|end_char=57	_	_	ADU
+14	son	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=3|PronType=Prs	15	det	_	start_char=54|end_char=57	_	_	ADU
 15	chapeau	chapeau	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	start_char=58|end_char=65	_	_	ADU
 16	avec	avec	ADP	_	_	18	case	_	start_char=66|end_char=70	_	_	ADU
 17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	start_char=71|end_char=73	_	_	ADU
 18	reine	reine	NOUN	_	Gender=Fem|Number=Sing	15	nmod	_	start_char=74|end_char=79	_	_	ADU
-19	?	?	PUNCT	_	_	7	punct	_	start_char=80|end_char=81	_	_	ADU
+19	?	?	PUNCT	_	_	2	punct	_	start_char=80|end_char=81	_	_	ADU
 
 #sent_id = ADU <au17>
 #text = ben il reste cette pièce là mais ça n'a pas l'air très confortable hein ..
@@ -467,48 +476,51 @@
 9	n'	ne	ADV	_	Polarity=Neg	10	advmod	_	start_char=36|end_char=38	_	_	ADU
 10	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	start_char=38|end_char=39	_	_	ADU
 11	pas	pas	ADV	_	Polarity=Neg	10	advmod	_	start_char=40|end_char=43	_	_	ADU
-12	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	start_char=44|end_char=46	_	_	ADU
+12	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	13	det	_	start_char=44|end_char=46	_	_	ADU
 13	air	air	NOUN	_	Gender=Masc|Number=Sing	10	obj	_	start_char=46|end_char=49	_	_	ADU
 14	très	très	ADV	_	_	15	advmod	_	start_char=50|end_char=54	_	_	ADU
 15	confortable	confortable	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	start_char=55|end_char=66	_	_	ADU
-16	hein	hein	INTJ	_	_	10	discourse	_	start_char=67|end_char=71	_	_	ADU
-17	..	..	PUNCT	_	_	3	punct	_	start_char=72|end_char=74	_	_	ADU
+16	hein	hein	ADV	_	_	15	advmod	_	start_char=67|end_char=71	_	_	ADU
+17	.	.	PUNCT	_	_	3	punct	_	start_char=72|end_char=73	_	_	ADU
+18	.	.	PUNCT	_	_	3	punct	_	start_char=73|end_char=74	_	_	ADU
 
 #sent_id = ADU <au18>
 #text = oh ce petit garçon là je ne me rappelle pas de l'avoir déjà vu ..
 1	oh	oh	INTJ	_	_	4	discourse	_	start_char=0|end_char=2	_	_	ADU
 2	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	start_char=3|end_char=5	_	_	ADU
 3	petit	petit	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	start_char=6|end_char=11	_	_	ADU
-4	garçon	garçon	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	start_char=12|end_char=18	_	_	ADU
-5	là	là	ADV	_	_	9	advmod	_	start_char=19|end_char=21	_	_	ADU
+4	garçon	garçon	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=12|end_char=18	_	_	ADU
+5	là	là	ADV	_	_	4	advmod	_	start_char=19|end_char=21	_	_	ADU
 6	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	9	nsubj	_	start_char=22|end_char=24	_	_	ADU
 7	ne	ne	ADV	_	Polarity=Neg	9	advmod	_	start_char=25|end_char=27	_	_	ADU
-8	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	9	expl:comp	_	start_char=28|end_char=30	_	_	ADU
-9	rappelle	rappeler	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=31|end_char=39	_	_	ADU
+8	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	9	dep:comp	_	start_char=28|end_char=30	_	_	ADU
+9	rappelle	rappeler	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	parataxis	_	start_char=31|end_char=39	_	_	ADU
 10	pas	pas	ADV	_	Polarity=Neg	9	advmod	_	start_char=40|end_char=43	_	_	ADU
 11	de	de	ADP	_	_	15	mark	_	start_char=44|end_char=46	_	_	ADU
 12	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	15	obj	_	start_char=47|end_char=49	_	_	ADU
 13	avoir	avoir	AUX	_	VerbForm=Inf	15	aux:tense	_	start_char=49|end_char=54	_	_	ADU
 14	déjà	déjà	ADV	_	_	15	advmod	_	start_char=55|end_char=59	_	_	ADU
 15	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	xcomp	_	start_char=60|end_char=62	_	_	ADU
-16	..	..	PUNCT	_	_	9	punct	_	start_char=63|end_char=65	_	_	ADU
+16	.	.	PUNCT	_	_	9	punct	_	start_char=63|end_char=64	_	_	ADU
+17	.	.	PUNCT	_	_	4	punct	_	start_char=64|end_char=65	_	_	ADU
 
 #sent_id = ADU <au19>
 #text = mais regarde en fait le clapier je crois qu'on le met comme ça normalement ..
 1	mais	mais	CCONJ	_	_	2	cc	_	start_char=0|end_char=4	_	_	ADU
-2	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=12	_	_	ADU
+2	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=12	_	_	ADU
 3	en	en	ADP	_	_	2	advmod	_	start_char=13|end_char=15	_	_	ADU
 4	fait	fait	NOUN	_	Gender=Masc|Number=Sing	3	fixed	_	start_char=16|end_char=20	_	_	ADU
 5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=21|end_char=23	_	_	ADU
-6	clapier	clapier	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	start_char=24|end_char=31	_	_	ADU
+6	clapier	clapier	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=24|end_char=31	_	_	ADU
 7	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	8	nsubj	_	start_char=32|end_char=34	_	_	ADU
-8	crois	croire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	parataxis	_	start_char=35|end_char=40	_	_	ADU
+8	crois	croire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=35|end_char=40	_	_	ADU
 9	qu'	que	SCONJ	_	_	12	mark	_	start_char=41|end_char=44	_	_	ADU
-10	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	12	nsubj	_	start_char=44|end_char=46	_	_	ADU
+10	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	12	nsubj	_	start_char=44|end_char=46	_	_	ADU
 11	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	obj	_	start_char=47|end_char=49	_	_	ADU
 12	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	start_char=50|end_char=53	_	_	ADU
 13	comme	comme	ADP	_	_	14	case	_	start_char=54|end_char=59	_	_	ADU
 14	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	obl:mod	_	start_char=60|end_char=62	_	_	ADU
 15	normalement	normalement	ADV	_	_	14	advmod	_	start_char=63|end_char=74	_	_	ADU
-16	..	..	PUNCT	_	_	2	punct	_	start_char=75|end_char=77	_	_	ADU
+16	.	.	PUNCT	_	_	2	punct	_	start_char=75|end_char=76	_	_	ADU
+17	.	.	PUNCT	_	_	2	punct	_	start_char=76|end_char=77	_	_	ADU
 

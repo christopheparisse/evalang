@@ -8,38 +8,32 @@
 
 #sent_id = CHI <au1>
 #text = x pied !
-1-2	x	_	_	_	_	_	_	_	start_char=0|end_char=1	_	_	CHI
-1	de	de	ADP	_	_	3	case	_	_	_	_	CHI
-2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	_	_	CHI
-3	pied	pied	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=2|end_char=6	_	_	CHI
-4	!	!	PUNCT	_	_	3	punct	_	start_char=7|end_char=8	_	_	CHI
+1	x	x	ADP	_	_	2	case	_	start_char=0|end_char=1	_	_	CHI
+2	pied	pied	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=2|end_char=6	_	_	CHI
+3	!	!	PUNCT	_	_	2	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = CHI <au2>
 #text = x nez !
-1-2	x	_	_	_	_	_	_	_	start_char=0|end_char=1	_	_	CHI
-1	de	de	ADP	_	_	3	case	_	_	_	_	CHI
-2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	_	_	CHI
-3	nez	nez	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=2|end_char=5	_	_	CHI
-4	!	!	PUNCT	_	_	3	punct	_	start_char=6|end_char=7	_	_	CHI
+1	x	x	ADP	_	_	2	case	_	start_char=0|end_char=1	_	_	CHI
+2	nez	nez	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=2|end_char=5	_	_	CHI
+3	!	!	PUNCT	_	_	2	punct	_	start_char=6|end_char=7	_	_	CHI
 
 #sent_id = CHI <au3>
 #text = x nez !
-1-2	x	_	_	_	_	_	_	_	start_char=0|end_char=1	_	_	CHI
-1	de	de	ADP	_	_	3	case	_	_	_	_	CHI
-2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	_	_	CHI
-3	nez	nez	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=2|end_char=5	_	_	CHI
-4	!	!	PUNCT	_	_	3	punct	_	start_char=6|end_char=7	_	_	CHI
+1	x	x	ADP	_	_	2	case	_	start_char=0|end_char=1	_	_	CHI
+2	nez	nez	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=2|end_char=5	_	_	CHI
+3	!	!	PUNCT	_	_	2	punct	_	start_char=6|end_char=7	_	_	CHI
 
 #sent_id = CHI <au4>
 #text = veux boire !
-1	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
+1	veux	vouloir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
 2	boire	boire	VERB	_	VerbForm=Inf	1	xcomp	_	start_char=5|end_char=10	_	_	CHI
 3	!	!	PUNCT	_	_	1	punct	_	start_char=11|end_char=12	_	_	CHI
 
 #sent_id = CHI <au5>
 #text = tortue tortue !
 1	tortue	tortue	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=0|end_char=6	_	_	CHI
-2	tortue	tortu	ADJ	_	Gender=Fem|Number=Sing	1	amod	_	start_char=7|end_char=13	_	_	CHI
+2	tortue	tortue	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=7|end_char=13	_	_	CHI
 3	!	!	PUNCT	_	_	1	punct	_	start_char=14|end_char=15	_	_	CHI
 
 #sent_id = CHI <au6>
@@ -50,9 +44,9 @@
 
 #sent_id = CHI <au7>
 #text = papa papa !
-1	papa	papa	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=4	_	_	CHI
-2	papa	papa	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=5|end_char=9	_	_	CHI
-3	!	!	PUNCT	_	_	1	punct	_	start_char=10|end_char=11	_	_	CHI
+1	papa	papa	NOUN	_	Gender=Masc|Number=Sing	2	amod	_	start_char=0|end_char=4	_	_	CHI
+2	papa	papa	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=5|end_char=9	_	_	CHI
+3	!	!	PUNCT	_	_	2	punct	_	start_char=10|end_char=11	_	_	CHI
 
 #sent_id = CHI <au8>
 #text = oh papa !
@@ -62,66 +56,66 @@
 
 #sent_id = CHI <au9>
 #text = oh hisse !
-1	oh	oh	INTJ	_	_	2	discourse	_	start_char=0|end_char=2	_	_	CHI
+1	oh	oh	PRON	_	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CHI
 2	hisse	hisser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	CHI
 3	!	!	PUNCT	_	_	2	punct	_	start_char=9|end_char=10	_	_	CHI
 
 #sent_id = CHI <au10>
 #text = oh hisse !
-1	oh	oh	INTJ	_	_	2	discourse	_	start_char=0|end_char=2	_	_	CHI
+1	oh	oh	PRON	_	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CHI
 2	hisse	hisser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	CHI
 3	!	!	PUNCT	_	_	2	punct	_	start_char=9|end_char=10	_	_	CHI
 
 #sent_id = CHI <au11>
 #text = oh hisse !
-1	oh	oh	INTJ	_	_	2	discourse	_	start_char=0|end_char=2	_	_	CHI
+1	oh	oh	PRON	_	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CHI
 2	hisse	hisser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	CHI
 3	!	!	PUNCT	_	_	2	punct	_	start_char=9|end_char=10	_	_	CHI
 
 #sent_id = CHI <au12>
 #text = oh hisse !
-1	oh	oh	INTJ	_	_	2	discourse	_	start_char=0|end_char=2	_	_	CHI
+1	oh	oh	PRON	_	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CHI
 2	hisse	hisser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	CHI
 3	!	!	PUNCT	_	_	2	punct	_	start_char=9|end_char=10	_	_	CHI
 
 #sent_id = CHI <au13>
 #text = non non ..
-1	non	non	ADV	_	_	2	advmod	_	start_char=0|end_char=3	_	_	CHI
-2	non	non	ADV	_	_	0	root	_	start_char=4|end_char=7	_	_	CHI
+1	non	non	ADV	_	Polarity=Neg	2	advmod	_	start_char=0|end_char=3	_	_	CHI
+2	non	non	ADV	_	Polarity=Neg	0	root	_	start_char=4|end_char=7	_	_	CHI
 3	..	..	PUNCT	_	_	2	punct	_	start_char=8|end_char=10	_	_	CHI
 
 #sent_id = CHI <au14>
 #text = non non !
-1	non	non	ADV	_	_	2	advmod	_	start_char=0|end_char=3	_	_	CHI
-2	non	non	ADV	_	_	0	root	_	start_char=4|end_char=7	_	_	CHI
+1	non	non	ADV	_	Polarity=Neg	2	advmod	_	start_char=0|end_char=3	_	_	CHI
+2	non	non	ADV	_	Polarity=Neg	0	root	_	start_char=4|end_char=7	_	_	CHI
 3	!	!	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au15>
 #text = non non !
-1	non	non	ADV	_	_	2	advmod	_	start_char=0|end_char=3	_	_	CHI
-2	non	non	ADV	_	_	0	root	_	start_char=4|end_char=7	_	_	CHI
+1	non	non	ADV	_	Polarity=Neg	2	advmod	_	start_char=0|end_char=3	_	_	CHI
+2	non	non	ADV	_	Polarity=Neg	0	root	_	start_char=4|end_char=7	_	_	CHI
 3	!	!	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au16>
 #text = non non !
-1	non	non	ADV	_	_	2	advmod	_	start_char=0|end_char=3	_	_	CHI
-2	non	non	ADV	_	_	0	root	_	start_char=4|end_char=7	_	_	CHI
+1	non	non	ADV	_	Polarity=Neg	2	advmod	_	start_char=0|end_char=3	_	_	CHI
+2	non	non	ADV	_	Polarity=Neg	0	root	_	start_char=4|end_char=7	_	_	CHI
 3	!	!	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au17>
 #text = non ..
-1	non	non	ADV	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	non	non	ADV	_	Polarity=Neg	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	..	..	PUNCT	_	_	1	punct	_	start_char=4|end_char=6	_	_	CHI
 
 #sent_id = CHI <au18>
 #text = nan nan !
 1	nan	nan	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	nan	nan	INTJ	_	_	1	fixed	_	start_char=4|end_char=7	_	_	CHI
+2	nan	nan	INTJ	_	_	1	discourse	_	start_char=4|end_char=7	_	_	CHI
 3	!	!	PUNCT	_	_	1	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au19>
 #text = l'eau !
-1	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	CHI
+1	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	CHI
 2	eau	eau	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=2|end_char=5	_	_	CHI
 3	!	!	PUNCT	_	_	2	punct	_	start_char=6|end_char=7	_	_	CHI
 

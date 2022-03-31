@@ -1,8 +1,8 @@
 #sent_id = CHI <au0>
 #text = sont à sont à elle est elle est elle est voiture Antonin !
 1	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	start_char=0|end_char=4	_	_	CHI
-2	à	à	ADP	_	_	5	case	_	start_char=5|end_char=6	_	_	CHI
-3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	start_char=7|end_char=11	_	_	CHI
+2	à	à	ADP	_	_	1	fixed	_	start_char=5|end_char=6	_	_	CHI
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	start_char=7|end_char=11	_	_	CHI
 4	à	à	ADP	_	_	5	case	_	start_char=12|end_char=13	_	_	CHI
 5	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	11	obl:mod	_	start_char=14|end_char=18	_	_	CHI
 6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	start_char=19|end_char=22	_	_	CHI
@@ -12,30 +12,30 @@
 10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	start_char=37|end_char=40	_	_	CHI
 11	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=41|end_char=48	_	_	CHI
 12	Antonin	Antonin	PROPN	_	_	11	appos	_	start_char=49|end_char=56	_	_	CHI
-13	!	!	PUNCT	_	_	11	punct	_	start_char=57|end_char=58	_	_	CHI
+13	!	!	PUNCT	_	_	1	punct	_	start_char=57|end_char=58	_	_	CHI
 
 #sent_id = CHI <au1>
 #text = t'as vu t'as dessiné un gros !
-1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	3	iobj	_	start_char=0|end_char=2	_	_	CHI
-2	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=2|end_char=4	_	_	CHI
+1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	3	obl:arg	_	start_char=0|end_char=2	_	_	CHI
+2	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=2|end_char=4	_	_	CHI
 3	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=5|end_char=7	_	_	CHI
-4	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	6	iobj	_	start_char=8|end_char=10	_	_	CHI
+4	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	6	obl:arg	_	start_char=8|end_char=10	_	_	CHI
 5	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	6	aux:tense	_	start_char=10|end_char=12	_	_	CHI
 6	dessiné	dessiner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	xcomp	_	start_char=13|end_char=20	_	_	CHI
 7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	start_char=21|end_char=23	_	_	CHI
-8	gros	gros	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	start_char=24|end_char=28	_	_	CHI
+8	gros	gros	ADJ	_	Gender=Masc	6	obj	_	start_char=24|end_char=28	_	_	CHI
 9	!	!	PUNCT	_	_	3	punct	_	start_char=29|end_char=30	_	_	CHI
 
 #sent_id = CHI <au2>
 #text = l'autre l'autre x pour Antonin !
 1	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	CHI
-2	autre	autre	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	start_char=2|end_char=7	_	_	CHI
-3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	start_char=8|end_char=10	_	_	CHI
-4	autre	autre	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	start_char=10|end_char=15	_	_	CHI
-5	x	x	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=16|end_char=17	_	_	CHI
+2	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	0	root	_	start_char=2|end_char=7	_	_	CHI
+3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	start_char=8|end_char=10	_	_	CHI
+4	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	2	appos	_	start_char=10|end_char=15	_	_	CHI
+5	x	x	NOUN	_	Gender=Masc|Number=Sing	4	appos	_	start_char=16|end_char=17	_	_	CHI
 6	pour	pour	ADP	_	_	7	case	_	start_char=18|end_char=22	_	_	CHI
-7	Antonin	Antonin	PROPN	_	_	5	nmod	_	start_char=23|end_char=30	_	_	CHI
-8	!	!	PUNCT	_	_	5	punct	_	start_char=31|end_char=32	_	_	CHI
+7	Antonin	Antonin	PROPN	_	_	4	nmod	_	start_char=23|end_char=30	_	_	CHI
+8	!	!	PUNCT	_	_	2	punct	_	start_char=31|end_char=32	_	_	CHI
 
 #sent_id = CHI <au3>
 #text = elle est elle est la la même ..
@@ -46,45 +46,46 @@
 5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=18|end_char=20	_	_	CHI
 6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=21|end_char=23	_	_	CHI
 7	même	même	ADJ	_	Gender=Fem|Number=Sing	0	root	_	start_char=24|end_char=28	_	_	CHI
-8	..	..	PUNCT	_	_	7	punct	_	start_char=29|end_char=31	_	_	CHI
+8	.	.	PUNCT	_	_	7	punct	_	start_char=29|end_char=30	_	_	CHI
+9	.	.	PUNCT	_	_	7	punct	_	start_char=30|end_char=31	_	_	CHI
 
 #sent_id = CHI <au4>
 #text = t'as vu je suis couché !
-1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	3	iobj	_	start_char=0|end_char=2	_	_	CHI
-2	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=2|end_char=4	_	_	CHI
+1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	3	obl:arg	_	start_char=0|end_char=2	_	_	CHI
+2	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=2|end_char=4	_	_	CHI
 3	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=5|end_char=7	_	_	CHI
 4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	start_char=8|end_char=10	_	_	CHI
 5	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux:pass	_	start_char=11|end_char=15	_	_	CHI
-6	couché	coucher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	ccomp	_	start_char=16|end_char=22	_	_	CHI
+6	couché	coucher	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	xcomp	_	start_char=16|end_char=22	_	_	CHI
 7	!	!	PUNCT	_	_	3	punct	_	start_char=23|end_char=24	_	_	CHI
 
 #sent_id = CHI <au5>
 #text = non je veux rester un petit peu !
-1	non	non	ADV	_	_	3	advmod	_	start_char=0|end_char=3	_	_	CHI
+1	non	non	ADV	_	Polarity=Neg	3	advmod	_	start_char=0|end_char=3	_	_	CHI
 2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	start_char=4|end_char=6	_	_	CHI
 3	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=7|end_char=11	_	_	CHI
 4	rester	rester	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=12|end_char=18	_	_	CHI
 5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	advmod	_	start_char=19|end_char=21	_	_	CHI
 6	petit	petit	ADJ	_	Gender=Masc|Number=Sing	5	fixed	_	start_char=22|end_char=27	_	_	CHI
-7	peu	peu	ADV	_	_	5	fixed	_	start_char=28|end_char=31	_	_	CHI
+7	peu	peu	NOUN	_	_	5	fixed	_	start_char=28|end_char=31	_	_	CHI
 8	!	!	PUNCT	_	_	3	punct	_	start_char=32|end_char=33	_	_	CHI
 
 #sent_id = CHI <au6>
 #text = non je veux mon doudou ma sucette !
-1	non	non	ADV	_	_	3	advmod	_	start_char=0|end_char=3	_	_	CHI
+1	non	non	ADV	_	Polarity=Neg	3	advmod	_	start_char=0|end_char=3	_	_	CHI
 2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	start_char=4|end_char=6	_	_	CHI
 3	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=7|end_char=11	_	_	CHI
-4	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	start_char=12|end_char=15	_	_	CHI
+4	mon	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=1|PronType=Prs	5	det	_	start_char=12|end_char=15	_	_	CHI
 5	doudou	doudou	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=16|end_char=22	_	_	CHI
-6	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	start_char=23|end_char=25	_	_	CHI
+6	ma	son	DET	_	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=1|PronType=Prs	7	det	_	start_char=23|end_char=25	_	_	CHI
 7	sucette	sucette	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=26|end_char=33	_	_	CHI
 8	!	!	PUNCT	_	_	3	punct	_	start_char=34|end_char=35	_	_	CHI
 
 #sent_id = CHI <au7>
 #text = attends attends dessine papa là ici !
-1	attends	attendre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CHI
+1	attends	attendre	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CHI
 2	attends	attendre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	nsubj	_	start_char=8|end_char=15	_	_	CHI
-3	dessine	dessiner	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	xcomp	_	start_char=16|end_char=23	_	_	CHI
+3	dessine	dessiner	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=16|end_char=23	_	_	CHI
 4	papa	papa	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=24|end_char=28	_	_	CHI
 5	là	là	ADV	_	_	3	advmod	_	start_char=29|end_char=31	_	_	CHI
 6	ici	ici	ADV	_	_	3	advmod	_	start_char=32|end_char=35	_	_	CHI
@@ -95,7 +96,7 @@
 1	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux:tense	_	start_char=0|end_char=1	_	_	CHI
 2	pété	péter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=2|end_char=6	_	_	CHI
 3	dans	dans	ADP	_	_	5	case	_	start_char=7|end_char=11	_	_	CHI
-4	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=12|end_char=14	_	_	CHI
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	start_char=12|end_char=14	_	_	CHI
 5	eau	eau	NOUN	_	Gender=Fem|Number=Sing	2	obl:mod	_	start_char=14|end_char=17	_	_	CHI
 6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=18|end_char=20	_	_	CHI
 7	paille	paille	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=21|end_char=27	_	_	CHI
@@ -103,12 +104,12 @@
 
 #sent_id = CHI <au9>
 #text = x zafira la voiture à papou !
-1	x	x	X	_	_	2	nmod	_	start_char=0|end_char=1	_	_	CHI
-2	zafira	zafira	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=2|end_char=8	_	_	CHI
+1	x	x	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	_	start_char=0|end_char=1	_	_	CHI
+2	zafira	zafir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=8	_	_	CHI
 3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=9|end_char=11	_	_	CHI
-4	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	2	appos	_	start_char=12|end_char=19	_	_	CHI
+4	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=12|end_char=19	_	_	CHI
 5	à	à	ADP	_	_	6	case	_	start_char=20|end_char=21	_	_	CHI
-6	papou	papou	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	start_char=22|end_char=27	_	_	CHI
+6	papou	papou	NOUN	_	Gender=Masc|Number=Sing	2	obl:mod	_	start_char=22|end_char=27	_	_	CHI
 7	!	!	PUNCT	_	_	2	punct	_	start_char=28|end_char=29	_	_	CHI
 
 #sent_id = CHI <au10>
@@ -116,7 +117,7 @@
 1	x	x	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	_	start_char=0|end_char=1	_	_	CHI
 2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=6	_	_	CHI
 3	mettre	mettre	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=7|end_char=13	_	_	CHI
-4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=14|end_char=16	_	_	CHI
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	6	det	_	start_char=14|end_char=16	_	_	CHI
 5	autre	autre	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	start_char=16|end_char=21	_	_	CHI
 6	t-shirt	t-shirt	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=22|end_char=29	_	_	CHI
 7	!	!	PUNCT	_	_	2	punct	_	start_char=30|end_char=31	_	_	CHI
@@ -125,16 +126,17 @@
 #text = un ou- un ou- un nounours !
 1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	CHI
 2	ou-	ou-	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3|end_char=6	_	_	CHI
-3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=7|end_char=9	_	_	CHI
-4	ou-	ou-	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=10|end_char=13	_	_	CHI
-5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=14|end_char=16	_	_	CHI
-6	nounours	nounour	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	start_char=17|end_char=25	_	_	CHI
-7	!	!	PUNCT	_	_	2	punct	_	start_char=26|end_char=27	_	_	CHI
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	advmod	_	start_char=7|end_char=9	_	_	CHI
+4	ou	ou	CCONJ	_	_	3	fixed	_	start_char=10|end_char=12	_	_	CHI
+5	-	-	PUNCT	_	_	3	punct	_	start_char=12|end_char=13	_	_	CHI
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	start_char=14|end_char=16	_	_	CHI
+7	nounours	nounours	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	start_char=17|end_char=25	_	_	CHI
+8	!	!	PUNCT	_	_	2	punct	_	start_char=26|end_char=27	_	_	CHI
 
 #sent_id = CHI <au12>
 #text = non moi je veux aller ici !
-1	non	non	ADV	_	_	2	advmod	_	start_char=0|end_char=3	_	_	CHI
-2	moi	soi	PRON	_	Number=Sing|Person=1	4	obl:mod	_	start_char=4|end_char=7	_	_	CHI
+1	non	non	ADV	_	Polarity=Neg	2	advmod	_	start_char=0|end_char=3	_	_	CHI
+2	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	4	obl:mod	_	start_char=4|end_char=7	_	_	CHI
 3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	start_char=8|end_char=10	_	_	CHI
 4	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=11|end_char=15	_	_	CHI
 5	aller	aller	VERB	_	VerbForm=Inf	4	xcomp	_	start_char=16|end_char=21	_	_	CHI
@@ -143,10 +145,10 @@
 
 #sent_id = CHI <au13>
 #text = non elle s'en va pas !
-1	non	non	ADV	_	_	5	advmod	_	start_char=0|end_char=3	_	_	CHI
+1	non	non	ADV	_	Polarity=Neg	5	advmod	_	start_char=0|end_char=3	_	_	CHI
 2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	start_char=4|end_char=8	_	_	CHI
-3	s'	se	PRON	_	Person=3|PronType=Prs	5	expl:comp	_	start_char=9|end_char=11	_	_	CHI
-4	en	en	PRON	_	Person=3	5	expl:comp	_	start_char=11|end_char=13	_	_	CHI
+3	s'	se	PRON	_	Person=3|PronType=Prs	5	dep:comp	_	start_char=9|end_char=11	_	_	CHI
+4	en	en	PRON	_	Person=3|PronType=Prs	5	obl:arg	_	start_char=11|end_char=13	_	_	CHI
 5	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=14|end_char=16	_	_	CHI
 6	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	start_char=17|end_char=20	_	_	CHI
 7	!	!	PUNCT	_	_	5	punct	_	start_char=21|end_char=22	_	_	CHI
@@ -156,9 +158,9 @@
 1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CHI
 2	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CHI
 3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	start_char=8|end_char=11	_	_	CHI
-4	où	où	ADV	_	PronType=Rel	6	iobj	_	start_char=12|end_char=14	_	_	CHI
+4	où	où	ADV	_	PronType=Rel	2	advmod	_	start_char=12|end_char=14	_	_	CHI
 5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	start_char=15|end_char=17	_	_	CHI
-6	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=18|end_char=21	_	_	CHI
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=18|end_char=21	_	_	CHI
 7	!	!	PUNCT	_	_	2	punct	_	start_char=22|end_char=23	_	_	CHI
 
 #sent_id = CHI <au15>
@@ -166,45 +168,45 @@
 1	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	start_char=0|end_char=4	_	_	CHI
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=5|end_char=8	_	_	CHI
 3	là	là	ADV	_	_	5	advmod	_	start_char=9|end_char=11	_	_	CHI
-4	x	x	NUM	_	_	5	nummod	_	start_char=12|end_char=13	_	_	CHI
+4	x	x	NUM	_	Number=Plur	5	nummod	_	start_char=12|end_char=13	_	_	CHI
 5	gare	gare	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=14|end_char=18	_	_	CHI
 6	ici	ici	ADV	_	_	5	advmod	_	start_char=19|end_char=22	_	_	CHI
 7	!	!	PUNCT	_	_	5	punct	_	start_char=23|end_char=24	_	_	CHI
 
 #sent_id = CHI <au16>
 #text = écris le non pas ça !
-1	écris	écrire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CHI
-2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	advmod	_	start_char=6|end_char=8	_	_	CHI
-3	non	non	ADV	_	_	2	fixed	_	start_char=9|end_char=12	_	_	CHI
+1	écris	écrire	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CHI
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=6|end_char=8	_	_	CHI
+3	non	non	ADV	_	Polarity=Neg	4	advmod	_	start_char=9|end_char=12	_	_	CHI
 4	pas	pas	ADV	_	Polarity=Neg	1	advmod	_	start_char=13|end_char=16	_	_	CHI
 5	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	obj	_	start_char=17|end_char=19	_	_	CHI
 6	!	!	PUNCT	_	_	1	punct	_	start_char=20|end_char=21	_	_	CHI
 
 #sent_id = CHI <au17>
 #text = c'est cassé là-bas là-bas panne !
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj:pass	_	start_char=0|end_char=2	_	_	CHI
-2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	start_char=2|end_char=5	_	_	CHI
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	CHI
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=2|end_char=5	_	_	CHI
 3	cassé	cassé	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=6|end_char=11	_	_	CHI
-4	là-bas	là-bas	ADV	_	_	5	advmod	_	start_char=12|end_char=18	_	_	CHI
-5	là-bas	là-bas	ADV	_	_	3	advmod	_	start_char=19|end_char=25	_	_	CHI
+4	là-bas	là-bas	ADV	_	_	3	advmod	_	start_char=12|end_char=18	_	_	CHI
+5	là-bas	là-bas	ADV	_	_	6	advmod	_	start_char=19|end_char=25	_	_	CHI
 6	panne	panne	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=26|end_char=31	_	_	CHI
 7	!	!	PUNCT	_	_	3	punct	_	start_char=32|end_char=33	_	_	CHI
 
 #sent_id = CHI <au18>
 #text = as vu t as pas fermé !
 1	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	2	aux:tense	_	start_char=0|end_char=2	_	_	CHI
-2	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	advcl	_	start_char=3|end_char=5	_	_	CHI
+2	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=3|end_char=5	_	_	CHI
 3	t	t	ADV	_	Polarity=Neg	6	advmod	_	start_char=6|end_char=7	_	_	CHI
 4	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	6	aux:tense	_	start_char=8|end_char=10	_	_	CHI
 5	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	start_char=11|end_char=14	_	_	CHI
-6	fermé	fermer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=15|end_char=20	_	_	CHI
-7	!	!	PUNCT	_	_	6	punct	_	start_char=21|end_char=22	_	_	CHI
+6	fermé	fermer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	xcomp	_	start_char=15|end_char=20	_	_	CHI
+7	!	!	PUNCT	_	_	2	punct	_	start_char=21|end_char=22	_	_	CHI
 
 #sent_id = CHI <au19>
 #text = a faire x ligne comme ça !
 1	a	à	ADP	_	_	2	mark	_	start_char=0|end_char=1	_	_	CHI
 2	faire	faire	VERB	_	VerbForm=Inf	0	root	_	start_char=2|end_char=7	_	_	CHI
-3	x	x	DET	_	Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=8|end_char=9	_	_	CHI
+3	x	x	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=8|end_char=9	_	_	CHI
 4	ligne	ligne	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=10|end_char=15	_	_	CHI
 5	comme	comme	ADP	_	_	6	case	_	start_char=16|end_char=21	_	_	CHI
 6	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	obl:mod	_	start_char=22|end_char=24	_	_	CHI

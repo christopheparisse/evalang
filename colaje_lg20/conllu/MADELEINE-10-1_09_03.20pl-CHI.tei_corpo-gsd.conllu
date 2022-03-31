@@ -2,33 +2,35 @@
 #text = là il en boit de l'eau ..
 1	là	là	ADV	_	_	4	advmod	_	start_char=0|end_char=2	_	_	CHI
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=3|end_char=5	_	_	CHI
-3	en	en	PRON	_	Person=3	4	expl:comp	_	start_char=6|end_char=8	_	_	CHI
-4	boit	boire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9|end_char=13	_	_	CHI
+3	en	en	PRON	_	Person=3|PronType=Prs	4	obl:arg	_	start_char=6|end_char=8	_	_	CHI
+4	boit	bevoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9|end_char=13	_	_	CHI
 5	de	de	ADP	_	_	7	det	_	start_char=14|end_char=16	_	_	CHI
-6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	fixed	_	start_char=17|end_char=19	_	_	CHI
+6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	fixed	_	start_char=17|end_char=19	_	_	CHI
 7	eau	eau	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	start_char=19|end_char=22	_	_	CHI
-8	..	..	PUNCT	_	_	4	punct	_	start_char=23|end_char=25	_	_	CHI
+8	.	.	PUNCT	_	_	4	punct	_	start_char=23|end_char=24	_	_	CHI
+9	.	.	PUNCT	_	_	4	punct	_	start_char=24|end_char=25	_	_	CHI
 
 #sent_id = CHI <au1>
 #text = ə veux un papier ə la flûte ..
-1	ə	ə	PROPN	_	_	2	nsubj	_	start_char=0|end_char=1	_	_	CHI
-2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=6	_	_	CHI
+1	ə	ə	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	_	start_char=0|end_char=1	_	_	CHI
+2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=6	_	_	CHI
 3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=7|end_char=9	_	_	CHI
 4	papier	papier	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=10|end_char=16	_	_	CHI
-5	ə	ə	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	start_char=17|end_char=18	_	_	CHI
+5	ə	«	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	start_char=17|end_char=18	_	_	CHI
 6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=19|end_char=21	_	_	CHI
 7	flûte	flûte	NOUN	_	Gender=Fem|Number=Sing	4	appos	_	start_char=22|end_char=27	_	_	CHI
-8	..	..	PUNCT	_	_	2	punct	_	start_char=28|end_char=30	_	_	CHI
+8	.	.	PUNCT	_	_	2	punct	_	start_char=28|end_char=29	_	_	CHI
+9	.	.	PUNCT	_	_	2	punct	_	start_char=29|end_char=30	_	_	CHI
 
 #sent_id = CHI <au2>
 #text = n encore le bonhomme a flûte ..
-1	n	n	INTJ	_	_	5	discourse	_	start_char=0|end_char=1	_	_	CHI
-2	encore	encore	ADV	_	_	1	fixed	_	start_char=2|end_char=8	_	_	CHI
+1	n	n	INTJ	_	_	6	discourse	_	start_char=0|end_char=1	_	_	CHI
+2	encore	encore	ADV	_	_	6	advmod	_	start_char=2|end_char=8	_	_	CHI
 3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=9|end_char=11	_	_	CHI
-4	bonhomme	bonhomme	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	start_char=12|end_char=20	_	_	CHI
-5	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=21|end_char=22	_	_	CHI
-6	flûte	flûte	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	start_char=23|end_char=28	_	_	CHI
-7	..	..	PUNCT	_	_	5	punct	_	start_char=29|end_char=31	_	_	CHI
+4	bonhomme	bonhomme	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	start_char=12|end_char=20	_	_	CHI
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	start_char=21|end_char=22	_	_	CHI
+6	flûte	flûte	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=23|end_char=28	_	_	CHI
+7	..	..	PUNCT	_	_	6	punct	_	start_char=29|end_char=31	_	_	CHI
 
 #sent_id = CHI <au3>
 #text = maman regarder un un bonhomme regarder ..
@@ -38,55 +40,59 @@
 4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=18|end_char=20	_	_	CHI
 5	bonhomme	bonhomme	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=21|end_char=29	_	_	CHI
 6	regarder	regarder	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=30|end_char=38	_	_	CHI
-7	..	..	PUNCT	_	_	2	punct	_	start_char=39|end_char=41	_	_	CHI
+7	..	..	PUNCT	_	_	1	punct	_	start_char=39|end_char=41	_	_	CHI
 
 #sent_id = CHI <au4>
 #text = ə maman elle met là maman ..
-1	ə	ə	X	_	_	2	nmod	_	start_char=0|end_char=1	_	_	CHI
-2	maman	maman	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	start_char=2|end_char=7	_	_	CHI
+1	ə	ə	NOUN	_	Gender=Masc|Number=Sing	4	dislocated	_	start_char=0|end_char=1	_	_	CHI
+2	maman	maman	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	start_char=2|end_char=7	_	_	CHI
 3	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=8|end_char=12	_	_	CHI
 4	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13|end_char=16	_	_	CHI
 5	là	là	ADV	_	_	4	advmod	_	start_char=17|end_char=19	_	_	CHI
 6	maman	maman	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	start_char=20|end_char=25	_	_	CHI
-7	..	..	PUNCT	_	_	4	punct	_	start_char=26|end_char=28	_	_	CHI
+7	.	.	PUNCT	_	_	4	punct	_	start_char=26|end_char=27	_	_	CHI
+8	.	.	PUNCT	_	_	4	punct	_	start_char=27|end_char=28	_	_	CHI
 
 #sent_id = CHI <au5>
 #text = y en a un autre un cochon ..
-1	y	y	PRON	_	_	3	expl:comp	_	start_char=0|end_char=1	_	_	CHI
-2	en	en	PRON	_	Person=3	3	expl:comp	_	start_char=2|end_char=4	_	_	CHI
+1	y	y	PRON	_	Person=3|PronType=Prs	3	dep:comp	_	start_char=0|end_char=1	_	_	CHI
+2	en	en	PRON	_	Person=3|PronType=Prs	3	dep:comp	_	start_char=2|end_char=4	_	_	CHI
 3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=6	_	_	CHI
 4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=7|end_char=9	_	_	CHI
-5	autre	autre	PRON	_	Number=Sing	3	obj	_	start_char=10|end_char=15	_	_	CHI
+5	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	3	obj	_	start_char=10|end_char=15	_	_	CHI
 6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	start_char=16|end_char=18	_	_	CHI
 7	cochon	cochon	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=19|end_char=25	_	_	CHI
-8	..	..	PUNCT	_	_	3	punct	_	start_char=26|end_char=28	_	_	CHI
+8	.	.	PUNCT	_	_	3	punct	_	start_char=26|end_char=27	_	_	CHI
+9	.	.	PUNCT	_	_	3	punct	_	start_char=27|end_char=28	_	_	CHI
 
 #sent_id = CHI <au6>
 #text = veux n encore le fantôme !
-1	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
-2	n	n	INTJ	_	_	1	iobj	_	start_char=5|end_char=6	_	_	CHI
-3	encore	encore	ADV	_	_	1	advmod	_	start_char=7|end_char=13	_	_	CHI
+1	veux	vouloir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
+2	n	avoir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=5|end_char=6	_	_	CHI
+3	encore	encore	ADV	_	_	2	advmod	_	start_char=7|end_char=13	_	_	CHI
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=14|end_char=16	_	_	CHI
-5	fantôme	fantôme	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=17|end_char=24	_	_	CHI
+5	fantôme	fantôme	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=17|end_char=24	_	_	CHI
 6	!	!	PUNCT	_	_	1	punct	_	start_char=25|end_char=26	_	_	CHI
 
 #sent_id = CHI <au7>
 #text = on le met là maman ..
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	start_char=0|end_char=2	_	_	CHI
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	3	nsubj	_	start_char=0|end_char=2	_	_	CHI
 2	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	start_char=3|end_char=5	_	_	CHI
 3	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=9	_	_	CHI
 4	là	là	ADV	_	_	3	advmod	_	start_char=10|end_char=12	_	_	CHI
-5	maman	maman	NOUN	_	Gender=Fem|Number=Sing	3	xcomp	_	start_char=13|end_char=18	_	_	CHI
-6	..	..	PUNCT	_	_	3	punct	_	start_char=19|end_char=21	_	_	CHI
+5	maman	maman	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=13|end_char=18	_	_	CHI
+6	.	.	PUNCT	_	_	3	punct	_	start_char=19|end_char=20	_	_	CHI
+7	.	.	PUNCT	_	_	3	punct	_	start_char=20|end_char=21	_	_	CHI
 
 #sent_id = CHI <au8>
 #text = on le met la maman ..
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	start_char=0|end_char=2	_	_	CHI
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	3	nsubj	_	start_char=0|end_char=2	_	_	CHI
 2	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	start_char=3|end_char=5	_	_	CHI
 3	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=9	_	_	CHI
 4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=10|end_char=12	_	_	CHI
 5	maman	maman	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=13|end_char=18	_	_	CHI
-6	..	..	PUNCT	_	_	3	punct	_	start_char=19|end_char=21	_	_	CHI
+6	.	.	PUNCT	_	_	3	punct	_	start_char=19|end_char=20	_	_	CHI
+7	.	.	PUNCT	_	_	3	punct	_	start_char=20|end_char=21	_	_	CHI
 
 #sent_id = CHI <au9>
 #text = oh ça l'est là !
@@ -104,16 +110,18 @@
 3	mets	mettre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9|end_char=13	_	_	CHI
 4	là	là	ADV	_	_	3	advmod	_	start_char=14|end_char=16	_	_	CHI
 5	maman	maman	NOUN	_	Gender=Fem|Number=Sing	3	xcomp	_	start_char=17|end_char=22	_	_	CHI
-6	..	..	PUNCT	_	_	3	punct	_	start_char=23|end_char=25	_	_	CHI
+6	.	.	PUNCT	_	_	3	punct	_	start_char=23|end_char=24	_	_	CHI
+7	.	.	PUNCT	_	_	3	punct	_	start_char=24|end_char=25	_	_	CHI
 
 #sent_id = CHI <au11>
 #text = en boit lo l'eau ..
-1	en	en	PRON	_	Person=3	2	expl:comp	_	start_char=0|end_char=2	_	_	CHI
-2	boit	boire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CHI
+1	en	en	PRON	_	Person=3|PronType=Prs	2	nmod	_	start_char=0|end_char=2	_	_	CHI
+2	boit	boit	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=3|end_char=7	_	_	CHI
 3	lo	lo	ADP	_	_	5	case	_	start_char=8|end_char=10	_	_	CHI
-4	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=11|end_char=13	_	_	CHI
-5	eau	eau	NOUN	_	Gender=Fem|Number=Sing	2	obl:arg	_	start_char=13|end_char=16	_	_	CHI
-6	..	..	PUNCT	_	_	2	punct	_	start_char=17|end_char=19	_	_	CHI
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	start_char=11|end_char=13	_	_	CHI
+5	eau	eau	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	start_char=13|end_char=16	_	_	CHI
+6	.	.	PUNCT	_	_	2	punct	_	start_char=17|end_char=18	_	_	CHI
+7	.	.	PUNCT	_	_	2	punct	_	start_char=18|end_char=19	_	_	CHI
 
 #sent_id = CHI <au12>
 #text = an ai vu un fantôme !
@@ -128,14 +136,15 @@
 #text = va dans l'eau ..
 1	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	dans	dans	ADP	_	_	4	case	_	start_char=3|end_char=7	_	_	CHI
-3	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=8|end_char=10	_	_	CHI
+3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	start_char=8|end_char=10	_	_	CHI
 4	eau	eau	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	start_char=10|end_char=13	_	_	CHI
-5	..	..	PUNCT	_	_	1	punct	_	start_char=14|end_char=16	_	_	CHI
+5	.	.	PUNCT	_	_	1	punct	_	start_char=14|end_char=15	_	_	CHI
+6	.	.	PUNCT	_	_	1	punct	_	start_char=15|end_char=16	_	_	CHI
 
 #sent_id = CHI <au14>
 #text = un oeuf a perdu ..
 1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	CHI
-2	oeuf	oeuf	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	start_char=3|end_char=7	_	_	CHI
+2	oeuf	œuf	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	start_char=3|end_char=7	_	_	CHI
 3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	start_char=8|end_char=9	_	_	CHI
 4	perdu	perdre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=10|end_char=15	_	_	CHI
 5	..	..	PUNCT	_	_	4	punct	_	start_char=16|end_char=18	_	_	CHI
@@ -143,7 +152,7 @@
 #sent_id = CHI <au15>
 #text = un autre un cochon !
 1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	CHI
-2	autre	autre	PRON	_	Number=Sing	4	nmod	_	start_char=3|end_char=8	_	_	CHI
+2	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	4	nmod	_	start_char=3|end_char=8	_	_	CHI
 3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=9|end_char=11	_	_	CHI
 4	cochon	cochon	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=12|end_char=18	_	_	CHI
 5	!	!	PUNCT	_	_	4	punct	_	start_char=19|end_char=20	_	_	CHI
@@ -151,15 +160,15 @@
 #sent_id = CHI <au16>
 #text = un autre un cochon !
 1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	CHI
-2	autre	autre	PRON	_	Number=Sing	4	nmod	_	start_char=3|end_char=8	_	_	CHI
+2	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	4	nmod	_	start_char=3|end_char=8	_	_	CHI
 3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=9|end_char=11	_	_	CHI
 4	cochon	cochon	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=12|end_char=18	_	_	CHI
 5	!	!	PUNCT	_	_	4	punct	_	start_char=19|end_char=20	_	_	CHI
 
 #sent_id = CHI <au17>
 #text = un autre un balai ..
-1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=0|end_char=2	_	_	CHI
-2	autre	autre	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	start_char=3|end_char=8	_	_	CHI
+1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	CHI
+2	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	4	nmod	_	start_char=3|end_char=8	_	_	CHI
 3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=9|end_char=11	_	_	CHI
 4	balai	balai	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=12|end_char=17	_	_	CHI
 5	..	..	PUNCT	_	_	4	punct	_	start_char=18|end_char=20	_	_	CHI
@@ -167,10 +176,11 @@
 #sent_id = CHI <au18>
 #text = tu mets ça maman ..
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CHI
-2	mets	mettre	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CHI
+2	mets	mettre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CHI
 3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	obj	_	start_char=8|end_char=10	_	_	CHI
 4	maman	maman	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=11|end_char=16	_	_	CHI
-5	..	..	PUNCT	_	_	2	punct	_	start_char=17|end_char=19	_	_	CHI
+5	.	.	PUNCT	_	_	2	punct	_	start_char=17|end_char=18	_	_	CHI
+6	.	.	PUNCT	_	_	2	punct	_	start_char=18|end_char=19	_	_	CHI
 
 #sent_id = CHI <au19>
 #text = soucoupe est là yy ..
@@ -178,5 +188,6 @@
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=9|end_char=12	_	_	CHI
 3	là	là	ADV	_	_	4	advmod	_	start_char=13|end_char=15	_	_	CHI
 4	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=16|end_char=18	_	_	CHI
-5	..	..	PUNCT	_	_	4	punct	_	start_char=19|end_char=21	_	_	CHI
+5	.	.	PUNCT	_	_	4	punct	_	start_char=19|end_char=20	_	_	CHI
+6	.	.	PUNCT	_	_	4	punct	_	start_char=20|end_char=21	_	_	CHI
 

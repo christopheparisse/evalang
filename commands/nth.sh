@@ -1,7 +1,8 @@
 FN=$(dirname $1)/$(basename $1 .cha)
 
 flo +tCHI: $FN.cha +d -f > @@1
-longtier -f @@1 | awk -f ../../evalang/commands/lgln.awk | sort -r | head -$2 | awk -f ../../evalang/commands/totext2.awk > @@1c
+delim @@1 > @@1d
+longtier -f @@1d | awk -f ../../evalang/commands/lgln.awk | sort -r | head -$2 | awk -f ../../evalang/commands/totext2.awk > @@1c
 if [ -s @@1c ]
 then
     echo "@Participants:\tCHI Target_Child" > @@1h
@@ -13,7 +14,8 @@ else
 fi
 
 flo -tCHI: $FN.cha +d -f > @@2
-longtier -f @@2 | awk -f ../../evalang/commands/lgln.awk | sort -r | head -$2 | awk -f ../../evalang/commands/totext2.awk > @@2c
+delim @@2 > @@2d
+longtier -f @@2d | awk -f ../../evalang/commands/lgln.awk | sort -r | head -$2 | awk -f ../../evalang/commands/totext2.awk > @@2c
 if [ -s @@2c ]
 then
     echo "@Participants:\tADU Target_Adult" > @@2h

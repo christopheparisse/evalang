@@ -1,28 +1,28 @@
 #sent_id = CHI <au0>
 #text = non enlève le short ici et et assis dans l'eau !
-1	non	non	ADV	_	_	2	advmod	_	start_char=0|end_char=3	_	_	CHI
+1	non	non	ADV	_	Polarity=Neg	2	advmod	_	start_char=0|end_char=3	_	_	CHI
 2	enlève	enlever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=4|end_char=10	_	_	CHI
 3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=11|end_char=13	_	_	CHI
 4	short	short	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=14|end_char=19	_	_	CHI
 5	ici	ici	ADV	_	_	2	advmod	_	start_char=20|end_char=23	_	_	CHI
 6	et	et	CCONJ	_	_	8	cc	_	start_char=24|end_char=26	_	_	CHI
 7	et	et	CCONJ	_	_	8	cc	_	start_char=27|end_char=29	_	_	CHI
-8	assis	assir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	conj	_	start_char=30|end_char=35	_	_	CHI
+8	assis	asseoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	conj	_	start_char=30|end_char=35	_	_	CHI
 9	dans	dans	ADP	_	_	11	case	_	start_char=36|end_char=40	_	_	CHI
-10	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	start_char=41|end_char=43	_	_	CHI
+10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	start_char=41|end_char=43	_	_	CHI
 11	eau	eau	NOUN	_	Gender=Fem|Number=Sing	8	obl:mod	_	start_char=43|end_char=46	_	_	CHI
 12	!	!	PUNCT	_	_	2	punct	_	start_char=47|end_char=48	_	_	CHI
 
 #sent_id = CHI <au1>
 #text = non ça c'est ma chaise ça c'est la chaise à maman !
-1	non	non	ADV	_	_	2	advmod	_	start_char=0|end_char=3	_	_	CHI
+1	non	non	ADV	_	Polarity=Neg	2	advmod	_	start_char=0|end_char=3	_	_	CHI
 2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	dislocated	_	start_char=4|end_char=6	_	_	CHI
-3	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=7|end_char=9	_	_	CHI
+3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=7|end_char=9	_	_	CHI
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=9|end_char=12	_	_	CHI
-5	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	start_char=13|end_char=15	_	_	CHI
+5	ma	son	DET	_	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=1|PronType=Prs	6	det	_	start_char=13|end_char=15	_	_	CHI
 6	chaise	chaise	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=16|end_char=22	_	_	CHI
-7	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	11	dislocated	_	start_char=23|end_char=25	_	_	CHI
-8	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	11	nsubj	_	start_char=26|end_char=28	_	_	CHI
+7	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	appos	_	start_char=23|end_char=25	_	_	CHI
+8	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	11	nsubj	_	start_char=26|end_char=28	_	_	CHI
 9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	start_char=28|end_char=31	_	_	CHI
 10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	start_char=32|end_char=34	_	_	CHI
 11	chaise	chaise	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	start_char=35|end_char=41	_	_	CHI
@@ -34,7 +34,7 @@
 #text = si si x va pas casser le stylo !
 1	si	si	SCONJ	_	_	4	mark	_	start_char=0|end_char=2	_	_	CHI
 2	si	si	SCONJ	_	_	4	mark	_	start_char=3|end_char=5	_	_	CHI
-3	x	x	ADV	_	Polarity=Neg	4	advmod	_	start_char=6|end_char=7	_	_	CHI
+3	x	x	PROPN	_	_	4	nsubj	_	start_char=6|end_char=7	_	_	CHI
 4	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8|end_char=10	_	_	CHI
 5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	start_char=11|end_char=14	_	_	CHI
 6	casser	casser	VERB	_	VerbForm=Inf	4	xcomp	_	start_char=15|end_char=21	_	_	CHI
@@ -46,35 +46,35 @@
 #text = s'il te plaît ma s'il te plaît papa !
 1	s'	si	SCONJ	_	_	4	mark	_	start_char=0|end_char=2	_	_	CHI
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=2|end_char=4	_	_	CHI
-3	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	iobj	_	start_char=5|end_char=7	_	_	CHI
+3	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obl:arg	_	start_char=5|end_char=7	_	_	CHI
 4	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8|end_char=13	_	_	CHI
-5	ma	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	9	obj	_	start_char=14|end_char=16	_	_	CHI
+5	ma	son	DET	_	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=1|PronType=Prs	4	obj	_	start_char=14|end_char=16	_	_	CHI
 6	s'	si	SCONJ	_	_	9	mark	_	start_char=17|end_char=19	_	_	CHI
 7	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	start_char=19|end_char=21	_	_	CHI
-8	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	9	iobj	_	start_char=22|end_char=24	_	_	CHI
+8	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	9	obl:arg	_	start_char=22|end_char=24	_	_	CHI
 9	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	start_char=25|end_char=30	_	_	CHI
-10	papa	papa	NOUN	_	Gender=Masc|Number=Sing	9	xcomp	_	start_char=31|end_char=35	_	_	CHI
+10	papa	papa	NOUN	_	Gender=Masc|Number=Sing	9	obj	_	start_char=31|end_char=35	_	_	CHI
 11	!	!	PUNCT	_	_	4	punct	_	start_char=36|end_char=37	_	_	CHI
 
 #sent_id = CHI <au4>
 #text = oh t'as vu a de l'eau !
 1	oh	oh	INTJ	_	_	4	discourse	_	start_char=0|end_char=2	_	_	CHI
-2	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	iobj	_	start_char=3|end_char=5	_	_	CHI
+2	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obl:arg	_	start_char=3|end_char=5	_	_	CHI
 3	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	4	aux:tense	_	start_char=5|end_char=7	_	_	CHI
 4	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=8|end_char=10	_	_	CHI
-5	a	à	ADP	_	_	8	det	_	start_char=11|end_char=12	_	_	CHI
+5	a	à	ADP	_	_	8	case	_	start_char=11|end_char=12	_	_	CHI
 6	de	de	ADP	_	_	8	det	_	start_char=13|end_char=15	_	_	CHI
-7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	fixed	_	start_char=16|end_char=18	_	_	CHI
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	6	fixed	_	start_char=16|end_char=18	_	_	CHI
 8	eau	eau	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	start_char=18|end_char=21	_	_	CHI
 9	!	!	PUNCT	_	_	4	punct	_	start_char=22|end_char=23	_	_	CHI
 
 #sent_id = CHI <au5>
 #text = moi aussi veux mettre des lunettes de soleil !
-1	moi	soi	PRON	_	Number=Sing|Person=1	3	nsubj	_	start_char=0|end_char=3	_	_	CHI
+1	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	start_char=0|end_char=3	_	_	CHI
 2	aussi	aussi	ADV	_	_	3	advmod	_	start_char=4|end_char=9	_	_	CHI
 3	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=10|end_char=14	_	_	CHI
 4	mettre	mettre	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=15|end_char=21	_	_	CHI
-5	des	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	6	det	_	start_char=22|end_char=25	_	_	CHI
+5	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	6	det	_	start_char=22|end_char=25	_	_	CHI
 6	lunettes	lunette	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	start_char=26|end_char=34	_	_	CHI
 7	de	de	ADP	_	_	8	case	_	start_char=35|end_char=37	_	_	CHI
 8	soleil	soleil	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	start_char=38|end_char=44	_	_	CHI
@@ -97,15 +97,15 @@
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=6|end_char=9	_	_	CHI
 4	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	start_char=10|end_char=13	_	_	CHI
 5	là	là	ADV	_	_	7	advmod	_	start_char=14|end_char=16	_	_	CHI
-6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=17|end_char=19	_	_	CHI
+6	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	obj	_	start_char=17|end_char=19	_	_	CHI
 7	montre	montre	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=20|end_char=26	_	_	CHI
 8	!	!	PUNCT	_	_	7	punct	_	start_char=27|end_char=28	_	_	CHI
 
 #sent_id = CHI <au8>
 #text = l est là elle est tombée là !
-1	l	le	PRON	_	Number=Sing|Person=3|PronType=Dem	6	dislocated	_	start_char=0|end_char=1	_	_	CHI
+1	l	le	PRON	_	Number=Sing|Person=3|PronType=Prs	6	obj	_	start_char=0|end_char=1	_	_	CHI
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	start_char=2|end_char=5	_	_	CHI
-3	là	là	ADV	_	_	6	advmod	_	start_char=6|end_char=8	_	_	CHI
+3	là	là	ADV	_	_	1	advmod	_	start_char=6|end_char=8	_	_	CHI
 4	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	start_char=9|end_char=13	_	_	CHI
 5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	start_char=14|end_char=17	_	_	CHI
 6	tombée	tomber	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=18|end_char=24	_	_	CHI
@@ -116,10 +116,10 @@
 #text = jus d'orange s'il te plaît !
 1	jus	jus	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	d'	de	ADP	_	_	3	case	_	start_char=4|end_char=6	_	_	CHI
-3	orange	orange	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=6|end_char=12	_	_	CHI
+3	orange	orange	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=6|end_char=12	_	_	CHI
 4	s'	si	SCONJ	_	_	7	mark	_	start_char=13|end_char=15	_	_	CHI
 5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	start_char=15|end_char=17	_	_	CHI
-6	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	7	iobj	_	start_char=18|end_char=20	_	_	CHI
+6	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	7	obl:arg	_	start_char=18|end_char=20	_	_	CHI
 7	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl	_	start_char=21|end_char=26	_	_	CHI
 8	!	!	PUNCT	_	_	1	punct	_	start_char=27|end_char=28	_	_	CHI
 
@@ -130,17 +130,17 @@
 3	jus	jus	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=8|end_char=11	_	_	CHI
 4	d'	de	ADP	_	_	5	case	_	start_char=12|end_char=14	_	_	CHI
 5	orange	orange	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	start_char=14|end_char=20	_	_	CHI
-6	merci	merci	INTJ	_	_	2	discourse	_	start_char=21|end_char=26	_	_	CHI
+6	merci	merci	INTJ	_	_	2	advmod	_	start_char=21|end_char=26	_	_	CHI
 7	!	!	PUNCT	_	_	2	punct	_	start_char=27|end_char=28	_	_	CHI
 
 #sent_id = CHI <au11>
 #text = c'est qui a renversé l'eau ?
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=0|end_char=2	_	_	CHI
-2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	start_char=2|end_char=5	_	_	CHI
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=0|end_char=2	_	_	CHI
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=5	_	_	CHI
 3	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	start_char=6|end_char=9	_	_	CHI
 4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	start_char=10|end_char=11	_	_	CHI
-5	renversé	renverser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	advcl:cleft	_	start_char=12|end_char=20	_	_	CHI
-6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=21|end_char=23	_	_	CHI
+5	renversé	renverser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	advcl:cleft	_	start_char=12|end_char=20	_	_	CHI
+6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	7	det	_	start_char=21|end_char=23	_	_	CHI
 7	eau	eau	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	start_char=23|end_char=26	_	_	CHI
 8	?	?	PUNCT	_	_	5	punct	_	start_char=27|end_char=28	_	_	CHI
 
@@ -149,9 +149,9 @@
 1	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	2	aux:tense	_	start_char=0|end_char=2	_	_	CHI
 2	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	advcl	_	start_char=3|end_char=5	_	_	CHI
 3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	start_char=6|end_char=7	_	_	CHI
-4	tout	tout	PRON	_	Gender=Masc|Number=Sing	5	obj	_	start_char=8|end_char=12	_	_	CHI
-5	bu	bouvoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=13|end_char=15	_	_	CHI
-6	tout	tout	DET	_	Gender=Masc|Number=Sing	7	det	_	start_char=16|end_char=20	_	_	CHI
+4	tout	tout	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	5	obj	_	start_char=8|end_char=12	_	_	CHI
+5	bu	bevoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=13|end_char=15	_	_	CHI
+6	tout	tout	DET	_	Gender=Masc|Number=Sing|PronType=Ind	7	det	_	start_char=16|end_char=20	_	_	CHI
 7	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	obj	_	start_char=21|end_char=23	_	_	CHI
 8	!	!	PUNCT	_	_	5	punct	_	start_char=24|end_char=25	_	_	CHI
 
@@ -166,13 +166,13 @@
 
 #sent_id = CHI <au14>
 #text = l'est là x tombé là !
-1	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	5	obj	_	start_char=0|end_char=2	_	_	CHI
+1	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	start_char=2|end_char=5	_	_	CHI
-3	là	là	ADV	_	_	5	advmod	_	start_char=6|end_char=8	_	_	CHI
+3	là	là	ADV	_	_	1	advmod	_	start_char=6|end_char=8	_	_	CHI
 4	x	x	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	start_char=9|end_char=10	_	_	CHI
-5	tombé	tomber	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=11|end_char=16	_	_	CHI
+5	tombé	tomber	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	conj	_	start_char=11|end_char=16	_	_	CHI
 6	là	là	ADV	_	_	5	advmod	_	start_char=17|end_char=19	_	_	CHI
-7	!	!	PUNCT	_	_	5	punct	_	start_char=20|end_char=21	_	_	CHI
+7	!	!	PUNCT	_	_	1	punct	_	start_char=20|end_char=21	_	_	CHI
 
 #sent_id = CHI <au15>
 #text = je veux boire de l'eau !
@@ -180,17 +180,17 @@
 2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CHI
 3	boire	boire	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=8|end_char=13	_	_	CHI
 4	de	de	ADP	_	_	6	det	_	start_char=14|end_char=16	_	_	CHI
-5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	fixed	_	start_char=17|end_char=19	_	_	CHI
+5	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	fixed	_	start_char=17|end_char=19	_	_	CHI
 6	eau	eau	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=19|end_char=22	_	_	CHI
 7	!	!	PUNCT	_	_	2	punct	_	start_char=23|end_char=24	_	_	CHI
 
 #sent_id = CHI <au16>
 #text = as vu a de l'eau !
-1	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	aux:tense	_	start_char=0|end_char=2	_	_	CHI
+1	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	2	aux:tense	_	start_char=0|end_char=2	_	_	CHI
 2	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=3|end_char=5	_	_	CHI
 3	a	à	ADP	_	_	6	det	_	start_char=6|end_char=7	_	_	CHI
 4	de	de	ADP	_	_	6	det	_	start_char=8|end_char=10	_	_	CHI
-5	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	fixed	_	start_char=11|end_char=13	_	_	CHI
+5	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	fixed	_	start_char=11|end_char=13	_	_	CHI
 6	eau	eau	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=13|end_char=16	_	_	CHI
 7	!	!	PUNCT	_	_	2	punct	_	start_char=17|end_char=18	_	_	CHI
 
@@ -198,27 +198,27 @@
 #text = a soufflé tout a soufflé dehors ?
 1	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux:tense	_	start_char=0|end_char=1	_	_	CHI
 2	soufflé	souffler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=2|end_char=9	_	_	CHI
-3	tout	tout	PRON	_	Gender=Masc|Number=Sing	5	obj	_	start_char=10|end_char=14	_	_	CHI
+3	tout	tout	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	5	obj	_	start_char=10|end_char=14	_	_	CHI
 4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	start_char=15|end_char=16	_	_	CHI
-5	soufflé	souffler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	start_char=17|end_char=24	_	_	CHI
+5	soufflé	souffler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	parataxis	_	start_char=17|end_char=24	_	_	CHI
 6	dehors	dehors	ADV	_	_	5	advmod	_	start_char=25|end_char=31	_	_	CHI
-7	?	?	PUNCT	_	_	5	punct	_	start_char=32|end_char=33	_	_	CHI
+7	?	?	PUNCT	_	_	2	punct	_	start_char=32|end_char=33	_	_	CHI
 
 #sent_id = CHI <au18>
 #text = veux boire de l'eau !
-1	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
+1	veux	vouloir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
 2	boire	boire	VERB	_	VerbForm=Inf	1	xcomp	_	start_char=5|end_char=10	_	_	CHI
 3	de	de	ADP	_	_	5	det	_	start_char=11|end_char=13	_	_	CHI
-4	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	fixed	_	start_char=14|end_char=16	_	_	CHI
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	fixed	_	start_char=14|end_char=16	_	_	CHI
 5	eau	eau	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=16|end_char=19	_	_	CHI
 6	!	!	PUNCT	_	_	1	punct	_	start_char=20|end_char=21	_	_	CHI
 
 #sent_id = CHI <au19>
 #text = t'as vu a fini !
-1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	5	iobj	_	start_char=0|end_char=2	_	_	CHI
-2	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=2|end_char=4	_	_	CHI
-3	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	ccomp	_	start_char=5|end_char=7	_	_	CHI
+1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	3	obl:arg	_	start_char=0|end_char=2	_	_	CHI
+2	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=2|end_char=4	_	_	CHI
+3	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=5|end_char=7	_	_	CHI
 4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	start_char=8|end_char=9	_	_	CHI
-5	fini	finir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=10|end_char=14	_	_	CHI
-6	!	!	PUNCT	_	_	5	punct	_	start_char=15|end_char=16	_	_	CHI
+5	fini	finir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	parataxis	_	start_char=10|end_char=14	_	_	CHI
+6	!	!	PUNCT	_	_	3	punct	_	start_char=15|end_char=16	_	_	CHI
 

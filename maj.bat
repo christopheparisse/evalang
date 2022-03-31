@@ -1,3 +1,3 @@
 git add .
-git commit -m "Nouvelle presentaion CONLLU dans les fichiers CHAT/CLAN"
+git commit -m "Nouvelle presentation CONLLU dans les fichiers CHAT/CLAN"
 git push origin
