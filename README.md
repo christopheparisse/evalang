@@ -52,10 +52,11 @@ Tous les autres répertoires non mentionnés ci-dessus sont des répertoires con
 - Les commandes de traitement de l'ensemble des répertoires se font dans le sous-système Ubuntu sous Windows pour bénéficier de la puissance du shell et des commandes unix. A peu près la même chose peut être réalisée avec PowerShell sous Windows (ce sera pour une seconde version).
 - Les programmes fonctionnent aussi sous Ubuntu natif et sur MacOS
 - Pour faire tourner les programmes, il faut installer:
-  - Treetagger
-  - Python3
-    - charger les bibliothèques stanza
-  - les commandes clan sous forme de programme externes en compilant unix-clan
+  - Mettre le bon nom de la command Treetagger dans teibasetottg.sh (par exemple ../../evalang/commands/tree-tagger-macos-m1)
+  - Python3 et pip
+    - charger les bibliothèques stanza en faisant ->> pip install stanza
+    - vous aurez probablement d'autres bibliothèques à installer
+  - les commandes clan sous forme de programme externes en compilant unix-clan (cf. )
   - Git si pas déjà disponible
 - Pour interroger les fichiers CLAN, utiliser CLAN (à installer)
 
