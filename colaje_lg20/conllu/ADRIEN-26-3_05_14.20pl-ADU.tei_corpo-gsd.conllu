@@ -95,7 +95,7 @@
 25	!	!	PUNCT	_	_	3	punct	_	start_char=102|end_char=103	_	_	ADU
 
 #sent_id = ADU <au3>
-#text = allez tu vas l'ouvrir tu vas attends on va l'ouvrir ouvre- le pas toi tu vas en mettre de partout ..
+#text = allez tu vas l'ouvrir tu vas attends on va l'ouvrir ouvre- le pas toi tu vas en mettre de partout .
 1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	ADU
 2	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	1	nsubj	_	start_char=6|end_char=8	_	_	ADU
 3	vas	aller	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	parataxis	_	start_char=9|end_char=12	_	_	ADU
@@ -119,9 +119,35 @@
 21	de	de	ADP	_	_	22	case	_	start_char=87|end_char=89	_	_	ADU
 22	partout	partout	ADV	_	_	20	obl:arg	_	start_char=90|end_char=97	_	_	ADU
 23	.	.	PUNCT	_	_	1	punct	_	start_char=98|end_char=99	_	_	ADU
-24	.	.	PUNCT	_	_	1	punct	_	start_char=99|end_char=100	_	_	ADU
 
 #sent_id = ADU <au4>
+#text = ça ça risque d'être trop grand ça on va prendre ton jean Adrien regarde y'a ton ton jean qui fait bermuda !
+1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	ADU
+2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=3|end_char=5	_	_	ADU
+3	risque	risquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=12	_	_	ADU
+4	d'	de	ADP	_	_	7	mark	_	start_char=13|end_char=15	_	_	ADU
+5	être	être	AUX	_	VerbForm=Inf	7	cop	_	start_char=15|end_char=19	_	_	ADU
+6	trop	trop	ADV	_	_	7	advmod	_	start_char=20|end_char=24	_	_	ADU
+7	grand	grand	ADJ	_	Gender=Masc|Number=Sing	3	xcomp	_	start_char=25|end_char=30	_	_	ADU
+8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	obl:mod	_	start_char=31|end_char=33	_	_	ADU
+9	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	10	nsubj	_	start_char=34|end_char=36	_	_	ADU
+10	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	start_char=37|end_char=39	_	_	ADU
+11	prendre	prendre	VERB	_	VerbForm=Inf	10	xcomp	_	start_char=40|end_char=47	_	_	ADU
+12	ton	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=2|PronType=Prs	13	det	_	start_char=48|end_char=51	_	_	ADU
+13	jean	jean	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	start_char=52|end_char=56	_	_	ADU
+14	Adrien	Adrien	PROPN	_	_	13	appos	_	start_char=57|end_char=63	_	_	ADU
+15	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	start_char=64|end_char=71	_	_	ADU
+16	y'	y	PRON	_	Number=Sing|Person=3|PronType=Prs	17	dep:comp	_	start_char=72|end_char=74	_	_	ADU
+17	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	ccomp	_	start_char=74|end_char=75	_	_	ADU
+18	ton	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=2|PronType=Prs	20	det	_	start_char=76|end_char=79	_	_	ADU
+19	ton	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=2|PronType=Prs	20	det	_	start_char=80|end_char=83	_	_	ADU
+20	jean	jean	NOUN	_	Gender=Masc|Number=Sing	17	obj	_	start_char=84|end_char=88	_	_	ADU
+21	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	start_char=89|end_char=92	_	_	ADU
+22	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	_	start_char=93|end_char=97	_	_	ADU
+23	bermuda	bermuda	NOUN	_	Gender=Masc|Number=Sing	22	obj:lvc	_	start_char=98|end_char=105	_	_	ADU
+24	!	!	PUNCT	_	_	3	punct	_	start_char=106|end_char=107	_	_	ADU
+
+#sent_id = ADU <au5>
 #text = vas- y tu en prends un et tu donnes à tout le monde c'est pour tout le monde mon bonhomme c'est pas que pour toi !
 1	vas-	vos	PRON	_	Number=Sing|Person=1|PronType=Prs	5	dislocated	_	start_char=0|end_char=4	_	_	ADU
 2	y	y	PRON	_	Person=3|PronType=Prs	5	obl:arg	_	start_char=5|end_char=6	_	_	ADU
@@ -152,7 +178,7 @@
 27	toi	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	23	obl:mod	_	start_char=109|end_char=112	_	_	ADU
 28	!	!	PUNCT	_	_	5	punct	_	start_char=113|end_char=114	_	_	ADU
 
-#sent_id = ADU <au5>
+#sent_id = ADU <au6>
 #text = vas- y dessine est-ce que tu qu'est-ce que tu sais dessiner t'as montré à Naomi ce que tu savais dessiner ?
 1	vas-	vos	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	start_char=0|end_char=4	_	_	ADU
 2	y	y	PRON	_	Person=3|PronType=Prs	3	obl:arg	_	start_char=5|end_char=6	_	_	ADU
@@ -179,33 +205,6 @@
 23	savais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	20	acl:relcl	_	start_char=90|end_char=96	_	_	ADU
 24	dessiner	dessiner	VERB	_	VerbForm=Inf	23	xcomp	_	start_char=97|end_char=105	_	_	ADU
 25	?	?	PUNCT	_	_	17	punct	_	start_char=106|end_char=107	_	_	ADU
-
-#sent_id = ADU <au6>
-#text = ça ça risque d'être trop grand ça on va prendre ton jean Adrien regarde y'a ton ton jean qui fait bermuda !
-1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	ADU
-2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=3|end_char=5	_	_	ADU
-3	risque	risquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=12	_	_	ADU
-4	d'	de	ADP	_	_	7	mark	_	start_char=13|end_char=15	_	_	ADU
-5	être	être	AUX	_	VerbForm=Inf	7	cop	_	start_char=15|end_char=19	_	_	ADU
-6	trop	trop	ADV	_	_	7	advmod	_	start_char=20|end_char=24	_	_	ADU
-7	grand	grand	ADJ	_	Gender=Masc|Number=Sing	3	xcomp	_	start_char=25|end_char=30	_	_	ADU
-8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	obl:mod	_	start_char=31|end_char=33	_	_	ADU
-9	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	10	nsubj	_	start_char=34|end_char=36	_	_	ADU
-10	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	start_char=37|end_char=39	_	_	ADU
-11	prendre	prendre	VERB	_	VerbForm=Inf	10	xcomp	_	start_char=40|end_char=47	_	_	ADU
-12	ton	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=2|PronType=Prs	13	det	_	start_char=48|end_char=51	_	_	ADU
-13	jean	jean	NOUN	_	Gender=Masc|Number=Sing	11	obj	_	start_char=52|end_char=56	_	_	ADU
-14	Adrien	Adrien	PROPN	_	_	13	appos	_	start_char=57|end_char=63	_	_	ADU
-15	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	start_char=64|end_char=71	_	_	ADU
-16	y'	y	PRON	_	Number=Sing|Person=3|PronType=Prs	17	dep:comp	_	start_char=72|end_char=74	_	_	ADU
-17	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	ccomp	_	start_char=74|end_char=75	_	_	ADU
-18	ton	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=2|PronType=Prs	20	det	_	start_char=76|end_char=79	_	_	ADU
-19	ton	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=2|PronType=Prs	20	det	_	start_char=80|end_char=83	_	_	ADU
-20	jean	jean	NOUN	_	Gender=Masc|Number=Sing	17	obj	_	start_char=84|end_char=88	_	_	ADU
-21	qui	qui	PRON	_	PronType=Rel	22	nsubj	_	start_char=89|end_char=92	_	_	ADU
-22	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	_	start_char=93|end_char=97	_	_	ADU
-23	bermuda	bermuda	NOUN	_	Gender=Masc|Number=Sing	22	obj:lvc	_	start_char=98|end_char=105	_	_	ADU
-24	!	!	PUNCT	_	_	3	punct	_	start_char=106|end_char=107	_	_	ADU
 
 #sent_id = ADU <au7>
 #text = et là regarde qu'est-ce tu fais avec le le qu'est-ce tu fais avec le tuyau au niveau du tracteur ?
@@ -441,7 +440,7 @@
 17	!	!	PUNCT	_	_	2	punct	_	start_char=98|end_char=99	_	_	ADU
 
 #sent_id = ADU <au17>
-#text = t'as vu Adrien ah ben si tu veux faire comme ça elle va pas aimer ..
+#text = t'as vu Adrien ah ben si tu veux faire comme ça elle va pas aimer .
 1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	3	obl:arg	_	start_char=0|end_char=2	_	_	ADU
 2	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=2|end_char=4	_	_	ADU
 3	vu	voir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=5|end_char=7	_	_	ADU
@@ -459,7 +458,6 @@
 15	pas	pas	ADV	_	Polarity=Neg	14	advmod	_	start_char=56|end_char=59	_	_	ADU
 16	aimer	aimer	VERB	_	VerbForm=Inf	14	xcomp	_	start_char=60|end_char=65	_	_	ADU
 17	.	.	PUNCT	_	_	3	punct	_	start_char=66|end_char=67	_	_	ADU
-18	.	.	PUNCT	_	_	3	punct	_	start_char=67|end_char=68	_	_	ADU
 
 #sent_id = ADU <au18>
 #text = allez zou mon bonhomme non non non non non tu tiens pas ça !

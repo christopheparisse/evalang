@@ -6,18 +6,18 @@
 
 #sent_id = ADU <au1>
 #text = oui
-1	oui	oui	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
+1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
 
 #sent_id = CHI <au3>
 #text = i- euh Anaïs là c'est qui ?
 1	i-	i-	INTJ	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	euh	euh	INTJ	_	_	1	fixed	_	start_char=3|end_char=6	_	_	CHI
-3	Anaïs	Anaïs	PROPN	_	_	1	conj	_	start_char=7|end_char=12	_	_	CHI
-4	là	là	ADV	_	_	1	fixed	_	start_char=13|end_char=15	_	_	CHI
-5	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=16|end_char=18	_	_	CHI
-6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=18|end_char=21	_	_	CHI
-7	qui	qui	PRON	_	PronType=Rel	1	nsubj	_	start_char=22|end_char=25	_	_	CHI
-8	?	?	PUNCT	_	_	1	punct	_	start_char=26|end_char=27	_	_	CHI
+3	Anaïs	Anaïs	PROPN	_	_	2	obj	_	start_char=7|end_char=12	_	_	CHI
+4	là	là	ADV	_	_	3	advmod	_	start_char=13|end_char=15	_	_	CHI
+5	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=16|end_char=18	_	_	CHI
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	start_char=18|end_char=21	_	_	CHI
+7	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	start_char=22|end_char=25	_	_	CHI
+8	?	?	PUNCT	_	_	2	punct	_	start_char=26|end_char=27	_	_	CHI
 
 #sent_id = ADU <au5>
 #text = Ludovic
@@ -31,7 +31,7 @@
 #text = oui là c'est ?
 1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
 2	là	là	ADV	_	_	1	fixed	_	start_char=4|end_char=6	_	_	ADU
-3	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	nsubj	_	start_char=7|end_char=9	_	_	ADU
+3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=7|end_char=9	_	_	ADU
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	start_char=9|end_char=12	_	_	ADU
 5	?	?	PUNCT	_	_	1	punct	_	start_char=13|end_char=14	_	_	ADU
 
@@ -43,15 +43,15 @@
 #sent_id = ADU <au13>
 #text = là c'est Ludovic et là c'est qui ici ?
 1	là	là	ADV	_	_	4	advmod	_	start_char=0|end_char=2	_	_	ADU
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=3|end_char=5	_	_	ADU
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=3|end_char=5	_	_	ADU
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=5|end_char=8	_	_	ADU
 4	Ludovic	Ludovic	PROPN	_	_	0	root	_	start_char=9|end_char=16	_	_	ADU
-5	et	et	CCONJ	_	_	10	cc	_	start_char=17|end_char=19	_	_	ADU
-6	là	là	ADV	_	_	10	advmod	_	start_char=20|end_char=22	_	_	ADU
-7	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	nsubj	_	start_char=23|end_char=25	_	_	ADU
-8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	start_char=25|end_char=28	_	_	ADU
+5	et	et	CCONJ	_	_	8	cc	_	start_char=17|end_char=19	_	_	ADU
+6	là	là	ADV	_	_	8	obl:arg	_	start_char=20|end_char=22	_	_	ADU
+7	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	8	expl:subj	_	start_char=23|end_char=25	_	_	ADU
+8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	start_char=25|end_char=28	_	_	ADU
 9	qui	qui	PRON	_	PronType=Rel	10	nsubj	_	start_char=29|end_char=32	_	_	ADU
-10	ici	ici	ADV	_	_	4	conj	_	start_char=33|end_char=36	_	_	ADU
+10	ici	ici	ADV	_	_	8	advmod	_	start_char=33|end_char=36	_	_	ADU
 11	?	?	PUNCT	_	_	4	punct	_	start_char=37|end_char=38	_	_	ADU
 
 #sent_id = CHI <au15>
@@ -62,7 +62,7 @@
 #sent_id = ADU <au17>
 #text = là c'est Ludovic
 1	là	là	ADV	_	_	4	advmod	_	start_char=0|end_char=2	_	_	ADU
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=3|end_char=5	_	_	ADU
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=3|end_char=5	_	_	ADU
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=5|end_char=8	_	_	ADU
 4	Ludovic	Ludovic	PROPN	_	_	0	root	_	start_char=9|end_char=16	_	_	ADU
 
@@ -75,7 +75,7 @@
 
 #sent_id = ADU <au21>
 #text = oui
-1	oui	oui	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
+1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
 
 #sent_id = CHI <au22>
 #text = là Dorothée là Karim
@@ -86,7 +86,7 @@
 
 #sent_id = ADU <au23>
 #text = c'est bien
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	ADU
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	ADU
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	ADU
 3	bien	bien	ADV	_	_	0	root	_	start_char=6|end_char=10	_	_	ADU
 
@@ -102,11 +102,11 @@
 
 #sent_id = ADU <au26>
 #text = non
-1	non	non	ADV	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
+1	non	non	ADV	_	Polarity=Neg	0	root	_	start_char=0|end_char=3	_	_	ADU
 
 #sent_id = ADU <au27>
 #text = c'est Augustin et Dorothée
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	ADU
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	ADU
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	ADU
 3	Augustin	Augustin	PROPN	_	_	0	root	_	start_char=6|end_char=14	_	_	ADU
 4	et	et	CCONJ	_	_	5	cc	_	start_char=15|end_char=17	_	_	ADU
@@ -119,33 +119,33 @@
 3	Dorothée	Dorothée	PROPN	_	_	1	conj	_	start_char=12|end_char=20	_	_	CHI
 4	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	start_char=21|end_char=24	_	_	CHI
 5	voient	voir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=25|end_char=31	_	_	CHI
-6	trois	trois	NUM	_	_	7	nummod	_	start_char=32|end_char=37	_	_	CHI
+6	trois	trois	NUM	_	Number=Plur	7	nummod	_	start_char=32|end_char=37	_	_	CHI
 7	pommes	pomme	NOUN	_	Gender=Fem|Number=Plur	5	obj	_	start_char=38|end_char=44	_	_	CHI
 
 #sent_id = CHI <au29>
 #text = cinq oranges et et une boîte d'ananas et deux bananes et une boîte d'ananas
-1	cinq	cinq	NUM	_	_	2	nummod	_	start_char=0|end_char=4	_	_	CHI
+1	cinq	cinq	NUM	_	Number=Plur	2	nummod	_	start_char=0|end_char=4	_	_	CHI
 2	oranges	orange	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=5|end_char=12	_	_	CHI
 3	et	et	CCONJ	_	_	6	cc	_	start_char=13|end_char=15	_	_	CHI
 4	et	et	CCONJ	_	_	6	cc	_	start_char=16|end_char=18	_	_	CHI
 5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	start_char=19|end_char=22	_	_	CHI
 6	boîte	boîte	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	start_char=23|end_char=28	_	_	CHI
 7	d'	de	ADP	_	_	8	case	_	start_char=29|end_char=31	_	_	CHI
-8	ananas	ananas	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	start_char=31|end_char=37	_	_	CHI
+8	ananas	ananas	NOUN	_	Gender=Masc	6	nmod	_	start_char=31|end_char=37	_	_	CHI
 9	et	et	CCONJ	_	_	11	cc	_	start_char=38|end_char=40	_	_	CHI
-10	deux	deux	NUM	_	_	11	nummod	_	start_char=41|end_char=45	_	_	CHI
+10	deux	deux	NUM	_	Number=Plur	11	nummod	_	start_char=41|end_char=45	_	_	CHI
 11	bananes	banane	NOUN	_	Gender=Fem|Number=Plur	2	conj	_	start_char=46|end_char=53	_	_	CHI
 12	et	et	CCONJ	_	_	14	cc	_	start_char=54|end_char=56	_	_	CHI
 13	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	start_char=57|end_char=60	_	_	CHI
 14	boîte	boîte	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	start_char=61|end_char=66	_	_	CHI
 15	d'	de	ADP	_	_	16	case	_	start_char=67|end_char=69	_	_	CHI
-16	ananas	ananas	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	start_char=69|end_char=75	_	_	CHI
+16	ananas	ananas	NOUN	_	Gender=Masc	14	nmod	_	start_char=69|end_char=75	_	_	CHI
 
 #sent_id = ADU <au30>
 #text = c'est bien tu tournes la page ?
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=0|end_char=2	_	_	ADU
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=0|end_char=2	_	_	ADU
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	start_char=2|end_char=5	_	_	ADU
-3	bien	bien	ADV	_	_	1	fixed	_	start_char=6|end_char=10	_	_	ADU
+3	bien	bien	ADV	_	_	5	advmod	_	start_char=6|end_char=10	_	_	ADU
 4	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	5	nsubj	_	start_char=11|end_char=13	_	_	ADU
 5	tournes	tourner	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=14|end_char=21	_	_	ADU
 6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=22|end_char=24	_	_	ADU
@@ -155,7 +155,7 @@
 #sent_id = CHI <au31>
 #text = lé- euh Dorothée elle a renversé tout sur la table et et et
 1	lé-	lé-	INTJ	_	_	6	discourse	_	start_char=0|end_char=3	_	_	CHI
-2	euh	euh	INTJ	_	_	1	fixed	_	start_char=4|end_char=7	_	_	CHI
+2	euh	euh	INTJ	_	_	6	discourse	_	start_char=4|end_char=7	_	_	CHI
 3	Dorothée	Dorothée	PROPN	_	_	6	nsubj	_	start_char=8|end_char=16	_	_	CHI
 4	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	start_char=17|end_char=21	_	_	CHI
 5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	start_char=22|end_char=23	_	_	CHI
@@ -163,7 +163,7 @@
 7	tout	tout	ADV	_	_	10	advmod	_	start_char=33|end_char=37	_	_	CHI
 8	sur	sur	ADP	_	_	10	case	_	start_char=38|end_char=41	_	_	CHI
 9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	start_char=42|end_char=44	_	_	CHI
-10	table	table	NOUN	_	Gender=Fem|Number=Sing	6	obl	_	start_char=45|end_char=50	_	_	CHI
+10	table	table	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	start_char=45|end_char=50	_	_	CHI
 11	et	et	CCONJ	_	_	13	cc	_	start_char=51|end_char=53	_	_	CHI
 12	et	et	CCONJ	_	_	13	cc	_	start_char=54|end_char=56	_	_	CHI
 13	et	et	CCONJ	_	_	6	conj	_	start_char=57|end_char=59	_	_	CHI
@@ -176,16 +176,16 @@
 #text = Augustin il Augustin
 1	Augustin	Augustin	PROPN	_	_	0	root	_	start_char=0|end_char=8	_	_	CHI
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=9|end_char=11	_	_	CHI
-3	Augustin	Augustin	PROPN	_	_	1	appos	_	start_char=12|end_char=20	_	_	CHI
+3	Augustin	Augustin	PROPN	_	_	1	flat:name	_	start_char=12|end_char=20	_	_	CHI
 
 #sent_id = ADU <au34>
 #text = il range les pommes avec les pommes
 1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	ADU
 2	range	ranger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	ADU
-3	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	start_char=9|end_char=12	_	_	ADU
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	start_char=9|end_char=12	_	_	ADU
 4	pommes	pomme	NOUN	_	Gender=Fem|Number=Plur	2	obj	_	start_char=13|end_char=19	_	_	ADU
 5	avec	avec	ADP	_	_	7	case	_	start_char=20|end_char=24	_	_	ADU
-6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	start_char=25|end_char=28	_	_	ADU
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	start_char=25|end_char=28	_	_	ADU
 7	pommes	pomme	NOUN	_	Gender=Fem|Number=Plur	2	obl:mod	_	start_char=29|end_char=35	_	_	ADU
 
 #sent_id = CHI <au35>
@@ -194,45 +194,45 @@
 2	Augustin	Augustin	PROPN	_	_	4	nsubj	_	start_char=3|end_char=11	_	_	CHI
 3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=12|end_char=14	_	_	CHI
 4	range	ranger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=15|end_char=20	_	_	CHI
-5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	start_char=21|end_char=24	_	_	CHI
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=21|end_char=24	_	_	CHI
 6	pommes	pomme	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	start_char=25|end_char=31	_	_	CHI
 7	avec	avec	ADP	_	_	9	case	_	start_char=32|end_char=36	_	_	CHI
-8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	start_char=37|end_char=40	_	_	CHI
+8	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	start_char=37|end_char=40	_	_	CHI
 9	pommes	pomme	NOUN	_	Gender=Fem|Number=Plur	4	obl:mod	_	start_char=41|end_char=47	_	_	CHI
 
 #sent_id = CHI <au36>
 #text = il range les pommes avec les pommes
 1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CHI
 2	range	ranger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	CHI
-3	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	start_char=9|end_char=12	_	_	CHI
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	start_char=9|end_char=12	_	_	CHI
 4	pommes	pomme	NOUN	_	Gender=Fem|Number=Plur	2	obj	_	start_char=13|end_char=19	_	_	CHI
 5	avec	avec	ADP	_	_	7	case	_	start_char=20|end_char=24	_	_	CHI
-6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	start_char=25|end_char=28	_	_	CHI
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	start_char=25|end_char=28	_	_	CHI
 7	pommes	pomme	NOUN	_	Gender=Fem|Number=Plur	2	obl:mod	_	start_char=29|end_char=35	_	_	CHI
 
 #sent_id = CHI <au37>
 #text = il range les oranges avec les oranges
 1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CHI
 2	range	ranger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	CHI
-3	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	start_char=9|end_char=12	_	_	CHI
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	start_char=9|end_char=12	_	_	CHI
 4	oranges	orange	NOUN	_	Gender=Fem|Number=Plur	2	obj	_	start_char=13|end_char=20	_	_	CHI
 5	avec	avec	ADP	_	_	7	case	_	start_char=21|end_char=25	_	_	CHI
-6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	start_char=26|end_char=29	_	_	CHI
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	start_char=26|end_char=29	_	_	CHI
 7	oranges	orange	NOUN	_	Gender=Fem|Number=Plur	2	obl:mod	_	start_char=30|end_char=37	_	_	CHI
 
 #sent_id = CHI <au38>
 #text = il les bananes avec les deux bananes
 1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=0|end_char=2	_	_	CHI
-2	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	start_char=3|end_char=6	_	_	CHI
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	start_char=3|end_char=6	_	_	CHI
 3	bananes	banane	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=7|end_char=14	_	_	CHI
 4	avec	avec	ADP	_	_	7	case	_	start_char=15|end_char=19	_	_	CHI
-5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	start_char=20|end_char=23	_	_	CHI
-6	deux	deux	NUM	_	_	7	nummod	_	start_char=24|end_char=28	_	_	CHI
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	start_char=20|end_char=23	_	_	CHI
+6	deux	deux	NUM	_	Number=Plur	7	nummod	_	start_char=24|end_char=28	_	_	CHI
 7	bananes	banane	NOUN	_	Gender=Fem|Number=Plur	3	nmod	_	start_char=29|end_char=36	_	_	CHI
 
 #sent_id = ADU <au39>
 #text = oui
-1	oui	oui	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
+1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
 
 #sent_id = CHI <au40>
 #text = il range la boîte toute seule
@@ -240,7 +240,7 @@
 2	range	ranger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	CHI
 3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=9|end_char=11	_	_	CHI
 4	boîte	boîte	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=12|end_char=17	_	_	CHI
-5	toute	tout	DET	_	Gender=Fem|Number=Sing	6	det	_	start_char=18|end_char=23	_	_	CHI
+5	toute	tout	DET	_	Gender=Fem|Number=Sing|PronType=Ind	6	det	_	start_char=18|end_char=23	_	_	CHI
 6	seule	seul	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	start_char=24|end_char=29	_	_	CHI
 
 #sent_id = ADU <au41>
@@ -265,7 +265,7 @@
 1	et	et	CCONJ	_	_	3	cc	_	start_char=0|end_char=2	_	_	CHI
 2	Dorothée	Dorothée	PROPN	_	_	3	nsubj	_	start_char=3|end_char=11	_	_	CHI
 3	apporte	apporter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=12|end_char=19	_	_	CHI
-4	deux	deux	NUM	_	_	5	nummod	_	start_char=20|end_char=24	_	_	CHI
+4	deux	deux	NUM	_	Number=Plur	5	nummod	_	start_char=20|end_char=24	_	_	CHI
 5	couteaux	couteau	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	start_char=25|end_char=33	_	_	CHI
 6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=34|end_char=37	_	_	CHI
 7	cuillère	cuillère	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=38|end_char=46	_	_	CHI
@@ -273,7 +273,7 @@
 #sent_id = CHI <au45>
 #text = et et de de de sucre une une une cuillère de sucre
 1	et	et	CCONJ	_	_	10	cc	_	start_char=0|end_char=2	_	_	CHI
-2	et	et	CCONJ	_	_	1	fixed	_	start_char=3|end_char=5	_	_	CHI
+2	et	et	CCONJ	_	_	3	cc	_	start_char=3|end_char=5	_	_	CHI
 3	de	de	ADP	_	_	6	case	_	start_char=6|end_char=8	_	_	CHI
 4	de	de	ADP	_	_	3	fixed	_	start_char=9|end_char=11	_	_	CHI
 5	de	de	ADP	_	_	4	fixed	_	start_char=12|end_char=14	_	_	CHI
@@ -303,7 +303,7 @@
 #sent_id = ADU <au48>
 #text = oui c'est bien tu peux tourner
 1	oui	oui	INTJ	_	_	6	discourse	_	start_char=0|end_char=3	_	_	ADU
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=4|end_char=6	_	_	ADU
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=4|end_char=6	_	_	ADU
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	start_char=6|end_char=9	_	_	ADU
 4	bien	bien	ADV	_	_	6	advmod	_	start_char=10|end_char=14	_	_	ADU
 5	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	6	nsubj	_	start_char=15|end_char=17	_	_	ADU
@@ -316,23 +316,23 @@
 2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=9|end_char=13	_	_	CHI
 3	coule	couler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=14|end_char=19	_	_	CHI
 4	sur	sur	ADP	_	_	6	case	_	start_char=20|end_char=23	_	_	CHI
-5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	start_char=24|end_char=27	_	_	CHI
-6	habits	habit	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	start_char=28|end_char=34	_	_	CHI
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=24|end_char=27	_	_	CHI
+6	habits	habit	NOUN	_	Gender=Masc|Number=Plur	3	obl:mod	_	start_char=28|end_char=34	_	_	CHI
 
 #sent_id = ADU <au50>
 #text = c'est bien
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	ADU
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	ADU
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	ADU
 3	bien	bien	ADV	_	_	0	root	_	start_char=6|end_char=10	_	_	ADU
 
 #sent_id = CHI <au51>
 #text = et aussi et et euh Augustin et Dorothée
 1	et	et	CCONJ	_	_	6	cc	_	start_char=0|end_char=2	_	_	CHI
-2	aussi	aussi	ADV	_	_	0	root	_	start_char=3|end_char=8	_	_	CHI
-3	et	et	CCONJ	_	_	6	cc	_	start_char=9|end_char=11	_	_	CHI
-4	et	et	CCONJ	_	_	6	cc	_	start_char=12|end_char=14	_	_	CHI
+2	aussi	aussi	ADV	_	_	6	advmod	_	start_char=3|end_char=8	_	_	CHI
+3	et	et	CCONJ	_	_	5	cc	_	start_char=9|end_char=11	_	_	CHI
+4	et	et	CCONJ	_	_	5	cc	_	start_char=12|end_char=14	_	_	CHI
 5	euh	euh	INTJ	_	_	2	conj	_	start_char=15|end_char=18	_	_	CHI
-6	Augustin	Augustin	PROPN	_	_	5	obl:arg	_	start_char=19|end_char=27	_	_	CHI
+6	Augustin	Augustin	PROPN	_	_	0	root	_	start_char=19|end_char=27	_	_	CHI
 7	et	et	CCONJ	_	_	8	cc	_	start_char=28|end_char=30	_	_	CHI
 8	Dorothée	Dorothée	PROPN	_	_	6	conj	_	start_char=31|end_char=39	_	_	CHI
 
@@ -341,13 +341,13 @@
 1	Augustin	Augustin	PROPN	_	_	3	nsubj	_	start_char=0|end_char=8	_	_	CHI
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=9|end_char=11	_	_	CHI
 3	épluche	éplucher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=12|end_char=19	_	_	CHI
-4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	start_char=20|end_char=23	_	_	CHI
-5	trois	trois	NUM	_	_	6	nummod	_	start_char=24|end_char=29	_	_	CHI
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=20|end_char=23	_	_	CHI
+5	trois	trois	NUM	_	Number=Plur	6	nummod	_	start_char=24|end_char=29	_	_	CHI
 6	pommes	pomme	NOUN	_	Gender=Fem|Number=Plur	3	obj	_	start_char=30|end_char=36	_	_	CHI
 7	et	et	CCONJ	_	_	9	cc	_	start_char=37|end_char=39	_	_	CHI
 8	et	et	CCONJ	_	_	9	cc	_	start_char=40|end_char=42	_	_	CHI
 9	Anaïs	Anaïs	PROPN	_	_	6	conj	_	start_char=43|end_char=48	_	_	CHI
-10	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	conj	_	start_char=49|end_char=53	_	_	CHI
+10	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	flat:name	_	start_char=49|end_char=53	_	_	CHI
 
 #sent_id = ADU <au53>
 #text = et Augustin
@@ -370,20 +370,20 @@
 2	Dorothée	Dorothée	PROPN	_	_	4	nsubj	_	start_char=3|end_char=11	_	_	CHI
 3	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	start_char=12|end_char=15	_	_	CHI
 4	épluchent	éplucher	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=16|end_char=25	_	_	CHI
-5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	start_char=26|end_char=29	_	_	CHI
-6	cinq	cinq	NUM	_	_	7	nummod	_	start_char=30|end_char=34	_	_	CHI
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	start_char=26|end_char=29	_	_	CHI
+6	cinq	cinq	NUM	_	Number=Plur	7	nummod	_	start_char=30|end_char=34	_	_	CHI
 7	oranges	orange	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	start_char=35|end_char=42	_	_	CHI
 
 #sent_id = ADU <au57>
 #text = c'est bien
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	ADU
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	ADU
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	ADU
 3	bien	bien	ADV	_	_	0	root	_	start_char=6|end_char=10	_	_	ADU
 
 #sent_id = CHI <au58>
 #text = les les fruits ils
-1	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	start_char=0|end_char=3	_	_	CHI
-2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	start_char=4|end_char=7	_	_	CHI
+1	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	start_char=0|end_char=3	_	_	CHI
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	start_char=4|end_char=7	_	_	CHI
 3	fruits	fruit	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=8|end_char=14	_	_	CHI
 4	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	appos	_	start_char=15|end_char=18	_	_	CHI
 
@@ -414,18 +414,18 @@
 4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=18|end_char=20	_	_	CHI
 5	boîte	boîte	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=21|end_char=26	_	_	CHI
 6	de	de	ADP	_	_	8	case	_	start_char=27|end_char=29	_	_	CHI
-7	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	start_char=30|end_char=32	_	_	CHI
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	start_char=30|end_char=32	_	_	CHI
 8	ananas	ananas	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=32|end_char=38	_	_	CHI
 
 #sent_id = CHI <au62>
 #text = et et et Dorothée elle renverse les bouts de bananes et aussi *
 1	et	et	CCONJ	_	_	6	cc	_	start_char=0|end_char=2	_	_	CHI
-2	et	et	CCONJ	_	_	1	fixed	_	start_char=3|end_char=5	_	_	CHI
-3	et	et	CCONJ	_	_	4	cc	_	start_char=6|end_char=8	_	_	CHI
-4	Dorothée	Dorothée	PROPN	_	_	1	conj	_	start_char=9|end_char=17	_	_	CHI
+2	et	et	CCONJ	_	_	6	cc	_	start_char=3|end_char=5	_	_	CHI
+3	et	et	CCONJ	_	_	6	cc	_	start_char=6|end_char=8	_	_	CHI
+4	Dorothée	Dorothée	PROPN	_	_	6	nsubj	_	start_char=9|end_char=17	_	_	CHI
 5	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	start_char=18|end_char=22	_	_	CHI
 6	renverse	renverser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=23|end_char=31	_	_	CHI
-7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	start_char=32|end_char=35	_	_	CHI
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	start_char=32|end_char=35	_	_	CHI
 8	bouts	bout	NOUN	_	Gender=Masc|Number=Plur	6	obj	_	start_char=36|end_char=41	_	_	CHI
 9	de	de	ADP	_	_	10	case	_	start_char=42|end_char=44	_	_	CHI
 10	bananes	banane	NOUN	_	Gender=Fem|Number=Plur	8	nmod	_	start_char=45|end_char=52	_	_	CHI
@@ -444,10 +444,10 @@
 3	Augustin	Augustin	PROPN	_	_	1	flat:name	_	start_char=7|end_char=15	_	_	CHI
 4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	start_char=16|end_char=18	_	_	CHI
 5	renverse	renverser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=19|end_char=27	_	_	CHI
-6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	start_char=28|end_char=31	_	_	CHI
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	start_char=28|end_char=31	_	_	CHI
 7	bouts	bout	NOUN	_	Gender=Masc|Number=Plur	5	obj	_	start_char=32|end_char=37	_	_	CHI
 8	d'	de	ADP	_	_	9	case	_	start_char=38|end_char=40	_	_	CHI
-9	ananas	ananas	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	start_char=40|end_char=46	_	_	CHI
+9	ananas	ananas	NOUN	_	Gender=Masc	7	nmod	_	start_char=40|end_char=46	_	_	CHI
 
 #sent_id = ADU <au65>
 #text = dans le saladier
@@ -463,22 +463,22 @@
 
 #sent_id = ADU <au67>
 #text = oui
-1	oui	oui	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
+1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
 
 #sent_id = CHI <au68>
 #text = * c'est qui ça ?
-1	*	*	PUNCT	_	_	5	punct	_	start_char=0|end_char=1	_	_	CHI
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=2|end_char=4	_	_	CHI
-3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=4|end_char=7	_	_	CHI
+1	*	*	PUNCT	_	_	3	punct	_	start_char=0|end_char=1	_	_	CHI
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=2|end_char=4	_	_	CHI
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=4|end_char=7	_	_	CHI
 4	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	start_char=8|end_char=11	_	_	CHI
-5	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=12|end_char=14	_	_	CHI
-6	?	?	PUNCT	_	_	5	punct	_	start_char=15|end_char=16	_	_	CHI
+5	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=12|end_char=14	_	_	CHI
+6	?	?	PUNCT	_	_	3	punct	_	start_char=15|end_char=16	_	_	CHI
 
 #sent_id = ADU <au69>
 #text = alors il y a Karim Ludovic et Anaïs
 1	alors	alors	ADV	_	_	4	advmod	_	start_char=0|end_char=5	_	_	ADU
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl:subj	_	start_char=6|end_char=8	_	_	ADU
-3	y	y	PRON	_	_	4	expl:comp	_	start_char=9|end_char=10	_	_	ADU
+3	y	y	PRON	_	Person=3|PronType=Prs	4	dep:comp	_	start_char=9|end_char=10	_	_	ADU
 4	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=11|end_char=12	_	_	ADU
 5	Karim	Karim	PROPN	_	_	4	obj	_	start_char=13|end_char=18	_	_	ADU
 6	Ludovic	Ludovic	PROPN	_	_	5	flat:name	_	start_char=19|end_char=26	_	_	ADU
@@ -489,7 +489,7 @@
 #text = Ka- Karim Ludovic
 1	Ka-	Ka-	PROPN	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	Karim	Karim	PROPN	_	_	1	flat:name	_	start_char=4|end_char=9	_	_	CHI
-3	Ludovic	Ludovic	PROPN	_	_	1	flat:name	_	start_char=10|end_char=17	_	_	CHI
+3	Ludovic	Ludovic	PROPN	_	_	2	flat:name	_	start_char=10|end_char=17	_	_	CHI
 
 #sent_id = ADU <au71>
 #text = et Anaïs
@@ -506,11 +506,11 @@
 #sent_id = ADU <au73>
 #text = oui Ludovic oui qu'est ce qu'ils sont venus
 1	oui	oui	INTJ	_	_	3	discourse	_	start_char=0|end_char=3	_	_	ADU
-2	Ludovic	Ludovic	PROPN	_	_	3	nsubj	_	start_char=4|end_char=11	_	_	ADU
-3	oui	oui	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=12|end_char=15	_	_	ADU
-4	qu'	que	PRON	_	PronType=Rel	3	ccomp	_	start_char=16|end_char=19	_	_	ADU
-5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=19|end_char=22	_	_	ADU
-6	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=23|end_char=25	_	_	ADU
+2	Ludovic	Ludovic	PROPN	_	_	1	flat:name	_	start_char=4|end_char=11	_	_	ADU
+3	oui	oui	ADV	_	_	0	root	_	start_char=12|end_char=15	_	_	ADU
+4	qu'	que	SCONJ	_	_	6	acl:relcl	_	start_char=16|end_char=19	_	_	ADU
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=19|end_char=22	_	_	ADU
+6	ce	ce	PRON	_	Gender=Masc|Person=3|PronType=Dem	3	ccomp	_	start_char=23|end_char=25	_	_	ADU
 7	qu'	que	PRON	_	PronType=Rel	10	obj	_	start_char=26|end_char=29	_	_	ADU
 8	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	start_char=29|end_char=32	_	_	ADU
 9	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	start_char=33|end_char=37	_	_	ADU
@@ -518,9 +518,9 @@
 
 #sent_id = ADU <au74>
 #text = pourquoi ils sont
-1	pourquoi	pourquoi	ADV	_	_	2	advmod	_	start_char=0|end_char=8	_	_	ADU
-2	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	0	root	_	start_char=9|end_char=12	_	_	ADU
-3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	start_char=13|end_char=17	_	_	ADU
+1	pourquoi	pourquoi	ADV	_	_	3	advmod	_	start_char=0|end_char=8	_	_	ADU
+2	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	start_char=9|end_char=12	_	_	ADU
+3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13|end_char=17	_	_	ADU
 
 #sent_id = CHI <au75>
 #text = ils
@@ -533,10 +533,10 @@
 
 #sent_id = CHI <au77>
 #text = sont dans la cuisine
-1	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=0|end_char=4	_	_	CHI
+1	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
 2	dans	dans	ADP	_	_	4	case	_	start_char=5|end_char=9	_	_	CHI
 3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=10|end_char=12	_	_	CHI
-4	cuisine	cuisine	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=13|end_char=20	_	_	CHI
+4	cuisine	cuisine	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	start_char=13|end_char=20	_	_	CHI
 
 #sent_id = CHI <au78>
 #text = et renverse le sucre dans dans le saladier
@@ -565,10 +565,10 @@
 #sent_id = CHI <au80>
 #text = et les amis et les amis viennent pour manger la salade de fruits
 1	et	et	CCONJ	_	_	7	cc	_	start_char=0|end_char=2	_	_	CHI
-2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	start_char=3|end_char=6	_	_	CHI
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	start_char=3|end_char=6	_	_	CHI
 3	amis	ami	NOUN	_	Gender=Masc|Number=Plur	7	nsubj	_	start_char=7|end_char=11	_	_	CHI
 4	et	et	CCONJ	_	_	6	cc	_	start_char=12|end_char=14	_	_	CHI
-5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	start_char=15|end_char=18	_	_	CHI
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=15|end_char=18	_	_	CHI
 6	amis	ami	NOUN	_	Gender=Masc|Number=Plur	3	conj	_	start_char=19|end_char=23	_	_	CHI
 7	viennent	venir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=24|end_char=32	_	_	CHI
 8	pour	pour	ADP	_	_	9	mark	_	start_char=33|end_char=37	_	_	CHI
@@ -581,17 +581,19 @@
 #sent_id = ADU <au81>
 #text = oh c'est très bien bravo bravo bravo bravo c'est très bien $$$
 1	oh	oh	INTJ	_	_	6	discourse	_	start_char=0|end_char=2	_	_	ADU
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=3|end_char=5	_	_	ADU
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=3|end_char=5	_	_	ADU
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=5|end_char=8	_	_	ADU
 4	très	très	ADV	_	_	5	advmod	_	start_char=9|end_char=13	_	_	ADU
 5	bien	bien	ADV	_	_	6	advmod	_	start_char=14|end_char=18	_	_	ADU
 6	bravo	bravo	INTJ	_	_	0	root	_	start_char=19|end_char=24	_	_	ADU
-7	bravo	bravo	INTJ	_	_	6	discourse	_	start_char=25|end_char=30	_	_	ADU
-8	bravo	bravo	INTJ	_	_	6	discourse	_	start_char=31|end_char=36	_	_	ADU
-9	bravo	bravo	INTJ	_	_	6	discourse	_	start_char=37|end_char=42	_	_	ADU
-10	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	14	nsubj	_	start_char=43|end_char=45	_	_	ADU
+7	bravo	bravo	INTJ	_	_	6	ccomp	_	start_char=25|end_char=30	_	_	ADU
+8	bravo	bravo	INTJ	_	_	6	parataxis	_	start_char=31|end_char=36	_	_	ADU
+9	bravo	bravo	INTJ	_	_	8	advmod	_	start_char=37|end_char=42	_	_	ADU
+10	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	14	nsubj	_	start_char=43|end_char=45	_	_	ADU
 11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	start_char=45|end_char=48	_	_	ADU
 12	très	très	ADV	_	_	13	advmod	_	start_char=49|end_char=53	_	_	ADU
 13	bien	bien	ADV	_	_	14	advmod	_	start_char=54|end_char=58	_	_	ADU
-14	$$$	$$$	PUNCT	_	_	6	parataxis	_	start_char=59|end_char=62	_	_	ADU
+14	$	$	SYM	_	Number=Plur	6	conj	_	start_char=59|end_char=60	_	_	ADU
+15	$	$	SYM	_	Number=Plur	14	nmod	_	start_char=60|end_char=61	_	_	ADU
+16	$	$	SYM	_	Number=Plur	14	nmod	_	start_char=61|end_char=62	_	_	ADU
 

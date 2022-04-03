@@ -28,7 +28,7 @@
 26	!	!	PUNCT	_	_	21	punct	_	start_char=120|end_char=121	_	_	ADU
 
 #sent_id = ADU <au1>
-#text = tiens tout ça on va le je- on va on va on va mettre de côté tous les tous les vieux jouets là parce que ..
+#text = tiens tout ça on va le je- on va on va on va mettre de côté tous les tous les vieux jouets là parce que .
 1	tiens	tenir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	ADU
 2	tout	tout	DET	_	Gender=Masc|Number=Sing|PronType=Ind	3	det	_	start_char=6|end_char=10	_	_	ADU
 3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	obj	_	start_char=11|end_char=13	_	_	ADU
@@ -55,7 +55,7 @@
 24	là	là	ADV	_	_	15	advmod	_	start_char=91|end_char=93	_	_	ADU
 25	parce	parce	ADV	_	_	24	advmod	_	start_char=94|end_char=99	_	_	ADU
 26	que	que	SCONJ	_	_	25	fixed	_	start_char=100|end_char=103	_	_	ADU
-27	..	..	PUNCT	_	_	1	punct	_	start_char=104|end_char=106	_	_	ADU
+27	.	.	PUNCT	_	_	1	punct	_	start_char=104|end_char=105	_	_	ADU
 
 #sent_id = ADU <au2>
 #text = le camion de pompiers vite vite vite faut qu'il rentre à la caserne y'a le feu en plus à la caserne !
@@ -419,22 +419,19 @@
 14	?	?	PUNCT	_	_	5	punct	_	start_char=53|end_char=54	_	_	ADU
 
 #sent_id = ADU <au19>
-#text = range- le Adrien au lieu de faire ça range- le dans la boîte !
-1	range-	range-	INTJ	_	_	10	discourse	_	start_char=0|end_char=6	_	_	ADU
-2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	start_char=7|end_char=9	_	_	ADU
-3	Adrien	Adrien	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	_	start_char=10|end_char=16	_	_	ADU
-4-5	au	_	_	_	_	_	_	_	start_char=17|end_char=19	_	_	ADU
-4	à	à	ADP	_	_	3	advmod	_	_	_	_	ADU
-5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	fixed	_	_	_	_	ADU
-6	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	4	fixed	_	start_char=20|end_char=24	_	_	ADU
-7	de	de	ADP	_	_	8	mark	_	start_char=25|end_char=27	_	_	ADU
-8	faire	faire	VERB	_	VerbForm=Inf	4	xcomp	_	start_char=28|end_char=33	_	_	ADU
-9	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	nsubj	_	start_char=34|end_char=36	_	_	ADU
-10	range	ranger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=37|end_char=42	_	_	ADU
-11	-	-	PUNCT	_	_	12	punct	_	start_char=42|end_char=43	_	_	ADU
-12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	advmod	_	start_char=44|end_char=46	_	_	ADU
-13	dans	dans	ADP	_	_	15	case	_	start_char=47|end_char=51	_	_	ADU
-14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	start_char=52|end_char=54	_	_	ADU
-15	boîte	boîte	NOUN	_	Gender=Fem|Number=Sing	10	obl:mod	_	start_char=55|end_char=60	_	_	ADU
-16	!	!	PUNCT	_	_	10	punct	_	start_char=61|end_char=62	_	_	ADU
+#text = ça t'en as plus besoin ça ça c'est pour les bébés !
+1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	ADU
+2	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obl:arg	_	start_char=3|end_char=5	_	_	ADU
+3	en	en	PRON	_	Person=3|PronType=Prs	4	dep:comp	_	start_char=5|end_char=7	_	_	ADU
+4	as	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8|end_char=10	_	_	ADU
+5	plus	plus	ADV	_	_	4	advmod	_	start_char=11|end_char=15	_	_	ADU
+6	besoin	besoin	NOUN	_	Gender=Masc|Number=Sing	4	obj:lvc	_	start_char=16|end_char=22	_	_	ADU
+7	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	obj	_	start_char=23|end_char=25	_	_	ADU
+8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	obl:mod	_	start_char=26|end_char=28	_	_	ADU
+9	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	nsubj	_	start_char=29|end_char=31	_	_	ADU
+10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	start_char=31|end_char=34	_	_	ADU
+11	pour	pour	ADP	_	_	13	case	_	start_char=35|end_char=39	_	_	ADU
+12	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	13	det	_	start_char=40|end_char=43	_	_	ADU
+13	bébés	bébé	NOUN	_	Gender=Masc|Number=Plur	4	parataxis	_	start_char=44|end_char=49	_	_	ADU
+14	!	!	PUNCT	_	_	4	punct	_	start_char=50|end_char=51	_	_	ADU
 

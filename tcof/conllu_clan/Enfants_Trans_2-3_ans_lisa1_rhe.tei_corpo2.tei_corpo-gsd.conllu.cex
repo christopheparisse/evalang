@@ -14,29 +14,29 @@
 @Comment:	ADU education: Etudes Supérieures, dialect: native, role: , scope: local, check: yes, ageinfo: 40 ans ?
 @Comment:	CHI education: Maternelle, dialect: native, role: , scope: local, check: yes, ageinfo: 2.11.17
 *CHI: non parce que*
-%lng: 3
-%cpxx: 1
-%cpxdt: [0, 1, 1, 0]
-%%details: 0 non 1 parce 1 que* 0
-%morph:	non<ADV/advmod> parce<ADV/root> que*<PUNCT/punct> 
+%lng: 4
+%cpxx: 2
+%cpxdt: [0, 2, 2, 1, 0]
+%%details: 0 non 2 parce 2 que 1 * 0
+%morph:	non<ADV/root-Neg> parce<ADV/fixed> que<SCONJ/fixed> *<PUNCT/punct> 
 *ADU: que quoi ?
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 que 1 quoi 1 ? 0
-%morph:	que<SCONJ/case> quoi<PRON/root> ?<PUNCT/punct> 
+%morph:	que<SCONJ/mark> quoi<PRON/root-3-Int> ?<PUNCT/punct> 
 *CHI: parce seule xxx
 %lng: 3
-%cpxx: 1
-%cpxdt: [0, 1, 1, 0]
-%%details: 0 parce 1 seule 1 xxx 0
-%morph:	parce<ADV/advmod> seule<ADJ/root-Fem-Sing> xxx<PUNCT/punct> 
+%cpxx: 2
+%cpxdt: [0, 1, 2, 0]
+%%details: 0 parce 1 seule 2 xxx 0
+%morph:	parce<ADV/advmod> seule<ADJ/amod-Fem-Sing> xxx<NOUN/root-Fem-Sing> 
 *ADU: elle est toute seule
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 0]
 %%details: 0 elle 1 est 2 toute 3 seule 0
-%morph:	elle<PRON/nsubj-Fem-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> toute<DET/det-Fem-Sing> seule<ADJ/root-Fem-Sing> 
+%morph:	elle<PRON/nsubj-Fem-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> toute<DET/det-Fem-Sing-Ind> seule<ADJ/root-Fem-Sing> 
 *CHI: maintenant ?
 %lng: 1
 %cpxx: 1
@@ -48,13 +48,13 @@
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: tu /veux vas/ encore xxx ?
 %lng: 7
 %cpxx: 4
-%cpxdt: [0, 2, 3, 1, 2, 3, 4, 1, 0]
-%%details: 0 tu 2 / 3 veux 1 vas 2 / 3 encore 4 xxx 1 ? 0
-%morph:	tu<PRON/nsubj-Sing-2-Prs> /<SYM/cc> veux<VERB/conj-Ind-Sing-2-Pres-Fin> vas<VERB/root-Ind-Sing-2-Pres-Fin> /<SYM/cc> encore<ADV/advmod> xxx<NOUN/obj-Masc-Sing> ?<PUNCT/punct> 
+%cpxdt: [0, 1, 2, 2, 2, 3, 4, 1, 0]
+%%details: 0 tu 1 / 2 veux 2 vas 2 / 3 encore 4 xxx 1 ? 0
+%morph:	tu<PRON/nsubj-Sing-2-Prs> /<SYM/cc> veux<VERB/conj-Ind-Sing-1-Pres-Fin> vas<VERB/root-Ind-Sing-2-Pres-Fin> /<SYM/cc> encore<ADV/advmod> xxx<NOUN/obj-Masc-Sing> ?<PUNCT/punct> 
 *CHI: beaucoup beaucoup
 %lng: 2
 %cpxx: 1
@@ -62,23 +62,23 @@
 %%details: 0 beaucoup 1 beaucoup 0
 %morph:	beaucoup<ADV/advmod> beaucoup<ADV/root> 
 *ADU: j'en /mets ai/ beaucoup ?
-%lng: 6
+%lng: 7
 %cpxx: 3
-%cpxdt: [0, 2, 3, 1, 2, 3, 1, 0]
-%%details: 0 j'en 2 / 3 mets 1 ai 2 / 3 beaucoup 1 ? 0
-%morph:	j'en<X/nsubj-Yes> /<SYM/cc> mets<VERB/conj-Ind-Plur-2-Pres-Fin> ai<VERB/root-Ind-Sing-1-Pres-Fin> /<SYM/cc> beaucoup<ADV/advmod> ?<PUNCT/punct> 
+%cpxdt: [0, 1, 2, 3, 2, 2, 3, 1, 0]
+%%details: 0 j' 1 en 2 / 3 mets 2 ai 2 / 3 beaucoup 1 ? 0
+%morph:	j'<PRON/nsubj-Sing-1-Prs> en<PRON/obl:arg-3-Prs> /<SYM/cc> mets<VERB/conj-Ind-Sing-1-Pres-Fin> ai<VERB/root-Ind-Sing-1-Pres-Fin> /<SYM/cc> beaucoup<ADV/advmod> ?<PUNCT/punct> 
 *CHI: ouais
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: d'accord
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 d' 1 accord 0
-%morph:	d'<ADP/case> accord<NOUN/root-Masc-Sing> 
+%morph:	d'<ADP/root> accord<NOUN/fixed-Masc-Sing> 
 *CHI: beaucoup aussi
 %lng: 2
 %cpxx: 1
@@ -94,39 +94,39 @@
 *CHI: ouais non pas stop stop stop
 %lng: 6
 %cpxx: 3
-%cpxdt: [0, 2, 3, 1, 2, 1, 0]
-%%details: 0 ouais 2 non 3 pas 1 stop 2 stop 1 stop 0
-%morph:	ouais<INTJ/discourse> non<ADV/advmod> pas<ADV/fixed-Neg> stop<ADV/advmod> stop<NOUN/root-Masc-Sing> stop<PUNCT/punct> 
+%cpxdt: [0, 2, 3, 1, 2, 3, 0]
+%%details: 0 ouais 2 non 3 pas 1 stop 2 stop 3 stop 0
+%morph:	ouais<INTJ/root> non<ADV/advmod-Neg> pas<ADV/advmod-Neg> stop<NOUN/nmod-Masc-Sing> stop<NOUN/nmod-Masc-Sing> stop<NOUN/appos-Masc-Sing> 
 *ADU: ça déborde c'est bon là ?
 %lng: 6
-%cpxx: 4
-%cpxdt: [0, 1, 2, 3, 4, 2, 1, 0]
-%%details: 0 ça 1 déborde 2 c' 3 est 4 bon 2 là 1 ? 0
-%morph:	ça<PRON/nsubj-Masc-Sing-3-Dem> déborde<VERB/root-Ind-Sing-3-Pres-Fin> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> bon<ADJ/ccomp-Masc-Sing> là<ADV/advmod> ?<PUNCT/punct> 
+%cpxx: 3
+%cpxdt: [0, 1, 1, 2, 3, 2, 1, 0]
+%%details: 0 ça 1 déborde 1 c' 2 est 3 bon 2 là 1 ? 0
+%morph:	ça<PRON/nsubj-Masc-Sing-3-Dem> déborde<VERB/root-Ind-Sing-3-Pres-Fin> c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> bon<ADJ/parataxis-Masc-Sing> là<ADV/advmod> ?<PUNCT/punct> 
 *CHI: c'est beaucoup
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 1, 2, 0]
 %%details: 0 c' 1 est 2 beaucoup 0
-%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> beaucoup<ADV/root> 
+%morph:	c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> beaucoup<ADV/root> 
 *ADU: c'est beaucoup ?
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 0]
 %%details: 0 c' 1 est 2 beaucoup 1 ? 0
-%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> beaucoup<ADV/root> ?<PUNCT/punct> 
+%morph:	c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> beaucoup<ADV/root> ?<PUNCT/punct> 
 *CHI: ouais
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: oui mais c'est ce que tu veux beaucoup d'eau
 %lng: 11
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 1, 2, 3, 1, 1, 2, 0]
 %%details: 0 oui 1 mais 2 c' 3 est 4 ce 1 que 2 tu 3 veux 1 beaucoup 1 d' 2 eau 0
-%morph:	oui<INTJ/discourse> mais<CCONJ/cc> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> ce<PRON/root-Sing-3-Dem> que<PRON/obj-Rel> tu<PRON/nsubj-Sing-2-Prs> veux<VERB/acl:relcl-Ind-Sing-1-Pres-Fin> beaucoup<ADV/obj> d'<ADP/case> eau<NOUN/obl:arg-Fem-Sing> 
+%morph:	oui<INTJ/discourse> mais<CCONJ/cc> c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> ce<PRON/root-Masc-3-Dem> que<PRON/obj-Rel> tu<PRON/nsubj-Sing-2-Prs> veux<VERB/acl:relcl-Ind-Sing-1-Pres-Fin> beaucoup<ADV/obj> d'<ADP/case> eau<NOUN/dep:comp-Fem-Sing> 
 *CHI: je veux
 %lng: 2
 %cpxx: 1
@@ -135,22 +135,22 @@
 %morph:	je<PRON/nsubj-Sing-1-Prs> veux<VERB/root-Ind-Sing-1-Pres-Fin> 
 *ADU: comme ça on va pouvoir nettoyer nos pinceaux ok ?
 %lng: 9
-%cpxx: 4
-%cpxdt: [0, 1, 2, 3, 2, 2, 3, 4, 2, 1, 0]
-%%details: 0 comme 1 ça 2 on 3 va 2 pouvoir 2 nettoyer 3 nos 4 pinceaux 2 ok 1 ? 0
-%morph:	comme<SCONJ/mark> ça<PRON/nsubj-Masc-Sing-3-Dem> on<PRON/nsubj-Masc-Sing-3> va<VERB/root-Ind-Sing-3-Pres-Fin> pouvoir<VERB/xcomp-Inf> nettoyer<VERB/xcomp-Inf> nos<DET/det-Masc-Plur-Yes-Prs> pinceaux<NOUN/obj-Masc-Plur> ok<ADV/advmod> ?<PUNCT/punct> 
+%cpxx: 3
+%cpxdt: [0, 1, 1, 2, 2, 2, 2, 3, 2, 1, 0]
+%%details: 0 comme 1 ça 1 on 2 va 2 pouvoir 2 nettoyer 2 nos 3 pinceaux 2 ok 1 ? 0
+%morph:	comme<ADP/case> ça<PRON/obl:mod-Masc-Sing-3-Dem> on<PRON/nsubj-Masc-Sing-3-Ind> va<VERB/root-Ind-Sing-3-Pres-Fin> pouvoir<VERB/xcomp-Inf> nettoyer<VERB/xcomp-Inf> nos<DET/det-Plur-Plur-1-Prs> pinceaux<NOUN/obj-Masc-Plur> ok<INTJ/appos> ?<PUNCT/punct> 
 *CHI: ouais ok
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 ouais 1 ok 0
-%morph:	ouais<INTJ/root> ok<SYM/parataxis> 
+%morph:	ouais<INTJ/root> ok<INTJ/discourse> 
 *ADU: regarde mis ta manche dedans le verre
 %lng: 7
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 2, 3, 0]
 %%details: 0 regarde 1 mis 2 ta 3 manche 1 dedans 2 le 3 verre 0
-%morph:	regarde<VERB/root-Ind-Sing-1-Pres-Fin> mis<VERB/xcomp-Masc-Sing-Past-Part> ta<DET/det-Fem-Sing-Yes-Prs> manche<NOUN/obj-Fem-Sing> dedans<ADP/case> le<DET/det-Def-Masc-Sing-Art> verre<NOUN/obl-Masc-Sing> 
+%morph:	regarde<VERB/root-Ind-Sing-3-Pres-Fin> mis<VERB/xcomp-Masc-Past-Part> ta<DET/det-Fem-Sing-Sing-2-Prs> manche<NOUN/obj-Fem-Sing> dedans<ADP/case> le<DET/det-Def-Masc-Sing-Art> verre<NOUN/obl:mod-Masc-Sing> 
 *CHI: pourquoi ?
 %lng: 1
 %cpxx: 1
@@ -162,85 +162,85 @@
 %cpxx: 6
 %cpxdt: [0, 1, 2, 3, 4, 2, 3, 4, 5, 6, 1, 0]
 %%details: 0 tu 1 as 2 mis 3 ta 4 manche 2 mais 3 c' 4 est 5 pas 6 grave 1 xxx 0
-%morph:	tu<PRON/nsubj-Sing-2-Prs> as<AUX/aux:tense-Ind-Sing-2-Pres-Fin> mis<VERB/root-Masc-Sing-Past-Part> ta<DET/det-Fem-Sing-Yes-Prs> manche<NOUN/obj-Fem-Sing> mais<CCONJ/cc> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> grave<ADJ/conj-Masc-Sing> xxx<PUNCT/punct> 
+%morph:	tu<PRON/nsubj-Sing-2-Prs> as<AUX/aux:tense-Ind-Sing-2-Pres-Fin> mis<VERB/root-Masc-Past-Part> ta<DET/det-Fem-Sing-Sing-2-Prs> manche<NOUN/obj-Fem-Sing> mais<CCONJ/cc> c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> grave<ADJ/conj-Masc-Sing> xxx<PUNCT/punct> 
 *CHI: c'est exprès
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 1, 2, 0]
 %%details: 0 c' 1 est 2 exprès 0
-%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> exprès<ADV/root> 
+%morph:	c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> exprès<ADV/root> 
 *ADU: comme tu as ta blouse
 %lng: 5
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 2, 0]
 %%details: 0 comme 1 tu 2 as 1 ta 2 blouse 0
-%morph:	comme<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> as<VERB/root-Ind-Sing-2-Pres-Fin> ta<DET/det-Fem-Sing-Yes-Prs> blouse<NOUN/obj-Fem-Sing> 
+%morph:	comme<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> as<VERB/root-Ind-Sing-2-Pres-Fin> ta<DET/det-Sing-Sing-2-Prs> blouse<NOUN/obj-Fem-Sing> 
 *CHI: c'est exprès
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 1, 2, 0]
 %%details: 0 c' 1 est 2 exprès 0
-%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> exprès<ADV/root> 
+%morph:	c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> exprès<ADV/root> 
 *ADU: /c'est tu fais/ exprès ?
 %lng: 7
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 2, 3, 1, 0]
 %%details: 0 / 1 c' 2 est 3 tu 4 fais 2 / 3 exprès 1 ? 0
-%morph:	/<SYM/cc> c'<PRON/nsubj-Sing-3-Dem> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> tu<PRON/nsubj-Sing-2-Prs> fais<VERB/root-Ind-Sing-2-Pres-Fin> /<SYM/cc> exprès<ADV/advmod> ?<PUNCT/punct> 
+%morph:	/<SYM/cc> c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> tu<PRON/nsubj-Sing-2-Prs> fais<VERB/root-Ind-Sing-2-Pres-Fin> /<SYM/cc> exprès<PRON/obj-Masc-Sing-3-Prs> ?<PUNCT/punct> 
 *CHI: ouais c'est exprès ça
 %lng: 5
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 0]
 %%details: 0 ouais 1 c' 2 est 3 exprès 4 ça 0
-%morph:	ouais<INTJ/discourse> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> exprès<ADV/advmod> ça<PRON/root-Masc-Sing-3-Dem> 
+%morph:	ouais<INTJ/discourse> c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> exprès<DET/det-Masc-Sing-Dem> ça<PRON/root-Masc-Sing-3-Dem> 
 *ADU: hum oh
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 hum 1 oh 0
-%morph:	hum<INTJ/root> oh<SYM/parataxis> 
+%morph:	hum<INTJ/root> oh<PUNCT/punct> 
 *CHI: c'est exprès
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 1, 2, 0]
 %%details: 0 c' 1 est 2 exprès 0
-%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> exprès<ADV/root> 
+%morph:	c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> exprès<ADV/root> 
 *ADU: tu as fait tomber la peinture c'est pas grave
 %lng: 10
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 2, 3, 1, 2, 3, 4, 0]
 %%details: 0 tu 1 as 2 fait 3 tomber 2 la 3 peinture 1 c' 2 est 3 pas 4 grave 0
-%morph:	tu<PRON/nsubj:caus-Sing-2-Prs> as<AUX/aux:tense-Ind-Sing-2-Pres-Fin> fait<AUX/aux:caus-Masc-Sing-Past-Part> tomber<VERB/root-Inf> la<DET/det-Def-Fem-Sing-Art> peinture<NOUN/obj:agent-Fem-Sing> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> grave<ADJ/parataxis-Fem-Sing> 
+%morph:	tu<PRON/nsubj:caus-Sing-2-Prs> as<AUX/aux:tense-Ind-Sing-2-Pres-Fin> fait<AUX/aux:caus-Masc-Sing-Past-Part> tomber<VERB/root-Inf> la<DET/det-Def-Fem-Sing-Art> peinture<NOUN/obj-Fem-Sing> c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> grave<ADJ/conj-Masc-Sing> 
 *CHI: tu trempes ton pinceau
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 1, 2, 0]
 %%details: 0 tu 1 trempes 1 ton 2 pinceau 0
-%morph:	tu<PRON/nsubj-Sing-2-Prs> trempes<VERB/root-Ind-Sing-2-Pres-Fin> ton<DET/det-Masc-Sing-Yes-Prs> pinceau<NOUN/obj-Masc-Sing> 
+%morph:	tu<PRON/nsubj-Sing-2-Prs> trempes<VERB/root-Ind-Plur-2-Pres-Fin> ton<DET/det-Sing-Sing-2-Prs> pinceau<NOUN/obj-Masc-Sing> 
 *ADU: ouais
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *CHI: xxx
-%lng: 6
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 0, 0, 0]
-%%details: 0 xx 1 de 2 les 3 x 0 de 0 les 0
-%morph:	xx<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> x<_/_> de<ADP/case> les<DET/root-Def-Plur-Art> 
+%lng: 1
+%cpxx: 0
+%cpxdt: [0, 0]
+%%details: 0 xxx 0
+%morph:	xxx<PUNCT/root> 
 *ADU: faut qu'on nettoie la peinture
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 2, 0]
 %%details: 0 faut 1 qu' 2 on 3 nettoie 1 la 2 peinture 0
-%morph:	faut<VERB/root-Ind-Sing-3-Pres-Fin> qu'<SCONJ/mark> on<PRON/nsubj-Masc-Sing-3> nettoie<VERB/ccomp-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> peinture<NOUN/obj-Fem-Sing> 
+%morph:	faut<VERB/root-Ind-Sing-3-Pres-Fin> qu'<SCONJ/mark> on<PRON/nsubj-Masc-Sing-3-Ind> nettoie<VERB/ccomp-Ind-Sing-3-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> peinture<NOUN/obj-Fem-Sing> 
 *CHI: ah
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ah 0
-%morph:	ah<SYM/root> 
+%morph:	ah<PUNCT/root> 
 *ADU: tu
 %lng: 1
 %cpxx: 0
@@ -252,19 +252,19 @@
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 fais 0
-%morph:	fais<VERB/root-Ind-Sing-1-Pres-Fin> 
+%morph:	fais<INTJ/root> 
 *ADU: tout tomber je prends du sopalin d'accord ?
 %lng: 10
-%cpxx: 5
-%cpxdt: [0, 1, 1, 2, 3, 5, 4, 2, 2, 1, 0, 0]
-%%details: 0 tout 1 tomber 1 je 2 prends 3 du 5 de 4 le 2 sopalin 2 d' 1 accord 0 ? 0
-%morph:	tout<PRON/obj-Masc-Sing> tomber<VERB/advcl-Inf> je<PRON/nsubj-Sing-1-Prs> prends<VERB/root-Ind-Sing-1-Pres-Fin> du<_/_> de<ADP/det> le<DET/fixed-Def-Masc-Sing-Art> sopalin<NOUN/obj-Masc-Sing> d'<ADP/advmod> accord<NOUN/fixed-Masc-Sing> ?<PUNCT/punct> 
+%cpxx: 4
+%cpxdt: [0, 1, 1, 2, 2, 3, 4, 2, 2, 1, 0, 0]
+%%details: 0 tout 1 tomber 1 je 2 prends 2 du 3 de 4 le 2 sopalin 2 d' 1 accord 0 ? 0
+%morph:	tout<PRON/obj-Masc-Sing-3-Ind> tomber<VERB/advcl-Inf> je<PRON/nsubj-Sing-1-Prs> prends<VERB/root-Ind-Sing-1-Pres-Fin> du<_/_> de<ADP/det> le<DET/det-Def-Masc-Sing-Art> sopalin<NOUN/obj-Masc-Sing> d'<ADP/advmod> accord<NOUN/fixed-Masc-Sing> ?<PUNCT/punct> 
 *CHI: /ouais quoi/ comme pour s'essuyer
 %lng: 8
 %cpxx: 5
-%cpxdt: [0, 1, 2, 1, 2, 3, 4, 5, 0]
-%%details: 0 / 1 ouais 2 quoi 1 / 2 comme 3 pour 4 s' 5 essuyer 0
-%morph:	/<SYM/cc> ouais<INTJ/root> quoi<PRON/obl:arg> /<SYM/cc> comme<SCONJ/mark> pour<ADP/mark> s'<PRON/expl:comp-3-Prs> essuyer<VERB/advcl-Inf> 
+%cpxdt: [0, 1, 1, 1, 2, 3, 4, 5, 0]
+%%details: 0 / 1 ouais 1 quoi 1 / 2 comme 3 pour 4 s' 5 essuyer 0
+%morph:	/<SYM/advmod> ouais<INTJ/discourse> quoi<PRON/root-3-Int> /<SYM/cc> comme<SCONJ/mark> pour<ADP/mark> s'<PRON/obj-3-Prs> essuyer<VERB/acl-Inf> 
 *ADU: pour essuyer la tâche là
 %lng: 5
 %cpxx: 3
@@ -276,19 +276,19 @@
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: j'essuie comme ça on verra plus rien d'accord ?
 %lng: 10
-%cpxx: 5
-%cpxdt: [0, 1, 2, 3, 4, 5, 4, 3, 2, 2, 1, 0]
-%%details: 0 j' 1 essuie 2 comme 3 ça 4 on 5 verra 4 plus 3 rien 2 d' 2 accord 1 ? 0
-%morph:	j'<PRON/nsubj-Sing-1-Prs> essuie<VERB/root-Ind-Sing-1-Pres-Fin> comme<SCONJ/mark> ça<PRON/nsubj-Masc-Sing-3-Dem> on<PRON/nsubj-Masc-Sing-3> verra<VERB/advcl-Ind-Sing-3-Fut-Fin> plus<ADV/obj> rien<PRON/obj-Sing> d'<ADP/advmod> accord<NOUN/fixed-Masc-Sing> ?<PUNCT/punct> 
+%cpxx: 4
+%cpxdt: [0, 1, 3, 4, 2, 3, 3, 2, 2, 2, 1, 0]
+%%details: 0 j' 1 essuie 3 comme 4 ça 2 on 3 verra 3 plus 2 rien 2 d' 2 accord 1 ? 0
+%morph:	j'<PRON/nsubj-Sing-1-Prs> essuie<VERB/root-Ind-Sing-1-Pres-Fin> comme<ADP/case> ça<PRON/obl:mod-Masc-Sing-3-Dem> on<PRON/nsubj-Masc-Sing-3-Ind> verra<VERB/ccomp-Ind-Sing-3-Fut-Fin> plus<ADV/advmod> rien<PRON/obj-Masc-Sing-3-Neg> d'<ADP/advmod> accord<NOUN/fixed-Masc-Sing> ?<PUNCT/punct> 
 *CHI: ouais
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: voilà
 %lng: 1
 %cpxx: 0
@@ -306,67 +306,67 @@
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 0]
 %%details: 0 c' 1 est 2 ton 3 soleil 1 ? 0
-%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> ton<DET/det-Masc-Sing-Yes-Prs> soleil<NOUN/root-Masc-Sing> ?<PUNCT/punct> 
+%morph:	c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> ton<DET/det-Sing-Sing-2-Prs> soleil<NOUN/root-Masc-Sing> ?<PUNCT/punct> 
 *CHI: ouais c'est pour toi
 %lng: 5
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 0]
 %%details: 0 ouais 1 c' 2 est 3 pour 4 toi 0
-%morph:	ouais<INTJ/discourse> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pour<ADP/case> toi<PRON/root-Sing-2> 
+%morph:	ouais<INTJ/discourse> c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pour<ADP/case> toi<PRON/root-Sing-2-Prs> 
 *ADU: c'est pour euh moi ?
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 1, 0]
 %%details: 0 c' 1 est 2 pour 3 euh 2 moi 1 ? 0
-%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pour<ADP/mark> euh<VERB/root-Ind-Sing-2-Pres-Fin> moi<PRON/obj-Sing-1> ?<PUNCT/punct> 
+%morph:	c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pour<ADP/mark> euh<VERB/root-Ind-Sing-2-Pres-Fin> moi<PRON/obj-Sing-1-Prs> ?<PUNCT/punct> 
 *CHI: ouais
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: moi
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 moi 0
-%morph:	moi<PRON/root-Sing-1> 
+%morph:	moi<PRON/root-Sing-1-Prs> 
 *ADU: j'en
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 j' 1 en 0
-%morph:	j'<PRON/nsubj-Sing-1-Prs> en<PRON/root-3> 
+%morph:	j'<PRON/nsubj-Sing-1-Prs> en<PRON/root-3-Prs> 
 *CHI: xxx
-%lng: 6
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 0, 0, 0]
-%%details: 0 xx 1 de 2 les 3 x 0 de 0 les 0
-%morph:	xx<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> x<_/_> de<ADP/case> les<DET/root-Def-Plur-Art> 
+%lng: 1
+%cpxx: 0
+%cpxdt: [0, 0]
+%%details: 0 xxx 0
+%morph:	xxx<PUNCT/root> 
 *ADU: fais un pour toi alors d'accord ?
 %lng: 7
 %cpxx: 4
 %cpxdt: [0, 4, 3, 4, 2, 3, 2, 1, 0]
 %%details: 0 fais 4 un 3 pour 4 toi 2 alors 3 d' 2 accord 1 ? 0
-%morph:	fais<VERB/root-Ind-Sing-1-Pres-Fin> un<PRON/obj-Masc-Sing> pour<ADP/case> toi<PRON/obl-Sing-2> alors<ADV/advmod> d'<ADP/advmod> accord<NOUN/fixed-Masc-Sing> ?<PUNCT/punct> 
+%morph:	fais<VERB/root-Imp-Sing-1-Pres-Fin> un<PRON/obj-Masc-Sing-3-Ind> pour<ADP/case> toi<PRON/obl:mod-Sing-2-Prs> alors<ADV/advmod> d'<ADP/advmod> accord<NOUN/fixed-Masc-Sing> ?<PUNCT/punct> 
 *CHI: ouais je sais les faire moi
 %lng: 6
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 2, 1, 0]
 %%details: 0 ouais 1 je 2 sais 1 les 2 faire 1 moi 0
-%morph:	ouais<INTJ/discourse> je<PRON/nsubj-Sing-1-Prs> sais<VERB/root-Ind-Sing-1-Pres-Fin> les<PRON/obj-Plur-3-Prs> faire<VERB/xcomp-Inf> moi<PRON/obj-Sing-1> 
+%morph:	ouais<INTJ/discourse> je<PRON/nsubj-Sing-1-Prs> sais<VERB/root-Ind-Sing-1-Pres-Fin> les<PRON/obj-Plur-3-Prs> faire<VERB/xcomp-Inf> moi<PRON/obj-Sing-1-Prs> 
 *ADU: mais oui tu sais les faire
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 2, 0]
 %%details: 0 mais 1 oui 2 tu 3 sais 1 les 2 faire 0
-%morph:	mais<CCONJ/cc> oui<INTJ/discourse> tu<PRON/nsubj-Sing-2-Prs> sais<VERB/root-Ind-Sing-2-Pres-Fin> les<PRON/obj-Plur-3-Prs> faire<VERB/xcomp-Inf> 
+%morph:	mais<CCONJ/cc> oui<ADV/advmod> tu<PRON/nsubj-Sing-2-Prs> sais<VERB/root-Ind-Sing-1-Pres-Fin> les<PRON/obj-Plur-3-Prs> faire<VERB/xcomp-Inf> 
 *ADU: quelle couleur tu veux ? rouge
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 1, 2, 1, 0]
 %%details: 0 quelle 1 couleur 1 tu 2 veux 1 ? 0
-%morph:	quelle<DET/det-Fem-Sing> couleur<NOUN/obj-Fem-Sing> tu<PRON/nsubj-Sing-2-Prs> veux<VERB/root-Ind-Sing-1-Pres-Fin> ?<PUNCT/punct> 
+%morph:	quelle<DET/det-Fem-Sing-Exc> couleur<NOUN/obj-Fem-Sing> tu<PRON/nsubj-Sing-2-Prs> veux<VERB/root-Ind-Sing-1-Pres-Fin> ?<PUNCT/punct> 
 *ADU: quelle couleur tu veux ? rouge
 %lng: 1
 %cpxx: 0
@@ -378,7 +378,7 @@
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 ouais 1 ro- 0
-%morph:	ouais<INTJ/root> ro-<PUNCT/punct> 
+%morph:	ouais<INTJ/root> ro-<X/conj> 
 *ADU: jaune ?
 %lng: 1
 %cpxx: 1
@@ -402,43 +402,43 @@
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: il y a du bleu aussi si tu veux
 %lng: 9
 %cpxx: 4
-%cpxdt: [0, 1, 2, 2, 3, 1, 2, 3, 4, 0]
-%%details: 0 il 1 y 2 a 2 du 3 bleu 1 aussi 2 si 3 tu 4 veux 0
-%morph:	il<PRON/expl:subj-Masc-Sing-3-Prs> y<PRON/expl:comp> a<VERB/root-Ind-Sing-3-Pres-Fin> du<DET/det-Masc-Sing> bleu<NOUN/obj-Masc-Sing> aussi<ADV/advmod> si<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> veux<VERB/advcl-Ind-Sing-1-Pres-Fin> 
+%cpxdt: [0, 1, 2, 3, 4, 2, 1, 2, 3, 0]
+%%details: 0 il 1 y 2 a 3 du 4 bleu 2 aussi 1 si 2 tu 3 veux 0
+%morph:	il<PRON/expl:subj-Masc-Sing-3-Prs> y<PRON/dep:comp-3-Prs> a<VERB/root-Ind-Sing-3-Pres-Fin> du<DET/det-Ind-Masc-Sing-Art> bleu<NOUN/obj-Masc-Sing> aussi<ADV/advmod> si<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> veux<VERB/advcl-Ind-Sing-1-Pres-Fin> 
 *ADU: comme tes yeux tu as les yeux bleus
 %lng: 8
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 2, 1, 2, 1, 0]
 %%details: 0 comme 1 tes 2 yeux 1 tu 2 as 1 les 2 yeux 1 bleus 0
-%morph:	comme<ADP/case> tes<DET/det-Masc-Plur-Yes-Prs> yeux<NOUN/obl:mod-Masc-Plur> tu<PRON/nsubj-Sing-2-Prs> as<VERB/root-Ind-Sing-2-Pres-Fin> les<DET/det-Def-Masc-Plur-Art> yeux<NOUN/obj-Masc-Plur> bleus<ADJ/amod-Masc-Plur> 
+%morph:	comme<ADP/case> tes<DET/det-Plur-Plur-2-Prs> yeux<NOUN/obl:mod-Masc-Plur> tu<PRON/nsubj-Sing-2-Prs> as<VERB/root-Ind-Plur-2-Pres-Fin> les<DET/det-Def-Plur-Art> yeux<NOUN/obj-Masc-Plur> bleus<ADJ/amod-Masc-Plur> 
 *ADU: moi aussi regarde
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 1, 2, 0]
 %%details: 0 moi 1 aussi 2 regarde 0
-%morph:	moi<PRON/nsubj-Sing-1> aussi<ADV/advmod> regarde<VERB/root-Ind-Sing-1-Pres-Fin> 
+%morph:	moi<PRON/nsubj-Sing-1-Prs> aussi<ADV/advmod> regarde<VERB/root-Ind-Sing-1-Pres-Fin> 
 *CHI: tu me donnes encore de la peinture ?
 %lng: 7
 %cpxx: 4
-%cpxdt: [0, 1, 2, 3, 2, 3, 4, 1, 0]
-%%details: 0 tu 1 me 2 donnes 3 encore 2 de 3 la 4 peinture 1 ? 0
-%morph:	tu<PRON/nsubj-Sing-2-Prs> me<PRON/expl:comp-Sing-1-Prs> donnes<VERB/root-Ind-Plur-2-Pres-Fin> encore<ADV/advmod> de<ADP/case> la<DET/det-Def-Fem-Sing-Art> peinture<NOUN/obl:arg-Fem-Sing> ?<PUNCT/punct> 
+%cpxdt: [0, 1, 2, 3, 2, 4, 3, 1, 0]
+%%details: 0 tu 1 me 2 donnes 3 encore 2 de 4 la 3 peinture 1 ? 0
+%morph:	tu<PRON/nsubj-Sing-2-Prs> me<PRON/dep:comp-Sing-1-Prs> donnes<VERB/root-Ind-Plur-1-Pres-Fin> encore<ADV/advmod> de<ADP/det> la<DET/fixed-Def-Fem-Sing-Art> peinture<NOUN/obl:arg-Fem-Sing> ?<PUNCT/punct> 
 *ADU: tu veux que je te peinture ?
 %lng: 6
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 4, 5, 1, 0]
 %%details: 0 tu 1 veux 2 que 3 je 4 te 5 peinture 1 ? 0
-%morph:	tu<PRON/nsubj-Sing-2-Prs> veux<VERB/root-Ind-Sing-1-Pres-Fin> que<SCONJ/mark> je<PRON/nsubj-Sing-1-Prs> te<PRON/iobj-Sing-2-Prs> peinture<VERB/ccomp-Ind-Sing-1-Pres-Fin> ?<PUNCT/punct> 
+%morph:	tu<PRON/nsubj-Sing-2-Prs> veux<VERB/root-Ind-Sing-1-Pres-Fin> que<SCONJ/mark> je<PRON/nsubj-Sing-1-Prs> te<PRON/obl:arg-Sing-2-Prs> peinture<VERB/ccomp-Ind-Sing-1-Pres-Fin> ?<PUNCT/punct> 
 *CHI: ouais
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: laquelle ?
 %lng: 1
 %cpxx: 1
@@ -448,15 +448,15 @@
 *CHI: euh l'autre là là-bas xxx le petit le petit
 %lng: 10
 %cpxx: 6
-%cpxdt: [0, 1, 2, 1, 2, 3, 6, 5, 4, 5, 0]
-%%details: 0 euh 1 l' 2 autre 1 là 2 là-bas 3 xxx 6 le 5 petit 4 le 5 petit 0
-%morph:	euh<INTJ/discourse> l'<DET/det-Def-Sing-Art> autre<PRON/nsubj-Sing> là<ADV/advmod> là-bas<ADV/advmod> xxx<ADP/advmod> le<DET/fixed-Def-Masc-Sing-Art> petit<ADJ/fixed-Masc-Sing> le<DET/det-Def-Masc-Sing-Art> petit<ADJ/root-Masc-Sing> 
+%cpxdt: [0, 1, 2, 2, 1, 2, 3, 4, 5, 6, 0]
+%%details: 0 euh 1 l' 2 autre 2 là 1 là-bas 2 xxx 3 le 4 petit 5 le 6 petit 0
+%morph:	euh<INTJ/root> l'<DET/det-Def-Sing-Art> autre<PRON/obj-Sing-3-Ind> là<ADV/advmod> là-bas<ADV/advmod> xxx<ADP/case> le<DET/det-Def-Masc-Sing-Art> petit<ADJ/amod-Masc-Sing> le<DET/det-Def-Masc-Sing-Art> petit<ADJ/amod-Masc-Sing> 
 *ADU: les petites ? où ils
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 les 1 petites 1 ? 0
-%morph:	les<DET/det-Def-Fem-Plur-Art> petites<ADJ/root-Fem-Plur> ?<PUNCT/punct> 
+%morph:	les<DET/det-Def-Plur-Art> petites<NOUN/root-Fem-Plur> ?<PUNCT/punct> 
 *ADU: les petites ? où ils
 %lng: 2
 %cpxx: 1
@@ -464,11 +464,11 @@
 %%details: 0 où 1 ils 0
 %morph:	où<ADV/advmod-Rel> ils<PRON/root-Masc-Plur-3-Prs> 
 *CHI: xxx xxx
-%lng: 6
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 0, 0, 0]
-%%details: 0 xxx 1 de 2 les 3 xxx 0 de 0 les 0
-%morph:	xxx<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> xxx<_/_> de<ADP/case> les<DET/root-Def-Plur-Art> 
+%lng: 2
+%cpxx: 1
+%cpxdt: [0, 1, 0]
+%%details: 0 xxx 1 xxx 0
+%morph:	xxx<NOUN/root-Masc-Sing> xxx<NOUN/nmod-Masc-Sing> 
 *ADU: sont ? xxx
 %lng: 1
 %cpxx: 1
@@ -482,11 +482,11 @@
 %%details: 0 xxx 0
 %morph:	xxx<PUNCT/root> 
 *CHI: xxx
-%lng: 6
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 0, 0, 0]
-%%details: 0 xx 1 de 2 les 3 x 0 de 0 les 0
-%morph:	xx<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> x<_/_> de<ADP/case> les<DET/root-Def-Plur-Art> 
+%lng: 1
+%cpxx: 0
+%cpxdt: [0, 0]
+%%details: 0 xxx 0
+%morph:	xxx<PUNCT/root> 
 *ADU: pardon ?
 %lng: 1
 %cpxx: 1
@@ -510,19 +510,19 @@
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *CHI: ouais
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: c'est
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 c' 1 est 0
-%morph:	c'<PRON/root-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> 
+%morph:	c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/root-Ind-Sing-3-Pres-Fin> 
 *ADU: là-dedans
 %lng: 1
 %cpxx: 0
@@ -534,43 +534,43 @@
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: il y en a plus
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 0]
 %%details: 0 il 1 y 2 en 3 a 1 plus 0
-%morph:	il<PRON/expl:subj-Masc-Sing-3-Prs> y<PRON/expl:comp> en<PRON/expl:comp-3> a<VERB/root-Ind-Sing-3-Pres-Fin> plus<ADV/advmod> 
+%morph:	il<PRON/expl:subj-Masc-Sing-3-Prs> y<PRON/dep:comp-3-Prs> en<PRON/dep:comp-3-Prs> a<VERB/root-Ind-Sing-3-Pres-Fin> plus<ADV/advmod> 
 *CHI: xxx
-%lng: 6
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 0, 0, 0]
-%%details: 0 xx 1 de 2 les 3 x 0 de 0 les 0
-%morph:	xx<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> x<_/_> de<ADP/case> les<DET/root-Def-Plur-Art> 
+%lng: 1
+%cpxx: 0
+%cpxdt: [0, 0]
+%%details: 0 xxx 0
+%morph:	xxx<PUNCT/root> 
 *ADU: xxx
-%lng: 6
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 0, 0, 0]
-%%details: 0 xx 1 de 2 les 3 x 0 de 0 les 0
-%morph:	xx<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> x<_/_> de<ADP/case> les<DET/root-Def-Plur-Art> 
+%lng: 1
+%cpxx: 0
+%cpxdt: [0, 0]
+%%details: 0 xxx 0
+%morph:	xxx<PUNCT/root> 
 *CHI: c'est un grand ?
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 0]
 %%details: 0 c' 1 est 2 un 3 grand 1 ? 0
-%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> grand<ADJ/root-Masc-Sing> ?<PUNCT/punct> 
+%morph:	c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> grand<ADJ/root-Masc-Sing> ?<PUNCT/punct> 
 *ADU: c'est un grand
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 0]
 %%details: 0 c' 1 est 2 un 3 grand 0
-%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> grand<ADJ/root-Masc-Sing> 
+%morph:	c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> grand<ADJ/root-Masc-Sing> 
 *CHI: ça y est tu changes
 %lng: 5
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 1, 0]
-%%details: 0 ça 1 y 2 est 3 tu 1 changes 0
-%morph:	ça<PRON/nsubj-Masc-Sing-3-Dem> y<PRON/obl:mod> est<AUX/cop-Ind-Sing-3-Pres-Fin> tu<PRON/root-Sing-2-Prs> changes<PUNCT/punct> 
+%cpxx: 4
+%cpxdt: [0, 1, 2, 3, 4, 0]
+%%details: 0 ça 1 y 2 est 3 tu 4 changes 0
+%morph:	ça<PRON/nsubj-Masc-Sing-3-Dem> y<PRON/obl:mod-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> tu<PRON/nsubj-Sing-2-Prs> changes<NOUN/root-Masc-Plur> 
 *ADU: alors ? xxx
 %lng: 1
 %cpxx: 1
@@ -588,7 +588,7 @@
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 l' 1 eau 1 ? 0
-%morph:	l'<DET/det-Def-Fem-Sing-Art> eau<NOUN/root-Fem-Sing> ?<PUNCT/punct> 
+%morph:	l'<DET/det-Def-Sing-Art> eau<NOUN/root-Fem-Sing> ?<PUNCT/punct> 
 *ADU: encore ?
 %lng: 1
 %cpxx: 1
@@ -600,31 +600,31 @@
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 l' 1 eau 0
-%morph:	l'<DET/det-Def-Fem-Sing-Art> eau<NOUN/root-Fem-Sing> 
+%morph:	l'<DET/det-Def-Sing-Art> eau<NOUN/root-Fem-Sing> 
 *ADU: d'accord
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 d' 1 accord 0
-%morph:	d'<ADP/case> accord<NOUN/root-Masc-Sing> 
+%morph:	d'<ADP/root> accord<NOUN/fixed-Masc-Sing> 
 *CHI: je mets de l'eau dedans ?
 %lng: 6
 %cpxx: 4
 %cpxdt: [0, 1, 2, 4, 3, 2, 1, 0]
 %%details: 0 je 1 mets 2 de 4 l' 3 eau 2 dedans 1 ? 0
-%morph:	je<PRON/nsubj-Sing-1-Prs> mets<VERB/root-Ind-Sing-1-Pres-Fin> de<ADP/det> l'<DET/fixed-Def-Fem-Sing-Art> eau<NOUN/obj-Fem-Sing> dedans<ADJ/amod-Fem-Sing> ?<PUNCT/punct> 
+%morph:	je<PRON/nsubj-Sing-1-Prs> mets<VERB/root-Ind-Sing-1-Pres-Fin> de<ADP/det> l'<DET/fixed-Def-Sing-Art> eau<NOUN/obj-Fem-Sing> dedans<ADJ/amod-Fem-Sing> ?<PUNCT/punct> 
 *ADU: oui
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 oui 0
-%morph:	oui<SYM/root> 
+%morph:	oui<INTJ/root> 
 *CHI: je mets de l'eau tout suite après la xxx
 %lng: 10
-%cpxx: 5
-%cpxdt: [0, 1, 3, 5, 4, 2, 3, 1, 2, 3, 0]
-%%details: 0 je 1 mets 3 de 5 l' 4 eau 2 tout 3 suite 1 après 2 la 3 xxx 0
-%morph:	je<PRON/nsubj-Sing-1-Prs> mets<VERB/root-Ind-Sing-1-Pres-Fin> de<ADP/det> l'<DET/fixed-Def-Fem-Sing-Art> eau<NOUN/obj-Fem-Sing> tout<ADV/advmod> suite<ADV/advmod> après<ADP/case> la<DET/det-Def-Fem-Sing-Art> xxx<NOUN/obl-Fem-Sing> 
+%cpxx: 4
+%cpxdt: [0, 1, 2, 4, 3, 1, 2, 4, 3, 4, 0]
+%%details: 0 je 1 mets 2 de 4 l' 3 eau 1 tout 2 suite 4 après 3 la 4 xxx 0
+%morph:	je<PRON/nsubj-Sing-1-Prs> mets<VERB/root-Ind-Sing-1-Pres-Fin> de<ADP/det> l'<DET/fixed-Def-Sing-Art> eau<NOUN/obj-Fem-Sing> tout<ADV/advmod> suite<NOUN/case-Sing> après<ADP/fixed> la<DET/det-Def-Fem-Sing-Art> xxx<NOUN/obl:mod-Fem-Sing> 
 *ADU: ça va là ?
 %lng: 3
 %cpxx: 2
@@ -636,19 +636,19 @@
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 2, 4, 3, 2, 1, 0]
 %%details: 0 ouais 1 tu 2 en 3 mets 2 de 4 l' 3 eau 2 dedans 1 ? 0
-%morph:	ouais<INTJ/discourse> tu<PRON/nsubj-Sing-2-Prs> en<PRON/expl:comp-3> mets<VERB/root-Ind-Plur-2-Pres-Fin> de<ADP/det> l'<DET/fixed-Def-Fem-Sing-Art> eau<NOUN/obj-Fem-Sing> dedans<ADJ/amod-Fem-Sing> ?<PUNCT/punct> 
+%morph:	ouais<INTJ/discourse> tu<PRON/nsubj-Sing-2-Prs> en<PRON/dep:comp-3-Prs> mets<VERB/root-Ind-Plur-1-Pres-Fin> de<ADP/det> l'<DET/fixed-Def-Sing-Art> eau<NOUN/obj-Fem-Sing> dedans<ADJ/amod-Fem-Sing> ?<PUNCT/punct> 
 *ADU: dans celui-là aussi ?
-%lng: 3
-%cpxx: 2
-%cpxdt: [0, 1, 2, 1, 0]
-%%details: 0 dans 1 celui-là 2 aussi 1 ? 0
-%morph:	dans<ADP/case> celui-là<PRON/root-Masc-Sing-Dem> aussi<ADV/advmod> ?<PUNCT/punct> 
+%lng: 4
+%cpxx: 3
+%cpxdt: [0, 1, 3, 2, 1, 0]
+%%details: 0 dans 1 celui 3 -là 2 aussi 1 ? 0
+%morph:	dans<ADP/case> celui<PRON/root-Masc-Sing-3-Dem> -là<ADV/advmod> aussi<ADV/advmod> ?<PUNCT/punct> 
 *CHI: stop
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 stop 0
-%morph:	stop<PUNCT/root> 
+%morph:	stop<NOUN/root-Masc-Sing> 
 *ADU: stop ?
 %lng: 1
 %cpxx: 1
@@ -660,49 +660,49 @@
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 ouais 1 stop 0
-%morph:	ouais<INTJ/root> stop<PUNCT/punct> 
+%morph:	ouais<INTJ/discourse> stop<NOUN/root-Masc-Sing> 
 *ADU: fais
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 fais 0
-%morph:	fais<VERB/root-Ind-Sing-1-Pres-Fin> 
+%morph:	fais<INTJ/root> 
 *CHI: xxx
-%lng: 6
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 0, 0, 0]
-%%details: 0 xx 1 de 2 les 3 x 0 de 0 les 0
-%morph:	xx<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> x<_/_> de<ADP/case> les<DET/root-Def-Plur-Art> 
+%lng: 1
+%cpxx: 0
+%cpxdt: [0, 0]
+%%details: 0 xxx 0
+%morph:	xxx<PUNCT/root> 
 *ADU: attention
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 attention 0
-%morph:	attention<INTJ/root> 
+%morph:	attention<NOUN/root-Fem-Sing> 
 *ADU: de pas
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 de 1 pas 0
-%morph:	de<ADP/case> pas<ADV/root-Neg> 
+%morph:	de<ADP/root> pas<ADV/fixed-Neg> 
 *CHI: xxx aussi dans ceux-là
-%lng: 6
-%cpxx: 4
-%cpxdt: [0, 1, 2, 3, 4, 0, 0]
-%%details: 0 xxx 1 de 2 les 3 aussi 4 dans 0 ceux-là 0
-%morph:	xxx<_/_> de<ADP/case> les<DET/det-Def-Masc-Plur-Art> aussi<ADV/advmod> dans<ADP/case> ceux-là<PRON/root-Masc-Plur> 
+%lng: 4
+%cpxx: 3
+%cpxdt: [0, 1, 2, 3, 0]
+%%details: 0 xxx 1 aussi 2 dans 3 ceux-là 0
+%morph:	xxx<ADV/advmod> aussi<ADV/advmod> dans<ADP/case> ceux-là<PRON/root-Masc-Plur-3-Dem> 
 *ADU: dans celui-là aussi ?
-%lng: 3
-%cpxx: 2
-%cpxdt: [0, 1, 2, 1, 0]
-%%details: 0 dans 1 celui-là 2 aussi 1 ? 0
-%morph:	dans<ADP/case> celui-là<PRON/root-Masc-Sing-Dem> aussi<ADV/advmod> ?<PUNCT/punct> 
+%lng: 4
+%cpxx: 3
+%cpxdt: [0, 1, 3, 2, 1, 0]
+%%details: 0 dans 1 celui 3 -là 2 aussi 1 ? 0
+%morph:	dans<ADP/case> celui<PRON/root-Masc-Sing-3-Dem> -là<ADV/advmod> aussi<ADV/advmod> ?<PUNCT/punct> 
 *CHI: ouais xxx
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 ouais 1 xxx 0
-%morph:	ouais<INTJ/root> xxx<PUNCT/punct> 
+%morph:	ouais<INTJ/discourse> xxx<NOUN/root-Masc-Sing> 
 *ADU: voilà
 %lng: 1
 %cpxx: 0
@@ -720,7 +720,7 @@
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 oui 0
-%morph:	oui<SYM/root> 
+%morph:	oui<INTJ/root> 
 *ADU: aussi
 %lng: 1
 %cpxx: 0
@@ -732,37 +732,37 @@
 %cpxx: 2
 %cpxdt: [0, 2, 1, 0]
 %%details: 0 celui 2 -là 1 ? 0
-%morph:	celui<PRON/root-Masc-Sing-Dem> -là<ADV/advmod> ?<PUNCT/punct> 
+%morph:	celui<PRON/root-Masc-Sing-3-Dem> -là<ADV/advmod> ?<PUNCT/punct> 
 *CHI: ouais
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: après c'est fini ?
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 0]
 %%details: 0 après 1 c' 2 est 3 fini 1 ? 0
-%morph:	après<ADV/advmod> c'<PRON/nsubj-Sing-3-Dem> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> fini<VERB/root-Masc-Sing-Past-Part> ?<PUNCT/punct> 
+%morph:	après<ADV/advmod> c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/aux:tense-Ind-Sing-3-Pres-Fin> fini<VERB/root-Masc-Sing-Past-Part> ?<PUNCT/punct> 
 *CHI: ouais
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: voilà tu peux continuer à peindre
 %lng: 6
 %cpxx: 2
-%cpxdt: [0, 1, 2, 1, 1, 2, 0]
-%%details: 0 voilà 1 tu 2 peux 1 continuer 1 à 2 peindre 0
-%morph:	voilà<VERB/root> tu<PRON/nsubj-Sing-2-Prs> peux<VERB/ccomp-Ind-Sing-2-Pres-Fin> continuer<VERB/xcomp-Inf> à<ADP/mark> peindre<VERB/xcomp-Inf> 
+%cpxdt: [0, 2, 1, 1, 1, 2, 0]
+%%details: 0 voilà 2 tu 1 peux 1 continuer 1 à 2 peindre 0
+%morph:	voilà<VERB/root> tu<PRON/nsubj-Sing-2-Prs> peux<VERB/conj-Ind-Sing-1-Pres-Fin> continuer<VERB/xcomp-Inf> à<ADP/mark> peindre<VERB/xcomp-Inf> 
 *CHI: ben je veux enlever ma blouse
 %lng: 6
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 1, 2, 0]
 %%details: 0 ben 1 je 2 veux 1 enlever 1 ma 2 blouse 0
-%morph:	ben<INTJ/discourse> je<PRON/nsubj-Sing-1-Prs> veux<VERB/root-Ind-Sing-1-Pres-Fin> enlever<VERB/xcomp-Inf> ma<DET/det-Fem-Sing-Yes-Prs> blouse<NOUN/obj-Fem-Sing> 
+%morph:	ben<INTJ/discourse> je<PRON/nsubj-Sing-1-Prs> veux<VERB/root-Ind-Sing-1-Pres-Fin> enlever<VERB/xcomp-Inf> ma<DET/det-Fem-Sing-Sing-1-Prs> blouse<NOUN/obj-Fem-Sing> 
 *ADU: tu veux l'enlever ?
 %lng: 4
 %cpxx: 3
@@ -774,7 +774,7 @@
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: et
 %lng: 1
 %cpxx: 0
@@ -782,29 +782,29 @@
 %%details: 0 et 0
 %morph:	et<CCONJ/root> 
 *CHI: xxx
-%lng: 6
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 0, 0, 0]
-%%details: 0 xx 1 de 2 les 3 x 0 de 0 les 0
-%morph:	xx<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> x<_/_> de<ADP/case> les<DET/root-Def-Plur-Art> 
+%lng: 1
+%cpxx: 0
+%cpxdt: [0, 0]
+%%details: 0 xxx 0
+%morph:	xxx<PUNCT/root> 
 *ADU: si tu te fais
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 0]
 %%details: 0 si 1 tu 2 te 3 fais 0
-%morph:	si<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> te<PRON/iobj-Sing-2-Prs> fais<VERB/root-Ind-Sing-2-Pres-Fin> 
+%morph:	si<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> te<PRON/obl:arg-Sing-2-Prs> fais<VERB/root-Ind-Sing-1-Pres-Fin> 
 *ADU: des tâches ?
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 1, 0]
 %%details: 0 des 1 tâches 1 ? 0
-%morph:	des<DET/det-Ind-Fem-Plur-Art> tâches<NOUN/root-Fem-Plur> ?<PUNCT/punct> 
+%morph:	des<DET/det-Ind-Plur-Art> tâches<NOUN/root-Fem-Plur> ?<PUNCT/punct> 
 *CHI: je me
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 je 1 me 0
-%morph:	je<PRON/nsubj-Sing-1-Prs> me<PRON/root-Sing-1-Prs> 
+%morph:	je<PRON/root-Sing-1-Prs> me<PRON/flat:name-Sing-1-Prs> 
 *ADU: tu es sûre ?
 %lng: 3
 %cpxx: 2
@@ -816,55 +816,55 @@
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 non 0
-%morph:	non<ADV/root> 
+%morph:	non<ADV/root-Neg> 
 *ADU: tu vas pas te faire gronder si tu fais des tâches ?
 %lng: 11
 %cpxx: 4
 %cpxdt: [0, 1, 3, 2, 3, 4, 2, 3, 4, 2, 3, 1, 0]
 %%details: 0 tu 1 vas 3 pas 2 te 3 faire 4 gronder 2 si 3 tu 4 fais 2 des 3 tâches 1 ? 0
-%morph:	tu<PRON/nsubj-Sing-2-Prs> vas<VERB/root-Ind-Sing-2-Pres-Fin> pas<ADV/advmod-Neg> te<PRON/iobj:agent-Sing-2-Prs> faire<AUX/aux:caus-Inf> gronder<VERB/xcomp-Inf> si<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> fais<VERB/advcl-Ind-Sing-2-Pres-Fin> des<DET/det-Ind-Fem-Plur-Art> tâches<NOUN/obj-Fem-Plur> ?<PUNCT/punct> 
+%morph:	tu<PRON/nsubj-Sing-2-Prs> vas<VERB/root-Ind-Sing-2-Pres-Fin> pas<ADV/advmod-Neg> te<PRON/iobj:agent-Sing-2-Prs> faire<AUX/aux:caus-Inf> gronder<VERB/xcomp-Inf> si<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> fais<VERB/advcl-Ind-Sing-1-Pres-Fin> des<DET/det-Ind-Plur-Art> tâches<NOUN/obj-Fem-Plur> ?<PUNCT/punct> 
 *CHI: non
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 non 0
-%morph:	non<ADV/root> 
+%morph:	non<ADV/root-Neg> 
 *ADU: non ?
 %lng: 1
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 non 1 ? 0
-%morph:	non<ADV/root> ?<PUNCT/punct> 
+%morph:	non<ADV/root-Neg> ?<PUNCT/punct> 
 *CHI: non
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 non 0
-%morph:	non<ADV/root> 
+%morph:	non<ADV/root-Neg> 
 *ADU: on va essayer de pas en faire de tâches alors d'accord ?
 %lng: 12
 %cpxx: 5
 %cpxdt: [0, 1, 2, 2, 3, 4, 5, 3, 4, 2, 3, 2, 1, 0]
 %%details: 0 on 1 va 2 essayer 2 de 3 pas 4 en 5 faire 3 de 4 tâches 2 alors 3 d' 2 accord 1 ? 0
-%morph:	on<PRON/nsubj-Masc-Sing-3> va<VERB/root-Ind-Sing-3-Pres-Fin> essayer<VERB/xcomp-Inf> de<ADP/mark> pas<ADV/advmod-Neg> en<PRON/iobj-3> faire<VERB/xcomp-Inf> de<DET/det-Ind-Fem-Plur-Art> tâches<NOUN/obj-Fem-Plur> alors<ADV/advmod> d'<ADP/advmod> accord<NOUN/fixed-Masc-Sing> ?<PUNCT/punct> 
+%morph:	on<PRON/nsubj-Masc-Sing-3-Ind> va<VERB/root-Ind-Sing-3-Pres-Fin> essayer<VERB/xcomp-Inf> de<ADP/mark> pas<ADV/advmod-Neg> en<PRON/obl:arg-3-Prs> faire<VERB/xcomp-Inf> de<DET/det-Ind-Plur-Art> tâches<NOUN/obj-Fem-Plur> alors<ADV/advmod> d'<ADP/advmod> accord<NOUN/fixed-Masc-Sing> ?<PUNCT/punct> 
 *CHI: j'ai * changé l'eau ?
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 3, 1, 0]
 %%details: 0 j' 1 ai 2 * 3 changé 2 l' 3 eau 1 ? 0
-%morph:	j'<PRON/nsubj-Sing-1-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> *<ADV/advmod> changé<VERB/root-Masc-Sing-Past-Part> l'<DET/det-Def-Fem-Sing-Art> eau<NOUN/obj-Fem-Sing> ?<PUNCT/punct> 
+%morph:	j'<PRON/nsubj-Sing-1-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> *<PUNCT/punct> changé<VERB/root-Masc-Sing-Past-Part> l'<DET/det-Def-Sing-Art> eau<NOUN/obj-Fem-Sing> ?<PUNCT/punct> 
 *ADU: oui j'ai changé l'eau
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 2, 0]
 %%details: 0 oui 1 j' 2 ai 3 changé 1 l' 2 eau 0
-%morph:	oui<INTJ/discourse> j'<PRON/nsubj-Sing-1-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> changé<VERB/root-Masc-Sing-Past-Part> l'<DET/det-Def-Fem-Sing-Art> eau<NOUN/obj-Fem-Sing> 
+%morph:	oui<INTJ/discourse> j'<PRON/nsubj-Sing-1-Prs> ai<AUX/aux:tense-Ind-Sing-1-Pres-Fin> changé<VERB/root-Masc-Sing-Past-Part> l'<DET/det-Def-Sing-Art> eau<NOUN/obj-Fem-Sing> 
 *CHI: tu m'aideras après à faire mon dessin moi
 %lng: 9
 %cpxx: 2
 %cpxdt: [0, 1, 2, 2, 1, 2, 1, 2, 1, 0]
 %%details: 0 tu 1 m' 2 aideras 2 après 1 à 2 faire 1 mon 2 dessin 1 moi 0
-%morph:	tu<PRON/nsubj-Sing-2-Prs> m'<PRON/iobj-Sing-1-Prs> aideras<VERB/root-Ind-Sing-1-Fut-Fin> après<ADV/advmod> à<ADP/mark> faire<VERB/xcomp-Inf> mon<DET/det-Masc-Sing-Yes-Prs> dessin<NOUN/obj-Masc-Sing> moi<PRON/nmod-Sing-1> 
+%morph:	tu<PRON/nsubj-Sing-2-Prs> m'<PRON/obl:arg-Sing-1-Prs> aideras<VERB/root-Ind-Sing-1-Fut-Fin> après<ADV/advmod> à<ADP/mark> faire<VERB/xcomp-Inf> mon<DET/det-Sing-Sing-1-Prs> dessin<NOUN/obj-Masc-Sing> moi<PRON/nmod-Sing-1-Prs> 
 *ADU: aussi ?
 %lng: 1
 %cpxx: 1
@@ -876,43 +876,43 @@
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: tu peins ton chewing gum
 %lng: 5
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 1, 0]
-%%details: 0 tu 1 peins 2 ton 3 chewing 1 gum 0
-%morph:	tu<PRON/nsubj-Sing-2-Prs> peins<VERB/root-Ind-Sing-1-Pres-Fin> ton<DET/det-Masc-Sing-Yes-Prs> chewing<NOUN/obj-Masc-Sing> gum<NOUN/obj-Masc-Sing> 
+%cpxx: 2
+%cpxdt: [0, 1, 1, 2, 1, 0]
+%%details: 0 tu 1 peins 1 ton 2 chewing 1 gum 0
+%morph:	tu<PRON/nsubj-Sing-2-Prs> peins<VERB/root-Ind-Sing-1-Pres-Fin> ton<DET/det-Sing-Sing-2-Prs> chewing<NOUN/obj-Masc-Sing> gum<NOUN/appos-Masc-Sing> 
 *CHI: mon chewing gum aussi tu peins
 %lng: 6
-%cpxx: 2
-%cpxdt: [0, 1, 1, 2, 1, 2, 0]
-%%details: 0 mon 1 chewing 1 gum 2 aussi 1 tu 2 peins 0
-%morph:	mon<DET/det-Masc-Sing-Yes-Prs> chewing<NOUN/nsubj-Masc-Sing> gum<VERB/root-Ind-Sing-3-Pres-Fin> aussi<ADV/advmod> tu<PRON/nsubj-Sing-2-Prs> peins<VERB/parataxis-Ind-Sing-2-Pres-Fin> 
+%cpxx: 3
+%cpxdt: [0, 1, 2, 1, 2, 3, 0]
+%%details: 0 mon 1 chewing 2 gum 1 aussi 2 tu 3 peins 0
+%morph:	mon<DET/det-Sing-Sing-1-Prs> chewing<NOUN/nsubj-Masc-Sing> gum<NOUN/appos-Masc-Sing> aussi<ADV/advmod> tu<PRON/nsubj-Sing-2-Prs> peins<VERB/root-Ind-Sing-1-Pres-Fin> 
 *CHI: je peins mon chewing gum aussi hein ?
 %lng: 7
-%cpxx: 4
-%cpxdt: [0, 1, 3, 4, 3, 2, 3, 1, 0]
-%%details: 0 je 1 peins 3 mon 4 chewing 3 gum 2 aussi 3 hein 1 ? 0
-%morph:	je<PRON/nsubj-Sing-1-Prs> peins<VERB/root-Ind-Sing-1-Pres-Fin> mon<DET/det-Masc-Sing-Yes-Prs> chewing<NOUN/obj-Masc-Sing> gum<NOUN/nmod-Masc-Sing> aussi<ADV/advmod> hein<INTJ/discourse> ?<PUNCT/punct> 
+%cpxx: 5
+%cpxdt: [0, 1, 4, 5, 3, 2, 3, 1, 0]
+%%details: 0 je 1 peins 4 mon 5 chewing 3 gum 2 aussi 3 hein 1 ? 0
+%morph:	je<PRON/nsubj-Sing-1-Prs> peins<VERB/root-Ind-Sing-1-Pres-Fin> mon<DET/det-Sing-Sing-1-Prs> chewing<NOUN/obj-Masc-Sing> gum<NOUN/obj-Masc-Sing> aussi<ADV/advmod> hein<INTJ/advmod> ?<PUNCT/punct> 
 *ADU: tu peins ton chewing gum ?
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 2, 1, 0]
 %%details: 0 tu 1 peins 2 ton 3 chewing 2 gum 1 ? 0
-%morph:	tu<PRON/nsubj-Sing-2-Prs> peins<VERB/root-Ind-Sing-1-Pres-Fin> ton<DET/det-Masc-Sing-Yes-Prs> chewing<NOUN/obj-Masc-Sing> gum<NOUN/appos-Masc-Sing> ?<PUNCT/punct> 
+%morph:	tu<PRON/nsubj-Sing-2-Prs> peins<VERB/root-Ind-Sing-1-Pres-Fin> ton<DET/det-Sing-Sing-2-Prs> chewing<NOUN/obj-Masc-Sing> gum<NOUN/appos-Masc-Sing> ?<PUNCT/punct> 
 *CHI: on peint un chewing gum
 %lng: 5
 %cpxx: 2
 %cpxdt: [0, 1, 1, 2, 1, 0]
 %%details: 0 on 1 peint 1 un 2 chewing 1 gum 0
-%morph:	on<PRON/nsubj-Masc-Sing-3> peint<VERB/root-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> chewing<NOUN/obj-Masc-Sing> gum<NOUN/nmod-Masc-Sing> 
+%morph:	on<PRON/nsubj-Masc-Sing-3-Ind> peint<VERB/root-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> chewing<NOUN/obj-Masc-Sing> gum<NOUN/appos-Masc-Sing> 
 *ADU: faudra pas le après hein ?
 %lng: 5
 %cpxx: 4
-%cpxdt: [0, 3, 2, 4, 3, 1, 0]
-%%details: 0 faudra 3 pas 2 le 4 après 3 hein 1 ? 0
-%morph:	faudra<VERB/root-Ind-Sing-3-Fut-Fin> pas<ADV/advmod-Neg> le<DET/det-Def-Masc-Sing-Art> après<ADP/fixed> hein<ADV/advmod> ?<PUNCT/punct> 
+%cpxdt: [0, 3, 2, 3, 4, 1, 0]
+%%details: 0 faudra 3 pas 2 le 3 après 4 hein 1 ? 0
+%morph:	faudra<VERB/root-Ind-Sing-3-Fut-Fin> pas<ADV/advmod-Neg> le<DET/det-Def-Masc-Sing-Art> après<ADP/case> hein<PRON/obl:mod-Sing-3-Prs> ?<PUNCT/punct> 
 *CHI: manger
 %lng: 1
 %cpxx: 0
@@ -921,22 +921,22 @@
 %morph:	manger<VERB/root-Inf> 
 *ADU: non non non oh xxx c'est pas bon la peinture
 %lng: 11
-%cpxx: 5
-%cpxdt: [0, 4, 3, 4, 3, 2, 3, 4, 5, 1, 2, 0]
-%%details: 0 non 4 non 3 non 4 oh 3 xxx 2 c' 3 est 4 pas 5 bon 1 la 2 peinture 0
-%morph:	non<ADV/advmod> non<ADV/fixed> non<ADV/advmod> oh<INTJ/fixed> xxx<PUNCT/punct> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> bon<ADJ/root-Masc-Sing> la<DET/det-Def-Fem-Sing-Art> peinture<NOUN/nsubj-Fem-Sing> 
+%cpxx: 4
+%cpxdt: [0, 1, 2, 2, 2, 1, 2, 3, 4, 1, 2, 0]
+%%details: 0 non 1 non 2 non 2 oh 2 xxx 1 c' 2 est 3 pas 4 bon 1 la 2 peinture 0
+%morph:	non<ADV/advmod-Neg> non<ADV/advmod-Neg> non<ADV/advmod-Neg> oh<INTJ/discourse> xxx<PUNCT/punct> c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> pas<ADV/advmod-Neg> bon<ADJ/root-Masc-Sing> la<DET/det-Def-Fem-Sing-Art> peinture<NOUN/parataxis-Fem-Sing> 
 *ADU: déjà que tu as la b- bouche toute bleue avec ta sucette
 %lng: 12
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 1, 2, 2, 1, 2, 1, 2, 3, 0]
-%%details: 0 déjà 1 que 2 tu 3 as 1 la 2 b- 2 bouche 1 toute 2 bleue 1 avec 2 ta 3 sucette 0
-%morph:	déjà<ADV/root> que<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> as<VERB/ccomp-Ind-Sing-2-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> b-<NOUN/obj-Fem-Sing> bouche<NOUN/nmod-Fem-Sing> toute<DET/det-Fem-Sing> bleue<ADJ/amod-Fem-Sing> avec<ADP/case> ta<DET/det-Fem-Sing-Yes-Prs> sucette<NOUN/nmod-Fem-Sing> 
+%cpxx: 5
+%cpxdt: [0, 1, 2, 3, 4, 5, 4, 2, 3, 1, 2, 3, 0]
+%%details: 0 déjà 1 que 2 tu 3 as 4 la 5 b- 4 bouche 2 toute 3 bleue 1 avec 2 ta 3 sucette 0
+%morph:	déjà<ADV/root> que<SCONJ/mark> tu<PRON/nsubj-Sing-2-Prs> as<VERB/ccomp-Ind-Sing-2-Pres-Fin> la<DET/det-Def-Fem-Sing-Art> b-<NOUN/obj-Fem-Sing> bouche<NOUN/obj-Fem-Sing> toute<DET/det-Fem-Sing-Ind> bleue<ADJ/obj-Fem-Sing> avec<ADP/case> ta<DET/det-Sing-Sing-2-Prs> sucette<NOUN/obl:mod-Fem-Sing> 
 *ADU: qui fait les couleurs je fais
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 1, 2, 0]
 %%details: 0 qui 1 fait 2 les 3 couleurs 1 je 2 fais 0
-%morph:	qui<PRON/nsubj-Rel> fait<VERB/root-Ind-Sing-3-Pres-Fin> les<DET/det-Def-Fem-Plur-Art> couleurs<NOUN/obj-Fem-Plur> je<PRON/nsubj-Sing-1-Prs> fais<VERB/parataxis-Ind-Sing-1-Pres-Fin> 
+%morph:	qui<PRON/nsubj-Rel> fait<VERB/root-Ind-Sing-3-Pres-Fin> les<DET/det-Def-Plur-Art> couleurs<NOUN/obj-Fem-Plur> je<PRON/nsubj-Sing-1-Prs> fais<VERB/parataxis-Ind-Sing-1-Pres-Fin> 
 *CHI: tu peux
 %lng: 2
 %cpxx: 1
@@ -948,7 +948,7 @@
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 des 1 nuages 0
-%morph:	des<DET/det-Ind-Masc-Plur-Art> nuages<NOUN/root-Masc-Plur> 
+%morph:	des<DET/det-Ind-Plur-Art> nuages<NOUN/root-Masc-Plur> 
 *CHI: me
 %lng: 1
 %cpxx: 0
@@ -966,79 +966,79 @@
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: oui si j'en ai encore
 %lng: 6
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 1, 0]
 %%details: 0 oui 1 si 2 j' 3 en 4 ai 1 encore 0
-%morph:	oui<INTJ/root> si<SCONJ/mark> j'<PRON/nsubj-Sing-1-Prs> en<PRON/expl:comp-3> ai<VERB/ccomp-Ind-Sing-1-Pres-Fin> encore<ADV/advmod> 
+%morph:	oui<INTJ/root> si<SCONJ/mark> j'<PRON/nsubj-Sing-1-Prs> en<PRON/dep:comp-3-Prs> ai<VERB/ccomp-Ind-Sing-1-Pres-Fin> encore<ADV/advmod> 
 *ADU: je crois n'ai plus j'en n'ai plus
 %lng: 10
-%cpxx: 5
-%cpxdt: [0, 1, 1, 2, 1, 2, 3, 4, 5, 1, 0]
-%%details: 0 je 1 crois 1 n' 2 ai 1 plus 2 j' 3 en 4 n' 5 ai 1 plus 0
-%morph:	je<PRON/nsubj-Sing-1-Prs> crois<VERB/root-Ind-Sing-1-Pres-Fin> n'<ADV/advmod-Neg> ai<VERB/ccomp-Ind-Sing-1-Pres-Fin> plus<ADV/advmod> j'<PRON/nsubj-Sing-1-Prs> en<PRON/expl:comp-3> n'<ADV/advmod-Neg> ai<VERB/ccomp-Ind-Sing-1-Pres-Fin> plus<ADV/advmod-Neg> 
+%cpxx: 4
+%cpxdt: [0, 1, 1, 2, 2, 1, 2, 3, 4, 1, 0]
+%%details: 0 je 1 crois 1 n' 2 ai 2 plus 1 j' 2 en 3 n' 4 ai 1 plus 0
+%morph:	je<PRON/nsubj-Sing-1-Prs> crois<VERB/advcl-Ind-Sing-1-Pres-Fin> n'<ADV/advmod-Neg> ai<VERB/root-Ind-Sing-1-Pres-Fin> plus<ADV/advmod-Neg> j'<PRON/nsubj-Sing-1-Prs> en<PRON/obl:arg-3-Prs> n'<ADV/advmod-Neg> ai<VERB/ccomp-Ind-Sing-1-Pres-Fin> plus<ADV/advmod-Neg> 
 *CHI: tu peux m'en donner ?
 %lng: 5
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 4, 1, 0]
 %%details: 0 tu 1 peux 2 m' 3 en 4 donner 1 ? 0
-%morph:	tu<PRON/nsubj-Sing-2-Prs> peux<VERB/root-Ind-Sing-1-Pres-Fin> m'<PRON/iobj-Sing-1-Prs> en<PRON/iobj-3> donner<VERB/xcomp-Inf> ?<PUNCT/punct> 
+%morph:	tu<PRON/nsubj-Sing-2-Prs> peux<VERB/root-Ind-Sing-1-Pres-Fin> m'<PRON/obl:arg-Sing-1-Prs> en<PRON/obl:arg-3-Prs> donner<VERB/xcomp-Inf> ?<PUNCT/punct> 
 *ADU: faut que je
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 2, 1, 0]
 %%details: 0 faut 2 que 1 je 0
-%morph:	faut<VERB/root-Ind-Sing-3-Pres-Fin> que<SCONJ/fixed> je<PRON/expl:subj-Sing-1-Prs> 
+%morph:	faut<VERB/root-Ind-Sing-3-Pres-Fin> que<SCONJ/nsubj> je<PRON/nsubj-Sing-1-Prs> 
 *ADU: ah si j'en ai le dernier je te l'ouvre ?
 %lng: 11
 %cpxx: 5
 %cpxdt: [0, 1, 2, 3, 4, 3, 4, 2, 3, 4, 5, 1, 0]
 %%details: 0 ah 1 si 2 j' 3 en 4 ai 3 le 4 dernier 2 je 3 te 4 l' 5 ouvre 1 ? 0
-%morph:	ah<INTJ/discourse> si<SCONJ/mark> j'<PRON/nsubj-Sing-1-Prs> en<PRON/expl:comp-3> ai<VERB/advcl-Ind-Sing-1-Pres-Fin> le<DET/det-Def-Masc-Sing-Art> dernier<NOUN/obj-Masc-Sing> je<PRON/nsubj-Sing-1-Prs> te<PRON/iobj-Sing-2-Prs> l'<PRON/obj-Sing-3-Prs> ouvre<VERB/root-Ind-Sing-1-Pres-Fin> ?<PUNCT/punct> 
+%morph:	ah<INTJ/discourse> si<SCONJ/mark> j'<PRON/nsubj-Sing-1-Prs> en<PRON/dep:comp-3-Prs> ai<VERB/advcl-Ind-Sing-1-Pres-Fin> le<DET/det-Def-Masc-Sing-Art> dernier<ADJ/obj-Masc-Sing> je<PRON/nsubj-Sing-1-Prs> te<PRON/obl:arg-Sing-2-Prs> l'<PRON/obj-Sing-3-Prs> ouvre<VERB/root-Ind-Sing-1-Pres-Fin> ?<PUNCT/punct> 
 *CHI: merci j'ouvre
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 1, 2, 0]
 %%details: 0 merci 1 j' 2 ouvre 0
-%morph:	merci<INTJ/root> j'<PRON/nsubj-Sing-1-Prs> ouvre<VERB/conj-Ind-Sing-1-Pres-Fin> 
+%morph:	merci<INTJ/root> j'<PRON/nsubj-Sing-1-Prs> ouvre<VERB/ccomp-Ind-Sing-1-Pres-Fin> 
 *ADU: tu vas réussir à l'ouvrir ouais ?
 %lng: 7
 %cpxx: 4
 %cpxdt: [0, 1, 2, 2, 3, 4, 2, 1, 0]
 %%details: 0 tu 1 vas 2 réussir 2 à 3 l' 4 ouvrir 2 ouais 1 ? 0
-%morph:	tu<PRON/nsubj-Sing-2-Prs> vas<VERB/root-Ind-Sing-2-Pres-Fin> réussir<VERB/xcomp-Inf> à<ADP/mark> l'<PRON/obj-Sing-3-Prs> ouvrir<VERB/xcomp-Inf> ouais<ADV/advmod> ?<PUNCT/punct> 
+%morph:	tu<PRON/nsubj-Sing-2-Prs> vas<VERB/root-Ind-Sing-1-Pres-Fin> réussir<VERB/xcomp-Inf> à<ADP/mark> l'<PRON/obj-Sing-3-Prs> ouvrir<VERB/xcomp-Inf> ouais<ADV/advmod> ?<PUNCT/punct> 
 *CHI: c'est qui ça ? ah
 %lng: 4
-%cpxx: 2
-%cpxdt: [0, 2, 1, 2, 1, 0]
-%%details: 0 c' 2 est 1 qui 2 ça 1 ? 0
-%morph:	c'<PRON/root-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> qui<PRON/nsubj-Rel> ça<PRON/nsubj-Masc-Sing-3-Dem> ?<PUNCT/punct> 
+%cpxx: 3
+%cpxdt: [0, 1, 2, 3, 1, 0]
+%%details: 0 c' 1 est 2 qui 3 ça 1 ? 0
+%morph:	c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/root-Ind-Sing-3-Pres-Fin> qui<PRON/nsubj-Rel> ça<PRON/nsubj-Masc-Sing-3-Dem> ?<PUNCT/punct> 
 *CHI: c'est qui ça ? ah
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ah 0
-%morph:	ah<SYM/root> 
+%morph:	ah<PUNCT/root> 
 *ADU: ça y est ?
 %lng: 3
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 0]
 %%details: 0 ça 1 y 2 est 1 ? 0
-%morph:	ça<PRON/nsubj-Masc-Sing-3-Dem> y<PRON/iobj> est<VERB/root-Ind-Sing-3-Pres-Fin> ?<PUNCT/punct> 
+%morph:	ça<PRON/nsubj-Masc-Sing-3-Dem> y<PRON/obl:arg-3-Prs> est<AUX/root-Ind-Sing-3-Pres-Fin> ?<PUNCT/punct> 
 *CHI: ouais tiens je le mets là
 %lng: 6
 %cpxx: 3
 %cpxdt: [0, 1, 1, 2, 3, 1, 0]
 %%details: 0 ouais 1 tiens 1 je 2 le 3 mets 1 là 0
-%morph:	ouais<INTJ/discourse> tiens<VERB/root-Ind-Sing-1-Pres-Fin> je<PRON/nsubj-Sing-1-Prs> le<PRON/obj-Masc-Sing-3-Prs> mets<VERB/ccomp-Ind-Sing-1-Pres-Fin> là<ADV/advmod> 
+%morph:	ouais<ADV/advmod> tiens<VERB/root-Ind-Sing-1-Pres-Fin> je<PRON/nsubj-Sing-1-Prs> le<PRON/obj-Masc-Sing-3-Prs> mets<VERB/ccomp-Ind-Sing-1-Pres-Fin> là<ADV/advmod> 
 *ADU: xxx
-%lng: 6
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 0, 0, 0]
-%%details: 0 xx 1 de 2 les 3 x 0 de 0 les 0
-%morph:	xx<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> x<_/_> de<ADP/case> les<DET/root-Def-Plur-Art> 
+%lng: 1
+%cpxx: 0
+%cpxdt: [0, 0]
+%%details: 0 xxx 0
+%morph:	xxx<PUNCT/root> 
 *CHI: je mets
 %lng: 2
 %cpxx: 1
@@ -1056,25 +1056,25 @@
 %cpxx: 3
 %cpxdt: [0, 2, 1, 2, 3, 2, 1, 0]
 %%details: 0 d' 2 accord 1 tu 2 le 3 mangeras 2 après 1 ? 0
-%morph:	d'<ADP/advmod> accord<NOUN/fixed-Masc-Sing> tu<PRON/nsubj-Sing-2-Prs> le<PRON/obj-Masc-Sing-3-Prs> mangeras<VERB/root-Ind-Sing-3-Fut-Fin> après<ADV/advmod> ?<PUNCT/punct> 
+%morph:	d'<ADP/advmod> accord<NOUN/fixed-Masc-Sing> tu<PRON/nsubj-Sing-2-Prs> le<PRON/obj-Masc-Sing-3-Prs> mangeras<VERB/root-Ind-Sing-1-Fut-Fin> après<ADV/advmod> ?<PUNCT/punct> 
 *CHI: ouais
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: quelle couleur je mets moi dans mon dessin ?
 %lng: 8
 %cpxx: 4
 %cpxdt: [0, 1, 1, 2, 3, 2, 3, 4, 1, 0]
 %%details: 0 quelle 1 couleur 1 je 2 mets 3 moi 2 dans 3 mon 4 dessin 1 ? 0
-%morph:	quelle<DET/det-Fem-Sing> couleur<NOUN/obj-Fem-Sing> je<PRON/nsubj-Sing-1-Prs> mets<VERB/root-Ind-Sing-1-Pres-Fin> moi<PRON/obj-Sing-1> dans<ADP/case> mon<DET/det-Masc-Sing-Yes-Prs> dessin<NOUN/obl:mod-Masc-Sing> ?<PUNCT/punct> 
+%morph:	quelle<DET/det-Fem-Sing-Exc> couleur<NOUN/obj-Fem-Sing> je<PRON/nsubj-Sing-1-Prs> mets<VERB/root-Ind-Sing-1-Pres-Fin> moi<PRON/obj-Sing-1-Prs> dans<ADP/case> mon<DET/det-Sing-Sing-1-Prs> dessin<NOUN/obl:mod-Masc-Sing> ?<PUNCT/punct> 
 *CHI: xxx
-%lng: 6
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 0, 0, 0]
-%%details: 0 xx 1 de 2 les 3 x 0 de 0 les 0
-%morph:	xx<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> x<_/_> de<ADP/case> les<DET/root-Def-Plur-Art> 
+%lng: 1
+%cpxx: 0
+%cpxdt: [0, 0]
+%%details: 0 xxx 0
+%morph:	xxx<PUNCT/root> 
 *ADU: hein Lisa ? quelle couleur je rajoute ?
 %lng: 2
 %cpxx: 2
@@ -1086,79 +1086,79 @@
 %cpxx: 2
 %cpxdt: [0, 1, 1, 2, 1, 0]
 %%details: 0 quelle 1 couleur 1 je 2 rajoute 1 ? 0
-%morph:	quelle<DET/det-Fem-Sing> couleur<NOUN/obj-Fem-Sing> je<PRON/nsubj-Sing-1-Prs> rajoute<VERB/root-Ind-Sing-1-Pres-Fin> ?<PUNCT/punct> 
+%morph:	quelle<DET/det-Fem-Sing-Exc> couleur<NOUN/obj-Fem-Sing> je<PRON/nsubj-Sing-1-Prs> rajoute<VERB/root-Ind-Sing-1-Pres-Fin> ?<PUNCT/punct> 
 *CHI: moi je rajoute quoi ? ben celui-là ?
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 2, 2, 1, 0]
 %%details: 0 moi 1 je 2 rajoute 2 quoi 1 ? 0
-%morph:	moi<PRON/dislocated-Sing-1> je<PRON/nsubj-Sing-1-Prs> rajoute<VERB/root-Ind-Sing-1-Pres-Fin> quoi<PRON/obj> ?<PUNCT/punct> 
+%morph:	moi<PRON/dislocated-Sing-1-Prs> je<PRON/nsubj-Sing-1-Prs> rajoute<VERB/root-Ind-Sing-1-Pres-Fin> quoi<PRON/obj-3-Int> ?<PUNCT/punct> 
 *CHI: moi je rajoute quoi ? ben celui-là ?
-%lng: 2
-%cpxx: 1
-%cpxdt: [0, 1, 1, 0]
-%%details: 0 ben 1 celui-là 1 ? 0
-%morph:	ben<INTJ/discourse> celui-là<PRON/root-Masc-Sing-Dem> ?<PUNCT/punct> 
+%lng: 3
+%cpxx: 2
+%cpxdt: [0, 1, 2, 1, 0]
+%%details: 0 ben 1 celui 2 -là 1 ? 0
+%morph:	ben<INTJ/discourse> celui<PRON/root-Masc-Sing-3-Dem> -là<ADV/advmod> ?<PUNCT/punct> 
 *ADU: oui et moi ?
 %lng: 3
 %cpxx: 3
 %cpxdt: [0, 2, 3, 1, 0]
 %%details: 0 oui 2 et 3 moi 1 ? 0
-%morph:	oui<INTJ/root> et<CCONJ/cc> moi<PRON/conj-Sing-1> ?<PUNCT/punct> 
+%morph:	oui<INTJ/root> et<CCONJ/cc> moi<PRON/conj-Sing-1-Prs> ?<PUNCT/punct> 
 *CHI: euh celui-là
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 euh 1 celui-là 0
-%morph:	euh<INTJ/root> celui-là<PRON/parataxis-Masc-Sing-Dem> 
+%morph:	euh<INTJ/root> celui-là<PRON/obj-Masc-Sing-3-Dem> 
 *ADU: celui-là ?
 %lng: 2
 %cpxx: 2
 %cpxdt: [0, 2, 1, 0]
 %%details: 0 celui 2 -là 1 ? 0
-%morph:	celui<PRON/root-Masc-Sing-Dem> -là<ADV/advmod> ?<PUNCT/punct> 
+%morph:	celui<PRON/root-Masc-Sing-3-Dem> -là<ADV/advmod> ?<PUNCT/punct> 
 *CHI: je remets les bouchons
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 1, 2, 0]
 %%details: 0 je 1 remets 1 les 2 bouchons 0
-%morph:	je<PRON/nsubj-Sing-1-Prs> remets<VERB/root-Ind-Sing-1-Pres-Fin> les<DET/det-Def-Masc-Plur-Art> bouchons<NOUN/obj-Masc-Plur> 
+%morph:	je<PRON/nsubj-Sing-1-Prs> remets<VERB/root-Ind-Sing-1-Pres-Fin> les<DET/det-Def-Plur-Art> bouchons<NOUN/obj-Masc-Plur> 
 *ADU: tu veux remettre les bouchons ?
 %lng: 5
 %cpxx: 3
 %cpxdt: [0, 1, 2, 2, 3, 1, 0]
 %%details: 0 tu 1 veux 2 remettre 2 les 3 bouchons 1 ? 0
-%morph:	tu<PRON/nsubj-Sing-2-Prs> veux<VERB/root-Ind-Sing-1-Pres-Fin> remettre<VERB/xcomp-Inf> les<DET/det-Def-Masc-Plur-Art> bouchons<NOUN/obj-Masc-Plur> ?<PUNCT/punct> 
+%morph:	tu<PRON/nsubj-Sing-2-Prs> veux<VERB/root-Ind-Sing-1-Pres-Fin> remettre<VERB/xcomp-Inf> les<DET/det-Def-Plur-Art> bouchons<NOUN/obj-Masc-Plur> ?<PUNCT/punct> 
 *CHI: après
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 après 0
-%morph:	après<ADP/root> 
+%morph:	après<ADV/root> 
 *ADU: après
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 après 0
-%morph:	après<ADP/root> 
+%morph:	après<ADV/root> 
 *CHI: xxx
-%lng: 6
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 0, 0, 0]
-%%details: 0 xx 1 de 2 les 3 x 0 de 0 les 0
-%morph:	xx<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> x<_/_> de<ADP/case> les<DET/root-Def-Plur-Art> 
+%lng: 1
+%cpxx: 0
+%cpxdt: [0, 0]
+%%details: 0 xxx 0
+%morph:	xxx<PUNCT/root> 
 *ADU: voilà celui-là
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 voilà 1 celui-là 0
-%morph:	voilà<VERB/root> celui-là<PRON/obj-Masc-Sing-Dem> 
+%morph:	voilà<VERB/root> celui-là<PRON/obj-Masc-Sing-3-Dem> 
 *CHI: tiens fait un avion
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 1, 2, 0]
 %%details: 0 tiens 1 fait 1 un 2 avion 0
-%morph:	tiens<VERB/root-Ind-Sing-1-Pres-Fin> fait<VERB/xcomp-Ind-Sing-3-Pres-Fin> un<DET/det-Ind-Masc-Sing-Art> avion<NOUN/obj-Masc-Sing> 
+%morph:	tiens<AUX/aux:tense-Ind-Sing-1-Pres-Fin> fait<VERB/root-Masc-Sing-Past-Part> un<DET/det-Ind-Masc-Sing-Art> avion<NOUN/obj-Masc-Sing> 
 *ADU: tu as fait un avion ?
 %lng: 5
 %cpxx: 3
@@ -1170,7 +1170,7 @@
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: où ça ?
 %lng: 2
 %cpxx: 1
@@ -1194,19 +1194,19 @@
 %cpxx: 3
 %cpxdt: [0, 2, 1, 2, 3, 0]
 %%details: 0 voilà 2 non 1 c' 2 est 3 Théophile 0
-%morph:	voilà<VERB/root> non<ADV/advmod> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> Théophile<PROPN/ccomp> 
+%morph:	voilà<VERB/root> non<ADV/advmod-Neg> c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> Théophile<PROPN/conj> 
 *ADU: ah il a fait un avion tout à l'heure Théo
 %lng: 11
 %cpxx: 4
 %cpxdt: [0, 1, 2, 3, 2, 3, 1, 2, 3, 4, 1, 0]
 %%details: 0 ah 1 il 2 a 3 fait 2 un 3 avion 1 tout 2 à 3 l' 4 heure 1 Théo 0
-%morph:	ah<INTJ/discourse> il<PRON/nsubj-Masc-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> fait<VERB/root-Masc-Sing-Past-Part> un<DET/det-Ind-Masc-Sing-Art> avion<NOUN/obj-Masc-Sing> tout<ADV/advmod> à<ADP/case> l'<DET/det-Def-Fem-Sing-Art> heure<NOUN/obl:mod-Fem-Sing> Théo<PROPN/appos> 
+%morph:	ah<PUNCT/punct> il<PRON/nsubj-Masc-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> fait<VERB/root-Masc-Sing-Past-Part> un<DET/det-Ind-Masc-Sing-Art> avion<NOUN/obj-Masc-Sing> tout<ADV/advmod> à<ADP/case> l'<DET/det-Def-Sing-Art> heure<NOUN/obl:mod-Fem-Sing> Théo<PROPN/appos> 
 *CHI: ouais /pour une / fusée
 %lng: 6
-%cpxx: 5
-%cpxdt: [0, 1, 2, 3, 4, 5, 0]
-%%details: 0 ouais 1 / 2 pour 3 une 4 / 5 fusée 0
-%morph:	ouais<INTJ/root> /<SYM/cc> pour<ADP/case> une<DET/det-Ind-Fem-Sing-Art> /<SYM/cc> fusée<NOUN/conj-Fem-Sing> 
+%cpxx: 3
+%cpxdt: [0, 1, 2, 3, 1, 2, 0]
+%%details: 0 ouais 1 / 2 pour 3 une 1 / 2 fusée 0
+%morph:	ouais<INTJ/root> /<SYM/cc> pour<ADP/case> une<DET/conj-Ind-Fem-Sing-Art> /<SYM/cc> fusée<NOUN/conj-Fem-Sing> 
 *ADU: pour faire une fusée ?
 %lng: 4
 %cpxx: 3
@@ -1218,7 +1218,7 @@
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: tu
 %lng: 1
 %cpxx: 0
@@ -1230,65 +1230,65 @@
 %cpxx: 2
 %cpxdt: [0, 1, 2, 1, 0]
 %%details: 0 non 1 un 2 avion 1 xxx 0
-%morph:	non<ADV/advmod> un<DET/det-Ind-Masc-Sing-Art> avion<NOUN/root-Masc-Sing> xxx<PUNCT/punct> 
+%morph:	non<ADV/advmod-Neg> un<DET/det-Ind-Masc-Sing-Art> avion<NOUN/root-Masc-Sing> xxx<PUNCT/punct> 
 *CHI: xxx
-%lng: 6
-%cpxx: 3
-%cpxdt: [0, 1, 2, 3, 0, 0, 0]
-%%details: 0 xx 1 de 2 les 3 x 0 de 0 les 0
-%morph:	xx<_/_> de<ADP/case> les<DET/det-Def-Fem-Plur-Art> x<_/_> de<ADP/case> les<DET/root-Def-Plur-Art> 
+%lng: 1
+%cpxx: 0
+%cpxdt: [0, 0]
+%%details: 0 xxx 0
+%morph:	xxx<PUNCT/root> 
 *ADU: il est
 %lng: 2
 %cpxx: 1
 %cpxdt: [0, 1, 0]
 %%details: 0 il 1 est 0
-%morph:	il<PRON/root-Masc-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> 
+%morph:	il<PRON/nsubj-Masc-Sing-3-Prs> est<AUX/root-Ind-Sing-3-Pres-Fin> 
 *ADU: grand son avion hein ?
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 2, 2, 1, 0]
 %%details: 0 grand 1 son 2 avion 2 hein 1 ? 0
-%morph:	grand<ADJ/root-Masc-Sing> son<DET/det-Masc-Sing-Yes-Prs> avion<NOUN/nsubj-Masc-Sing> hein<ADJ/amod-Masc-Sing> ?<PUNCT/punct> 
+%morph:	grand<ADJ/amod-Masc-Sing> son<DET/det-Sing-Sing-3-Prs> avion<NOUN/root-Masc-Sing> hein<ADJ/amod-Masc-Sing> ?<PUNCT/punct> 
 *CHI: ouais il est grand
 %lng: 4
 %cpxx: 3
 %cpxdt: [0, 1, 2, 3, 0]
 %%details: 0 ouais 1 il 2 est 3 grand 0
-%morph:	ouais<INTJ/discourse> il<PRON/nsubj-Masc-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> grand<ADJ/root-Masc-Sing> 
+%morph:	ouais<ADV/advmod> il<PRON/nsubj-Masc-Sing-3-Prs> est<AUX/cop-Ind-Sing-3-Pres-Fin> grand<ADJ/root-Masc-Sing> 
 *ADU: c'est lui qui l'a fait ?
 %lng: 7
 %cpxx: 5
 %cpxdt: [0, 1, 2, 2, 3, 4, 5, 1, 0]
 %%details: 0 c' 1 est 2 lui 2 qui 3 l' 4 a 5 fait 1 ? 0
-%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> lui<PRON/root-Sing-3-Prs> qui<PRON/nsubj-Rel> l'<PRON/obj-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> fait<VERB/acl:relcl-Masc-Sing-Past-Part> ?<PUNCT/punct> 
+%morph:	c'<PRON/expl:subj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> lui<PRON/root-Masc-Sing-3-Prs> qui<PRON/nsubj-Rel> l'<PRON/obj-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> fait<VERB/advcl:cleft-Masc-Sing-Past-Part> ?<PUNCT/punct> 
 *CHI: ouais c'est lui qui l'a fait tout seul
 %lng: 10
 %cpxx: 4
-%cpxdt: [0, 1, 2, 3, 1, 2, 3, 4, 1, 2, 0]
-%%details: 0 ouais 1 c' 2 est 3 lui 1 qui 2 l' 3 a 4 fait 1 tout 2 seul 0
-%morph:	ouais<INTJ/discourse> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> lui<PRON/root-Sing-3-Prs> qui<PRON/nsubj-Rel> l'<PRON/obj-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> fait<VERB/acl:relcl-Masc-Sing-Past-Part> tout<ADV/advmod> seul<ADJ/xcomp-Masc-Sing> 
+%cpxdt: [0, 1, 2, 3, 1, 2, 3, 4, 1, 1, 0]
+%%details: 0 ouais 1 c' 2 est 3 lui 1 qui 2 l' 3 a 4 fait 1 tout 1 seul 0
+%morph:	ouais<INTJ/discourse> c'<PRON/expl:subj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> lui<PRON/root-Masc-Sing-3-Prs> qui<PRON/nsubj-Rel> l'<PRON/obj-Sing-3-Prs> a<AUX/aux:tense-Ind-Sing-3-Pres-Fin> fait<VERB/advcl:cleft-Masc-Sing-Past-Part> tout<PRON/obj-Masc-Sing-3-Ind> seul<ADJ/amod-Masc-Sing> 
 *ADU: tout seul ?
 %lng: 2
-%cpxx: 1
-%cpxdt: [0, 1, 1, 0]
-%%details: 0 tout 1 seul 1 ? 0
-%morph:	tout<ADV/advmod> seul<ADJ/root-Masc-Sing> ?<PUNCT/punct> 
+%cpxx: 2
+%cpxdt: [0, 2, 1, 0]
+%%details: 0 tout 2 seul 1 ? 0
+%morph:	tout<PRON/root-Masc-Sing-3-Ind> seul<ADJ/amod-Masc-Sing> ?<PUNCT/punct> 
 *CHI: ouais
 %lng: 1
 %cpxx: 0
 %cpxdt: [0, 0]
 %%details: 0 ouais 0
-%morph:	ouais<SYM/root> 
+%morph:	ouais<INTJ/root> 
 *ADU: c'est chouette hein ?
 %lng: 4
 %cpxx: 2
 %cpxdt: [0, 1, 2, 2, 1, 0]
 %%details: 0 c' 1 est 2 chouette 2 hein 1 ? 0
-%morph:	c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> chouette<ADJ/root-Masc-Sing> hein<INTJ/discourse> ?<PUNCT/punct> 
+%morph:	c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> chouette<ADJ/root-Masc-Sing> hein<INTJ/discourse> ?<PUNCT/punct> 
 *CHI: ouais c'est chouette xxx et xxx
 %lng: 7
-%cpxx: 4
-%cpxdt: [0, 1, 2, 3, 4, 1, 2, 0]
-%%details: 0 ouais 1 c' 2 est 3 chouette 4 xxx 1 et 2 xxx 0
-%morph:	ouais<INTJ/discourse> c'<PRON/nsubj-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> chouette<ADJ/amod-Masc-Sing> xxx<NOUN/root-Masc-Sing> et<CCONJ/cc> xxx<PUNCT/punct> 
+%cpxx: 3
+%cpxdt: [0, 1, 2, 3, 1, 1, 2, 0]
+%%details: 0 ouais 1 c' 2 est 3 chouette 1 xxx 1 et 2 xxx 0
+%morph:	ouais<INTJ/discourse> c'<PRON/nsubj-Masc-Sing-3-Dem> est<AUX/cop-Ind-Sing-3-Pres-Fin> chouette<ADJ/root-Masc-Sing> xxx<NOUN/obl:mod-Masc-Sing> et<CCONJ/cc> xxx<NOUN/conj-Masc-Sing> 
 @End

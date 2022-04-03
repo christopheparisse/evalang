@@ -1,0 +1,682 @@
+@UTF8
+% allo rules are ordered!
+
+% variables
+X = .*    % anything
+Y = .*	  % second anything
+Z = .*    % third anything
+L = [abcdefghijklmnopqrstuvwxyzàâäéèêëiîïoööùûüç]
+M = [abcdefghijklmnopqrstuvwxyzàâäéèêëiîïoööùûüç]
+V = [aeiouyàâäéèêëiîïoööùûü] % vowels
+G = [abcdfghijklmnopqrstuvwxyzàâäéèêëiîïoööùûüç]
+P = [abcdefghijklmnopqrtuvwyzàâäéèêëiîïoööùûüç]
+V = [aeiouy]
+
+RULENAME:   missing-words
+LEX-ENTRY:
+LEXSURF = $X
+LEXCAT = [scat OR 0aux 0adv 0adj 0conj 0det 0inf 0neg 0pro 0prep 0n 0rel 0v 0zero]
+ALLO:
+ALLOSURF = 0$X
+ALLOCAT = LEXCAT
+
+% ****************
+% ADJECTIVE
+% ****************
+% rules of masculine and feminines
+
+RULENAME:   adj-trice-stems
+LEX-ENTRY:
+LEXSURF =  $Xteur		% créateur
+LEXCAT = [scat adj], [gn trice]
+ALLO:
+ALLOSURF = $X			% créaeur
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g trice], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% créatrice
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g trice], ADD [root yes]
+
+RULENAME:   adj-eur-stems
+LEX-ENTRY:
+LEXSURF =  $Xeur		% joueur
+LEXCAT = [scat adj], ![gn OR uniq trice invar]
+ALLO:
+ALLOSURF = $X			% joueur
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g eur], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% joueuse
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g eur], ADD [root yes]
+
+RULENAME:   adj-eux-stems
+LEX-ENTRY:
+LEXSURF =  $Xeux		% curieux
+LEXCAT = [scat adj], ![gn invar]
+ALLO:
+ALLOSURF = $X			% curieux
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g eux], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% curieuse
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g eux], ADD [root yes]
+
+RULENAME:   adj-er-stems
+LEX-ENTRY:
+LEXSURF =  $Xer		% palier
+LEXCAT = [scat adj], ![gn invar]
+ALLO:
+ALLOSURF = $X			% palier, grossier
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g er], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% palière
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g er], ADD [root yes]
+
+RULENAME:   adj-et-stems
+LEX-ENTRY:
+LEXSURF =  $Xet		% fluet
+LEXCAT = [scat adj], ![gn invar]
+ALLO:
+ALLOSURF = $X			% fluet
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g et], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% fluette
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g et], ADD [root yes]
+
+RULENAME:   adj-ic-stems
+LEX-ENTRY:
+LEXSURF =  $Xic		% public
+LEXCAT = [scat adj], ![gn invar]
+ALLO:
+ALLOSURF = $X			% public
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g ic], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% publique
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g ic], ADD [root yes]
+
+RULENAME:   adj-if-stems
+LEX-ENTRY:
+LEXSURF =  $Xif		% vif
+LEXCAT = [scat adj], ![gn invar]
+ALLO:
+ALLOSURF = $X			% vif
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g if], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% vive
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g if], ADD [root yes]
+
+RULENAME:   adj-vs-stems
+LEX-ENTRY:
+LEXSURF =  $X$Vs		% métis
+LEXCAT = [scat adj], ![gn invar]
+ALLO:
+ALLOSURF = $X$V			% métis
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g vs], ADD [root yes]
+ALLO:
+ALLOSURF = $X$V			% métisse
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g vs], ADD [root yes]
+
+RULENAME:   adj-ien-stems
+LEX-ENTRY:
+LEXSURF =  $Xien		% béotien
+LEXCAT = [scat adj], ![gn invar]
+ALLO:
+ALLOSURF = $X			% béotien
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g ien], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% béotienne
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g ien], ADD [root yes]
+
+RULENAME:   adj-on-stems
+LEX-ENTRY:
+LEXSURF =  $Xon		% bon
+LEXCAT = [scat adj], ![gn invar]
+ALLO:
+ALLOSURF = $X			% bon
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g on], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% bonne
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g on], ADD [root yes]
+
+RULENAME:   adj-el-stems
+LEX-ENTRY:
+LEXSURF =  $Xel		% bel
+LEXCAT = [scat adj], ![gn invar]
+ALLO:
+ALLOSURF = $X			% bel
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g el], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% belle
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g el], ADD [root yes]
+
+% rules of plurals
+
+RULENAME:   adj-eau-stems
+LEX-ENTRY:
+LEXSURF =  $Xeau		% nouveau
+LEXCAT = [scat adj]
+ALLO:
+ALLOSURF = $X			% nouv - eau
+ALLOCAT = LEXCAT, ADD [gen masc][num sing], ADD [g eau], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% nouv - elle
+ALLOCAT = LEXCAT, ADD [gen fem][num sing], ADD [g eau], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% nouv - eaux
+ALLOCAT = LEXCAT, ADD [gen masc][num pl], ADD [g eau], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% nouv - elles
+ALLOCAT = LEXCAT, ADD [gen fem][num pl], ADD [g eau], ADD [root yes]
+
+RULENAME:   adj-al-stems
+LEX-ENTRY:
+LEXSURF =  $Xal		% verbal
+LEXCAT = [scat adj], ![gn normal]
+ALLO:
+ALLOSURF = $X			% verb - al
+ALLOCAT = LEXCAT, ADD [gen masc][num sing], ADD [g al], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% verb - ale
+ALLOCAT = LEXCAT, ADD [gen fem][num sing], ADD [g al], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% verb - aux
+ALLOCAT = LEXCAT, ADD [gen masc][num pl], ADD [g al], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% verb - ales
+ALLOCAT = LEXCAT, ADD [gen fem][num pl], ADD [g al], ADD [root yes]
+
+RULENAME:   adj-default
+LEX-ENTRY:
+LEXSURF =  $X		% bizarre
+LEXCAT = [scat adj]
+ALLO:
+ALLOSURF = $X		% bizarres
+ALLOCAT = LEXCAT, ADD [g pl_s], ADD [gen masc]
+ALLO:
+ALLOSURF = $Xe		% bizarres
+ALLOCAT = LEXCAT, ADD [g pl_s], ADD [gen fem]
+
+% ****************
+% NOUN
+% ****************
+% rules of masculine and feminines
+
+RULENAME:   noun-eur-stems
+LEX-ENTRY:
+LEXSURF =  $Xeur		% joueur
+LEXCAT = [scat n], [anim yes], ![gn OR uniq invar]
+ALLO:
+ALLOSURF = $X			% joueur
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g eur], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% joueuse
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g eur], ADD [root yes]
+
+RULENAME:   noun-er-stems
+LEX-ENTRY:
+LEXSURF =  $Xer		% cuisinier
+LEXCAT = [scat n], [anim yes]
+ALLO:
+ALLOSURF = $X			% cuisinier
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g er], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% cuisinière
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g er], ADD [root yes]
+
+RULENAME:   noun-ien-stems
+LEX-ENTRY:
+LEXSURF =  $Xien		% musicien
+LEXCAT = [scat n], ![gn OR uniq invar], [anim yes]
+ALLO:
+ALLOSURF = $X			% music ien
+ALLOCAT = LEXCAT, ADD [gen masc], ADD [g ien], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% music ienne
+ALLOCAT = LEXCAT, ADD [gen fem], ADD [g ien], ADD [root yes]
+
+% rules of plurals
+
+RULENAME:   noun-al-stems
+LEX-ENTRY:
+LEXSURF =  $Xal		% amiral
+LEXCAT = [scat n], ![gn OR uniq invar], [tn pl_aux]
+ALLO:
+ALLOSURF = $X			% amiral
+ALLOCAT = LEXCAT, ADD [num sing], ADD [g pl_al], ADD [root yes]
+ALLO:
+ALLOSURF = $X			% amiraux
+ALLOCAT = LEXCAT, ADD [num pl], ADD [g pl_al], ADD [root yes]
+
+RULENAME:   noun-eau-stems
+LEX-ENTRY:
+LEXSURF =  $Xeau		% cadeau
+LEXCAT = [scat n], ![gn OR uniq invar]
+ALLO:
+ALLOSURF = $Xeau		% just adding the g
+ALLOCAT = LEXCAT, ADD [g pl_x]
+
+RULENAME:   noun-eu-stems
+LEX-ENTRY:
+LEXSURF =  $Xeu			% cheveu
+LEXCAT = [scat n], ![gn OR uniq invar], ![g pl_s]
+ALLO:
+ALLOSURF = $Xeu			% just adding the g
+ALLOCAT = LEXCAT, ADD [g pl_x]
+
+RULENAME:   noun-plural-s
+LEX-ENTRY:
+LEXSURF =  $X		% arbre
+LEXCAT = [scat n], ![gn OR uniq invar]
+ALLO:
+ALLOSURF = $X			% arbres
+ALLOCAT = LEXCAT, ADD [g pl_s]
+
+% ****************
+% VERB
+% ****************
+
+RULENAME:  v3g-lire
+LEX-ENTRY:
+LEXSURF =  $Xire	% l
+LEXCAT = [scat v],  [special lire]
+ALLO:
+ALLOSURF = $X		% lit
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-écrire
+LEX-ENTRY:
+LEXSURF =  $Xcrire	% é
+LEXCAT = [scat v],  [special écrire]
+ALLO:
+ALLOSURF = $X		% écrit
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-extraire
+LEX-ENTRY:
+LEXSURF =  $Xraire	% ext
+LEXCAT = [scat v],  [special extraire]
+ALLO:
+ALLOSURF = $X		% extrait
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-faire
+LEX-ENTRY:
+LEXSURF =  $Xaire	% f
+LEXCAT = [scat OR v v:mdl v:mdllex],  [special faire]
+ALLO:
+ALLOSURF = $X		% fait
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-taire
+LEX-ENTRY:
+LEXSURF =  $Xaire	% t
+LEXCAT = [scat v],  [special taire]
+ALLO:
+ALLOSURF = $X		% tait
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-dire
+LEX-ENTRY:
+LEXSURF =  $Xire	% d
+LEXCAT = [scat v],  [special dire]
+ALLO:
+ALLOSURF = $X		% dit
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-conduire
+LEX-ENTRY:
+LEXSURF =  $Xuire	% cond
+LEXCAT = [scat v],  [special conduire]
+ALLO:
+ALLOSURF = $X		% conduit
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-conclure
+LEX-ENTRY:
+LEXSURF =  $Xlure	% conc
+LEXCAT = [scat v],  [special conclure]
+ALLO:
+ALLOSURF = $X		% conclut
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-croître
+LEX-ENTRY:
+LEXSURF =  $Xroître	% c
+LEXCAT = [scat v],  [special croître]
+ALLO:
+ALLOSURF = $X		% croît
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-paraître
+LEX-ENTRY:
+LEXSURF =  $Xaître	% par
+LEXCAT = [scat OR v v:mdl v:mdllex],  [special paraître]
+ALLO:
+ALLOSURF = $X		% paraît
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-suivre
+LEX-ENTRY:
+LEXSURF =  $Xuivre	% s
+LEXCAT = [scat v],  [special suivre]
+ALLO:
+ALLOSURF = $X		% suit
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-vivre
+LEX-ENTRY:
+LEXSURF =  $Xivre	% v
+LEXCAT = [scat v],  [special vivre]
+ALLO:
+ALLOSURF = $X		% vit
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-craindre
+LEX-ENTRY:
+LEXSURF =  $Xindre	% cra
+LEXCAT = [scat v],  [special craindre]
+ALLO:
+ALLOSURF = $X		% craint
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-coudre
+LEX-ENTRY:
+LEXSURF =  $Xoudre	% c
+LEXCAT = [scat v],  [special coudre]
+ALLO:
+ALLOSURF = $X		% coud
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-mettre
+LEX-ENTRY:
+LEXSURF =  $Xettre	% m
+LEXCAT = [scat v],  [special mettre]
+ALLO:
+ALLOSURF = $X		% met
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-battre
+LEX-ENTRY:
+LEXSURF =  $Xattre	% b
+LEXCAT = [scat v],  [special battre]
+ALLO:
+ALLOSURF = $X		% bat
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-rompre
+LEX-ENTRY:
+LEXSURF =  $Xmpre	% ro
+LEXCAT = [scat v],  [special rompre]
+ALLO:
+ALLOSURF = $X		% romps
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-prendre
+LEX-ENTRY:
+LEXSURF =  $Xendre	% pr
+LEXCAT = [scat v],  [special prendre]
+ALLO:
+ALLOSURF = $X		% prend
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-tendre
+LEX-ENTRY:
+LEXSURF =  $Xdre	% ten
+LEXCAT = [scat v],  [special tendre]
+ALLO:
+ALLOSURF = $X		% tend
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-valoir
+LEX-ENTRY:
+LEXSURF =  $Xaloir	% v
+LEXCAT = [scat v],  [special valoir]
+ALLO:
+ALLOSURF = $X		% vaut
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-mouvoir
+LEX-ENTRY:
+LEXSURF =  $Xouvoir	% mouvoir
+LEXCAT = [scat v],  [special mouvoir]
+ALLO:
+ALLOSURF = $X		% meut
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-décevoir
+LEX-ENTRY:
+LEXSURF =  $Xcevoir	% décevoir
+LEXCAT = [scat v],  [special décevoir]
+ALLO:
+ALLOSURF = $X		% déçoit
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-ouvrir
+LEX-ENTRY:
+LEXSURF =  $Xrir	% ouvrir
+LEXCAT = [scat v],  [special ouvrir]
+ALLO:
+ALLOSURF = $X		% ouvre
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-tenir
+LEX-ENTRY:
+LEXSURF =  $Xenir	% tenir, venir, etc.
+LEXCAT = [scat OR v v:mdl v:mdllex],  [special tenir]
+ALLO:
+ALLOSURF = $X		% t
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-vêtir
+LEX-ENTRY:
+LEXSURF =  $Xêtir	% vêtir
+LEXCAT = [scat v],  [special vêtir]
+ALLO:
+ALLOSURF = $X		% v
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-dormir
+LEX-ENTRY:
+LEXSURF =  $Xormir	% dormir
+LEXCAT = [scat v],  [special dormir]
+ALLO:
+ALLOSURF = $X		% d
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-partir
+LEX-ENTRY:
+LEXSURF =  $Xartir	% partir
+LEXCAT = [scat v],  [special partir]
+ALLO:
+ALLOSURF = $X		% p
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-courir
+LEX-ENTRY:
+LEXSURF =  $Xourir	% courir
+LEXCAT = [scat v],  [special courir]
+ALLO:
+ALLOSURF = $X		% c
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-cueillir
+LEX-ENTRY:
+LEXSURF =  $Xueillir	% cueillir
+LEXCAT = [scat v],  [special cueillir]
+ALLO:
+ALLOSURF = $X		% c
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-mentir
+LEX-ENTRY:
+LEXSURF =  $Xentir	% mentir
+LEXCAT = [scat v],  [special mentir]
+ALLO:
+ALLOSURF = $X		% ment
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-servir
+LEX-ENTRY:
+LEXSURF =  $Xvir	% servir
+LEXCAT = [scat v],  [special servir]
+ALLO:
+ALLOSURF = $X		% sert
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-assaillir
+LEX-ENTRY:
+LEXSURF =  $Xaillir	% assaillir
+LEXCAT = [scat v],  [special assaillir]
+ALLO:
+ALLOSURF = $X		% assaille
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v3g-acquérir
+LEX-ENTRY:
+LEXSURF =  $Xquérir	% acquérir
+LEXCAT = [scat v],  [special acquérir]
+ALLO:
+ALLOSURF = $X		% acquiert
+ALLOCAT = LEXCAT, ADD [root yes]
+
+RULENAME:  v1g-cer
+LEX-ENTRY:
+LEXSURF =  $Xcer	% placer
+LEXCAT = [scat v], ![special uniq]
+ALLO:
+ALLOSURF = $Xc		% place
+ALLOCAT = LEXCAT, ADD [allo v1g_ao_oth], ADD [root yes]
+ALLO:
+ALLOSURF = $Xç		% plaçait
+ALLOCAT = LEXCAT, ADD [allo v1g_ao], ADD [root yes]
+
+RULENAME:  v1g-ayer
+LEX-ENTRY:
+LEXSURF =  $Xayer	% payer
+LEXCAT = [scat v]
+ALLO:
+ALLOSURF = $Xay		% payons
+ALLOCAT = LEXCAT, ADD [allo v1g_mute_oth], ADD [root yes]
+ALLO:
+ALLOSURF = $Xai		% paie
+ALLOCAT = LEXCAT, ADD [allo v1g_mute], ADD [root yes]
+ALLO:
+ALLOSURF = $Xay		% paye
+ALLOCAT = LEXCAT, ADD [allo v1g_mute], ADD [root yes]
+
+RULENAME:  v1g-yer
+LEX-ENTRY:
+LEXSURF =  $Xyer	% nettoyer
+LEXCAT = [scat v]
+ALLO:
+ALLOSURF = $Xy		% nettoyons
+ALLOCAT = LEXCAT, ADD [allo v1g_mute_oth], ADD [root yes]
+ALLO:
+ALLOSURF = $Xi		% nettoie
+ALLOCAT = LEXCAT, ADD [allo v1g_mute], ADD [root yes]
+
+RULENAME:  v1g-ger
+LEX-ENTRY:
+LEXSURF =  $Xger	% manger
+LEXCAT = [scat v]
+ALLO:
+ALLOSURF = $Xg		% mange
+ALLOCAT = LEXCAT, ADD [allo v1g_ao_oth], ADD [root yes]
+ALLO:
+ALLOSURF = $Xge		% mangeait
+ALLOCAT = LEXCAT, ADD [allo v1g_ao], ADD [root yes]
+
+RULENAME:  v1g-eler-special
+LEX-ENTRY: 
+LEXSURF =  $Xeler
+LEXCAT = [scat v], [special eler]
+ALLO:
+ALLOSURF = $Xel		% pelons
+ALLOCAT = LEXCAT, ADD [allo v1g_mute_oth], DEL [special], ADD [root yes]
+ALLO:
+ALLOSURF = $Xèl		% pèle
+ALLOCAT = LEXCAT, ADD [allo v1g_mute], DEL [special], ADD [root yes]
+
+RULENAME:  v1g-eler
+LEX-ENTRY:
+LEXSURF =  $Xeler	% appeler
+LEXCAT = [scat v]
+ALLO:
+ALLOSURF = $Xel		% appelons
+ALLOCAT = LEXCAT, ADD [allo v1g_mute_oth], ADD [root yes]
+ALLO:
+ALLOSURF = $Xell	% appelle
+ALLOCAT = LEXCAT, ADD [allo v1g_mute], ADD [root yes]
+
+RULENAME:  v1g-eter
+LEX-ENTRY:
+LEXSURF =  $Xeter
+LEXCAT = [scat v], [special eter]
+ALLO:
+ALLOSURF = $Xet		% achetons
+ALLOCAT = LEXCAT, ADD [allo v1g_mute_oth], DEL [special], ADD [root yes]
+ALLO:
+ALLOSURF = $Xèt		% achète
+ALLOCAT = LEXCAT, ADD [allo v1g_mute], DEL [special], ADD [root yes]
+
+RULENAME:  v1g-eter
+LEX-ENTRY:
+LEXSURF =  $Xeter	% jeter
+LEXCAT = [scat v]
+ALLO:
+ALLOSURF = $Xet		% jetons
+ALLOCAT = LEXCAT, ADD [allo v1g_mute_oth], ADD [root yes]
+ALLO:
+ALLOSURF = $Xett	% jette
+ALLOCAT = LEXCAT, ADD [allo v1g_mute], ADD [root yes]
+
+RULENAME:  v1g-eXer
+LEX-ENTRY:
+LEXSURF =  $Xe$Ler	% semer
+LEXCAT = [scat v], ![special uniq]
+ALLO:
+ALLOSURF = $Xe$L	% semons
+ALLOCAT = LEXCAT, ADD [allo v1g_mute_oth], ADD [root yes]
+ALLO:
+ALLOSURF = $Xè$L	% sème
+ALLOCAT = LEXCAT, ADD [allo v1g_mute], ADD [root yes]
+
+RULENAME:  v1g-éXer
+LEX-ENTRY:
+LEXSURF =  $Xé$Ler	% révéler
+LEXCAT = [scat v], ![special uniq]
+ALLO:
+ALLOSURF = $Xé$L	% révélons
+ALLOCAT = LEXCAT, ADD [allo v1g_mute_oth], ADD [root yes]
+ALLO:
+ALLOSURF = $Xè$L	% révèle
+ALLOCAT = LEXCAT, ADD [allo v1g_mute], ADD [root yes]
+
+RULENAME:  v1g-éXXer
+LEX-ENTRY:
+LEXSURF =  $Xé$L$Mer	% sécher
+LEXCAT = [scat v], ![special uniq]
+ALLO:
+ALLOSURF = $Xé$L$M	% révélons
+ALLOCAT = LEXCAT, ADD [allo v1g_mute_oth], ADD [root yes]
+ALLO:
+ALLOSURF = $Xè$L$M	% révèle
+ALLOCAT = LEXCAT, ADD [allo v1g_mute], ADD [root yes]
+
+RULENAME:  v1g-er
+LEX-ENTRY:
+LEXSURF =  $Xer		% chanter
+LEXCAT = [scat OR v v:mdl v:mdllex], ![special uniq]
+ALLO:
+ALLOSURF = $X		% tous temps
+ALLOCAT = LEXCAT, ADD [allo v1g], ADD [root yes]
+
+RULENAME:  v2g-ir
+LEX-ENTRY:
+LEXSURF =  $Xir		% finir
+LEXCAT = [scat v], [special v2g]
+ALLO:
+ALLOSURF = $X		% tous temps
+ALLOCAT = LEXCAT, ADD [allo v2g], ADD [root yes]
+
+% default rule-  copy input to output
+RULENAME: default
+LEX-ENTRY:
+ALLO:

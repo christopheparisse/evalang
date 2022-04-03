@@ -7,10 +7,5 @@ NF <= 3 { next; }
 	else
 		printf "*ADU:\t"
 	for (i=3; i < NF; i++) printf "%s ", $i;
-	if ($NF == "?")
-		printf "?\n";
-	else if ($NF == "!")
-		printf "!\n";
-	else
-		printf "%s.\n", $NF;
+	printf "%s\n", $NF;
 }

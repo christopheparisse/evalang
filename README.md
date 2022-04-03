@@ -19,37 +19,45 @@ Tous les dossiers contenant des fichiers à traiter contiennent toute une série
 ### Fichiers de départ
 
 #### tei_corpo
-Fichiers orginaux des transcriptions TRANSCRIBER convertis avec TEI_CORPO. Les transcriptions suivent le modèle TCOF.
+- Fichiers orginaux des transcriptions TRANSCRIBER convertis avec TEI_CORPO. Les transcriptions suivent le modèle TCOF.
 #### clan
-Fichiers originaux des transcriptions. Tous ces fichiers suivent les conventions classiques des transcriptions CHAT/CLAN.
+- Fichiers originaux des transcriptions. Tous ces fichiers suivent les conventions classiques des transcriptions CHAT/CLAN.
 
 ### Fichiers de traitements
 
 #### tei_corpo_base
-Fichiers issus de la conversion et du nettoyage vers tei_corpo. Les fichiers dits "_base" servent de point de départ à tous les traitements, analyses syntaxiques ou traitements statistiques (ou recherches).
+- Fichiers issus de la conversion et du nettoyage vers tei_corpo. Les fichiers dits "_base" servent de point de départ à tous les traitements, analyses syntaxiques ou traitements statistiques (ou recherches).
 
 #### Traitements avec TreeTagger
 
 #### ttg_perceo
-Analyse syntaxique avec TreeTagger et le modèle PERCEO. Ces fichiers sont au format TEI, format syntaxique "ref"
+- Analyse syntaxique avec TreeTagger et le modèle PERCEO. Ces fichiers sont au format TEI, format syntaxique "ref"
 
 #### ttg_perceo_clan
-Conversions des fichiers *ttg_perceo* au format CLAN pour permettre la recherche d'éléments et le calcul de statistiques
+- Conversions des fichiers *ttg_perceo* au format CLAN pour permettre la recherche d'éléments et le calcul de statistiques
 
 #### Traitements avec Stanza
 
 #### conllu
-Analyse syntaxique par Stanza au format conllu
+- Analyse syntaxique par Stanza au format conllu
 
 #### conllu_clan
-Conversions des fichiers *conllu* au format CLAN pour permettre la recherche d'éléments et le calcul de statistiques
+- Conversions des fichiers *conllu* au format CLAN pour permettre la recherche d'éléments et le calcul de statistiques
 
 
 ### Autres répertoires
 Tous les autres répertoires non mentionnés ci-dessus sont des répertoires contenant des fichiers intermédiaires utilisés pour les calculs ou transformations
 
-# ESSAI : Commandes
-Les commandes de traitement de l'ensemble des répertoires se font dans le sous-système Ubuntu sous Windows pour bénéficier de la puissance du shell et des commandes unix. A peu près la même chose peut être réalisée avec PowerShell sous Windows (ce sera pour une seconde version).
+# Commandes pour analyser des transcriptions et créer les différentes versions
+- Les commandes de traitement de l'ensemble des répertoires se font dans le sous-système Ubuntu sous Windows pour bénéficier de la puissance du shell et des commandes unix. A peu près la même chose peut être réalisée avec PowerShell sous Windows (ce sera pour une seconde version).
+- Les programmes fonctionnent aussi sous Ubuntu natif et sur MacOS
+- Pour faire tourner les programmes, il faut installer:
+  - Treetagger
+  - Python3
+    - charger les bibliothèques stanza
+  - les commandes clan sous forme de programme externes en compilant unix-clan
+  - Git si pas déjà disponible
+- Pour interroger les fichiers CLAN, utiliser CLAN (à installer)
 
 ## Commandes à lancer
 ##### (les commandes disponibles peuvent dépendre du format de départ jusqu'à arriver à construire tei_corpo_base)
@@ -58,19 +66,34 @@ Les commandes de traitement de l'ensemble des répertoires se font dans le sous-
 sh fullbuild.sh
 
 ### Clan vers Tei_corpo_base
+- Convertit tous les fichiers du répertoire CLAN (au format CLAN) vers le répertoire tei_corpo_base (au format tei_corpo)
+```
 sh ../../evalang/commands/clantotei.sh
+```
 
 ### Tei_corpo vers Tei_corpo_base
+- A partir de tei_corpo original, crée des fichiers CLAN (dans répertoire CLAN) et des fichiers tei_corpo nettoyés et mis dans tei_corpo_base
+```
 sh ../../evalang/commands/teicorpototei.sh
+```
 
 ### Tei_corpo_base vers ttg_perceo
+- Analyse de tei_corpo_base avec treetagger et perceo
+```
 sh ../../evalang/commands/teibasetottg.sh
+```
 
 ### Ttg_perceo vers ttg_perceo_clan
+- Convertit résultat de l'analyse treetagger perceo vers un format CLAN requetable
+```
 sh ../../evalang/commands/ttgtoclan.sh
+```
 
 ### Tei_corpo_base vers conllu et conllu_clan
+- Analyse avec stanza les fichiers tei_corpo_base et génère un format CLAN requetable
+```
 sh ../../evalang/commands/teitoconllu.sh
+```
 
 # Commentaire et essai
 
@@ -81,13 +104,16 @@ Les fichiers en question ont une extension .txt (dont ils peuvent être visualis
 Leur nom se termine par .[nombre]pl.txt (par exemple .20pl.txt)
 Correction pour supprimer les lignes secondaires.
 
+```
 sh ../../evalang/commands/callnth.sh 20
+````
 
 Les fichiers figurent dans les dossiers appelés **lg20**
 
 ## Utilisation des analyses syntaxiques pour générer fichier CSV
-
+```
 sh ../../evalang/commands/process.sh
+```
 
 ## Résultats statistiques
 Ils sont dans chaque répertoire sous forme de fichier .csv (un pour perceo et un pour stanza)

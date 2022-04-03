@@ -12,6 +12,17 @@
 10	!	!	PUNCT	_	_	3	punct	_	start_char=28|end_char=29	_	_	CHI
 
 #sent_id = CHI <au1>
+#text = à la mer euh petite crevette yy .
+1	à	à	ADP	_	_	3	case	_	start_char=0|end_char=1	_	_	CHI
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	start_char=2|end_char=4	_	_	CHI
+3	mer	mer	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=5|end_char=8	_	_	CHI
+4	euh	euh	ADV	_	_	5	advmod	_	start_char=9|end_char=12	_	_	CHI
+5	petite	petit	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	start_char=13|end_char=19	_	_	CHI
+6	crevette	crevette	NOUN	_	Gender=Fem|Number=Sing	3	appos	_	start_char=20|end_char=28	_	_	CHI
+7	yy	yy	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	start_char=29|end_char=31	_	_	CHI
+8	.	.	PUNCT	_	_	6	punct	_	start_char=32|end_char=33	_	_	CHI
+
+#sent_id = CHI <au2>
 #text = t'as vu il est tout nu !
 1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	3	obl:arg	_	start_char=0|end_char=2	_	_	CHI
 2	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=2|end_char=4	_	_	CHI
@@ -22,7 +33,7 @@
 7	nu	nu	ADJ	_	Gender=Masc|Number=Sing	3	xcomp	_	start_char=20|end_char=22	_	_	CHI
 8	!	!	PUNCT	_	_	3	punct	_	start_char=23|end_char=24	_	_	CHI
 
-#sent_id = CHI <au2>
+#sent_id = CHI <au3>
 #text = le loup a pas mangé à moi !
 1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	CHI
 2	loup	loup	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	start_char=3|end_char=7	_	_	CHI
@@ -33,7 +44,7 @@
 7	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	5	obl:arg	_	start_char=22|end_char=25	_	_	CHI
 8	!	!	PUNCT	_	_	5	punct	_	start_char=26|end_char=27	_	_	CHI
 
-#sent_id = CHI <au3>
+#sent_id = CHI <au4>
 #text = et il est où le tee shirt ?
 1	et	et	CCONJ	_	_	3	cc	_	start_char=0|end_char=2	_	_	CHI
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	start_char=3|end_char=5	_	_	CHI
@@ -44,27 +55,15 @@
 7	shirt	shirt	NOUN	_	Gender=Masc|Number=Sing	6	appos	_	start_char=20|end_char=25	_	_	CHI
 8	?	?	PUNCT	_	_	3	punct	_	start_char=26|end_char=27	_	_	CHI
 
-#sent_id = CHI <au4>
-#text = à la mer euh petite crevette yy ..
-1	à	à	ADP	_	_	3	case	_	start_char=0|end_char=1	_	_	CHI
-2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	start_char=2|end_char=4	_	_	CHI
-3	mer	mer	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=5|end_char=8	_	_	CHI
-4	euh	euh	ADV	_	_	5	advmod	_	start_char=9|end_char=12	_	_	CHI
-5	petite	petit	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	start_char=13|end_char=19	_	_	CHI
-6	crevette	crevette	NOUN	_	Gender=Fem|Number=Sing	3	appos	_	start_char=20|end_char=28	_	_	CHI
-7	yy	yy	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	start_char=29|end_char=31	_	_	CHI
-8	.	.	PUNCT	_	_	6	punct	_	start_char=32|end_char=33	_	_	CHI
-9	.	.	PUNCT	_	_	6	punct	_	start_char=33|end_char=34	_	_	CHI
-
 #sent_id = CHI <au5>
-#text = tee shirt l'est pas là ..
+#text = tee shirt l'est pas là .
 1	tee	tee	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	start_char=0|end_char=3	_	_	CHI
 2	shirt	shirt	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=4|end_char=9	_	_	CHI
 3	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	0	root	_	start_char=10|end_char=12	_	_	CHI
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=12|end_char=15	_	_	CHI
 5	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	start_char=16|end_char=19	_	_	CHI
 6	là	là	ADV	_	_	3	advmod	_	start_char=20|end_char=22	_	_	CHI
-7	..	..	PUNCT	_	_	3	punct	_	start_char=23|end_char=25	_	_	CHI
+7	.	.	PUNCT	_	_	3	punct	_	start_char=23|end_char=24	_	_	CHI
 
 #sent_id = CHI <au6>
 #text = t'as vu trouvé un poisson !
@@ -77,7 +76,7 @@
 7	!	!	PUNCT	_	_	3	punct	_	start_char=26|end_char=27	_	_	CHI
 
 #sent_id = CHI <au7>
-#text = t'as vu trouvé la collier ..
+#text = t'as vu trouvé la collier .
 1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obl:arg	_	start_char=0|end_char=2	_	_	CHI
 2	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux:tense	_	start_char=2|end_char=4	_	_	CHI
 3	vu	voir	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	advmod	_	start_char=5|end_char=7	_	_	CHI
@@ -85,7 +84,6 @@
 5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	start_char=15|end_char=17	_	_	CHI
 6	collier	collier	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	start_char=18|end_char=25	_	_	CHI
 7	.	.	PUNCT	_	_	4	punct	_	start_char=26|end_char=27	_	_	CHI
-8	.	.	PUNCT	_	_	4	punct	_	start_char=27|end_char=28	_	_	CHI
 
 #sent_id = CHI <au8>
 #text = on fait a galipette comme ça !
@@ -98,7 +96,7 @@
 7	!	!	PUNCT	_	_	2	punct	_	start_char=29|end_char=30	_	_	CHI
 
 #sent_id = CHI <au9>
-#text = non veux pas avoir un cadeau ..
+#text = non veux pas avoir un cadeau .
 1	non	non	ADV	_	Polarity=Neg	2	advmod	_	start_char=0|end_char=3	_	_	CHI
 2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=4|end_char=8	_	_	CHI
 3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	start_char=9|end_char=12	_	_	CHI
@@ -106,10 +104,9 @@
 5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=19|end_char=21	_	_	CHI
 6	cadeau	cadeau	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	start_char=22|end_char=28	_	_	CHI
 7	.	.	PUNCT	_	_	2	punct	_	start_char=29|end_char=30	_	_	CHI
-8	.	.	PUNCT	_	_	2	punct	_	start_char=30|end_char=31	_	_	CHI
 
 #sent_id = CHI <au10>
-#text = lø veux le cadeau à moi ..
+#text = lø veux le cadeau à moi .
 1	lø	le	PRON	_	Number=Sing|Person=1|PronType=Prs	2	obj	_	start_char=0|end_char=2	_	_	CHI
 2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CHI
 3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=8|end_char=10	_	_	CHI
@@ -117,10 +114,9 @@
 5	à	à	ADP	_	_	6	case	_	start_char=18|end_char=19	_	_	CHI
 6	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nmod	_	start_char=20|end_char=23	_	_	CHI
 7	.	.	PUNCT	_	_	2	punct	_	start_char=24|end_char=25	_	_	CHI
-8	.	.	PUNCT	_	_	2	punct	_	start_char=25|end_char=26	_	_	CHI
 
 #sent_id = CHI <au11>
-#text = le bonhomme il va à douche ..
+#text = le bonhomme il va à douche .
 1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	CHI
 2	bonhomme	bonhomme	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	start_char=3|end_char=11	_	_	CHI
 3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=12|end_char=14	_	_	CHI
@@ -128,20 +124,9 @@
 5	à	à	ADP	_	_	6	case	_	start_char=18|end_char=19	_	_	CHI
 6	douche	douche	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	start_char=20|end_char=26	_	_	CHI
 7	.	.	PUNCT	_	_	4	punct	_	start_char=27|end_char=28	_	_	CHI
-8	.	.	PUNCT	_	_	4	punct	_	start_char=28|end_char=29	_	_	CHI
 
 #sent_id = CHI <au12>
-#text = et et on et on ferme ..
-1	et	et	CCONJ	_	_	6	cc	_	start_char=0|end_char=2	_	_	CHI
-2	et	et	CCONJ	_	_	6	cc	_	start_char=3|end_char=5	_	_	CHI
-3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	6	nsubj	_	start_char=6|end_char=8	_	_	CHI
-4	et	et	CCONJ	_	_	6	cc	_	start_char=9|end_char=11	_	_	CHI
-5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	6	nsubj	_	start_char=12|end_char=14	_	_	CHI
-6	ferme	fermer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=15|end_char=20	_	_	CHI
-7	..	..	PUNCT	_	_	6	punct	_	start_char=21|end_char=23	_	_	CHI
-
-#sent_id = CHI <au13>
-#text = et ɛ m'embête à moi ..
+#text = et ɛ m'embête à moi .
 1	et	et	CCONJ	_	_	4	cc	_	start_char=0|end_char=2	_	_	CHI
 2	ɛ	ɛ	X	_	_	4	nsubj	_	start_char=3|end_char=4	_	_	CHI
 3	m'	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	4	obl:arg	_	start_char=5|end_char=7	_	_	CHI
@@ -149,10 +134,19 @@
 5	à	à	ADP	_	_	6	case	_	start_char=14|end_char=15	_	_	CHI
 6	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	4	obl:arg	_	start_char=16|end_char=19	_	_	CHI
 7	.	.	PUNCT	_	_	4	punct	_	start_char=20|end_char=21	_	_	CHI
-8	.	.	PUNCT	_	_	4	punct	_	start_char=21|end_char=22	_	_	CHI
+
+#sent_id = CHI <au13>
+#text = et et on et on ferme .
+1	et	et	CCONJ	_	_	6	cc	_	start_char=0|end_char=2	_	_	CHI
+2	et	et	CCONJ	_	_	6	cc	_	start_char=3|end_char=5	_	_	CHI
+3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	6	nsubj	_	start_char=6|end_char=8	_	_	CHI
+4	et	et	CCONJ	_	_	6	cc	_	start_char=9|end_char=11	_	_	CHI
+5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	6	nsubj	_	start_char=12|end_char=14	_	_	CHI
+6	ferme	fermer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=15|end_char=20	_	_	CHI
+7	.	.	PUNCT	_	_	6	punct	_	start_char=21|end_char=22	_	_	CHI
 
 #sent_id = CHI <au14>
-#text = comme ça e fais tout seul ..
+#text = comme ça e fais tout seul .
 1	comme	comme	SCONJ	_	_	4	mark	_	start_char=0|end_char=5	_	_	CHI
 2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=6|end_char=8	_	_	CHI
 3	e	e	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	start_char=9|end_char=10	_	_	CHI
@@ -160,32 +154,9 @@
 5	tout	tout	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	4	obj	_	start_char=16|end_char=20	_	_	CHI
 6	seul	seul	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	start_char=21|end_char=25	_	_	CHI
 7	.	.	PUNCT	_	_	4	punct	_	start_char=26|end_char=27	_	_	CHI
-8	.	.	PUNCT	_	_	4	punct	_	start_char=27|end_char=28	_	_	CHI
 
 #sent_id = CHI <au15>
-#text = c'est un poisson est comme ça ..
-1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	CHI
-2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=2|end_char=5	_	_	CHI
-3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=6|end_char=8	_	_	CHI
-4	poisson	poisson	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	start_char=9|end_char=16	_	_	CHI
-5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=17|end_char=20	_	_	CHI
-6	comme	comme	ADP	_	_	7	case	_	start_char=21|end_char=26	_	_	CHI
-7	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=27|end_char=29	_	_	CHI
-8	..	..	PUNCT	_	_	7	punct	_	start_char=30|end_char=32	_	_	CHI
-
-#sent_id = CHI <au16>
-#text = c'est tapé euh a a joue ..
-1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	CHI
-2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	start_char=2|end_char=5	_	_	CHI
-3	tapé	taper	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=6|end_char=10	_	_	CHI
-4	euh	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	7	obl:arg	_	start_char=11|end_char=14	_	_	CHI
-5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	start_char=15|end_char=16	_	_	CHI
-6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	start_char=17|end_char=18	_	_	CHI
-7	joue	jouer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	start_char=19|end_char=23	_	_	CHI
-8	..	..	PUNCT	_	_	3	punct	_	start_char=24|end_char=26	_	_	CHI
-
-#sent_id = CHI <au17>
-#text = c'est à moi le petit cochon ..
+#text = c'est à moi le petit cochon .
 1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=0|end_char=2	_	_	CHI
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=2|end_char=5	_	_	CHI
 3	à	à	ADP	_	_	4	case	_	start_char=6|end_char=7	_	_	CHI
@@ -194,10 +165,31 @@
 6	petit	petit	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	start_char=15|end_char=20	_	_	CHI
 7	cochon	cochon	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=21|end_char=27	_	_	CHI
 8	.	.	PUNCT	_	_	7	punct	_	start_char=28|end_char=29	_	_	CHI
-9	.	.	PUNCT	_	_	7	punct	_	start_char=29|end_char=30	_	_	CHI
+
+#sent_id = CHI <au16>
+#text = c'est un poisson est comme ça .
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	CHI
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=2|end_char=5	_	_	CHI
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=6|end_char=8	_	_	CHI
+4	poisson	poisson	NOUN	_	Gender=Masc|Number=Sing	7	nsubj	_	start_char=9|end_char=16	_	_	CHI
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=17|end_char=20	_	_	CHI
+6	comme	comme	ADP	_	_	7	case	_	start_char=21|end_char=26	_	_	CHI
+7	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=27|end_char=29	_	_	CHI
+8	.	.	PUNCT	_	_	7	punct	_	start_char=30|end_char=31	_	_	CHI
+
+#sent_id = CHI <au17>
+#text = c'est tapé euh a a joue .
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	CHI
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	start_char=2|end_char=5	_	_	CHI
+3	tapé	taper	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=6|end_char=10	_	_	CHI
+4	euh	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	7	obl:arg	_	start_char=11|end_char=14	_	_	CHI
+5	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	start_char=15|end_char=16	_	_	CHI
+6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	start_char=17|end_char=18	_	_	CHI
+7	joue	jouer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	start_char=19|end_char=23	_	_	CHI
+8	.	.	PUNCT	_	_	3	punct	_	start_char=24|end_char=25	_	_	CHI
 
 #sent_id = CHI <au18>
-#text = boum la la boum le mur ..
+#text = boum la la boum le mur .
 1	boum	boumer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
 2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=5|end_char=7	_	_	CHI
 3	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	amod	_	start_char=8|end_char=10	_	_	CHI
@@ -205,7 +197,6 @@
 5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=16|end_char=18	_	_	CHI
 6	mur	mur	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=19|end_char=22	_	_	CHI
 7	.	.	PUNCT	_	_	1	punct	_	start_char=23|end_char=24	_	_	CHI
-8	.	.	PUNCT	_	_	1	punct	_	start_char=24|end_char=25	_	_	CHI
 
 #sent_id = CHI <au19>
 #text = ah un poisson trouvé un poisson !

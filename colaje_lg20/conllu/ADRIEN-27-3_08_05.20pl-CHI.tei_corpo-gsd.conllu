@@ -55,7 +55,7 @@
 15	!	!	PUNCT	_	_	10	punct	_	start_char=57|end_char=58	_	_	CHI
 
 #sent_id = CHI <au3>
-#text = y'a tout ça ici et moi je moi je moi ..
+#text = y'a tout ça ici et moi je moi je moi .
 1	y'	y	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	dep:comp	_	start_char=0|end_char=2	_	_	CHI
 2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=3	_	_	CHI
 3	tout	tout	DET	_	Gender=Masc|Number=Sing|PronType=Ind	4	det	_	start_char=4|end_char=8	_	_	CHI
@@ -66,9 +66,8 @@
 8	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	9	nsubj	_	start_char=23|end_char=25	_	_	CHI
 9	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	2	conj	_	start_char=26|end_char=29	_	_	CHI
 10	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	11	nsubj	_	start_char=30|end_char=32	_	_	CHI
-11	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	9	conj	_	start_char=33|end_char=36	_	_	CHI
+11	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	9	nmod	_	start_char=33|end_char=36	_	_	CHI
 12	.	.	PUNCT	_	_	2	punct	_	start_char=37|end_char=38	_	_	CHI
-13	.	.	PUNCT	_	_	2	punct	_	start_char=38|end_char=39	_	_	CHI
 
 #sent_id = CHI <au4>
 #text = non veux moi je voulais voir papa et voulais bouh à papa !
@@ -118,20 +117,6 @@
 12	!	!	PUNCT	_	_	5	punct	_	start_char=44|end_char=45	_	_	CHI
 
 #sent_id = CHI <au7>
-#text = les voitures ils sont là tous ouh un gros ballon !
-1	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	CHI
-2	voitures	voiture	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	_	start_char=4|end_char=12	_	_	CHI
-3	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	start_char=13|end_char=16	_	_	CHI
-4	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	start_char=17|end_char=21	_	_	CHI
-5	là	là	ADV	_	_	7	advmod	_	start_char=22|end_char=24	_	_	CHI
-6	tous	tout	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Ind	7	obl:mod	_	start_char=25|end_char=29	_	_	CHI
-7	ouh	ouir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=30|end_char=33	_	_	CHI
-8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	start_char=34|end_char=36	_	_	CHI
-9	gros	gros	ADJ	_	Gender=Masc	10	amod	_	start_char=37|end_char=41	_	_	CHI
-10	ballon	ballon	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	start_char=42|end_char=48	_	_	CHI
-11	!	!	PUNCT	_	_	7	punct	_	start_char=49|end_char=50	_	_	CHI
-
-#sent_id = CHI <au8>
 #text = là il là là y'en a et il en a manque une là !
 1	là	là	ADV	_	_	7	advmod	_	start_char=0|end_char=2	_	_	CHI
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl:subj	_	start_char=3|end_char=5	_	_	CHI
@@ -148,6 +133,20 @@
 13	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	start_char=37|end_char=40	_	_	CHI
 14	là	là	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	start_char=41|end_char=43	_	_	CHI
 15	!	!	PUNCT	_	_	7	punct	_	start_char=44|end_char=45	_	_	CHI
+
+#sent_id = CHI <au8>
+#text = les voitures ils sont là tous ouh un gros ballon !
+1	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	CHI
+2	voitures	voiture	NOUN	_	Gender=Fem|Number=Plur	7	nsubj	_	start_char=4|end_char=12	_	_	CHI
+3	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	start_char=13|end_char=16	_	_	CHI
+4	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	start_char=17|end_char=21	_	_	CHI
+5	là	là	ADV	_	_	7	advmod	_	start_char=22|end_char=24	_	_	CHI
+6	tous	tout	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Ind	7	obl:mod	_	start_char=25|end_char=29	_	_	CHI
+7	ouh	ouir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=30|end_char=33	_	_	CHI
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	start_char=34|end_char=36	_	_	CHI
+9	gros	gros	ADJ	_	Gender=Masc	10	amod	_	start_char=37|end_char=41	_	_	CHI
+10	ballon	ballon	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	start_char=42|end_char=48	_	_	CHI
+11	!	!	PUNCT	_	_	7	punct	_	start_char=49|end_char=50	_	_	CHI
 
 #sent_id = CHI <au9>
 #text = non attends je veux voir papa avec maman et papa !
@@ -272,7 +271,7 @@
 11	?	?	PUNCT	_	_	2	punct	_	start_char=42|end_char=43	_	_	CHI
 
 #sent_id = CHI <au18>
-#text = hé papa vais te dire quelque chose dans l'oreille ..
+#text = hé papa vais te dire quelque chose dans l'oreille .
 1	hé	hé	INTJ	_	_	3	discourse	_	start_char=0|end_char=2	_	_	CHI
 2	papa	papa	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	start_char=3|end_char=7	_	_	CHI
 3	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8|end_char=12	_	_	CHI
@@ -284,10 +283,9 @@
 9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	start_char=40|end_char=42	_	_	CHI
 10	oreille	oreille	NOUN	_	Gender=Fem|Number=Sing	5	obl:mod	_	start_char=42|end_char=49	_	_	CHI
 11	.	.	PUNCT	_	_	3	punct	_	start_char=50|end_char=51	_	_	CHI
-12	.	.	PUNCT	_	_	3	punct	_	start_char=51|end_char=52	_	_	CHI
 
 #sent_id = CHI <au19>
-#text = tombait dans l'eau et ça fait un escargot ..
+#text = tombait dans l'eau et ça fait un escargot .
 1	tombait	tomber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CHI
 2	dans	dans	ADP	_	_	4	case	_	start_char=8|end_char=12	_	_	CHI
 3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	start_char=13|end_char=15	_	_	CHI
@@ -297,5 +295,5 @@
 7	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=25|end_char=29	_	_	CHI
 8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	start_char=30|end_char=32	_	_	CHI
 9	escargot	escargot	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	start_char=33|end_char=41	_	_	CHI
-10	..	..	PUNCT	_	_	1	punct	_	start_char=42|end_char=44	_	_	CHI
+10	.	.	PUNCT	_	_	1	punct	_	start_char=42|end_char=43	_	_	CHI
 

@@ -10,6 +10,9 @@ combo "+t$2:" +t%ref: +s"*\_comme" $1
 # gerondif
 # echo "times 0 0 0"
 combo "+t$2:" +t%mor: +s"*:ppre" $1
+
+# v + v:inf sauf avec avoir et modaux ?
+combo "+t$2:" +t%ref: +s"VER*^VER:infi*" $1
 # prep + verb INF
 combo "+t$2:" +t%ref: +s"PRP_*^VER:infi_*" $1
 
@@ -26,9 +29,6 @@ combo "+t$2:" +s"*est^*^qu*" $1 # mais soustraire
 combo "+t$2:" +s"*y\+a*^*^qu*" $1 # mais soustraire
 #combo "+t$2:" +s"*y\+a*^qu*" $1
 
-# v + v:inf sauf avec avoir et modaux ?
-combo "+t$2:" +t%ref: +s"VER*^VER:infi*" $1
-
 # discours indirect
 combo "+t$2:" +s"di*^*^qu*" $1
 
@@ -37,3 +37,9 @@ combo "+t$2:" +s"plu*^*^qu*" $1
 
 # pronom objet
 combo "+t$2:" +t%ref: +s"PRO:clo*" $1
+
+# 3 verbes
+combo "+t$2:" +t%morph: +s"*VER*^*^*VER*^*^*VER*" $1
+
+# 4 verbes
+combo "+t$2:" +t%morph: +s"*VER*^*^*VER*^*^*VER*^*^*VER*" $1

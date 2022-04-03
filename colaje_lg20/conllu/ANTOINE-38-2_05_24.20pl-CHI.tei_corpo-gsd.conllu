@@ -1,5 +1,5 @@
 #sent_id = CHI <au0>
-#text = ah non c'est pas bateau sur l'eau ..
+#text = ah non c'est pas bateau sur l'eau .
 1	ah	ah	INTJ	_	_	6	discourse	_	start_char=0|end_char=2	_	_	CHI
 2	non	non	ADV	_	Polarity=Neg	1	fixed	_	start_char=3|end_char=6	_	_	CHI
 3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=7|end_char=9	_	_	CHI
@@ -10,7 +10,6 @@
 8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	start_char=28|end_char=30	_	_	CHI
 9	eau	eau	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	start_char=30|end_char=33	_	_	CHI
 10	.	.	PUNCT	_	_	6	punct	_	start_char=34|end_char=35	_	_	CHI
-11	.	.	PUNCT	_	_	6	punct	_	start_char=35|end_char=36	_	_	CHI
 
 #sent_id = CHI <au1>
 #text = yyy e veux a musique d'Antoine !
@@ -35,27 +34,48 @@
 8	!	!	PUNCT	_	_	6	punct	_	start_char=32|end_char=33	_	_	CHI
 
 #sent_id = CHI <au3>
-#text = si i touche yyy i casse ..
+#text = ɛ ballon et ça c'est ballon .
+1	ɛ	ɛ	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=1	_	_	CHI
+2	ballon	ballon	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=2|end_char=8	_	_	CHI
+3	et	et	CCONJ	_	_	7	cc	_	start_char=9|end_char=11	_	_	CHI
+4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=12|end_char=14	_	_	CHI
+5	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=15|end_char=17	_	_	CHI
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=17|end_char=20	_	_	CHI
+7	ballon	ballon	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	start_char=21|end_char=27	_	_	CHI
+8	.	.	PUNCT	_	_	1	punct	_	start_char=28|end_char=29	_	_	CHI
+
+#sent_id = CHI <au4>
+#text = ɛ a fini coincer les doigts .
+1	ɛ	ɛ	NOUN	_	Gender=Masc	3	nsubj	_	start_char=0|end_char=1	_	_	CHI
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=2|end_char=3	_	_	CHI
+3	fini	finir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=4|end_char=8	_	_	CHI
+4	coincer	coincer	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=9|end_char=16	_	_	CHI
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=17|end_char=20	_	_	CHI
+6	doigts	doigt	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	start_char=21|end_char=27	_	_	CHI
+7	.	.	PUNCT	_	_	3	punct	_	start_char=28|end_char=29	_	_	CHI
+
+#sent_id = CHI <au5>
+#text = si i touche yyy i casse .
 1	si	si	SCONJ	_	_	3	mark	_	start_char=0|end_char=2	_	_	CHI
 2	i	i	NUM	_	Number=Plur	3	nsubj	_	start_char=3|end_char=4	_	_	CHI
 3	touche	toucher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=11	_	_	CHI
 4	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=12|end_char=15	_	_	CHI
 5	i	i	NUM	_	Number=Plur	6	nummod	_	start_char=16|end_char=17	_	_	CHI
-6	casse	casse	NOUN	_	Gender=Masc|Number=Sing	4	appos	_	start_char=18|end_char=23	_	_	CHI
-7	..	..	PUNCT	_	_	3	punct	_	start_char=24|end_char=26	_	_	CHI
+6	casse	casse	NOUN	_	Gender=Fem|Number=Sing	4	appos	_	start_char=18|end_char=23	_	_	CHI
+7	.	.	PUNCT	_	_	3	punct	_	start_char=24|end_char=25	_	_	CHI
 
-#sent_id = CHI <au4>
-#text = sautez dansez embrassez i vous voulez ..
+#sent_id = CHI <au6>
+#text = sautez dansez embrassez i vous voulez .
 1	sautez	sauter	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=6	_	_	CHI
 2	dansez	danser	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	obj	_	start_char=7|end_char=13	_	_	CHI
 3	embrassez	embrasser	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=14|end_char=23	_	_	CHI
 4	i	i	ADV	_	_	6	advmod	_	start_char=24|end_char=25	_	_	CHI
 5	vous	il	PRON	_	Person=2|PronType=Prs	6	nsubj	_	start_char=26|end_char=30	_	_	CHI
 6	voulez	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	ccomp	_	start_char=31|end_char=37	_	_	CHI
-7	..	..	PUNCT	_	_	1	punct	_	start_char=38|end_char=40	_	_	CHI
+7	.	.	PUNCT	_	_	1	punct	_	start_char=38|end_char=39	_	_	CHI
 
-#sent_id = CHI <au5>
-#text = i grille i grille i grille ..
+#sent_id = CHI <au7>
+#text = i grille i grille i grille .
 1	i	i	NUM	_	Number=Plur	2	nmod	_	start_char=0|end_char=1	_	_	CHI
 2	grille	grille	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=2|end_char=8	_	_	CHI
 3	i	i	NUM	_	Number=Plur	4	nmod	_	start_char=9|end_char=10	_	_	CHI
@@ -63,9 +83,8 @@
 5	i	i	NUM	_	Number=Plur	4	nmod	_	start_char=18|end_char=19	_	_	CHI
 6	grille	grille	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	start_char=20|end_char=26	_	_	CHI
 7	.	.	PUNCT	_	_	2	punct	_	start_char=27|end_char=28	_	_	CHI
-8	.	.	PUNCT	_	_	2	punct	_	start_char=28|end_char=29	_	_	CHI
 
-#sent_id = CHI <au6>
+#sent_id = CHI <au8>
 #text = est comme est comme la voiture !
 1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	comme	comme	SCONJ	_	_	6	mark	_	start_char=4|end_char=9	_	_	CHI
@@ -75,8 +94,8 @@
 6	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	1	ccomp	_	start_char=23|end_char=30	_	_	CHI
 7	!	!	PUNCT	_	_	1	punct	_	start_char=31|end_char=32	_	_	CHI
 
-#sent_id = CHI <au7>
-#text = est cassée a voiture d'Antoine ..
+#sent_id = CHI <au9>
+#text = est cassée a voiture d'Antoine .
 1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux:pass	_	start_char=0|end_char=3	_	_	CHI
 2	cassée	casser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=4|end_char=10	_	_	CHI
 3	a	à	ADP	_	_	4	case	_	start_char=11|end_char=12	_	_	CHI
@@ -84,9 +103,8 @@
 5	d'	de	ADP	_	_	6	case	_	start_char=21|end_char=23	_	_	CHI
 6	Antoine	Antoine	PROPN	_	_	4	nmod	_	start_char=23|end_char=30	_	_	CHI
 7	.	.	PUNCT	_	_	2	punct	_	start_char=31|end_char=32	_	_	CHI
-8	.	.	PUNCT	_	_	2	punct	_	start_char=32|end_char=33	_	_	CHI
 
-#sent_id = CHI <au8>
+#sent_id = CHI <au10>
 #text = est cassée a voiture d'Antoine !
 1	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux:pass	_	start_char=0|end_char=3	_	_	CHI
 2	cassée	casser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=4|end_char=10	_	_	CHI
@@ -96,8 +114,8 @@
 6	Antoine	Antoine	PROPN	_	_	4	nmod	_	start_char=23|end_char=30	_	_	CHI
 7	!	!	PUNCT	_	_	2	punct	_	start_char=31|end_char=32	_	_	CHI
 
-#sent_id = CHI <au9>
-#text = e met pas dans la bouche ..
+#sent_id = CHI <au11>
+#text = e met pas dans la bouche .
 1	e	e	ADV	_	_	2	advmod	_	start_char=0|end_char=1	_	_	CHI
 2	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=5	_	_	CHI
 3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	start_char=6|end_char=9	_	_	CHI
@@ -105,33 +123,9 @@
 5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	start_char=15|end_char=17	_	_	CHI
 6	bouche	bouche	NOUN	_	Gender=Fem|Number=Sing	2	obl:arg	_	start_char=18|end_char=24	_	_	CHI
 7	.	.	PUNCT	_	_	2	punct	_	start_char=25|end_char=26	_	_	CHI
-8	.	.	PUNCT	_	_	2	punct	_	start_char=26|end_char=27	_	_	CHI
-
-#sent_id = CHI <au10>
-#text = ɛ ballon et ça c'est ballon ..
-1	ɛ	ɛ	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=1	_	_	CHI
-2	ballon	ballon	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=2|end_char=8	_	_	CHI
-3	et	et	CCONJ	_	_	7	cc	_	start_char=9|end_char=11	_	_	CHI
-4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	dislocated	_	start_char=12|end_char=14	_	_	CHI
-5	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=15|end_char=17	_	_	CHI
-6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=17|end_char=20	_	_	CHI
-7	ballon	ballon	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	start_char=21|end_char=27	_	_	CHI
-8	.	.	PUNCT	_	_	1	punct	_	start_char=28|end_char=29	_	_	CHI
-9	.	.	PUNCT	_	_	1	punct	_	start_char=29|end_char=30	_	_	CHI
-
-#sent_id = CHI <au11>
-#text = ɛ a fini coincer les doigts ..
-1	ɛ	ɛ	NOUN	_	Gender=Masc	3	nsubj	_	start_char=0|end_char=1	_	_	CHI
-2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=2|end_char=3	_	_	CHI
-3	fini	finir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=4|end_char=8	_	_	CHI
-4	coincer	coincer	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=9|end_char=16	_	_	CHI
-5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=17|end_char=20	_	_	CHI
-6	doigts	doigt	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	start_char=21|end_char=27	_	_	CHI
-7	.	.	PUNCT	_	_	3	punct	_	start_char=28|end_char=29	_	_	CHI
-8	.	.	PUNCT	_	_	3	punct	_	start_char=29|end_char=30	_	_	CHI
 
 #sent_id = CHI <au12>
-#text = Antoine ij a plein d'accidents ..
+#text = Antoine ij a plein d'accidents .
 1	Antoine	Antoine	PROPN	_	_	3	nsubj	_	start_char=0|end_char=7	_	_	CHI
 2	ij	ij	PROPN	_	_	1	flat:name	_	start_char=8|end_char=10	_	_	CHI
 3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=11|end_char=12	_	_	CHI
@@ -139,72 +133,67 @@
 5	d'	de	ADP	_	_	6	case	_	start_char=19|end_char=21	_	_	CHI
 6	accidents	accident	NOUN	_	Gender=Masc|Number=Plur	4	dep:comp	_	start_char=21|end_char=30	_	_	CHI
 7	.	.	PUNCT	_	_	3	punct	_	start_char=31|end_char=32	_	_	CHI
-8	.	.	PUNCT	_	_	3	punct	_	start_char=32|end_char=33	_	_	CHI
 
 #sent_id = CHI <au13>
-#text = yyy touche touche i touche ..
+#text = ɛ tombé de la voiture !
+1	ɛ	ɛ	NOUN	_	Gender=Masc	0	root	_	start_char=0|end_char=1	_	_	CHI
+2	tombé	tomber	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	start_char=2|end_char=7	_	_	CHI
+3	de	de	ADP	_	_	5	case	_	start_char=8|end_char=10	_	_	CHI
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=11|end_char=13	_	_	CHI
+5	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	2	obl:arg	_	start_char=14|end_char=21	_	_	CHI
+6	!	!	PUNCT	_	_	1	punct	_	start_char=22|end_char=23	_	_	CHI
+
+#sent_id = CHI <au14>
+#text = ɛ a fini coincé doigts .
+1	ɛ	ɛ	NOUN	_	_	3	nsubj	_	start_char=0|end_char=1	_	_	CHI
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=2|end_char=3	_	_	CHI
+3	fini	finir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=4|end_char=8	_	_	CHI
+4	coincé	coincer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	xcomp	_	start_char=9|end_char=15	_	_	CHI
+5	doigts	doigt	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	start_char=16|end_char=22	_	_	CHI
+6	.	.	PUNCT	_	_	3	punct	_	start_char=23|end_char=24	_	_	CHI
+
+#sent_id = CHI <au15>
+#text = yyy touche touche i touche .
 1	yyy	yyy	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	CHI
 2	touche	touche	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	start_char=4|end_char=10	_	_	CHI
 3	touche	toucher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=11|end_char=17	_	_	CHI
-4	i	i	NUM	_	Number=Plur	5	obj	_	start_char=18|end_char=19	_	_	CHI
-5	touche	toucher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	xcomp	_	start_char=20|end_char=26	_	_	CHI
+4	i	i	NUM	_	Number=Plur	5	nummod	_	start_char=18|end_char=19	_	_	CHI
+5	touche	touche	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=20|end_char=26	_	_	CHI
 6	.	.	PUNCT	_	_	3	punct	_	start_char=27|end_char=28	_	_	CHI
-7	.	.	PUNCT	_	_	3	punct	_	start_char=28|end_char=29	_	_	CHI
 
-#sent_id = CHI <au14>
-#text = veux voir est pas là ..
+#sent_id = CHI <au16>
+#text = veux voir est pas là .
 1	veux	vouloir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
 2	voir	voir	VERB	_	VerbForm=Inf	1	xcomp	_	start_char=5|end_char=9	_	_	CHI
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	goeswith	_	start_char=10|end_char=13	_	_	CHI
 4	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	start_char=14|end_char=17	_	_	CHI
 5	là	là	ADV	_	_	1	advmod	_	start_char=18|end_char=20	_	_	CHI
-6	..	..	PUNCT	_	_	1	punct	_	start_char=21|end_char=23	_	_	CHI
-
-#sent_id = CHI <au15>
-#text = veux voir assiette di riz ..
-1	veux	vouloir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
-2	voir	voir	VERB	_	VerbForm=Inf	1	xcomp	_	start_char=5|end_char=9	_	_	CHI
-3	assiette	assiette	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=10|end_char=18	_	_	CHI
-4	di	di	ADP	_	_	5	case	_	start_char=19|end_char=21	_	_	CHI
-5	riz	riz	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=22|end_char=25	_	_	CHI
-6	..	..	PUNCT	_	_	1	punct	_	start_char=26|end_char=28	_	_	CHI
-
-#sent_id = CHI <au16>
-#text = veux voir assiette di riz ..
-1	veux	vouloir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
-2	voir	voir	VERB	_	VerbForm=Inf	1	xcomp	_	start_char=5|end_char=9	_	_	CHI
-3	assiette	assiette	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=10|end_char=18	_	_	CHI
-4	di	di	ADP	_	_	5	case	_	start_char=19|end_char=21	_	_	CHI
-5	riz	riz	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=22|end_char=25	_	_	CHI
-6	..	..	PUNCT	_	_	1	punct	_	start_char=26|end_char=28	_	_	CHI
+6	.	.	PUNCT	_	_	1	punct	_	start_char=21|end_char=22	_	_	CHI
 
 #sent_id = CHI <au17>
-#text = touc plouf dans l'eau ..
+#text = veux voir assiette di riz .
+1	veux	vouloir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
+2	voir	voir	VERB	_	VerbForm=Inf	1	xcomp	_	start_char=5|end_char=9	_	_	CHI
+3	assiette	assiette	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=10|end_char=18	_	_	CHI
+4	di	di	ADP	_	_	5	case	_	start_char=19|end_char=21	_	_	CHI
+5	riz	riz	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=22|end_char=25	_	_	CHI
+6	.	.	PUNCT	_	_	1	punct	_	start_char=26|end_char=27	_	_	CHI
+
+#sent_id = CHI <au18>
+#text = veux voir assiette di riz .
+1	veux	vouloir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
+2	voir	voir	VERB	_	VerbForm=Inf	1	xcomp	_	start_char=5|end_char=9	_	_	CHI
+3	assiette	assiette	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=10|end_char=18	_	_	CHI
+4	di	di	ADP	_	_	5	case	_	start_char=19|end_char=21	_	_	CHI
+5	riz	riz	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=22|end_char=25	_	_	CHI
+6	.	.	PUNCT	_	_	1	punct	_	start_char=26|end_char=27	_	_	CHI
+
+#sent_id = CHI <au19>
+#text = touc plouf dans l'eau .
 1	touc	touc	INTJ	_	_	2	discourse	_	start_char=0|end_char=4	_	_	CHI
 2	plouf	plouf	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=5|end_char=10	_	_	CHI
 3	dans	dans	ADP	_	_	5	case	_	start_char=11|end_char=15	_	_	CHI
 4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	start_char=16|end_char=18	_	_	CHI
 5	eau	eau	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	start_char=18|end_char=21	_	_	CHI
 6	.	.	PUNCT	_	_	2	punct	_	start_char=22|end_char=23	_	_	CHI
-7	.	.	PUNCT	_	_	2	punct	_	start_char=23|end_char=24	_	_	CHI
-
-#sent_id = CHI <au18>
-#text = tiens yyy dans la bouche ..
-1	tiens	tenir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=6|end_char=9	_	_	CHI
-3	dans	dans	ADP	_	_	5	case	_	start_char=10|end_char=14	_	_	CHI
-4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=15|end_char=17	_	_	CHI
-5	bouche	bouche	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	start_char=18|end_char=24	_	_	CHI
-6	.	.	PUNCT	_	_	1	punct	_	start_char=25|end_char=26	_	_	CHI
-7	.	.	PUNCT	_	_	1	punct	_	start_char=26|end_char=27	_	_	CHI
-
-#sent_id = CHI <au19>
-#text = tchoupi il coince les doigts ..
-1	tchoupi	tchoupi	NOUN	_	Gender=Masc|Number=Sing	3	dislocated	_	start_char=0|end_char=7	_	_	CHI
-2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=8|end_char=10	_	_	CHI
-3	coince	coincer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=11|end_char=17	_	_	CHI
-4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	start_char=18|end_char=21	_	_	CHI
-5	doigts	doigt	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	start_char=22|end_char=28	_	_	CHI
-6	.	.	PUNCT	_	_	3	punct	_	start_char=29|end_char=30	_	_	CHI
-7	.	.	PUNCT	_	_	3	punct	_	start_char=30|end_char=31	_	_	CHI
 

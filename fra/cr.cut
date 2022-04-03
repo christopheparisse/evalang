@@ -1,0 +1,295 @@
+@UTF8
+% ******************************************************
+% CONCATENATION RULES  for FRENCH
+% ******************************************************
+
+X = .*    % anything
+P = [abcdefghijklmnopqrtuvwyzàâäéèêëiîïoööùûüç]
+F = [abcdfghijklmnopqrstuvwxyzàâäéèêëiîïoööùûüç]
+
+% This rule starts all of the words that have full form listings
+RULENAME: misc-start
+CTYPE: START            
+ if
+ NEXTCAT = [scat OR adv adv:int adv:neg adv:place adv:yn \
+	bab chi dia fam fs kana neo on phon \
+        sas L2 sing test wplay unk \
+        co co:act conj det:poss \
+ 	det det:gen det:dem fil n:let n:prop pct prep prep:art \
+	pro pro:dem pro:int pro:subj pro:obj pro:poss pro:dat \
+	pro:refl pro:rel pro:y v:exist v:aux  v:mdl v:mdllex v:poss unk \
+        0adj 0adv 0conj 0det 0neg 0pro 0prep 0n 0rel 0v 0zero ]
+ then
+ RESULTCAT = NEXTCAT
+ RULEPACKAGE = {}
+
+%***************
+% PREFIXES
+%***************
+
+RULENAME: pfx-verb-start
+CTYPE: START
+ if
+ NEXTCAT = [scat pfx], [pcat v]  
+ then
+ RESULTCAT = NEXTCAT
+ RULEPACKAGE = {pfx-verb}
+
+RULENAME: pfx-verb
+CTYPE: #
+ if
+ NEXTCAT = [scat v], ![pre no]
+ then
+ RESULTCAT = NEXTCAT
+ RULEPACKAGE = {}
+
+RULENAME: pfx-adj-start
+CTYPE: START
+ if
+ NEXTCAT = [scat pfx], [pcat adj]  
+ then
+ RESULTCAT = NEXTCAT
+ RULEPACKAGE = {pfx-adj}
+
+RULENAME: pfx-adj
+CTYPE: #
+ if
+ NEXTCAT = [scat adj], ![pre no]
+ then
+ RESULTCAT = NEXTCAT
+ RULEPACKAGE = {}
+
+RULENAME: pfx-n-start
+CTYPE: START
+ if
+ NEXTCAT = [scat pfx], [pcat n]  
+ then
+ RESULTCAT = NEXTCAT
+ RULEPACKAGE = {pfx-verb}
+
+RULENAME: pfx-n
+CTYPE: #
+ if
+ NEXTCAT = [scat n], ![pre no]
+ then
+ RESULTCAT = NEXTCAT
+ RULEPACKAGE = {}
+
+%***************
+% NUMERALS
+%***************
+
+RULENAME: num-start
+CTYPE: START            
+ if
+ NEXTCAT = [scat num]
+ then
+ RESULTCAT = NEXTCAT
+ RULEPACKAGE = {num-pl}
+
+RULENAME: num-pl
+CTYPE: -
+ if
+ STARTCAT = [scat num], ![gn invar]
+ NEXTCAT = [scat nsfx], [g pl_s]
+ then
+ RESULTCAT = STARTCAT, DEL [root]
+ RULEPACKAGE = {}
+
+%***************
+% NOUNS
+%***************
+
+RULENAME: n-start
+CTYPE: START            
+ if
+ NEXTCAT = [scat  n]
+ then
+ RESULTCAT = NEXTCAT
+ RULEPACKAGE = {n-fem, n-fem-e, n-pl, n-singpl, \
+   n-pl_eu, n-pl_au}
+
+%  feminin of animate nouns
+RULENAME: n-fem
+CTYPE: -
+ if
+ STARTCAT = [scat n], [g OR eur er ien]
+ NEXTCAT = [scat nsfx], [g OR eur er ien]
+ MATCHCAT [gen]
+ MATCHCAT [g]
+ then
+ RESULTCAT = STARTCAT, DEL [gen], DEL [g], DEL [root]
+ RULEPACKAGE = {n-pls}
+
+%  féminine of nouns (anim default)
+RULENAME: n-fem-e
+CTYPE: -
+ if
+ STARTCAT = [scat n], ![g OR eur er ien], [anim yes]
+ NEXTCAT = [scat nsfx], [g std]
+ then
+ RESULTCAT = STARTCAT, DEL [root]
+ RULEPACKAGE = {n-pls}
+
+%  singular and plural of nouns
+RULENAME: n-singpl
+CTYPE: -
+ if
+ STARTCAT = [scat n], [tn OR pl_aux pl_eaux pl_eux]
+ NEXTCAT = [scat nsfx], [g OR pl_al]
+ MATCHCAT [num]
+ then
+ RESULTCAT = STARTCAT, DEL [num], DEL [g], DEL [tn], DEL [root]
+ RULEPACKAGE = {}
+
+%  plurals of nouns
+RULENAME: n-pl_eu
+CTYPE: -
+ if
+ STARTSURF = $Xeu
+ STARTCAT = [scat n]
+ NEXTCAT = [scat nsfx], [num pl], [g OR pl_x]
+ then
+ RESULTCAT = STARTCAT, 	ADD [num pl], DEL [root]
+ RULEPACKAGE = {}
+
+RULENAME: n-pl_au
+CTYPE: -
+ if
+ STARTSURF = $Xau
+ STARTCAT = [scat n]
+ NEXTCAT = [scat nsfx], [num pl], [g OR pl_x]
+ then
+ RESULTCAT = STARTCAT, 	ADD [num pl], DEL [root]
+ RULEPACKAGE = {}
+
+RULENAME: n-pl
+CTYPE: -
+ if
+ STARTSURF = $X$P
+ STARTCAT = [scat n], ![tn OR singonly plonly]
+ NEXTCAT = [scat nsfx], [num pl], [g OR pl_s]
+ then
+ RESULTCAT = STARTCAT, 	ADD [num pl], DEL [root]
+ RULEPACKAGE = {}
+
+RULENAME: n-pls
+CTYPE: -
+ if
+ STARTCAT = [scat n]
+ NEXTCAT = [scat nsfx], [g pl_s]
+ then
+ RESULTCAT = STARTCAT, DEL [root]
+ RULEPACKAGE = {}
+
+%***************
+% ADJECTIVES
+%***************
+
+RULENAME: adj-invar-start
+CTYPE: START            
+ if
+ NEXTCAT = [scat adj], [gn OR invar trice]
+ then
+ RESULTCAT = NEXTCAT
+ RULEPACKAGE = {adj-pl, adv-ment}
+
+RULENAME: adj-var-start
+CTYPE: START            
+ if
+ NEXTCAT = [scat adj], ![gn invar]
+ then
+ RESULTCAT = NEXTCAT
+ RULEPACKAGE = {adj-special, adj-regul, adj-pl, adv-ment}
+
+RULENAME: adj-special
+CTYPE: -
+ if
+ STARTCAT = [scat adj]
+ NEXTCAT = [scat nsfx], [g OR al eur er ien el vs ic if et eux on trice]
+ MATCHCAT [g]
+ MATCHCAT [gen]
+ then
+ RESULTCAT = STARTCAT, DEL [gn], DEL [g], ADD [g pl_s], DEL [root]
+ RULEPACKAGE = {adj-pl, adv-ment}
+
+RULENAME: adj-regul
+CTYPE: -
+ if
+ STARTCAT = [scat adj], ![g OR eau al eur er ien el vs ic if et eux on]
+ NEXTCAT = [scat nsfx], ![num pl]
+ MATCHCAT [g]
+ then
+ RESULTCAT = STARTCAT, DEL [gn], DEL [g], ADD [g pl_s], DEL [root]
+ RULEPACKAGE = {adj-pl, adv-ment}
+
+%  plurals of adjectives in 's'
+RULENAME: adj-pl
+CTYPE: -
+ if
+ STARTSURF = $X
+ STARTCAT = [scat adj]
+ NEXTCAT = [scat nsfx]
+ MATCHCAT [g]
+ then
+ RESULTCAT = STARTCAT, 	ADD [num pl], DEL [gen], DEL [root]
+ RULEPACKAGE = {}
+
+RULENAME: adv-ment
+CTYPE: -
+ if
+ STARTCAT = [scat adj]
+ NEXTCAT = [scat adv:adj]
+ then
+ RESULTCAT = ADD [scat adv:adj], DEL [gn], DEL [g], DEL [root]
+ RULEPACKAGE = {}
+
+%**************
+% VERBS
+%**************
+
+% analytic rule for verbs
+RULENAME: v-start
+CTYPE: START            
+ if
+ NEXTCAT = [scat OR v v:mdl v:mdllex]
+ then
+ RESULTCAT = NEXTCAT
+ RULEPACKAGE = {v-regul, v-irregul}
+
+% regular verbs
+RULENAME: v-regul
+CTYPE: -
+ if
+ STARTCAT = [scat OR v v:mdl v:mdllex]
+ STARTCAT = [allo OR v1g v1g_ao v1g_ao_oth v1g_mute v1g_mute_oth v2g ]
+ NEXTCAT = [scat vsfx]
+ MATCHCAT [allo]
+ then
+ RESULTCAT = STARTCAT, DEL [root]
+ RULEPACKAGE = {}
+
+% irregular verbs
+RULENAME: v-irregul
+CTYPE: -
+ if
+ STARTCAT = [scat OR v v:mdl v:mdllex] 
+ STARTCAT = [special OR acquérir assaillir courir cueillir dormir mentir ouvrir écrire lire \
+	partir servir tenir vêtir décevoir mouvoir tendre rompre battre mettre prendre valoir \
+	coudre craindre suivre vivre paraître croître conclure conduire dire taire faire extraire]
+ NEXTCAT = [scat vsfx]
+ MATCHCAT [special]
+ then
+ RESULTCAT = STARTCAT, DEL [special], DEL [root]
+ RULEPACKAGE = {}
+
+%  This rule ends everything.   If you don't end things, 
+%  they will not get into the output
+RULENAME: all-end
+ CTYPE: END
+ if
+ STARTSURF = .*
+ STARTCAT = ![root yes]
+ then
+ RESULTCAT = STARTCAT
+ RULEPACKAGE = {}

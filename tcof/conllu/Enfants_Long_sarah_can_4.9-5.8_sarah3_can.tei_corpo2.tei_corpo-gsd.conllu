@@ -1,25 +1,26 @@
 #sent_id = ADU <au0>
 #text = Sarah on est le ¤C¤ $$$
-1	Sarah	Sarah	PROPN	_	_	5	nsubj	_	start_char=0|end_char=5	_	_	ADU
-2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	1	flat:name	_	start_char=6|end_char=8	_	_	ADU
-3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=9|end_char=12	_	_	ADU
-4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=13|end_char=15	_	_	ADU
-5	¤	¤	SYM	_	_	0	root	_	start_char=16|end_char=17	_	_	ADU
-6	C¤	C¤	PROPN	_	_	5	flat:name	_	start_char=17|end_char=19	_	_	ADU
-7	$$$	$$$	SYM	_	_	5	flat:name	_	start_char=20|end_char=23	_	_	ADU
+1	Sarah	Sarah	PROPN	_	_	6	nsubj	_	start_char=0|end_char=5	_	_	ADU
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	6	nsubj	_	start_char=6|end_char=8	_	_	ADU
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=9|end_char=12	_	_	ADU
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=13|end_char=15	_	_	ADU
+5	¤C¤	¤C¤	NUM	_	Number=Sing	6	nummod	_	start_char=16|end_char=19	_	_	ADU
+6	$	$	SYM	_	Number=Plur	0	root	_	start_char=20|end_char=21	_	_	ADU
+7	$	$	SYM	_	Number=Plur	6	nmod	_	start_char=21|end_char=22	_	_	ADU
+8	$	$	SYM	_	Number=Plur	6	nmod	_	start_char=22|end_char=23	_	_	ADU
 
 #sent_id = ADU <au1>
 #text = c'est moi qui lit hier Vincent j'ai lu aussi
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	ADU
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	expl:subj	_	start_char=0|end_char=2	_	_	ADU
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	ADU
-3	moi	soi	PRON	_	Number=Sing|Person=1	0	root	_	start_char=6|end_char=9	_	_	ADU
+3	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	0	root	_	start_char=6|end_char=9	_	_	ADU
 4	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	start_char=10|end_char=13	_	_	ADU
-5	lit	lire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	start_char=14|end_char=17	_	_	ADU
+5	lit	lire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl:cleft	_	start_char=14|end_char=17	_	_	ADU
 6	hier	hier	ADV	_	_	5	advmod	_	start_char=18|end_char=22	_	_	ADU
-7	Vincent	Vincent	PROPN	_	_	10	obj	_	start_char=23|end_char=30	_	_	ADU
+7	Vincent	Vincent	PROPN	_	_	5	obj	_	start_char=23|end_char=30	_	_	ADU
 8	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	10	nsubj	_	start_char=31|end_char=33	_	_	ADU
 9	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	aux:tense	_	start_char=33|end_char=35	_	_	ADU
-10	lu	lire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	acl:relcl	_	start_char=36|end_char=38	_	_	ADU
+10	lu	lire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	advcl:cleft	_	start_char=36|end_char=38	_	_	ADU
 11	aussi	aussi	ADV	_	_	10	advmod	_	start_char=39|end_char=44	_	_	ADU
 
 #sent_id = ADU <au2>
@@ -31,26 +32,26 @@
 #sent_id = ADU <au3>
 #text = alors moi je dis c'est pas normal
 1	alors	alors	ADV	_	_	2	advmod	_	start_char=0|end_char=5	_	_	ADU
-2	moi	soi	PRON	_	Number=Sing|Person=1	4	dislocated	_	start_char=6|end_char=9	_	_	ADU
+2	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	4	obl:mod	_	start_char=6|end_char=9	_	_	ADU
 3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	start_char=10|end_char=12	_	_	ADU
 4	dis	dire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13|end_char=16	_	_	ADU
-5	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	start_char=17|end_char=19	_	_	ADU
+5	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	8	nsubj	_	start_char=17|end_char=19	_	_	ADU
 6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	start_char=19|end_char=22	_	_	ADU
 7	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	start_char=23|end_char=26	_	_	ADU
 8	normal	normal	ADJ	_	Gender=Masc|Number=Sing	4	parataxis	_	start_char=27|end_char=33	_	_	ADU
 
 #sent_id = ADU <au4>
 #text = moi je te la raconte
-1	moi	soi	PRON	_	Number=Sing|Person=1	5	dislocated	_	start_char=0|end_char=3	_	_	ADU
+1	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	5	dislocated	_	start_char=0|end_char=3	_	_	ADU
 2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	start_char=4|end_char=6	_	_	ADU
-3	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	5	iobj	_	start_char=7|end_char=9	_	_	ADU
+3	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	5	obl:arg	_	start_char=7|end_char=9	_	_	ADU
 4	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	obj	_	start_char=10|end_char=12	_	_	ADU
 5	raconte	raconter	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13|end_char=20	_	_	ADU
 
 #sent_id = ADU <au5>
 #text = alors toi aussi faut que tu
 1	alors	alors	ADV	_	_	4	advmod	_	start_char=0|end_char=5	_	_	ADU
-2	toi	soi	PRON	_	Number=Sing|Person=2	4	dislocated	_	start_char=6|end_char=9	_	_	ADU
+2	toi	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obl:arg	_	start_char=6|end_char=9	_	_	ADU
 3	aussi	aussi	ADV	_	_	4	advmod	_	start_char=10|end_char=15	_	_	ADU
 4	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=16|end_char=20	_	_	ADU
 5	que	que	SCONJ	_	_	4	mark	_	start_char=21|end_char=24	_	_	ADU
@@ -62,13 +63,13 @@
 
 #sent_id = ADU <au7>
 #text = oui
-1	oui	oui	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
+1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
 
 #sent_id = ADU <au8>
 #text = Bébé-Leïla pleure pleure et pleure
 1	Bébé-Leïla	Bébé-Leïla	PROPN	_	_	2	nsubj	_	start_char=0|end_char=10	_	_	ADU
 2	pleure	pleurer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=11|end_char=17	_	_	ADU
-3	pleure	pleurer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=18|end_char=24	_	_	ADU
+3	pleure	pleurer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	xcomp	_	start_char=18|end_char=24	_	_	ADU
 4	et	et	CCONJ	_	_	5	cc	_	start_char=25|end_char=27	_	_	ADU
 5	pleure	pleurer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=28|end_char=34	_	_	ADU
 
@@ -90,25 +91,25 @@
 #text = et elle a
 1	et	et	CCONJ	_	_	3	cc	_	start_char=0|end_char=2	_	_	CHI
 2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=3|end_char=7	_	_	CHI
-3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8|end_char=9	_	_	CHI
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = ADU <au11>
 #text = attends tu as sauté une page regarde hop
-1	attends	attendre	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	ADU
+1	attends	attendre	VERB	_	Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	ADU
 2	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	4	nsubj	_	start_char=8|end_char=10	_	_	ADU
 3	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	4	aux:tense	_	start_char=11|end_char=13	_	_	ADU
 4	sauté	sauter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	ccomp	_	start_char=14|end_char=19	_	_	ADU
 5	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	start_char=20|end_char=23	_	_	ADU
 6	page	page	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	start_char=24|end_char=28	_	_	ADU
-7	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	start_char=29|end_char=36	_	_	ADU
-8	hop	hop	PUNCT	_	_	1	punct	_	start_char=37|end_char=40	_	_	ADU
+7	regarde	regarder	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	start_char=29|end_char=36	_	_	ADU
+8	hop	hop	NOUN	_	Gender=Masc|Number=Sing	6	appos	_	start_char=37|end_char=40	_	_	ADU
 
 #sent_id = CHI <au12>
 #text = il dit est-ce que tu as mal mais elle peut pas parler
 1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CHI
 2	dit	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=6	_	_	CHI
-3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux:tense	_	start_char=7|end_char=10	_	_	CHI
-4	-ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	2	expl:subj	_	start_char=10|end_char=13	_	_	CHI
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=7|end_char=10	_	_	CHI
+4	-ce	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	expl:subj	_	start_char=10|end_char=13	_	_	CHI
 5	que	que	SCONJ	_	_	7	mark	_	start_char=14|end_char=17	_	_	CHI
 6	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	7	nsubj	_	start_char=18|end_char=20	_	_	CHI
 7	as	avoir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=21|end_char=23	_	_	CHI
@@ -121,7 +122,7 @@
 
 #sent_id = ADU <au13>
 #text = non elle ne répond pas parce qu'elle ne sait pas encore parler
-1	non	non	ADV	_	_	4	advmod	_	start_char=0|end_char=3	_	_	ADU
+1	non	non	ADV	_	Polarity=Neg	4	advmod	_	start_char=0|end_char=3	_	_	ADU
 2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=4|end_char=8	_	_	ADU
 3	ne	ne	ADV	_	Polarity=Neg	4	advmod	_	start_char=9|end_char=11	_	_	ADU
 4	répond	répondre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=12|end_char=18	_	_	ADU
@@ -132,7 +133,7 @@
 9	ne	ne	ADV	_	Polarity=Neg	10	advmod	_	start_char=37|end_char=39	_	_	ADU
 10	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	start_char=40|end_char=44	_	_	ADU
 11	pas	pas	ADV	_	Polarity=Neg	10	advmod	_	start_char=45|end_char=48	_	_	ADU
-12	encore	encore	ADV	_	_	13	advmod	_	start_char=49|end_char=55	_	_	ADU
+12	encore	encore	ADV	_	_	10	advmod	_	start_char=49|end_char=55	_	_	ADU
 13	parler	parler	VERB	_	VerbForm=Inf	10	xcomp	_	start_char=56|end_char=62	_	_	ADU
 
 #sent_id = CHI <au14>
@@ -145,7 +146,7 @@
 6	pleure	pleurer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	start_char=25|end_char=31	_	_	CHI
 7	pour	pour	ADP	_	_	8	mark	_	start_char=32|end_char=36	_	_	CHI
 8	faire	faire	VERB	_	VerbForm=Inf	6	advcl	_	start_char=37|end_char=42	_	_	CHI
-9	des	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	10	det	_	start_char=43|end_char=46	_	_	CHI
+9	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	10	det	_	start_char=43|end_char=46	_	_	CHI
 10	bêtises	bêtise	NOUN	_	Gender=Fem|Number=Plur	8	obj	_	start_char=47|end_char=54	_	_	CHI
 
 #sent_id = ADU <au15>
@@ -153,13 +154,13 @@
 1	oui	oui	INTJ	_	_	4	discourse	_	start_char=0|end_char=3	_	_	ADU
 2	et	et	CCONJ	_	_	3	cc	_	start_char=4|end_char=6	_	_	ADU
 3	là	là	ADV	_	_	1	conj	_	start_char=7|end_char=9	_	_	ADU
-4	qu'	que	PRON	_	PronType=Int	0	root	_	start_char=10|end_char=13	_	_	ADU
+4	qu'	que	PRON	_	Person=3|PronType=Int	0	root	_	start_char=10|end_char=13	_	_	ADU
 5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=13|end_char=16	_	_	ADU
-6	-ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	expl:subj	_	start_char=16|end_char=19	_	_	ADU
-7	qu'	que	PRON	PronType=Rel	PronType=Rel	9	obj	_	start_char=20|end_char=23	_	_	ADU
+6	-ce	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	expl:subj	_	start_char=16|end_char=19	_	_	ADU
+7	qu'	que	SCONJ	_	_	9	mark	_	start_char=20|end_char=23	_	_	ADU
 8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	start_char=23|end_char=25	_	_	ADU
 9	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl:cleft	_	start_char=26|end_char=30	_	_	ADU
-10	Karim	Karim	PROPN	_	_	9	xcomp	_	start_char=31|end_char=36	_	_	ADU
+10	Karim	Karim	PROPN	_	_	9	obj	_	start_char=31|end_char=36	_	_	ADU
 11	?	?	PUNCT	_	_	4	punct	_	start_char=37|end_char=38	_	_	ADU
 
 #sent_id = CHI <au16>
@@ -169,7 +170,7 @@
 #sent_id = ADU <au17>
 #text = oui sa couche est bien sèche il regarde si elle a fait pipi
 1	oui	oui	INTJ	_	_	6	discourse	_	start_char=0|end_char=3	_	_	ADU
-2	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	start_char=4|end_char=6	_	_	ADU
+2	sa	son	DET	_	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=3|PronType=Prs	3	det	_	start_char=4|end_char=6	_	_	ADU
 3	couche	couche	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	start_char=7|end_char=13	_	_	ADU
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=14|end_char=17	_	_	ADU
 5	bien	bien	ADV	_	_	6	advmod	_	start_char=18|end_char=22	_	_	ADU
@@ -180,18 +181,18 @@
 10	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	start_char=43|end_char=47	_	_	ADU
 11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	start_char=48|end_char=49	_	_	ADU
 12	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	advcl	_	start_char=50|end_char=54	_	_	ADU
-13	pipi	pipi	VERB	_	VerbForm=Inf	12	xcomp	_	start_char=55|end_char=59	_	_	ADU
+13	pipi	pipi	NOUN	_	Gender=Masc|Number=Sing	12	obj:lvc	_	start_char=55|end_char=59	_	_	ADU
 
 #sent_id = CHI <au18>
 #text = elle il appelle Dorothée
-1	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=0|end_char=4	_	_	CHI
+1	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	dislocated	_	start_char=0|end_char=4	_	_	CHI
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=5|end_char=7	_	_	CHI
 3	appelle	appeler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8|end_char=15	_	_	CHI
-4	Dorothée	Dorothée	PROPN	_	_	3	xcomp	_	start_char=16|end_char=24	_	_	CHI
+4	Dorothée	Dorothée	PROPN	_	_	3	obj	_	start_char=16|end_char=24	_	_	CHI
 
 #sent_id = ADU <au19>
 #text = oui
-1	oui	oui	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
+1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
 
 #sent_id = CHI <au20>
 #text = et Dorothée est arrivée
@@ -202,7 +203,7 @@
 
 #sent_id = ADU <au21>
 #text = oui
-1	oui	oui	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
+1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
 
 #sent_id = CHI <au22>
 #text = mais elle arrête pas de faire pi- elle arrête pas de pleurer
@@ -221,37 +222,37 @@
 
 #sent_id = ADU <au23>
 #text = oui hum hum et puis Dorothée pense que Bébé-Leïla a faim et quand Bébé-Leïla a faim
-1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
+1	oui	oui	INTJ	_	_	7	discourse	_	start_char=0|end_char=3	_	_	ADU
 2	hum	hum	INTJ	_	_	1	fixed	_	start_char=4|end_char=7	_	_	ADU
-3	hum	hum	INTJ	_	_	1	fixed	_	start_char=8|end_char=11	_	_	ADU
+3	hum	hum	INTJ	_	_	1	conj	_	start_char=8|end_char=11	_	_	ADU
 4	et	et	CCONJ	_	_	7	cc	_	start_char=12|end_char=14	_	_	ADU
-5	puis	puis	ADV	_	_	6	cc	_	start_char=15|end_char=19	_	_	ADU
+5	puis	puis	CCONJ	_	_	7	cc	_	start_char=15|end_char=19	_	_	ADU
 6	Dorothée	Dorothée	PROPN	_	_	7	nsubj	_	start_char=20|end_char=28	_	_	ADU
-7	pense	penser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=29|end_char=34	_	_	ADU
+7	pense	penser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=29|end_char=34	_	_	ADU
 8	que	que	SCONJ	_	_	10	mark	_	start_char=35|end_char=38	_	_	ADU
 9	Bébé-Leïla	Bébé-Leïla	PROPN	_	_	10	nsubj	_	start_char=39|end_char=49	_	_	ADU
 10	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	start_char=50|end_char=51	_	_	ADU
-11	faim	faim	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	start_char=52|end_char=56	_	_	ADU
+11	faim	faim	NOUN	_	Gender=Fem|Number=Sing	10	obj:lvc	_	start_char=52|end_char=56	_	_	ADU
 12	et	et	CCONJ	_	_	15	cc	_	start_char=57|end_char=59	_	_	ADU
 13	quand	quand	SCONJ	_	_	15	mark	_	start_char=60|end_char=65	_	_	ADU
 14	Bébé-Leïla	Bébé-Leïla	PROPN	_	_	15	nsubj	_	start_char=66|end_char=76	_	_	ADU
 15	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	start_char=77|end_char=78	_	_	ADU
-16	faim	faim	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	start_char=79|end_char=83	_	_	ADU
+16	faim	faim	NOUN	_	Gender=Fem|Number=Sing	15	obj:lvc	_	start_char=79|end_char=83	_	_	ADU
 
 #sent_id = CHI <au24>
 #text = il faut lui donn- lui donner à manger
 1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	start_char=0|end_char=2	_	_	CHI
 2	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CHI
-3	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	4	iobj	_	start_char=8|end_char=11	_	_	CHI
+3	lui	lui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obl:arg	_	start_char=8|end_char=11	_	_	CHI
 4	donn-	donner	VERB	_	VerbForm=Inf	2	ccomp	_	start_char=12|end_char=17	_	_	CHI
-5	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	6	iobj	_	start_char=18|end_char=21	_	_	CHI
+5	lui	lui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obl:arg	_	start_char=18|end_char=21	_	_	CHI
 6	donner	donner	VERB	_	VerbForm=Inf	4	xcomp	_	start_char=22|end_char=28	_	_	CHI
 7	à	à	ADP	_	_	8	mark	_	start_char=29|end_char=30	_	_	CHI
 8	manger	manger	VERB	_	VerbForm=Inf	6	xcomp	_	start_char=31|end_char=37	_	_	CHI
 
 #sent_id = ADU <au25>
 #text = oui
-1	oui	oui	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
+1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
 
 #sent_id = CHI <au26>
 #text = elle tape sur la table
@@ -259,26 +260,23 @@
 2	tape	taper	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=9	_	_	CHI
 3	sur	sur	ADP	_	_	5	case	_	start_char=10|end_char=13	_	_	CHI
 4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=14|end_char=16	_	_	CHI
-5	table	table	NOUN	_	Gender=Fem|Number=Sing	2	obl	_	start_char=17|end_char=22	_	_	CHI
+5	table	table	NOUN	_	Gender=Fem|Number=Sing	2	obl:mod	_	start_char=17|end_char=22	_	_	CHI
 
 #sent_id = ADU <au27>
 #text = attends et là ? qu'est-ce qu'il se passe là ?
-1	attends	attendre	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	ADU
+1	attends	attendre	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	ADU
 2	et	et	CCONJ	_	_	3	cc	_	start_char=8|end_char=10	_	_	ADU
-3	là	là	ADV	_	_	1	conj	_	start_char=11|end_char=13	_	_	ADU
-4	?	?	PUNCT	_	_	1	punct	_	start_char=14|end_char=15	_	_	ADU
-
-#sent_id = ADU <au27>
-#text = attends et là ? qu'est-ce qu'il se passe là ?
-1	qu'	que	PRON	_	PronType=Int	0	root	_	start_char=16|end_char=19	_	_	ADU
-2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	start_char=19|end_char=22	_	_	ADU
-3	-ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	expl:subj	_	start_char=22|end_char=25	_	_	ADU
-4	qu'	que	PRON	PronType=Rel	PronType=Rel	7	obj	_	start_char=26|end_char=29	_	_	ADU
-5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	start_char=29|end_char=31	_	_	ADU
-6	se	se	PRON	_	Person=3|PronType=Prs	7	expl:comp	_	start_char=32|end_char=34	_	_	ADU
-7	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	advcl:cleft	_	start_char=35|end_char=40	_	_	ADU
-8	là	là	ADV	_	_	7	advmod	_	start_char=41|end_char=43	_	_	ADU
-9	?	?	PUNCT	_	_	1	punct	_	start_char=44|end_char=45	_	_	ADU
+3	là	là	ADV	_	_	5	advmod	_	start_char=11|end_char=13	_	_	ADU
+4	?	?	PUNCT	_	_	5	punct	_	start_char=14|end_char=15	_	_	ADU
+5	qu'	que	PRON	_	Person=3|PronType=Int	1	ccomp	_	start_char=16|end_char=19	_	_	ADU
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=19|end_char=22	_	_	ADU
+7	-ce	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	expl:subj	_	start_char=22|end_char=25	_	_	ADU
+8	qu'	que	SCONJ	_	_	11	mark	_	start_char=26|end_char=29	_	_	ADU
+9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	start_char=29|end_char=31	_	_	ADU
+10	se	se	PRON	_	Person=3|PronType=Prs	11	dep:comp	_	start_char=32|end_char=34	_	_	ADU
+11	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl:cleft	_	start_char=35|end_char=40	_	_	ADU
+12	là	là	ADV	_	_	11	advmod	_	start_char=41|end_char=43	_	_	ADU
+13	?	?	PUNCT	_	_	5	punct	_	start_char=44|end_char=45	_	_	ADU
 
 #sent_id = CHI <au28>
 #text = il prend la casserole de de que la maman a
@@ -286,12 +284,12 @@
 2	prend	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	CHI
 3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=9|end_char=11	_	_	CHI
 4	casserole	casserole	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=12|end_char=21	_	_	CHI
-5	de	de	ADP	_	_	10	mark	_	start_char=22|end_char=24	_	_	CHI
-6	de	de	ADP	_	_	10	mark	_	start_char=25|end_char=27	_	_	CHI
-7	que	que	SCONJ	_	_	5	fixed	_	start_char=28|end_char=31	_	_	CHI
+5	de	de	ADP	_	_	6	case	_	start_char=22|end_char=24	_	_	CHI
+6	de	de	ADP	_	_	4	nmod	_	start_char=25|end_char=27	_	_	CHI
+7	que	que	SCONJ	_	_	6	fixed	_	start_char=28|end_char=31	_	_	CHI
 8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	start_char=32|end_char=34	_	_	CHI
-9	maman	maman	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	start_char=35|end_char=40	_	_	CHI
-10	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	_	start_char=41|end_char=42	_	_	CHI
+9	maman	maman	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	start_char=35|end_char=40	_	_	CHI
+10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux:tense	_	start_char=41|end_char=42	_	_	CHI
 
 #sent_id = CHI <au29>
 #text = que que la maman avant de Bébé-Leïla a préparé avant d'aller au au supermarché
@@ -307,27 +305,25 @@
 10	avant	avant	ADV	_	_	9	advmod	_	start_char=47|end_char=52	_	_	CHI
 11	d'	de	ADP	_	_	12	mark	_	start_char=53|end_char=55	_	_	CHI
 12	aller	aller	VERB	_	VerbForm=Inf	10	ccomp	_	start_char=55|end_char=60	_	_	CHI
-13-14	au	_	_	_	_	_	_	_	start_char=61|end_char=63	_	_	CHI
-13	à	à	ADP	_	_	17	case	_	_	_	_	CHI
-14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	_	_	CHI
-15-16	au	_	_	_	_	_	_	_	start_char=64|end_char=66	_	_	CHI
-15	à	à	ADP	_	_	17	case	_	_	_	_	CHI
-16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_	_	_	CHI
-17	supermarché	supermarché	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	start_char=67|end_char=78	_	_	CHI
+13	au	avoir	VERB	_	VerbForm=Inf	12	xcomp	_	start_char=61|end_char=63	_	_	CHI
+14-15	au	_	_	_	_	_	_	_	start_char=64|end_char=66	_	_	CHI
+14	à	à	ADP	_	_	16	case	_	_	_	_	CHI
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_	_	_	CHI
+16	supermarché	supermarché	NOUN	_	Gender=Masc|Number=Sing	13	obl:arg	_	start_char=67|end_char=78	_	_	CHI
 
 #sent_id = ADU <au30>
 #text = oui c'est bien Karim prend la petite cui- la p- la purée que la maman de Leïla a préparé
 1	oui	oui	INTJ	_	_	6	discourse	_	start_char=0|end_char=3	_	_	ADU
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=4|end_char=6	_	_	ADU
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=4|end_char=6	_	_	ADU
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	start_char=6|end_char=9	_	_	ADU
-4	bien	bien	ADV	_	_	5	advmod	_	start_char=10|end_char=14	_	_	ADU
+4	bien	bien	ADV	_	_	6	advmod	_	start_char=10|end_char=14	_	_	ADU
 5	Karim	Karim	PROPN	_	_	6	nsubj	_	start_char=15|end_char=20	_	_	ADU
 6	prend	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=21|end_char=26	_	_	ADU
 7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	start_char=27|end_char=29	_	_	ADU
 8	petite	petit	ADJ	_	Gender=Fem|Number=Sing	9	amod	_	start_char=30|end_char=36	_	_	ADU
 9	cui-	cui-	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	start_char=37|end_char=41	_	_	ADU
 10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	start_char=42|end_char=44	_	_	ADU
-11	p-	p-	NOUN	_	Gender=Fem|Number=Sing	9	appos	_	start_char=45|end_char=47	_	_	ADU
+11	p-	p-	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	start_char=45|end_char=47	_	_	ADU
 12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	start_char=48|end_char=50	_	_	ADU
 13	purée	purée	NOUN	_	Gender=Fem|Number=Sing	11	appos	_	start_char=51|end_char=56	_	_	ADU
 14	que	que	PRON	_	PronType=Rel	20	obj	_	start_char=57|end_char=60	_	_	ADU
@@ -344,17 +340,17 @@
 2	tape	taper	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=9	_	_	CHI
 3	sur	sur	ADP	_	_	5	case	_	start_char=10|end_char=13	_	_	CHI
 4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=14|end_char=16	_	_	CHI
-5	table	table	NOUN	_	Gender=Fem|Number=Sing	2	obl	_	start_char=17|end_char=22	_	_	CHI
+5	table	table	NOUN	_	Gender=Fem|Number=Sing	2	obl:mod	_	start_char=17|end_char=22	_	_	CHI
 
 #sent_id = ADU <au32>
 #text = oui
-1	oui	oui	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
+1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
 
 #sent_id = CHI <au33>
 #text = elle coupe les morceaux dans une assiette
 1	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=0|end_char=4	_	_	CHI
 2	coupe	couper	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=10	_	_	CHI
-3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	start_char=11|end_char=14	_	_	CHI
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	start_char=11|end_char=14	_	_	CHI
 4	morceaux	morceau	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	start_char=15|end_char=23	_	_	CHI
 5	dans	dans	ADP	_	_	7	case	_	start_char=24|end_char=28	_	_	CHI
 6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=29|end_char=32	_	_	CHI
@@ -362,41 +358,41 @@
 
 #sent_id = ADU <au34>
 #text = oui
-1	oui	oui	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
+1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
 
 #sent_id = CHI <au35>
 #text = des morceaux de viande
-1	des	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	CHI
+1	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	CHI
 2	morceaux	morceau	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=4|end_char=12	_	_	CHI
 3	de	de	ADP	_	_	4	case	_	start_char=13|end_char=15	_	_	CHI
 4	viande	viande	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	start_char=16|end_char=22	_	_	CHI
 
 #sent_id = ADU <au36>
 #text = oui
-1	oui	oui	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
+1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	ADU
 
 #sent_id = CHI <au37>
 #text = et là elle elle elle veut faire des bêtises
 1	et	et	CCONJ	_	_	6	cc	_	start_char=0|end_char=2	_	_	CHI
 2	là	là	ADV	_	_	6	advmod	_	start_char=3|end_char=5	_	_	CHI
 3	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	start_char=6|end_char=10	_	_	CHI
-4	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	dislocated	_	start_char=11|end_char=15	_	_	CHI
+4	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	obl:mod	_	start_char=11|end_char=15	_	_	CHI
 5	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	start_char=16|end_char=20	_	_	CHI
 6	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=21|end_char=25	_	_	CHI
 7	faire	faire	VERB	_	VerbForm=Inf	6	xcomp	_	start_char=26|end_char=31	_	_	CHI
-8	des	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	9	det	_	start_char=32|end_char=35	_	_	CHI
+8	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	9	det	_	start_char=32|end_char=35	_	_	CHI
 9	bêtises	bêtise	NOUN	_	Gender=Fem|Number=Plur	7	obj	_	start_char=36|end_char=43	_	_	CHI
 
 #sent_id = ADU <au38>
 #text = hum hum elle veut pas qu'on lui raconte une histoire Bébé-Leïla
 1	hum	hum	INTJ	_	_	4	discourse	_	start_char=0|end_char=3	_	_	ADU
-2	hum	hum	INTJ	_	_	1	fixed	_	start_char=4|end_char=7	_	_	ADU
+2	hum	hum	PUNCT	_	_	1	punct	_	start_char=4|end_char=7	_	_	ADU
 3	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=8|end_char=12	_	_	ADU
 4	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13|end_char=17	_	_	ADU
 5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	start_char=18|end_char=21	_	_	ADU
 6	qu'	que	SCONJ	_	_	9	mark	_	start_char=22|end_char=25	_	_	ADU
-7	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	9	nsubj	_	start_char=25|end_char=27	_	_	ADU
-8	lui	lui	PRON	_	Number=Sing|Person=3|PronType=Prs	9	iobj	_	start_char=28|end_char=31	_	_	ADU
+7	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	9	nsubj	_	start_char=25|end_char=27	_	_	ADU
+8	lui	lui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	obl:arg	_	start_char=28|end_char=31	_	_	ADU
 9	raconte	raconter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	start_char=32|end_char=39	_	_	ADU
 10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	start_char=40|end_char=43	_	_	ADU
 11	histoire	histoire	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	start_char=44|end_char=52	_	_	ADU
@@ -408,69 +404,69 @@
 2	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=9	_	_	ADU
 3	jouer	jouer	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=10|end_char=15	_	_	ADU
 4	avec	avec	ADP	_	_	6	case	_	start_char=16|end_char=20	_	_	ADU
-5	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	start_char=21|end_char=23	_	_	ADU
+5	sa	son	DET	_	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=3|PronType=Prs	6	det	_	start_char=21|end_char=23	_	_	ADU
 6	viande	viande	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	start_char=24|end_char=30	_	_	ADU
-7	$$$	$$$	PUNCT	_	_	2	punct	_	start_char=31|end_char=34	_	_	ADU
+7	$	$	SYM	_	_	6	nmod	_	start_char=31|end_char=32	_	_	ADU
+8	$	$	SYM	_	Number=Plur	9	nmod	_	start_char=32|end_char=33	_	_	ADU
+9	$	$	SYM	_	Number=Plur	6	nmod	_	start_char=33|end_char=34	_	_	ADU
 
 #sent_id = ADU <au40>
 #text = alors où est-ce qu'on en était ?
-1	alors	alors	ADV	_	_	2	advmod	_	start_char=0|end_char=5	_	_	ADU
-2	où	où	ADV	_	PronType=Rel	0	root	_	start_char=6|end_char=8	_	_	ADU
-3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	start_char=9|end_char=12	_	_	ADU
-4	-ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	2	expl:subj	_	start_char=12|end_char=15	_	_	ADU
-5	qu'	que	PRON	PronType=Rel	PronType=Rel	8	obj	_	start_char=16|end_char=19	_	_	ADU
-6	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	8	nsubj	_	start_char=19|end_char=21	_	_	ADU
-7	en	en	PRON	_	Person=3	8	expl:comp	_	start_char=22|end_char=24	_	_	ADU
-8	était	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	advcl:cleft	_	start_char=25|end_char=30	_	_	ADU
-9	?	?	PUNCT	_	_	2	punct	_	start_char=31|end_char=32	_	_	ADU
+1	alors	alors	ADV	_	_	3	advmod	_	start_char=0|end_char=5	_	_	ADU
+2	où	où	ADV	_	PronType=Rel	1	fixed	_	start_char=6|end_char=8	_	_	ADU
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9|end_char=12	_	_	ADU
+4	-ce	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=12|end_char=15	_	_	ADU
+5	qu'	que	SCONJ	_	_	8	mark	_	start_char=16|end_char=19	_	_	ADU
+6	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	8	nsubj	_	start_char=19|end_char=21	_	_	ADU
+7	en	en	PRON	_	Person=3|PronType=Prs	8	dep:comp	_	start_char=22|end_char=24	_	_	ADU
+8	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	ccomp	_	start_char=25|end_char=30	_	_	ADU
+9	?	?	PUNCT	_	_	3	punct	_	start_char=31|end_char=32	_	_	ADU
 
 #sent_id = CHI <au41>
 #text = xxx était celle-là
-1-2	xxx	_	_	_	_	_	_	_	start_char=0|end_char=3	_	_	CHI
-1	de	de	ADP	_	_	2	case	_	_	_	_	CHI
-2	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	0	root	_	_	_	_	CHI
-3	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	cop	_	start_char=4|end_char=9	_	_	CHI
-4	celle-là	celle-là	PRON	_	Gender=Fem|Number=Sing	2	parataxis	_	start_char=10|end_char=18	_	_	CHI
+1	xxx	xxx	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	start_char=0|end_char=3	_	_	CHI
+2	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	start_char=4|end_char=9	_	_	CHI
+3	celle-là	celui-là	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=10|end_char=18	_	_	CHI
 
 #sent_id = ADU <au42>
 #text = voilà on recommence là ?
 1	voilà	voilà	VERB	_	_	0	root	_	start_char=0|end_char=5	_	_	ADU
-2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	1	nsubj	_	start_char=6|end_char=8	_	_	ADU
-3	recommence	recommencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	start_char=9|end_char=19	_	_	ADU
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	1	nsubj	_	start_char=6|end_char=8	_	_	ADU
+3	recommence	recommencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=9|end_char=19	_	_	ADU
 4	là	là	ADV	_	_	3	advmod	_	start_char=20|end_char=22	_	_	ADU
 5	?	?	PUNCT	_	_	1	punct	_	start_char=23|end_char=24	_	_	ADU
 
 #sent_id = ADU <au43>
 #text = vas-y tu me racontes
-1	vas	vair	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=3	_	_	ADU
-2	-y	y	PRON	_	_	1	iobj	_	start_char=3|end_char=5	_	_	ADU
-3	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	5	nsubj	_	start_char=6|end_char=8	_	_	ADU
-4	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	5	expl:comp	_	start_char=9|end_char=11	_	_	ADU
-5	racontes	raconter	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	parataxis	_	start_char=12|end_char=20	_	_	ADU
+1	vas-y	le	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obj	_	start_char=0|end_char=5	_	_	ADU
+2	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	4	nsubj	_	start_char=6|end_char=8	_	_	ADU
+3	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	4	dep:comp	_	start_char=9|end_char=11	_	_	ADU
+4	racontes	raconter	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=12|end_char=20	_	_	ADU
 
 #sent_id = ADU <au44>
 #text = l'image là ?
-1	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	ADU
+1	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	ADU
 2	image	image	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=2|end_char=7	_	_	ADU
 3	là	là	ADV	_	_	2	advmod	_	start_char=8|end_char=10	_	_	ADU
 4	?	?	PUNCT	_	_	2	punct	_	start_char=11|end_char=12	_	_	ADU
 
 #sent_id = CHI <au45>
 #text = elle elle a
-1	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=0|end_char=4	_	_	CHI
-2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=5|end_char=9	_	_	CHI
-3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=10|end_char=11	_	_	CHI
+1	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	0	root	_	start_char=0|end_char=4	_	_	CHI
+2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	nmod	_	start_char=5|end_char=9	_	_	CHI
+3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	aux:tense	_	start_char=10|end_char=11	_	_	CHI
 
 #sent_id = CHI <au46>
 #text = fait sauter les morceaux de viande par- partout
 1	fait	faire	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	aux:caus	_	start_char=0|end_char=4	_	_	CHI
 2	sauter	sauter	VERB	_	VerbForm=Inf	0	root	_	start_char=5|end_char=11	_	_	CHI
-3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	start_char=12|end_char=15	_	_	CHI
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	start_char=12|end_char=15	_	_	CHI
 4	morceaux	morceau	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	start_char=16|end_char=24	_	_	CHI
 5	de	de	ADP	_	_	6	case	_	start_char=25|end_char=27	_	_	CHI
 6	viande	viande	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	start_char=28|end_char=34	_	_	CHI
-7	par-	par-	PUNCT	_	_	8	punct	_	start_char=35|end_char=39	_	_	CHI
-8	partout	partout	ADV	_	_	2	advmod	_	start_char=40|end_char=47	_	_	CHI
+7	par	par	ADP	_	_	9	case	_	start_char=35|end_char=38	_	_	CHI
+8	-	-	PUNCT	_	_	9	punct	_	start_char=38|end_char=39	_	_	CHI
+9	partout	partout	ADV	_	_	2	obl:mod	_	start_char=40|end_char=47	_	_	CHI
 
 #sent_id = ADU <au47>
 #text = oui elle a lancé son assiette en l'air
@@ -478,11 +474,11 @@
 2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=4|end_char=8	_	_	ADU
 3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	start_char=9|end_char=10	_	_	ADU
 4	lancé	lancer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=11|end_char=16	_	_	ADU
-5	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	6	det	_	start_char=17|end_char=20	_	_	ADU
+5	son	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=3|PronType=Prs	6	det	_	start_char=17|end_char=20	_	_	ADU
 6	assiette	assiette	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	start_char=21|end_char=29	_	_	ADU
 7	en	en	ADP	_	_	9	case	_	start_char=30|end_char=32	_	_	ADU
-8	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	start_char=33|end_char=35	_	_	ADU
-9	air	air	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	start_char=35|end_char=38	_	_	ADU
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	start_char=33|end_char=35	_	_	ADU
+9	air	air	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	start_char=35|end_char=38	_	_	ADU
 
 #sent_id = ADU <au48>
 #text = et là et là et là et là et là ?
@@ -493,7 +489,7 @@
 5	et	et	CCONJ	_	_	6	cc	_	start_char=12|end_char=14	_	_	ADU
 6	là	là	ADV	_	_	2	conj	_	start_char=15|end_char=17	_	_	ADU
 7	et	et	CCONJ	_	_	8	cc	_	start_char=18|end_char=20	_	_	ADU
-8	là	là	ADV	_	_	2	conj	_	start_char=21|end_char=23	_	_	ADU
+8	là	là	ADV	_	_	6	conj	_	start_char=21|end_char=23	_	_	ADU
 9	et	et	CCONJ	_	_	10	cc	_	start_char=24|end_char=26	_	_	ADU
 10	là	là	ADV	_	_	8	conj	_	start_char=27|end_char=29	_	_	ADU
 11	?	?	PUNCT	_	_	2	punct	_	start_char=30|end_char=31	_	_	ADU
@@ -508,15 +504,15 @@
 #sent_id = CHI <au50>
 #text = et elle Dorothée eh ben elle donne des de la purée à Bébé-Leïla
 1	et	et	CCONJ	_	_	7	cc	_	start_char=0|end_char=2	_	_	CHI
-2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	dislocated	_	start_char=3|end_char=7	_	_	CHI
-3	Dorothée	Dorothée	PROPN	_	_	2	appos	_	start_char=8|end_char=16	_	_	CHI
-4	eh	eh	INTJ	_	_	7	discourse	_	start_char=17|end_char=19	_	_	CHI
-5	ben	ben	ADV	_	_	7	advmod	_	start_char=20|end_char=23	_	_	CHI
+2	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	obl:mod	_	start_char=3|end_char=7	_	_	CHI
+3	Dorothée	Dorothée	PROPN	_	_	2	flat:name	_	start_char=8|end_char=16	_	_	CHI
+4	eh	eh	PROPN	_	_	3	flat:name	_	start_char=17|end_char=19	_	_	CHI
+5	ben	ben	PROPN	_	_	4	flat:name	_	start_char=20|end_char=23	_	_	CHI
 6	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	start_char=24|end_char=28	_	_	CHI
 7	donne	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=29|end_char=34	_	_	CHI
-8	des	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	11	det	_	start_char=35|end_char=38	_	_	CHI
+8	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	11	det	_	start_char=35|end_char=38	_	_	CHI
 9	de	de	ADP	_	_	11	det	_	start_char=39|end_char=41	_	_	CHI
-10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	start_char=42|end_char=44	_	_	CHI
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	fixed	_	start_char=42|end_char=44	_	_	CHI
 11	purée	purée	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	start_char=45|end_char=50	_	_	CHI
 12	à	à	ADP	_	_	13	case	_	start_char=51|end_char=52	_	_	CHI
 13	Bébé-Leïla	Bébé-Leïla	PROPN	_	_	7	obl:mod	_	start_char=53|end_char=63	_	_	CHI
@@ -524,14 +520,14 @@
 #sent_id = ADU <au51>
 #text = oui c'est bien
 1	oui	oui	INTJ	_	_	4	discourse	_	start_char=0|end_char=3	_	_	ADU
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=4|end_char=6	_	_	ADU
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=4|end_char=6	_	_	ADU
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=6|end_char=9	_	_	ADU
 4	bien	bien	ADV	_	_	0	root	_	start_char=10|end_char=14	_	_	ADU
 
 #sent_id = CHI <au52>
 #text = et y a un petit yaourt rose
 1	et	et	CCONJ	_	_	3	cc	_	start_char=0|end_char=2	_	_	CHI
-2	y	y	PRON	_	_	3	expl:comp	_	start_char=3|end_char=4	_	_	CHI
+2	y	y	PRON	_	Person=3|PronType=Prs	3	dep:comp	_	start_char=3|end_char=4	_	_	CHI
 3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=6	_	_	CHI
 4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=7|end_char=9	_	_	CHI
 5	petit	petit	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	start_char=10|end_char=15	_	_	CHI
@@ -540,17 +536,17 @@
 
 #sent_id = CHI <au53>
 #text = eh ben c'est le bé c'est le le dîner de Bébé-Leïla
-1	eh	eh	INTJ	_	_	6	discourse	_	start_char=0|end_char=2	_	_	CHI
-2	ben	ben	INTJ	_	_	1	fixed	_	start_char=3|end_char=6	_	_	CHI
-3	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=7|end_char=9	_	_	CHI
+1	eh	eh	INTJ	_	_	11	discourse	_	start_char=0|end_char=2	_	_	CHI
+2	ben	ben	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	start_char=3|end_char=6	_	_	CHI
+3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=7|end_char=9	_	_	CHI
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=9|end_char=12	_	_	CHI
 5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=13|end_char=15	_	_	CHI
-6	bé	bé	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=16|end_char=18	_	_	CHI
-7	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	11	nsubj	_	start_char=19|end_char=21	_	_	CHI
+6	bé	bé	NOUN	_	Gender=Masc|Number=Sing	11	advcl	_	start_char=16|end_char=18	_	_	CHI
+7	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	11	nsubj	_	start_char=19|end_char=21	_	_	CHI
 8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	start_char=21|end_char=24	_	_	CHI
 9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	start_char=25|end_char=27	_	_	CHI
 10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	start_char=28|end_char=30	_	_	CHI
-11	dîner	dîner	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	start_char=31|end_char=36	_	_	CHI
+11	dîner	dîner	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=31|end_char=36	_	_	CHI
 12	de	de	ADP	_	_	13	case	_	start_char=37|end_char=39	_	_	CHI
 13	Bébé-Leïla	Bébé-Leïla	PROPN	_	_	11	nmod	_	start_char=40|end_char=50	_	_	CHI
 
@@ -561,7 +557,7 @@
 3	que	que	SCONJ	_	_	5	mark	_	start_char=12|end_char=15	_	_	ADU
 4	Bébé-Leïla	Bébé-Leïla	PROPN	_	_	5	nsubj	_	start_char=16|end_char=26	_	_	ADU
 5	mange	manger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	start_char=27|end_char=32	_	_	ADU
-6	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	start_char=33|end_char=35	_	_	ADU
+6	sa	son	DET	_	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=3|PronType=Prs	7	det	_	start_char=33|end_char=35	_	_	ADU
 7	viande	viande	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	start_char=36|end_char=42	_	_	ADU
 
 #sent_id = ADU <au55>
@@ -591,15 +587,17 @@
 8	rose	rose	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	start_char=33|end_char=37	_	_	ADU
 9	pour	pour	ADP	_	_	11	case	_	start_char=38|end_char=42	_	_	ADU
 10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	start_char=43|end_char=45	_	_	ADU
-11	dessert	dessert	NOUN	_	Gender=Masc|Number=Sing	4	obl	_	start_char=46|end_char=53	_	_	ADU
+11	dessert	dessert	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	start_char=46|end_char=53	_	_	ADU
 12	de	de	ADP	_	_	13	case	_	start_char=54|end_char=56	_	_	ADU
 13	Bébé-Leïla	Bébé-Leïla	PROPN	_	_	11	nmod	_	start_char=57|end_char=67	_	_	ADU
 
 #sent_id = ADU <au57>
 #text = voilà c'est fini $$$
 1	voilà	voilà	VERB	_	_	0	root	_	start_char=0|end_char=5	_	_	ADU
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=6|end_char=8	_	_	ADU
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=6|end_char=8	_	_	ADU
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	start_char=8|end_char=11	_	_	ADU
 4	fini	finir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	ccomp	_	start_char=12|end_char=16	_	_	ADU
-5	$$$	$$$	SYM	_	_	4	parataxis	_	start_char=17|end_char=20	_	_	ADU
+5	$	$	SYM	_	Number=Plur	4	obj	_	start_char=17|end_char=18	_	_	ADU
+6	$	$	SYM	_	Number=Plur	7	nmod	_	start_char=18|end_char=19	_	_	ADU
+7	$	$	SYM	_	Number=Plur	5	nmod	_	start_char=19|end_char=20	_	_	ADU
 

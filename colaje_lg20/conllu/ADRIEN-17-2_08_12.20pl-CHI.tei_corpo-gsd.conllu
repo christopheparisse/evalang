@@ -11,7 +11,7 @@
 9	!	!	PUNCT	_	_	3	punct	_	start_char=39|end_char=40	_	_	CHI
 
 #sent_id = CHI <au1>
-#text = x x x x x x x x ..
+#text = x x x x x x x x .
 1	x	x	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=1	_	_	CHI
 2	x	x	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=2|end_char=3	_	_	CHI
 3	x	x	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=5	_	_	CHI
@@ -21,7 +21,6 @@
 7	x	x	SYM	_	_	8	case	_	start_char=12|end_char=13	_	_	CHI
 8	x	x	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=14|end_char=15	_	_	CHI
 9	.	.	PUNCT	_	_	1	punct	_	start_char=16|end_char=17	_	_	CHI
-10	.	.	PUNCT	_	_	1	punct	_	start_char=17|end_char=18	_	_	CHI
 
 #sent_id = CHI <au2>
 #text = x pue x pue x pue x pue !
@@ -77,15 +76,14 @@
 7	!	!	PUNCT	_	_	1	punct	_	start_char=28|end_char=29	_	_	CHI
 
 #sent_id = CHI <au7>
-#text = ta u ta u ta u ..
+#text = ta u ta u ta u .
 1	ta	ta	DET	_	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=2|PronType=Prs	2	det	_	start_char=0|end_char=2	_	_	CHI
-2	u	u	X	_	_	0	root	_	start_char=3|end_char=4	_	_	CHI
+2	u	u	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=3|end_char=4	_	_	CHI
 3	ta	ta	SYM	_	_	6	nmod	_	start_char=5|end_char=7	_	_	CHI
 4	u	u	X	_	_	6	nmod	_	start_char=8|end_char=9	_	_	CHI
 5	ta	ta	SYM	_	_	6	nmod	_	start_char=10|end_char=12	_	_	CHI
 6	u	u	NOUN	_	Gender=Fem|Number=Sing	2	appos	_	start_char=13|end_char=14	_	_	CHI
-7	.	.	PUNCT	_	_	6	punct	_	start_char=15|end_char=16	_	_	CHI
-8	.	.	PUNCT	_	_	2	punct	_	start_char=16|end_char=17	_	_	CHI
+7	.	.	PUNCT	_	_	2	punct	_	start_char=15|end_char=16	_	_	CHI
 
 #sent_id = CHI <au8>
 #text = ouvre papa s'il te plaît !
@@ -98,14 +96,13 @@
 7	!	!	PUNCT	_	_	1	punct	_	start_char=25|end_char=26	_	_	CHI
 
 #sent_id = CHI <au9>
-#text = oh oh doudou oh doudou ..
+#text = oh oh doudou oh doudou .
 1	oh	oh	INTJ	_	_	3	discourse	_	start_char=0|end_char=2	_	_	CHI
 2	oh	oh	PUNCT	_	_	1	punct	_	start_char=3|end_char=5	_	_	CHI
 3	doudou	doudou	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=6|end_char=12	_	_	CHI
 4	oh	oh	PUNCT	_	_	5	punct	_	start_char=13|end_char=15	_	_	CHI
 5	doudou	doudou	NOUN	_	Gender=Masc|Number=Sing	3	conj	_	start_char=16|end_char=22	_	_	CHI
 6	.	.	PUNCT	_	_	3	punct	_	start_char=23|end_char=24	_	_	CHI
-7	.	.	PUNCT	_	_	3	punct	_	start_char=24|end_char=25	_	_	CHI
 
 #sent_id = CHI <au10>
 #text = me mettre dessus dans l'eau !
@@ -174,13 +171,12 @@
 7	!	!	PUNCT	_	_	2	punct	_	start_char=21|end_char=22	_	_	CHI
 
 #sent_id = CHI <au17>
-#text = s'il te plaît papa !
-1	s'	si	SCONJ	_	_	4	mark	_	start_char=0|end_char=2	_	_	CHI
-2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=2|end_char=4	_	_	CHI
-3	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obl:arg	_	start_char=5|end_char=7	_	_	CHI
-4	plaît	plaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8|end_char=13	_	_	CHI
-5	papa	papa	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	start_char=14|end_char=18	_	_	CHI
-6	!	!	PUNCT	_	_	4	punct	_	start_char=19|end_char=20	_	_	CHI
+#text = sait pas faire maman !
+1	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CHI
+2	pas	pas	ADV	_	Polarity=Neg	1	advmod	_	start_char=5|end_char=8	_	_	CHI
+3	faire	faire	VERB	_	VerbForm=Inf	1	xcomp	_	start_char=9|end_char=14	_	_	CHI
+4	maman	maman	NOUN	_	Gender=Fem|Number=Sing	3	obj:lvc	_	start_char=15|end_char=20	_	_	CHI
+5	!	!	PUNCT	_	_	1	punct	_	start_char=21|end_char=22	_	_	CHI
 
 #sent_id = CHI <au18>
 #text = s'il te plaît papa !
