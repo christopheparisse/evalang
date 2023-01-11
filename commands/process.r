@@ -1,8 +1,8 @@
 ## init
 
 library('openxlsx')
-setwd("/brainstorm/evalang/GroupeDecomplexes")
-setwd("/brainstorm/evalang/tcof")
+setwd("/brainstorm/evalang-public/GroupeDecomplexes")
+setwd("/brainstorm/evalang-public/tcof")
 dataperceo <- read.delim("stat-ttg_perceo_clan.csv")
 datastanza <- read.delim("stat-conllu_clan.csv")
 

@@ -112,10 +112,10 @@ scdraw(data.chi.long, 'sommetot')
 scdraw(data.chi.trans, 'conj')
 
 #library('openxlsx')
-setwd("/brainstorm/evalang/GroupeDecomplexes")
-setwd("/brainstorm/evalang/tcof")
-dataperceo <- read.csv("stat-ttg_perceo_clan.csv") # à modifier la création
-datastanza <- read.csv("stat-conllu_clan.csv") # à modifier la création
+setwd("/brainstorm/evalang-public/GroupeDecomplexes")
+setwd("/brainstorm/evalang-public/tcof")
+dataperceo <- read.csv("stat-ttg_perceo_clan.csv") # ï¿½ modifier la crï¿½ation
+datastanza <- read.csv("stat-conllu_clan.csv") # ï¿½ modifier la crï¿½ation
 
 dataperceo1 <- update1(dataperceo)
 datastanza1 <- update1(datastanza)

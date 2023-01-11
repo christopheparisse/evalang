@@ -52,7 +52,7 @@ Tous les autres répertoires non mentionnés ci-dessus sont des répertoires con
 - Les commandes de traitement de l'ensemble des répertoires se font dans le sous-système Ubuntu sous Windows pour bénéficier de la puissance du shell et des commandes unix. A peu près la même chose peut être réalisée avec PowerShell sous Windows (ce sera pour une seconde version).
 - Les programmes fonctionnent aussi sous Ubuntu natif et sur MacOS
 - Pour faire tourner les programmes, il faut installer:
-  - Mettre le bon nom de la command Treetagger dans teibasetottg.sh (par exemple ../../evalang/commands/tree-tagger-macos-m1)
+  - Mettre le bon nom de la command Treetagger dans teibasetottg.sh (par exemple ../../evalang-public/commands/tree-tagger-macos-m1)
   - Python3 et pip
     - charger les bibliothèques stanza en faisant ->> pip install stanza
     - vous aurez probablement d'autres bibliothèques à installer
@@ -69,31 +69,31 @@ sh fullbuild.sh
 ### Clan vers Tei_corpo_base
 - Convertit tous les fichiers du répertoire CLAN (au format CLAN) vers le répertoire tei_corpo_base (au format tei_corpo)
 ```
-sh ../../evalang/commands/clantotei.sh
+sh ../../evalang-public/commands/clantotei.sh
 ```
 
 ### Tei_corpo vers Tei_corpo_base
 - A partir de tei_corpo original, crée des fichiers CLAN (dans répertoire CLAN) et des fichiers tei_corpo nettoyés et mis dans tei_corpo_base
 ```
-sh ../../evalang/commands/teicorpototei.sh
+sh ../../evalang-public/commands/teicorpototei.sh
 ```
 
 ### Tei_corpo_base vers ttg_perceo
 - Analyse de tei_corpo_base avec treetagger et perceo
 ```
-sh ../../evalang/commands/teibasetottg.sh
+sh ../../evalang-public/commands/teibasetottg.sh
 ```
 
 ### Ttg_perceo vers ttg_perceo_clan
 - Convertit résultat de l'analyse treetagger perceo vers un format CLAN requetable
 ```
-sh ../../evalang/commands/ttgtoclan.sh
+sh ../../evalang-public/commands/ttgtoclan.sh
 ```
 
 ### Tei_corpo_base vers conllu et conllu_clan
 - Analyse avec stanza les fichiers tei_corpo_base et génère un format CLAN requetable
 ```
-sh ../../evalang/commands/teitoconllu.sh
+sh ../../evalang-public/commands/teitoconllu.sh
 ```
 
 # Commentaire et essai
@@ -106,14 +106,14 @@ Leur nom se termine par .[nombre]pl.txt (par exemple .20pl.txt)
 Correction pour supprimer les lignes secondaires.
 
 ```
-sh ../../evalang/commands/callnth.sh 20
+sh ../../evalang-public/commands/callnth.sh 20
 ````
 
 Les fichiers figurent dans les dossiers appelés **lg20**
 
 ## Utilisation des analyses syntaxiques pour générer fichier CSV
 ```
-sh ../../evalang/commands/process.sh
+sh ../../evalang-public/commands/process.sh
 ```
 
 ## Résultats statistiques

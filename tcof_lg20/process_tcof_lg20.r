@@ -93,8 +93,8 @@ scdraw <- function(data, ctgy, varbl="") {
 
 
 #library('openxlsx')
-setwd("/brainstorm/evalang/tcof_lg20")
-####setwd("/brainstorm/evalang/tcof")
+setwd("/brainstorm/evalang-public/tcof_lg20")
+####setwd("/brainstorm/evalang-public/tcof")
 # attention trans, long et phi ne fonctionnent qu'avec tcof
 
 #dataperceo <- read.csv("stat-ttg_perceo_clan.csv") # ? modifier la cr?ation
