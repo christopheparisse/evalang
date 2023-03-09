@@ -1,1 +1,1 @@
-awk -f ../../evalang-public/commands/rawtext.awk CHI $1 > $(dirname $1)/../rawtext/chi-$(basename $1)
+awk -f ../../evalang-public/commands/rawtext.awk CHI $1 > $(dirname $1)/../rawtextchi/chi-$(basename $1)
