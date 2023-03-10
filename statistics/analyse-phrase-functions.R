@@ -11,7 +11,7 @@ content_proc <- function(proc, csv) {
   proc <- text_to_sentence(proc)
   if (!(proc  %in% colnames(csv))) return(c())
   if (is.na(csv[1, proc])) return(c())
-  print(paste("content_proc pour:", proc)
+  print(paste("content_proc pour:", proc))
   csv[, proc]
 }
 

@@ -1,8 +1,8 @@
-source('/Users/cp/brainstorm/text-to-kids/wp3/statistics/multiple-load-functions.R')
-source('/Users/cp/brainstorm/text-to-kids/wp3/statistics/analyse-texte-functions.R')
-source('/Users/cp/brainstorm/text-to-kids/wp3/statistics/analyse-phrase-functions.R')
+source('/Users/cp/brainstorm/evalang/evalang-public/statistics/multiple-load-functions.R')
+source('/Users/cp/brainstorm/evalang/evalang-public/statistics/analyse-texte-functions.R')
+source('/Users/cp/brainstorm/evalang/evalang-public/statistics/analyse-phrase-functions.R')
 
-setwd('/Users/cp/brainstorm/text-to-kids/wp3/text_complexity_client/')
+setwd('/Users/cp/brainstorm/evalang/evalang-public/statistics/')
 
 #DECOMPLEXES
 # les csv avec les indications de metadonnees
