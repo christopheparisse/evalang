@@ -65,21 +65,38 @@ sent_tv[1, "graphie_phrase_variance_longueur_mots_sentence"]
 # voir combien de fois ces 20 paramètres sont supérieurs au q90
 get_phr_eval <- function(numphr, csv, n, seuil) {
   np <- 0
+  lnp <- c()
   for (i in seq(1, n)) {
     pname <- processor_list_sent[as.numeric(allcorsent_order$id[i])]
     pq90 <- which_quantile_proc_csv(pname, csv, seuil)
     vp <- csv[numphr, pname]
-    if (vp >= pq90) np <- np +1
+    if (vp >= pq90) {
+      np <- np +1
+      lnp <- c(lnp, pname)
+    }
   }
-  np
+  list("val" = np, "proc" = lnp)
 }
 
 get_best_sent <- function(csv, nb, seuil, mymax) {
   for (i in seq(1, nrow(csv))) {
     vphr <- get_phr_eval(i, csv, nb, seuil)
-    if (vphr >= mymax) {
-      print(vphr)
+    if (vphr$val >= mymax) {
+      print(vphr$val)
       print(csv[i, "sentence"])
+      print(vphr$proc)
+    }
+  }
+}
+
+get_best_sent_texte <- function(csv, txtname, nb, seuil, mymax) {
+  for (i in seq(1, nrow(csv))) {
+    if (csv[i, "filename"] != txtname) next
+    vphr <- get_phr_eval(i, csv, nb, seuil)
+    if (vphr$val >= mymax) {
+      print(vphr$val)
+      print(csv[i, "sentence"])
+      print(vphr$proc)
     }
   }
 }
