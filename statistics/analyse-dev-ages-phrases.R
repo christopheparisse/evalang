@@ -90,6 +90,7 @@ get_best_sent <- function(csv, nb, seuil, mymax) {
 }
 
 get_best_sent_texte <- function(csv, txtname, nb, seuil, mymax) {
+  p <- list()
   for (i in seq(1, nrow(csv))) {
     if (csv[i, "filename"] != txtname) next
     vphr <- get_phr_eval(i, csv, nb, seuil)
@@ -97,6 +98,14 @@ get_best_sent_texte <- function(csv, txtname, nb, seuil, mymax) {
       print(vphr$val)
       print(csv[i, "sentence"])
       print(vphr$proc)
+      p[[length(p)+1]] <- c(vphr$val, csv[i, "sentence"], vphr$proc)
     }
   }
+  p
 }
+
+a <- get_best_sent_texte(sent_tv, "chi_Alban_5.11{GS}.txt", 20, .9, 14)
+b <- lapply(a, function(x) { sub('\n',' ',x) })
+ddd <- data.frame(b=I(unlist(lapply(b,paste,collapse=";"))))
+write.table(ddd,file="aa.csv",quote=FALSE,row.names=FALSE)
+
