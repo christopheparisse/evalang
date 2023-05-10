@@ -1,3 +1,3 @@
 git add .
-git commit -m "Mise a jour fichiers rawtext"
+git commit -m "statistiques mai 2023"
 git push origin

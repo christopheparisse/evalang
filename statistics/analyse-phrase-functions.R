@@ -44,6 +44,66 @@ distrib_proc <- function(proc, csv) {
   cors
 }
 
+# calculer les valeurs intéressantes pour caractériser la distribution
+distrib_proc_vector <- function(proc, csv) {
+  proc <- text_to_sentence(proc)
+  if (!(proc  %in% colnames(csv))) return(c())
+  if (is.na(csv[1, proc])) return(c())
+  # c(as.character(proc), mean(as.numeric(csv[, proc])), sd(as.numeric(csv[, proc])), min(as.numeric(csv[, proc])), max(as.numeric(csv[, proc])), 
+  #    median(as.numeric(csv[, proc])), quantile(as.numeric(csv[, proc]), 0.2), quantile(as.numeric(csv[, proc]), 0.8))
+  
+  c(as.character(proc), mean(as.numeric(csv[, proc])), sd(as.numeric(csv[, proc])), min(as.numeric(csv[, proc])), max(as.numeric(csv[, proc])), 
+         median(as.numeric(csv[, proc])), quantile(as.numeric(csv[, proc]), 0.2), quantile(as.numeric(csv[, proc]), 0.8),
+         quantile(as.numeric(csv[, proc]), 0.9), quantile(as.numeric(csv[, proc]), 0.95))
+}
+
+dpv <- function(proclist, csv) {
+  cors <- data.frame(processor = character(), mean = numeric(), sd = numeric(), min = numeric(), max = numeric(), 
+                     median = numeric(), q20 = numeric(), q80 = numeric(), q90 = numeric(), q95 = numeric() )
+  for (i in proclist) {
+    cors <- rbind(cors, distrib_proc_vector(i, csv))
+  }
+  colnames(cors) <- c("processor", "mean", "sd", "min", "max", "median", "q20", "q80", "q90", "q95")
+  cors$mean <- as.numeric(cors$mean)
+  cors$sd <- as.numeric(cors$sd)
+  cors$min <- as.numeric(cors$min)
+  cors$max <- as.numeric(cors$max)
+  cors$median <- as.numeric(cors$median)
+  cors$q20 <- as.numeric(cors$q20)
+  cors$q80 <- as.numeric(cors$q80)
+  cors$q90 <- as.numeric(cors$q90)
+  cors$q95 <- as.numeric(cors$q95)
+  cors
+}
+
+dpv2 <- function(proclist, csv) {
+  cors <- list()
+  # cors <- data.frame(processor = character(), mean = numeric(), sd = numeric(), min = numeric(), max = numeric(), 
+  #                    median = numeric(), q20 = numeric(), q80 = numeric(), q90 = numeric(), q95 = numeric() )
+  for (i in proclist) {
+    cors[[i]] <- distrib_proc_vector(i, csv)
+  }
+  cors
+}
+
+dpv3 <- function(proclist, csv) {
+  cors <- list()
+  # cors <- data.frame(processor = character(), mean = numeric(), sd = numeric(), min = numeric(), max = numeric(), 
+  #                    median = numeric(), q20 = numeric(), q80 = numeric(), q90 = numeric(), q95 = numeric() )
+  for (i in proclist) {
+    cors[[i]] <- as.numeric(distrib_proc_vector(i, csv)[2:10])
+  }
+  cors
+}
+
+# calcule un quantile pour une valeur donnée
+which_quantile_proc_csv <- function(proc, csv, qv) {
+  proc <- text_to_sentence(proc)
+  if (!(proc  %in% colnames(csv))) return("uncorrect processor")
+  if (is.na(csv[1, proc])) return("NA Processor")
+  quantile(as.numeric(csv[, proc]), qv)
+}
+
 # calcule tous les quantiles avec un step
 quantile_proc_csv <- function(proc, csv, step=0.05) {
   proc <- text_to_sentence(proc)
@@ -164,6 +224,23 @@ get_sentence_proc_note <- function(sentid, textsentences, proc, note) {
   return(0)
 }
 
+# calcul de note pour un énoncé et un processeur (et un csv = basededonnee)
+get_sentence_bynum_proc_note <- function(num, textsentences, proc) {
+  proc <- text_to_sentence(proc)
+  # if (note < 0) { return(0) }
+  pval <- textsentences[num, proc]
+  pval
+  # if (length(pval) > 1) {
+  #   print(proc)
+  #   print(sentid)
+  #   print(pval)
+  #   print(note)
+  #   pval <- pval[1]
+  # }
+  # if (pval >= note) { return(pval) }
+  # return(0)
+}
+
 get_sentence_notes_list <- function(sentid, textsentences, tabseuils) {
   noteglobal <- 0
   listglobal <- list()
@@ -275,5 +352,7 @@ getallsentencenotes <- function(refdata, csv) {
 
 best_sent <- function(sent, mdl, seuil, nth=1) {
   print(paste("best_sent pour:", mdl$bestcor$processor[nth]))
-  sent[sent[text_to_sentence(mdl$bestcor$processor[nth])] >= seuil,c("filename", "sentence", text_to_sentence(mdl$bestcor$processor[nth]))]
+  a <- sent[sent[text_to_sentence(mdl$bestcor$processor[nth])] >= seuil,c("filename", "sentence", text_to_sentence(mdl$bestcor$processor[nth]))]
+  colnames(a) <- c("filename", "sentence", "value")
+  a[order(a$value, decreasing = T),]
 }

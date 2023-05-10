@@ -10,7 +10,7 @@ docinfo_partage <- function(x) {
   fn <- regmatches(x, s)[[1]][3]
   fn3 <- strsplit(fn, "[_]")
   agesplit <-strsplit(fn3[[1]][3], "[-]")
-#  paste(splitfn[[1]][4], splitfn[[1]][5], splitfn[[1]][6], sep = "-")
+  #  paste(splitfn[[1]][4], splitfn[[1]][5], splitfn[[1]][6], sep = "-")
   if (length(agesplit[[1]]) > 1) {
     ages <- agesplit[[1]][1]
     range <- substring(agesplit[[1]][2], 2, nchar(agesplit[[1]][2])-5)
@@ -18,15 +18,32 @@ docinfo_partage <- function(x) {
     ages <- substring(agesplit[[1]][1], 1, nchar(agesplit[[1]][1])-4)
     range <- 0
   }
-  c(fn, fn3[[1]][1], fn3[[1]][2], ages, range)
+  ageeco <- strsplit(ages, "[{}]")
+  if (length(ageeco[[1]]) > 1) {
+    ages <- ageeco[[1]][1]
+    eco <- ageeco[[1]][2]
+  } else {
+    eco <- "X"
+  }
+  c(fn, fn3[[1]][1], fn3[[1]][2], ages, range, eco)
 }
 
-create_texte_partage <- function(fn) {
+create_texte_partage <- function(fn, nomcorpus) {
   fn_texte <- read.table(fn, header=T, sep=";", dec=".", quote = "\"")
   heads <- sapply(fn_texte$document, FUN=docinfo_partage)
-  df <- as.data.frame(t(heads))
-  colnames(df) <- c("filename", "part", "name", "ages", "serial")
+  df <- as.data.frame(rep(nomcorpus, nrow(t(heads))))
+  df <- cbind(df, t(heads))
+  colnames(df) <- c("corpus", "filename", "part", "name", "ages", "serial", "eco")
   return(cbind(df, fn_texte))
+}
+
+add_texte_partage <- function(df, fn, nomcorpus) {
+  fn_texte <- read.table(fn, header=T, sep=";", dec=".", quote = "\"")
+  heads <- sapply(fn_texte$document, FUN=docinfo_partage)
+  newcorpus <- cbind(rep(nomcorpus, nrow(t(heads))), t(heads))
+  colnames(newcorpus) <- c("corpus", "filename", "part", "name", "ages", "serial", "eco")
+  newcorpus <- cbind(newcorpus, fn_texte)
+  return(rbind(df, newcorpus))
 }
 
 corall <- function(x, cols, nms) {
@@ -36,6 +53,7 @@ corall <- function(x, cols, nms) {
   i <- 1
   for (y in cols) {
     cor_res <- cor.test(as.numeric(x), as.numeric(y))
+    if (sd(as.numeric(y)) == 0) cor_res$estimate = 0.0
     l <- c(as.character(nms[i]), mean(as.numeric(y)), sd(as.numeric(y)), min(as.numeric(y)), max(as.numeric(y)), median(as.numeric(y)), 
            quantile(as.numeric(y), 0.2, na.rm=T), quantile(as.numeric(y), 0.8, na.rm=T), cor_res$p.value, cor_res$estimate)
     #print(l)
@@ -45,9 +63,11 @@ corall <- function(x, cols, nms) {
   return(cors)
 }
 
+nbinitialinfocolums <- 9
+
 doccorall <- function(fn, who) {
-  nn <- as.character(names(fn)[c(8:(ncol(fn)-8))])
-  cx <- corall(fn$age[fn$part == who], fn[ fn$part == who, c(8:(ncol(fn)-8)) ], nn)
+  nn <- as.character(names(fn)[c(nbinitialinfocolums:(ncol(fn)-nbinitialinfocolums))])
+  cx <- corall(fn$age[fn$part == who], fn[ fn$part == who, c(nbinitialinfocolums:(ncol(fn)-nbinitialinfocolums)) ], nn)
   return(cx)
 }
 
@@ -55,6 +75,19 @@ best_cor <- function(fn, who, seuil) {
   tabcor <- doccorall(fn, who)
   a <- tabcor[!is.na(tabcor$cor) & tabcor$cor > seuil,]
   a[order(a$cor, decreasing = T),]
+}
+
+myRowSums <- function(tab) {
+  rs <- c()
+  for (i in 1:nrow(tab[1])) {
+    r <- 0
+    for (j in 1:length(tab)) {
+      x <- tab[i,j]
+      if (!is.na(x) & !is.infinite(x)) r <- r + x
+    }
+    rs <- c(rs, r)
+  }
+  rs
 }
 
 find_the_processors_and_models <- function(csv, proba, titre="") {
@@ -66,7 +99,7 @@ find_the_processors_and_models <- function(csv, proba, titre="") {
   # calcul de toutes les valeurs normalisées (autour de M = 1 et SD = 1) pour tous les processeurs intéressants et tous les textes
   mdl$info <- comp_proc_info_csv(csv, mdl$bestcor, mdl$adjp)
   # corrélation obtenue par la somme des processeurs ci-dessus
-  print(cor.test(as.numeric(csv$ages), rowSums(mdl$info[,seq(2, ncol(mdl$info))])))
+  print(cor.test(as.numeric(csv$ages), myRowSums(mdl$info[,seq(2, ncol(mdl$info))])))
   # Modèles
   mdl$model <- create_list_of_models(mdl$bestcor$processor, csv)
   # toutes les notes

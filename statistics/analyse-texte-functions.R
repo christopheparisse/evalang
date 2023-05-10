@@ -12,7 +12,7 @@ describe_proc <- function(csv, proc, nom = "") {
 }
 
 all_hist <- function(csv, nom = "") {
-  for (p in seq(8, ncol(csv))) {
+  for (p in seq(nbinitialinfocolums, ncol(csv))) {
     proc <- names(csv)[p]
     plot(density(csv[,p]), main = paste(nom, proc))
   }
@@ -21,7 +21,7 @@ all_hist <- function(csv, nom = "") {
 all_shapiro <- function(csv) {
   r <- data.frame(processor = character(), pvalue = numeric(), W = numeric(), info = character())
   idxrow <- 1
-  for (p in seq(8, ncol(csv))) {
+  for (p in seq(nbinitialinfocolums, ncol(csv))) {
     proc <- names(csv)[p]
     if (mean(csv[,p]) == 0) {
       print(paste(proc, "toujours à zéro"))
@@ -204,8 +204,12 @@ test_2corpus <-function(corpus1model, corpus2, titre="", display=F) {
   c1.notes.c2 <- get_all_document_notes(corpus1model$model, corpus1model$bestcor, corpus2)
   print(cor.test(as.numeric(c1.notes.c2$ages), c1.notes.c2$mean))
   plot(c1.notes.c2[,c("ages", "mean")], main=titre)
+  boxplot(mean ~ eco, data=c1.notes.c2, main=paste(c(titre,"ECO")))
+  c1.notes.c2$agest <- trunc(as.numeric(c1.notes.c2$ages))
+  boxplot(mean ~ agest, data=c1.notes.c2, main=paste(c(titre,"AGE")))
   if (display == T) {
     c1.notes.c2[order(c1.notes.c2$ages),c("ages", "mean")]
+    c1.notes.c2[order(c1.notes.c2$ages),c("eco", "mean")]
   }
 }
 
