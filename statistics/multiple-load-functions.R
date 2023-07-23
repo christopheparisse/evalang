@@ -51,19 +51,25 @@ corall <- function(x, cols, nms) {
   cors <- data.frame(processor = character(), mean = numeric(), sd = numeric(), min = numeric(), max = numeric(), median = numeric(),
                      q20 = numeric(), q80 = numeric(), pvalue = numeric(), cor = numeric() )
   i <- 1
-  for (y in cols) {
+  for (iy in seq(2, ncol(cols))) {
+    y <- cols[,iy]
     cor_res <- cor.test(as.numeric(x), as.numeric(y))
+    if (is.na(cor_res$estimate)) {
+      next
+    }
     if (sd(as.numeric(y)) == 0) cor_res$estimate = 0.0
-    l <- c(as.character(nms[i]), mean(as.numeric(y)), sd(as.numeric(y)), min(as.numeric(y)), max(as.numeric(y)), median(as.numeric(y)), 
+    if (mean(as.numeric(y)) == 0) cor_res$estimate = 0.0
+    l <- c(as.character(nms[iy]), mean(as.numeric(y)), sd(as.numeric(y)), min(as.numeric(y)), max(as.numeric(y)), median(as.numeric(y)), 
            quantile(as.numeric(y), 0.2, na.rm=T), quantile(as.numeric(y), 0.8, na.rm=T), cor_res$p.value, cor_res$estimate)
     #print(l)
     cors[i, ] <- l
     i <- i+1
   }
+  # kcors <<- cors
   return(cors)
 }
 
-nbinitialinfocolums <- 9
+nbinitialinfocolums <- 9 # 10 si sentence
 
 doccorall <- function(fn, who) {
   nn <- as.character(names(fn)[c(nbinitialinfocolums:(ncol(fn)-nbinitialinfocolums))])
@@ -92,28 +98,43 @@ myRowSums <- function(tab) {
 
 find_the_processors_and_models <- function(csv, proba, titre="") {
   # chercher les meilleurs processeurs
+  # filtrés par la proba (les 'n' processeurs qui ont une corrélation d'au moins la proba)
   mdl <- list(data = csv, bestcor = best_cor(csv, 'chi', proba))
-  # calcul des coefficients pour les meilleurs processeurs
-  # calcul du mean et du sd pour les processeurs intéressants
+
+  # calcul des coefficients pour les meilleurs processeurs (les 'n' en question)
+
+  # récupération du mean et du sd pour les processeurs intéressants
+  print("ADJUST PROCESSORS")
   mdl$adjp <- adjust_processors(csv, mdl$bestcor)
+  # supprimer les adjp avec des sd à zéro ?
+
   # calcul de toutes les valeurs normalisées (autour de M = 1 et SD = 1) pour tous les processeurs intéressants et tous les textes
-  mdl$info <- comp_proc_info_csv(csv, mdl$bestcor, mdl$adjp)
+  print("COMP PROC")
+  mdl$info <- comp_proc_info_csv(csv, mdl$bestcor$processor, mdl$adjp)
   # corrélation obtenue par la somme des processeurs ci-dessus
+  print("corrélation obtenue par la somme des processeurs ci-dessus")
   print(cor.test(as.numeric(csv$ages), myRowSums(mdl$info[,seq(2, ncol(mdl$info))])))
-  # Modèles
+  
+  # Modèles: calcul des modèles de régression pour tous les processeurs en fonction de l'âge
   mdl$model <- create_list_of_models(mdl$bestcor$processor, csv)
-  # toutes les notes
-  mdl$allnotes <- get_all_document_notes(mdl$model, mdl$bestcor, csv)
-  # dessin des graphiques
-  boxplot(mdl$allnotes$mean, main=titre)
-  # comparaisons notes et ages
-  table(round(mdl$allnotes$mean), round(as.numeric(mdl$allnotes$ages)))
-  #plot(round(mdl$allnotes$mean), as.numeric(mdl$allnotes$ages))
-  plot(as.numeric(mdl$allnotes$ages), mdl$allnotes$mean, main=titre)
-  # corrélation
-  print(cor.test(mdl$allnotes$mean, as.numeric(mdl$allnotes$ages)))
-  # sortir ou identifier les documents bizarres ?
   mdl
+}
+
+test_the_processors_and_models <- function(csv, mdltrain, titre="") {
+  # toutes les notes
+  allnotes <- get_all_document_notes(mdltrain$model, mdltrain$bestcor, csv)
+  
+  # dessin des graphiques
+  boxplot(allnotes$mean, main=titre)
+  # comparaisons notes et ages
+  table(round(allnotes$mean), round(as.numeric(allnotes$ages)))
+  #plot(round(mdl$allnotes$mean), as.numeric(mdl$allnotes$ages))
+  plot(as.numeric(allnotes$ages), allnotes$mean, main=titre)
+  # corrélation
+  print("corrélation des notes générées")
+  print(cor.test(allnotes$mean, as.numeric(allnotes$ages)))
+  # sortir ou identifier les documents bizarres ?
+  allnotes
 }
 
 model_test <- function(mdl) {
@@ -131,4 +152,61 @@ model_test1 <- function(mdl) {
 model_test2 <- function(mdl) {
   # corrélation
   cor.test(mdl$allnotes$mean, as.numeric(mdl$allnotes$ages))
+}
+
+extract_1_10th <- function(vec) {
+  # accessing every tenth element
+  # of the vector maintaining counter
+  count = 0
+  rvec = c()
+  # looping over the vector elements
+  for (elt in vec) {
+    # incrementing count
+    count= count + 1
+    # checking if count is equal to
+    # third element
+    if(count == 10) {
+      # printing the specific element
+      rvec <- c(rvec, elt)
+      # reinitialising count to 0
+      count = 0
+    }
+  }
+  rvec
+}
+
+extract_9_10th <- function(vec) {
+  # accessing every tenth element
+  # of the vector maintaining counter
+  count = 0
+  rvec = c()
+  # looping over the vector elements
+  for (elt in vec) {
+    # incrementing count
+    count= count + 1
+    # checking if count is equal to
+    # third element
+    if(count == 10) {
+      # printing the specific element
+      # reinitialising count to 0
+      count = 0
+    } else {
+      rvec <- c(rvec, elt)
+    }
+  }
+  rvec
+}
+
+create_samples_data_table <- function(dt, col) {
+  dnames <- names(table(dt[col]))
+  dnames1 <- extract_1_10th(dnames)
+  dnames9 <- extract_9_10th(dnames)
+  list(test = dnames1, data = dnames9)
+}
+
+split_1_9 <- function(dcxsent) {
+  sl <- create_samples_data_table(dcxsent, "document")
+  all_test <- dcxsent[which(dcxsent$document %in% sl$test),]
+  all_ref <- dcxsent[which(dcxsent$document %in% sl$data),]
+  return(list(test = all_test, data = all_ref))
 }

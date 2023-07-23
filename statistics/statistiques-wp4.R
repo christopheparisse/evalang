@@ -80,14 +80,14 @@ bp70.colajechi <- bestproc(.70, allproc_text_colaje_chi)
 # calcul du mean et du sd pour les processeurs intéressants
 adjproc30.coling <- adjust_processors(allcsv_coling, bp30.coling)
 # calcul de toutes les valeurs normalisées (autour de M = 1 et SD = 1) pour tous les processeurs intéressants et tous les textes
-ccp30.info <- comp_proc_info_csv(allcsv_coling, bp30.coling, adjproc30.coling)
+ccp30.info <- comp_proc_info_csv(allcsv_coling, bp30.coling$processor, adjproc30.coling)
 # corrélation obtenue par la somme des processeurs ci-dessus
 cor.test(allcsv_coling$ages, rowSums(ccp30.info[,seq(2, ncol(ccp30.info))]) )
 # sortir ou identifier les processeurs bizarres ou spéciaux ?
 
 # colaje chi
 adjproc70.colaje <- adjust_processors(allcsv_colaje_chi, bp70.colajechi)
-ccp70.info <- comp_proc_info_csv(allcsv_colaje_chi, bp70.colajechi, adjproc70.colaje)
+ccp70.info <- comp_proc_info_csv(allcsv_colaje_chi, bp70.colajechi$processor, adjproc70.colaje)
 # corrélation obtenue par la somme des processeurs ci-dessus
 cor.test(allcsv_colaje_chi$ages, rowSums(ccp70.info[,seq(2, ncol(ccp70.info))]) )
 

@@ -104,6 +104,14 @@ which_quantile_proc_csv <- function(proc, csv, qv) {
   quantile(as.numeric(csv[, proc]), qv)
 }
 
+# calcule le max pour une valeur donnée
+which_max_proc_csv <- function(proc, csv) {
+  proc <- text_to_sentence(proc)
+  if (!(proc  %in% colnames(csv))) return("uncorrect processor")
+  if (is.na(csv[1, proc])) return("NA Processor")
+  max(as.numeric(csv[, proc]))
+}
+
 # calcule tous les quantiles avec un step
 quantile_proc_csv <- function(proc, csv, step=0.05) {
   proc <- text_to_sentence(proc)
@@ -355,4 +363,173 @@ best_sent <- function(sent, mdl, seuil, nth=1) {
   a <- sent[sent[text_to_sentence(mdl$bestcor$processor[nth])] >= seuil,c("filename", "sentence", text_to_sentence(mdl$bestcor$processor[nth]))]
   colnames(a) <- c("filename", "sentence", "value")
   a[order(a$value, decreasing = T),]
+}
+
+# compute correlation for sentences
+
+allcor <- function(csv) {
+  r <- data.frame(id = numeric(), processor = character(), cor = numeric())
+  for (i in seq(2, length(processor_list_sent))) {
+    a <- aggregate(csv[processor_list_sent[i]], by=list(round(as.numeric(csv$ages),0)), FUN=function(x) { quantile(x,0.9, na.rm = T)})
+    b <- cor(a[,1], a[,2])
+    # print(c(processor_list_sent[i], b))
+    if (! is.na(b)) {
+      r <- rbind(r, c(i, processor_list_sent[i], b))
+    }
+  }
+  colnames(r) <- c("id", "processor", "cor")
+  r
+}
+
+# voir combien de fois ces 20 paramètres sont supérieurs au q90
+get_phr_eval <- function(csvref, csvorderref, csvtest, numphr, n, seuil) {
+  np <- 0
+  lnp <- c()
+  vnp <- c()
+  for (i in seq(1, n)) {
+    pname <- processor_list_sent[as.numeric(csvorderref$id[i])]
+    pq90 <- which_quantile_proc_csv(pname, csvref, seuil)
+    vp <- csvtest[numphr, pname]
+    if (vp >= pq90 & vp > 0) {
+      np <- np +1
+      lnp <- c(lnp, pname)
+      vnp <- c(vnp, vp)
+    }
+  }
+  list("val" = np, "proc" = lnp, "values" = vnp)
+}
+
+get_best_sent <- function(csvref, csvorderref, csvtest, nb, seuil, mymax) {
+  for (i in seq(1, nrow(csv))) {
+    vphr <- get_phr_eval(csvref, csvorderref, csvtest, i, nb, seuil)
+    if (vphr$val >= mymax) {
+      print(vphr$val)
+      print(csvtest[i, "sentence"])
+      print(vphr$proc)
+    }
+  }
+}
+
+get_best_sent_texte <- function(csvref, csvorderref, csvtest, txtname, nb, seuil, mymax, print="v") {
+  p <- list()
+  for (i in seq(1, nrow(csvtest))) {
+    if (csvtest[i, "filename"] != txtname) next
+    vphr <- get_phr_eval(csvref, csvorderref, csvtest, i, nb, seuil)
+    if (vphr$val >= mymax) {
+      if (print == "v" | print == "verbose" | print == "all") {
+        print(vphr$val)
+        print(csvtest[i, "sentence"])
+      }
+      if (print == "all") {
+        print(vphr$proc)
+      }
+      p[[length(p)+1]] <- c(vphr$val, csvtest[i, "sentence"], vphr$proc)
+    }
+  }
+  p
+}
+
+display_best_sent_texte <- function(csvref, csvorderref, csvtest, filename, nb, seuil, mymax, nameresult, print="none") {
+  a <- get_best_sent_texte(csvref, csvorderref, csvtest, filename, nb, seuil, mymax, print)
+  unlink(nameresult)
+  for (x in a) {
+    y <- unlist(x)
+    z <- lapply(y, function(xx) { gsub('\n',' ', xx) }) # lignes coupées par un retour à la ligne
+    cat(unlist(z), file = nameresult, sep=";", append = TRUE)
+    cat("\n", file = nameresult, append = TRUE)
+  }
+  a
+}
+
+dataframe_get_best_sent_texte <- function(csvref, csvorderref, csvtest, txtname, nb, seuil, mymax, print="v") {
+  p <- data.frame(note = numeric(), sentence = character(), procs = character(), values = character())
+  idxrow <- 1
+  for (i in seq(1, nrow(csvtest))) {
+    if (csvtest[i, "filename"] != txtname) next
+    vphr <- get_phr_eval(csvref, csvorderref, csvtest, i, nb, seuil)
+    if (vphr$val >= mymax) {
+      if (print == "v" | print == "verbose" | print == "all") {
+        print(vphr$val)
+        print(csvtest[i, "sentence"])
+      }
+      if (print == "all") {
+        print(vphr$proc)
+      }
+      p[idxrow, ] <- c(vphr$val, csvtest[i, "sentence"], paste(vphr$proc, collapse = " | "), paste(vphr$values, collapse = " | "))
+      idxrow <- idxrow + 1
+    }
+  }
+  names(p) <- c("note", "sentence", "procs", "values")
+  p
+}
+
+dataframe_get_all_sent_texte_v0 <- function(csvref, csvorderref, csvtest, txtname, nb, seuil) {
+  p <- data.frame(note = numeric(), sentence = character(), procs = character(), values = character())
+  idxrow <- 1
+  for (i in seq(1, nrow(csvtest))) {
+    if (csvtest[i, "filename"] != txtname) next
+    vphr <- get_phr_eval(csvref, csvorderref, csvtest, i, nb, seuil)
+    p[idxrow, ] <- c(vphr$val, csvtest[i, "sentence"], paste(vphr$proc, collapse = " | "), paste(vphr$values, collapse = " | "))
+    idxrow <- idxrow + 1
+  }
+  names(p) <- c("note", "sentence", "procs")
+  p
+}
+
+# voir combien de fois ces 20 paramètres sont supérieurs au q90
+get_phr_eval_values <- function(csvref, csvorderref, csvtest, numphr, nbproc, seuil, verbose=F) {
+  np <- 0
+  procvals <- c()
+  for (i in seq(1, nbproc)) {
+    pname <- processor_list_sent[as.numeric(csvorderref$id[i])]
+    pq90 <- which_quantile_proc_csv(pname, csvref, seuil)
+    pq100 <- which_max_proc_csv(pname, csvref)
+    vp <- csvtest[numphr, pname]
+    if (vp >= pq90 & vp > 0) {
+      np <- np +1
+      procvals <- c(procvals, vp/pq100)
+      if (verbose!=F) print(paste(c(csvtest[numphr, "sentence"], pname, vp, pq90, pq100), collapse = "|"))
+    } else {
+      procvals <- c(procvals, NA)
+    }
+  }
+  list("val" = np, "procvals" = procvals)
+}
+
+dataframe_get_all_sent_texte <- function(csvref, csvorderref, csvtest, txtname, nbproc, seuil, verbose=F) {
+  p <- data.frame(note=0, sentence="s")
+  for (i in seq(1, nbproc)) {
+    p <- cbind(p, processor_list_sent[as.numeric(allcorsent_order$id)][i])
+  }
+  #p <- list()
+  idxrow <- 1
+  for (i in seq(1, nrow(csvtest))) {
+    if (csvtest[i, "filename"] != txtname) next
+    vphr <- get_phr_eval_values(csvref, csvorderref, csvtest, i, nbproc, seuil, verbose)
+    p[idxrow, ] <- c(vphr$val, csvtest[i, "sentence"], vphr$procvals)
+    idxrow <- idxrow + 1
+    #p <- append(p, list(c(vphr$val, csvtest[i, "sentence"], vphr$procvals)))
+  }
+  names(p) <- c("note", "sentence", processor_list_sent[as.numeric(allcorsent_order$id)][seq(1,nbproc)])
+  p
+}
+
+vector_get_all_sent_texte <- function(csvref, csvorderref, csvtest, txtname, nb, seuil) {
+  p <- c()
+  for (i in seq(1, nrow(csvtest))) {
+    if (csvtest[i, "filename"] != txtname) next
+    vphr <- get_phr_eval_values(csvref, csvorderref, csvtest, i, nb, seuil)
+    p <- c(p, vphr)
+  }
+  p
+}
+
+list_get_all_sent_texte <- function(csvref, csvorderref, csvtest, txtname, nb, seuil) {
+  p <- list()
+  for (i in seq(1, nrow(csvtest))) {
+    if (csvtest[i, "filename"] != txtname) next
+    vphr <- get_phr_eval(csvref, csvorderref, csvtest, i, nb, seuil)
+    p <- append(p, vphr)
+  }
+  p
 }

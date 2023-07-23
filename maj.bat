@@ -1,3 +1,3 @@
 git add .
-git commit -m "statistiques mai 2023"
+git commit -m "statistiques juillet 2023"
 git push origin

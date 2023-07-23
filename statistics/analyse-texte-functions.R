@@ -98,19 +98,19 @@ comp_proc_csv <- function(csv, tab, adjproc) {
   r
 }
 
-comp_proc_info_csv <- function(csv, tab, adjproc) {
+comp_proc_info_csv <- function(csv, processor, adjproc, verbose=F) {
   #  r <- c()
   #  r <- allcsv_coling$document
   r <- as.data.frame(csv[,"document"])
-  for (i in c(1:length(tab$processor))) {
-    print(tab$processor[i])
-    a <- sapply( csv[, tab$processor[i] ],
-                 FUN = function(x) { compute_processor(tab$processor[i], x, adjproc) } )
-    print(length(a))
-    print(sum(a))
+  for (i in c(1:length(processor))) {
+    if (verbose==T) print(processor[i])
+    a <- sapply( csv[, processor[i] ],
+                 FUN = function(x) { compute_processor(processor[i], x, adjproc) } )
+    if (verbose==T) print(length(a))
+    if (verbose==T) print(sum(a))
     if (is.na(a[1])) next
     r <- cbind(r, as.numeric(a))
-    colnames(r)[length(colnames(r))] <- tab$processor[i]
+    colnames(r)[length(colnames(r))] <- processor[i]
   }
   colnames(r)[1] <- "nomsfichierstexte"
   row.names(r) = seq(1,nrow(r))

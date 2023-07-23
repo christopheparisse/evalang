@@ -1,56 +1,7 @@
-setwd('/Users/cp/brainstorm/evalang/evalang-public/statistics/')
+source('/Users/cp/brainstorm/evalang/evalang-public/statistics/load-all-data.R')
 
-source('/Users/cp/brainstorm/evalang/evalang-public/statistics/multiple-load-functions.R')
-source('/Users/cp/brainstorm/evalang/evalang-public/statistics/analyse-texte-functions.R')
-source('/Users/cp/brainstorm/evalang/evalang-public/statistics/analyse-phrase-functions.R')
-
-#DECOMPLEXES
-# les csv avec les indications de metadonnees
-#dcx_text_all <- create_texte_partage("0-chi-DCX-Mars2023-text.csv")
-#dcx_sentence_all <- create_texte_partage("0-chi-DCX-Mars2023-sentence.csv")
-dcx_text_all <- create_texte_partage("chi-DCX-Mars2023_text.csv", "DCX")
-dcx_sentence_all <- create_texte_partage("chi-DCX-Mars2023_sentence.csv", "DCX")
-
-# test decomplexes
-chi_tvrexp <- dcx_text_all[grep("TVREXP",dcx_text_all$document), ]
-chi_tvjs <- dcx_text_all[grep("TVJS",dcx_text_all$document), ]
-chi_tdl <- dcx_text_all[grep("TDL",dcx_text_all$document), ]
-chi_tv <- dcx_text_all[grep("TV",dcx_text_all$document), ]
-
-sent_tvrexp <- dcx_sentence_all[grep("TVREXP",dcx_sentence_all$document), ]
-sent_tvjs <- dcx_sentence_all[grep("TVJS",dcx_sentence_all$document), ]
-sent_tdl <- dcx_sentence_all[grep("TDL",dcx_sentence_all$document), ]
-sent_tv <- dcx_sentence_all[grep("TV",dcx_sentence_all$document), ]
-
-# COLAJE
-# les csv avec les indications de metadonnees
-colaje_text <- create_texte_partage("chi-COLAJE-text.csv", "COLAJE")
-colaje_sentence <- create_texte_partage("chi-COLAJE-sentence.csv", "COLAJE")
-
-all_corpus_text <- add_texte_partage(dcx_text_all, "chi-COLAJE-text.csv", "COLAJE")
-all_corpus_sent <- add_texte_partage(dcx_sentence_all, "chi-COLAJE-sentence.csv", "COLAJE")
-
-colaje_sup5_text <- colaje_text[colaje_text$ages >= 5,]
-
-#TCOF
-tcof_trans_text <- create_texte_partage("chi-TCOF-trans-text.csv")
-tcof_trans_sentence <- create_texte_partage("chi-TCOF-trans-sentence.csv")
-tcof_long_text <- create_texte_partage("chi-TCOF-long-text.csv")
-tcof_long_sentence <- create_texte_partage("chi-TCOF-long-sentence.csv")
-tcof_philo_text <- create_texte_partage("chi-TCOF-philo-text.csv")
-tcof_philo_sentence <- create_texte_partage("chi-TCOF-philo-sentence.csv")
-
-all_corpus_text <- add_texte_partage(dcx_text_all, "chi-TCOF-trans-text.csv", "TCOFTrans")
-all_corpus_sent <- add_texte_partage(dcx_sentence_all, "chi-TCOF-trans-sentence.csv", "TCOFTrans")
-all_corpus_text <- add_texte_partage(dcx_text_all, "chi-TCOF-long-text.csv", "TCOFLong")
-all_corpus_sent <- add_texte_partage(dcx_sentence_all, "chi-TCOF-long-sentence.csv", "TCOFLong")
-all_corpus_text <- add_texte_partage(dcx_text_all, "chi-TCOF-philo-text.csv", "TCOFPhi")
-all_corpus_sent <- add_texte_partage(dcx_sentence_all, "chi-TCOF-philo-sentence.csv", "TCOFPhi")
-
-
-#list of processors
-processor_list_text <- colnames(chi_tv)[9:length(colnames(chi_tv))]
-processor_list_sent <- colnames(sent_tv)[11:length(colnames(sent_tv))]
+#write.table(colaje_sentence, file = "colaje_sentence.csv", sep="\t")
+#write.table(colaje_sentence[,c(1,2,3,4,5,6,7,8,9,10,11)], file = "colaje_sentence_ok.csv", sep="\t", row.names = F)
 
 #MODELS
 chi_tv_mdl <- find_the_processors_and_models(chi_tv, .2, "DCX TV")
@@ -79,6 +30,25 @@ write.csv(colaje_sup5_text_mdl2$bestcor, file="colaje_text_mdl.csv")
 
 write.csv(tcof_long_text_mdl$bestcor, file="tcof_long_mdl.csv")
 write.csv(tcof_philo_text_mdl$bestcor, file="tcof_philo_mdl.csv")
+
+# les fichiers de train et de test
+dcx_text_all_2_mdl <- find_the_processors_and_models(dcx_text_all_2$data, .2, "DCX ALL TRAIN")
+nts <- test_the_processors_and_models(dcx_text_all_2$test, dcx_text_all_2_mdl, "DCX ALL TEST")
+
+colaje_text_all_2_mdl <- find_the_processors_and_models(colaje_text_all_2$data, .6, "COLAJE.6")
+colaje_nts <- test_the_processors_and_models(colaje_text_all_2$test, colaje_text_all_2_mdl, "COLAJE TEST")
+colaje_nts <- test_the_processors_and_models(colaje_text_all_2$data, colaje_text_all_2_mdl, "COLAJE TEST wiht DATA itself")
+
+tcof_trans_text_all_2_mdl <- find_the_processors_and_models(tcof_trans_text_all_2$data, .1, "TCOF Trans TRAIN")
+tcof_long_text_all_2_mdl <- find_the_processors_and_models(tcof_long_text_all_2$data, .1, "TCOF Long TRAIN")
+tcof_philo_text_all_2_mdl <- find_the_processors_and_models(tcof_philo_text_all_2$data, .1, "TCOF Philo TRAIN")
+tcof_trans_nts <- test_the_processors_and_models(tcof_trans_text_all_2$test, tcof_trans_text_all_2_mdl, "TCOF Trans TEST")
+
+all_corpus_text_all_2_mdl <- find_the_processors_and_models(all_corpus_text_all_2$data, .1, "All corpus ans DCPLX TRAIN")
+all_corpus_text_nts <- test_the_processors_and_models(all_corpus_text_all_2$test, all_corpus_text_all_2_mdl, "ALL corpus TEST")
+dcx_text_nts <- test_the_processors_and_models(dcx_text_all_2$test, all_corpus_text_all_2_mdl, "DCX vs all corpus TEST")
+dcx_text_from_colaje_nts <- test_the_processors_and_models(dcx_text_all, all_corpus_text_all_2_mdl, "DCX vs all corpus TEST")
+
 
 # tous les enfants en comparaison d'eux même (DCX)
 test_2corpus(chi_tv_mdl, chi_tv, "DCX TV <- TV")
@@ -127,12 +97,17 @@ test_2corpus(colaje_text_mdl, tcof_long_text, "COLAJE <- TCOF LONG")
 # CALCULER LES AGES pour des processeurs et un texte
 nts <- get_text_notes("/Users/cp/brainstorm/evalang/evalang-public/colaje/rawtextchi/chi_Adrien_3.77.txt", colaje_text_mdl$bestcor$processor[1:3], colaje_text_mdl$data)
 compute_age(colaje_text_mdl$model, nts)
-nts <- get_text_notes("/Users/cp/brainstorm/evalang/evalang-private/Data_Mars2023/rawtextchi/TVREXP/chi_Clara_5.79.txt", chi_tv_mdl$bestcor$processor, chi_tv_mdl$data)
+nts <- get_text_notes("/Users/cp/brainstorm/evalang/evalang-private/Data_Mars2023/rawtextchi/TVREXP/chi_Clara_5.79{GS}.txt", chi_tv_mdl$bestcor$processor, chi_tv_mdl$data)
 compute_age(chi_tv_mdl$model, nts)
-nts <- get_text_notes("/Users/cp/brainstorm/evalang/evalang-private/Data_Mars2023/rawtextchi/TVREXP/chi_Clara_5.79.txt", colaje_text_mdl$bestcor$processor, chi_tv_mdl$data)
+nts <- get_text_notes("/Users/cp/brainstorm/evalang/evalang-private/Data_Mars2023/rawtextchi/TVREXP/chi_Clara_5.79{GS}.txt", colaje_text_mdl$bestcor$processor, chi_tv_mdl$data)
 compute_age(colaje_text_mdl$model, nts)
-nts <- get_text_notes("/Users/cp/brainstorm/evalang/evalang-private/Data_Mars2023/rawtextchi/TDL/chi_Julien_6.71.txt", colaje_text_mdl$bestcor$processor, chi_tdl_mdl$data)
+nts <- get_text_notes("/Users/cp/brainstorm/evalang/evalang-private/Data_Mars2023/rawtextchi/TDL/chi_Julien_6.71{CP}.txt", colaje_text_mdl$bestcor$processor, chi_tdl_mdl$data)
 compute_age(colaje_text_mdl$model, nts)
+
+# exemple
+sink("aaa.txt")
+colaje_sentence[c(1000,1001,1002,1003,1004,1005),c("flexions_verbales_phrase_diversite_temps_verbaux_sentence", "sentence")]
+sink()
 
 
 # statistiques directes
@@ -176,7 +151,7 @@ str(e[[1]]$`Pr(>F)`[1])
 display_eco_stats <- function(csv) {
   r <- data.frame(processor = character(), pvalue_eco = numeric(), pvalue_ages = numeric(), pvalue_agecateg = numeric())
   idxrow <- 1
-  for (col in seq(9,length(colnames(chi_tv)))) {
+  for (col in seq(nbinitialinfocolums+1,length(colnames(chi_tv)))) {
     coln <- colnames(csv)[col]
     if (coln == "agest") next
     fm <- as.formula(paste(coln, "~ eco"))
@@ -199,7 +174,6 @@ p_chi_tdl <- display_eco_stats(chi_tdl)
 
 write.csv(p_chi_tv, file="p_chi_tv.csv")
 write.csv(p_chi_tdl, file="p_chi_tdl.csv")
-
 
 # REGARDER UN SEUL PROCESSEUR
 bestcolaje1 <- test_single_processor(colaje_text_mdl, colaje_text, colaje_text_mdl$bestcor$processor[1])
@@ -268,15 +242,14 @@ turn_all_sent_procs <- function(sent, sent_reference, procs) {
 }
 
 turn_all_sent_allprocs <- function(sent, sent_reference) {
-  procs <- colnames(sent)[11:length(colnames(sent))]
+  procs <- colnames(sent)[(nbinitialinfocolums+3):length(colnames(sent))]
   turn_all_sent_procs(sent, sent_reference, procs)
 }
 
-k <- turn_all_sent_allprocs(sent_tdl, sent_tv)
-k <- turn_all_sent_procs(sent_tdl, sent_tv, chi_tv_mdl$bestcor$processor)
-kk <- turn_all_sent_procs(sent_tdl, colaje_sentence, colaje_text_mdl$bestcor$processor)
-kkk <- turn_all_sent_procs(sent_tdl, tcof_philo_sentence, tcof_philo_text_mdl$bestcor$processor)
-
+tdl.tv.poids_des_enonces <- turn_all_sent_allprocs(sent_tdl, sent_tv)
+tdl.tv.poids_des_enonces_meilleur_processeur <- turn_all_sent_procs(sent_tdl, sent_tv, chi_tv_mdl$bestcor$processor)
+tdl.colaje.poids_des_enonces_meilleur_processeur <- turn_all_sent_procs(sent_tdl, colaje_sentence, colaje_text_mdl$bestcor$processor)
+tdl.tcofphilo.poids_des_enonces_meilleur_processeur <- turn_all_sent_procs(sent_tdl, tcof_philo_sentence, tcof_philo_text_mdl$bestcor$processor)
 
 # statistiques des énoncés pour un processeur
 sent_desc(colaje_text_mdl$bestcor$processor[1], colaje_sentence, 0.05, .2, 0.001)
@@ -285,10 +258,13 @@ sent_desc(chi_tv_mdl$bestcor$processor[1], sent_tv, 0.05, .6, 0.01)
 content_proc(chi_tv_mdl$bestcor$processor[1], sent_tv)
 
 # meilleurs énoncés pour un processeur
-bestsent <- best_sent(colaje_sentence, colaje_text_mdl, 5, 1)
+bestsent <- best_sent(colaje_sentence, colaje_text_mdl, 3, 1)
+write.table(bestsent, "bestsent1.csv")
+
 bestsent <- best_sent(colaje_sentence, colaje_text_mdl, 5, 2)
 
 bestsent <- best_sent(sent_tv, chi_tv_mdl, 0.2, 1)
+write.table(bestsent, "bestsent2.csv")
 bestsent <- best_sent(sent_tv, chi_tv_mdl, 0.1, 1)
 
 #divers
@@ -326,7 +302,7 @@ compute_age(colaje_text_mdl$model, nts)
 # # calcul du mean et du sd pour les processeurs intéressants
 # dcx_t2_adjp <- adjust_processors(dcx_text, dcx_text_2)
 # # calcul de toutes les valeurs normalisées (autour de M = 1 et SD = 1) pour tous les processeurs intéressants et tous les textes
-# dcx2.info <- comp_proc_info_csv(dcx_text, dcx_text_2, dcx_t2_adjp)
+# dcx2.info <- comp_proc_info_csv(dcx_text, dcx_text_2$processor, dcx_t2_adjp)
 # # corrélation obtenue par la somme des processeurs ci-dessus
 # cor.test(as.numeric(dcx_text$ages), rowSums(dcx2.info[,seq(2, ncol(dcx2.info))]) )
 # # Modèles
@@ -349,7 +325,7 @@ compute_age(colaje_text_mdl$model, nts)
 # # calcul du mean et du sd pour les processeurs intéressants
 # colaje_t7_adjp <- adjust_processors(colaje_text, colaje_text_7)
 # # calcul de toutes les valeurs normalisées (autour de M = 1 et SD = 1) pour tous les processeurs intéressants et tous les textes
-# colaje7.info <- comp_proc_info_csv(colaje_text, colaje_text_7, colaje_t7_adjp)
+# colaje7.info <- comp_proc_info_csv(colaje_text, colaje_text_7$processor, colaje_t7_adjp)
 # # corrélation obtenue par la somme des processeurs ci-dessus
 # cor.test(as.numeric(colaje_text$ages), rowSums(colaje7.info[,seq(2, ncol(colaje7.info))]) )
 # # Modèles
@@ -369,5 +345,5 @@ compute_age(colaje_text_mdl$model, nts)
 
 # tcof_trans_text_2 <- best_cor(tcof_trans_text, 'chi', .2)
 # tcoftrans_t2_adjp <- adjust_processors(tcof_trans_text, tcof_trans_text_2)
-# tcoft2.info <- comp_proc_info_csv(tcof_trans_text, tcof_trans_text_2, tcoftrans_t2_adjp)
+# tcoft2.info <- comp_proc_info_csv(tcof_trans_text, tcof_trans_text_2$processor, tcoftrans_t2_adjp)
 # cor.test(as.numeric(tcof_trans_text$ages), rowSums(tcoft2.info[,seq(2, ncol(tcoft2.info))]) )

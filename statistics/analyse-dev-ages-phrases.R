@@ -1,28 +1,63 @@
+source('/Users/cp/brainstorm/evalang/evalang-public/statistics/load-all-data.R')
+
+# essayer de calculer automatiquement
+
+## basé sur processor list sent
+## à mettre en paramètre pour autre version
+## mettre en paramètre aussi la base d'apprentissage
+
+allcortv <- allcor(sent_tv)
+allcortv_order <- allcortv[order(allcortv$cor, decreasing = T), ]
+allcorsent <- allcor(all_corpus_sent)
+allcorsent_order <- allcorsent[order(allcorsent$cor, decreasing = T), ]
+
+display_best_sent_texte(sent_tv, allcortv_order, sent_tv, "chi_TVJS@Alban_5.11{GS}.txt", 20, .8, 10, "chi_TVJS@Alban_5.11.csv", "v")
+display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@Alban_5.11{GS}.txt", 20, .9, 12, "chi_TVJS@Alban_5.11.csv", "v")
+
+aa <- vector_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 20, .90)
+aa <- list_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 20, .90)
+aa <- dataframe_get_best_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 20, .90, 8, "all")
+
+sink('aa.csv')
+aa <- dataframe_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .80, T)
+sink()
+
+write.table(aa, file="chi_TVJS@Anaëlle_5.74{CP}.csv")
+
+display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .95, 15, "chi_TVJS@Anaëlle_5.74{CP}.csv", "v")
+display_best_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 20, .90, 15, "chi_TVJS@Anaëlle_5.74{CP}.csv", "v")
+
+display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_François_4.73{MS}.txt", 20, .9, 12, "chi_François_4.73{MS}.csv")
+display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_Garance_5.02{GS}.txt", 20, .9, 12, "chi_Garance_5.02{GS}.csv")
+display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_Naël_7.09{CE1}.txt", 20, .9, 12, "chi_Naël_7.09{CE1}.csv")
+
+display_best_sent_texte(sent_tv, "chi_Alban_5.11{GS}.txt", 20, .9, 12, "chi_Alban_5.11.csv", "v")
+display_best_sent_texte(sent_tv, "chi_Anaëlle_5.74{CP}.txt", 20, .9, 12, "chi_Anaëlle_5.74{CP}.csv", "v")
+display_best_sent_texte(sent_tv, "chi_François_4.73{MS}.txt", 20, .9, 12, "chi_François_4.73{MS}.csv", T)
+display_best_sent_texte(sent_tv, "chi_Garance_5.02{GS}.txt", 20, .9, 12, "chi_Garance_5.02{GS}.csv", "v")
+display_best_sent_texte(sent_tv, "chi_Naël_7.09{CE1}.txt", 20, .9, 12, "chi_Naël_7.09{CE1}.csv", T)
+
+display_best_sent_texte(colaje_sentence, "chi_Adrien_3.95.txt", 20, .9, 15, "chi_Adrien_3.95.csv", "v")
+display_best_sent_texte(colaje_sentence, "chi_Anae_4.36.txt", 20, .9, 15, "chi_Anae_4.36.csv", "v")
+display_best_sent_texte(colaje_sentence, "chi_Antoine_4.46.txt", 20, .9, 15, "chi_Antoine_4.46.csv", "v")
+display_best_sent_texte(colaje_sentence, "chi_Julie_3.63.txt", 20, .9, 15, "chi_Julie_3.63.csv", "v")
+display_best_sent_texte(colaje_sentence, "chi_Madeleine_3.82.txt", 20, .9, 15, "chi_Madeleine_3.82.csv", "v")
+display_best_sent_texte(colaje_sentence, "chi_Théophile_4.77.txt", 20, .9, 15, "chi_Théophile_4.77.csv", "v")
+
+
 # présentation des meilleurs processeurs pour les phrases
-plot(quantile_proc_csv_sup(processor_list_text[1], sent_tv))
-seuil_pour_un_proc_csv_mean(processor_list_text[1], sent_tv)
-seuil_pour_un_proc_csv_minmax(processor_list_text[1], sent_tv)
-seuil_for_proc(processor_list_text[1], sent_tv)
-sent_desc(processor_list_text[1], sent_tv)
+plot(quantile_proc_csv_sup(processor_list_text[2], sent_tv))
+seuil_pour_un_proc_csv_mean(processor_list_text[2], sent_tv)
+seuil_pour_un_proc_csv_minmax(processor_list_text[2], sent_tv)
+seuil_for_proc(processor_list_text[2], sent_tv)
+sent_desc(processor_list_text[2], sent_tv)
 aggregate(sent_tv$graphie_phrase_frequence_lettres_moyenne_sentence, by=list(round(as.numeric(sent_tv$ages),1)), FUN=function(x) { quantile(x,0.9)})
 
-aggregate(sent_tv[processor_list_sent[1]], by=list(round(as.numeric(sent_tv$ages),0)), FUN=function(x) { quantile(x,0.9)})
-aggregate(all_corpus_sent[processor_list_sent[1]], by=list(round(as.numeric(all_corpus_sent$ages),0)), FUN=function(x) { quantile(x,0.9)})
+aggregate(sent_tv[processor_list_sent[2]], by=list(round(as.numeric(sent_tv$ages),0)), FUN=function(x) { quantile(x,0.9)})
+aggregate(all_corpus_sent[processor_list_sent[2]], by=list(round(as.numeric(all_corpus_sent$ages),0)), FUN=function(x) { quantile(x,0.9)})
 
-allcor <- function(csv) {
-  r <- data.frame(id = numeric(), processor = character(), cor = numeric())
-  for (i in seq(1, 309)) {
-    a <- aggregate(csv[processor_list_sent[i]], by=list(round(as.numeric(csv$ages),0)), FUN=function(x) { quantile(x,0.9, na.rm = T)})
-    b <- cor(a[,1], a[,2])
-    #    print(c(processor_list_sent[i], b))
-    if (! is.na(b)) {
-      r <- rbind(r, c(i, processor_list_sent[i], b))
-    }
-  }
-  colnames(r) <- c("id", "processor", "cor")
-  r
-}
 allcortv <- allcor(sent_tv)
+allcortv_order <- allcortv[order(allcortv$cor, decreasing = T), ]
 allcorsent <- allcor(all_corpus_sent)
 allcorsent_order <- allcorsent[order(allcorsent$cor, decreasing = T), ]
 
@@ -41,11 +76,8 @@ for (i in seq(1,15)) {
   print(aggregate(all_corpus_sent[processor_list_sent[as.numeric(allcorsent_order$id[i])]], by=list(round(as.numeric(all_corpus_sent$ages),0)), FUN=function(x) { quantile(x,0.9)}))
 }
 
-
-# essayer de calculer automatiquement
-
 # récupérer les Q90 pour un processeur
-which_quantile_proc_csv(processor_list_text[1], sent_tv, .9)
+which_quantile_proc_csv(processor_list_text[2], sent_tv, .9)
 # récupérer les Q90 pour les 20 meilleurs processeurs
 bestprocsent <- function(csv, n, seuil) {
   bps <- list()
@@ -61,51 +93,3 @@ mybps <- bestprocsent(sent_tv, 20, .98)
 # récupérer tous les paramètres pour un énoncé (ou une phrase) - pour les 20 meilleurs processeurs
 get_sentence_bynum_proc_note(1, sent_tv, "graphie_phrase_variance_longueur_mots_sentence")
 sent_tv[1, "graphie_phrase_variance_longueur_mots_sentence"]
-
-# voir combien de fois ces 20 paramètres sont supérieurs au q90
-get_phr_eval <- function(numphr, csv, n, seuil) {
-  np <- 0
-  lnp <- c()
-  for (i in seq(1, n)) {
-    pname <- processor_list_sent[as.numeric(allcorsent_order$id[i])]
-    pq90 <- which_quantile_proc_csv(pname, csv, seuil)
-    vp <- csv[numphr, pname]
-    if (vp >= pq90) {
-      np <- np +1
-      lnp <- c(lnp, pname)
-    }
-  }
-  list("val" = np, "proc" = lnp)
-}
-
-get_best_sent <- function(csv, nb, seuil, mymax) {
-  for (i in seq(1, nrow(csv))) {
-    vphr <- get_phr_eval(i, csv, nb, seuil)
-    if (vphr$val >= mymax) {
-      print(vphr$val)
-      print(csv[i, "sentence"])
-      print(vphr$proc)
-    }
-  }
-}
-
-get_best_sent_texte <- function(csv, txtname, nb, seuil, mymax) {
-  p <- list()
-  for (i in seq(1, nrow(csv))) {
-    if (csv[i, "filename"] != txtname) next
-    vphr <- get_phr_eval(i, csv, nb, seuil)
-    if (vphr$val >= mymax) {
-      print(vphr$val)
-      print(csv[i, "sentence"])
-      print(vphr$proc)
-      p[[length(p)+1]] <- c(vphr$val, csv[i, "sentence"], vphr$proc)
-    }
-  }
-  p
-}
-
-a <- get_best_sent_texte(sent_tv, "chi_Alban_5.11{GS}.txt", 20, .9, 14)
-b <- lapply(a, function(x) { sub('\n',' ',x) })
-ddd <- data.frame(b=I(unlist(lapply(b,paste,collapse=";"))))
-write.table(ddd,file="aa.csv",quote=FALSE,row.names=FALSE)
-
