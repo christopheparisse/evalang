@@ -533,3 +533,10 @@ list_get_all_sent_texte <- function(csvref, csvorderref, csvtest, txtname, nb, s
   }
   p
 }
+
+write_dataframe_get_all_sent_texte <- function(csvref, csvorderref, csvtest, txtname, nbproc, seuil, nameresult, verbose=F, namedetails="details.txt") {
+  if (verbose != F) sink(namedetails)
+  tempfile <- dataframe_get_all_sent_texte(csvref, csvorderref, csvtest, txtname, nbproc, seuil, verbose)
+  if (verbose != F) sink()
+  write.csv(tempfile, file=nameresult)
+}

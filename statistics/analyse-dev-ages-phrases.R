@@ -14,15 +14,8 @@ allcorsent_order <- allcorsent[order(allcorsent$cor, decreasing = T), ]
 display_best_sent_texte(sent_tv, allcortv_order, sent_tv, "chi_TVJS@Alban_5.11{GS}.txt", 20, .8, 10, "chi_TVJS@Alban_5.11.csv", "v")
 display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@Alban_5.11{GS}.txt", 20, .9, 12, "chi_TVJS@Alban_5.11.csv", "v")
 
-aa <- vector_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 20, .90)
-aa <- list_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 20, .90)
-aa <- dataframe_get_best_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 20, .90, 8, "all")
-
-sink('aa.csv')
-aa <- dataframe_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .80, T)
-sink()
-
-write.table(aa, file="chi_TVJS@Anaëlle_5.74{CP}.csv")
+write_dataframe_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .80, "chi_TVJS@Anaëlle_5.74{CP}.txt", F)
+write_dataframe_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@François_4.73{MS}.txt", 30, .80, "chi_TVJS@François_4.73{MS}.csv", T)
 
 display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .95, 15, "chi_TVJS@Anaëlle_5.74{CP}.csv", "v")
 display_best_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 20, .90, 15, "chi_TVJS@Anaëlle_5.74{CP}.csv", "v")
@@ -93,3 +86,12 @@ mybps <- bestprocsent(sent_tv, 20, .98)
 # récupérer tous les paramètres pour un énoncé (ou une phrase) - pour les 20 meilleurs processeurs
 get_sentence_bynum_proc_note(1, sent_tv, "graphie_phrase_variance_longueur_mots_sentence")
 sent_tv[1, "graphie_phrase_variance_longueur_mots_sentence"]
+
+aa <- vector_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 20, .90)
+aa <- list_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 20, .90)
+aa <- dataframe_get_best_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 20, .90, 8, "all")
+
+sink('aa.csv')
+aa <- dataframe_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .80, T)
+sink()
+write.table(aa, file="chi_TVJS@Anaëlle_5.74{CP}.csv")
