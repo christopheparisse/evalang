@@ -1,7 +1,7 @@
 source('/Users/cp/brainstorm/evalang/evalang-public/statistics/load-all-data.R')
 
-#write.table(colaje_sentence, file = "colaje_sentence.csv", sep="\t")
-#write.table(colaje_sentence[,c(1,2,3,4,5,6,7,8,9,10,11)], file = "colaje_sentence_ok.csv", sep="\t", row.names = F)
+#write.table(colaje_sentence, file = "csv/colaje_sentence.csv", sep="\t")
+#write.table(colaje_sentence[,c(1,2,3,4,5,6,7,8,9,10,11)], file = "csv/colaje_sentence_ok.csv", sep="\t", row.names = F)
 
 #MODELS
 chi_tv_mdl <- find_the_processors_and_models(chi_tv, .2, "DCX TV")
@@ -19,17 +19,17 @@ tcof_trans_text_mdl <- find_the_processors_and_models(tcof_trans_text, .1, "TCOF
 tcof_long_text_mdl <- find_the_processors_and_models(tcof_long_text, .1, "TCOF Long")
 tcof_philo_text_mdl <- find_the_processors_and_models(tcof_philo_text, .1, "TCOF Philo")
 
-write.csv(chi_tv_mdl$bestcor, file="chi_tv_mdl.csv")
-write.csv(chi_tdl_mdl$bestcor, file="chi_tdl_mdl.csv")
-write.csv(chi_tvrexp_mdl$bestcor, file="chi_tvrexp_mdl.csv")
-write.csv(chi_tvjs_mdl$bestcor, file="chi_tvjs_mdl.csv")
+write.csv(chi_tv_mdl$bestcor, file="csv/chi_tv_mdl.csv")
+write.csv(chi_tdl_mdl$bestcor, file="csv/chi_tdl_mdl.csv")
+write.csv(chi_tvrexp_mdl$bestcor, file="csv/chi_tvrexp_mdl.csv")
+write.csv(chi_tvjs_mdl$bestcor, file="csv/chi_tvjs_mdl.csv")
 
-write.csv(colaje_text_mdl$bestcor, file="colaje_text_mdl.csv")
-write.csv(colaje_text_mdl4$bestcor, file="colaje_text_mdl4.csv")
-write.csv(colaje_sup5_text_mdl2$bestcor, file="colaje_text_mdl.csv")
+write.csv(colaje_text_mdl$bestcor, file="csv/colaje_text_mdl.csv")
+write.csv(colaje_text_mdl4$bestcor, file="csv/colaje_text_mdl4.csv")
+write.csv(colaje_sup5_text_mdl2$bestcor, file="csv/colaje_text_mdl.csv")
 
-write.csv(tcof_long_text_mdl$bestcor, file="tcof_long_mdl.csv")
-write.csv(tcof_philo_text_mdl$bestcor, file="tcof_philo_mdl.csv")
+write.csv(tcof_long_text_mdl$bestcor, file="csv/tcof_long_mdl.csv")
+write.csv(tcof_philo_text_mdl$bestcor, file="csv/tcof_philo_mdl.csv")
 
 # les fichiers de train et de test
 dcx_text_all_2_mdl <- find_the_processors_and_models(dcx_text_all_2$data, .2, "DCX ALL TRAIN")

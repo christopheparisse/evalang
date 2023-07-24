@@ -11,31 +11,25 @@ allcortv_order <- allcortv[order(allcortv$cor, decreasing = T), ]
 allcorsent <- allcor(all_corpus_sent)
 allcorsent_order <- allcorsent[order(allcorsent$cor, decreasing = T), ]
 
-display_best_sent_texte(sent_tv, allcortv_order, sent_tv, "chi_TVJS@Alban_5.11{GS}.txt", 20, .8, 10, "chi_TVJS@Alban_5.11.csv", "v")
-display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@Alban_5.11{GS}.txt", 20, .9, 12, "chi_TVJS@Alban_5.11.csv", "v")
+display_best_sent_texte(sent_tv, allcortv_order, sent_tv, "chi_TVJS@Alban_5.11{GS}.txt", 20, .8, 10, "csv2/chi_TVJS@Alban_5.11.csv", "v")
+display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@Alban_5.11{GS}.txt", 20, .9, 12, "csv2/chi_TVJS@Alban_5.11.csv", "v")
 
-write_dataframe_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .80, "chi_TVJS@Anaëlle_5.74{CP}.txt", F)
-write_dataframe_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@François_4.73{MS}.txt", 30, .80, "chi_TVJS@François_4.73{MS}.csv", T)
+write_dataframe_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .80, "csv2/chi_TVJS@Anaëlle_5.74{CP}.txt", F)
+write_dataframe_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@François_4.73{MS}.txt", 30, .80, "csv2/chi_TVJS@François_4.73{MS}.csv", T)
 
-display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .95, 15, "chi_TVJS@Anaëlle_5.74{CP}.csv", "v")
-display_best_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 20, .90, 15, "chi_TVJS@Anaëlle_5.74{CP}.csv", "v")
+display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .95, 15, "csv2/chi_TVJS@Anaëlle_5.74{CP}.csv", "v")
+display_best_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 20, .90, 15, "csv2/chi_TVJS@Anaëlle_5.74{CP}.csv", "v")
 
-display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_François_4.73{MS}.txt", 20, .9, 12, "chi_François_4.73{MS}.csv")
-display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_Garance_5.02{GS}.txt", 20, .9, 12, "chi_Garance_5.02{GS}.csv")
-display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_Naël_7.09{CE1}.txt", 20, .9, 12, "chi_Naël_7.09{CE1}.csv")
+display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@François_4.73{MS}.txt", 20, .9, 12, "csv2/chi_TVJS@François_4.73{MS}.csv")
+display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@Garance_5.02{GS}.txt", 20, .9, 12, "csv2/chi_TVJS@Garance_5.02{GS}.csv")
+display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@Naël_7.09{CE1}.txt", 20, .9, 12, "csv2/chi_TVJS@Naël_7.09{CE1}.csv")
 
-display_best_sent_texte(sent_tv, "chi_Alban_5.11{GS}.txt", 20, .9, 12, "chi_Alban_5.11.csv", "v")
-display_best_sent_texte(sent_tv, "chi_Anaëlle_5.74{CP}.txt", 20, .9, 12, "chi_Anaëlle_5.74{CP}.csv", "v")
-display_best_sent_texte(sent_tv, "chi_François_4.73{MS}.txt", 20, .9, 12, "chi_François_4.73{MS}.csv", T)
-display_best_sent_texte(sent_tv, "chi_Garance_5.02{GS}.txt", 20, .9, 12, "chi_Garance_5.02{GS}.csv", "v")
-display_best_sent_texte(sent_tv, "chi_Naël_7.09{CE1}.txt", 20, .9, 12, "chi_Naël_7.09{CE1}.csv", T)
-
-display_best_sent_texte(colaje_sentence, "chi_Adrien_3.95.txt", 20, .9, 15, "chi_Adrien_3.95.csv", "v")
-display_best_sent_texte(colaje_sentence, "chi_Anae_4.36.txt", 20, .9, 15, "chi_Anae_4.36.csv", "v")
-display_best_sent_texte(colaje_sentence, "chi_Antoine_4.46.txt", 20, .9, 15, "chi_Antoine_4.46.csv", "v")
-display_best_sent_texte(colaje_sentence, "chi_Julie_3.63.txt", 20, .9, 15, "chi_Julie_3.63.csv", "v")
-display_best_sent_texte(colaje_sentence, "chi_Madeleine_3.82.txt", 20, .9, 15, "chi_Madeleine_3.82.csv", "v")
-display_best_sent_texte(colaje_sentence, "chi_Théophile_4.77.txt", 20, .9, 15, "chi_Théophile_4.77.csv", "v")
+display_best_sent_texte(colaje_sentence, "chi_COLAJE@Adrien_3.95.txt", 20, .9, 15, "cvs2/chi_COLAJE@Adrien_3.95.csv", "v")
+display_best_sent_texte(colaje_sentence, "chi_COLAJE@Anae_4.36.txt", 20, .9, 15, "cvs2/chi_COLAJE@Anae_4.36.csv", "v")
+display_best_sent_texte(colaje_sentence, "chi_COLAJE@Antoine_4.46.txt", 20, .9, 15, "cvs2/chi_COLAJE@Antoine_4.46.csv", "v")
+display_best_sent_texte(colaje_sentence, "chi_COLAJE@Julie_3.63.txt", 20, .9, 15, "cvs2/chi_COLAJE@Julie_3.63.csv", "v")
+display_best_sent_texte(colaje_sentence, "chi_COLAJE@Madeleine_3.82.txt", 20, .9, 15, "cvs2/chi_COLAJE@Madeleine_3.82.csv", "v")
+display_best_sent_texte(colaje_sentence, "chi_COLAJE@Théophile_4.77.txt", 20, .9, 15, "cvs2/chi_COLAJE@Théophile_4.77.csv", "v")
 
 
 # présentation des meilleurs processeurs pour les phrases
