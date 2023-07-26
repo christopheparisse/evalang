@@ -14,7 +14,7 @@ allcorsent_order <- allcorsent[order(allcorsent$cor, decreasing = T), ]
 display_best_sent_texte(sent_tv, allcortv_order, sent_tv, "chi_TVJS@Alban_5.11{GS}.txt", 20, .8, 10, "csv2/chi_TVJS@Alban_5.11.csv", "v")
 display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@Alban_5.11{GS}.txt", 20, .9, 12, "csv2/chi_TVJS@Alban_5.11.csv", "v")
 
-write_dataframe_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .80, "csv2/chi_TVJS@Anaëlle_5.74{CP}.txt", F)
+write_dataframe_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .80, "csv2/chi_TVJS@Anaëlle_5.74{CP}.csv", F)
 write_dataframe_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@François_4.73{MS}.txt", 30, .80, "csv2/chi_TVJS@François_4.73{MS}.csv", T)
 
 display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .95, 15, "csv2/chi_TVJS@Anaëlle_5.74{CP}.csv", "v")
@@ -30,6 +30,22 @@ display_best_sent_texte(colaje_sentence, "chi_COLAJE@Antoine_4.46.txt", 20, .9, 
 display_best_sent_texte(colaje_sentence, "chi_COLAJE@Julie_3.63.txt", 20, .9, 15, "cvs2/chi_COLAJE@Julie_3.63.csv", "v")
 display_best_sent_texte(colaje_sentence, "chi_COLAJE@Madeleine_3.82.txt", 20, .9, 15, "cvs2/chi_COLAJE@Madeleine_3.82.csv", "v")
 display_best_sent_texte(colaje_sentence, "chi_COLAJE@Théophile_4.77.txt", 20, .9, 15, "cvs2/chi_COLAJE@Théophile_4.77.csv", "v")
+
+# test individuel
+anaelle_sent <- create_texte_partage("../../compilations/Anaëlle_sentence.csv", "Anaëlle")
+francois_sent <- create_texte_partage("../../compilations/François_sentence.csv", "François")
+garance_sent <- create_texte_partage("../../compilations/Garance_sentence.csv", "Garance")
+nael_sent <- create_texte_partage("../../compilations/Naël_sentence.csv", "Naël")
+
+anaelle_sent[,"filename"] <- "Anaelle"
+display_best_sent_texte(colaje_sentence, allcorsent_order, anaelle_sent, "Anaelle", 30, .8, 8, "anaelle.csv", "v")
+write_dataframe_get_all_sent_texte(colaje_sentence, allcorsent_order, anaelle_sent, "Anaelle", 30, .8, "anaelle.csv", T)
+francois_sent[,"filename"] <- "Francois"
+write_dataframe_get_all_sent_texte(colaje_sentence, allcorsent_order, francois_sent, "Francois", 30, .8, "francois.csv", T)
+garance_sent[,"filename"] <- "Garance"
+write_dataframe_get_all_sent_texte(colaje_sentence, allcorsent_order, garance_sent, "Garance", 30, .8, "garance.csv", T)
+nael_sent[,"filename"] <- "Nael"
+write_dataframe_get_all_sent_texte(colaje_sentence, allcorsent_order, nael_sent, "Nael", 30, .8, "nael.csv", T)
 
 
 # présentation des meilleurs processeurs pour les phrases
