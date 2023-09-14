@@ -6,6 +6,13 @@ text_to_sentence <- function(proc) {
   gsub("_text", "_sentence", proc)
 }
 
+sentence_to_text <- function(proc) {
+  if (proc == "phonetique_phrase_frequence_phonemes_phrase_sentence")
+    return("phonetique_texte_frequence_phonemes_phrase_text")
+  proc <- gsub("_phrase", "_texte", proc)
+  gsub("_sentence", "_text", proc)
+}
+
 # the set of values is:
 content_proc <- function(proc, csv) {
   proc <- text_to_sentence(proc)

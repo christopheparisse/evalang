@@ -15,6 +15,8 @@ colaje_text_mdl2 <- find_the_processors_and_models(colaje_text, .2, "COLAJE.2")
 colaje_sup5_text_mdl5 <- find_the_processors_and_models(colaje_sup5_text, .5, "COLAJE_SUP5.5")
 colaje_sup5_text_mdl2 <- find_the_processors_and_models(colaje_sup5_text, .2, "COLAJE_SUP5.2")
 
+colaje_text_mdd_mdl <- find_the_processors_and_models(colaje_mdd_text, .1, "COLAJE.1.mdd")
+
 tcof_trans_text_mdl <- find_the_processors_and_models(tcof_trans_text, .1, "TCOF Trans")
 tcof_long_text_mdl <- find_the_processors_and_models(tcof_long_text, .1, "TCOF Long")
 tcof_philo_text_mdl <- find_the_processors_and_models(tcof_philo_text, .1, "TCOF Philo")
@@ -179,6 +181,12 @@ write.csv(p_chi_tdl, file="p_chi_tdl.csv")
 bestcolaje1 <- test_single_processor(colaje_text_mdl, colaje_text, colaje_text_mdl$bestcor$processor[1])
 bestdcxtv1 <- test_single_processor(chi_tv_mdl, chi_tv, chi_tv_mdl$bestcor$processor[1])
 besttcoflong1 <- test_single_processor(tcof_long_text_mdl, tcof_long_text, tcof_long_text_mdl$bestcor$processor[1])
+
+# test pour mdd mhd
+processor_list_text[312]
+processor_list_text[311]
+aa <- test_single_processor(colaje_text_mdd_mdl, colaje_mdd_text, processor_list_text[311])
+aa <- test_single_processor(colaje_text_mdd_mdl, colaje_mdd_text, processor_list_text[312])
 
 b2 <- test_single_processor(colaje_text_mdl, colaje_text, colaje_sup5_text_mdl$bestcor$processor[1])
 b3 <- test_single_processor(colaje_text_mdl, colaje_text, colaje_sup5_text_mdl$bestcor$processor[2])

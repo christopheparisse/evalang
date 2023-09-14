@@ -30,6 +30,9 @@ sent_tv <- dcx_sentence_all[grep("TV",dcx_sentence_all$document), ]
 colaje_text <- create_texte_partage("csv/chi-COLAJE-text.csv", "COLAJE")
 colaje_sentence <- create_texte_partage("csv/chi-COLAJE-sentence.csv", "COLAJE")
 
+colaje_mdd_text <- create_texte_partage("csv/chi-COLAJE-mdd-text-edited.csv", "COLAJE")
+colaje_mdd_sentence <- create_texte_partage("csv/chi-colaje-mdd-fusion3.csv", "COLAJE")
+
 colaje_text_all_2 <- split_1_9(colaje_text)
 colaje_sent_all_2 <- split_1_9(colaje_sentence)
 
@@ -67,6 +70,9 @@ all_corpus_sent_all_2 <- split_1_9(all_corpus_sent)
 #list of processors
 processor_list_text <- colnames(chi_tv)[9:length(colnames(chi_tv))]
 processor_list_sent <- colnames(sent_tv)[11:length(colnames(sent_tv))]
+
+processor_list_text <- colnames(colaje_mdd_text)[9:length(colnames(colaje_mdd_text))]
+#processor_list_sent <- colnames(colaje_sent_all_2)[11:length(colnames(colaje_sent_all_2))]
 
 #all_corpus_text <- add_texte_partage(dcx_text_all, "chi-COLAJE-text.csv", "COLAJE")
 #all_corpus_sent <- add_texte_partage(dcx_sentence_all, "chi-COLAJE-sentence.csv", "COLAJE")
