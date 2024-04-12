@@ -1,3 +1,6 @@
+# initialisation et chargement de toutes les données
+# et des fonctions de traitement
+
 setwd('/Users/cp/brainstorm/evalang/evalang-public/statistics/')
 
 source('/Users/cp/brainstorm/evalang/evalang-public/statistics/multiple-load-functions.R')
@@ -13,6 +16,12 @@ dcx_sentence_all <- create_texte_partage("csv/chi-DCX-Mars2023_sentence.csv", "D
 
 dcx_text_all_2 <- split_1_9(dcx_text_all)
 dcx_sent_all_2 <- split_1_9(dcx_sentence_all)
+
+dcx_text_all_ref <- create_texte_partage("csv/chi-DCX-Mars2023_text-REFpourTest.csv", "DCX")
+dcx_sentence_all_ref <- create_texte_partage("csv/chi-DCX-Mars2023_sentence-REFpourTest.csv", "DCX")
+
+dcx_text_test <- create_texte_partage("csv/chi-pour-stanza_text.csv", "DCXTEST")
+dcx_sentence_test <- create_texte_partage("csv/chi-pour-stanza_sentence.csv", "DCXTEST")
 
 # test decomplexes
 chi_tvrexp <- dcx_text_all[grep("TVREXP",dcx_text_all$document), ]
@@ -67,9 +76,12 @@ all_corpus_sent_dcplx <- add_texte_partage(all_corpus_sent, "csv/chi-DCX-Mars202
 all_corpus_text_all_2 <- split_1_9(all_corpus_text)
 all_corpus_sent_all_2 <- split_1_9(all_corpus_sent)
 
+mpf_sent <- create_texte_partage("/Users/cp/brainstorm/COLF/all/mpf_ok_sentence.csv", "MPF")
+alipe_sent <- create_texte_partage("/Users/cp/brainstorm/COLF/all/alipe_ok_sentence.csv", "ALIPE")
+
 #list of processors
-processor_list_text <- colnames(chi_tv)[9:length(colnames(chi_tv))]
-processor_list_sent <- colnames(sent_tv)[11:length(colnames(sent_tv))]
+processor_list_text <- colnames(dcx_text_all_ref)[9:length(colnames(dcx_text_all_ref))]
+processor_list_sent <- colnames(dcx_sentence_all_ref)[11:length(colnames(dcx_sentence_all_ref))]
 
 processor_list_text <- colnames(colaje_mdd_text)[9:length(colnames(colaje_mdd_text))]
 #processor_list_sent <- colnames(colaje_sent_all_2)[11:length(colnames(colaje_sent_all_2))]

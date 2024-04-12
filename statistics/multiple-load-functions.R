@@ -4,7 +4,14 @@ load_multiple <- function(fn) {
   return(fn_texte)
 }
 
+split_3 <- function(s) {
+  c <- "gdm_Mamy_Claude_40.0{}.txt"
+  k <- index("_", c)
+  f <- index("_", c, from_end=T)
+}
+
 docinfo_partage <- function(x) {
+  #x <- gsub(" ", "-", x)
   pat <- "(.*)/(.*)"
   s <- regexec(pat, x)
   fn <- regmatches(x, s)[[1]][3]
@@ -25,6 +32,13 @@ docinfo_partage <- function(x) {
   } else {
     eco <- "X"
   }
+  if (is.na(as.numeric(ages))) {
+    print(paste("Erreur age sur |", ages, "| extrait de ", x, collapse = ""))
+    ages = "999"
+  }
+  if (is.na(as.numeric(range))) {
+    range = "0"
+  }
   c(fn, fn3[[1]][1], fn3[[1]][2], ages, range, eco)
 }
 
@@ -35,6 +49,18 @@ create_texte_partage <- function(fn, nomcorpus) {
   df <- cbind(df, t(heads))
   colnames(df) <- c("corpus", "filename", "part", "name", "ages", "serial", "eco")
   return(cbind(df, fn_texte))
+}
+
+create_texte_partage_sentence_filtered <- function(fn, nomcorpus) {
+  fn_texte0 <- read.table(fn, header=T, sep=";", dec=".", quote = "\"")
+  fn_texte <- fn_texte0[!grepl('\\.\\.\\.|\\. \\. \\.|xx.*xx|ww.*ww|yy.*yy|@|^[x. ]+$|^[y. ]+$', fn_texte0$sentence),]
+  heads <- sapply(fn_texte$document, FUN=docinfo_partage)
+  df <- as.data.frame(rep(nomcorpus, nrow(t(heads))))
+  df <- cbind(df, t(heads))
+  colnames(df) <- c("corpus", "filename", "part", "name", "ages", "serial", "eco")
+  df <- cbind(df, fn_texte)
+  # print(str(df))
+  df[df$ages != "999",]
 }
 
 add_texte_partage <- function(df, fn, nomcorpus) {

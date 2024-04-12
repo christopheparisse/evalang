@@ -1,17 +1,17 @@
 #sent_id = CHI <au0>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = FAT <au1>
 #text = aza .
-1	aza	aza	PROPN	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
+1	aza	aza	X	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	FAT
 
 #sent_id = CHI <au2>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au3>
@@ -22,18 +22,18 @@
 
 #sent_id = CHI <au4>
 #text = yy ?
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	?	?	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au5>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au6>
 #text = allez on est fatigué .
 1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	FAT
-2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	start_char=6|end_char=8	_	_	FAT
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	4	nsubj	_	start_char=6|end_char=8	_	_	FAT
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=9|end_char=12	_	_	FAT
 4	fatigué	fatigué	ADJ	_	Gender=Masc|Number=Sing	1	xcomp	_	start_char=13|end_char=20	_	_	FAT
 5	.	.	PUNCT	_	_	1	punct	_	start_char=21|end_char=22	_	_	FAT
@@ -42,20 +42,18 @@
 #text = tu peux y aller c'est du bon là .
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	peux	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	FAT
-3	y	y	PRON	_	_	4	obl:mod	_	start_char=8|end_char=9	_	_	FAT
+3	y	y	PRON	_	Person=3|PronType=Prs	4	iobj	_	start_char=8|end_char=9	_	_	FAT
 4	aller	aller	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=10|end_char=15	_	_	FAT
-5	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=16|end_char=18	_	_	FAT
-6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	start_char=18|end_char=21	_	_	FAT
-7-8	du	_	_	_	_	_	_	_	start_char=22|end_char=24	_	_	FAT
-7	de	de	ADP	_	_	9	advmod	_	_	_	_	FAT
-8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	fixed	_	_	_	_	FAT
-9	bon	bon	ADJ	_	Gender=Masc|Number=Sing	2	conj	_	start_char=25|end_char=28	_	_	FAT
-10	là	là	ADV	_	_	9	advmod	_	start_char=29|end_char=31	_	_	FAT
-11	.	.	PUNCT	_	_	2	punct	_	start_char=32|end_char=33	_	_	FAT
+5	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	8	nsubj	_	start_char=16|end_char=18	_	_	FAT
+6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	start_char=18|end_char=21	_	_	FAT
+7	du	du	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	start_char=22|end_char=24	_	_	FAT
+8	bon	bon	NOUN	_	Gender=Masc|Number=Sing	2	conj	_	start_char=25|end_char=28	_	_	FAT
+9	là	là	ADV	_	_	8	advmod	_	start_char=29|end_char=31	_	_	FAT
+10	.	.	PUNCT	_	_	2	punct	_	start_char=32|end_char=33	_	_	FAT
 
 #sent_id = CHI <au8>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au9>
@@ -68,7 +66,7 @@
 
 #sent_id = CHI <au11>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au12>
@@ -77,7 +75,7 @@
 
 #sent_id = CHI <au13>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au14>
@@ -99,15 +97,15 @@
 
 #sent_id = FAT <au18>
 #text = c'est quoi ça ?
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	FAT
-2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=2|end_char=5	_	_	FAT
-3	quoi	quoi	PRON	_	_	4	nsubj	_	start_char=6|end_char=10	_	_	FAT
-4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=11|end_char=13	_	_	FAT
-5	?	?	PUNCT	_	_	4	punct	_	start_char=14|end_char=15	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	FAT
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	FAT
+3	quoi	quoi	PRON	_	Person=3|PronType=Int	0	root	_	start_char=6|end_char=10	_	_	FAT
+4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=11|end_char=13	_	_	FAT
+5	?	?	PUNCT	_	_	3	punct	_	start_char=14|end_char=15	_	_	FAT
 
 #sent_id = CHI <au19>
 #text = m .
-1	m	m	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=0|end_char=1	_	_	CHI
+1	m	mètre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=1	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=2|end_char=3	_	_	CHI
 
 #sent_id = CHI <au20>
@@ -121,13 +119,13 @@
 3	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	5	aux:tense	_	start_char=5|end_char=7	_	_	FAT
 4	jamais	jamais	ADV	_	Polarity=Neg	5	advmod	_	start_char=8|end_char=14	_	_	FAT
 5	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=15|end_char=19	_	_	FAT
-6	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	obj	_	start_char=20|end_char=25	_	_	FAT
-7	là	là	ADV	_	_	6	advmod	_	start_char=26|end_char=28	_	_	FAT
+6	celui	celui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	obj	_	start_char=20|end_char=25	_	_	FAT
+7	là	là	ADV	_	_	5	advmod	_	start_char=26|end_char=28	_	_	FAT
 8	.	.	PUNCT	_	_	5	punct	_	start_char=29|end_char=30	_	_	FAT
 
 #sent_id = FAT <au22>
 #text = c'est un nouveau truc .
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=2|end_char=5	_	_	FAT
 3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=6|end_char=8	_	_	FAT
 4	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	start_char=9|end_char=16	_	_	FAT
@@ -141,7 +139,7 @@
 #sent_id = FAT <au24>
 #text = hein c'est un nouveau truc ?
 1	hein	hein	INTJ	_	_	6	discourse	_	start_char=0|end_char=4	_	_	FAT
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=5|end_char=7	_	_	FAT
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=5|end_char=7	_	_	FAT
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=7|end_char=10	_	_	FAT
 4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=11|end_char=13	_	_	FAT
 5	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	start_char=14|end_char=21	_	_	FAT
@@ -162,7 +160,7 @@
 1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	FAT
 2	pyj@f	pyj@f	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3|end_char=8	_	_	FAT
 3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=9|end_char=11	_	_	FAT
-4	pyj@f	pyj@f	NOUN	_	Gender=Masc|Number=Sing	2	appos	_	start_char=12|end_char=17	_	_	FAT
+4	pyj@f	pyj@f	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=12|end_char=17	_	_	FAT
 5	.	.	PUNCT	_	_	2	punct	_	start_char=18|end_char=19	_	_	FAT
 
 #sent_id = FAT <au28>
@@ -182,12 +180,12 @@
 #text = ça va ça ?
 1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=5	_	_	FAT
-3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	obj	_	start_char=6|end_char=8	_	_	FAT
+3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	nsubj	_	start_char=6|end_char=8	_	_	FAT
 4	?	?	PUNCT	_	_	2	punct	_	start_char=9|end_char=10	_	_	FAT
 
 #sent_id = CHI <au31>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au32>
@@ -197,19 +195,19 @@
 
 #sent_id = FAT <au33>
 #text = c'est bon .
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	FAT
 3	bon	bon	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=6|end_char=9	_	_	FAT
 4	.	.	PUNCT	_	_	3	punct	_	start_char=10|end_char=11	_	_	FAT
 
 #sent_id = CHI <au34>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au35>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au36>
@@ -218,12 +216,12 @@
 
 #sent_id = CHI <au37>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au38>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au39>
@@ -239,11 +237,9 @@
 #sent_id = FAT <au41>
 #text = ah ah ah !
 1	ah	ah	INTJ	_	_	0	root	_	start_char=0|end_char=2	_	_	FAT
-2-3	ah	_	_	_	_	_	_	_	start_char=3|end_char=5	_	_	FAT
-2	à	à	ADP	_	_	4	case	_	_	_	_	FAT
-3	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_	_	_	FAT
-4	ah	ah	NOUN	_	Gender=Masc|Number=Plur	1	obl:arg	_	start_char=6|end_char=8	_	_	FAT
-5	!	!	PUNCT	_	_	1	punct	_	start_char=9|end_char=10	_	_	FAT
+2	ah	ah	X	_	_	1	fixed	_	start_char=3|end_char=5	_	_	FAT
+3	ah	ah	X	_	_	1	fixed	_	start_char=6|end_char=8	_	_	FAT
+4	!	!	PUNCT	_	_	1	punct	_	start_char=9|end_char=10	_	_	FAT
 
 #sent_id = FAT <au42>
 #text = un calinou .
@@ -253,29 +249,29 @@
 
 #sent_id = CHI <au43>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au44>
 #text = un calinou rrr@o .
 1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	FAT
 2	calinou	calinou	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3|end_char=10	_	_	FAT
-3	rrr@o	rrr@o	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	start_char=11|end_char=16	_	_	FAT
+3	rrr@o	rrr@o	X	_	_	2	appos	_	start_char=11|end_char=16	_	_	FAT
 4	.	.	PUNCT	_	_	2	punct	_	start_char=17|end_char=18	_	_	FAT
 
 #sent_id = CHI <au45>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au46>
 #text = lalala !
-1	lalala	lalala	INTJ	_	_	0	root	_	start_char=0|end_char=6	_	_	FAT
+1	lalala	lalala	X	_	_	0	root	_	start_char=0|end_char=6	_	_	FAT
 2	!	!	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	FAT
 
 #sent_id = CHI <au47>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au48>
@@ -288,7 +284,7 @@
 2	crac@o	crac@o	X	_	Foreign=Yes	1	flat:foreign	_	start_char=7|end_char=13	_	_	FAT
 3	crac@o	crac@o	X	_	Foreign=Yes	1	flat:foreign	_	start_char=14|end_char=20	_	_	FAT
 4	crac@o	crac@o	X	_	Foreign=Yes	1	flat:foreign	_	start_char=21|end_char=27	_	_	FAT
-5	crac@o	crac@o	X	_	_	1	flat:foreign	_	start_char=28|end_char=34	_	_	FAT
+5	crac@o	crac@o	X	_	Foreign=Yes	1	flat:foreign	_	start_char=28|end_char=34	_	_	FAT
 6	.	.	PUNCT	_	_	1	punct	_	start_char=35|end_char=36	_	_	FAT
 
 #sent_id = CHI <au50>
@@ -298,25 +294,25 @@
 #sent_id = FAT <au51>
 #text = ah non reste calme Théophile hein .
 1	ah	ah	INTJ	_	_	3	discourse	_	start_char=0|end_char=2	_	_	FAT
-2	non	non	ADV	_	_	3	advmod	_	start_char=3|end_char=6	_	_	FAT
+2	non	non	ADV	_	Polarity=Neg	3	advmod	_	start_char=3|end_char=6	_	_	FAT
 3	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=7|end_char=12	_	_	FAT
 4	calme	calme	ADJ	_	Gender=Masc|Number=Sing	3	xcomp	_	start_char=13|end_char=18	_	_	FAT
 5	Théophile	Théophile	PROPN	_	_	3	nsubj	_	start_char=19|end_char=28	_	_	FAT
-6	hein	hein	INTJ	_	_	3	discourse	_	start_char=29|end_char=33	_	_	FAT
+6	hein	hein	X	_	_	5	flat:name	_	start_char=29|end_char=33	_	_	FAT
 7	.	.	PUNCT	_	_	3	punct	_	start_char=34|end_char=35	_	_	FAT
 
 #sent_id = FAT <au52>
 #text = dés que t'es pénible ça dur beaucoup plus longtemps .
-1	dés	dé	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
-2	que	que	PRON	_	PronType=Rel	5	nsubj	_	start_char=4|end_char=7	_	_	FAT
+1	dés	dé	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=0|end_char=3	_	_	FAT
+2	que	que	SCONJ	_	_	5	mark	_	start_char=4|end_char=7	_	_	FAT
 3	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	5	iobj	_	start_char=8|end_char=10	_	_	FAT
 4	es	être	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=10|end_char=12	_	_	FAT
-5	pénible	pénible	ADJ	_	Gender=Masc|Number=Sing	1	acl:relcl	_	start_char=13|end_char=20	_	_	FAT
+5	pénible	pénible	ADJ	_	Gender=Masc|Number=Sing	1	acl	_	start_char=13|end_char=20	_	_	FAT
 6	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=21|end_char=23	_	_	FAT
-7	dur	dur	ADJ	_	Gender=Masc|Number=Sing	5	conj	_	start_char=24|end_char=27	_	_	FAT
+7	dur	dur	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	start_char=24|end_char=27	_	_	FAT
 8	beaucoup	beaucoup	ADV	_	_	9	advmod	_	start_char=28|end_char=36	_	_	FAT
 9	plus	plus	ADV	_	_	10	advmod	_	start_char=37|end_char=41	_	_	FAT
-10	longtemps	longtemps	ADV	_	_	7	advmod	_	start_char=42|end_char=51	_	_	FAT
+10	longtemps	longtemps	ADV	_	_	5	advmod	_	start_char=42|end_char=51	_	_	FAT
 11	.	.	PUNCT	_	_	1	punct	_	start_char=52|end_char=53	_	_	FAT
 
 #sent_id = CHI <au53>
@@ -328,7 +324,7 @@
 1	quand	quand	SCONJ	_	_	3	mark	_	start_char=0|end_char=5	_	_	FAT
 2	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	3	nsubj	_	start_char=6|end_char=8	_	_	FAT
 3	fais	faire	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9|end_char=13	_	_	FAT
-4	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=14|end_char=16	_	_	FAT
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	start_char=14|end_char=16	_	_	FAT
 5	idiot	idiot	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=16|end_char=21	_	_	FAT
 6	.	.	PUNCT	_	_	3	punct	_	start_char=22|end_char=23	_	_	FAT
 
@@ -341,9 +337,9 @@
 1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=5	_	_	FAT
 3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	start_char=6|end_char=9	_	_	FAT
-4	être	être	AUX	_	VerbForm=Inf	6	cop	_	start_char=10|end_char=14	_	_	FAT
+4	être	être	AUX	_	VerbForm=Inf	5	cop	_	start_char=10|end_char=14	_	_	FAT
 5	long	long	ADJ	_	Gender=Masc|Number=Sing	2	xcomp	_	start_char=15|end_char=19	_	_	FAT
-6	Théophile	Théophile	PROPN	_	_	2	xcomp	_	start_char=20|end_char=29	_	_	FAT
+6	Théophile	Théophile	PROPN	_	_	5	obl:mod	_	start_char=20|end_char=29	_	_	FAT
 7	.	.	PUNCT	_	_	2	punct	_	start_char=30|end_char=31	_	_	FAT
 
 #sent_id = FAT <au57>
@@ -357,22 +353,22 @@
 
 #sent_id = FAT <au59>
 #text = regarde regarde .
-1	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	FAT
-2	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=8|end_char=15	_	_	FAT
+1	regarde	regarder	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	FAT
+2	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=8|end_char=15	_	_	FAT
 3	.	.	PUNCT	_	_	1	punct	_	start_char=16|end_char=17	_	_	FAT
 
 #sent_id = FAT <au60>
 #text = attends on voit à travers comme des lunettes regarde .
-1	attends	attends	INTJ	_	_	3	discourse	_	start_char=0|end_char=7	_	_	FAT
-2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	start_char=8|end_char=10	_	_	FAT
-3	voit	voir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=11|end_char=15	_	_	FAT
+1	attends	attendre	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	FAT
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	3	nsubj	_	start_char=8|end_char=10	_	_	FAT
+3	voit	voir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=11|end_char=15	_	_	FAT
 4	à	à	ADP	_	_	8	case	_	start_char=16|end_char=17	_	_	FAT
 5	travers	travers	NOUN	_	Gender=Masc|Number=Sing	4	fixed	_	start_char=18|end_char=25	_	_	FAT
 6	comme	comme	ADP	_	_	8	case	_	start_char=26|end_char=31	_	_	FAT
-7	des	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	8	det	_	start_char=32|end_char=35	_	_	FAT
+7	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	8	det	_	start_char=32|end_char=35	_	_	FAT
 8	lunettes	lunette	NOUN	_	Gender=Fem|Number=Plur	3	obl:mod	_	start_char=36|end_char=44	_	_	FAT
-9	regarde	regarder	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	start_char=45|end_char=52	_	_	FAT
-10	.	.	PUNCT	_	_	3	punct	_	start_char=53|end_char=54	_	_	FAT
+9	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	start_char=45|end_char=52	_	_	FAT
+10	.	.	PUNCT	_	_	1	punct	_	start_char=53|end_char=54	_	_	FAT
 
 #sent_id = CHI <au61>
 #text = .
@@ -392,7 +388,7 @@
 
 #sent_id = CHI <au65>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au66>
@@ -407,7 +403,7 @@
 
 #sent_id = CHI <au68>
 #text = yy ?
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	?	?	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au69>
@@ -417,14 +413,14 @@
 3	yyy	yyy	X	_	Foreign=Yes	1	flat:foreign	_	start_char=8|end_char=11	_	_	CHI
 4	yyy	yyy	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12|end_char=15	_	_	CHI
 5	yyy	yyy	X	_	Foreign=Yes	1	flat:foreign	_	start_char=16|end_char=19	_	_	CHI
-6	yyy	yyy	NOUN	_	Number=Sing	1	flat:foreign	_	start_char=20|end_char=23	_	_	CHI
-7	yyy	yyy	NOUN	_	Number=Sing	8	nmod	_	start_char=24|end_char=27	_	_	CHI
-8	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=28|end_char=30	_	_	CHI
+6	yyy	yyy	X	_	Foreign=Yes	1	flat:foreign	_	start_char=20|end_char=23	_	_	CHI
+7	yyy	yyy	X	_	Foreign=Yes	1	flat:foreign	_	start_char=24|end_char=27	_	_	CHI
+8	yy	yy	X	_	Foreign=Yes	1	flat:foreign	_	start_char=28|end_char=30	_	_	CHI
 9	.	.	PUNCT	_	_	1	punct	_	start_char=31|end_char=32	_	_	CHI
 
 #sent_id = FAT <au70>
 #text = m petit coup de mou !
-1	m	m	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=1	_	_	FAT
+1	m	mètre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=1	_	_	FAT
 2	petit	petit	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	start_char=2|end_char=7	_	_	FAT
 3	coup	coup	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=8|end_char=12	_	_	FAT
 4	de	de	ADP	_	_	5	case	_	start_char=13|end_char=15	_	_	FAT
@@ -433,18 +429,18 @@
 
 #sent_id = CHI <au71>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = CHI <au72>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au73>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au74>
@@ -455,7 +451,7 @@
 
 #sent_id = CHI <au75>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au76>
@@ -465,7 +461,7 @@
 
 #sent_id = CHI <au77>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au78>
@@ -478,21 +474,19 @@
 
 #sent_id = FAT <au80>
 #text = ah ah on défait pas les couches hein .
-1	ah	ah	INTJ	_	_	5	discourse	_	start_char=0|end_char=2	_	_	FAT
-2-3	ah	_	_	_	_	_	_	_	start_char=3|end_char=5	_	_	FAT
-2	à	à	ADP	_	_	1	fixed	_	_	_	_	FAT
-3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	1	fixed	_	_	_	_	FAT
-4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	start_char=6|end_char=8	_	_	FAT
-5	défait	défaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9|end_char=15	_	_	FAT
-6	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	start_char=16|end_char=19	_	_	FAT
-7	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	start_char=20|end_char=23	_	_	FAT
-8	couches	couche	NOUN	_	Gender=Fem|Number=Plur	5	obj	_	start_char=24|end_char=31	_	_	FAT
-9	hein	hein	ADV	_	_	5	advmod	_	start_char=32|end_char=36	_	_	FAT
-10	.	.	PUNCT	_	_	5	punct	_	start_char=37|end_char=38	_	_	FAT
+1	ah	ah	INTJ	_	_	4	discourse	_	start_char=0|end_char=2	_	_	FAT
+2	ah	ah	INTJ	_	_	1	fixed	_	start_char=3|end_char=5	_	_	FAT
+3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	4	nsubj	_	start_char=6|end_char=8	_	_	FAT
+4	défait	défaire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9|end_char=15	_	_	FAT
+5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	start_char=16|end_char=19	_	_	FAT
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	start_char=20|end_char=23	_	_	FAT
+7	couches	couche	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	start_char=24|end_char=31	_	_	FAT
+8	hein	hein	ADV	_	_	4	advmod	_	start_char=32|end_char=36	_	_	FAT
+9	.	.	PUNCT	_	_	4	punct	_	start_char=37|end_char=38	_	_	FAT
 
 #sent_id = CHI <au81>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au82>
@@ -507,26 +501,26 @@
 
 #sent_id = CHI <au84>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = FAT <au85>
 #text = agla .
-1	agla	agla	PROPN	_	_	0	root	_	start_char=0|end_char=4	_	_	FAT
+1	agla	agla	X	_	_	0	root	_	start_char=0|end_char=4	_	_	FAT
 2	.	.	PUNCT	_	_	1	punct	_	start_char=5|end_char=6	_	_	FAT
 
 #sent_id = CHI <au86>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au87>
 #text = l'autre l'autre .
 1	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	FAT
-2	autre	autre	PRON	_	Number=Sing	0	root	_	start_char=2|end_char=7	_	_	FAT
+2	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	0	root	_	start_char=2|end_char=7	_	_	FAT
 3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	start_char=8|end_char=10	_	_	FAT
-4	autre	autre	PRON	_	Number=Sing	2	appos	_	start_char=10|end_char=15	_	_	FAT
+4	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	2	appos	_	start_char=10|end_char=15	_	_	FAT
 5	.	.	PUNCT	_	_	2	punct	_	start_char=16|end_char=17	_	_	FAT
 
 #sent_id = CHI <au88>
@@ -535,12 +529,12 @@
 
 #sent_id = CHI <au89>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au90>
 #text = youhou .
-1	youhou	youhou	INTJ	_	_	0	root	_	start_char=0|end_char=6	_	_	FAT
+1	youhou	youhou	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=6	_	_	FAT
 2	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	FAT
 
 #sent_id = FAT <au91>
@@ -550,16 +544,16 @@
 
 #sent_id = CHI <au92>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au93>
 #text = ça oui mais alors on ferme la boîte .
 1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
-2	oui	oui	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=6	_	_	FAT
+2	oui	oui	INTJ	_	_	0	root	_	start_char=3|end_char=6	_	_	FAT
 3	mais	mais	CCONJ	_	_	6	cc	_	start_char=7|end_char=11	_	_	FAT
 4	alors	alors	ADV	_	_	6	advmod	_	start_char=12|end_char=17	_	_	FAT
-5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	start_char=18|end_char=20	_	_	FAT
+5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	6	nsubj	_	start_char=18|end_char=20	_	_	FAT
 6	ferme	fermer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=21|end_char=26	_	_	FAT
 7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	start_char=27|end_char=29	_	_	FAT
 8	boîte	boîte	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	start_char=30|end_char=35	_	_	FAT
@@ -569,8 +563,8 @@
 #text = sinon tu vas en mettre partout .
 1	sinon	sinon	SCONJ	_	_	3	cc	_	start_char=0|end_char=5	_	_	FAT
 2	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	3	nsubj	_	start_char=6|end_char=8	_	_	FAT
-3	vas	vair	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9|end_char=12	_	_	FAT
-4	en	en	PRON	_	Person=3	5	obj	_	start_char=13|end_char=15	_	_	FAT
+3	vas	aller	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9|end_char=12	_	_	FAT
+4	en	en	PRON	_	Person=3|PronType=Prs	5	obj	_	start_char=13|end_char=15	_	_	FAT
 5	mettre	mettre	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=16|end_char=22	_	_	FAT
 6	partout	partout	ADV	_	_	5	advmod	_	start_char=23|end_char=30	_	_	FAT
 7	.	.	PUNCT	_	_	3	punct	_	start_char=31|end_char=32	_	_	FAT
@@ -578,37 +572,37 @@
 #sent_id = FAT <au95>
 #text = ouais bah voilà .
 1	ouais	ouais	INTJ	_	_	3	discourse	_	start_char=0|end_char=5	_	_	FAT
-2	bah	bah	INTJ	_	_	1	fixed	_	start_char=6|end_char=9	_	_	FAT
+2	bah	bah	ADP	_	_	1	fixed	_	start_char=6|end_char=9	_	_	FAT
 3	voilà	voilà	VERB	_	_	0	root	_	start_char=10|end_char=15	_	_	FAT
 4	.	.	PUNCT	_	_	3	punct	_	start_char=16|end_char=17	_	_	FAT
 
 #sent_id = FAT <au96>
 #text = bah vas y continue hein .
-1	bah	bah	INTJ	_	_	4	discourse	_	start_char=0|end_char=3	_	_	FAT
-2	vas	vai	PRON	_	Number=Sing|Person=2|PronType=Prs	4	nsubj	_	start_char=4|end_char=7	_	_	FAT
-3	y	y	PRON	_	_	4	iobj	_	start_char=8|end_char=9	_	_	FAT
-4	continue	continuer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=10|end_char=18	_	_	FAT
+1	bah	bah	X	_	_	4	discourse	_	start_char=0|end_char=3	_	_	FAT
+2	vas	vas	X	_	_	4	nsubj	_	start_char=4|end_char=7	_	_	FAT
+3	y	y	PRON	_	Person=3|PronType=Prs	4	iobj	_	start_char=8|end_char=9	_	_	FAT
+4	continue	continuer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=10|end_char=18	_	_	FAT
 5	hein	hein	ADV	_	_	4	advmod	_	start_char=19|end_char=23	_	_	FAT
 6	.	.	PUNCT	_	_	4	punct	_	start_char=24|end_char=25	_	_	FAT
 
 #sent_id = CHI <au97>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au98>
 #text = non non arrête c'est les médicaments là oh oh oh .
-1	non	non	ADV	_	_	3	advmod	_	start_char=0|end_char=3	_	_	FAT
-2	non	non	ADV	_	_	1	fixed	_	start_char=4|end_char=7	_	_	FAT
-3	arrête	arrêter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	csubj	_	start_char=8|end_char=14	_	_	FAT
-4	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=15|end_char=17	_	_	FAT
+1	non	non	ADV	_	Polarity=Neg	3	advmod	_	start_char=0|end_char=3	_	_	FAT
+2	non	non	ADV	_	Polarity=Neg	3	advmod	_	start_char=4|end_char=7	_	_	FAT
+3	arrête	arrêter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	_	start_char=8|end_char=14	_	_	FAT
+4	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=15|end_char=17	_	_	FAT
 5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=17|end_char=20	_	_	FAT
-6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	start_char=21|end_char=24	_	_	FAT
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	start_char=21|end_char=24	_	_	FAT
 7	médicaments	médicament	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=25|end_char=36	_	_	FAT
 8	là	là	ADV	_	_	7	advmod	_	start_char=37|end_char=39	_	_	FAT
-9	oh	oh	X	_	_	7	appos	_	start_char=40|end_char=42	_	_	FAT
+9	oh	oh	X	_	Foreign=Yes	7	appos	_	start_char=40|end_char=42	_	_	FAT
 10	oh	oh	X	_	Foreign=Yes	9	flat:foreign	_	start_char=43|end_char=45	_	_	FAT
-11	oh	oh	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	start_char=46|end_char=48	_	_	FAT
+11	oh	oh	X	_	Foreign=Yes	9	flat:foreign	_	start_char=46|end_char=48	_	_	FAT
 12	.	.	PUNCT	_	_	7	punct	_	start_char=49|end_char=50	_	_	FAT
 
 #sent_id = CHI <au99>
@@ -618,30 +612,30 @@
 #sent_id = FAT <au100>
 #text = oh dit dit .
 1	oh	oh	INTJ	_	_	2	discourse	_	start_char=0|end_char=2	_	_	FAT
-2	dit	dire	VERB	_	Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=6	_	_	FAT
+2	dit	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=6	_	_	FAT
 3	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	xcomp	_	start_char=7|end_char=10	_	_	FAT
 4	.	.	PUNCT	_	_	2	punct	_	start_char=11|end_char=12	_	_	FAT
 
 #sent_id = FAT <au101>
 #text = on peut peut être arrêter l'hémorragie là dans les bêtises .
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	FAT
-3	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	advmod	_	start_char=8|end_char=12	_	_	FAT
+3	peut	pouvoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	xcomp	_	start_char=8|end_char=12	_	_	FAT
 4	être	être	AUX	_	VerbForm=Inf	5	aux:pass	_	start_char=13|end_char=17	_	_	FAT
 5	arrêter	arrêter	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=18|end_char=25	_	_	FAT
-6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=26|end_char=28	_	_	FAT
+6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	7	det	_	start_char=26|end_char=28	_	_	FAT
 7	hémorragie	hémorragie	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	start_char=28|end_char=38	_	_	FAT
 8	là	là	ADV	_	_	5	advmod	_	start_char=39|end_char=41	_	_	FAT
 9	dans	dans	ADP	_	_	11	case	_	start_char=42|end_char=46	_	_	FAT
-10	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	start_char=47|end_char=50	_	_	FAT
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	start_char=47|end_char=50	_	_	FAT
 11	bêtises	bêtise	NOUN	_	Gender=Fem|Number=Plur	5	obl:mod	_	start_char=51|end_char=58	_	_	FAT
 12	.	.	PUNCT	_	_	2	punct	_	start_char=59|end_char=60	_	_	FAT
 
 #sent_id = FAT <au102>
 #text = qui est ce qui range mh ?
-1	qui	qui	PRON	_	PronType=Rel	3	nsubj	_	start_char=0|end_char=3	_	_	FAT
+1	qui	qui	PRON	_	Person=3|PronType=Int	3	nsubj	_	start_char=0|end_char=3	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=4|end_char=7	_	_	FAT
-3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=8|end_char=10	_	_	FAT
+3	ce	ce	PRON	_	Gender=Masc|Person=3|PronType=Dem	0	root	_	start_char=8|end_char=10	_	_	FAT
 4	qui	qui	PRON	_	PronType=Rel	5	nsubj	_	start_char=11|end_char=14	_	_	FAT
 5	range	ranger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	start_char=15|end_char=20	_	_	FAT
 6	mh	mh	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	start_char=21|end_char=23	_	_	FAT
@@ -650,8 +644,8 @@
 #sent_id = FAT <au103>
 #text = pas toi hein .
 1	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	start_char=0|end_char=3	_	_	FAT
-2	toi	soi	PRON	_	Number=Sing|Person=2	0	root	_	start_char=4|end_char=7	_	_	FAT
-3	hein	hein	INTJ	_	_	2	discourse	_	start_char=8|end_char=12	_	_	FAT
+2	toi	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	0	root	_	start_char=4|end_char=7	_	_	FAT
+3	hein	hein	ADV	_	_	2	advmod	_	start_char=8|end_char=12	_	_	FAT
 4	.	.	PUNCT	_	_	2	punct	_	start_char=13|end_char=14	_	_	FAT
 
 #sent_id = FAT <au104>
@@ -661,12 +655,12 @@
 3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=8|end_char=10	_	_	FAT
 4	basard	basard	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=11|end_char=17	_	_	FAT
 5	et	et	CCONJ	_	_	8	cc	_	start_char=18|end_char=20	_	_	FAT
-6	après	après	ADP	_	_	8	mark	_	start_char=21|end_char=26	_	_	FAT
-7	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	8	nsubj	_	start_char=27|end_char=29	_	_	FAT
+6	après	après	ADV	_	_	8	advmod	_	start_char=21|end_char=26	_	_	FAT
+7	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	8	nsubj	_	start_char=27|end_char=29	_	_	FAT
 8	passe	passer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=30|end_char=35	_	_	FAT
 9	à	à	ADP	_	_	11	case	_	start_char=36|end_char=37	_	_	FAT
 10	autre	autre	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	start_char=38|end_char=43	_	_	FAT
-11	chose	chose	NOUN	_	Gender=Fem|Number=Sing	8	obl:arg	_	start_char=44|end_char=49	_	_	FAT
+11	chose	chose	NOUN	_	Gender=Fem|Number=Sing	8	obl:mod	_	start_char=44|end_char=49	_	_	FAT
 12	.	.	PUNCT	_	_	2	punct	_	start_char=50|end_char=51	_	_	FAT
 
 #sent_id = FAT <au105>
@@ -683,35 +677,35 @@
 
 #sent_id = CHI <au107>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au108>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au109>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au110>
 #text = ouh la .
 1	ouh	ouh	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
-2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	1	fixed	_	start_char=4|end_char=6	_	_	FAT
+2	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	obj	_	start_char=4|end_char=6	_	_	FAT
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	FAT
 
 #sent_id = FAT <au111>
 #text = on va pas tarder à manger Théophile hein .
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=5	_	_	FAT
 3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	start_char=6|end_char=9	_	_	FAT
 4	tarder	tarder	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=10|end_char=16	_	_	FAT
 5	à	à	ADP	_	_	6	mark	_	start_char=17|end_char=18	_	_	FAT
 6	manger	manger	VERB	_	VerbForm=Inf	4	xcomp	_	start_char=19|end_char=25	_	_	FAT
 7	Théophile	Théophile	PROPN	_	_	6	obj	_	start_char=26|end_char=35	_	_	FAT
-8	hein	hein	INTJ	_	_	7	flat:foreign	_	start_char=36|end_char=40	_	_	FAT
+8	hein	hein	X	_	_	7	flat:name	_	start_char=36|end_char=40	_	_	FAT
 9	.	.	PUNCT	_	_	2	punct	_	start_char=41|end_char=42	_	_	FAT
 
 #sent_id = FAT <au112>
@@ -724,12 +718,12 @@
 
 #sent_id = CHI <au113>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au114>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au115>
@@ -745,7 +739,7 @@
 
 #sent_id = CHI <au116>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au117>
@@ -755,7 +749,7 @@
 
 #sent_id = CHI <au118>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au119>
@@ -765,7 +759,7 @@
 
 #sent_id = CHI <au120>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au121>
@@ -779,26 +773,26 @@
 
 #sent_id = CHI <au123>
 #text = yyy yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
-3	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=8|end_char=10	_	_	CHI
-4	.	.	PUNCT	_	_	1	punct	_	start_char=11|end_char=12	_	_	CHI
+1	yyy	yyy	X	_	_	3	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	3	nmod	_	start_char=4|end_char=7	_	_	CHI
+3	yy	yy	X	_	_	0	root	_	start_char=8|end_char=10	_	_	CHI
+4	.	.	PUNCT	_	_	3	punct	_	start_char=11|end_char=12	_	_	CHI
 
 #sent_id = CHI <au124>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au125>
 #text = mh mh mh mh mh mh mh .
-1	mh	mh	X	_	_	7	nmod	_	start_char=0|end_char=2	_	_	FAT
-2	mh	mh	X	_	_	7	nmod	_	start_char=3|end_char=5	_	_	FAT
-3	mh	mh	X	_	_	7	nmod	_	start_char=6|end_char=8	_	_	FAT
-4	mh	mh	X	_	_	7	nmod	_	start_char=9|end_char=11	_	_	FAT
-5	mh	mh	SYM	_	_	7	nmod	_	start_char=12|end_char=14	_	_	FAT
-6	mh	mh	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	start_char=15|end_char=17	_	_	FAT
-7	mh	mh	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=18|end_char=20	_	_	FAT
-8	.	.	PUNCT	_	_	7	punct	_	start_char=21|end_char=22	_	_	FAT
+1	mh	mh	X	_	Foreign=Yes	0	root	_	start_char=0|end_char=2	_	_	FAT
+2	mh	mh	X	_	Foreign=Yes	1	flat:foreign	_	start_char=3|end_char=5	_	_	FAT
+3	mh	mh	X	_	Foreign=Yes	1	flat:foreign	_	start_char=6|end_char=8	_	_	FAT
+4	mh	mh	X	_	Foreign=Yes	1	flat:foreign	_	start_char=9|end_char=11	_	_	FAT
+5	mh	mh	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12|end_char=14	_	_	FAT
+6	mh	mh	X	_	Foreign=Yes	1	flat:foreign	_	start_char=15|end_char=17	_	_	FAT
+7	mh	mh	X	_	Foreign=Yes	1	flat:foreign	_	start_char=18|end_char=20	_	_	FAT
+8	.	.	PUNCT	_	_	1	punct	_	start_char=21|end_char=22	_	_	FAT
 
 #sent_id = CHI <au126>
 #text = .
@@ -806,7 +800,7 @@
 
 #sent_id = CHI <au127>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au128>
@@ -830,7 +824,7 @@
 
 #sent_id = FAT <au131>
 #text = on va manger .
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=5	_	_	FAT
 3	manger	manger	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=6|end_char=12	_	_	FAT
 4	.	.	PUNCT	_	_	2	punct	_	start_char=13|end_char=14	_	_	FAT
@@ -848,27 +842,27 @@
 1	oh	oh	INTJ	_	_	4	discourse	_	start_char=0|end_char=2	_	_	FAT
 2	eh	eh	INTJ	_	_	1	fixed	_	start_char=3|end_char=5	_	_	FAT
 3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=6|end_char=8	_	_	FAT
-4	yyy	yyy	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9|end_char=12	_	_	FAT
-5	non	non	ADV	_	_	4	advmod	_	start_char=13|end_char=16	_	_	FAT
-6	non	non	ADV	_	_	5	fixed	_	start_char=17|end_char=20	_	_	FAT
-7	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	start_char=21|end_char=24	_	_	FAT
-8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	start_char=25|end_char=28	_	_	FAT
-9	lunettes	lunette	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	start_char=29|end_char=37	_	_	FAT
+4	yyy	yyy	X	_	_	0	root	_	start_char=9|end_char=12	_	_	FAT
+5	non	non	ADV	_	Polarity=Neg	12	advmod	_	start_char=13|end_char=16	_	_	FAT
+6	non	non	ADV	_	Polarity=Neg	5	fixed	_	start_char=17|end_char=20	_	_	FAT
+7	pas	pas	ADV	_	Polarity=Neg	12	advmod	_	start_char=21|end_char=24	_	_	FAT
+8	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	start_char=25|end_char=28	_	_	FAT
+9	lunettes	lunette	NOUN	_	Gender=Fem|Number=Plur	12	nsubj	_	start_char=29|end_char=37	_	_	FAT
 10	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	12	nsubj	_	start_char=38|end_char=40	_	_	FAT
 11	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	obj	_	start_char=41|end_char=43	_	_	FAT
 12	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	conj	_	start_char=44|end_char=48	_	_	FAT
 13	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	obj	_	start_char=49|end_char=51	_	_	FAT
-14	Théophilou	Théophilou	PROPN	_	_	12	xcomp	_	start_char=52|end_char=62	_	_	FAT
+14	Théophilou	Théophilou	PROPN	_	_	13	appos	_	start_char=52|end_char=62	_	_	FAT
 15	.	.	PUNCT	_	_	4	punct	_	start_char=63|end_char=64	_	_	FAT
 
 #sent_id = CHI <au135>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au136>
 #text = y a plein de traces de doigts après dessus .
-1	y	y	PRON	_	_	2	expl:comp	_	start_char=0|end_char=1	_	_	FAT
+1	y	y	PRON	_	Person=3|PronType=Prs	2	expl	_	start_char=0|end_char=1	_	_	FAT
 2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=3	_	_	FAT
 3	plein	plein	ADJ	_	Gender=Masc|Number=Sing	2	obj	_	start_char=4|end_char=9	_	_	FAT
 4	de	de	ADP	_	_	5	case	_	start_char=10|end_char=12	_	_	FAT
@@ -876,12 +870,12 @@
 6	de	de	ADP	_	_	7	case	_	start_char=20|end_char=22	_	_	FAT
 7	doigts	doigt	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	start_char=23|end_char=29	_	_	FAT
 8	après	après	ADP	_	_	9	case	_	start_char=30|end_char=35	_	_	FAT
-9	dessus	dessus	NOUN	_	Gender=Masc|Number=Sing	2	obl	_	start_char=36|end_char=42	_	_	FAT
+9	dessus	dessus	NOUN	_	Gender=Masc|Number=Sing	2	obl:mod	_	start_char=36|end_char=42	_	_	FAT
 10	.	.	PUNCT	_	_	2	punct	_	start_char=43|end_char=44	_	_	FAT
 
 #sent_id = FAT <au137>
 #text = y a plein de traces de doigts .
-1	y	y	PRON	_	_	2	expl:comp	_	start_char=0|end_char=1	_	_	FAT
+1	y	y	PRON	_	Person=3|PronType=Prs	2	expl	_	start_char=0|end_char=1	_	_	FAT
 2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=3	_	_	FAT
 3	plein	plein	ADJ	_	Gender=Masc|Number=Sing	2	obj	_	start_char=4|end_char=9	_	_	FAT
 4	de	de	ADP	_	_	5	case	_	start_char=10|end_char=12	_	_	FAT
@@ -892,7 +886,7 @@
 
 #sent_id = FAT <au138>
 #text = y a plein de traces de doigts .
-1	y	y	PRON	_	_	2	expl:comp	_	start_char=0|end_char=1	_	_	FAT
+1	y	y	PRON	_	Person=3|PronType=Prs	2	expl	_	start_char=0|end_char=1	_	_	FAT
 2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=3	_	_	FAT
 3	plein	plein	ADJ	_	Gender=Masc|Number=Sing	2	obj	_	start_char=4|end_char=9	_	_	FAT
 4	de	de	ADP	_	_	5	case	_	start_char=10|end_char=12	_	_	FAT
@@ -913,7 +907,7 @@
 3	traces	trace	NOUN	_	Gender=Fem|Number=Plur	1	obl:arg	_	start_char=9|end_char=15	_	_	FAT
 4	de	de	ADP	_	_	5	case	_	start_char=16|end_char=18	_	_	FAT
 5	doigts	doigt	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	start_char=19|end_char=25	_	_	FAT
-6	ouh	ouh	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	start_char=26|end_char=29	_	_	FAT
+6	ouh	ouh	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=26|end_char=29	_	_	FAT
 7	.	.	PUNCT	_	_	1	punct	_	start_char=30|end_char=31	_	_	FAT
 
 #sent_id = CHI <au141>
@@ -922,7 +916,7 @@
 
 #sent_id = FAT <au142>
 #text = y a plein de traces de doigts .
-1	y	y	PRON	_	_	2	expl:comp	_	start_char=0|end_char=1	_	_	FAT
+1	y	y	PRON	_	Person=3|PronType=Prs	2	expl	_	start_char=0|end_char=1	_	_	FAT
 2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=3	_	_	FAT
 3	plein	plein	ADJ	_	Gender=Masc|Number=Sing	2	obj	_	start_char=4|end_char=9	_	_	FAT
 4	de	de	ADP	_	_	5	case	_	start_char=10|end_char=12	_	_	FAT
@@ -933,18 +927,18 @@
 
 #sent_id = FAT <au143>
 #text = ouhla ouh le cou !
-1	ouhla	ouhla	INTJ	_	_	2	discourse	_	start_char=0|end_char=5	_	_	FAT
-2	ouh	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=9	_	_	FAT
+1	ouhla	ouhla	X	_	_	0	root	_	start_char=0|end_char=5	_	_	FAT
+2	ouh	ouh	X	_	_	1	appos	_	start_char=6|end_char=9	_	_	FAT
 3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=10|end_char=12	_	_	FAT
-4	cou	cou	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=13|end_char=16	_	_	FAT
-5	!	!	PUNCT	_	_	2	punct	_	start_char=17|end_char=18	_	_	FAT
+4	cou	cou	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=13|end_char=16	_	_	FAT
+5	!	!	PUNCT	_	_	1	punct	_	start_char=17|end_char=18	_	_	FAT
 
 #sent_id = FAT <au144>
 #text = attention tu tiens les jambes ?
 1	attention	attention	INTJ	_	_	3	discourse	_	start_char=0|end_char=9	_	_	FAT
 2	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	3	nsubj	_	start_char=10|end_char=12	_	_	FAT
-3	tiens	tenir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13|end_char=18	_	_	FAT
-4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	start_char=19|end_char=22	_	_	FAT
+3	tiens	tenir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13|end_char=18	_	_	FAT
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	start_char=19|end_char=22	_	_	FAT
 5	jambes	jambe	NOUN	_	Gender=Fem|Number=Plur	3	obj	_	start_char=23|end_char=29	_	_	FAT
 6	?	?	PUNCT	_	_	3	punct	_	start_char=30|end_char=31	_	_	FAT
 
@@ -955,14 +949,14 @@
 
 #sent_id = CHI <au146>
 #text = miam miam .
-1	miam	miam	INTJ	_	_	0	root	_	start_char=0|end_char=4	_	_	CHI
-2	miam	miam	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	start_char=5|end_char=9	_	_	CHI
+1	miam	miam	X	_	Foreign=Yes	0	root	_	start_char=0|end_char=4	_	_	CHI
+2	miam	miam	X	_	_	1	flat:foreign	_	start_char=5|end_char=9	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=10|end_char=11	_	_	CHI
 
 #sent_id = FAT <au147>
 #text = miam miam .
-1	miam	miam	INTJ	_	_	0	root	_	start_char=0|end_char=4	_	_	FAT
-2	miam	miam	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	start_char=5|end_char=9	_	_	FAT
+1	miam	miam	X	_	Foreign=Yes	0	root	_	start_char=0|end_char=4	_	_	FAT
+2	miam	miam	X	_	_	1	flat:foreign	_	start_char=5|end_char=9	_	_	FAT
 3	.	.	PUNCT	_	_	1	punct	_	start_char=10|end_char=11	_	_	FAT
 
 #sent_id = CHI <au148>
@@ -971,17 +965,17 @@
 
 #sent_id = CHI <au149>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au150>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au151>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au152>
@@ -990,12 +984,12 @@
 
 #sent_id = CHI <au153>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au154>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au155>
@@ -1004,14 +998,14 @@
 
 #sent_id = FAT <au156>
 #text = oh lala il met tout en même temps .
-1	oh	oh	INTJ	_	_	4	discourse	_	start_char=0|end_char=2	_	_	FAT
-2	lala	lala	INTJ	_	_	1	fixed	_	start_char=3|end_char=7	_	_	FAT
+1	oh	oh	X	_	_	4	discourse	_	start_char=0|end_char=2	_	_	FAT
+2	lala	lala	X	_	_	1	fixed	_	start_char=3|end_char=7	_	_	FAT
 3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=8|end_char=10	_	_	FAT
 4	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=11|end_char=14	_	_	FAT
-5	tout	tout	ADV	_	_	6	advmod	_	start_char=15|end_char=19	_	_	FAT
-6	en	en	ADP	_	_	4	advmod	_	start_char=20|end_char=22	_	_	FAT
-7	même	même	ADJ	_	Gender=Masc|Number=Sing	6	fixed	_	start_char=23|end_char=27	_	_	FAT
-8	temps	temps	NOUN	_	Gender=Masc|Number=Sing	6	fixed	_	start_char=28|end_char=33	_	_	FAT
+5	tout	tout	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	4	obj	_	start_char=15|end_char=19	_	_	FAT
+6	en	en	ADP	_	_	8	case	_	start_char=20|end_char=22	_	_	FAT
+7	même	même	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	start_char=23|end_char=27	_	_	FAT
+8	temps	temps	NOUN	_	Gender=Masc|Number=Sing	4	obl:mod	_	start_char=28|end_char=33	_	_	FAT
 9	.	.	PUNCT	_	_	4	punct	_	start_char=34|end_char=35	_	_	FAT
 
 #sent_id = FAT <au157>
@@ -1025,15 +1019,15 @@
 
 #sent_id = FAT <au159>
 #text = c'est quoi ça ?
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	FAT
-2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=2|end_char=5	_	_	FAT
-3	quoi	quoi	PRON	_	_	4	nsubj	_	start_char=6|end_char=10	_	_	FAT
-4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=11|end_char=13	_	_	FAT
-5	?	?	PUNCT	_	_	4	punct	_	start_char=14|end_char=15	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	FAT
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	FAT
+3	quoi	quoi	PRON	_	Person=3|PronType=Int	0	root	_	start_char=6|end_char=10	_	_	FAT
+4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=11|end_char=13	_	_	FAT
+5	?	?	PUNCT	_	_	3	punct	_	start_char=14|end_char=15	_	_	FAT
 
 #sent_id = FAT <au160>
 #text = des apéricubes .
-1	des	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	FAT
+1	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	FAT
 2	apéricubes	apéricube	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=4|end_char=14	_	_	FAT
 3	.	.	PUNCT	_	_	2	punct	_	start_char=15|end_char=16	_	_	FAT
 
@@ -1045,22 +1039,22 @@
 #sent_id = FAT <au162>
 #text = ça c'est pour l'apéro .
 1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	dislocated	_	start_char=0|end_char=2	_	_	FAT
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=3|end_char=5	_	_	FAT
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=3|end_char=5	_	_	FAT
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=5|end_char=8	_	_	FAT
 4	pour	pour	ADP	_	_	6	case	_	start_char=9|end_char=13	_	_	FAT
-5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=14|end_char=16	_	_	FAT
+5	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	fixed	_	start_char=14|end_char=16	_	_	FAT
 6	apéro	apéro	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=16|end_char=21	_	_	FAT
 7	.	.	PUNCT	_	_	6	punct	_	start_char=22|end_char=23	_	_	FAT
 
 #sent_id = CHI <au163>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = CHI <au164>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au165>
@@ -1070,12 +1064,12 @@
 #sent_id = FAT <au166>
 #text = alors xxx .
 1	alors	alors	ADV	_	_	2	advmod	_	start_char=0|end_char=5	_	_	FAT
-2	xxx	xxx	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=6|end_char=9	_	_	FAT
+2	xxx	xxx	SYM	_	_	0	root	_	start_char=6|end_char=9	_	_	FAT
 3	.	.	PUNCT	_	_	2	punct	_	start_char=10|end_char=11	_	_	FAT
 
 #sent_id = CHI <au167>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au168>
@@ -1088,36 +1082,36 @@
 
 #sent_id = CHI <au170>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au171>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au172>
 #text = intéressant ça hein .
 1	intéressant	intéressant	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=11	_	_	FAT
-2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	obl	_	start_char=12|end_char=14	_	_	FAT
-3	hein	hein	ADV	_	_	2	advmod	_	start_char=15|end_char=19	_	_	FAT
+2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	iobj	_	start_char=12|end_char=14	_	_	FAT
+3	hein	hein	ADV	_	_	1	advmod	_	start_char=15|end_char=19	_	_	FAT
 4	.	.	PUNCT	_	_	1	punct	_	start_char=20|end_char=21	_	_	FAT
 
 #sent_id = FAT <au173>
 #text = ça un apéricube .
-1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=0|end_char=2	_	_	FAT
+1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	start_char=3|end_char=5	_	_	FAT
-3	apéricube	apéricube	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=6|end_char=15	_	_	FAT
+3	apéricube	apéricube	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=6|end_char=15	_	_	FAT
 4	.	.	PUNCT	_	_	3	punct	_	start_char=16|end_char=17	_	_	FAT
 
 #sent_id = FAT <au174>
 #text = mh ?
-1	mh	mh	X	_	_	0	root	_	start_char=0|end_char=2	_	_	FAT
+1	mh	mh	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	FAT
 2	?	?	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	FAT
 
 #sent_id = CHI <au175>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au176>
@@ -1129,7 +1123,7 @@
 #sent_id = FAT <au177>
 #text = mm c'est bon ?
 1	mm	mm	NOUN	_	Gender=Masc|Number=Plur	4	dislocated	_	start_char=0|end_char=2	_	_	FAT
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=3|end_char=5	_	_	FAT
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=3|end_char=5	_	_	FAT
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=5|end_char=8	_	_	FAT
 4	bon	bon	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=9|end_char=12	_	_	FAT
 5	?	?	PUNCT	_	_	4	punct	_	start_char=13|end_char=14	_	_	FAT
@@ -1140,9 +1134,9 @@
 
 #sent_id = FAT <au179>
 #text = prends avec du pain .
-1	prends	prendre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=6	_	_	FAT
+1	prends	prendre	VERB	_	Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=6	_	_	FAT
 2	avec	avec	ADP	_	_	4	case	_	start_char=7|end_char=11	_	_	FAT
-3	du	du	DET	_	Gender=Masc|Number=Sing	4	det	_	start_char=12|end_char=14	_	_	FAT
+3	du	du	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=12|end_char=14	_	_	FAT
 4	pain	pain	NOUN	_	Gender=Masc|Number=Sing	1	obl:mod	_	start_char=15|end_char=19	_	_	FAT
 5	.	.	PUNCT	_	_	1	punct	_	start_char=20|end_char=21	_	_	FAT
 
@@ -1152,23 +1146,23 @@
 
 #sent_id = FAT <au181>
 #text = attention hein n'avale pas de travers .
-1	attention	attention	INTJ	_	_	4	discourse	_	start_char=0|end_char=9	_	_	FAT
-2	hein	hein	PRON	_	Number=Sing	4	nsubj	_	start_char=10|end_char=14	_	_	FAT
+1	attention	attention	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	start_char=0|end_char=9	_	_	FAT
+2	hein	hein	ADJ	_	Gender=Fem|Number=Sing	1	amod	_	start_char=10|end_char=14	_	_	FAT
 3	n'	ne	ADV	_	Polarity=Neg	4	advmod	_	start_char=15|end_char=17	_	_	FAT
 4	avale	avaler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=17|end_char=22	_	_	FAT
 5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	start_char=23|end_char=26	_	_	FAT
-6	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	start_char=27|end_char=29	_	_	FAT
+6	de	un	DET	_	Definite=Ind|Number=Sing|PronType=Art	7	det	_	start_char=27|end_char=29	_	_	FAT
 7	travers	travers	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	start_char=30|end_char=37	_	_	FAT
 8	.	.	PUNCT	_	_	4	punct	_	start_char=38|end_char=39	_	_	FAT
 
 #sent_id = CHI <au182>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au183>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au184>
@@ -1177,14 +1171,14 @@
 
 #sent_id = FAT <au185>
 #text = tiens .
-1	tiens	tenir	INTJ	_	_	0	root	_	start_char=0|end_char=5	_	_	FAT
+1	tiens	tenir	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	FAT
 2	.	.	PUNCT	_	_	1	punct	_	start_char=6|end_char=7	_	_	FAT
 
 #sent_id = FAT <au186>
 #text = n'en mets pas de partout hein .
 1	n'	ne	ADV	_	Polarity=Neg	3	advmod	_	start_char=0|end_char=2	_	_	FAT
-2	en	en	PRON	_	Person=3	3	expl:comp	_	start_char=2|end_char=4	_	_	FAT
-3	mets	mettre	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=9	_	_	FAT
+2	en	en	PRON	_	Person=3|PronType=Prs	3	expl	_	start_char=2|end_char=4	_	_	FAT
+3	mets	mettre	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=9	_	_	FAT
 4	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	start_char=10|end_char=13	_	_	FAT
 5	de	de	ADP	_	_	6	case	_	start_char=14|end_char=16	_	_	FAT
 6	partout	partout	ADV	_	_	3	advmod	_	start_char=17|end_char=24	_	_	FAT
@@ -1209,21 +1203,19 @@
 
 #sent_id = FAT <au190>
 #text = xxx .
-1-2	xxx	_	_	_	_	_	_	_	start_char=0|end_char=3	_	_	FAT
-1	de	de	ADP	_	_	0	root	_	_	_	_	FAT
-2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	1	fixed	_	_	_	_	FAT
-3	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	FAT
+1	xxx	xxx	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
+2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	FAT
 
 #sent_id = CHI <au191>
 #text = miam miam .
-1	miam	miam	INTJ	_	_	0	root	_	start_char=0|end_char=4	_	_	CHI
-2	miam	miam	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	start_char=5|end_char=9	_	_	CHI
+1	miam	miam	X	_	Foreign=Yes	0	root	_	start_char=0|end_char=4	_	_	CHI
+2	miam	miam	X	_	_	1	flat:foreign	_	start_char=5|end_char=9	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=10|end_char=11	_	_	CHI
 
 #sent_id = FAT <au192>
 #text = miam miam !
-1	miam	miam	INTJ	_	_	0	root	_	start_char=0|end_char=4	_	_	FAT
-2	miam	miam	INTJ	_	_	1	fixed	_	start_char=5|end_char=9	_	_	FAT
+1	miam	miam	X	_	Foreign=Yes	0	root	_	start_char=0|end_char=4	_	_	FAT
+2	miam	miam	X	_	Foreign=Yes	1	flat:foreign	_	start_char=5|end_char=9	_	_	FAT
 3	!	!	PUNCT	_	_	1	punct	_	start_char=10|end_char=11	_	_	FAT
 
 #sent_id = FAT <au193>
@@ -1244,7 +1236,7 @@
 
 #sent_id = CHI <au195>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au196>
@@ -1256,20 +1248,18 @@
 #text = ah ça c'est bon hein ça ça c'est du bon ça .
 1	ah	ah	INTJ	_	_	5	discourse	_	start_char=0|end_char=2	_	_	FAT
 2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	dislocated	_	start_char=3|end_char=5	_	_	FAT
-3	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=6|end_char=8	_	_	FAT
+3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=6|end_char=8	_	_	FAT
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=8|end_char=11	_	_	FAT
 5	bon	bon	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=12|end_char=15	_	_	FAT
-6	hein	hein	INTJ	_	_	14	discourse	_	start_char=16|end_char=20	_	_	FAT
-7	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	14	dislocated	_	start_char=21|end_char=23	_	_	FAT
-8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	14	dislocated	_	start_char=24|end_char=26	_	_	FAT
-9	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	14	nsubj	_	start_char=27|end_char=29	_	_	FAT
-10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	start_char=29|end_char=32	_	_	FAT
-11-12	du	_	_	_	_	_	_	_	start_char=33|end_char=35	_	_	FAT
-11	de	de	ADP	_	_	14	case	_	_	_	_	FAT
-12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_	_	_	FAT
-13	bon	bon	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	start_char=36|end_char=39	_	_	FAT
-14	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	conj	_	start_char=40|end_char=42	_	_	FAT
-15	.	.	PUNCT	_	_	5	punct	_	start_char=43|end_char=44	_	_	FAT
+6	hein	hein	ADJ	_	Gender=Masc|Number=Sing	5	conj	_	start_char=16|end_char=20	_	_	FAT
+7	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	13	dislocated	_	start_char=21|end_char=23	_	_	FAT
+8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	13	dislocated	_	start_char=24|end_char=26	_	_	FAT
+9	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	13	nsubj	_	start_char=27|end_char=29	_	_	FAT
+10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	start_char=29|end_char=32	_	_	FAT
+11	du	du	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	start_char=33|end_char=35	_	_	FAT
+12	bon	bon	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	start_char=36|end_char=39	_	_	FAT
+13	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	conj	_	start_char=40|end_char=42	_	_	FAT
+14	.	.	PUNCT	_	_	5	punct	_	start_char=43|end_char=44	_	_	FAT
 
 #sent_id = CHI <au198>
 #text = .
@@ -1285,7 +1275,7 @@
 
 #sent_id = CHI <au201>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au202>
@@ -1303,7 +1293,7 @@
 7	pour	pour	ADP	_	_	9	mark	_	start_char=34|end_char=38	_	_	FAT
 8	faire	faire	AUX	_	VerbForm=Inf	9	aux:caus	_	start_char=39|end_char=44	_	_	FAT
 9	passer	passer	VERB	_	VerbForm=Inf	3	acl	_	start_char=45|end_char=51	_	_	FAT
-10	tout	tout	DET	_	Gender=Masc|Number=Sing	11	det	_	start_char=52|end_char=56	_	_	FAT
+10	tout	tout	ADJ	_	Gender=Masc|Number=Sing|PronType=Ind	11	amod	_	start_char=52|end_char=56	_	_	FAT
 11	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	obj:agent	_	start_char=57|end_char=59	_	_	FAT
 12	.	.	PUNCT	_	_	3	punct	_	start_char=60|end_char=61	_	_	FAT
 
@@ -1311,8 +1301,8 @@
 #text = ah voilà voilà ce qui faut pas faire Théophile .
 1	ah	ah	INTJ	_	_	2	discourse	_	start_char=0|end_char=2	_	_	FAT
 2	voilà	voilà	VERB	_	_	0	root	_	start_char=3|end_char=8	_	_	FAT
-3	voilà	voilà	VERB	_	_	2	ccomp	_	start_char=9|end_char=14	_	_	FAT
-4	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	obj	_	start_char=15|end_char=17	_	_	FAT
+3	voilà	voilà	VERB	_	_	2	parataxis	_	start_char=9|end_char=14	_	_	FAT
+4	ce	ce	PRON	_	Gender=Masc|Person=3|PronType=Dem	3	obj	_	start_char=15|end_char=17	_	_	FAT
 5	qui	qui	PRON	_	PronType=Rel	6	nsubj	_	start_char=18|end_char=21	_	_	FAT
 6	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	start_char=22|end_char=26	_	_	FAT
 7	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	start_char=27|end_char=30	_	_	FAT
@@ -1322,21 +1312,19 @@
 
 #sent_id = FAT <au205>
 #text = xxx machin hein .
-1-2	xxx	_	_	_	_	_	_	_	start_char=0|end_char=3	_	_	FAT
-1	de	de	ADP	_	_	3	case	_	_	_	_	FAT
-2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	_	_	FAT
-3	machin	machin	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=4|end_char=10	_	_	FAT
-4	hein	hein	INTJ	_	_	3	discourse	_	start_char=11|end_char=15	_	_	FAT
-5	.	.	PUNCT	_	_	3	punct	_	start_char=16|end_char=17	_	_	FAT
+1	xxx	xxx	SYM	_	_	2	nsubj	_	start_char=0|end_char=3	_	_	FAT
+2	machin	machin	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=4|end_char=10	_	_	FAT
+3	hein	hein	X	_	_	2	nmod	_	start_char=11|end_char=15	_	_	FAT
+4	.	.	PUNCT	_	_	2	punct	_	start_char=16|end_char=17	_	_	FAT
 
 #sent_id = FAT <au206>
 #text = après je suis obligé de te changer .
-1	après	après	ADV	_	_	4	advmod	_	start_char=0|end_char=5	_	_	FAT
+1	après	après	ADP	_	_	4	advmod	_	start_char=0|end_char=5	_	_	FAT
 2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj:pass	_	start_char=6|end_char=8	_	_	FAT
 3	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux:pass	_	start_char=9|end_char=13	_	_	FAT
 4	obligé	obliger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=14|end_char=20	_	_	FAT
 5	de	de	ADP	_	_	7	mark	_	start_char=21|end_char=23	_	_	FAT
-6	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	7	iobj	_	start_char=24|end_char=26	_	_	FAT
+6	te	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	7	iobj	_	start_char=24|end_char=26	_	_	FAT
 7	changer	changer	VERB	_	VerbForm=Inf	4	xcomp	_	start_char=27|end_char=34	_	_	FAT
 8	.	.	PUNCT	_	_	4	punct	_	start_char=35|end_char=36	_	_	FAT
 
@@ -1346,50 +1334,50 @@
 
 #sent_id = CHI <au208>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au209>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au210>
 #text = m !
-1	m	m	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=0|end_char=1	_	_	CHI
+1	m	mètre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=1	_	_	CHI
 2	!	!	PUNCT	_	_	1	punct	_	start_char=2|end_char=3	_	_	CHI
 
 #sent_id = FAT <au211>
 #text = à la tienne !
-1	à	à	ADP	_	_	0	root	_	start_char=0|end_char=1	_	_	FAT
-2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	1	fixed	_	start_char=2|end_char=4	_	_	FAT
-3	tienne	tenir	NOUN	_	Gender=Fem|Number=Sing	1	fixed	_	start_char=5|end_char=11	_	_	FAT
+1	à	à	ADP	_	_	3	case	_	start_char=0|end_char=1	_	_	FAT
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	start_char=2|end_char=4	_	_	FAT
+3	tienne	tenir	PRON	_	Gender=Fem|Number=Sing|Number[psor]=Plur|Person=3|Person[psor]=1|Poss=Yes|PronType=Prs	0	root	_	start_char=5|end_char=11	_	_	FAT
 4	!	!	PUNCT	_	_	3	punct	_	start_char=12|end_char=13	_	_	FAT
 
 #sent_id = CHI <au212>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = FAT <au213>
 #text = quoi ?
-1	quoi	quoi	PRON	_	_	0	root	_	start_char=0|end_char=4	_	_	FAT
+1	quoi	quoi	PRON	_	Person=3|PronType=Int	0	root	_	start_char=0|end_char=4	_	_	FAT
 2	?	?	PUNCT	_	_	1	punct	_	start_char=5|end_char=6	_	_	FAT
 
 #sent_id = CHI <au214>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au215>
 #text = ah la suite la suite .
-1	ah	ah	INTJ	_	_	5	discourse	_	start_char=0|end_char=2	_	_	FAT
+1	ah	ah	INTJ	_	_	0	root	_	start_char=0|end_char=2	_	_	FAT
 2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	start_char=3|end_char=5	_	_	FAT
-3	suite	suite	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	start_char=6|end_char=11	_	_	FAT
+3	suite	suite	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=6|end_char=11	_	_	FAT
 4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=12|end_char=14	_	_	FAT
-5	suite	suite	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=15|end_char=20	_	_	FAT
-6	.	.	PUNCT	_	_	5	punct	_	start_char=21|end_char=22	_	_	FAT
+5	suite	suite	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=15|end_char=20	_	_	FAT
+6	.	.	PUNCT	_	_	1	punct	_	start_char=21|end_char=22	_	_	FAT
 
 #sent_id = FAT <au216>
 #text = la suite .
@@ -1414,23 +1402,23 @@
 
 #sent_id = FAT <au220>
 #text = xxx quand c'est gelé à coeur .
-1	xxx	xxx	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
+1	xxx	xxx	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
 2	quand	quand	SCONJ	_	_	5	mark	_	start_char=4|end_char=9	_	_	FAT
-3	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=10|end_char=12	_	_	FAT
-4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	start_char=12|end_char=15	_	_	FAT
-5	gelé	geler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	ccomp	_	start_char=16|end_char=20	_	_	FAT
+3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj:pass	_	start_char=10|end_char=12	_	_	FAT
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	start_char=12|end_char=15	_	_	FAT
+5	gelé	geler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	start_char=16|end_char=20	_	_	FAT
 6	à	à	ADP	_	_	7	case	_	start_char=21|end_char=22	_	_	FAT
-7	coeur	coeur	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	start_char=23|end_char=28	_	_	FAT
+7	coeur	cœur	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	start_char=23|end_char=28	_	_	FAT
 8	.	.	PUNCT	_	_	1	punct	_	start_char=29|end_char=30	_	_	FAT
 
 #sent_id = FAT <au221>
 #text = non .
-1	non	non	ADV	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
+1	non	non	INTJ	_	Polarity=Neg	0	root	_	start_char=0|end_char=3	_	_	FAT
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	FAT
 
 #sent_id = CHI <au222>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au223>
@@ -1440,41 +1428,37 @@
 
 #sent_id = CHI <au224>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au225>
 #text = xxx peu cuit non ?
-1-2	xxx	_	_	_	_	_	_	_	start_char=0|end_char=3	_	_	FAT
-1	de	de	ADP	_	_	4	case	_	_	_	_	FAT
-2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	1	fixed	_	_	_	_	FAT
-3	peu	peu	ADV	_	_	1	fixed	_	start_char=4|end_char=7	_	_	FAT
-4	cuit	cuit	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=8|end_char=12	_	_	FAT
-5	non	non	ADV	_	_	4	advmod	_	start_char=13|end_char=16	_	_	FAT
-6	?	?	PUNCT	_	_	4	punct	_	start_char=17|end_char=18	_	_	FAT
+1	xxx	xxx	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	FAT
+2	peu	peu	ADV	_	_	3	advmod	_	start_char=4|end_char=7	_	_	FAT
+3	cuit	cuit	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	start_char=8|end_char=12	_	_	FAT
+4	non	non	INTJ	_	Polarity=Neg	3	discourse	_	start_char=13|end_char=16	_	_	FAT
+5	?	?	PUNCT	_	_	1	punct	_	start_char=17|end_char=18	_	_	FAT
 
 #sent_id = CHI <au226>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au227>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au228>
 #text = xxx fini faudra mettre cinq cinq minutes .
-1-2	xxx	_	_	_	_	_	_	_	start_char=0|end_char=3	_	_	FAT
-1	de	de	ADP	_	_	3	case	_	_	_	_	FAT
-2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_	_	_	FAT
-3	fini	finir	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	start_char=4|end_char=8	_	_	FAT
-4	faudra	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	start_char=9|end_char=15	_	_	FAT
-5	mettre	mettre	VERB	_	VerbForm=Inf	4	ccomp	_	start_char=16|end_char=22	_	_	FAT
-6	cinq	cinq	NUM	_	_	8	nummod	_	start_char=23|end_char=27	_	_	FAT
-7	cinq	cinq	NUM	_	_	8	nummod	_	start_char=28|end_char=32	_	_	FAT
-8	minutes	minute	NOUN	_	Gender=Fem|Number=Plur	5	obj	_	start_char=33|end_char=40	_	_	FAT
-9	.	.	PUNCT	_	_	4	punct	_	start_char=41|end_char=42	_	_	FAT
+1	xxx	xxx	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	start_char=0|end_char=3	_	_	FAT
+2	fini	fini	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	start_char=4|end_char=8	_	_	FAT
+3	faudra	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	start_char=9|end_char=15	_	_	FAT
+4	mettre	mettre	VERB	_	VerbForm=Inf	3	ccomp	_	start_char=16|end_char=22	_	_	FAT
+5	cinq	cinq	NUM	_	Number=Plur	7	nummod	_	start_char=23|end_char=27	_	_	FAT
+6	cinq	cinq	NUM	_	Number=Plur	7	nummod	_	start_char=28|end_char=32	_	_	FAT
+7	minutes	minute	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	start_char=33|end_char=40	_	_	FAT
+8	.	.	PUNCT	_	_	3	punct	_	start_char=41|end_char=42	_	_	FAT
 
 #sent_id = FAT <au229>
 #text = ça sera pas bouillant .
@@ -1496,10 +1480,10 @@
 
 #sent_id = FAT <au232>
 #text = xxx pour ta santé .
-1	xxx	xxx	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
+1	xxx	xxx	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
 2	pour	pour	ADP	_	_	4	case	_	start_char=4|end_char=8	_	_	FAT
-3	ta	ta	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	start_char=9|end_char=11	_	_	FAT
-4	santé	santé	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	start_char=12|end_char=17	_	_	FAT
+3	ta	ta	DET	_	Number=Sing|Number[psor]=Plur|Person[psor]=2|Poss=Yes|PronType=Prs	4	det	_	start_char=9|end_char=11	_	_	FAT
+4	santé	santé	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=12|end_char=17	_	_	FAT
 5	.	.	PUNCT	_	_	1	punct	_	start_char=18|end_char=19	_	_	FAT
 
 #sent_id = CHI <au233>
@@ -1509,7 +1493,7 @@
 
 #sent_id = CHI <au234>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au235>
@@ -1522,31 +1506,31 @@
 
 #sent_id = CHI <au237>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au238>
 #text = miam !
-1	miam	miam	INTJ	_	_	0	root	_	start_char=0|end_char=4	_	_	CHI
+1	miam	miam	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=4	_	_	CHI
 2	!	!	PUNCT	_	_	1	punct	_	start_char=5|end_char=6	_	_	CHI
 
 #sent_id = FAT <au239>
 #text = miam miam .
-1	miam	miam	INTJ	_	_	0	root	_	start_char=0|end_char=4	_	_	FAT
-2	miam	miam	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	start_char=5|end_char=9	_	_	FAT
+1	miam	miam	X	_	Foreign=Yes	0	root	_	start_char=0|end_char=4	_	_	FAT
+2	miam	miam	X	_	_	1	flat:foreign	_	start_char=5|end_char=9	_	_	FAT
 3	.	.	PUNCT	_	_	1	punct	_	start_char=10|end_char=11	_	_	FAT
 
 #sent_id = CHI <au240>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au241>
 #text = miam miam miam miam .
-1	miam	miam	INTJ	_	_	0	root	_	start_char=0|end_char=4	_	_	FAT
-2	miam	miam	INTJ	_	_	1	fixed	_	start_char=5|end_char=9	_	_	FAT
-3	miam	miam	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	start_char=10|end_char=14	_	_	FAT
-4	miam	miam	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=15|end_char=19	_	_	FAT
+1	miam	miam	X	_	Foreign=Yes	0	root	_	start_char=0|end_char=4	_	_	FAT
+2	miam	miam	X	_	Foreign=Yes	1	flat:foreign	_	start_char=5|end_char=9	_	_	FAT
+3	miam	miam	X	_	Foreign=Yes	1	flat:foreign	_	start_char=10|end_char=14	_	_	FAT
+4	miam	miam	X	_	Foreign=Yes	1	flat:foreign	_	start_char=15|end_char=19	_	_	FAT
 5	.	.	PUNCT	_	_	1	punct	_	start_char=20|end_char=21	_	_	FAT
 
 #sent_id = FAT <au242>
@@ -1560,23 +1544,23 @@
 
 #sent_id = FAT <au244>
 #text = c'est bon c'est bon .
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	FAT
 3	bon	bon	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=6|end_char=9	_	_	FAT
-4	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=10|end_char=12	_	_	FAT
+4	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=10|end_char=12	_	_	FAT
 5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=12|end_char=15	_	_	FAT
 6	bon	bon	ADJ	_	Gender=Masc|Number=Sing	3	conj	_	start_char=16|end_char=19	_	_	FAT
 7	.	.	PUNCT	_	_	3	punct	_	start_char=20|end_char=21	_	_	FAT
 
 #sent_id = FAT <au245>
 #text = c'est vraiment wouah la friandise ça hein .
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=2|end_char=5	_	_	FAT
 3	vraiment	vraiment	ADV	_	_	4	advmod	_	start_char=6|end_char=14	_	_	FAT
 4	wouah	wouah	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=15|end_char=20	_	_	FAT
 5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	start_char=21|end_char=23	_	_	FAT
-6	friandise	friandise	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	start_char=24|end_char=33	_	_	FAT
-7	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	obl	_	start_char=34|end_char=36	_	_	FAT
+6	friandise	friandise	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	start_char=24|end_char=33	_	_	FAT
+7	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	appos	_	start_char=34|end_char=36	_	_	FAT
 8	hein	hein	ADV	_	_	7	advmod	_	start_char=37|end_char=41	_	_	FAT
 9	.	.	PUNCT	_	_	4	punct	_	start_char=42|end_char=43	_	_	FAT
 
@@ -1586,17 +1570,17 @@
 
 #sent_id = CHI <au247>
 #text = m .
-1	m	m	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=0|end_char=1	_	_	CHI
+1	m	mètre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=1	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=2|end_char=3	_	_	CHI
 
 #sent_id = CHI <au248>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au249>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au250>
@@ -1617,7 +1601,7 @@
 
 #sent_id = CHI <au253>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au254>
@@ -1637,7 +1621,7 @@
 
 #sent_id = FAT <au256>
 #text = c'est bon .
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	FAT
 3	bon	bon	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=6|end_char=9	_	_	FAT
 4	.	.	PUNCT	_	_	3	punct	_	start_char=10|end_char=11	_	_	FAT
@@ -1645,33 +1629,33 @@
 #sent_id = FAT <au257>
 #text = tu vas trouver ça trop chaud moi à mon avis .
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
-2	vas	vair	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=6	_	_	FAT
+2	vas	aller	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=6	_	_	FAT
 3	trouver	trouver	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=7|end_char=14	_	_	FAT
 4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	obj	_	start_char=15|end_char=17	_	_	FAT
 5	trop	trop	ADV	_	_	6	advmod	_	start_char=18|end_char=22	_	_	FAT
 6	chaud	chaud	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	start_char=23|end_char=28	_	_	FAT
-7	moi	soi	PRON	_	Number=Sing|Person=1	3	obl	_	start_char=29|end_char=32	_	_	FAT
+7	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nmod	_	start_char=29|end_char=32	_	_	FAT
 8	à	à	ADP	_	_	10	case	_	start_char=33|end_char=34	_	_	FAT
-9	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	10	det	_	start_char=35|end_char=38	_	_	FAT
-10	avis	avis	NOUN	_	Gender=Masc|Number=Sing	3	obl:arg	_	start_char=39|end_char=43	_	_	FAT
+9	mon	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=1|Poss=Yes|PronType=Prs	10	det	_	start_char=35|end_char=38	_	_	FAT
+10	avis	avis	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	start_char=39|end_char=43	_	_	FAT
 11	.	.	PUNCT	_	_	2	punct	_	start_char=44|end_char=45	_	_	FAT
 
 #sent_id = FAT <au258>
 #text = t'exagères Théophile .
 1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	2	iobj	_	start_char=0|end_char=2	_	_	FAT
-2	exagères	exagérer	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=10	_	_	FAT
-3	Théophile	Théophile	PROPN	_	_	2	obj	_	start_char=11|end_char=20	_	_	FAT
+2	exagères	exager	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=10	_	_	FAT
+3	Théophile	Théophile	PROPN	_	_	2	nsubj	_	start_char=11|end_char=20	_	_	FAT
 4	.	.	PUNCT	_	_	2	punct	_	start_char=21|end_char=22	_	_	FAT
 
 #sent_id = FAT <au259>
 #text = t'exagères c'est pas trop chaud .
 1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	2	iobj	_	start_char=0|end_char=2	_	_	FAT
-2	exagères	exagérer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=10	_	_	FAT
-3	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=11|end_char=13	_	_	FAT
+2	exagères	exager	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	7	dislocated	_	start_char=2|end_char=10	_	_	FAT
+3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=11|end_char=13	_	_	FAT
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=13|end_char=16	_	_	FAT
 5	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	start_char=17|end_char=20	_	_	FAT
 6	trop	trop	ADV	_	_	7	advmod	_	start_char=21|end_char=25	_	_	FAT
-7	chaud	chaud	ADJ	_	Gender=Masc|Number=Sing	2	ccomp	_	start_char=26|end_char=31	_	_	FAT
+7	chaud	chaud	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=26|end_char=31	_	_	FAT
 8	.	.	PUNCT	_	_	7	punct	_	start_char=32|end_char=33	_	_	FAT
 
 #sent_id = CHI <au260>
@@ -1680,10 +1664,10 @@
 
 #sent_id = FAT <au261>
 #text = ohlala mais là dessus t'es délicat !
-1	ohlala	ohlala	INTJ	_	_	7	discourse	_	start_char=0|end_char=6	_	_	FAT
+1	ohlala	ohlala	X	_	_	7	discourse	_	start_char=0|end_char=6	_	_	FAT
 2	mais	mais	CCONJ	_	_	7	cc	_	start_char=7|end_char=11	_	_	FAT
 3	là	là	ADV	_	_	7	advmod	_	start_char=12|end_char=14	_	_	FAT
-4	dessus	dessus	ADV	_	_	7	advmod	_	start_char=15|end_char=21	_	_	FAT
+4	dessus	dessus	ADV	_	_	3	advmod	_	start_char=15|end_char=21	_	_	FAT
 5	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	7	iobj	_	start_char=22|end_char=24	_	_	FAT
 6	es	être	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=24|end_char=26	_	_	FAT
 7	délicat	délicat	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=27|end_char=34	_	_	FAT
@@ -1691,18 +1675,18 @@
 
 #sent_id = CHI <au262>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au263>
 #text = fou ça .
 1	fou	fou	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	start_char=0|end_char=3	_	_	FAT
 2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=4|end_char=6	_	_	FAT
-3	.	.	PUNCT	_	_	2	punct	_	start_char=7|end_char=8	_	_	FAT
+3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	FAT
 
 #sent_id = CHI <au264>
 #text = moi .
-1	moi	soi	PRON	_	Number=Sing|Person=1	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au265>
@@ -1715,11 +1699,11 @@
 
 #sent_id = FAT <au267>
 #text = vas y allez allez .
-1	vas	vair	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=3	_	_	FAT
-2	y	y	PRON	_	_	3	iobj	_	start_char=4|end_char=5	_	_	FAT
-3	allez	aller	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=11	_	_	FAT
-4	allez	aller	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	ccomp	_	start_char=12|end_char=17	_	_	FAT
-5	.	.	PUNCT	_	_	1	punct	_	start_char=18|end_char=19	_	_	FAT
+1	vas	vas	INTJ	_	_	3	discourse	_	start_char=0|end_char=3	_	_	FAT
+2	y	y	PRON	_	Person=3|PronType=Prs	3	iobj	_	start_char=4|end_char=5	_	_	FAT
+3	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=11	_	_	FAT
+4	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	xcomp	_	start_char=12|end_char=17	_	_	FAT
+5	.	.	PUNCT	_	_	3	punct	_	start_char=18|end_char=19	_	_	FAT
 
 #sent_id = CHI <au268>
 #text = .
@@ -1728,8 +1712,8 @@
 #sent_id = FAT <au269>
 #text = mais non c'est pas trop chaud .
 1	mais	mais	CCONJ	_	_	7	cc	_	start_char=0|end_char=4	_	_	FAT
-2	non	non	ADV	_	_	7	advmod	_	start_char=5|end_char=8	_	_	FAT
-3	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=9|end_char=11	_	_	FAT
+2	non	non	INTJ	_	Polarity=Neg	7	discourse	_	start_char=5|end_char=8	_	_	FAT
+3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=9|end_char=11	_	_	FAT
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=11|end_char=14	_	_	FAT
 5	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	start_char=15|end_char=18	_	_	FAT
 6	trop	trop	ADV	_	_	7	advmod	_	start_char=19|end_char=23	_	_	FAT
@@ -1748,8 +1732,8 @@
 #sent_id = FAT <au272>
 #text = allez goûte regoûte .
 1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	FAT
-2	goûte	goûter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	nsubj	_	start_char=6|end_char=11	_	_	FAT
-3	regoûte	regoûte	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=12|end_char=19	_	_	FAT
+2	goûte	goûter	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=11	_	_	FAT
+3	regoûte	regoûter	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=12|end_char=19	_	_	FAT
 4	.	.	PUNCT	_	_	1	punct	_	start_char=20|end_char=21	_	_	FAT
 
 #sent_id = CHI <au273>
@@ -1758,7 +1742,7 @@
 
 #sent_id = FAT <au274>
 #text = c'est pas trop chaud je te dis .
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=2|end_char=5	_	_	FAT
 3	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	start_char=6|end_char=9	_	_	FAT
 4	trop	trop	ADV	_	_	5	advmod	_	start_char=10|end_char=14	_	_	FAT
@@ -1776,18 +1760,18 @@
 #text = traumatisé à vie là .
 1	traumatisé	traumatiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=0|end_char=10	_	_	FAT
 2	à	à	ADP	_	_	3	case	_	start_char=11|end_char=12	_	_	FAT
-3	vie	vie	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	start_char=13|end_char=16	_	_	FAT
+3	vie	vie	NOUN	_	Gender=Fem|Number=Sing	1	obl:mod	_	start_char=13|end_char=16	_	_	FAT
 4	là	là	ADV	_	_	1	advmod	_	start_char=17|end_char=19	_	_	FAT
 5	.	.	PUNCT	_	_	1	punct	_	start_char=20|end_char=21	_	_	FAT
 
 #sent_id = CHI <au277>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au278>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au279>
@@ -1796,25 +1780,25 @@
 2	utiliser	utiliser	VERB	_	VerbForm=Inf	1	ccomp	_	start_char=5|end_char=13	_	_	FAT
 3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=14|end_char=16	_	_	FAT
 4	ruse	ruse	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=17|end_char=21	_	_	FAT
-5	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=22|end_char=24	_	_	FAT
+5	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=22|end_char=24	_	_	FAT
 6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=24|end_char=27	_	_	FAT
 7	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	conj	_	start_char=28|end_char=30	_	_	FAT
 8	?	?	PUNCT	_	_	1	punct	_	start_char=31|end_char=32	_	_	FAT
 
 #sent_id = CHI <au280>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au281>
 #text = tu vois ?
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
-2	vois	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	FAT
+2	vois	voir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	FAT
 3	?	?	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	FAT
 
 #sent_id = FAT <au282>
 #text = ben j'le mets au dessus du gratin .
-1	ben	ben	INTJ	_	_	4	discourse	_	start_char=0|end_char=3	_	_	FAT
+1	ben	ben	X	_	_	4	nsubj	_	start_char=0|end_char=3	_	_	FAT
 2	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	start_char=4|end_char=6	_	_	FAT
 3	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	start_char=6|end_char=8	_	_	FAT
 4	mets	mettre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9|end_char=13	_	_	FAT
@@ -1857,22 +1841,22 @@
 
 #sent_id = FAT <au286>
 #text = non ?
-1	non	non	ADV	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
+1	non	non	INTJ	_	Polarity=Neg	0	root	_	start_char=0|end_char=3	_	_	FAT
 2	?	?	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	FAT
 
 #sent_id = CHI <au287>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au288>
 #text = c'est du Picard quand même .
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=2|end_char=5	_	_	FAT
 3-4	du	_	_	_	_	_	_	_	start_char=6|end_char=8	_	_	FAT
 3	de	de	ADP	_	_	5	case	_	_	_	_	FAT
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	_	_	FAT
-5	Picard	Picard	PROPN	_	_	0	root	_	start_char=9|end_char=15	_	_	FAT
+5	Picard	Picard	PROPN	_	Gender=Masc|Number=Sing	0	root	_	start_char=9|end_char=15	_	_	FAT
 6	quand	quand	SCONJ	_	_	5	advmod	_	start_char=16|end_char=21	_	_	FAT
 7	même	même	ADV	_	_	6	fixed	_	start_char=22|end_char=26	_	_	FAT
 8	.	.	PUNCT	_	_	5	punct	_	start_char=27|end_char=28	_	_	FAT
@@ -1891,7 +1875,7 @@
 
 #sent_id = CHI <au292>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au293>
@@ -1901,60 +1885,60 @@
 
 #sent_id = FAT <au294>
 #text = ouais mais enfin c'est un peu un peu du cinéma quand même tout ça .
-1	ouais	ouais	INTJ	_	_	0	root	_	start_char=0|end_char=5	_	_	FAT
-2	mais	mais	CCONJ	_	_	12	cc	_	start_char=6|end_char=10	_	_	FAT
-3	enfin	enfin	ADV	_	_	1	advmod	_	start_char=11|end_char=16	_	_	FAT
-4	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	12	nsubj	_	start_char=17|end_char=19	_	_	FAT
-5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	start_char=19|end_char=22	_	_	FAT
+1	ouais	ouais	INTJ	_	_	5	discourse	_	start_char=0|end_char=5	_	_	FAT
+2	mais	mais	CCONJ	_	_	5	cc	_	start_char=6|end_char=10	_	_	FAT
+3	enfin	enfin	ADV	_	_	5	advmod	_	start_char=11|end_char=16	_	_	FAT
+4	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=17|end_char=19	_	_	FAT
+5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=19|end_char=22	_	_	FAT
 6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	advmod	_	start_char=23|end_char=25	_	_	FAT
-7	peu	peu	ADV	_	_	6	fixed	_	start_char=26|end_char=29	_	_	FAT
-8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	advmod	_	start_char=30|end_char=32	_	_	FAT
-9	peu	peu	ADV	_	_	6	fixed	_	start_char=33|end_char=36	_	_	FAT
+7	peu	peu	NOUN	_	_	6	fixed	_	start_char=26|end_char=29	_	_	FAT
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	advmod	_	start_char=30|end_char=32	_	_	FAT
+9	peu	peu	NOUN	_	_	6	fixed	_	start_char=33|end_char=36	_	_	FAT
 10-11	du	_	_	_	_	_	_	_	start_char=37|end_char=39	_	_	FAT
 10	de	de	ADP	_	_	12	case	_	_	_	_	FAT
 11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	_	_	FAT
-12	cinéma	cinéma	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	start_char=40|end_char=46	_	_	FAT
+12	cinéma	cinéma	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	start_char=40|end_char=46	_	_	FAT
 13	quand	quand	SCONJ	_	_	16	case	_	start_char=47|end_char=52	_	_	FAT
 14	même	même	ADV	_	_	13	fixed	_	start_char=53|end_char=57	_	_	FAT
-15	tout	tout	DET	_	Gender=Masc|Number=Sing	16	det	_	start_char=58|end_char=62	_	_	FAT
-16	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	advcl	_	start_char=63|end_char=65	_	_	FAT
-17	.	.	PUNCT	_	_	12	punct	_	start_char=66|end_char=67	_	_	FAT
+15	tout	tout	ADJ	_	Gender=Masc|Number=Sing|PronType=Ind	16	amod	_	start_char=58|end_char=62	_	_	FAT
+16	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	obl:mod	_	start_char=63|end_char=65	_	_	FAT
+17	.	.	PUNCT	_	_	5	punct	_	start_char=66|end_char=67	_	_	FAT
 
 #sent_id = FAT <au295>
 #text = c'est qu'on est en plein dedans mais ...
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	advmod	_	start_char=0|end_char=2	_	_	FAT
-2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	start_char=2|end_char=5	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	expl:subj	_	start_char=0|end_char=2	_	_	FAT
+2	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=5	_	_	FAT
 3	qu'	que	SCONJ	_	_	8	mark	_	start_char=6|end_char=9	_	_	FAT
-4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	8	nsubj	_	start_char=9|end_char=11	_	_	FAT
+4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	8	nsubj	_	start_char=9|end_char=11	_	_	FAT
 5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	start_char=12|end_char=15	_	_	FAT
 6	en	en	ADP	_	_	8	case	_	start_char=16|end_char=18	_	_	FAT
 7	plein	plein	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	start_char=19|end_char=24	_	_	FAT
-8	dedans	dedans	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=25|end_char=31	_	_	FAT
+8	dedans	dedans	NOUN	_	Gender=Masc|Number=Sing	2	ccomp	_	start_char=25|end_char=31	_	_	FAT
 9	mais	mais	CCONJ	_	_	8	cc	_	start_char=32|end_char=36	_	_	FAT
-10	...	...	PUNCT	_	_	8	punct	_	start_char=37|end_char=40	_	_	FAT
+10	...	...	PUNCT	_	_	2	punct	_	start_char=37|end_char=40	_	_	FAT
 
 #sent_id = CHI <au296>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au297>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au298>
 #text = c'est bon ça hein ?
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	FAT
 3	bon	bon	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=6|end_char=9	_	_	FAT
 4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=10|end_char=12	_	_	FAT
-5	hein	hein	ADV	_	_	4	advmod	_	start_char=13|end_char=17	_	_	FAT
+5	hein	hein	ADV	_	_	3	advmod	_	start_char=13|end_char=17	_	_	FAT
 6	?	?	PUNCT	_	_	3	punct	_	start_char=18|end_char=19	_	_	FAT
 
 #sent_id = CHI <au299>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au300>
@@ -1964,7 +1948,7 @@
 
 #sent_id = FAT <au301>
 #text = on est lancé .
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj:pass	_	start_char=0|end_char=2	_	_	FAT
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	3	nsubj:pass	_	start_char=0|end_char=2	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	start_char=3|end_char=6	_	_	FAT
 3	lancé	lancer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=7|end_char=12	_	_	FAT
 4	.	.	PUNCT	_	_	3	punct	_	start_char=13|end_char=14	_	_	FAT
@@ -1983,8 +1967,8 @@
 1	mais	mais	CCONJ	_	_	2	cc	_	start_char=0|end_char=4	_	_	FAT
 2	arrête	arrêter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=11	_	_	FAT
 3	mais	mais	CCONJ	_	_	9	cc	_	start_char=12|end_char=16	_	_	FAT
-4	non	non	ADV	_	_	9	advmod	_	start_char=17|end_char=20	_	_	FAT
-5	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=21|end_char=23	_	_	FAT
+4	non	non	INTJ	_	Polarity=Neg	9	discourse	_	start_char=17|end_char=20	_	_	FAT
+5	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=21|end_char=23	_	_	FAT
 6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	start_char=23|end_char=26	_	_	FAT
 7	pas	pas	ADV	_	Polarity=Neg	9	advmod	_	start_char=27|end_char=30	_	_	FAT
 8	trop	trop	ADV	_	_	9	advmod	_	start_char=31|end_char=35	_	_	FAT
@@ -2002,8 +1986,9 @@
 
 #sent_id = FAT <au307>
 #text = t'exagères .
-1	t'exagères	t'exagère	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=0|end_char=10	_	_	FAT
-2	.	.	PUNCT	_	_	1	punct	_	start_char=11|end_char=12	_	_	FAT
+1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	2	iobj	_	start_char=0|end_char=2	_	_	FAT
+2	exagères	exager	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=10	_	_	FAT
+3	.	.	PUNCT	_	_	2	punct	_	start_char=11|end_char=12	_	_	FAT
 
 #sent_id = CHI <au308>
 #text = .
@@ -2012,8 +1997,8 @@
 #sent_id = FAT <au309>
 #text = t'exagères Théophile .
 1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	2	iobj	_	start_char=0|end_char=2	_	_	FAT
-2	exagères	exagérer	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=10	_	_	FAT
-3	Théophile	Théophile	PROPN	_	_	2	obj	_	start_char=11|end_char=20	_	_	FAT
+2	exagères	exager	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=10	_	_	FAT
+3	Théophile	Théophile	PROPN	_	_	2	nsubj	_	start_char=11|end_char=20	_	_	FAT
 4	.	.	PUNCT	_	_	2	punct	_	start_char=21|end_char=22	_	_	FAT
 
 #sent_id = CHI <au310>
@@ -2035,7 +2020,7 @@
 
 #sent_id = FAT <au314>
 #text = c'est pas brûlant .
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=2|end_char=5	_	_	FAT
 3	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	start_char=6|end_char=9	_	_	FAT
 4	brûlant	brûler	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=10|end_char=17	_	_	FAT
@@ -2043,34 +2028,34 @@
 
 #sent_id = CHI <au315>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au316>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au317>
 #text = qu'est ce que t'es délicat Théophile .
-1	qu'	que	PRON	_	PronType=Int	0	root	_	start_char=0|end_char=3	_	_	FAT
+1	qu'	que	PRON	_	Person=3|PronType=Int	0	root	_	start_char=0|end_char=3	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	start_char=3|end_char=6	_	_	FAT
-3	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	expl:subj	_	start_char=7|end_char=9	_	_	FAT
-4	que	que	PRON	_	PronType=Rel	7	nsubj	_	start_char=10|end_char=13	_	_	FAT
+3	ce	ce	PRON	_	Gender=Masc|Person=3|PronType=Dem	1	expl:subj	_	start_char=7|end_char=9	_	_	FAT
+4	que	que	PRON	_	PronType=Rel	7	mark	_	start_char=10|end_char=13	_	_	FAT
 5	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	7	iobj	_	start_char=14|end_char=16	_	_	FAT
-6	es	être	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=16|end_char=18	_	_	FAT
+6	es	être	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=16|end_char=18	_	_	FAT
 7	délicat	délicat	ADJ	_	Gender=Masc|Number=Sing	3	acl:relcl	_	start_char=19|end_char=26	_	_	FAT
-8	Théophile	Théophile	PROPN	_	_	4	nsubj	_	start_char=27|end_char=36	_	_	FAT
+8	Théophile	Théophile	PROPN	_	_	7	nsubj	_	start_char=27|end_char=36	_	_	FAT
 9	.	.	PUNCT	_	_	1	punct	_	start_char=37|end_char=38	_	_	FAT
 
 #sent_id = CHI <au318>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au319>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au320>
@@ -2091,7 +2076,7 @@
 
 #sent_id = CHI <au322>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au323>
@@ -2100,7 +2085,7 @@
 
 #sent_id = FAT <au324>
 #text = comprends pas .
-1	comprends	comprendre	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=9	_	_	FAT
+1	comprends	comprendre	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=9	_	_	FAT
 2	pas	pas	ADV	_	Polarity=Neg	1	advmod	_	start_char=10|end_char=13	_	_	FAT
 3	.	.	PUNCT	_	_	1	punct	_	start_char=14|end_char=15	_	_	FAT
 
@@ -2117,7 +2102,7 @@
 5	côté	côté	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	start_char=15|end_char=19	_	_	FAT
 6	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	cop	_	start_char=20|end_char=25	_	_	FAT
 7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	advmod	_	start_char=26|end_char=28	_	_	FAT
-8	peu	peu	ADV	_	_	7	fixed	_	start_char=29|end_char=32	_	_	FAT
+8	peu	peu	NOUN	_	_	7	fixed	_	start_char=29|end_char=32	_	_	FAT
 9	plus	plus	ADV	_	_	10	advmod	_	start_char=33|end_char=37	_	_	FAT
 10	chaud	chaud	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=38|end_char=43	_	_	FAT
 11	.	.	PUNCT	_	_	10	punct	_	start_char=44|end_char=45	_	_	FAT
@@ -2138,7 +2123,7 @@
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=3|end_char=6	_	_	FAT
 3	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	start_char=7|end_char=10	_	_	FAT
 4	chaud	chaud	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=11|end_char=16	_	_	FAT
-5	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	fixed	_	start_char=17|end_char=22	_	_	FAT
+5	celui	celui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	obl:mod	_	start_char=17|end_char=22	_	_	FAT
 6	là	là	ADV	_	_	5	advmod	_	start_char=23|end_char=25	_	_	FAT
 7	.	.	PUNCT	_	_	4	punct	_	start_char=26|end_char=27	_	_	FAT
 
@@ -2148,7 +2133,7 @@
 
 #sent_id = CHI <au331>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au332>
@@ -2162,12 +2147,12 @@
 
 #sent_id = CHI <au333>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au334>
 #text = non .
-1	non	non	ADV	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
+1	non	non	INTJ	_	Polarity=Neg	0	root	_	start_char=0|end_char=3	_	_	FAT
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	FAT
 
 #sent_id = CHI <au335>
@@ -2177,7 +2162,7 @@
 #sent_id = FAT <au336>
 #text = ah mon avis euh ...
 1	ah	ah	INTJ	_	_	3	discourse	_	start_char=0|end_char=2	_	_	FAT
-2	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	start_char=3|end_char=6	_	_	FAT
+2	mon	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=1|Poss=Yes|PronType=Prs	3	det	_	start_char=3|end_char=6	_	_	FAT
 3	avis	avis	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=7|end_char=11	_	_	FAT
 4	euh	euh	INTJ	_	_	3	discourse	_	start_char=12|end_char=15	_	_	FAT
 5	...	...	PUNCT	_	_	3	punct	_	start_char=16|end_char=19	_	_	FAT
@@ -2188,10 +2173,8 @@
 
 #sent_id = FAT <au338>
 #text = xxx .
-1-2	xxx	_	_	_	_	_	_	_	start_char=0|end_char=3	_	_	FAT
-1	de	de	ADP	_	_	0	root	_	_	_	_	FAT
-2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	1	fixed	_	_	_	_	FAT
-3	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	FAT
+1	xxx	xxx	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
+2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	FAT
 
 #sent_id = FAT <au339>
 #text = ça brûle pas Théophile .
@@ -2237,12 +2220,12 @@
 
 #sent_id = FAT <au347>
 #text = bah t'auras rien d'autre .
-1	bah	bah	ADV	_	Polarity=Neg	3	advmod	_	start_char=0|end_char=3	_	_	FAT
+1	bah	bah	INTJ	_	_	3	discourse	_	start_char=0|end_char=3	_	_	FAT
 2	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	3	iobj	_	start_char=4|end_char=6	_	_	FAT
 3	auras	avoir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=11	_	_	FAT
-4	rien	rien	PRON	_	Number=Sing	3	obj	_	start_char=12|end_char=16	_	_	FAT
+4	rien	rien	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Neg	3	obj	_	start_char=12|end_char=16	_	_	FAT
 5	d'	de	ADP	_	_	6	case	_	start_char=17|end_char=19	_	_	FAT
-6	autre	autre	PRON	_	Number=Sing	4	nmod	_	start_char=19|end_char=24	_	_	FAT
+6	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	4	nmod	_	start_char=19|end_char=24	_	_	FAT
 7	.	.	PUNCT	_	_	3	punct	_	start_char=25|end_char=26	_	_	FAT
 
 #sent_id = CHI <au348>
@@ -2262,16 +2245,16 @@
 
 #sent_id = FAT <au351>
 #text = t'es un petit peu dans l'exagération là .
-1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	2	iobj	_	start_char=0|end_char=2	_	_	FAT
-2	es	être	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=4	_	_	FAT
+1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	8	nsubj	_	start_char=0|end_char=2	_	_	FAT
+2	es	être	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	8	cop	_	start_char=2|end_char=4	_	_	FAT
 3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	advmod	_	start_char=5|end_char=7	_	_	FAT
-4	petit	petit	ADJ	_	Gender=Masc|Number=Sing	3	fixed	_	start_char=8|end_char=13	_	_	FAT
-5	peu	peu	ADV	_	_	3	fixed	_	start_char=14|end_char=17	_	_	FAT
+4	petit	petit	ADJ	_	Gender=Masc|Number=Sing	8	advmod	_	start_char=8|end_char=13	_	_	FAT
+5	peu	peu	NOUN	_	_	3	fixed	_	start_char=14|end_char=17	_	_	FAT
 6	dans	dans	ADP	_	_	8	case	_	start_char=18|end_char=22	_	_	FAT
-7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	start_char=23|end_char=25	_	_	FAT
-8	exagération	exagération	NOUN	_	Gender=Fem|Number=Sing	2	obl:mod	_	start_char=25|end_char=36	_	_	FAT
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	start_char=23|end_char=25	_	_	FAT
+8	exagération	exagération	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=25|end_char=36	_	_	FAT
 9	là	là	ADV	_	_	8	advmod	_	start_char=37|end_char=39	_	_	FAT
-10	.	.	PUNCT	_	_	2	punct	_	start_char=40|end_char=41	_	_	FAT
+10	.	.	PUNCT	_	_	8	punct	_	start_char=40|end_char=41	_	_	FAT
 
 #sent_id = CHI <au352>
 #text = .
@@ -2279,17 +2262,17 @@
 
 #sent_id = FAT <au353>
 #text = tiens pour être sûr que ça refroidisse c'est ça ?
-1	tiens	tenir	INTJ	_	_	10	discourse	_	start_char=0|end_char=5	_	_	FAT
+1	tiens	tenir	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	FAT
 2	pour	pour	ADP	_	_	4	mark	_	start_char=6|end_char=10	_	_	FAT
 3	être	être	AUX	_	VerbForm=Inf	4	cop	_	start_char=11|end_char=15	_	_	FAT
-4	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	1	ccomp	_	start_char=16|end_char=19	_	_	FAT
+4	sûr	sûr	ADJ	_	Gender=Masc|Number=Sing	1	xcomp	_	start_char=16|end_char=19	_	_	FAT
 5	que	que	SCONJ	_	_	7	mark	_	start_char=20|end_char=23	_	_	FAT
 6	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=24|end_char=26	_	_	FAT
-7	refroidisse	refroidir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	csubj	_	start_char=27|end_char=38	_	_	FAT
-8	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	10	nsubj	_	start_char=39|end_char=41	_	_	FAT
+7	refroidisse	refroidir	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	start_char=27|end_char=38	_	_	FAT
+8	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	nsubj	_	start_char=39|end_char=41	_	_	FAT
 9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	start_char=41|end_char=44	_	_	FAT
-10	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=45|end_char=47	_	_	FAT
-11	?	?	PUNCT	_	_	10	punct	_	start_char=48|end_char=49	_	_	FAT
+10	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	conj	_	start_char=45|end_char=47	_	_	FAT
+11	?	?	PUNCT	_	_	1	punct	_	start_char=48|end_char=49	_	_	FAT
 
 #sent_id = FAT <au354>
 #text = hein ?
@@ -2302,10 +2285,10 @@
 
 #sent_id = FAT <au356>
 #text = allez c'est froid maintenant juré .
-1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	FAT
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=6|end_char=8	_	_	FAT
+1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	csubj	_	start_char=0|end_char=5	_	_	FAT
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=6|end_char=8	_	_	FAT
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=8|end_char=11	_	_	FAT
-4	froid	froid	ADJ	_	Gender=Masc|Number=Sing	1	conj	_	start_char=12|end_char=17	_	_	FAT
+4	froid	froid	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=12|end_char=17	_	_	FAT
 5	maintenant	maintenant	ADV	_	_	6	advmod	_	start_char=18|end_char=28	_	_	FAT
 6	juré	jurer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	conj	_	start_char=29|end_char=33	_	_	FAT
 7	.	.	PUNCT	_	_	4	punct	_	start_char=34|end_char=35	_	_	FAT
@@ -2315,14 +2298,14 @@
 1	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	FAT
 3	goûter	goûter	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=8|end_char=14	_	_	FAT
-4	chaque	chaque	DET	_	Gender=Fem|Number=Sing	5	det	_	start_char=15|end_char=21	_	_	FAT
-5	bouchée	bouchée	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=22|end_char=29	_	_	FAT
+4	chaque	chaque	DET	_	Number=Sing|PronType=Ind	5	det	_	start_char=15|end_char=21	_	_	FAT
+5	bouchée	bouchée	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	start_char=22|end_char=29	_	_	FAT
 6	.	.	PUNCT	_	_	2	punct	_	start_char=30|end_char=31	_	_	FAT
 
 #sent_id = FAT <au358>
 #text = ah c'est bon quand même .
 1	ah	ah	INTJ	_	_	4	discourse	_	start_char=0|end_char=2	_	_	FAT
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=3|end_char=5	_	_	FAT
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=3|end_char=5	_	_	FAT
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=5|end_char=8	_	_	FAT
 4	bon	bon	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=9|end_char=12	_	_	FAT
 5	quand	quand	SCONJ	_	_	4	advmod	_	start_char=13|end_char=18	_	_	FAT
@@ -2341,7 +2324,7 @@
 
 #sent_id = FAT <au361>
 #text = pff .
-1	pff	pff	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
+1	pff	pff	X	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	FAT
 
 #sent_id = CHI <au362>
@@ -2354,7 +2337,7 @@
 2	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	iobj	_	start_char=3|end_char=5	_	_	FAT
 3	es	être	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=5|end_char=7	_	_	FAT
 4	revanchard	revanchard	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=8|end_char=18	_	_	FAT
-5	hein	hein	INTJ	_	_	4	discourse	_	start_char=19|end_char=23	_	_	FAT
+5	hein	hein	ADV	_	_	4	advmod	_	start_char=19|end_char=23	_	_	FAT
 6	!	!	PUNCT	_	_	4	punct	_	start_char=24|end_char=25	_	_	FAT
 
 #sent_id = CHI <au364>
@@ -2374,38 +2357,38 @@
 #text = t'as rien mangé .
 1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	iobj	_	start_char=0|end_char=2	_	_	FAT
 2	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	4	aux:tense	_	start_char=2|end_char=4	_	_	FAT
-3	rien	rien	PRON	_	Number=Sing	4	obj	_	start_char=5|end_char=9	_	_	FAT
+3	rien	rien	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Neg	4	obj	_	start_char=5|end_char=9	_	_	FAT
 4	mangé	manger	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=10|end_char=15	_	_	FAT
 5	.	.	PUNCT	_	_	4	punct	_	start_char=16|end_char=17	_	_	FAT
 
 #sent_id = FAT <au368>
 #text = t'es un peu crevé je pense .
-1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	7	iobj	_	start_char=0|end_char=2	_	_	FAT
+1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	5	iobj	_	start_char=0|end_char=2	_	_	FAT
 2	es	être	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=2|end_char=4	_	_	FAT
 3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	advmod	_	start_char=5|end_char=7	_	_	FAT
-4	peu	peu	ADV	_	_	3	fixed	_	start_char=8|end_char=11	_	_	FAT
-5	crevé	crevé	ADJ	_	Gender=Masc|Number=Sing	7	advcl	_	start_char=12|end_char=17	_	_	FAT
+4	peu	peu	NOUN	_	_	3	fixed	_	start_char=8|end_char=11	_	_	FAT
+5	crevé	crever	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=12|end_char=17	_	_	FAT
 6	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	7	nsubj	_	start_char=18|end_char=20	_	_	FAT
-7	pense	penser	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=21|end_char=26	_	_	FAT
-8	.	.	PUNCT	_	_	7	punct	_	start_char=27|end_char=28	_	_	FAT
+7	pense	penser	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	parataxis	_	start_char=21|end_char=26	_	_	FAT
+8	.	.	PUNCT	_	_	5	punct	_	start_char=27|end_char=28	_	_	FAT
 
 #sent_id = FAT <au369>
 #text = un peu de fatigue là quand ça ça vire au n'importe quoi là .
 1	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	0	root	_	start_char=0|end_char=2	_	_	FAT
-2	peu	peu	ADV	_	_	1	fixed	_	start_char=3|end_char=6	_	_	FAT
+2	peu	peu	NOUN	_	_	1	fixed	_	start_char=3|end_char=6	_	_	FAT
 3	de	de	ADP	_	_	4	case	_	start_char=7|end_char=9	_	_	FAT
 4	fatigue	fatigue	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=10|end_char=17	_	_	FAT
 5	là	là	ADV	_	_	1	advmod	_	start_char=18|end_char=20	_	_	FAT
 6	quand	quand	SCONJ	_	_	9	mark	_	start_char=21|end_char=26	_	_	FAT
 7	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=27|end_char=29	_	_	FAT
 8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=30|end_char=32	_	_	FAT
-9	vire	virer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	start_char=33|end_char=37	_	_	FAT
+9	vire	virer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	_	start_char=33|end_char=37	_	_	FAT
 10-11	au	_	_	_	_	_	_	_	start_char=38|end_char=40	_	_	FAT
 10	à	à	ADP	_	_	12	case	_	_	_	_	FAT
 11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	fixed	_	_	_	_	FAT
 12	n'	ne	ADV	_	Polarity=Neg	9	obl:arg	_	start_char=41|end_char=43	_	_	FAT
 13	importe	importer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	fixed	_	start_char=43|end_char=50	_	_	FAT
-14	quoi	quoi	PRON	_	_	12	fixed	_	start_char=51|end_char=55	_	_	FAT
+14	quoi	quoi	PRON	_	Person=3|PronType=Ind	12	fixed	_	start_char=51|end_char=55	_	_	FAT
 15	là	là	ADV	_	_	12	fixed	_	start_char=56|end_char=58	_	_	FAT
 16	.	.	PUNCT	_	_	4	punct	_	start_char=59|end_char=60	_	_	FAT
 
@@ -2419,12 +2402,12 @@
 
 #sent_id = CHI <au372>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au373>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au374>
@@ -2433,15 +2416,15 @@
 
 #sent_id = CHI <au375>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CAM <au376>
 #text = ce sont des des trucs de père ?
-1	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=0|end_char=2	_	_	CAM
+1	ce	ce	PRON	_	Gender=Masc|Person=3|PronType=Dem	5	nsubj	_	start_char=0|end_char=2	_	_	CAM
 2	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=3|end_char=7	_	_	CAM
-3	des	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	5	det	_	start_char=8|end_char=11	_	_	CAM
-4	des	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	5	det	_	start_char=12|end_char=15	_	_	CAM
+3	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	5	det	_	start_char=8|end_char=11	_	_	CAM
+4	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	5	det	_	start_char=12|end_char=15	_	_	CAM
 5	trucs	truc	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=16|end_char=21	_	_	CAM
 6	de	de	ADP	_	_	7	case	_	start_char=22|end_char=24	_	_	CAM
 7	père	père	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=25|end_char=29	_	_	CAM
@@ -2449,9 +2432,9 @@
 
 #sent_id = FAT <au377>
 #text = ouais toujours avoir un apéricube .
-1	ouais	ouais	INTJ	_	_	0	root	_	start_char=0|end_char=5	_	_	FAT
+1	ouais	ouais	INTJ	_	_	3	discourse	_	start_char=0|end_char=5	_	_	FAT
 2	toujours	toujours	ADV	_	_	3	advmod	_	start_char=6|end_char=14	_	_	FAT
-3	avoir	avoir	VERB	_	VerbForm=Inf	1	ccomp	_	start_char=15|end_char=20	_	_	FAT
+3	avoir	avoir	VERB	_	VerbForm=Inf	0	root	_	start_char=15|end_char=20	_	_	FAT
 4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=21|end_char=23	_	_	FAT
 5	apéricube	apéricube	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=24|end_char=33	_	_	FAT
 6	.	.	PUNCT	_	_	3	punct	_	start_char=34|end_char=35	_	_	FAT
@@ -2459,7 +2442,7 @@
 #sent_id = FAT <au378>
 #text = avec soi !
 1	avec	avec	ADP	_	_	2	case	_	start_char=0|end_char=4	_	_	FAT
-2	soi	soi	PRON	_	Number=Sing|Person=3	0	root	_	start_char=5|end_char=8	_	_	FAT
+2	soi	soi	PRON	_	Number=Sing|Person=3|PronType=Prs	0	root	_	start_char=5|end_char=8	_	_	FAT
 3	!	!	PUNCT	_	_	2	punct	_	start_char=9|end_char=10	_	_	FAT
 
 #sent_id = CAM <au379>
@@ -2471,7 +2454,7 @@
 #text = jamais passage jamais avec un petit .
 1	jamais	jamais	ADV	_	Polarity=Neg	2	advmod	_	start_char=0|end_char=6	_	_	FAT
 2	passage	passage	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=7|end_char=14	_	_	FAT
-3	jamais	jamais	ADV	_	_	2	advmod	_	start_char=15|end_char=21	_	_	FAT
+3	jamais	jamais	ADV	_	Polarity=Neg	2	advmod	_	start_char=15|end_char=21	_	_	FAT
 4	avec	avec	ADP	_	_	6	case	_	start_char=22|end_char=26	_	_	FAT
 5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=27|end_char=29	_	_	FAT
 6	petit	petit	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=30|end_char=35	_	_	FAT
@@ -2479,15 +2462,15 @@
 
 #sent_id = CHI <au381>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au382>
 #text = ah voilà ça enfourne .
 1	ah	ah	INTJ	_	_	2	discourse	_	start_char=0|end_char=2	_	_	FAT
 2	voilà	voilà	VERB	_	_	0	root	_	start_char=3|end_char=8	_	_	FAT
-3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=9|end_char=11	_	_	FAT
-4	enfourne	enfourner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=12|end_char=20	_	_	FAT
+3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	obj	_	start_char=9|end_char=11	_	_	FAT
+4	enfourne	enfourner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	xcomp	_	start_char=12|end_char=20	_	_	FAT
 5	.	.	PUNCT	_	_	2	punct	_	start_char=21|end_char=22	_	_	FAT
 
 #sent_id = CHI <au383>
@@ -2496,54 +2479,55 @@
 
 #sent_id = CHI <au384>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au385>
 #text = t'as du mal avec ce truc hein .
-1	t'as	t'as	INTJ	_	_	0	root	_	start_char=0|end_char=4	_	_	FAT
-2-3	du	_	_	_	_	_	_	_	start_char=5|end_char=7	_	_	FAT
-2	de	de	ADP	_	_	4	case	_	_	_	_	FAT
-3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	_	_	FAT
-4	mal	mal	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	start_char=8|end_char=11	_	_	FAT
-5	avec	avec	ADP	_	_	7	case	_	start_char=12|end_char=16	_	_	FAT
-6	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	start_char=17|end_char=19	_	_	FAT
-7	truc	truc	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	start_char=20|end_char=24	_	_	FAT
-8	hein	hein	ADV	_	_	7	advmod	_	start_char=25|end_char=29	_	_	FAT
-9	.	.	PUNCT	_	_	1	punct	_	start_char=30|end_char=31	_	_	FAT
+1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	2	iobj	_	start_char=0|end_char=2	_	_	FAT
+2	as	avoir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=4	_	_	FAT
+3-4	du	_	_	_	_	_	_	_	start_char=5|end_char=7	_	_	FAT
+3	de	de	ADP	_	_	5	det	_	_	_	_	FAT
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	fixed	_	_	_	_	FAT
+5	mal	mal	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=8|end_char=11	_	_	FAT
+6	avec	avec	ADP	_	_	8	case	_	start_char=12|end_char=16	_	_	FAT
+7	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	start_char=17|end_char=19	_	_	FAT
+8	truc	truc	NOUN	_	Gender=Masc|Number=Sing	2	obl:mod	_	start_char=20|end_char=24	_	_	FAT
+9	hein	hein	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	start_char=25|end_char=29	_	_	FAT
+10	.	.	PUNCT	_	_	2	punct	_	start_char=30|end_char=31	_	_	FAT
 
 #sent_id = FAT <au386>
 #text = toi tu es crevé .
-1	toi	soi	PRON	_	Number=Sing|Person=2|PronType=Prs	4	dislocated	_	start_char=0|end_char=3	_	_	FAT
-2	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	4	nsubj	_	start_char=4|end_char=6	_	_	FAT
+1	toi	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obl:mod	_	start_char=0|end_char=3	_	_	FAT
+2	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	4	nsubj:pass	_	start_char=4|end_char=6	_	_	FAT
 3	es	être	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	4	aux:pass	_	start_char=7|end_char=9	_	_	FAT
 4	crevé	crever	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=10|end_char=15	_	_	FAT
 5	.	.	PUNCT	_	_	4	punct	_	start_char=16|end_char=17	_	_	FAT
 
 #sent_id = CHI <au387>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au388>
 #text = pas très heureux je trouve l'apericube avec le truc Théophile hein .
 1	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	start_char=0|end_char=3	_	_	FAT
 2	très	très	ADV	_	_	3	advmod	_	start_char=4|end_char=8	_	_	FAT
-3	heureux	heureux	ADJ	_	Gender=Masc|Number=Sing	5	advcl	_	start_char=9|end_char=16	_	_	FAT
+3	heureux	heureux	ADJ	_	Gender=Masc	0	root	_	start_char=9|end_char=16	_	_	FAT
 4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	start_char=17|end_char=19	_	_	FAT
-5	trouve	trouver	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=20|end_char=26	_	_	FAT
-6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=27|end_char=29	_	_	FAT
+5	trouve	trouver	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	conj	_	start_char=20|end_char=26	_	_	FAT
+6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	7	det	_	start_char=27|end_char=29	_	_	FAT
 7	apericube	apericube	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	start_char=29|end_char=38	_	_	FAT
 8	avec	avec	ADP	_	_	10	case	_	start_char=39|end_char=43	_	_	FAT
 9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	start_char=44|end_char=46	_	_	FAT
 10	truc	truc	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	start_char=47|end_char=51	_	_	FAT
 11	Théophile	Théophile	PROPN	_	_	10	appos	_	start_char=52|end_char=61	_	_	FAT
-12	hein	hein	INTJ	_	_	11	flat:foreign	_	start_char=62|end_char=66	_	_	FAT
-13	.	.	PUNCT	_	_	5	punct	_	start_char=67|end_char=68	_	_	FAT
+12	hein	hein	X	_	_	11	flat:name	_	start_char=62|end_char=66	_	_	FAT
+13	.	.	PUNCT	_	_	3	punct	_	start_char=67|end_char=68	_	_	FAT
 
 #sent_id = FAT <au389>
 #text = toi t'aimes bien mais ...
-1	toi	soi	PRON	_	Number=Sing|Person=2|PronType=Prs	3	nsubj	_	start_char=0|end_char=3	_	_	FAT
+1	toi	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	3	iobj	_	start_char=0|end_char=3	_	_	FAT
 2	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	3	iobj	_	start_char=4|end_char=6	_	_	FAT
 3	aimes	aimer	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=11	_	_	FAT
 4	bien	bien	ADV	_	_	3	advmod	_	start_char=12|end_char=16	_	_	FAT
@@ -2556,8 +2540,8 @@
 
 #sent_id = FAT <au391>
 #text = pfff ouhlala .
-1	pfff	pfff	INTJ	_	_	0	root	_	start_char=0|end_char=4	_	_	FAT
-2	ouhlala	ouhlala	PROPN	_	_	1	obl:arg	_	start_char=5|end_char=12	_	_	FAT
+1	pfff	pfff	X	_	_	0	root	_	start_char=0|end_char=4	_	_	FAT
+2	ouhlala	ouhlala	X	_	_	1	appos	_	start_char=5|end_char=12	_	_	FAT
 3	.	.	PUNCT	_	_	1	punct	_	start_char=13|end_char=14	_	_	FAT
 
 #sent_id = CHI <au392>
@@ -2570,15 +2554,15 @@
 
 #sent_id = CHI <au394>
 #text = yyy yyy yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
-3	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=8|end_char=11	_	_	CHI
-4	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=12|end_char=14	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	Foreign=Yes	1	flat:foreign	_	start_char=4|end_char=7	_	_	CHI
+3	yyy	yyy	X	_	Foreign=Yes	1	flat:foreign	_	start_char=8|end_char=11	_	_	CHI
+4	yy	yy	X	_	_	1	appos	_	start_char=12|end_char=14	_	_	CHI
 5	.	.	PUNCT	_	_	1	punct	_	start_char=15|end_char=16	_	_	CHI
 
 #sent_id = CHI <au395>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au396>
@@ -2589,12 +2573,12 @@
 #text = t'as rien d'autre non tu finis .
 1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	2	iobj	_	start_char=0|end_char=2	_	_	FAT
 2	as	avoir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=4	_	_	FAT
-3	rien	rien	PRON	_	Number=Sing	2	obj	_	start_char=5|end_char=9	_	_	FAT
+3	rien	rien	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Neg	2	obj	_	start_char=5|end_char=9	_	_	FAT
 4	d'	de	ADP	_	_	5	case	_	start_char=10|end_char=12	_	_	FAT
-5	autre	autre	PRON	_	Number=Sing	3	nmod	_	start_char=12|end_char=17	_	_	FAT
-6	non	non	ADV	_	_	8	advmod	_	start_char=18|end_char=21	_	_	FAT
+5	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	3	nmod	_	start_char=12|end_char=17	_	_	FAT
+6	non	non	ADV	_	Polarity=Neg	8	advmod	_	start_char=18|end_char=21	_	_	FAT
 7	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	8	nsubj	_	start_char=22|end_char=24	_	_	FAT
-8	finis	finir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	parataxis	_	start_char=25|end_char=30	_	_	FAT
+8	finis	finir	VERB	_	Number=Sing|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=25|end_char=30	_	_	FAT
 9	.	.	PUNCT	_	_	2	punct	_	start_char=31|end_char=32	_	_	FAT
 
 #sent_id = CHI <au398>
@@ -2605,9 +2589,9 @@
 #text = t'as rien d'autre .
 1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	2	iobj	_	start_char=0|end_char=2	_	_	FAT
 2	as	avoir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=4	_	_	FAT
-3	rien	rien	PRON	_	Number=Sing	2	obj	_	start_char=5|end_char=9	_	_	FAT
+3	rien	rien	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Neg	2	obj	_	start_char=5|end_char=9	_	_	FAT
 4	d'	de	ADP	_	_	5	case	_	start_char=10|end_char=12	_	_	FAT
-5	autre	autre	PRON	_	Number=Sing	3	nmod	_	start_char=12|end_char=17	_	_	FAT
+5	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	3	nmod	_	start_char=12|end_char=17	_	_	FAT
 6	.	.	PUNCT	_	_	2	punct	_	start_char=18|end_char=19	_	_	FAT
 
 #sent_id = CHI <au400>
@@ -2616,7 +2600,7 @@
 
 #sent_id = FAT <au401>
 #text = non .
-1	non	non	ADV	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
+1	non	non	INTJ	_	Polarity=Neg	0	root	_	start_char=0|end_char=3	_	_	FAT
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	FAT
 
 #sent_id = FAT <au402>
@@ -2625,7 +2609,7 @@
 2	as	avoir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=4	_	_	FAT
 3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	start_char=5|end_char=8	_	_	FAT
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=9|end_char=11	_	_	FAT
-5	droit	droit	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=12|end_char=17	_	_	FAT
+5	droit	droit	NOUN	_	Gender=Masc|Number=Sing	2	obj:lvc	_	start_char=12|end_char=17	_	_	FAT
 6	de	de	ADP	_	_	7	mark	_	start_char=18|end_char=20	_	_	FAT
 7	faire	faire	VERB	_	VerbForm=Inf	5	acl	_	start_char=21|end_char=26	_	_	FAT
 8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	start_char=27|end_char=29	_	_	FAT
@@ -2648,8 +2632,8 @@
 6	alors	alors	ADV	_	_	10	mark	_	start_char=19|end_char=24	_	_	FAT
 7	que	que	SCONJ	_	_	6	fixed	_	start_char=25|end_char=28	_	_	FAT
 8	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	10	nsubj	_	start_char=29|end_char=31	_	_	FAT
-9	en	en	PRON	_	Person=3	10	expl:comp	_	start_char=32|end_char=34	_	_	FAT
-10	manges	manger	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	3	advcl	_	start_char=35|end_char=41	_	_	FAT
+9	en	en	PRON	_	Person=3|PronType=Prs	10	expl	_	start_char=32|end_char=34	_	_	FAT
+10	manges	manger	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	advcl	_	start_char=35|end_char=41	_	_	FAT
 11	parfaitement	parfaitement	ADV	_	_	10	advmod	_	start_char=42|end_char=54	_	_	FAT
 12	.	.	PUNCT	_	_	3	punct	_	start_char=55|end_char=56	_	_	FAT
 
@@ -2660,8 +2644,8 @@
 #sent_id = FAT <au406>
 #text = tu crois xx .
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
-2	crois	croire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	FAT
-3	xx	xx	NUM	_	_	2	obj	_	start_char=9|end_char=11	_	_	FAT
+2	crois	croire	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	FAT
+3	xx	xx	ADV	_	_	2	advmod	_	start_char=9|end_char=11	_	_	FAT
 4	.	.	PUNCT	_	_	2	punct	_	start_char=12|end_char=13	_	_	FAT
 
 #sent_id = FAT <au407>
@@ -2675,30 +2659,30 @@
 
 #sent_id = FAT <au409>
 #text = pff vraiment nul hein .
-1	pff	pff	INTJ	_	_	3	discourse	_	start_char=0|end_char=3	_	_	FAT
-2	vraiment	vraiment	ADV	_	_	3	advmod	_	start_char=4|end_char=12	_	_	FAT
-3	nul	nul	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=13|end_char=16	_	_	FAT
-4	hein	hein	INTJ	_	_	3	discourse	_	start_char=17|end_char=21	_	_	FAT
-5	.	.	PUNCT	_	_	3	punct	_	start_char=22|end_char=23	_	_	FAT
+1	pff	pff	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
+2	vraiment	vraiment	ADV	_	_	1	advmod	_	start_char=4|end_char=12	_	_	FAT
+3	nul	nul	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Neg	1	nsubj	_	start_char=13|end_char=16	_	_	FAT
+4	hein	hein	ADV	_	_	1	fixed	_	start_char=17|end_char=21	_	_	FAT
+5	.	.	PUNCT	_	_	1	punct	_	start_char=22|end_char=23	_	_	FAT
 
 #sent_id = CHI <au410>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au411>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au412>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au413>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au414>
@@ -2707,8 +2691,8 @@
 
 #sent_id = FAT <au415>
 #text = oh oh je te jure .
-1	oh	oh	INTJ	_	_	5	discourse	_	start_char=0|end_char=2	_	_	FAT
-2	oh	oh	INTJ	_	_	1	fixed	_	start_char=3|end_char=5	_	_	FAT
+1	oh	oh	X	_	_	5	discourse	_	start_char=0|end_char=2	_	_	FAT
+2	oh	oh	X	_	Foreign=Yes	1	flat:foreign	_	start_char=3|end_char=5	_	_	FAT
 3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	start_char=6|end_char=8	_	_	FAT
 4	te	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	5	iobj	_	start_char=9|end_char=11	_	_	FAT
 5	jure	jurer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=12|end_char=16	_	_	FAT
@@ -2725,7 +2709,7 @@
 #sent_id = FAT <au418>
 #text = oui mon bon roi .
 1	oui	oui	INTJ	_	_	4	discourse	_	start_char=0|end_char=3	_	_	FAT
-2	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	4	det	_	start_char=4|end_char=7	_	_	FAT
+2	mon	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=1|Poss=Yes|PronType=Prs	4	det	_	start_char=4|end_char=7	_	_	FAT
 3	bon	bon	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	start_char=8|end_char=11	_	_	FAT
 4	roi	roi	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=12|end_char=15	_	_	FAT
 5	.	.	PUNCT	_	_	4	punct	_	start_char=16|end_char=17	_	_	FAT
@@ -2734,32 +2718,30 @@
 #text = plus d'eau .
 1	plus	plus	ADV	_	_	0	root	_	start_char=0|end_char=4	_	_	FAT
 2	d'	de	ADP	_	_	3	case	_	start_char=5|end_char=7	_	_	FAT
-3	eau	eau	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	start_char=7|end_char=10	_	_	FAT
+3	eau	eau	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=7|end_char=10	_	_	FAT
 4	.	.	PUNCT	_	_	1	punct	_	start_char=11|end_char=12	_	_	FAT
 
 #sent_id = CHI <au420>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au421>
 #text = xxx soit autonome hein ?
-1-2	xxx	_	_	_	_	_	_	_	start_char=0|end_char=3	_	_	FAT
-1	de	de	ADP	_	_	4	mark	_	_	_	_	FAT
-2	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_	_	_	FAT
-3	soit	être	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=4|end_char=8	_	_	FAT
-4	autonome	autonome	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=9|end_char=17	_	_	FAT
-5	hein	hein	INTJ	_	_	4	discourse	_	start_char=18|end_char=22	_	_	FAT
-6	?	?	PUNCT	_	_	4	punct	_	start_char=23|end_char=24	_	_	FAT
+1	xxx	xxx	X	_	_	3	nsubj	_	start_char=0|end_char=3	_	_	FAT
+2	soit	être	AUX	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=4|end_char=8	_	_	FAT
+3	autonome	autonome	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=9|end_char=17	_	_	FAT
+4	hein	hein	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	start_char=18|end_char=22	_	_	FAT
+5	?	?	PUNCT	_	_	3	punct	_	start_char=23|end_char=24	_	_	FAT
 
 #sent_id = CHI <au422>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au423>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au424>
@@ -2769,8 +2751,8 @@
 
 #sent_id = CHI <au425>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = CHI <au426>
@@ -2779,7 +2761,7 @@
 
 #sent_id = CHI <au427>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au428>
@@ -2790,7 +2772,7 @@
 #text = mais ne fais pas ça !
 1	mais	mais	CCONJ	_	_	3	cc	_	start_char=0|end_char=4	_	_	FAT
 2	ne	ne	ADV	_	Polarity=Neg	3	advmod	_	start_char=5|end_char=7	_	_	FAT
-3	fais	faire	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8|end_char=12	_	_	FAT
+3	fais	faire	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8|end_char=12	_	_	FAT
 4	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	start_char=13|end_char=16	_	_	FAT
 5	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	obj	_	start_char=17|end_char=19	_	_	FAT
 6	!	!	PUNCT	_	_	3	punct	_	start_char=20|end_char=21	_	_	FAT
@@ -2838,8 +2820,8 @@
 
 #sent_id = FAT <au438>
 #text = on on est bon niveau timing ou ...
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	start_char=0|end_char=2	_	_	FAT
-2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	start_char=3|end_char=5	_	_	FAT
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	5	nsubj	_	start_char=0|end_char=2	_	_	FAT
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	5	nsubj	_	start_char=3|end_char=5	_	_	FAT
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=6|end_char=9	_	_	FAT
 4	bon	bon	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	start_char=10|end_char=13	_	_	FAT
 5	niveau	niveau	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=14|end_char=20	_	_	FAT
@@ -2852,16 +2834,16 @@
 1	oh	oh	INTJ	_	_	3	discourse	_	start_char=0|end_char=2	_	_	CAM
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=3|end_char=5	_	_	CAM
 3	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=11	_	_	CAM
-4	cinq	cinq	NUM	_	_	5	nummod	_	start_char=12|end_char=16	_	_	CAM
-5	minutes	minute	NOUN	_	Gender=Fem|Number=Plur	3	obj	_	start_char=17|end_char=24	_	_	CAM
-6	xxx	xxx	ADP	_	_	3	advmod	_	start_char=25|end_char=28	_	_	CAM
-7	même	même	ADV	_	_	6	fixed	_	start_char=29|end_char=33	_	_	CAM
+4	cinq	cinq	NUM	_	Number=Plur	5	nummod	_	start_char=12|end_char=16	_	_	CAM
+5	minutes	minute	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	_	start_char=17|end_char=24	_	_	CAM
+6	xxx	xxx	X	_	_	5	appos	_	start_char=25|end_char=28	_	_	CAM
+7	même	même	ADV	_	_	8	advmod	_	start_char=29|end_char=33	_	_	CAM
 8	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	start_char=34|end_char=37	_	_	CAM
 9	.	.	PUNCT	_	_	3	punct	_	start_char=38|end_char=39	_	_	CAM
 
 #sent_id = FAT <au440>
 #text = cinq minutes ?
-1	cinq	cinq	NUM	_	_	2	nummod	_	start_char=0|end_char=4	_	_	FAT
+1	cinq	cinq	NUM	_	Number=Plur	2	nummod	_	start_char=0|end_char=4	_	_	FAT
 2	minutes	minute	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=5|end_char=12	_	_	FAT
 3	?	?	PUNCT	_	_	2	punct	_	start_char=13|end_char=14	_	_	FAT
 
@@ -2872,9 +2854,9 @@
 3	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	start_char=10|end_char=12	_	_	FAT
 4	vais	aller	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13|end_char=17	_	_	FAT
 5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	start_char=18|end_char=21	_	_	FAT
-6	en	en	PRON	_	Person=3	7	iobj	_	start_char=22|end_char=24	_	_	FAT
+6	en	en	PRON	_	Person=3|PronType=Prs	7	expl	_	start_char=22|end_char=24	_	_	FAT
 7	tirer	tirer	VERB	_	VerbForm=Inf	4	xcomp	_	start_char=25|end_char=30	_	_	FAT
-8	grand	grand	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	start_char=31|end_char=36	_	_	FAT
+8	grand	grand	ADJ	_	Gender=Fem|Number=Sing	7	xcomp	_	start_char=31|end_char=36	_	_	FAT
 9	chose	chose	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	start_char=37|end_char=42	_	_	FAT
 10	hein	hein	ADV	_	_	7	advmod	_	start_char=43|end_char=47	_	_	FAT
 11	.	.	PUNCT	_	_	4	punct	_	start_char=48|end_char=49	_	_	FAT
@@ -2885,22 +2867,20 @@
 
 #sent_id = FAT <au443>
 #text = xxx .
-1-2	xxx	_	_	_	_	_	_	_	start_char=0|end_char=3	_	_	FAT
-1	de	de	ADP	_	_	0	root	_	_	_	_	FAT
-2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	1	fixed	_	_	_	_	FAT
-3	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	FAT
+1	xxx	xxx	SYM	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
+2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	FAT
 
 #sent_id = FAT <au444>
 #text = ahlalalala .
-1	ahlalalala	ahlalalala	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=10	_	_	FAT
+1	ahlalalala	ahlalalala	X	_	_	0	root	_	start_char=0|end_char=10	_	_	FAT
 2	.	.	PUNCT	_	_	1	punct	_	start_char=11|end_char=12	_	_	FAT
 
 #sent_id = CHI <au445>
 #text = yyy yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
-3	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=8|end_char=10	_	_	CHI
-4	.	.	PUNCT	_	_	1	punct	_	start_char=11|end_char=12	_	_	CHI
+1	yyy	yyy	X	_	_	3	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	3	nmod	_	start_char=4|end_char=7	_	_	CHI
+3	yy	yy	X	_	_	0	root	_	start_char=8|end_char=10	_	_	CHI
+4	.	.	PUNCT	_	_	3	punct	_	start_char=11|end_char=12	_	_	CHI
 
 #sent_id = CHI <au446>
 #text = .
@@ -2912,10 +2892,10 @@
 
 #sent_id = CHI <au448>
 #text = yyy yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
-3	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=8|end_char=10	_	_	CHI
-4	.	.	PUNCT	_	_	1	punct	_	start_char=11|end_char=12	_	_	CHI
+1	yyy	yyy	X	_	_	3	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	3	nmod	_	start_char=4|end_char=7	_	_	CHI
+3	yy	yy	X	_	_	0	root	_	start_char=8|end_char=10	_	_	CHI
+4	.	.	PUNCT	_	_	3	punct	_	start_char=11|end_char=12	_	_	CHI
 
 #sent_id = CHI <au449>
 #text = .
@@ -2931,47 +2911,47 @@
 
 #sent_id = CHI <au451>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au452>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au453>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au454>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au455>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au456>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au457>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au458>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au459>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au460>
@@ -2980,7 +2960,7 @@
 
 #sent_id = CHI <au461>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au462>
@@ -2989,13 +2969,13 @@
 
 #sent_id = CHI <au463>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au464>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = FAT <au465>
@@ -3003,15 +2983,15 @@
 1	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	2	iobj	_	start_char=0|end_char=2	_	_	FAT
 2	aimes	aimer	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2|end_char=7	_	_	FAT
 3	mieux	mieux	ADV	_	_	2	advmod	_	start_char=8|end_char=13	_	_	FAT
-4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	obj	_	start_char=14|end_char=16	_	_	FAT
-5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	start_char=17|end_char=19	_	_	FAT
-6	dirait	dire	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=20|end_char=26	_	_	FAT
+4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	obj	_	start_char=14|end_char=16	_	_	FAT
+5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	6	nsubj	_	start_char=17|end_char=19	_	_	FAT
+6	dirait	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	start_char=20|end_char=26	_	_	FAT
 7	.	.	PUNCT	_	_	2	punct	_	start_char=27|end_char=28	_	_	FAT
 
 #sent_id = FAT <au466>
 #text = ouais ouais .
 1	ouais	ouais	INTJ	_	_	0	root	_	start_char=0|end_char=5	_	_	FAT
-2	ouais	ouais	INTJ	_	_	1	fixed	_	start_char=6|end_char=11	_	_	FAT
+2	ouais	ouais	ADV	_	_	1	fixed	_	start_char=6|end_char=11	_	_	FAT
 3	.	.	PUNCT	_	_	1	punct	_	start_char=12|end_char=13	_	_	FAT
 
 #sent_id = CHI <au467>
@@ -3026,7 +3006,7 @@
 #text = ah oui c'est .
 1	ah	ah	INTJ	_	_	0	root	_	start_char=0|end_char=2	_	_	FAT
 2	oui	oui	INTJ	_	_	1	fixed	_	start_char=3|end_char=6	_	_	FAT
-3	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	nsubj	_	start_char=7|end_char=9	_	_	FAT
+3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=7|end_char=9	_	_	FAT
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	start_char=9|end_char=12	_	_	FAT
 5	.	.	PUNCT	_	_	1	punct	_	start_char=13|end_char=14	_	_	FAT
 
@@ -3040,19 +3020,19 @@
 
 #sent_id = FAT <au472>
 #text = pff .
-1	pff	pff	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
+1	pff	pff	X	_	_	0	root	_	start_char=0|end_char=3	_	_	FAT
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	FAT
 
 #sent_id = CHI <au473>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = CHI <au474>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = CHI <au475>
@@ -3061,7 +3041,7 @@
 
 #sent_id = FAT <au476>
 #text = ouhla il a fait un pêtou là .
-1	ouhla	ouhla	INTJ	_	_	4	discourse	_	start_char=0|end_char=5	_	_	FAT
+1	ouhla	ouhla	X	_	_	4	nsubj	_	start_char=0|end_char=5	_	_	FAT
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=6|end_char=8	_	_	FAT
 3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	start_char=9|end_char=10	_	_	FAT
 4	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=11|end_char=15	_	_	FAT
@@ -3072,24 +3052,24 @@
 
 #sent_id = CHI <au477>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = CHI <au478>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = FAT <au479>
 #text = tu veux que je les mette ?
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
-2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	FAT
+2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	FAT
 3	que	que	SCONJ	_	_	6	mark	_	start_char=8|end_char=11	_	_	FAT
 4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	start_char=12|end_char=14	_	_	FAT
 5	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	6	obj	_	start_char=15|end_char=18	_	_	FAT
-6	mette	mettre	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=19|end_char=24	_	_	FAT
+6	mette	mettre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=19|end_char=24	_	_	FAT
 7	?	?	PUNCT	_	_	2	punct	_	start_char=25|end_char=26	_	_	FAT
 
 #sent_id = FAT <au480>
@@ -3109,7 +3089,7 @@
 
 #sent_id = FAT <au483>
 #text = bo@i !
-1	bo@i	bo@i	INTJ	_	_	0	root	_	start_char=0|end_char=4	_	_	FAT
+1	bo@i	bo@i	X	_	_	0	root	_	start_char=0|end_char=4	_	_	FAT
 2	!	!	PUNCT	_	_	1	punct	_	start_char=5|end_char=6	_	_	FAT
 
 #sent_id = CHI <au484>
@@ -3119,7 +3099,7 @@
 #sent_id = FAT <au485>
 #text = oh non ça sent pas bon .
 1	oh	oh	INTJ	_	_	4	discourse	_	start_char=0|end_char=2	_	_	FAT
-2	non	non	ADV	_	_	1	fixed	_	start_char=3|end_char=6	_	_	FAT
+2	non	non	INTJ	_	Polarity=Neg	1	fixed	_	start_char=3|end_char=6	_	_	FAT
 3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=7|end_char=9	_	_	FAT
 4	sent	sentir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=10|end_char=14	_	_	FAT
 5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	start_char=15|end_char=18	_	_	FAT
@@ -3133,19 +3113,19 @@
 
 #sent_id = FAT <au487>
 #text = ouhlala mes fesses .
-1	ouhlala	ouhlaler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	FAT
-2	mes	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	3	det	_	start_char=8|end_char=11	_	_	FAT
+1	ouhlala	ouhlaler	VERB	_	Tense=Pres|VerbForm=Part	0	root	_	start_char=0|end_char=7	_	_	FAT
+2	mes	son	DET	_	Number=Plur|Number[psor]=Sing|Person[psor]=1|Poss=Yes|PronType=Prs	3	det	_	start_char=8|end_char=11	_	_	FAT
 3	fesses	fesse	NOUN	_	Gender=Fem|Number=Plur	1	obj	_	start_char=12|end_char=18	_	_	FAT
 4	.	.	PUNCT	_	_	1	punct	_	start_char=19|end_char=20	_	_	FAT
 
 #sent_id = CHI <au488>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au489>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au490>
@@ -3154,7 +3134,7 @@
 
 #sent_id = CHI <au491>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au492>
@@ -3167,12 +3147,12 @@
 
 #sent_id = FAT <au494>
 #text = coquinou là qui mange pas son gratin .
-1	coquinou	coquinou	INTJ	_	_	0	root	_	start_char=0|end_char=8	_	_	FAT
+1	coquinou	coquinou	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=8	_	_	FAT
 2	là	là	ADV	_	_	1	advmod	_	start_char=9|end_char=11	_	_	FAT
 3	qui	qui	PRON	_	PronType=Rel	4	nsubj	_	start_char=12|end_char=15	_	_	FAT
 4	mange	manger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	start_char=16|end_char=21	_	_	FAT
 5	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	start_char=22|end_char=25	_	_	FAT
-6	son	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	7	det	_	start_char=26|end_char=29	_	_	FAT
+6	son	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	7	det	_	start_char=26|end_char=29	_	_	FAT
 7	gratin	gratin	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	start_char=30|end_char=36	_	_	FAT
 8	.	.	PUNCT	_	_	1	punct	_	start_char=37|end_char=38	_	_	FAT
 
@@ -3184,7 +3164,7 @@
 #text = tu le fais le truc de la chaussure .
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	3	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	start_char=3|end_char=5	_	_	FAT
-3	fais	faire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=10	_	_	FAT
+3	fais	faire	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=10	_	_	FAT
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=11|end_char=13	_	_	FAT
 5	truc	truc	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=14|end_char=18	_	_	FAT
 6	de	de	ADP	_	_	8	case	_	start_char=19|end_char=21	_	_	FAT
@@ -3195,7 +3175,7 @@
 #sent_id = FAT <au497>
 #text = oh pfff !
 1	oh	oh	INTJ	_	_	0	root	_	start_char=0|end_char=2	_	_	FAT
-2	pfff	pfff	INTJ	_	_	1	fixed	_	start_char=3|end_char=7	_	_	FAT
+2	pfff	pfff	X	_	_	1	fixed	_	start_char=3|end_char=7	_	_	FAT
 3	!	!	PUNCT	_	_	1	punct	_	start_char=8|end_char=9	_	_	FAT
 
 #sent_id = CHI <au498>
@@ -3204,41 +3184,41 @@
 
 #sent_id = CHI <au499>
 #text = yyy yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
-3	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=8|end_char=10	_	_	CHI
-4	.	.	PUNCT	_	_	1	punct	_	start_char=11|end_char=12	_	_	CHI
+1	yyy	yyy	X	_	_	3	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	3	nmod	_	start_char=4|end_char=7	_	_	CHI
+3	yy	yy	X	_	_	0	root	_	start_char=8|end_char=10	_	_	CHI
+4	.	.	PUNCT	_	_	3	punct	_	start_char=11|end_char=12	_	_	CHI
 
 #sent_id = CHI <au500>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au501>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = CHI <au502>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au503>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = CHI <au504>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au505>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = CHI <au506>
@@ -3251,7 +3231,7 @@
 
 #sent_id = CHI <au508>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au509>
@@ -3264,24 +3244,24 @@
 
 #sent_id = CHI <au511>
 #text = yyy yy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yy	yy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=6	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yy	yy	X	_	_	1	flat:name	_	start_char=4|end_char=6	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=7|end_char=8	_	_	CHI
 
 #sent_id = CHI <au512>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au513>
 #text = tu viens on lit avant de se coucher .
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	viens	venir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	FAT
-3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	start_char=9|end_char=11	_	_	FAT
+3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	4	nsubj	_	start_char=9|end_char=11	_	_	FAT
 4	lit	lire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=12|end_char=15	_	_	FAT
 5	avant	avant	ADV	_	_	4	advmod	_	start_char=16|end_char=21	_	_	FAT
 6	de	de	ADP	_	_	8	mark	_	start_char=22|end_char=24	_	_	FAT
-7	se	se	PRON	_	Person=3|PronType=Prs	8	obj	_	start_char=25|end_char=27	_	_	FAT
+7	se	se	PRON	_	Person=3|PronType=Prs|Reflex=Yes	8	obj	_	start_char=25|end_char=27	_	_	FAT
 8	coucher	coucher	VERB	_	VerbForm=Inf	5	ccomp	_	start_char=28|end_char=35	_	_	FAT
 9	.	.	PUNCT	_	_	2	punct	_	start_char=36|end_char=37	_	_	FAT
 
@@ -3292,7 +3272,7 @@
 
 #sent_id = CHI <au515>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au516>
@@ -3311,26 +3291,26 @@
 
 #sent_id = CHI <au518>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au519>
 #text = là c'est les abeilles c'est les mouches .
 1	là	là	ADV	_	_	5	advmod	_	start_char=0|end_char=2	_	_	FAT
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=3|end_char=5	_	_	FAT
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=3|end_char=5	_	_	FAT
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=5|end_char=8	_	_	FAT
-4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	start_char=9|end_char=12	_	_	FAT
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	start_char=9|end_char=12	_	_	FAT
 5	abeilles	abeille	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=13|end_char=21	_	_	FAT
-6	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=22|end_char=24	_	_	FAT
+6	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=22|end_char=24	_	_	FAT
 7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	start_char=24|end_char=27	_	_	FAT
-8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	start_char=28|end_char=31	_	_	FAT
+8	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	9	det	_	start_char=28|end_char=31	_	_	FAT
 9	mouches	mouche	NOUN	_	Gender=Fem|Number=Plur	5	conj	_	start_char=32|end_char=39	_	_	FAT
 10	.	.	PUNCT	_	_	5	punct	_	start_char=40|end_char=41	_	_	FAT
 
 #sent_id = FAT <au520>
 #text = il est où le chat ?
 1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	start_char=0|end_char=2	_	_	FAT
-2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	start_char=3|end_char=6	_	_	FAT
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=3|end_char=6	_	_	FAT
 3	où	où	ADV	_	PronType=Rel	1	fixed	_	start_char=7|end_char=9	_	_	FAT
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=10|end_char=12	_	_	FAT
 5	chat	chat	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=13|end_char=17	_	_	FAT
@@ -3338,7 +3318,7 @@
 
 #sent_id = CHI <au521>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au522>
@@ -3349,13 +3329,13 @@
 
 #sent_id = FAT <au523>
 #text = miaou miaou .
-1	miaou	miaou	INTJ	_	_	0	root	_	start_char=0|end_char=5	_	_	FAT
-2	miaou	miaou	INTJ	_	_	1	fixed	_	start_char=6|end_char=11	_	_	FAT
+1	miaou	miaou	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=5	_	_	FAT
+2	miaou	miaou	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=6|end_char=11	_	_	FAT
 3	.	.	PUNCT	_	_	1	punct	_	start_char=12|end_char=13	_	_	FAT
 
 #sent_id = CHI <au524>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au525>
@@ -3379,18 +3359,18 @@
 
 #sent_id = CHI <au529>
 #text = a@fs wouah@f .
-1	a@fs	a@fs	PROPN	_	_	0	root	_	start_char=0|end_char=4	_	_	CHI
-2	wouah@f	wouah@f	PROPN	_	_	1	flat:name	_	start_char=5|end_char=12	_	_	CHI
+1	a@fs	a@fs	X	_	_	0	root	_	start_char=0|end_char=4	_	_	CHI
+2	wouah@f	wouah@f	X	_	_	1	flat:name	_	start_char=5|end_char=12	_	_	CHI
 3	.	.	PUNCT	_	_	1	punct	_	start_char=13|end_char=14	_	_	CHI
 
 #sent_id = FAT <au530>
 #text = c'est un wouah wouah@f ça ?
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=2|end_char=5	_	_	FAT
 3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=6|end_char=8	_	_	FAT
 4	wouah	wouah	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=9|end_char=14	_	_	FAT
-5	wouah@f	wouah@f	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	start_char=15|end_char=22	_	_	FAT
-6	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nmod	_	start_char=23|end_char=25	_	_	FAT
+5	wouah@f	wouah@f	X	_	_	6	nmod	_	start_char=15|end_char=22	_	_	FAT
+6	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	appos	_	start_char=23|end_char=25	_	_	FAT
 7	?	?	PUNCT	_	_	4	punct	_	start_char=26|end_char=27	_	_	FAT
 
 #sent_id = FAT <au531>
@@ -3403,13 +3383,13 @@
 
 #sent_id = CHI <au532>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = FAT <au533>
 #text = non c'est pas un wouah wouah@f !
-1	non	non	ADV	_	_	6	advmod	_	start_char=0|end_char=3	_	_	FAT
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=4|end_char=6	_	_	FAT
+1	non	non	INTJ	_	Polarity=Neg	6	discourse	_	start_char=0|end_char=3	_	_	FAT
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=4|end_char=6	_	_	FAT
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=6|end_char=9	_	_	FAT
 4	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	start_char=10|end_char=13	_	_	FAT
 5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=14|end_char=16	_	_	FAT
@@ -3419,7 +3399,7 @@
 
 #sent_id = FAT <au534>
 #text = c'est une girafe .
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=2|end_char=5	_	_	FAT
 3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=6|end_char=9	_	_	FAT
 4	girafe	girafe	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=10|end_char=16	_	_	FAT
@@ -3427,21 +3407,21 @@
 
 #sent_id = FAT <au535>
 #text = on va en trouver un de wouah wouah@f oui .
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=5	_	_	FAT
-3	en	en	PRON	_	Person=3	5	nmod	_	start_char=6|end_char=8	_	_	FAT
+3	en	en	PRON	_	Person=3|PronType=Prs	5	nmod	_	start_char=6|end_char=8	_	_	FAT
 4	trouver	trouver	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=9|end_char=16	_	_	FAT
-5	un	un	PRON	_	Gender=Masc|Number=Sing	4	obj	_	start_char=17|end_char=19	_	_	FAT
+5	un	un	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	4	obj	_	start_char=17|end_char=19	_	_	FAT
 6	de	de	ADP	_	_	7	case	_	start_char=20|end_char=22	_	_	FAT
-7	wouah	wouah	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=23|end_char=28	_	_	FAT
-8	wouah@f	wouah@f	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=29|end_char=36	_	_	FAT
-9	oui	oui	ADV	_	_	4	advmod	_	start_char=37|end_char=40	_	_	FAT
+7	wouah	wouah	X	_	Foreign=Yes	5	nmod	_	start_char=23|end_char=28	_	_	FAT
+8	wouah@f	wouah@f	X	_	Foreign=Yes	7	flat:foreign	_	start_char=29|end_char=36	_	_	FAT
+9	oui	oui	X	_	Foreign=Yes	7	flat:foreign	_	start_char=37|end_char=40	_	_	FAT
 10	.	.	PUNCT	_	_	2	punct	_	start_char=41|end_char=42	_	_	FAT
 
 #sent_id = FAT <au536>
 #text = mh attends .
 1	mh	mh	X	_	_	2	nsubj	_	start_char=0|end_char=2	_	_	FAT
-2	attends	attendre	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=10	_	_	FAT
+2	attends	attendre	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=10	_	_	FAT
 3	.	.	PUNCT	_	_	2	punct	_	start_char=11|end_char=12	_	_	FAT
 
 #sent_id = FAT <au537>
@@ -3455,11 +3435,11 @@
 
 #sent_id = CHI <au538>
 #text = yy .
-1	yy	yy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	CHI
+1	yy	yy	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=3|end_char=4	_	_	CHI
 
 #sent_id = FAT <au539>
 #text = ouhouhouhouh .
-1	ouhouhouhouh	ouhouhouhouh	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=12	_	_	FAT
+1	ouhouhouhouh	ouhouhouhouh	X	_	_	0	root	_	start_char=0|end_char=12	_	_	FAT
 2	.	.	PUNCT	_	_	1	punct	_	start_char=13|end_char=14	_	_	FAT
 

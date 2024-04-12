@@ -374,18 +374,68 @@ best_sent <- function(sent, mdl, seuil, nth=1) {
 
 # compute correlation for sentences
 
-allcor <- function(csv) {
+allcorquant <- function(csv, pcentile) {
   r <- data.frame(id = numeric(), processor = character(), cor = numeric())
+  r2 <- matrix()
   for (i in seq(2, length(processor_list_sent))) {
-    a <- aggregate(csv[processor_list_sent[i]], by=list(round(as.numeric(csv$ages),0)), FUN=function(x) { quantile(x,0.9, na.rm = T)})
+    a <- aggregate(csv[processor_list_sent[i]], by=list(round(as.numeric(csv$ages),0)), FUN=function(x) { quantile(x, pcentile, na.rm = T)})
     b <- cor(a[,1], a[,2])
+    r2a <- a[,1]
     # print(c(processor_list_sent[i], b))
     if (! is.na(b)) {
       r <- rbind(r, c(i, processor_list_sent[i], b))
+      r2 <- cbind(r2, a[2])
     }
   }
   colnames(r) <- c("id", "processor", "cor")
-  r
+  r2[,1] <- r2a
+  colnames(r2)[1] <- "ages"
+  #r2f <- data.frame(r2)
+  list(corel=r,results=as.data.frame(r2))
+}
+
+allcormoy <- function(csv) {
+  r <- data.frame(id = numeric(), processor = character(), cor = numeric())
+  r2 <- matrix()
+  for (i in seq(2, length(processor_list_sent))) {
+    a <- aggregate(csv[processor_list_sent[i]], by=list(round(as.numeric(csv$ages),0)), FUN=function(x) { mean(x, na.rm = T)})
+    b <- cor(a[,1], a[,2])
+    r2a <- a[,1]
+    # print(c(processor_list_sent[i], b))
+    if (! is.na(b)) {
+      r <- rbind(r, c(i, processor_list_sent[i], b))
+      r2 <- cbind(r2, a[2])
+    }
+  }
+  colnames(r) <- c("id", "processor", "cor")
+  r2[,1] <- r2a
+  colnames(r2)[1] <- "ages"
+  #r2f <- data.frame(r2)
+  list(corel=r,results=as.data.frame(r2))
+}
+
+allquantvalues <- function(csv, pcentile) {
+  r2 <- matrix()
+  for (i in seq(2, length(processor_list_sent))) {
+    a <- aggregate(csv[processor_list_sent[i]], by=list(round(as.numeric(csv$ages),0)), FUN=function(x) { quantile(x, pcentile, na.rm = T)})
+    r2a <- a[,1]
+    r2 <- cbind(r2, a[2])
+  }
+  r2[,1] <- r2a
+  colnames(r2)[1] <- "ages"
+  as.data.frame(r2)
+}
+
+allmoyvalues <- function(csv) {
+  r2 <- matrix()
+  for (i in seq(2, length(processor_list_sent))) {
+    a <- aggregate(csv[processor_list_sent[i]], by=list(round(as.numeric(csv$ages),0)), FUN=function(x) { mean(x, na.rm = T)})
+    r2a <- a[,1]
+    r2 <- cbind(r2, a[2])
+  }
+  r2[,1] <- r2a
+  colnames(r2)[1] <- "ages"
+  as.data.frame(r2)
 }
 
 # voir combien de fois ces 20 paramètres sont supérieurs au q90
@@ -396,7 +446,12 @@ get_phr_eval <- function(csvref, csvorderref, csvtest, numphr, n, seuil) {
   for (i in seq(1, n)) {
     pname <- processor_list_sent[as.numeric(csvorderref$id[i])]
     pq90 <- which_quantile_proc_csv(pname, csvref, seuil)
+    #print(pname)
+    #print(pq90)
+    #print(numphr)
     vp <- csvtest[numphr, pname]
+    #print("vp")
+    #print(vp)
     if (vp >= pq90 & vp > 0) {
       np <- np +1
       lnp <- c(lnp, pname)
@@ -407,7 +462,7 @@ get_phr_eval <- function(csvref, csvorderref, csvtest, numphr, n, seuil) {
 }
 
 get_best_sent <- function(csvref, csvorderref, csvtest, nb, seuil, mymax) {
-  for (i in seq(1, nrow(csv))) {
+  for (i in seq(1, nrow(csvtest))) {
     vphr <- get_phr_eval(csvref, csvorderref, csvtest, i, nb, seuil)
     if (vphr$val >= mymax) {
       print(vphr$val)
@@ -421,7 +476,10 @@ get_best_sent_texte <- function(csvref, csvorderref, csvtest, txtname, nb, seuil
   p <- list()
   for (i in seq(1, nrow(csvtest))) {
     if (csvtest[i, "filename"] != txtname) next
+    print("get_phr_val")
+    print(i)
     vphr <- get_phr_eval(csvref, csvorderref, csvtest, i, nb, seuil)
+    print(vphr)
     if (vphr$val >= mymax) {
       if (print == "v" | print == "verbose" | print == "all") {
         print(vphr$val)

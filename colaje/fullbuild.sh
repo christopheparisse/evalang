@@ -8,5 +8,7 @@ sh ../../evalang-public/commands/process.sh
 #optional
 #sh ../commands/callnth.sh 20 colaje
 
-rm rawtextchi/*
-java -cp ~/devlopt/teicorpo/teicorpo.jar fr.ortolang.teicorpo.TeiToText -target stanza -partmeta -rawline -a CHI tei_corpo_base/* -o rawtextchi -minlength 2
+sh ../../evalang-public/commands/rawtext.sh
+
+#rm rawtextchi/*
+#java -cp ~/devlopt/teicorpo/teicorpo.jar fr.ortolang.teicorpo.TeiToText -target stanza -partmeta -rawline -a CHI tei_corpo_base/* -o rawtextchi -minlength 2

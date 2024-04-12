@@ -21,6 +21,9 @@ def feats(fts):
             fv = fv + "-" + x[1]
     return fv
 
+def feats2(fts):
+    return fts.replace("|", "&")
+
 if len(sys.argv) != 3:
     print("Must have two argument, the name of the text file to process and the name of the original chat file.")
     exit(1)
@@ -32,14 +35,14 @@ pack = "gsd" # choix du modele : gsd, partut, sequoia, spoken
 input_file = sys.argv[1]
 pth, ext = os.path.splitext(input_file)
 input_file_clan = sys.argv[2]
-ouput_file_conll = pth + "-" + pack + ".conllu"
-ouput_file_clan = pth + "-" + pack + ".conllu.cex"
-print('From ' + input_file + ' to ' + ouput_file_conll + ' and ' + ouput_file_clan)
+output_file_conll = pth + "-" + pack + ".conllu"
+output_file_clan = pth + "-" + pack + ".conllu.cex"
+print('From ' + input_file + ' to ' + output_file_conll + ' and ' + output_file_clan)
 
 with open(input_file, "r", encoding="utf-8") as in_file,\
     open(input_file_clan, "r", encoding="utf-8") as in_clan,\
-    open(ouput_file_conll, "w", encoding="utf-8") as out_conll,\
-    open(ouput_file_clan, "w", encoding="utf-8") as out_clan : 
+    open(output_file_conll, "w", encoding="utf-8") as out_conll,\
+    open(output_file_clan, "w", encoding="utf-8") as out_clan :
     # get headers from the clan input file
     # initialize the output of the clan output file
     for line in in_clan.readlines():
@@ -54,7 +57,7 @@ with open(input_file, "r", encoding="utf-8") as in_file,\
     # télécharge le package si besoin (gsd, partut, sequoia, spoken)
     stanza.download("fr", package=pack) 
     # invoque le Pipeline selon le modele souhaité 
-    nlp = stanza.Pipeline("fr", package=pack, use_gpu=False)
+    nlp = stanza.Pipeline("fr", package=pack, use_gpu=True)
     for line in in_file.readlines():
         # récupérer les informations des colonnes 1 et 2 du fichier de base
         speaker = line.split()[0][1:-1]
@@ -106,7 +109,7 @@ with open(input_file, "r", encoding="utf-8") as in_file,\
                 # sentence[i][3] = POS
                 # sentence[i][5] = FEATS
                 # sentence[i][7] = DEPREL
-                out_clan.write(sentence[i][1] + "<" + sentence[i][3] + "/" + sentence[i][7] + feats(sentence[i][5]) + "> ")
+                out_clan.write(sentence[i][1] + "§l§" + sentence[i][2] + "§p§" + sentence[i][3] + "§f§" + feats2(sentence[i][5]) + "§d§" + sentence[i][7] + "  ")
             out_clan.write("\n")
             out_conll.write(f"#sent_id = {speaker} {xmlid}\n")
             out_conll.write(f"#text = {text_input}\n")

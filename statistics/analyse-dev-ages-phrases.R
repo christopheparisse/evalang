@@ -6,9 +6,26 @@ source('/Users/cp/brainstorm/evalang/evalang-public/statistics/load-all-data.R')
 ## à mettre en paramètre pour autre version
 ## mettre en paramètre aussi la base d'apprentissage
 
-allcortv <- allcor(sent_tv)
+allcortv09 <- allcorquant(sent_tv, 0.9)
+allcortv08 <- allcorquant(sent_tv, 0.8)
+allcortvmoy <- allcormoy(sent_tv)
+
+allcortv09_ref <- allcorquant(dcx_sentence_all_ref, 0.9)
+allcortv08_ref <- allcorquant(dcx_sentence_all_ref, 0.8)
+allcortmoy_ref <- allcormoy(dcx_sentence_all_ref)
+
+allcortv09_ref_order <- allcortv09_ref$corel[order(allcortv09_ref$corel$cor, decreasing = T), ]
+allcortmoy_ref_order <- allcortmoy_ref$corel[order(allcortmoy_ref$corel$cor, decreasing = T), ]
+
+print('sur  avec référence allcortv09_ref')
+display_best_sent_texte(dcx_sentence_all_ref, allcortv09_ref_order, dcx_sentence_test, "chi_TDL@_6.67{CP}.txt", 20, .9, 12, "chi-pour-stanza_sentence.csv", "v")
+
+allcortv <- allcortv09_ref$corel
+
 allcortv_order <- allcortv[order(allcortv$cor, decreasing = T), ]
-allcorsent <- allcor(all_corpus_sent)
+allcorsent_pack <- allcormoy(all_corpus_sent)
+
+allcorsent <- allcorsent_pack$corel
 allcorsent_order <- allcorsent[order(allcorsent$cor, decreasing = T), ]
 
 display_best_sent_texte(sent_tv, allcortv_order, sent_tv, "chi_TVJS@Alban_5.11{GS}.txt", 20, .8, 10, "csv2/chi_TVJS@Alban_5.11.csv", "v")
@@ -30,6 +47,8 @@ display_best_sent_texte(colaje_sentence, "chi_COLAJE@Antoine_4.46.txt", 20, .9, 
 display_best_sent_texte(colaje_sentence, "chi_COLAJE@Julie_3.63.txt", 20, .9, 15, "cvs2/chi_COLAJE@Julie_3.63.csv", "v")
 display_best_sent_texte(colaje_sentence, "chi_COLAJE@Madeleine_3.82.txt", 20, .9, 15, "cvs2/chi_COLAJE@Madeleine_3.82.csv", "v")
 display_best_sent_texte(colaje_sentence, "chi_COLAJE@Théophile_4.77.txt", 20, .9, 15, "cvs2/chi_COLAJE@Théophile_4.77.csv", "v")
+
+display_best_sent_texte(colaje_sentence, allcorsent_order, sent_tv, "chi_TVJS@Juliette_5.33{GS}.txt", 30, .95, 15, "csv2/chi_TVJS@Juliette_5.33{GS}.csv", "v")
 
 # test individuel
 anaelle_sent <- create_texte_partage("../../compilations/Anaëlle_sentence.csv", "Anaëlle")
@@ -105,3 +124,14 @@ sink('aa.csv')
 aa <- dataframe_get_all_sent_texte(all_corpus_sent, allcorsent_order, sent_tv, "chi_TVJS@Anaëlle_5.74{CP}.txt", 30, .80, T)
 sink()
 write.table(aa, file="chi_TVJS@Anaëlle_5.74{CP}.csv")
+
+
+### mesures pour d'autres corpus
+all_corpus_sent_09 <- allcorquant(all_corpus_sent, 0.9)
+all_corpus_sent_08 <- allcorquant(all_corpus_sent, 0.8)
+all_corpus_sent_moy <- allcormoy(all_corpus_sent)
+
+mpf_moy <- allmoyvalues(mpf_sent)
+mpf_09 <- allquantvalues(mpf_sent, 0.9)
+mpf_08 <- allquantvalues(mpf_sent, 0.8)
+

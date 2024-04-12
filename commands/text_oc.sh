@@ -1,1 +1,2 @@
-python3 ../../evalang-public/commands/stanza/text_oral_complex.py $1  $(dirname $1)/../clan/$(basename $1 .tei_corpo.txt).cha
+echo Traitement de $1 et de $(dirname $1)/../clan/$(basename $1 .tei_corpo.txt).cha
+python3 ../../evalang-public/commands/stanza/text_oral_complex.py $1 $(dirname $1)/../clan/$(basename $1 .tei_corpo.txt).cha

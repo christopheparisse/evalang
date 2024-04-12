@@ -5,21 +5,21 @@
 
 #sent_id = CTK <au1>
 #text = viens viens jouer tu viens ?
-1	viens	venir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
-2	viens	venir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	nsubj	_	start_char=6|end_char=11	_	_	CTK
+1	viens	venir	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
+2	viens	venir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=11	_	_	CTK
 3	jouer	jouer	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=12|end_char=17	_	_	CTK
 4	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	5	nsubj	_	start_char=18|end_char=20	_	_	CTK
-5	viens	venir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	start_char=21|end_char=26	_	_	CTK
+5	viens	venir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=21|end_char=26	_	_	CTK
 6	?	?	PUNCT	_	_	1	punct	_	start_char=27|end_char=28	_	_	CTK
 
 #sent_id = CTK <au2>
 #text = on va faire un garage comme hier tu sais avec camille ?
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=5	_	_	CTK
 3	faire	faire	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=6|end_char=11	_	_	CTK
 4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=12|end_char=14	_	_	CTK
 5	garage	garage	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=15|end_char=21	_	_	CTK
-6	comme	comme	ADP	_	_	7	case	_	start_char=22|end_char=27	_	_	CTK
+6	comme	comme	SCONJ	_	_	7	mark	_	start_char=22|end_char=27	_	_	CTK
 7	hier	hier	ADV	_	_	9	advmod	_	start_char=28|end_char=32	_	_	CTK
 8	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	9	nsubj	_	start_char=33|end_char=35	_	_	CTK
 9	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	3	advcl	_	start_char=36|end_char=40	_	_	CTK
@@ -30,24 +30,23 @@
 #sent_id = CTK <au3>
 #text = allez vas- y faut prendre une voiture aussi Adrien !
 1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
-2	vas	vair	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	nsubj	_	start_char=6|end_char=9	_	_	CTK
-3	-	-	PUNCT	_	_	5	punct	_	start_char=9|end_char=10	_	_	CTK
-4	y	y	PRON	_	_	5	expl:comp	_	start_char=11|end_char=12	_	_	CTK
-5	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	start_char=13|end_char=17	_	_	CTK
-6	prendre	prendre	VERB	_	VerbForm=Inf	5	ccomp	_	start_char=18|end_char=25	_	_	CTK
-7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	start_char=26|end_char=29	_	_	CTK
-8	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	start_char=30|end_char=37	_	_	CTK
-9	aussi	aussi	ADV	_	_	10	advmod	_	start_char=38|end_char=43	_	_	CTK
-10	Adrien	Adrien	PROPN	_	_	8	appos	_	start_char=44|end_char=50	_	_	CTK
-11	!	!	PUNCT	_	_	1	punct	_	start_char=51|end_char=52	_	_	CTK
+2	vas-	vas-	ADV	_	_	1	advmod	_	start_char=6|end_char=10	_	_	CTK
+3	y	y	PRON	_	Person=3|PronType=Prs	4	expl	_	start_char=11|end_char=12	_	_	CTK
+4	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	start_char=13|end_char=17	_	_	CTK
+5	prendre	prendre	VERB	_	VerbForm=Inf	4	ccomp	_	start_char=18|end_char=25	_	_	CTK
+6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=26|end_char=29	_	_	CTK
+7	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	start_char=30|end_char=37	_	_	CTK
+8	aussi	aussi	ADV	_	_	9	advmod	_	start_char=38|end_char=43	_	_	CTK
+9	Adrien	Adrien	PROPN	_	_	7	appos	_	start_char=44|end_char=50	_	_	CTK
+10	!	!	PUNCT	_	_	1	punct	_	start_char=51|end_char=52	_	_	CTK
 
 #sent_id = CTK <au4>
 #text = va chercher une voiture prends une voiture dans le coffre !
 1	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=2	_	_	CTK
 2	chercher	chercher	VERB	_	VerbForm=Inf	1	xcomp	_	start_char=3|end_char=11	_	_	CTK
 3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=12|end_char=15	_	_	CTK
-4	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	start_char=16|end_char=23	_	_	CTK
-5	prends	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=24|end_char=30	_	_	CTK
+4	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=16|end_char=23	_	_	CTK
+5	prends	prendre	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=24|end_char=30	_	_	CTK
 6	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=31|end_char=34	_	_	CTK
 7	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	start_char=35|end_char=42	_	_	CTK
 8	dans	dans	ADP	_	_	10	case	_	start_char=43|end_char=47	_	_	CTK
@@ -57,7 +56,7 @@
 
 #sent_id = CTK <au5>
 #text = prends une voiture pour mettre dans le garage !
-1	prends	prendre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=6	_	_	CTK
+1	prends	prendre	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=6	_	_	CTK
 2	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	start_char=7|end_char=10	_	_	CTK
 3	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	1	obj	_	start_char=11|end_char=18	_	_	CTK
 4	pour	pour	ADP	_	_	5	mark	_	start_char=19|end_char=23	_	_	CTK
@@ -69,17 +68,17 @@
 
 #sent_id = CTK <au6>
 #text = non ça c'est un cheval c'est pas une voiture !
-1	non	non	ADV	_	_	2	advmod	_	start_char=0|end_char=3	_	_	CTK
+1	non	non	INTJ	_	Polarity=Neg	6	discourse	_	start_char=0|end_char=3	_	_	CTK
 2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	dislocated	_	start_char=4|end_char=6	_	_	CTK
-3	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=7|end_char=9	_	_	CTK
+3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=7|end_char=9	_	_	CTK
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=9|end_char=12	_	_	CTK
 5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=13|end_char=15	_	_	CTK
 6	cheval	cheval	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=16|end_char=22	_	_	CTK
-7	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	11	nsubj	_	start_char=23|end_char=25	_	_	CTK
+7	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	11	nsubj	_	start_char=23|end_char=25	_	_	CTK
 8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	start_char=25|end_char=28	_	_	CTK
 9	pas	pas	ADV	_	Polarity=Neg	11	advmod	_	start_char=29|end_char=32	_	_	CTK
 10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	start_char=33|end_char=36	_	_	CTK
-11	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	start_char=37|end_char=44	_	_	CTK
+11	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	6	parataxis	_	start_char=37|end_char=44	_	_	CTK
 12	!	!	PUNCT	_	_	6	punct	_	start_char=45|end_char=46	_	_	CTK
 
 #sent_id = CTK <au7>
@@ -88,9 +87,9 @@
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=5	_	_	CTK
 3	commencer	commencer	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=6|end_char=15	_	_	CTK
 4	à	à	ADP	_	_	6	mark	_	start_char=16|end_char=17	_	_	CTK
-5	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	6	iobj	_	start_char=18|end_char=22	_	_	CTK
+5	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	6	obl:arg	_	start_char=18|end_char=22	_	_	CTK
 6	faire	faire	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=23|end_char=28	_	_	CTK
-7	son	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	8	det	_	start_char=29|end_char=32	_	_	CTK
+7	son	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	8	det	_	start_char=29|end_char=32	_	_	CTK
 8	bêta	bêta	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	start_char=33|end_char=37	_	_	CTK
 9	!	!	PUNCT	_	_	2	punct	_	start_char=38|end_char=39	_	_	CTK
 
@@ -101,13 +100,13 @@
 
 #sent_id = CHI <au9>
 #text = oh m .
-1	oh	oh	INTJ	_	_	2	discourse	_	start_char=0|end_char=2	_	_	CHI
-2	m	m	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=3|end_char=4	_	_	CHI
+1	oh	oh	SYM	_	_	2	advmod	_	start_char=0|end_char=2	_	_	CHI
+2	m	mètre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3|end_char=4	_	_	CHI
 3	.	.	PUNCT	_	_	2	punct	_	start_char=5|end_char=6	_	_	CHI
 
 #sent_id = CTK <au10>
 #text = Adrien sois plus naturel !
-1	Adrien	Adrien	PROPN	_	_	4	nsubj	_	start_char=0|end_char=6	_	_	CTK
+1	Adrien	Adrien	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	_	start_char=0|end_char=6	_	_	CTK
 2	sois	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=7|end_char=11	_	_	CTK
 3	plus	plus	ADV	_	_	4	advmod	_	start_char=12|end_char=16	_	_	CTK
 4	naturel	naturel	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=17|end_char=24	_	_	CTK
@@ -116,26 +115,26 @@
 #sent_id = CTK <au11>
 #text = allez prends une voiture cherche allez !
 1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
-2	prends	prendre	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=12	_	_	CTK
+2	prends	prendre	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=12	_	_	CTK
 3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=13|end_char=16	_	_	CTK
-4	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	start_char=17|end_char=24	_	_	CTK
-5	cherche	chercher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	start_char=25|end_char=32	_	_	CTK
-6	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	5	xcomp	_	start_char=33|end_char=38	_	_	CTK
+4	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=17|end_char=24	_	_	CTK
+5	cherche	chercher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=25|end_char=32	_	_	CTK
+6	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=33|end_char=38	_	_	CTK
 7	!	!	PUNCT	_	_	1	punct	_	start_char=39|end_char=40	_	_	CTK
 
 #sent_id = CTK <au12>
 #text = y'en a pourtant où est-ce qu'elles sont ?
-1	y'	y	PRON	_	Number=Sing|Person=3	3	expl:comp	_	start_char=0|end_char=2	_	_	CTK
-2	en	en	PRON	_	Person=3	3	expl:comp	_	start_char=2|end_char=4	_	_	CTK
+1	y'	y	PRON	_	Person=3|PronType=Prs	3	expl	_	start_char=0|end_char=2	_	_	CTK
+2	en	en	PRON	_	Person=3|PronType=Prs	3	expl	_	start_char=2|end_char=4	_	_	CTK
 3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=6	_	_	CTK
 4	pourtant	pourtant	ADV	_	_	3	advmod	_	start_char=7|end_char=15	_	_	CTK
-5	où	où	ADV	_	PronType=Rel	3	ccomp	_	start_char=16|end_char=18	_	_	CTK
-6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=19|end_char=22	_	_	CTK
-7	-ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=22|end_char=25	_	_	CTK
-8	qu'	que	SCONJ	_	_	5	mark	_	start_char=26|end_char=29	_	_	CTK
-9	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	start_char=29|end_char=34	_	_	CTK
-10	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=35|end_char=39	_	_	CTK
-11	?	?	PUNCT	_	_	5	punct	_	start_char=40|end_char=41	_	_	CTK
+5	où	où	ADV	_	PronType=Int	6	iobj	_	start_char=16|end_char=18	_	_	CTK
+6	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	start_char=19|end_char=22	_	_	CTK
+7	-ce	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=22|end_char=25	_	_	CTK
+8	qu'	que	SCONJ	_	_	10	mark	_	start_char=26|end_char=29	_	_	CTK
+9	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	start_char=29|end_char=34	_	_	CTK
+10	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	_	start_char=35|end_char=39	_	_	CTK
+11	?	?	PUNCT	_	_	3	punct	_	start_char=40|end_char=41	_	_	CTK
 
 #sent_id = CHI <au13>
 #text = voiture !
@@ -144,12 +143,12 @@
 
 #sent_id = CTK <au14>
 #text = non non non non non non !
-1	non	non	ADV	_	_	6	advmod	_	start_char=0|end_char=3	_	_	CTK
-2	non	non	ADV	_	_	1	fixed	_	start_char=4|end_char=7	_	_	CTK
-3	non	non	ADV	_	_	1	fixed	_	start_char=8|end_char=11	_	_	CTK
-4	non	non	ADV	_	_	3	fixed	_	start_char=12|end_char=15	_	_	CTK
-5	non	non	ADV	_	_	6	advmod	_	start_char=16|end_char=19	_	_	CTK
-6	non	non	ADV	_	_	0	root	_	start_char=20|end_char=23	_	_	CTK
+1	non	non	ADV	_	Polarity=Neg	6	advmod	_	start_char=0|end_char=3	_	_	CTK
+2	non	non	ADV	_	Polarity=Neg	6	advmod	_	start_char=4|end_char=7	_	_	CTK
+3	non	non	ADV	_	Polarity=Neg	6	advmod	_	start_char=8|end_char=11	_	_	CTK
+4	non	non	ADV	_	Polarity=Neg	6	advmod	_	start_char=12|end_char=15	_	_	CTK
+5	non	non	ADV	_	Polarity=Neg	6	advmod	_	start_char=16|end_char=19	_	_	CTK
+6	non	non	INTJ	_	Polarity=Neg	0	root	_	start_char=20|end_char=23	_	_	CTK
 7	!	!	PUNCT	_	_	6	punct	_	start_char=24|end_char=25	_	_	CTK
 
 #sent_id = CHI <au15>
@@ -159,26 +158,25 @@
 
 #sent_id = CTK <au16>
 #text = celle- là c'est xxx bon ben c'est vrai que y'en a pas cent mais bon .
-1	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	8	dislocated	_	start_char=0|end_char=5	_	_	CTK
-2	-	-	PUNCT	_	_	1	punct	_	start_char=5|end_char=6	_	_	CTK
-3	là	là	ADV	_	_	1	advmod	_	start_char=7|end_char=9	_	_	CTK
-4	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	start_char=10|end_char=12	_	_	CTK
-5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	start_char=12|end_char=15	_	_	CTK
-6	xxx	xxx	ADV	_	_	7	advmod	_	start_char=16|end_char=19	_	_	CTK
-7	bon	bon	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=20|end_char=23	_	_	CTK
-8	ben	ben	NOUN	_	Gender=Masc|Number=Sing	11	dislocated	_	start_char=24|end_char=27	_	_	CTK
-9	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	11	expl:subj	_	start_char=28|end_char=30	_	_	CTK
-10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	start_char=30|end_char=33	_	_	CTK
-11	vrai	vrai	ADJ	_	Gender=Masc|Number=Sing	7	conj	_	start_char=34|end_char=38	_	_	CTK
-12	que	que	SCONJ	_	_	17	mark	_	start_char=39|end_char=42	_	_	CTK
-13	y'	y	PRON	_	Number=Sing|Person=3	17	obl:mod	_	start_char=43|end_char=45	_	_	CTK
-14	en	en	PRON	_	Person=3	17	nmod	_	start_char=45|end_char=47	_	_	CTK
-15	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux:tense	_	start_char=48|end_char=49	_	_	CTK
-16	pas	pas	ADV	_	Polarity=Neg	17	advmod	_	start_char=50|end_char=53	_	_	CTK
-17	cent	cent	NUM	_	_	11	csubj	_	start_char=54|end_char=58	_	_	CTK
-18	mais	mais	CCONJ	_	_	19	cc	_	start_char=59|end_char=63	_	_	CTK
-19	bon	bon	ADJ	_	Gender=Masc|Number=Sing	17	conj	_	start_char=64|end_char=67	_	_	CTK
-20	.	.	PUNCT	_	_	8	punct	_	start_char=68|end_char=69	_	_	CTK
+1	celle-	celui	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	7	dislocated	_	start_char=0|end_char=6	_	_	CTK
+2	là	là	ADV	_	_	1	advmod	_	start_char=7|end_char=9	_	_	CTK
+3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=10|end_char=12	_	_	CTK
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=12|end_char=15	_	_	CTK
+5	xxx	xxx	ADV	_	_	7	advmod	_	start_char=16|end_char=19	_	_	CTK
+6	bon	bon	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	start_char=20|end_char=23	_	_	CTK
+7	ben	ben	NOUN	_	Gender=Masc|Number=Sing	10	dislocated	_	start_char=24|end_char=27	_	_	CTK
+8	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	expl:subj	_	start_char=28|end_char=30	_	_	CTK
+9	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	start_char=30|end_char=33	_	_	CTK
+10	vrai	vrai	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=34|end_char=38	_	_	CTK
+11	que	que	SCONJ	_	_	14	mark	_	start_char=39|end_char=42	_	_	CTK
+12	y'	y	PRON	_	Person=3|PronType=Prs	14	expl	_	start_char=43|end_char=45	_	_	CTK
+13	en	en	PRON	_	Person=3|PronType=Prs	16	nmod	_	start_char=45|end_char=47	_	_	CTK
+14	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	csubj	_	start_char=48|end_char=49	_	_	CTK
+15	pas	pas	ADV	_	Polarity=Neg	14	advmod	_	start_char=50|end_char=53	_	_	CTK
+16	cent	cent	NUM	_	Number=Plur	14	obj	_	start_char=54|end_char=58	_	_	CTK
+17	mais	mais	CCONJ	_	_	18	cc	_	start_char=59|end_char=63	_	_	CTK
+18	bon	bon	ADJ	_	Gender=Masc|Number=Sing	16	conj	_	start_char=64|end_char=67	_	_	CTK
+19	.	.	PUNCT	_	_	7	punct	_	start_char=68|end_char=69	_	_	CTK
 
 #sent_id = CHI <au17>
 #text = ah !
@@ -187,17 +185,17 @@
 
 #sent_id = CTK <au18>
 #text = tiens !
-1	tiens	tenir	INTJ	_	_	0	root	_	start_char=0|end_char=5	_	_	CTK
+1	tiens	tenir	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
 2	!	!	PUNCT	_	_	1	punct	_	start_char=6|end_char=7	_	_	CTK
 
 #sent_id = CHI <au19>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au20>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au21>
@@ -207,14 +205,14 @@
 
 #sent_id = CHI <au22>
 #text = oh hisse !
-1	oh	oh	INTJ	_	_	2	discourse	_	start_char=0|end_char=2	_	_	CHI
+1	oh	oh	INTJ	_	_	2	advmod	_	start_char=0|end_char=2	_	_	CHI
 2	hisse	hisser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	CHI
 3	!	!	PUNCT	_	_	2	punct	_	start_char=9|end_char=10	_	_	CHI
 
 #sent_id = CTK <au23>
 #text = tiens les murs !
-1	tiens	tenir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
-2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	start_char=6|end_char=9	_	_	CTK
+1	tiens	tenir	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	start_char=6|end_char=9	_	_	CTK
 3	murs	mur	NOUN	_	Gender=Masc|Number=Plur	1	obj	_	start_char=10|end_char=14	_	_	CTK
 4	!	!	PUNCT	_	_	1	punct	_	start_char=15|end_char=16	_	_	CTK
 
@@ -225,14 +223,14 @@
 
 #sent_id = CHI <au25>
 #text = yyy yyy yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=4|end_char=7	_	_	CHI
-3	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=8|end_char=11	_	_	CHI
-4	.	.	PUNCT	_	_	1	punct	_	start_char=12|end_char=13	_	_	CHI
+1	yyy	yyy	X	_	_	3	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	3	nmod	_	start_char=4|end_char=7	_	_	CHI
+3	yyy	yyy	X	_	_	0	root	_	start_char=8|end_char=11	_	_	CHI
+4	.	.	PUNCT	_	_	3	punct	_	start_char=12|end_char=13	_	_	CHI
 
 #sent_id = CHI <au26>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au27>
@@ -242,7 +240,7 @@
 
 #sent_id = CTK <au28>
 #text = c'est un charmeur !
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	CTK
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=2|end_char=5	_	_	CTK
 3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=6|end_char=8	_	_	CTK
 4	charmeur	charmeur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=9|end_char=17	_	_	CTK
@@ -251,10 +249,9 @@
 #sent_id = CTK <au29>
 #text = allez vas- y !
 1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
-2	vas	vair	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	nsubj	_	start_char=6|end_char=9	_	_	CTK
-3	-	-	PUNCT	_	_	4	punct	_	start_char=9|end_char=10	_	_	CTK
-4	y	y	PRON	_	_	2	obl:mod	_	start_char=11|end_char=12	_	_	CTK
-5	!	!	PUNCT	_	_	1	punct	_	start_char=13|end_char=14	_	_	CTK
+2	vas-	vas-	ADV	_	_	1	advmod	_	start_char=6|end_char=10	_	_	CTK
+3	y	y	PRON	_	Person=3|PronType=Prs	1	iobj	_	start_char=11|end_char=12	_	_	CTK
+4	!	!	PUNCT	_	_	1	punct	_	start_char=13|end_char=14	_	_	CTK
 
 #sent_id = CHI <au30>
 #text = boum !
@@ -273,22 +270,21 @@
 
 #sent_id = CTK <au33>
 #text = mets- la dans le garage regarde !
-1	mets	mettre	VERB	_	Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CTK
-2	-	-	PUNCT	_	_	7	punct	_	start_char=4|end_char=5	_	_	CTK
-3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	start_char=6|end_char=8	_	_	CTK
-4	dans	dans	ADP	_	_	6	case	_	start_char=9|end_char=13	_	_	CTK
-5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=14|end_char=16	_	_	CTK
-6	garage	garage	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	start_char=17|end_char=23	_	_	CTK
-7	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	start_char=24|end_char=31	_	_	CTK
-8	!	!	PUNCT	_	_	1	punct	_	start_char=32|end_char=33	_	_	CTK
+1	mets-	mets-	NOUN	_	Gender=Masc|Number=Sing	2	det	_	start_char=0|end_char=5	_	_	CTK
+2	la	la	NOUN	_	Gender=Fem|Number=Sing	6	nsubj	_	start_char=6|end_char=8	_	_	CTK
+3	dans	dans	ADP	_	_	5	case	_	start_char=9|end_char=13	_	_	CTK
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=14|end_char=16	_	_	CTK
+5	garage	garage	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=17|end_char=23	_	_	CTK
+6	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=24|end_char=31	_	_	CTK
+7	!	!	PUNCT	_	_	6	punct	_	start_char=32|end_char=33	_	_	CTK
 
 #sent_id = CTK <au34>
 #text = excusez- moi bonsoir playmobil !
 1	excusez	excuser	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
 2	-	-	PUNCT	_	_	3	punct	_	start_char=7|end_char=8	_	_	CTK
-3	moi	soi	PRON	_	Number=Sing|Person=1	1	obj	_	start_char=9|end_char=12	_	_	CTK
-4	bonsoir	bonsoir	INTJ	_	_	1	discourse	_	start_char=13|end_char=20	_	_	CTK
-5	playmobil	playmobil	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	start_char=21|end_char=30	_	_	CTK
+3	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	1	obj	_	start_char=9|end_char=12	_	_	CTK
+4	bonsoir	bonsoir	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=13|end_char=20	_	_	CTK
+5	playmobil	playmobil	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=21|end_char=30	_	_	CTK
 6	!	!	PUNCT	_	_	1	punct	_	start_char=31|end_char=32	_	_	CTK
 
 #sent_id = CHI <au35>
@@ -310,10 +306,10 @@
 5	Adrien	Adrien	PROPN	_	_	4	appos	_	start_char=21|end_char=27	_	_	OBS
 6	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	9	nsubj	_	start_char=28|end_char=30	_	_	OBS
 7	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	9	obj	_	start_char=31|end_char=33	_	_	OBS
-8	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	start_char=33|end_char=35	_	_	OBS
+8	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	9	aux:tense	_	start_char=33|end_char=35	_	_	OBS
 9	vue	voir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	conj	_	start_char=36|end_char=39	_	_	OBS
-10	plusieurs	plusieurs	DET	_	Gender=Fem|Number=Plur	11	det	_	start_char=40|end_char=49	_	_	OBS
-11	fois	fois	NOUN	_	Gender=Fem|Number=Plur	9	obl	_	start_char=50|end_char=54	_	_	OBS
+10	plusieurs	plusieurs	DET	_	Number=Plur|PronType=Ind	11	det	_	start_char=40|end_char=49	_	_	OBS
+11	fois	fois	NOUN	_	Gender=Fem|Number=Plur	9	obl:mod	_	start_char=50|end_char=54	_	_	OBS
 12	!	!	PUNCT	_	_	2	punct	_	start_char=55|end_char=56	_	_	OBS
 
 #sent_id = CHI <au38>
@@ -324,47 +320,46 @@
 #sent_id = CTK <au39>
 #text = allez va faire le garage vas- y !
 1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
-2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	nsubj	_	start_char=6|end_char=8	_	_	CTK
+2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=8	_	_	CTK
 3	faire	faire	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=9|end_char=14	_	_	CTK
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=15|end_char=17	_	_	CTK
 5	garage	garage	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=18|end_char=24	_	_	CTK
-6	vas	vair	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	3	parataxis	_	start_char=25|end_char=28	_	_	CTK
-7	-	-	PUNCT	_	_	8	punct	_	start_char=28|end_char=29	_	_	CTK
-8	y	y	PRON	_	_	6	obl:mod	_	start_char=30|end_char=31	_	_	CTK
-9	!	!	PUNCT	_	_	1	punct	_	start_char=32|end_char=33	_	_	CTK
+6	vas-	vas-	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=25|end_char=29	_	_	CTK
+7	y	y	PRON	_	Person=3|PronType=Prs	3	obl:mod	_	start_char=30|end_char=31	_	_	CTK
+8	!	!	PUNCT	_	_	1	punct	_	start_char=32|end_char=33	_	_	CTK
 
 #sent_id = CHI <au40>
 #text = yyy yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
+1	yyy	yyy	X	_	_	2	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	0	root	_	start_char=4|end_char=7	_	_	CHI
 3	.	.	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au41>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au42>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au43>
 #text = l'obligation !
-1	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	CTK
+1	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	CTK
 2	obligation	obligation	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=2|end_char=12	_	_	CTK
 3	!	!	PUNCT	_	_	2	punct	_	start_char=13|end_char=14	_	_	CTK
 
 #sent_id = CTK <au44>
 #text = voilà allez !
 1	voilà	voilà	VERB	_	_	0	root	_	start_char=0|end_char=5	_	_	CTK
-2	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	nsubj	_	start_char=6|end_char=11	_	_	CTK
+2	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=11	_	_	CTK
 3	!	!	PUNCT	_	_	1	punct	_	start_char=12|end_char=13	_	_	CTK
 
 #sent_id = CTK <au45>
 #text = tu tournes pas le dos quand même !
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
-2	tournes	tourner	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=10	_	_	CTK
+2	tournes	tourner	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=10	_	_	CTK
 3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	start_char=11|end_char=14	_	_	CTK
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=15|end_char=17	_	_	CTK
 5	dos	dos	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=18|end_char=21	_	_	CTK
@@ -379,19 +374,19 @@
 3	à	à	ADP	_	_	5	case	_	start_char=8|end_char=9	_	_	CTK
 4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=10|end_char=12	_	_	CTK
 5	télé	télé	NOUN	_	Gender=Fem|Number=Sing	2	obl:arg	_	start_char=13|end_char=17	_	_	CTK
-6	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	7	nsubj	_	start_char=18|end_char=20	_	_	CTK
-7	tourne	tourner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=21|end_char=27	_	_	CTK
+6	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	7	nsubj	_	start_char=18|end_char=20	_	_	CTK
+7	tourne	tourner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=21|end_char=27	_	_	CTK
 8	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	start_char=28|end_char=31	_	_	CTK
 9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	start_char=32|end_char=34	_	_	CTK
 10	dos	dos	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	start_char=35|end_char=38	_	_	CTK
-11	hein	hein	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	start_char=39|end_char=43	_	_	CTK
+11	hein	hein	ADV	_	_	7	advmod	_	start_char=39|end_char=43	_	_	CTK
 12	!	!	PUNCT	_	_	2	punct	_	start_char=44|end_char=45	_	_	CTK
 
 #sent_id = CTK <au47>
 #text = allez construis-le bon sang !
 1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
-2	construis	construire	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=15	_	_	CTK
-3	-le	le	DET	_	Gender=Masc|Number=Sing	5	det	_	start_char=15|end_char=18	_	_	CTK
+2	construis	construire	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=15	_	_	CTK
+3	-le	le	PRON	_	Number=Sing|Person=2|PronType=Prs	2	obj	_	start_char=15|end_char=18	_	_	CTK
 4	bon	bon	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	start_char=19|end_char=22	_	_	CTK
 5	sang	sang	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=23|end_char=27	_	_	CTK
 6	!	!	PUNCT	_	_	1	punct	_	start_char=28|end_char=29	_	_	CTK
@@ -403,7 +398,7 @@
 3	as	avoir	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	4	aux:tense	_	start_char=8|end_char=10	_	_	CTK
 4	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	advcl	_	start_char=11|end_char=15	_	_	CTK
 5	hier	hier	ADV	_	_	4	advmod	_	start_char=16|end_char=20	_	_	CTK
-6	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=21|end_char=23	_	_	CTK
+6	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=21|end_char=23	_	_	CTK
 7	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	cop	_	start_char=23|end_char=28	_	_	CTK
 8	bien	bien	ADV	_	_	9	advmod	_	start_char=29|end_char=33	_	_	CTK
 9	mm	mm	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=34|end_char=36	_	_	CTK
@@ -420,14 +415,14 @@
 
 #sent_id = CTK <au50>
 #text = on entoure on prend la petite voiture dedans !
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	entoure	entourer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=10	_	_	CTK
-3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	start_char=11|end_char=13	_	_	CTK
+3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	4	nsubj	_	start_char=11|end_char=13	_	_	CTK
 4	prend	prendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=14|end_char=19	_	_	CTK
 5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=20|end_char=22	_	_	CTK
 6	petite	petit	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	start_char=23|end_char=29	_	_	CTK
 7	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	start_char=30|end_char=37	_	_	CTK
-8	dedans	dedans	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	start_char=38|end_char=44	_	_	CTK
+8	dedans	dedans	ADV	_	_	4	advmod	_	start_char=38|end_char=44	_	_	CTK
 9	!	!	PUNCT	_	_	2	punct	_	start_char=45|end_char=46	_	_	CTK
 
 #sent_id = CHI <au51>
@@ -437,33 +432,34 @@
 
 #sent_id = CTK <au52>
 #text = c'est bien !
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	CTK
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	CTK
 3	bien	bien	ADV	_	_	0	root	_	start_char=6|end_char=10	_	_	CTK
 4	!	!	PUNCT	_	_	3	punct	_	start_char=11|end_char=12	_	_	CTK
 
 #sent_id = CHI <au53>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au54>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au55>
 #text = oui celui-là si tu veux ! @ .
 1	oui	oui	INTJ	_	_	2	discourse	_	start_char=0|end_char=3	_	_	CTK
-2	celui-là	celui-là	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	start_char=4|end_char=12	_	_	CTK
-3	si	si	SCONJ	_	_	5	mark	_	start_char=13|end_char=15	_	_	CTK
-4	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	5	nsubj	_	start_char=16|end_char=18	_	_	CTK
-5	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	2	acl	_	start_char=19|end_char=23	_	_	CTK
-6	!	!	PUNCT	_	_	2	punct	_	start_char=24|end_char=25	_	_	CTK
+2	celui	celui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=4|end_char=9	_	_	CTK
+3	-là	là	ADV	_	_	2	advmod	_	start_char=9|end_char=12	_	_	CTK
+4	si	si	SCONJ	_	_	6	mark	_	start_char=13|end_char=15	_	_	CTK
+5	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	6	nsubj	_	start_char=16|end_char=18	_	_	CTK
+6	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	2	acl	_	start_char=19|end_char=23	_	_	CTK
+7	!	!	PUNCT	_	_	2	punct	_	start_char=24|end_char=25	_	_	CTK
 
 #sent_id = CTK <au55>
 #text = oui celui-là si tu veux ! @ .
-1	@	@	X	_	_	0	root	_	start_char=26|end_char=27	_	_	CTK
+1	@	@	SYM	_	_	0	root	_	start_char=26|end_char=27	_	_	CTK
 2	.	.	PUNCT	_	_	1	punct	_	start_char=28|end_char=29	_	_	CTK
 
 #sent_id = CHI <au56>
@@ -473,13 +469,13 @@
 
 #sent_id = CHI <au57>
 #text = x@pm jaune !
-1	x@pm	x@pm	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=4	_	_	CHI
+1	x@pm	xètre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=4	_	_	CHI
 2	jaune	jaune	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	start_char=5|end_char=10	_	_	CHI
 3	!	!	PUNCT	_	_	1	punct	_	start_char=11|end_char=12	_	_	CHI
 
 #sent_id = CTK <au58>
 #text = c'est jaune oui !
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	CTK
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	CTK
 3	jaune	jaune	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=6|end_char=11	_	_	CTK
 4	oui	oui	INTJ	_	_	3	discourse	_	start_char=12|end_char=15	_	_	CTK
@@ -487,18 +483,18 @@
 
 #sent_id = CTK <au59>
 #text = celui-là ?
-1	celui	celui	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	start_char=0|end_char=5	_	_	CTK
+1	celui	celui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=0|end_char=5	_	_	CTK
 2	-là	là	ADV	_	_	1	advmod	_	start_char=5|end_char=8	_	_	CTK
 3	?	?	PUNCT	_	_	1	punct	_	start_char=9|end_char=10	_	_	CTK
 
 #sent_id = CHI <au60>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au61>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au62>
@@ -518,44 +514,44 @@
 
 #sent_id = CHI <au65>
 #text = tchou tchou tchou !
-1	tchou	tchou	PROPN	_	_	0	root	_	start_char=0|end_char=5	_	_	CHI
-2	tchou	tchou	PROPN	_	_	1	flat:name	_	start_char=6|end_char=11	_	_	CHI
-3	tchou	tchou	PROPN	_	_	1	flat:name	_	start_char=12|end_char=17	_	_	CHI
+1	tchou	tchou	INTJ	_	_	0	root	_	start_char=0|end_char=5	_	_	CHI
+2	tchou	tchou	PROPN	_	_	1	iobj	_	start_char=6|end_char=11	_	_	CHI
+3	tchou	tchou	X	_	_	2	flat:name	_	start_char=12|end_char=17	_	_	CHI
 4	!	!	PUNCT	_	_	1	punct	_	start_char=18|end_char=19	_	_	CHI
 
 #sent_id = CHI <au66>
 #text = tchou tchou !
-1	tchou	tchou	PROPN	_	_	0	root	_	start_char=0|end_char=5	_	_	CHI
-2	tchou	tchou	PROPN	_	_	1	flat:name	_	start_char=6|end_char=11	_	_	CHI
+1	tchou	tchou	INTJ	_	_	0	root	_	start_char=0|end_char=5	_	_	CHI
+2	tchou	tchou	PROPN	_	_	1	iobj	_	start_char=6|end_char=11	_	_	CHI
 3	!	!	PUNCT	_	_	1	punct	_	start_char=12|end_char=13	_	_	CHI
 
 #sent_id = CHI <au67>
 #text = tchou tchou tchou tchou !
-1	tchou	tchou	PROPN	_	_	0	root	_	start_char=0|end_char=5	_	_	CHI
-2	tchou	tchou	PROPN	_	_	1	flat:name	_	start_char=6|end_char=11	_	_	CHI
-3	tchou	tchou	PROPN	_	_	1	flat:name	_	start_char=12|end_char=17	_	_	CHI
-4	tchou	tchou	PROPN	_	_	1	flat:name	_	start_char=18|end_char=23	_	_	CHI
+1	tchou	tchou	INTJ	_	_	0	root	_	start_char=0|end_char=5	_	_	CHI
+2	tchou	tchou	X	_	_	1	appos	_	start_char=6|end_char=11	_	_	CHI
+3	tchou	tchou	X	_	_	2	flat:name	_	start_char=12|end_char=17	_	_	CHI
+4	tchou	tchou	X	_	_	1	appos	_	start_char=18|end_char=23	_	_	CHI
 5	!	!	PUNCT	_	_	1	punct	_	start_char=24|end_char=25	_	_	CHI
 
 #sent_id = CHI <au68>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au69>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au70>
 #text = ben refais !
-1	ben	ben	INTJ	_	_	2	nsubj	_	start_char=0|end_char=3	_	_	CTK
+1	ben	ben	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	_	start_char=0|end_char=3	_	_	CTK
 2	refais	refaire	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=4|end_char=10	_	_	CTK
 3	!	!	PUNCT	_	_	2	punct	_	start_char=11|end_char=12	_	_	CTK
 
 #sent_id = CHI <au71>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au72>
@@ -565,13 +561,13 @@
 
 #sent_id = CHI <au73>
 #text = yyy yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
+1	yyy	yyy	X	_	_	2	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	0	root	_	start_char=4|end_char=7	_	_	CHI
 3	.	.	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CTK <au74>
 #text = bah va le chercher !
-1	bah	bah	PRON	_	Number=Sing|Person=3	2	nsubj	_	start_char=0|end_char=3	_	_	CTK
+1	bah	bah	PROPN	_	_	2	nsubj	_	start_char=0|end_char=3	_	_	CTK
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=4|end_char=6	_	_	CTK
 3	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	start_char=7|end_char=9	_	_	CTK
 4	chercher	chercher	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=10|end_char=18	_	_	CTK
@@ -590,14 +586,14 @@
 #sent_id = CTK <au77>
 #text = oui parti !
 1	oui	oui	INTJ	_	_	0	root	_	start_char=0|end_char=3	_	_	CTK
-2	parti	parti	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	start_char=4|end_char=9	_	_	CTK
+2	parti	partir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	start_char=4|end_char=9	_	_	CTK
 3	!	!	PUNCT	_	_	1	punct	_	start_char=10|end_char=11	_	_	CTK
 
 #sent_id = CTK <au78>
 #text = oh boum !
-1	oh	oh	INTJ	_	_	0	root	_	start_char=0|end_char=2	_	_	CTK
-2	boum	boum	NOUN	_	Gender=Masc|Number=Sing	1	obl:arg	_	start_char=3|end_char=7	_	_	CTK
-3	!	!	PUNCT	_	_	1	punct	_	start_char=8|end_char=9	_	_	CTK
+1	oh	oh	INTJ	_	_	2	discourse	_	start_char=0|end_char=2	_	_	CTK
+2	boum	boum	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3|end_char=7	_	_	CTK
+3	!	!	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	CTK
 
 #sent_id = CHI <au79>
 #text = boum !
@@ -607,29 +603,29 @@
 #sent_id = CTK <au80>
 #text = tombé on va tous les asseoir comme ça xxx .
 1	tombé	tomber	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	advcl	_	start_char=0|end_char=5	_	_	CTK
-2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	start_char=6|end_char=8	_	_	CTK
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	3	nsubj	_	start_char=6|end_char=8	_	_	CTK
 3	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9|end_char=11	_	_	CTK
-4	tous	tout	PRON	_	Gender=Masc|Number=Plur	3	obl:mod	_	start_char=12|end_char=16	_	_	CTK
+4	tous	tout	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Ind	3	obl:mod	_	start_char=12|end_char=16	_	_	CTK
 5	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	6	obj	_	start_char=17|end_char=20	_	_	CTK
 6	asseoir	asseoir	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=21|end_char=28	_	_	CTK
 7	comme	comme	ADP	_	_	8	case	_	start_char=29|end_char=34	_	_	CTK
 8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	obl:mod	_	start_char=35|end_char=37	_	_	CTK
-9	xxx	xxx	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	start_char=38|end_char=41	_	_	CTK
+9	xxx	xxx	SYM	_	_	8	appos	_	start_char=38|end_char=41	_	_	CTK
 10	.	.	PUNCT	_	_	3	punct	_	start_char=42|end_char=43	_	_	CTK
 
 #sent_id = CHI <au81>
 #text = yyy yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
+1	yyy	yyy	X	_	_	2	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	0	root	_	start_char=4|end_char=7	_	_	CHI
 3	.	.	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CTK <au82>
 #text = regarde le petit singe on le met là ?
-1	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
+1	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
 2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=8|end_char=10	_	_	CTK
 3	petit	petit	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	start_char=11|end_char=16	_	_	CTK
 4	singe	singe	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=17|end_char=22	_	_	CTK
-5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	7	nsubj	_	start_char=23|end_char=25	_	_	CTK
+5	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	7	nsubj	_	start_char=23|end_char=25	_	_	CTK
 6	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obj	_	start_char=26|end_char=28	_	_	CTK
 7	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=29|end_char=32	_	_	CTK
 8	là	là	ADV	_	_	7	advmod	_	start_char=33|end_char=35	_	_	CTK
@@ -645,12 +641,12 @@
 1	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=0|end_char=3	_	_	CTK
 2	belle	beau	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	start_char=4|end_char=9	_	_	CTK
 3	petite	petit	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	start_char=10|end_char=16	_	_	CTK
-4	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=17|end_char=24	_	_	CTK
+4	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	7	nsubj	_	start_char=17|end_char=24	_	_	CTK
 5	bleue	bleu	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	start_char=25|end_char=30	_	_	CTK
 6	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=31|end_char=33	_	_	CTK
-7	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	start_char=34|end_char=41	_	_	CTK
+7	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=34|end_char=41	_	_	CTK
 8	boum	boum	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	start_char=42|end_char=46	_	_	CTK
-9	!	!	PUNCT	_	_	4	punct	_	start_char=47|end_char=48	_	_	CTK
+9	!	!	PUNCT	_	_	7	punct	_	start_char=47|end_char=48	_	_	CTK
 
 #sent_id = CHI <au85>
 #text = boum !
@@ -664,7 +660,7 @@
 3	bonhomme	bonhomme	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=9|end_char=17	_	_	CTK
 4	et	et	CCONJ	_	_	5	cc	_	start_char=18|end_char=20	_	_	CTK
 5	voilà	voilà	VERB	_	_	3	conj	_	start_char=21|end_char=26	_	_	CTK
-6	xxx	xxx	NOUN	_	Gender=Masc|Number=Sing	5	obj	_	start_char=27|end_char=30	_	_	CTK
+6	xxx	xxx	X	_	_	5	obj	_	start_char=27|end_char=30	_	_	CTK
 7	.	.	PUNCT	_	_	3	punct	_	start_char=31|end_char=32	_	_	CTK
 
 #sent_id = CHI <au87>
@@ -683,35 +679,35 @@
 #text = voilà un autre .
 1	voilà	voilà	VERB	_	_	0	root	_	start_char=0|end_char=5	_	_	CTK
 2	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	start_char=6|end_char=8	_	_	CTK
-3	autre	autre	PRON	_	Number=Sing	1	obj	_	start_char=9|end_char=14	_	_	CTK
+3	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	1	obj	_	start_char=9|end_char=14	_	_	CTK
 4	.	.	PUNCT	_	_	1	punct	_	start_char=15|end_char=16	_	_	CTK
 
 #sent_id = CHI <au90>
 #text = yyy yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
+1	yyy	yyy	X	_	_	2	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	0	root	_	start_char=4|end_char=7	_	_	CHI
 3	.	.	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CTK <au91>
 #text = tiens regarde !
-1	tiens	tenir	INTJ	_	_	2	discourse	_	start_char=0|end_char=5	_	_	CTK
-2	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=13	_	_	CTK
-3	!	!	PUNCT	_	_	2	punct	_	start_char=14|end_char=15	_	_	CTK
+1	tiens	tenir	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
+2	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=13	_	_	CTK
+3	!	!	PUNCT	_	_	1	punct	_	start_char=14|end_char=15	_	_	CTK
 
 #sent_id = CHI <au92>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au93>
 #text = tout petit !
-1	tout	tout	ADV	_	_	2	advmod	_	start_char=0|end_char=4	_	_	CTK
-2	petit	petit	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=5|end_char=10	_	_	CTK
+1	tout	tout	DET	_	Gender=Masc|Number=Sing|PronType=Ind	2	det	_	start_char=0|end_char=4	_	_	CTK
+2	petit	petit	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=5|end_char=10	_	_	CTK
 3	!	!	PUNCT	_	_	2	punct	_	start_char=11|end_char=12	_	_	CTK
 
 #sent_id = CTK <au94>
 #text = regarde le petit bonhomme !
-1	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
+1	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
 2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=8|end_char=10	_	_	CTK
 3	petit	petit	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	start_char=11|end_char=16	_	_	CTK
 4	bonhomme	bonhomme	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=17|end_char=25	_	_	CTK
@@ -719,37 +715,37 @@
 
 #sent_id = CHI <au95>
 #text = yyy yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
+1	yyy	yyy	X	_	_	2	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	0	root	_	start_char=4|end_char=7	_	_	CHI
 3	.	.	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CTK <au96>
 #text = ah ça c'est pas ce qui manque les petits bonhommes voilà !
 1	ah	ah	INTJ	_	_	6	discourse	_	start_char=0|end_char=2	_	_	CTK
 2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	dislocated	_	start_char=3|end_char=5	_	_	CTK
-3	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=6|end_char=8	_	_	CTK
+3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=6|end_char=8	_	_	CTK
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=8|end_char=11	_	_	CTK
 5	pas	pas	ADV	_	Polarity=Neg	6	advmod	_	start_char=12|end_char=15	_	_	CTK
-6	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=16|end_char=18	_	_	CTK
+6	ce	ce	PRON	_	Gender=Masc|Person=3|PronType=Dem	0	root	_	start_char=16|end_char=18	_	_	CTK
 7	qui	qui	PRON	_	PronType=Rel	8	nsubj	_	start_char=19|end_char=22	_	_	CTK
 8	manque	manquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	start_char=23|end_char=29	_	_	CTK
-9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	start_char=30|end_char=33	_	_	CTK
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	start_char=30|end_char=33	_	_	CTK
 10	petits	petit	ADJ	_	Gender=Masc|Number=Plur	11	amod	_	start_char=34|end_char=40	_	_	CTK
 11	bonhommes	bonhomme	NOUN	_	Gender=Masc|Number=Plur	8	obj	_	start_char=41|end_char=50	_	_	CTK
-12	voilà	voilà	VERB	_	_	6	acl:relcl	_	start_char=51|end_char=56	_	_	CTK
+12	voilà	voilà	VERB	_	_	6	advcl:cleft	_	start_char=51|end_char=56	_	_	CTK
 13	!	!	PUNCT	_	_	6	punct	_	start_char=57|end_char=58	_	_	CTK
 
 #sent_id = CHI <au97>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au98>
 #text = yyy yyy yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=4|end_char=7	_	_	CHI
-3	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=8|end_char=11	_	_	CHI
-4	.	.	PUNCT	_	_	1	punct	_	start_char=12|end_char=13	_	_	CHI
+1	yyy	yyy	X	_	_	3	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	3	nmod	_	start_char=4|end_char=7	_	_	CHI
+3	yyy	yyy	X	_	_	0	root	_	start_char=8|end_char=11	_	_	CHI
+4	.	.	PUNCT	_	_	3	punct	_	start_char=12|end_char=13	_	_	CHI
 
 #sent_id = CTK <au99>
 #text = oui il est assis !
@@ -762,34 +758,36 @@
 #sent_id = CTK <au100>
 #text = et celui-là debout !
 1	et	et	CCONJ	_	_	2	cc	_	start_char=0|end_char=2	_	_	CTK
-2	celui-là	celui-là	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	start_char=3|end_char=11	_	_	CTK
-3	debout	debout	ADJ	_	Gender=Masc|Number=Sing	2	amod	_	start_char=12|end_char=18	_	_	CTK
-4	!	!	PUNCT	_	_	2	punct	_	start_char=19|end_char=20	_	_	CTK
+2	celui	celui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=3|end_char=8	_	_	CTK
+3	-là	là	ADV	_	_	2	advmod	_	start_char=8|end_char=11	_	_	CTK
+4	debout	debout	ADV	_	_	2	advmod	_	start_char=12|end_char=18	_	_	CTK
+5	!	!	PUNCT	_	_	2	punct	_	start_char=19|end_char=20	_	_	CTK
 
 #sent_id = CTK <au101>
 #text = regarde le petit tu le mets où tu le mets où celui-là ?
 1	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
 2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	start_char=8|end_char=10	_	_	CTK
-3	petit	petit	ADJ	_	Gender=Masc|Number=Sing	6	obj	_	start_char=11|end_char=16	_	_	CTK
+3	petit	petit	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=11|end_char=16	_	_	CTK
 4	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	6	nsubj	_	start_char=17|end_char=19	_	_	CTK
 5	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obj	_	start_char=20|end_char=22	_	_	CTK
 6	mets	mettre	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	parataxis	_	start_char=23|end_char=27	_	_	CTK
 7	où	où	ADV	_	PronType=Rel	10	advmod	_	start_char=28|end_char=30	_	_	CTK
 8	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	10	nsubj	_	start_char=31|end_char=33	_	_	CTK
 9	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	obj	_	start_char=34|end_char=36	_	_	CTK
-10	mets	mettre	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	6	ccomp	_	start_char=37|end_char=41	_	_	CTK
-11	où	où	ADV	_	PronType=Rel	10	advmod	_	start_char=42|end_char=44	_	_	CTK
-12	celui-là	celui-là	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	10	nsubj	_	start_char=45|end_char=53	_	_	CTK
-13	?	?	PUNCT	_	_	1	punct	_	start_char=54|end_char=55	_	_	CTK
+10	mets	mettre	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	6	ccomp	_	start_char=37|end_char=41	_	_	CTK
+11	où	où	ADV	_	PronType=Int	12	advmod	_	start_char=42|end_char=44	_	_	CTK
+12	celui	celui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	10	nsubj	_	start_char=45|end_char=50	_	_	CTK
+13	-là	là	ADV	_	_	12	advmod	_	start_char=50|end_char=53	_	_	CTK
+14	?	?	PUNCT	_	_	1	punct	_	start_char=54|end_char=55	_	_	CTK
 
 #sent_id = CHI <au102>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au103>
 #text = où tu le mets ?
-1	où	où	ADV	_	PronType=Rel	4	iobj	_	start_char=0|end_char=2	_	_	CTK
+1	où	où	ADV	_	PronType=Int	4	iobj	_	start_char=0|end_char=2	_	_	CTK
 2	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	4	nsubj	_	start_char=3|end_char=5	_	_	CTK
 3	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	start_char=6|end_char=8	_	_	CTK
 4	mets	mettre	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9|end_char=13	_	_	CTK
@@ -797,41 +795,39 @@
 
 #sent_id = CHI <au104>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au105>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au106>
 #text = ben vas- y assieds-le vas- y !
-1	ben	ben	INTJ	_	_	2	nsubj	_	start_char=0|end_char=3	_	_	CTK
-2	vas	vair	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=4|end_char=7	_	_	CTK
-3	-	-	PUNCT	_	_	5	punct	_	start_char=7|end_char=8	_	_	CTK
-4	y	y	PRON	_	_	5	iobj	_	start_char=9|end_char=10	_	_	CTK
-5	assieds	assendre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	parataxis	_	start_char=11|end_char=18	_	_	CTK
-6	-le	le	PRON	_	Number=Sing|Person=3	7	obj	_	start_char=18|end_char=21	_	_	CTK
-7	vas	vair	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=22|end_char=25	_	_	CTK
-8	-	-	PUNCT	_	_	9	punct	_	start_char=25|end_char=26	_	_	CTK
-9	y	y	PRON	_	_	7	obl:mod	_	start_char=27|end_char=28	_	_	CTK
-10	!	!	PUNCT	_	_	2	punct	_	start_char=29|end_char=30	_	_	CTK
+1	ben	ben	X	_	_	4	nsubj	_	start_char=0|end_char=3	_	_	CTK
+2	vas-	vas-	X	_	_	1	flat:name	_	start_char=4|end_char=8	_	_	CTK
+3	y	y	PRON	_	Person=3|PronType=Prs	4	iobj	_	start_char=9|end_char=10	_	_	CTK
+4	assieds	asseoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=11|end_char=18	_	_	CTK
+5	-le	le	PRON	_	Number=Sing|Person=2|PronType=Prs	4	obj	_	start_char=18|end_char=21	_	_	CTK
+6	vas-	vas-	X	_	_	4	obj	_	start_char=22|end_char=26	_	_	CTK
+7	y	y	PRON	_	Person=3|PronType=Prs	4	obl:mod	_	start_char=27|end_char=28	_	_	CTK
+8	!	!	PUNCT	_	_	4	punct	_	start_char=29|end_char=30	_	_	CTK
 
 #sent_id = CHI <au107>
 #text = boum boum boum boum !
 1	boum	boum	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=4	_	_	CHI
 2	boum	boum	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=5|end_char=9	_	_	CHI
-3	boum	boum	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=10|end_char=14	_	_	CHI
+3	boum	boum	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=10|end_char=14	_	_	CHI
 4	boum	boum	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=15|end_char=19	_	_	CHI
 5	!	!	PUNCT	_	_	1	punct	_	start_char=20|end_char=21	_	_	CHI
 
 #sent_id = CTK <au108>
 #text = attends il est tombé !
-1	attends	attends	INTJ	_	_	4	discourse	_	start_char=0|end_char=7	_	_	CTK
+1	attends	attendre	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=8|end_char=10	_	_	CTK
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	start_char=11|end_char=14	_	_	CTK
-4	tombé	tomber	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=15|end_char=20	_	_	CTK
+4	tombé	tomber	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	conj	_	start_char=15|end_char=20	_	_	CTK
 5	!	!	PUNCT	_	_	4	punct	_	start_char=21|end_char=22	_	_	CTK
 
 #sent_id = CHI <au109>
@@ -841,14 +837,14 @@
 
 #sent_id = CHI <au110>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au111>
 #text = tiens regarde !
-1	tiens	tenir	INTJ	_	_	2	discourse	_	start_char=0|end_char=5	_	_	CTK
-2	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=13	_	_	CTK
-3	!	!	PUNCT	_	_	2	punct	_	start_char=14|end_char=15	_	_	CTK
+1	tiens	tenir	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
+2	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=13	_	_	CTK
+3	!	!	PUNCT	_	_	1	punct	_	start_char=14|end_char=15	_	_	CTK
 
 #sent_id = CHI <au112>
 #text = www .
@@ -869,18 +865,18 @@
 #text = encore un autre regarde !
 1	encore	encore	ADV	_	_	4	advmod	_	start_char=0|end_char=6	_	_	CTK
 2	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	start_char=7|end_char=9	_	_	CTK
-3	autre	autre	PRON	_	Number=Sing	4	nsubj	_	start_char=10|end_char=15	_	_	CTK
+3	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	4	nsubj	_	start_char=10|end_char=15	_	_	CTK
 4	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=16|end_char=23	_	_	CTK
 5	!	!	PUNCT	_	_	4	punct	_	start_char=24|end_char=25	_	_	CTK
 
 #sent_id = CTK <au116>
 #text = des chevaux regarde un deux trois !
-1	des	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	CTK
+1	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	CTK
 2	chevaux	cheval	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	start_char=4|end_char=11	_	_	CTK
 3	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=12|end_char=19	_	_	CTK
 4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=20|end_char=22	_	_	CTK
-5	deux	deux	NUM	_	_	6	nummod	_	start_char=23|end_char=27	_	_	CTK
-6	trois	trois	NUM	_	_	3	obj	_	start_char=28|end_char=33	_	_	CTK
+5	deux	deux	NUM	_	Number=Plur	6	nummod	_	start_char=23|end_char=27	_	_	CTK
+6	trois	trois	NUM	_	Number=Plur	3	obj	_	start_char=28|end_char=33	_	_	CTK
 7	!	!	PUNCT	_	_	3	punct	_	start_char=34|end_char=35	_	_	CTK
 
 #sent_id = CHI <au117>
@@ -890,82 +886,79 @@
 
 #sent_id = CTK <au118>
 #text = xxx tu vois le petit bonhomme xxx .
-1-2	xxx	_	_	_	_	_	_	_	start_char=0|end_char=3	_	_	CTK
-1	de	de	ADP	_	_	4	advmod	_	_	_	_	CTK
-2	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	4	obj	_	_	_	_	CTK
-3	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	4	nsubj	_	start_char=4|end_char=6	_	_	CTK
-4	vois	aller	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=7|end_char=11	_	_	CTK
-5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	start_char=12|end_char=14	_	_	CTK
-6	petit	petit	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	start_char=15|end_char=20	_	_	CTK
-7	bonhomme	bonhomme	NOUN	_	Gender=Masc|Number=Sing	4	xcomp	_	start_char=21|end_char=29	_	_	CTK
-8	xxx	xxx	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	start_char=30|end_char=33	_	_	CTK
-9	.	.	PUNCT	_	_	4	punct	_	start_char=34|end_char=35	_	_	CTK
+1	xxx	xxx	SYM	_	_	3	discourse	_	start_char=0|end_char=3	_	_	CTK
+2	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	3	nsubj	_	start_char=4|end_char=6	_	_	CTK
+3	vois	voir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=7|end_char=11	_	_	CTK
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=12|end_char=14	_	_	CTK
+5	petit	petit	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	start_char=15|end_char=20	_	_	CTK
+6	bonhomme	bonhomme	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=21|end_char=29	_	_	CTK
+7	xxx	xxx	X	_	_	6	appos	_	start_char=30|end_char=33	_	_	CTK
+8	.	.	PUNCT	_	_	3	punct	_	start_char=34|end_char=35	_	_	CTK
 
 #sent_id = CTK <au119>
 #text = vas- y on le met debout comme ça !
-1	vas	vair	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=3	_	_	CTK
-2	-	-	PUNCT	_	_	6	punct	_	start_char=3|end_char=4	_	_	CTK
-3	y	y	PRON	_	_	6	expl:comp	_	start_char=5|end_char=6	_	_	CTK
-4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	6	nsubj	_	start_char=7|end_char=9	_	_	CTK
-5	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obj	_	start_char=10|end_char=12	_	_	CTK
-6	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	start_char=13|end_char=16	_	_	CTK
-7	debout	debout	ADJ	_	Gender=Masc|Number=Sing	6	xcomp	_	start_char=17|end_char=23	_	_	CTK
-8	comme	comme	ADP	_	_	9	case	_	start_char=24|end_char=29	_	_	CTK
-9	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	obl:mod	_	start_char=30|end_char=32	_	_	CTK
-10	!	!	PUNCT	_	_	1	punct	_	start_char=33|end_char=34	_	_	CTK
+1	vas-	vas-	INTJ	_	_	5	discourse	_	start_char=0|end_char=4	_	_	CTK
+2	y	y	PRON	_	Person=3|PronType=Prs	5	obl:mod	_	start_char=5|end_char=6	_	_	CTK
+3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	5	nsubj	_	start_char=7|end_char=9	_	_	CTK
+4	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	start_char=10|end_char=12	_	_	CTK
+5	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13|end_char=16	_	_	CTK
+6	debout	debout	ADV	_	_	5	advmod	_	start_char=17|end_char=23	_	_	CTK
+7	comme	comme	ADP	_	_	8	case	_	start_char=24|end_char=29	_	_	CTK
+8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	obl:mod	_	start_char=30|end_char=32	_	_	CTK
+9	!	!	PUNCT	_	_	5	punct	_	start_char=33|end_char=34	_	_	CTK
 
 #sent_id = CTK <au120>
 #text = tu le mets là non ?
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	3	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	start_char=3|end_char=5	_	_	CTK
-3	mets	mettre	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=10	_	_	CTK
+3	mets	mettre	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=10	_	_	CTK
 4	là	là	ADV	_	_	3	advmod	_	start_char=11|end_char=13	_	_	CTK
-5	non	non	ADV	_	_	3	advmod	_	start_char=14|end_char=17	_	_	CTK
+5	non	non	INTJ	_	Polarity=Neg	3	discourse	_	start_char=14|end_char=17	_	_	CTK
 6	?	?	PUNCT	_	_	3	punct	_	start_char=18|end_char=19	_	_	CTK
 
 #sent_id = CTK <au121>
 #text = oh c'est bien c'est bien !
 1	oh	oh	INTJ	_	_	7	discourse	_	start_char=0|end_char=2	_	_	CTK
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	nsubj	_	start_char=3|end_char=5	_	_	CTK
-3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	start_char=5|end_char=8	_	_	CTK
-4	bien	bien	ADV	_	_	1	fixed	_	start_char=9|end_char=13	_	_	CTK
-5	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=14|end_char=16	_	_	CTK
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=3|end_char=5	_	_	CTK
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=5|end_char=8	_	_	CTK
+4	bien	bien	ADV	_	_	7	advmod	_	start_char=9|end_char=13	_	_	CTK
+5	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=14|end_char=16	_	_	CTK
 6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=16|end_char=19	_	_	CTK
 7	bien	bien	ADV	_	_	0	root	_	start_char=20|end_char=24	_	_	CTK
 8	!	!	PUNCT	_	_	7	punct	_	start_char=25|end_char=26	_	_	CTK
 
 #sent_id = CHI <au122>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au123>
 #text = moi je sais pas si y'en a d'autres .
-1	moi	soi	PRON	_	Number=Sing|Person=1	3	dislocated	_	start_char=0|end_char=3	_	_	CTK
+1	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	3	dislocated	_	start_char=0|end_char=3	_	_	CTK
 2	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	start_char=4|end_char=6	_	_	CTK
 3	sais	savoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=7|end_char=11	_	_	CTK
 4	pas	pas	ADV	_	Polarity=Neg	3	advmod	_	start_char=12|end_char=15	_	_	CTK
 5	si	si	SCONJ	_	_	8	mark	_	start_char=16|end_char=18	_	_	CTK
-6	y'	y	PRON	_	Number=Sing|Person=3|PronType=Prs	8	expl:comp	_	start_char=19|end_char=21	_	_	CTK
-7	en	en	PRON	_	Person=3	8	expl:comp	_	start_char=21|end_char=23	_	_	CTK
+6	y'	y	PRON	_	Person=3|PronType=Prs	8	expl	_	start_char=19|end_char=21	_	_	CTK
+7	en	en	PRON	_	Person=3|PronType=Prs	8	expl	_	start_char=21|end_char=23	_	_	CTK
 8	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	start_char=24|end_char=25	_	_	CTK
-9	d'	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	10	det	_	start_char=26|end_char=28	_	_	CTK
-10	autres	autre	PRON	_	Number=Plur	8	obj	_	start_char=28|end_char=34	_	_	CTK
+9	d'	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	10	det	_	start_char=26|end_char=28	_	_	CTK
+10	autres	autre	PRON	_	Number=Plur|Person=3|PronType=Ind	8	obj	_	start_char=28|end_char=34	_	_	CTK
 11	.	.	PUNCT	_	_	3	punct	_	start_char=35|end_char=36	_	_	CTK
 
 #sent_id = CTK <au124>
 #text = ah en voilà un autre tiens !
 1	ah	ah	INTJ	_	_	3	discourse	_	start_char=0|end_char=2	_	_	CTK
-2	en	en	PRON	_	Person=3	3	expl:comp	_	start_char=3|end_char=5	_	_	CTK
+2	en	en	ADP	_	_	3	mark	_	start_char=3|end_char=5	_	_	CTK
 3	voilà	voilà	VERB	_	_	0	root	_	start_char=6|end_char=11	_	_	CTK
-4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=12|end_char=14	_	_	CTK
-5	autre	autre	PRON	_	Number=Sing	3	obj	_	start_char=15|end_char=20	_	_	CTK
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=12|end_char=14	_	_	CTK
+5	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	6	amod	_	start_char=15|end_char=20	_	_	CTK
 6	tiens	tenir	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=21|end_char=26	_	_	CTK
 7	!	!	PUNCT	_	_	3	punct	_	start_char=27|end_char=28	_	_	CTK
 
 #sent_id = CHI <au125>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au126>
@@ -978,22 +971,22 @@
 
 #sent_id = CHI <au127>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au128>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au129>
 #text = non c'est la musique c'est un piano !
-1	non	non	ADV	_	_	5	advmod	_	start_char=0|end_char=3	_	_	CTK
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=4|end_char=6	_	_	CTK
+1	non	non	INTJ	_	Polarity=Neg	5	discourse	_	start_char=0|end_char=3	_	_	CTK
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=4|end_char=6	_	_	CTK
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=6|end_char=9	_	_	CTK
 4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=10|end_char=12	_	_	CTK
 5	musique	musique	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=13|end_char=20	_	_	CTK
-6	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=21|end_char=23	_	_	CTK
+6	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=21|end_char=23	_	_	CTK
 7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	start_char=23|end_char=26	_	_	CTK
 8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	start_char=27|end_char=29	_	_	CTK
 9	piano	piano	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	start_char=30|end_char=35	_	_	CTK
@@ -1001,8 +994,8 @@
 
 #sent_id = CTK <au130>
 #text = m c'est le piano !
-1	m	m	NOUN	_	Gender=Masc|Number=Plur	5	dislocated	_	start_char=0|end_char=1	_	_	CTK
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=2|end_char=4	_	_	CTK
+1	m	mètre	NOUN	_	Gender=Masc|Number=Sing	5	dislocated	_	start_char=0|end_char=1	_	_	CTK
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=2|end_char=4	_	_	CTK
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=4|end_char=7	_	_	CTK
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=8|end_char=10	_	_	CTK
 5	piano	piano	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=11|end_char=16	_	_	CTK
@@ -1016,23 +1009,23 @@
 #sent_id = CTK <au132>
 #text = allez joue avec tes petits chevaux tiens !
 1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
-2	joue	jouer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=10	_	_	CTK
+2	joue	jouer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=10	_	_	CTK
 3	avec	avec	ADP	_	_	6	case	_	start_char=11|end_char=15	_	_	CTK
-4	tes	son	DET	_	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	6	det	_	start_char=16|end_char=19	_	_	CTK
+4	tes	son	DET	_	Number=Plur|Number[psor]=Plur|Person[psor]=2|Poss=Yes|PronType=Prs	6	det	_	start_char=16|end_char=19	_	_	CTK
 5	petits	petit	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	start_char=20|end_char=26	_	_	CTK
 6	chevaux	cheval	NOUN	_	Gender=Masc|Number=Plur	2	obl:arg	_	start_char=27|end_char=34	_	_	CTK
-7	tiens	tenir	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=35|end_char=40	_	_	CTK
+7	tiens	tenir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=35|end_char=40	_	_	CTK
 8	!	!	PUNCT	_	_	1	punct	_	start_char=41|end_char=42	_	_	CTK
 
 #sent_id = CTK <au133>
 #text = qu'est-ce qu'ils font les chevaux il dit bonjour !
-1	qu'	que	PRON	_	PronType=Int	0	root	_	start_char=0|end_char=3	_	_	CTK
+1	qu'	que	PRON	_	Person=3|PronType=Int	0	root	_	start_char=0|end_char=3	_	_	CTK
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	start_char=3|end_char=6	_	_	CTK
-3	-ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	expl:subj	_	start_char=6|end_char=9	_	_	CTK
-4	qu'	que	PRON	PronType=Rel	PronType=Rel	6	obj	_	start_char=10|end_char=13	_	_	CTK
+3	-ce	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	expl:subj	_	start_char=6|end_char=9	_	_	CTK
+4	qu'	que	SCONJ	_	_	6	mark	_	start_char=10|end_char=13	_	_	CTK
 5	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	6	nsubj	_	start_char=13|end_char=16	_	_	CTK
 6	font	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	advcl:cleft	_	start_char=17|end_char=21	_	_	CTK
-7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	start_char=22|end_char=25	_	_	CTK
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	start_char=22|end_char=25	_	_	CTK
 8	chevaux	cheval	NOUN	_	Gender=Masc|Number=Plur	6	obj	_	start_char=26|end_char=33	_	_	CTK
 9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	start_char=34|end_char=36	_	_	CTK
 10	dit	dire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	advcl:cleft	_	start_char=37|end_char=40	_	_	CTK
@@ -1046,7 +1039,7 @@
 
 #sent_id = CTK <au135>
 #text = regarde il lève la tête regarde comme ça !
-1	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
+1	regarde	regarder	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
 2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=8|end_char=10	_	_	CTK
 3	lève	lever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=11|end_char=15	_	_	CTK
 4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=16|end_char=18	_	_	CTK
@@ -1058,27 +1051,27 @@
 
 #sent_id = CHI <au136>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au137>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au138>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au139>
 #text = ben va voir va regarder ce qui t'intéresse !
-1	ben	ben	PROPN	_	_	2	nsubj	_	start_char=0|end_char=3	_	_	CTK
+1	ben	ben	X	_	_	2	nsubj	_	start_char=0|end_char=3	_	_	CTK
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=4|end_char=6	_	_	CTK
 3	voir	voir	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=7|end_char=11	_	_	CTK
-4	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	start_char=12|end_char=14	_	_	CTK
-5	regarder	regarder	VERB	_	VerbForm=Inf	4	xcomp	_	start_char=15|end_char=23	_	_	CTK
-6	ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	obj	_	start_char=24|end_char=26	_	_	CTK
+4	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	xcomp	_	start_char=12|end_char=14	_	_	CTK
+5	regarder	regarder	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=15|end_char=23	_	_	CTK
+6	ce	ce	PRON	_	Gender=Masc|Person=3|PronType=Dem	5	obj	_	start_char=24|end_char=26	_	_	CTK
 7	qui	qui	PRON	_	PronType=Rel	9	nsubj	_	start_char=27|end_char=30	_	_	CTK
 8	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	9	iobj	_	start_char=31|end_char=33	_	_	CTK
 9	intéresse	intéresser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	start_char=33|end_char=42	_	_	CTK
@@ -1092,32 +1085,32 @@
 #sent_id = CTK <au141>
 #text = ça qu'est-ce que tu veux trouver là-dedans tiens regarde !
 1	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
-2	qu'	que	PRON	_	PronType=Int	0	root	_	start_char=3|end_char=6	_	_	CTK
+2	qu'	que	PRON	_	Person=3|PronType=Int	0	root	_	start_char=3|end_char=6	_	_	CTK
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	start_char=6|end_char=9	_	_	CTK
-4	-ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	2	expl:subj	_	start_char=9|end_char=12	_	_	CTK
-5	que	que	PRON	PronType=Rel	PronType=Rel	8	obj	_	start_char=13|end_char=16	_	_	CTK
+4	-ce	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	expl:subj	_	start_char=9|end_char=12	_	_	CTK
+5	que	que	SCONJ	_	_	7	mark	_	start_char=13|end_char=16	_	_	CTK
 6	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	7	nsubj	_	start_char=17|end_char=19	_	_	CTK
-7	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	advcl:cleft	_	start_char=20|end_char=24	_	_	CTK
+7	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	2	advcl:cleft	_	start_char=20|end_char=24	_	_	CTK
 8	trouver	trouver	VERB	_	VerbForm=Inf	7	xcomp	_	start_char=25|end_char=32	_	_	CTK
-9	là-dedans	llidedan	PRON	_	Number=Sing	10	nsubj	_	start_char=33|end_char=42	_	_	CTK
-10	tiens	tenir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	11	parataxis	_	start_char=43|end_char=48	_	_	CTK
-11	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	advcl:cleft	_	start_char=49|end_char=56	_	_	CTK
+9	là-dedans	là-dedans	ADV	_	_	11	advmod	_	start_char=33|end_char=42	_	_	CTK
+10	tiens	tenir	PRON	_	Number=Sing|Person=1|PronType=Prs	11	obj	_	start_char=43|end_char=48	_	_	CTK
+11	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	conj	_	start_char=49|end_char=56	_	_	CTK
 12	!	!	PUNCT	_	_	2	punct	_	start_char=57|end_char=58	_	_	CTK
 
 #sent_id = CTK <au142>
 #text = qu'est-ce que tu veux vache ?
-1	qu'	que	PRON	_	PronType=Int	0	root	_	start_char=0|end_char=3	_	_	CTK
+1	qu'	que	PRON	_	Person=3|PronType=Int	0	root	_	start_char=0|end_char=3	_	_	CTK
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	start_char=3|end_char=6	_	_	CTK
-3	-ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	expl:subj	_	start_char=6|end_char=9	_	_	CTK
-4	que	que	PRON	PronType=Rel	PronType=Rel	6	obj	_	start_char=10|end_char=13	_	_	CTK
+3	-ce	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	1	nsubj	_	start_char=6|end_char=9	_	_	CTK
+4	que	que	PRON	_	PronType=Rel	6	mark	_	start_char=10|end_char=13	_	_	CTK
 5	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	6	nsubj	_	start_char=14|end_char=16	_	_	CTK
-6	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	advcl:cleft	_	start_char=17|end_char=21	_	_	CTK
+6	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	advcl:cleft	_	start_char=17|end_char=21	_	_	CTK
 7	vache	vache	NOUN	_	Gender=Fem|Number=Sing	6	xcomp	_	start_char=22|end_char=27	_	_	CTK
 8	?	?	PUNCT	_	_	1	punct	_	start_char=28|end_char=29	_	_	CTK
 
 #sent_id = CHI <au143>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au144>
@@ -1128,26 +1121,26 @@
 
 #sent_id = CHI <au145>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au146>
 #text = tu le mets là là !
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	3	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	start_char=3|end_char=5	_	_	CTK
-3	mets	mettre	VERB	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=10	_	_	CTK
+3	mets	mettre	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=10	_	_	CTK
 4	là	là	ADV	_	_	3	advmod	_	start_char=11|end_char=13	_	_	CTK
 5	là	là	ADV	_	_	3	advmod	_	start_char=14|end_char=16	_	_	CTK
 6	!	!	PUNCT	_	_	3	punct	_	start_char=17|end_char=18	_	_	CTK
 
 #sent_id = CHI <au147>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au148>
 #text = on cherche une voiture .
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	cherche	chercher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=10	_	_	CTK
 3	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=11|end_char=14	_	_	CTK
 4	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=15|end_char=22	_	_	CTK
@@ -1157,7 +1150,7 @@
 #text = une voiture xxx .
 1	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=3	_	_	CTK
 2	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=4|end_char=11	_	_	CTK
-3	xxx	xxx	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	start_char=12|end_char=15	_	_	CTK
+3	xxx	xxx	X	_	_	2	appos	_	start_char=12|end_char=15	_	_	CTK
 4	.	.	PUNCT	_	_	2	punct	_	start_char=16|end_char=17	_	_	CTK
 
 #sent_id = CHI <au150>
@@ -1177,13 +1170,12 @@
 
 #sent_id = CTK <au153>
 #text = voiture vas- y fais rouler .
-1	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	2	nsubj	_	start_char=0|end_char=7	_	_	CTK
-2	vas	vair	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8|end_char=11	_	_	CTK
-3	-	-	PUNCT	_	_	6	punct	_	start_char=11|end_char=12	_	_	CTK
-4	y	y	PRON	_	_	6	iobj	_	start_char=13|end_char=14	_	_	CTK
-5	fais	faire	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:caus	_	start_char=15|end_char=19	_	_	CTK
-6	rouler	rouler	VERB	_	VerbForm=Inf	2	ccomp	_	start_char=20|end_char=26	_	_	CTK
-7	.	.	PUNCT	_	_	2	punct	_	start_char=27|end_char=28	_	_	CTK
+1	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	5	nsubj:caus	_	start_char=0|end_char=7	_	_	CTK
+2	vas-	vas-	ADV	_	_	5	advmod	_	start_char=8|end_char=12	_	_	CTK
+3	y	y	PRON	_	Person=3|PronType=Prs	5	obl:mod	_	start_char=13|end_char=14	_	_	CTK
+4	fais	faire	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	5	aux:caus	_	start_char=15|end_char=19	_	_	CTK
+5	rouler	rouler	VERB	_	VerbForm=Inf	0	root	_	start_char=20|end_char=26	_	_	CTK
+6	.	.	PUNCT	_	_	5	punct	_	start_char=27|end_char=28	_	_	CTK
 
 #sent_id = CHI <au154>
 #text = www .
@@ -1192,7 +1184,7 @@
 
 #sent_id = CHI <au155>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au156>
@@ -1200,28 +1192,27 @@
 1	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=2	_	_	CTK
 2	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	obj	_	start_char=3|end_char=5	_	_	CTK
 3	chercher	chercher	VERB	_	VerbForm=Inf	1	xcomp	_	start_char=6|end_char=14	_	_	CTK
-4	puis	puis	ADV	_	_	8	cc	_	start_char=15|end_char=19	_	_	CTK
+4	puis	puis	CCONJ	_	_	8	cc	_	start_char=15|end_char=19	_	_	CTK
 5	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	8	nsubj	_	start_char=20|end_char=22	_	_	CTK
-6	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	8	expl:comp	_	start_char=23|end_char=25	_	_	CTK
+6	me	se	PRON	_	Number=Sing|Person=1|PronType=Prs	8	expl:pv	_	start_char=23|end_char=25	_	_	CTK
 7	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	obj	_	start_char=26|end_char=28	_	_	CTK
-8	renvoies	renvoyer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=29|end_char=37	_	_	CTK
+8	renvoies	renvoyer	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=29|end_char=37	_	_	CTK
 9	!	!	PUNCT	_	_	1	punct	_	start_char=38|end_char=39	_	_	CTK
 
 #sent_id = CTK <au157>
 #text = vas- y va chercher la voiture !
-1	vas	vair	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=3	_	_	CTK
-2	-	-	PUNCT	_	_	4	punct	_	start_char=3|end_char=4	_	_	CTK
-3	y	y	PRON	_	_	4	iobj	_	start_char=5|end_char=6	_	_	CTK
-4	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	start_char=7|end_char=9	_	_	CTK
-5	chercher	chercher	VERB	_	VerbForm=Inf	4	xcomp	_	start_char=10|end_char=18	_	_	CTK
-6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=19|end_char=21	_	_	CTK
-7	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	start_char=22|end_char=29	_	_	CTK
-8	!	!	PUNCT	_	_	1	punct	_	start_char=30|end_char=31	_	_	CTK
+1	vas-	vas-	INTJ	_	_	3	discourse	_	start_char=0|end_char=4	_	_	CTK
+2	y	y	PRON	_	Person=3|PronType=Prs	3	iobj	_	start_char=5|end_char=6	_	_	CTK
+3	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=7|end_char=9	_	_	CTK
+4	chercher	chercher	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=10|end_char=18	_	_	CTK
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	start_char=19|end_char=21	_	_	CTK
+6	voiture	voiture	NOUN	_	Gender=Fem|Number=Sing	4	obj	_	start_char=22|end_char=29	_	_	CTK
+7	!	!	PUNCT	_	_	3	punct	_	start_char=30|end_char=31	_	_	CTK
 
 #sent_id = CTK <au158>
 #text = allez fais rouler !
 1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
-2	fais	faire	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	3	aux:caus	_	start_char=6|end_char=10	_	_	CTK
+2	fais	faire	AUX	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	3	aux:caus	_	start_char=6|end_char=10	_	_	CTK
 3	rouler	rouler	VERB	_	VerbForm=Inf	1	xcomp	_	start_char=11|end_char=17	_	_	CTK
 4	!	!	PUNCT	_	_	1	punct	_	start_char=18|end_char=19	_	_	CTK
 
@@ -1264,8 +1255,8 @@
 
 #sent_id = CHI <au166>
 #text = yyy yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
+1	yyy	yyy	X	_	_	2	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	0	root	_	start_char=4|end_char=7	_	_	CHI
 3	.	.	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CHI <au167>
@@ -1297,7 +1288,7 @@
 3	bonhomme	bonhomme	NOUN	_	Gender=Masc|Number=Sing	6	dislocated	_	start_char=9|end_char=17	_	_	CTK
 4	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	start_char=18|end_char=20	_	_	CTK
 5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=21|end_char=24	_	_	CTK
-6	où	où	ADV	_	PronType=Rel	0	root	_	start_char=25|end_char=27	_	_	CTK
+6	où	où	ADV	_	PronType=Int	0	root	_	start_char=25|end_char=27	_	_	CTK
 7	?	?	PUNCT	_	_	6	punct	_	start_char=28|end_char=29	_	_	CTK
 
 #sent_id = CTK <au172>
@@ -1326,12 +1317,12 @@
 
 #sent_id = CTK <au175>
 #text = regarde on met le xxx dedans !
-1	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
-2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	3	nsubj	_	start_char=8|end_char=10	_	_	CTK
+1	regarde	regarder	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
+2	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	3	nsubj	_	start_char=8|end_char=10	_	_	CTK
 3	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=11|end_char=14	_	_	CTK
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=15|end_char=17	_	_	CTK
 5	xxx	xxx	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=18|end_char=21	_	_	CTK
-6	dedans	dedans	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	start_char=22|end_char=28	_	_	CTK
+6	dedans	dedans	ADV	_	_	3	advmod	_	start_char=22|end_char=28	_	_	CTK
 7	!	!	PUNCT	_	_	1	punct	_	start_char=29|end_char=30	_	_	CTK
 
 #sent_id = CHI <au176>
@@ -1351,29 +1342,29 @@
 
 #sent_id = CTK <au179>
 #text = c'est ça c'est ça regarde !
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	CTK
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=2|end_char=5	_	_	CTK
 3	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	0	root	_	start_char=6|end_char=8	_	_	CTK
-4	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=9|end_char=11	_	_	CTK
+4	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=9|end_char=11	_	_	CTK
 5	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	start_char=11|end_char=14	_	_	CTK
 6	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	nsubj	_	start_char=15|end_char=17	_	_	CTK
-7	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	start_char=18|end_char=25	_	_	CTK
+7	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	start_char=18|end_char=25	_	_	CTK
 8	!	!	PUNCT	_	_	3	punct	_	start_char=26|end_char=27	_	_	CTK
 
 #sent_id = CHI <au180>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au181>
 #text = c'est pas difficile tu vois xxx .
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	CTK
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=2|end_char=5	_	_	CTK
 3	pas	pas	ADV	_	Polarity=Neg	4	advmod	_	start_char=6|end_char=9	_	_	CTK
 4	difficile	difficile	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=10|end_char=19	_	_	CTK
 5	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	6	nsubj	_	start_char=20|end_char=22	_	_	CTK
-6	vois	aller	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	4	conj	_	start_char=23|end_char=27	_	_	CTK
-7	xxx	xxx	NOUN	_	Gender=Masc|Number=Sing	6	xcomp	_	start_char=28|end_char=31	_	_	CTK
+6	vois	voir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	4	parataxis	_	start_char=23|end_char=27	_	_	CTK
+7	xxx	xxx	SYM	_	_	6	obj	_	start_char=28|end_char=31	_	_	CTK
 8	.	.	PUNCT	_	_	4	punct	_	start_char=32|end_char=33	_	_	CTK
 
 #sent_id = CTK <au182>
@@ -1384,13 +1375,13 @@
 
 #sent_id = CHI <au183>
 #text = oh oh !
-1	oh	oh	INTJ	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
-2	oh	oh	INTJ	_	_	1	fixed	_	start_char=3|end_char=5	_	_	CHI
+1	oh	oh	X	_	_	0	root	_	start_char=0|end_char=2	_	_	CHI
+2	oh	oh	X	_	_	1	appos	_	start_char=3|end_char=5	_	_	CHI
 3	!	!	PUNCT	_	_	1	punct	_	start_char=6|end_char=7	_	_	CHI
 
 #sent_id = CHI <au184>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au185>
@@ -1404,9 +1395,9 @@
 1	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=4	_	_	CTK
 2	que	que	SCONJ	_	_	4	mark	_	start_char=5|end_char=8	_	_	CTK
 3	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	4	nsubj	_	start_char=9|end_char=11	_	_	CTK
-4	rentres	rentre	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	ccomp	_	start_char=12|end_char=19	_	_	CTK
-5	dedans	dedans	ADV	_	_	6	advmod	_	start_char=20|end_char=26	_	_	CTK
-6	hein	hein	INTJ	_	_	4	discourse	_	start_char=27|end_char=31	_	_	CTK
+4	rentres	rentrer	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	ccomp	_	start_char=12|end_char=19	_	_	CTK
+5	dedans	dedans	ADV	_	_	4	advmod	_	start_char=20|end_char=26	_	_	CTK
+6	hein	hein	ADV	_	_	4	advmod	_	start_char=27|end_char=31	_	_	CTK
 7	?	?	PUNCT	_	_	1	punct	_	start_char=32|end_char=33	_	_	CTK
 
 #sent_id = CTK <au187>
@@ -1415,9 +1406,9 @@
 2	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=6|end_char=8	_	_	CTK
 3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=9|end_char=11	_	_	CTK
 4	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=12|end_char=14	_	_	CTK
-5	se	se	PRON	_	Person=3|PronType=Prs	6	expl:pass	_	start_char=15|end_char=17	_	_	CTK
+5	se	se	PRON	_	Person=3|PronType=Prs|Reflex=Yes	6	obj	_	start_char=15|end_char=17	_	_	CTK
 6	promener	promener	VERB	_	VerbForm=Inf	4	xcomp	_	start_char=18|end_char=26	_	_	CTK
-7	hop	hop	ADV	_	_	6	advmod	_	start_char=27|end_char=30	_	_	CTK
+7	hop	hop	NOUN	_	Gender=Masc|Number=Sing	6	obj	_	start_char=27|end_char=30	_	_	CTK
 8	!	!	PUNCT	_	_	4	punct	_	start_char=31|end_char=32	_	_	CTK
 
 #sent_id = CHI <au188>
@@ -1427,45 +1418,45 @@
 
 #sent_id = CTK <au189>
 #text = on va changer on va prendre celle-là regarde celle-là elle roule bien regarde alors on la fait rouler !
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=5	_	_	CTK
-3	changer	changer	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=6|end_char=13	_	_	CTK
-4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	start_char=14|end_char=16	_	_	CTK
+3	changer	changer	VERB	_	VerbForm=Inf	5	xcomp	_	start_char=6|end_char=13	_	_	CTK
+4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	5	nsubj	_	start_char=14|end_char=16	_	_	CTK
 5	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=17|end_char=19	_	_	CTK
 6	prendre	prendre	VERB	_	VerbForm=Inf	5	xcomp	_	start_char=20|end_char=27	_	_	CTK
-7	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	6	obj	_	start_char=28|end_char=33	_	_	CTK
-8	-là	là	ADV	_	_	9	advmod	_	start_char=33|end_char=36	_	_	CTK
-9	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	start_char=37|end_char=44	_	_	CTK
-10	celle	celui	PRON	_	Gender=Fem|Number=Sing|PronType=Dem	9	obj	_	start_char=45|end_char=50	_	_	CTK
-11	-là	là	ADV	_	_	13	advmod	_	start_char=50|end_char=53	_	_	CTK
+7	celle	celui	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	6	obj	_	start_char=28|end_char=33	_	_	CTK
+8	-là	là	ADV	_	_	7	advmod	_	start_char=33|end_char=36	_	_	CTK
+9	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=37|end_char=44	_	_	CTK
+10	celle	celui	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	9	obj	_	start_char=45|end_char=50	_	_	CTK
+11	-là	là	ADV	_	_	10	advmod	_	start_char=50|end_char=53	_	_	CTK
 12	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	start_char=54|end_char=58	_	_	CTK
-13	roule	rouler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	start_char=59|end_char=64	_	_	CTK
+13	roule	rouler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	start_char=59|end_char=64	_	_	CTK
 14	bien	bien	ADV	_	_	13	advmod	_	start_char=65|end_char=69	_	_	CTK
-15	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	ccomp	_	start_char=70|end_char=77	_	_	CTK
-16	alors	alors	ADV	_	_	20	advmod	_	start_char=78|end_char=83	_	_	CTK
-17	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	20	nsubj:caus	_	start_char=84|end_char=86	_	_	CTK
+15	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	start_char=70|end_char=77	_	_	CTK
+16	alors	alors	ADV	_	_	15	advmod	_	start_char=78|end_char=83	_	_	CTK
+17	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	20	nsubj:caus	_	start_char=84|end_char=86	_	_	CTK
 18	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	20	obj:agent	_	start_char=87|end_char=89	_	_	CTK
 19	fait	faire	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:caus	_	start_char=90|end_char=94	_	_	CTK
-20	rouler	rouler	VERB	_	VerbForm=Inf	15	ccomp	_	start_char=95|end_char=101	_	_	CTK
+20	rouler	rouler	VERB	_	VerbForm=Inf	15	xcomp	_	start_char=95|end_char=101	_	_	CTK
 21	!	!	PUNCT	_	_	2	punct	_	start_char=102|end_char=103	_	_	CTK
 
 #sent_id = CHI <au190>
 #text = boum boum boum boum boum boum boum .
 1	boum	boum	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=4	_	_	CHI
 2	boum	boum	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=5|end_char=9	_	_	CHI
-3	boum	boum	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=10|end_char=14	_	_	CHI
-4	boum	boum	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=15|end_char=19	_	_	CHI
-5	boum	boum	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	start_char=20|end_char=24	_	_	CHI
+3	boum	boum	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=10|end_char=14	_	_	CHI
+4	boum	boum	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=15|end_char=19	_	_	CHI
+5	boum	boum	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=20|end_char=24	_	_	CHI
 6	boum	boum	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=25|end_char=29	_	_	CHI
 7	boum	boum	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	start_char=30|end_char=34	_	_	CHI
 8	.	.	PUNCT	_	_	1	punct	_	start_char=35|end_char=36	_	_	CHI
 
 #sent_id = CHI <au191>
 #text = yyy yyy yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=4|end_char=7	_	_	CHI
-3	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=8|end_char=11	_	_	CHI
-4	.	.	PUNCT	_	_	1	punct	_	start_char=12|end_char=13	_	_	CHI
+1	yyy	yyy	X	_	_	3	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	3	nmod	_	start_char=4|end_char=7	_	_	CHI
+3	yyy	yyy	X	_	_	0	root	_	start_char=8|end_char=11	_	_	CHI
+4	.	.	PUNCT	_	_	3	punct	_	start_char=12|end_char=13	_	_	CHI
 
 #sent_id = CHI <au192>
 #text = boum boum !
@@ -1487,7 +1478,7 @@
 #text = boum boum boum boum !
 1	boum	boum	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=4	_	_	CHI
 2	boum	boum	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=5|end_char=9	_	_	CHI
-3	boum	boum	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=10|end_char=14	_	_	CHI
+3	boum	boum	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=10|end_char=14	_	_	CHI
 4	boum	boum	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=15|end_char=19	_	_	CHI
 5	!	!	PUNCT	_	_	1	punct	_	start_char=20|end_char=21	_	_	CHI
 
@@ -1497,7 +1488,7 @@
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=3|end_char=6	_	_	CTK
 3	tombé	tomber	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=7|end_char=12	_	_	CTK
 4	mais	mais	CCONJ	_	_	8	cc	_	start_char=13|end_char=17	_	_	CTK
-5	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	8	nsubj	_	start_char=18|end_char=20	_	_	CTK
+5	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	8	nsubj	_	start_char=18|end_char=20	_	_	CTK
 6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	start_char=20|end_char=23	_	_	CTK
 7	pas	pas	ADV	_	Polarity=Neg	8	advmod	_	start_char=24|end_char=27	_	_	CTK
 8	grave	grave	ADJ	_	Gender=Masc|Number=Sing	3	conj	_	start_char=28|end_char=33	_	_	CTK
@@ -1506,11 +1497,10 @@
 #sent_id = CTK <au197>
 #text = ramasse-le tiens hop !
 1	ramasse	ramasser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
-2	-	-	PUNCT	_	_	4	punct	_	start_char=7|end_char=8	_	_	CTK
-3	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	start_char=8|end_char=10	_	_	CTK
-4	tiens	tenir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=11|end_char=16	_	_	CTK
-5	hop	hop	ADJ	_	Gender=Masc|Number=Sing	4	xcomp	_	start_char=17|end_char=20	_	_	CTK
-6	!	!	PUNCT	_	_	1	punct	_	start_char=21|end_char=22	_	_	CTK
+2	-le	le	PRON	_	Number=Sing|Person=2|PronType=Prs	3	obj	_	start_char=7|end_char=10	_	_	CTK
+3	tiens	tenir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=11|end_char=16	_	_	CTK
+4	hop	hop	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=17|end_char=20	_	_	CTK
+5	!	!	PUNCT	_	_	1	punct	_	start_char=21|end_char=22	_	_	CTK
 
 #sent_id = CHI <au198>
 #text = boum boum !
@@ -1529,54 +1519,55 @@
 7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	start_char=29|end_char=32	_	_	CTK
 8	pas	pas	ADV	_	Polarity=Neg	9	advmod	_	start_char=33|end_char=36	_	_	CTK
 9	tombé	tomber	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	ccomp	_	start_char=37|end_char=42	_	_	CTK
-10	celui-là	celui-là	PRON	_	Gender=Masc|Number=Sing	9	obj	_	start_char=43|end_char=51	_	_	CTK
-11	?	?	PUNCT	_	_	4	punct	_	start_char=52|end_char=53	_	_	CTK
+10	celui	celui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	obj	_	start_char=43|end_char=48	_	_	CTK
+11	-là	là	ADV	_	_	10	advmod	_	start_char=48|end_char=51	_	_	CTK
+12	?	?	PUNCT	_	_	9	punct	_	start_char=52|end_char=53	_	_	CTK
 
 #sent_id = CTK <au200>
 #text = regarde hop on le met par terre .
-1	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
-2	hop	hop	ADV	_	_	1	advmod	_	start_char=8|end_char=11	_	_	CTK
-3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	5	nsubj	_	start_char=12|end_char=14	_	_	CTK
+1	regarde	regarder	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=7	_	_	CTK
+2	hop	hop	INTJ	_	_	1	obj	_	start_char=8|end_char=11	_	_	CTK
+3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	5	nsubj	_	start_char=12|end_char=14	_	_	CTK
 4	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	start_char=15|end_char=17	_	_	CTK
-5	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	start_char=18|end_char=21	_	_	CTK
+5	met	mettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=18|end_char=21	_	_	CTK
 6	par	par	ADP	_	_	7	case	_	start_char=22|end_char=25	_	_	CTK
 7	terre	terre	NOUN	_	Gender=Fem|Number=Sing	5	obl:arg	_	start_char=26|end_char=31	_	_	CTK
 8	.	.	PUNCT	_	_	1	punct	_	start_char=32|end_char=33	_	_	CTK
 
 #sent_id = CTK <au201>
 #text = tiens un autre petit cheval xxx .
-1	tiens	tenir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
+1	tiens	tenir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
 2	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	start_char=6|end_char=8	_	_	CTK
 3	autre	autre	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	start_char=9|end_char=14	_	_	CTK
 4	petit	petit	ADJ	_	Gender=Masc|Number=Sing	5	amod	_	start_char=15|end_char=20	_	_	CTK
 5	cheval	cheval	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=21|end_char=27	_	_	CTK
-6	xxx	xxx	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=28|end_char=31	_	_	CTK
+6	xxx	xxx	X	_	_	5	appos	_	start_char=28|end_char=31	_	_	CTK
 7	.	.	PUNCT	_	_	1	punct	_	start_char=32|end_char=33	_	_	CTK
 
 #sent_id = CTK <au202>
 #text = où est-ce qu'elle est la vache là ah là !
-1	où	où	ADV	_	PronType=Rel	0	root	_	start_char=0|end_char=2	_	_	CTK
-2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	start_char=3|end_char=6	_	_	CTK
-3	-ce	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	1	expl:subj	_	start_char=6|end_char=9	_	_	CTK
+1	où	où	ADV	_	PronType=Int	2	iobj	_	start_char=0|end_char=2	_	_	CTK
+2	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=6	_	_	CTK
+3	-ce	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	expl:subj	_	start_char=6|end_char=9	_	_	CTK
 4	qu'	que	SCONJ	_	_	8	mark	_	start_char=10|end_char=13	_	_	CTK
 5	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	start_char=13|end_char=17	_	_	CTK
 6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	start_char=18|end_char=21	_	_	CTK
 7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	start_char=22|end_char=24	_	_	CTK
-8	vache	vache	NOUN	_	Gender=Fem|Number=Sing	1	advcl:cleft	_	start_char=25|end_char=30	_	_	CTK
+8	vache	vache	NOUN	_	Gender=Fem|Number=Sing	2	ccomp	_	start_char=25|end_char=30	_	_	CTK
 9	là	là	ADV	_	_	8	advmod	_	start_char=31|end_char=33	_	_	CTK
-10	ah	ah	INTJ	_	_	8	discourse	_	start_char=34|end_char=36	_	_	CTK
-11	là	là	ADV	_	_	10	fixed	_	start_char=37|end_char=39	_	_	CTK
-12	!	!	PUNCT	_	_	1	punct	_	start_char=40|end_char=41	_	_	CTK
+10	ah	ah	INTJ	_	_	11	discourse	_	start_char=34|end_char=36	_	_	CTK
+11	là	là	ADV	_	_	8	advmod	_	start_char=37|end_char=39	_	_	CTK
+12	!	!	PUNCT	_	_	2	punct	_	start_char=40|end_char=41	_	_	CTK
 
 #sent_id = CTK <au203>
 #text = avec le petit cheval voilà regarde !
 1	avec	avec	ADP	_	_	4	case	_	start_char=0|end_char=4	_	_	CTK
 2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=5|end_char=7	_	_	CTK
 3	petit	petit	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	start_char=8|end_char=13	_	_	CTK
-4	cheval	cheval	NOUN	_	Gender=Masc|Number=Sing	5	obl:mod	_	start_char=14|end_char=20	_	_	CTK
+4	cheval	cheval	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	start_char=14|end_char=20	_	_	CTK
 5	voilà	voilà	VERB	_	_	0	root	_	start_char=21|end_char=26	_	_	CTK
 6	regarde	regarder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	xcomp	_	start_char=27|end_char=34	_	_	CTK
-7	!	!	PUNCT	_	_	6	punct	_	start_char=35|end_char=36	_	_	CTK
+7	!	!	PUNCT	_	_	5	punct	_	start_char=35|end_char=36	_	_	CTK
 
 #sent_id = CHI <au204>
 #text = www .
@@ -1586,30 +1577,30 @@
 #sent_id = OBS <au205>
 #text = vers les pieds !
 1	vers	vers	ADP	_	_	3	case	_	start_char=0|end_char=4	_	_	OBS
-2	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	start_char=5|end_char=8	_	_	OBS
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	start_char=5|end_char=8	_	_	OBS
 3	pieds	pied	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=9|end_char=14	_	_	OBS
 4	!	!	PUNCT	_	_	3	punct	_	start_char=15|end_char=16	_	_	OBS
 
 #sent_id = CTK <au206>
 #text = c'est un fou des pieds vous le savez !
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	CTK
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=2|end_char=5	_	_	CTK
 3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=6|end_char=8	_	_	CTK
 4	fou	fou	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=9|end_char=12	_	_	CTK
 5-6	des	_	_	_	_	_	_	_	start_char=13|end_char=16	_	_	CTK
 5	de	de	ADP	_	_	7	case	_	_	_	_	CTK
-6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_	_	_	CTK
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_	_	_	CTK
 7	pieds	pied	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	start_char=17|end_char=22	_	_	CTK
 8	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	10	nsubj	_	start_char=23|end_char=27	_	_	CTK
 9	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	obj	_	start_char=28|end_char=30	_	_	CTK
-10	savez	savoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	start_char=31|end_char=36	_	_	CTK
+10	savez	savoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	parataxis	_	start_char=31|end_char=36	_	_	CTK
 11	!	!	PUNCT	_	_	4	punct	_	start_char=37|end_char=38	_	_	CTK
 
 #sent_id = OBS <au207>
 #text = a chaque fois que je le filme il vient à ch- je ça manque pas !
-1	a	à	ADP	_	_	3	case	_	start_char=0|end_char=1	_	_	OBS
-2	chaque	chaque	DET	_	Gender=Fem|Number=Sing	3	det	_	start_char=2|end_char=8	_	_	OBS
-3	fois	fois	NOUN	_	Gender=Fem|Number=Sing	9	obl:mod	_	start_char=9|end_char=13	_	_	OBS
+1	a	à	ADP	_	Typo=Yes	3	case	_	start_char=0|end_char=1	_	_	OBS
+2	chaque	chaque	DET	_	Number=Sing|PronType=Ind	3	det	_	start_char=2|end_char=8	_	_	OBS
+3	fois	fois	NOUN	_	Gender=Fem|Number=Sing	14	obl:mod	_	start_char=9|end_char=13	_	_	OBS
 4	que	que	SCONJ	_	_	7	mark	_	start_char=14|end_char=17	_	_	OBS
 5	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	7	nsubj	_	start_char=18|end_char=20	_	_	OBS
 6	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obj	_	start_char=21|end_char=23	_	_	OBS
@@ -1617,59 +1608,59 @@
 8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	start_char=30|end_char=32	_	_	OBS
 9	vient	venir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=33|end_char=38	_	_	OBS
 10	à	à	ADP	_	_	11	case	_	start_char=39|end_char=40	_	_	OBS
-11	ch-	chi	PRON	_	PronType=Rel	14	obl:arg	_	start_char=41|end_char=44	_	_	OBS
+11	ch-	ch-	NOUN	_	Gender=Masc|Number=Sing	9	obl:arg	_	start_char=41|end_char=44	_	_	OBS
 12	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	14	nsubj	_	start_char=45|end_char=47	_	_	OBS
 13	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	14	nsubj	_	start_char=48|end_char=50	_	_	OBS
-14	manque	manquer	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	conj	_	start_char=51|end_char=57	_	_	OBS
+14	manque	manquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	start_char=51|end_char=57	_	_	OBS
 15	pas	pas	ADV	_	Polarity=Neg	14	advmod	_	start_char=58|end_char=61	_	_	OBS
 16	!	!	PUNCT	_	_	9	punct	_	start_char=62|end_char=63	_	_	OBS
 
 #sent_id = CTK <au208>
 #text = il en a après les pieds de chez les enfants !
-1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=0|end_char=2	_	_	CTK
-2	en	en	PRON	_	Person=3	3	expl:comp	_	start_char=3|end_char=5	_	_	CTK
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	start_char=0|end_char=2	_	_	CTK
+2	en	en	PRON	_	Person=3|PronType=Prs	3	expl	_	start_char=3|end_char=5	_	_	CTK
 3	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6|end_char=7	_	_	CTK
 4	après	après	ADP	_	_	6	case	_	start_char=8|end_char=13	_	_	CTK
-5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	start_char=14|end_char=17	_	_	CTK
-6	pieds	pied	NOUN	_	Gender=Masc|Number=Plur	3	obl	_	start_char=18|end_char=23	_	_	CTK
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=14|end_char=17	_	_	CTK
+6	pieds	pied	NOUN	_	Gender=Masc|Number=Plur	3	obl:mod	_	start_char=18|end_char=23	_	_	CTK
 7	de	de	ADP	_	_	10	case	_	start_char=24|end_char=26	_	_	CTK
 8	chez	chez	ADP	_	_	10	case	_	start_char=27|end_char=31	_	_	CTK
-9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	start_char=32|end_char=35	_	_	CTK
-10	enfants	enfant	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	start_char=36|end_char=43	_	_	CTK
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	start_char=32|end_char=35	_	_	CTK
+10	enfants	enfant	NOUN	_	Number=Plur	6	nmod	_	start_char=36|end_char=43	_	_	CTK
 11	!	!	PUNCT	_	_	3	punct	_	start_char=44|end_char=45	_	_	CTK
 
 #sent_id = CTK <au209>
 #text = camille sa copine camille dès qu'on enlève les chaussons je l'ai dit hein à Elsa mais c'est vrai ça il est fétichiste du pied !
-1	camille	camille	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=0|end_char=7	_	_	CTK
-2	sa	son	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	start_char=8|end_char=10	_	_	CTK
-3	copine	copine	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=11|end_char=17	_	_	CTK
-4	camille	camille	NOUN	_	Gender=Fem|Number=Sing	3	appos	_	start_char=18|end_char=25	_	_	CTK
+1	camille	camille	NOUN	_	Gender=Fem|Number=Sing	14	advcl	_	start_char=0|end_char=7	_	_	CTK
+2	sa	son	DET	_	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	4	det	_	start_char=8|end_char=10	_	_	CTK
+3	copine	copine	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	start_char=11|end_char=17	_	_	CTK
+4	camille	camille	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=18|end_char=25	_	_	CTK
 5	dès	dès	ADP	_	_	8	mark	_	start_char=26|end_char=29	_	_	CTK
 6	qu'	que	SCONJ	_	_	8	mark	_	start_char=30|end_char=33	_	_	CTK
-7	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	8	nsubj	_	start_char=33|end_char=35	_	_	CTK
-8	enlève	enlever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl	_	start_char=36|end_char=42	_	_	CTK
-9	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	start_char=43|end_char=46	_	_	CTK
+7	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	8	nsubj	_	start_char=33|end_char=35	_	_	CTK
+8	enlève	enlever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	advcl	_	start_char=36|end_char=42	_	_	CTK
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	start_char=43|end_char=46	_	_	CTK
 10	chaussons	chausson	NOUN	_	Gender=Masc|Number=Plur	8	obj	_	start_char=47|end_char=56	_	_	CTK
 11	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	14	nsubj	_	start_char=57|end_char=59	_	_	CTK
 12	l'	le	PRON	_	Number=Sing|Person=3|PronType=Prs	14	obj	_	start_char=60|end_char=62	_	_	CTK
 13	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	aux:tense	_	start_char=62|end_char=64	_	_	CTK
-14	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	parataxis	_	start_char=65|end_char=68	_	_	CTK
+14	dit	dire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=65|end_char=68	_	_	CTK
 15	hein	hein	ADV	_	_	14	advmod	_	start_char=69|end_char=73	_	_	CTK
 16	à	à	ADP	_	_	17	case	_	start_char=74|end_char=75	_	_	CTK
 17	Elsa	Elsa	PROPN	_	_	14	obl:arg	_	start_char=76|end_char=80	_	_	CTK
 18	mais	mais	CCONJ	_	_	21	cc	_	start_char=81|end_char=85	_	_	CTK
-19	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	21	nsubj	_	start_char=86|end_char=88	_	_	CTK
+19	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	21	nsubj	_	start_char=86|end_char=88	_	_	CTK
 20	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	start_char=88|end_char=91	_	_	CTK
 21	vrai	vrai	ADJ	_	Gender=Masc|Number=Sing	14	conj	_	start_char=92|end_char=96	_	_	CTK
-22	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	21	nsubj	_	start_char=97|end_char=99	_	_	CTK
+22	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	25	nsubj	_	start_char=97|end_char=99	_	_	CTK
 23	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	nsubj	_	start_char=100|end_char=102	_	_	CTK
 24	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	start_char=103|end_char=106	_	_	CTK
-25	fétichiste	fétichiste	ADJ	_	Gender=Masc|Number=Sing	21	conj	_	start_char=107|end_char=117	_	_	CTK
+25	fétichiste	fétichiste	ADJ	_	Gender=Masc|Number=Sing	14	conj	_	start_char=107|end_char=117	_	_	CTK
 26-27	du	_	_	_	_	_	_	_	start_char=118|end_char=120	_	_	CTK
 26	de	de	ADP	_	_	28	case	_	_	_	_	CTK
 27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_	_	_	CTK
 28	pied	pied	NOUN	_	Gender=Masc|Number=Sing	25	obl:arg	_	start_char=121|end_char=125	_	_	CTK
-29	!	!	PUNCT	_	_	1	punct	_	start_char=126|end_char=127	_	_	CTK
+29	!	!	PUNCT	_	_	14	punct	_	start_char=126|end_char=127	_	_	CTK
 
 #sent_id = CTK <au210>
 #text = il adore ça !
@@ -1681,7 +1672,7 @@
 #sent_id = CTK <au211>
 #text = le pied ou la chaussure mais le pied il préfère quand même !
 1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=0|end_char=2	_	_	CTK
-2	pied	pied	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3|end_char=7	_	_	CTK
+2	pied	pied	NOUN	_	Gender=Masc|Number=Sing	10	dislocated	_	start_char=3|end_char=7	_	_	CTK
 3	ou	ou	CCONJ	_	_	5	cc	_	start_char=8|end_char=10	_	_	CTK
 4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=11|end_char=13	_	_	CTK
 5	chaussure	chaussure	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	start_char=14|end_char=23	_	_	CTK
@@ -1689,15 +1680,15 @@
 7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	start_char=29|end_char=31	_	_	CTK
 8	pied	pied	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	start_char=32|end_char=36	_	_	CTK
 9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	start_char=37|end_char=39	_	_	CTK
-10	préfère	préférer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=40|end_char=47	_	_	CTK
+10	préfère	préférer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=40|end_char=47	_	_	CTK
 11	quand	quand	SCONJ	_	_	10	advmod	_	start_char=48|end_char=53	_	_	CTK
 12	même	même	ADV	_	_	11	fixed	_	start_char=54|end_char=58	_	_	CTK
-13	!	!	PUNCT	_	_	2	punct	_	start_char=59|end_char=60	_	_	CTK
+13	!	!	PUNCT	_	_	10	punct	_	start_char=59|end_char=60	_	_	CTK
 
 #sent_id = CTK <au212>
 #text = ah c'est beau hein admiratif !
 1	ah	ah	INTJ	_	_	4	discourse	_	start_char=0|end_char=2	_	_	CTK
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=3|end_char=5	_	_	CTK
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=3|end_char=5	_	_	CTK
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=5|end_char=8	_	_	CTK
 4	beau	beau	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=9|end_char=13	_	_	CTK
 5	hein	hein	ADV	_	_	6	advmod	_	start_char=14|end_char=18	_	_	CTK
@@ -1710,43 +1701,43 @@
 2	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	start_char=4|end_char=9	_	_	CTK
 3	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=10|end_char=14	_	_	CTK
 4	belles	beau	ADJ	_	Gender=Fem|Number=Plur	0	root	_	start_char=15|end_char=21	_	_	CTK
-5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	start_char=22|end_char=25	_	_	CTK
-6	chaussures	chaussure	NOUN	_	Gender=Fem|Number=Plur	4	obl	_	start_char=26|end_char=36	_	_	CTK
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=22|end_char=25	_	_	CTK
+6	chaussures	chaussure	NOUN	_	Gender=Fem|Number=Plur	4	obl:mod	_	start_char=26|end_char=36	_	_	CTK
 7	aussi	aussi	ADV	_	_	10	advmod	_	start_char=37|end_char=42	_	_	CTK
 8	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	10	nsubj	_	start_char=43|end_char=45	_	_	CTK
 9	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	10	iobj	_	start_char=46|end_char=48	_	_	CTK
 10	intéresses	intéresser	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	conj	_	start_char=48|end_char=58	_	_	CTK
 11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	advmod	_	start_char=59|end_char=61	_	_	CTK
-12	peu	peu	ADV	_	_	11	fixed	_	start_char=62|end_char=65	_	_	CTK
+12	peu	peu	NOUN	_	_	11	fixed	_	start_char=62|end_char=65	_	_	CTK
 13	trop	trop	ADV	_	_	10	advmod	_	start_char=66|end_char=70	_	_	CTK
 14	à	à	ADP	_	_	17	case	_	start_char=71|end_char=72	_	_	CTK
 15-16	aux	_	_	_	_	_	_	_	start_char=73|end_char=76	_	_	CTK
 15	à	à	ADP	_	_	17	case	_	_	_	_	CTK
-16	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_	_	_	CTK
+16	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	17	det	_	_	_	_	CTK
 17	chaussures	chaussure	NOUN	_	Gender=Fem|Number=Plur	10	obl:arg	_	start_char=77|end_char=87	_	_	CTK
 18	à	à	ADP	_	_	20	case	_	start_char=88|end_char=89	_	_	CTK
-19	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	20	det	_	start_char=90|end_char=93	_	_	CTK
-20	avis	avis	NOUN	_	Gender=Masc|Number=Sing	17	nmod	_	start_char=94|end_char=98	_	_	CTK
+19	mon	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=1|Poss=Yes|PronType=Prs	20	det	_	start_char=90|end_char=93	_	_	CTK
+20	avis	avis	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	start_char=94|end_char=98	_	_	CTK
 21	mais	mais	CCONJ	_	_	23	cc	_	start_char=99|end_char=103	_	_	CTK
 22	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	23	nsubj	_	start_char=104|end_char=109	_	_	CTK
 23	resteront	rester	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	conj	_	start_char=110|end_char=119	_	_	CTK
 24	pas	pas	ADV	_	Polarity=Neg	23	advmod	_	start_char=120|end_char=123	_	_	CTK
-25	comme	comme	SCONJ	_	_	23	mark	_	start_char=124|end_char=129	_	_	CTK
-26	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	23	nsubj	_	start_char=130|end_char=135	_	_	CTK
-27	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux:tense	_	start_char=136|end_char=140	_	_	CTK
+25	comme	comme	SCONJ	_	_	27	mark	_	start_char=124|end_char=129	_	_	CTK
+26	elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Prs	25	nsubj	_	start_char=130|end_char=135	_	_	CTK
+27	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	advcl	_	start_char=136|end_char=140	_	_	CTK
 28	!	!	PUNCT	_	_	4	punct	_	start_char=141|end_char=142	_	_	CTK
 
 #sent_id = CTK <au214>
 #text = ah bon t'es fatigué tu préfères montrer ta lune alors !
 1	ah	ah	INTJ	_	_	5	discourse	_	start_char=0|end_char=2	_	_	CTK
-2	bon	bon	ADJ	_	Gender=Masc|Number=Sing	1	fixed	_	start_char=3|end_char=6	_	_	CTK
+2	bon	bon	ADJ	_	Gender=Masc|Number=Sing	5	nsubj	_	start_char=3|end_char=6	_	_	CTK
 3	t'	lui	PRON	_	Number=Sing|Person=2|PronType=Prs	5	iobj	_	start_char=7|end_char=9	_	_	CTK
-4	es	être	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	5	aux:tense	_	start_char=9|end_char=11	_	_	CTK
-5	fatigué	fatiguer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=12|end_char=19	_	_	CTK
+4	es	être	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=9|end_char=11	_	_	CTK
+5	fatigué	fatigué	ADJ	_	Gender=Masc|Number=Sing	0	root	_	start_char=12|end_char=19	_	_	CTK
 6	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	7	nsubj	_	start_char=20|end_char=22	_	_	CTK
 7	préfères	préférer	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	5	conj	_	start_char=23|end_char=31	_	_	CTK
 8	montrer	montrer	VERB	_	VerbForm=Inf	7	xcomp	_	start_char=32|end_char=39	_	_	CTK
-9	ta	ta	DET	_	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	10	det	_	start_char=40|end_char=42	_	_	CTK
+9	ta	ta	DET	_	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=1|Poss=Yes|PronType=Prs	10	det	_	start_char=40|end_char=42	_	_	CTK
 10	lune	lune	NOUN	_	Gender=Fem|Number=Sing	8	obj	_	start_char=43|end_char=47	_	_	CTK
 11	alors	alors	ADV	_	_	8	advmod	_	start_char=48|end_char=53	_	_	CTK
 12	!	!	PUNCT	_	_	5	punct	_	start_char=54|end_char=55	_	_	CTK
@@ -1756,19 +1747,19 @@
 1	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=4	_	_	CTK
 2	voulez	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=5|end_char=11	_	_	CTK
 3	de	de	ADP	_	_	5	det	_	start_char=12|end_char=14	_	_	CTK
-4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	fixed	_	start_char=15|end_char=17	_	_	CTK
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=15|end_char=17	_	_	CTK
 5	lumière	lumière	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=18|end_char=25	_	_	CTK
 6	?	?	PUNCT	_	_	2	punct	_	start_char=26|end_char=27	_	_	CTK
 
 #sent_id = OBS <au216>
 #text = non c'est ça va franchement là ça va !
-1	non	non	ADV	_	_	5	advmod	_	start_char=0|end_char=3	_	_	OBS
-2	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=4|end_char=6	_	_	OBS
+1	non	non	INTJ	_	Polarity=Neg	5	discourse	_	start_char=0|end_char=3	_	_	OBS
+2	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=4|end_char=6	_	_	OBS
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	start_char=6|end_char=9	_	_	OBS
 4	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	5	nsubj	_	start_char=10|end_char=12	_	_	OBS
 5	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13|end_char=15	_	_	OBS
-6	franchement	franchement	ADV	_	_	5	advmod	_	start_char=16|end_char=27	_	_	OBS
-7	là	là	ADV	_	_	5	advmod	_	start_char=28|end_char=30	_	_	OBS
+6	franchement	franchement	ADV	_	_	7	advmod	_	start_char=16|end_char=27	_	_	OBS
+7	là	là	ADV	_	_	9	advmod	_	start_char=28|end_char=30	_	_	OBS
 8	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	9	nsubj	_	start_char=31|end_char=33	_	_	OBS
 9	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	start_char=34|end_char=36	_	_	OBS
 10	!	!	PUNCT	_	_	5	punct	_	start_char=37|end_char=38	_	_	OBS
@@ -1788,66 +1779,66 @@
 1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	ferme	fermer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	CTK
 3	bien	bien	ADV	_	_	2	advmod	_	start_char=9|end_char=13	_	_	CTK
-4	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	start_char=14|end_char=17	_	_	CTK
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	start_char=14|end_char=17	_	_	CTK
 5	portes	porte	NOUN	_	Gender=Fem|Number=Plur	2	obj	_	start_char=18|end_char=24	_	_	CTK
 6	aussi	aussi	ADV	_	_	2	advmod	_	start_char=25|end_char=30	_	_	CTK
 7	!	!	PUNCT	_	_	2	punct	_	start_char=31|end_char=32	_	_	CTK
 
 #sent_id = CTK <au220>
 #text = c'est à qui les baskets à qui c'est les baskets là c'est à arnaud ?
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	17	nsubj	_	start_char=0|end_char=2	_	_	CTK
-2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	start_char=2|end_char=5	_	_	CTK
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	expl:subj	_	start_char=0|end_char=2	_	_	CTK
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	start_char=2|end_char=5	_	_	CTK
 3	à	à	ADP	_	_	4	case	_	start_char=6|end_char=7	_	_	CTK
-4	qui	qui	PRON	_	PronType=Rel	17	obl:mod	_	start_char=8|end_char=11	_	_	CTK
-5	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	start_char=12|end_char=15	_	_	CTK
-6	baskets	basket	NOUN	_	Gender=Fem|Number=Plur	17	dislocated	_	start_char=16|end_char=23	_	_	CTK
+4	qui	qui	PRON	_	PronType=Int	1	fixed	_	start_char=8|end_char=11	_	_	CTK
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=12|end_char=15	_	_	CTK
+6	baskets	basket	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=16|end_char=23	_	_	CTK
 7	à	à	ADP	_	_	8	case	_	start_char=24|end_char=25	_	_	CTK
 8	qui	qui	PRON	_	PronType=Rel	12	obl:mod	_	start_char=26|end_char=29	_	_	CTK
-9	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	12	nsubj	_	start_char=30|end_char=32	_	_	CTK
+9	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	nsubj	_	start_char=30|end_char=32	_	_	CTK
 10	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	start_char=32|end_char=35	_	_	CTK
-11	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	start_char=36|end_char=39	_	_	CTK
+11	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	12	det	_	start_char=36|end_char=39	_	_	CTK
 12	baskets	basket	NOUN	_	Gender=Fem|Number=Plur	6	acl:relcl	_	start_char=40|end_char=47	_	_	CTK
 13	là	là	ADV	_	_	12	advmod	_	start_char=48|end_char=50	_	_	CTK
-14	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	17	nsubj	_	start_char=51|end_char=53	_	_	CTK
+14	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	17	nsubj	_	start_char=51|end_char=53	_	_	CTK
 15	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	start_char=53|end_char=56	_	_	CTK
 16	à	à	ADP	_	_	17	case	_	start_char=57|end_char=58	_	_	CTK
-17	arnaud	arnaud	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=59|end_char=65	_	_	CTK
+17	arnaud	arnaud	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	start_char=59|end_char=65	_	_	CTK
 18	?	?	PUNCT	_	_	17	punct	_	start_char=66|end_char=67	_	_	CTK
 
 #sent_id = CHI <au221>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au222>
 #text = ah là c'est les chaussons de tout le monde là c'est tes chaussures !
 1	ah	ah	INTJ	_	_	6	discourse	_	start_char=0|end_char=2	_	_	CTK
-2	là	là	ADV	_	_	6	advmod	_	start_char=3|end_char=5	_	_	CTK
-3	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=6|end_char=8	_	_	CTK
+2	là	là	ADV	_	_	1	fixed	_	start_char=3|end_char=5	_	_	CTK
+3	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	_	start_char=6|end_char=8	_	_	CTK
 4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	start_char=8|end_char=11	_	_	CTK
-5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	start_char=12|end_char=15	_	_	CTK
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=12|end_char=15	_	_	CTK
 6	chaussons	chausson	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=16|end_char=25	_	_	CTK
 7	de	de	ADP	_	_	10	case	_	start_char=26|end_char=28	_	_	CTK
 8	tout	tout	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	start_char=29|end_char=33	_	_	CTK
 9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	start_char=34|end_char=36	_	_	CTK
 10	monde	monde	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	start_char=37|end_char=42	_	_	CTK
 11	là	là	ADV	_	_	15	advmod	_	start_char=43|end_char=45	_	_	CTK
-12	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	15	nsubj	_	start_char=46|end_char=48	_	_	CTK
+12	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	15	nsubj	_	start_char=46|end_char=48	_	_	CTK
 13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	start_char=48|end_char=51	_	_	CTK
-14	tes	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	15	det	_	start_char=52|end_char=55	_	_	CTK
+14	tes	son	DET	_	Number=Plur|Number[psor]=Plur|Person[psor]=2|Poss=Yes|PronType=Prs	15	det	_	start_char=52|end_char=55	_	_	CTK
 15	chaussures	chaussure	NOUN	_	Gender=Fem|Number=Plur	6	parataxis	_	start_char=56|end_char=66	_	_	CTK
 16	!	!	PUNCT	_	_	6	punct	_	start_char=67|end_char=68	_	_	CTK
 
 #sent_id = CHI <au223>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CTK <au224>
 #text = c'est tes chaussures !
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	CTK
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=2|end_char=5	_	_	CTK
-3	tes	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	4	det	_	start_char=6|end_char=9	_	_	CTK
+3	tes	son	DET	_	Number=Plur|Number[psor]=Plur|Person[psor]=2|Poss=Yes|PronType=Prs	4	det	_	start_char=6|end_char=9	_	_	CTK
 4	chaussures	chaussure	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=10|end_char=20	_	_	CTK
 5	!	!	PUNCT	_	_	4	punct	_	start_char=21|end_char=22	_	_	CTK
 
@@ -1859,22 +1850,22 @@
 #sent_id = CTK <au226>
 #text = tu veux que je les mette tes chaussures ?
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
-2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CTK
+2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CTK
 3	que	que	SCONJ	_	_	6	mark	_	start_char=8|end_char=11	_	_	CTK
 4	je	il	PRON	_	Number=Sing|Person=1|PronType=Prs	6	nsubj	_	start_char=12|end_char=14	_	_	CTK
 5	les	le	PRON	_	Number=Plur|Person=3|PronType=Prs	6	obj	_	start_char=15|end_char=18	_	_	CTK
-6	mette	mettre	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=19|end_char=24	_	_	CTK
-7	tes	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	8	det	_	start_char=25|end_char=28	_	_	CTK
+6	mette	mettre	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=19|end_char=24	_	_	CTK
+7	tes	son	DET	_	Number=Plur|Number[psor]=Plur|Person[psor]=2|Poss=Yes|PronType=Prs	8	det	_	start_char=25|end_char=28	_	_	CTK
 8	chaussures	chaussure	NOUN	_	Gender=Fem|Number=Plur	6	obj	_	start_char=29|end_char=39	_	_	CTK
 9	?	?	PUNCT	_	_	2	punct	_	start_char=40|end_char=41	_	_	CTK
 
 #sent_id = CTK <au227>
 #text = allez hop on enlève les chaussons .
 1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
-2	hop	hop	ADV	_	_	1	advmod	_	start_char=6|end_char=9	_	_	CTK
-3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	start_char=10|end_char=12	_	_	CTK
+2	hop	hop	INTJ	_	_	1	advmod	_	start_char=6|end_char=9	_	_	CTK
+3	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	4	nsubj	_	start_char=10|end_char=12	_	_	CTK
 4	enlève	enlever	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=13|end_char=19	_	_	CTK
-5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	start_char=20|end_char=23	_	_	CTK
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=20|end_char=23	_	_	CTK
 6	chaussons	chausson	NOUN	_	Gender=Masc|Number=Plur	4	obj	_	start_char=24|end_char=33	_	_	CTK
 7	.	.	PUNCT	_	_	1	punct	_	start_char=34|end_char=35	_	_	CTK
 
@@ -1887,7 +1878,7 @@
 #text = et voilà tiens !
 1	et	et	CCONJ	_	_	2	cc	_	start_char=0|end_char=2	_	_	CTK
 2	voilà	voilà	VERB	_	_	0	root	_	start_char=3|end_char=8	_	_	CTK
-3	tiens	tenir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=9|end_char=14	_	_	CTK
+3	tiens	tenir	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	xcomp	_	start_char=9|end_char=14	_	_	CTK
 4	!	!	PUNCT	_	_	2	punct	_	start_char=15|end_char=16	_	_	CTK
 
 #sent_id = CHI <au230>
@@ -1897,8 +1888,8 @@
 
 #sent_id = CHI <au231>
 #text = yyy yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
+1	yyy	yyy	X	_	_	2	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	0	root	_	start_char=4|end_char=7	_	_	CHI
 3	.	.	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CTK <au232>
@@ -1911,7 +1902,7 @@
 #sent_id = CTK <au233>
 #text = tu pars pas maintenant maman elle est pas là !
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
-2	pars	partir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CTK
+2	pars	partir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CTK
 3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	start_char=8|end_char=11	_	_	CTK
 4	maintenant	maintenant	ADV	_	_	2	advmod	_	start_char=12|end_char=22	_	_	CTK
 5	maman	maman	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=23|end_char=28	_	_	CTK
@@ -1923,24 +1914,24 @@
 
 #sent_id = CTK <au234>
 #text = on va là-bas ?
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=5	_	_	CTK
 3	là-bas	là-bas	ADV	_	_	2	advmod	_	start_char=6|end_char=12	_	_	CTK
 4	?	?	PUNCT	_	_	2	punct	_	start_char=13|end_char=14	_	_	CTK
 
 #sent_id = CTK <au235>
 #text = on va jouer !
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=5	_	_	CTK
 3	jouer	jouer	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=6|end_char=11	_	_	CTK
 4	!	!	PUNCT	_	_	2	punct	_	start_char=12|end_char=13	_	_	CTK
 
 #sent_id = CTK <au236>
 #text = il reste encore deux minutes hein !
-1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	expl:subj	_	start_char=0|end_char=2	_	_	CTK
+1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
 2	reste	rester	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	CTK
 3	encore	encore	ADV	_	_	2	advmod	_	start_char=9|end_char=15	_	_	CTK
-4	deux	deux	NUM	_	_	5	nummod	_	start_char=16|end_char=20	_	_	CTK
+4	deux	deux	NUM	_	Number=Plur	5	nummod	_	start_char=16|end_char=20	_	_	CTK
 5	minutes	minute	NOUN	_	Gender=Fem|Number=Plur	2	obj	_	start_char=21|end_char=28	_	_	CTK
 6	hein	hein	ADV	_	_	2	advmod	_	start_char=29|end_char=33	_	_	CTK
 7	!	!	PUNCT	_	_	2	punct	_	start_char=34|end_char=35	_	_	CTK
@@ -1962,8 +1953,8 @@
 #sent_id = OBS <au238>
 #text = euh non non là au niveau lumière ça va ça va j'ai une bonne image .
 1	euh	euh	INTJ	_	_	10	discourse	_	start_char=0|end_char=3	_	_	OBS
-2	non	non	ADV	_	_	4	advmod	_	start_char=4|end_char=7	_	_	OBS
-3	non	non	ADV	_	_	4	advmod	_	start_char=8|end_char=11	_	_	OBS
+2	non	non	ADV	_	Polarity=Neg	1	fixed	_	start_char=4|end_char=7	_	_	OBS
+3	non	non	ADV	_	Polarity=Neg	4	advmod	_	start_char=8|end_char=11	_	_	OBS
 4	là	là	ADV	_	_	1	fixed	_	start_char=12|end_char=14	_	_	OBS
 5-6	au	_	_	_	_	_	_	_	start_char=15|end_char=17	_	_	OBS
 5	à	à	ADP	_	_	7	case	_	_	_	_	OBS
@@ -1975,7 +1966,7 @@
 11	ça	ça	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	nsubj	_	start_char=39|end_char=41	_	_	OBS
 12	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	start_char=42|end_char=44	_	_	OBS
 13	j'	il	PRON	_	Number=Sing|Person=1|PronType=Prs	14	nsubj	_	start_char=45|end_char=47	_	_	OBS
-14	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	12	conj	_	start_char=47|end_char=49	_	_	OBS
+14	ai	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	conj	_	start_char=47|end_char=49	_	_	OBS
 15	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	start_char=50|end_char=53	_	_	OBS
 16	bonne	bon	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	start_char=54|end_char=59	_	_	OBS
 17	image	image	NOUN	_	Gender=Fem|Number=Sing	14	obj	_	start_char=60|end_char=65	_	_	OBS
@@ -1983,7 +1974,7 @@
 
 #sent_id = CTK <au239>
 #text = tiens un morceau là !
-1	tiens	tenir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
+1	tiens	tenir	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	CTK
 2	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	start_char=6|end_char=8	_	_	CTK
 3	morceau	morceau	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=9|end_char=16	_	_	CTK
 4	là	là	ADV	_	_	1	advmod	_	start_char=17|end_char=19	_	_	CTK
@@ -1991,25 +1982,25 @@
 
 #sent_id = CHI <au240>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au241>
 #text = yyy yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
+1	yyy	yyy	X	_	_	2	nmod	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	_	0	root	_	start_char=4|end_char=7	_	_	CHI
 3	.	.	PUNCT	_	_	2	punct	_	start_char=8|end_char=9	_	_	CHI
 
 #sent_id = CTK <au242>
 #text = tu commences à ranger un petit peu Adrien là ?
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
-2	commences	commencer	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=12	_	_	CTK
+2	commences	commencer	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=12	_	_	CTK
 3	à	à	ADP	_	_	4	mark	_	start_char=13|end_char=14	_	_	CTK
 4	ranger	ranger	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=15|end_char=21	_	_	CTK
-5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	start_char=22|end_char=24	_	_	CTK
-6	petit	petit	ADJ	_	Gender=Masc|Number=Sing	5	fixed	_	start_char=25|end_char=30	_	_	CTK
-7	peu	peu	ADV	_	_	5	fixed	_	start_char=31|end_char=34	_	_	CTK
-8	Adrien	Adrien	PROPN	_	_	4	obj	_	start_char=35|end_char=41	_	_	CTK
+5	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	start_char=22|end_char=24	_	_	CTK
+6	petit	petit	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	start_char=25|end_char=30	_	_	CTK
+7	peu	peu	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	start_char=31|end_char=34	_	_	CTK
+8	Adrien	Adrien	PROPN	_	_	7	appos	_	start_char=35|end_char=41	_	_	CTK
 9	là	là	ADV	_	_	8	advmod	_	start_char=42|end_char=44	_	_	CTK
 10	?	?	PUNCT	_	_	2	punct	_	start_char=45|end_char=46	_	_	CTK
 
@@ -2023,9 +2014,9 @@
 1	commence	commencer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=8	_	_	CTK
 2	à	à	ADP	_	_	3	mark	_	start_char=9|end_char=10	_	_	CTK
 3	ranger	ranger	VERB	_	VerbForm=Inf	1	xcomp	_	start_char=11|end_char=17	_	_	CTK
-4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	start_char=18|end_char=20	_	_	CTK
-5	peu	peu	ADV	_	_	4	fixed	_	start_char=21|end_char=24	_	_	CTK
-6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	start_char=25|end_char=28	_	_	CTK
+4	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	advmod	_	start_char=18|end_char=20	_	_	CTK
+5	peu	peu	NOUN	_	_	4	fixed	_	start_char=21|end_char=24	_	_	CTK
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	start_char=25|end_char=28	_	_	CTK
 7	jouets	jouet	NOUN	_	Gender=Masc|Number=Plur	3	obj	_	start_char=29|end_char=35	_	_	CTK
 8	!	!	PUNCT	_	_	1	punct	_	start_char=36|end_char=37	_	_	CTK
 
@@ -2037,7 +2028,7 @@
 #sent_id = CTK <au246>
 #text = tu veux pas ?
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	start_char=0|end_char=2	_	_	CTK
-2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CTK
+2	veux	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=7	_	_	CTK
 3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	start_char=8|end_char=11	_	_	CTK
 4	?	?	PUNCT	_	_	2	punct	_	start_char=12|end_char=13	_	_	CTK
 
@@ -2058,11 +2049,11 @@
 
 #sent_id = CHI <au250>
 #text = yyy yyy yyy yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
-2	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=4|end_char=7	_	_	CHI
-3	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	start_char=8|end_char=11	_	_	CHI
-4	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=12|end_char=15	_	_	CHI
-5	.	.	PUNCT	_	_	1	punct	_	start_char=16|end_char=17	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
+2	yyy	yyy	X	_	Foreign=Yes	4	nmod	_	start_char=4|end_char=7	_	_	CHI
+3	yyy	yyy	X	_	Foreign=Yes	4	nmod	_	start_char=8|end_char=11	_	_	CHI
+4	yyy	yyy	X	_	_	1	appos	_	start_char=12|end_char=15	_	_	CHI
+5	.	.	PUNCT	_	_	4	punct	_	start_char=16|end_char=17	_	_	CHI
 
 #sent_id = CHI <au251>
 #text = www .
@@ -2071,17 +2062,17 @@
 
 #sent_id = CHI <au252>
 #text = yyy .
-1	yyy	yyy	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=3	_	_	CHI
+1	yyy	yyy	X	_	_	0	root	_	start_char=0|end_char=3	_	_	CHI
 2	.	.	PUNCT	_	_	1	punct	_	start_char=4|end_char=5	_	_	CHI
 
 #sent_id = CHI <au253>
 #text = tata !
-1	tata	tata	INTJ	_	_	0	root	_	start_char=0|end_char=4	_	_	CHI
+1	tata	tata	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=0|end_char=4	_	_	CHI
 2	!	!	PUNCT	_	_	1	punct	_	start_char=5|end_char=6	_	_	CHI
 
 #sent_id = CHI <au254>
 #text = tata !
-1	tata	tata	INTJ	_	_	0	root	_	start_char=0|end_char=4	_	_	CHI
+1	tata	tata	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=0|end_char=4	_	_	CHI
 2	!	!	PUNCT	_	_	1	punct	_	start_char=5|end_char=6	_	_	CHI
 
 #sent_id = CHI <au255>

@@ -1,6 +1,6 @@
 #sent_id = OBS <au0>
 #text = on est le mars .
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	4	nsubj	_	start_char=0|end_char=2	_	_	OBS
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	4	nsubj	_	start_char=0|end_char=2	_	_	OBS
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=3|end_char=6	_	_	OBS
 3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=7|end_char=9	_	_	OBS
 4	mars	mars	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=10|end_char=14	_	_	OBS
@@ -20,18 +20,18 @@
 1	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	start_char=0|end_char=2	_	_	MOT
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=3|end_char=6	_	_	MOT
 3	où	où	ADV	_	PronType=Rel	5	advmod	_	start_char=7|end_char=9	_	_	MOT
-4	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	5	det	_	start_char=10|end_char=13	_	_	MOT
-5	coeur	coeur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=14|end_char=19	_	_	MOT
+4	mon	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=1|Poss=Yes|PronType=Prs	5	det	_	start_char=10|end_char=13	_	_	MOT
+5	coeur	cœur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=14|end_char=19	_	_	MOT
 6	.	.	PUNCT	_	_	5	punct	_	start_char=20|end_char=21	_	_	MOT
 
 #sent_id = MOT <au3>
 #text = ha ha ha hé hé hé .
-1	ha	ha	SYM	_	_	0	root	_	start_char=0|end_char=2	_	_	MOT
-2	ha	ha	SYM	_	_	3	nmod	_	start_char=3|end_char=5	_	_	MOT
-3	ha	ha	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=6|end_char=8	_	_	MOT
-4	hé	hé	INTJ	_	_	1	discourse	_	start_char=9|end_char=11	_	_	MOT
-5	hé	hé	INTJ	_	_	4	conj	_	start_char=12|end_char=14	_	_	MOT
-6	hé	hé	INTJ	_	_	4	conj	_	start_char=15|end_char=17	_	_	MOT
+1	ha	ha	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=0|end_char=2	_	_	MOT
+2	ha	ha	X	_	_	1	appos	_	start_char=3|end_char=5	_	_	MOT
+3	ha	ha	X	_	_	2	flat:foreign	_	start_char=6|end_char=8	_	_	MOT
+4	hé	hé	X	_	_	1	appos	_	start_char=9|end_char=11	_	_	MOT
+5	hé	hé	X	_	_	1	appos	_	start_char=12|end_char=14	_	_	MOT
+6	hé	hé	X	_	_	1	appos	_	start_char=15|end_char=17	_	_	MOT
 7	.	.	PUNCT	_	_	1	punct	_	start_char=18|end_char=19	_	_	MOT
 
 #sent_id = MOT <au4>
@@ -44,7 +44,7 @@
 
 #sent_id = OBS <au5>
 #text = on va retrouver maman .
-1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3	2	nsubj	_	start_char=0|end_char=2	_	_	OBS
+1	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	2	nsubj	_	start_char=0|end_char=2	_	_	OBS
 2	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=5	_	_	OBS
 3	retrouver	retrouver	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=6|end_char=15	_	_	OBS
 4	maman	maman	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=16|end_char=21	_	_	OBS
@@ -64,9 +64,9 @@
 
 #sent_id = OBS <au7>
 #text = c'est qui maman ?
-1	c'	ce	PRON	_	Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	OBS
-2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	start_char=2|end_char=5	_	_	OBS
-3	qui	qui	PRON	_	PronType=Rel	4	nsubj	_	start_char=6|end_char=9	_	_	OBS
+1	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	nsubj	_	start_char=0|end_char=2	_	_	OBS
+2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=2|end_char=5	_	_	OBS
+3	qui	qui	PRON	_	PronType=Int	4	nsubj	_	start_char=6|end_char=9	_	_	OBS
 4	maman	maman	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=10|end_char=15	_	_	OBS
 5	?	?	PUNCT	_	_	4	punct	_	start_char=16|end_char=17	_	_	OBS
 
@@ -78,16 +78,16 @@
 
 #sent_id = MOT <au9>
 #text = hé lèche pas mes chaussettes comme tout à l'heure .
-1	hé	hé	ADV	_	_	2	advmod	_	start_char=0|end_char=2	_	_	MOT
-2	lèche	lecher	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	MOT
+1	hé	hé	INTJ	_	_	2	advmod	_	start_char=0|end_char=2	_	_	MOT
+2	lèche	lécher	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3|end_char=8	_	_	MOT
 3	pas	pas	ADV	_	Polarity=Neg	2	advmod	_	start_char=9|end_char=12	_	_	MOT
-4	mes	son	DET	_	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	5	det	_	start_char=13|end_char=16	_	_	MOT
+4	mes	son	DET	_	Number=Plur|Number[psor]=Sing|Person[psor]=1|Poss=Yes|PronType=Prs	5	det	_	start_char=13|end_char=16	_	_	MOT
 5	chaussettes	chaussette	NOUN	_	Gender=Fem|Number=Plur	2	obj	_	start_char=17|end_char=28	_	_	MOT
-6	comme	comme	ADP	_	_	7	case	_	start_char=29|end_char=34	_	_	MOT
-7	tout	tout	PRON	_	Gender=Masc|Number=Sing	2	obl:mod	_	start_char=35|end_char=39	_	_	MOT
+6	comme	comme	SCONJ	_	_	10	mark	_	start_char=29|end_char=34	_	_	MOT
+7	tout	tout	ADV	_	_	10	advmod	_	start_char=35|end_char=39	_	_	MOT
 8	à	à	ADP	_	_	10	case	_	start_char=40|end_char=41	_	_	MOT
-9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	start_char=42|end_char=44	_	_	MOT
-10	heure	heure	NOUN	_	Gender=Fem|Number=Sing	7	nmod	_	start_char=44|end_char=49	_	_	MOT
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	start_char=42|end_char=44	_	_	MOT
+10	heure	heure	NOUN	_	Gender=Fem|Number=Sing	2	advcl	_	start_char=44|end_char=49	_	_	MOT
 11	.	.	PUNCT	_	_	2	punct	_	start_char=50|end_char=51	_	_	MOT
 
 #sent_id = OBS <au10>
@@ -108,23 +108,23 @@
 
 #sent_id = MOT <au12>
 #text = viens viens suis maman allez .
-1	viens	venir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	MOT
-2	viens	venir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	nsubj	_	start_char=6|end_char=11	_	_	MOT
+1	viens	venir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	advcl	_	start_char=0|end_char=5	_	_	MOT
+2	viens	venir	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	xcomp	_	start_char=6|end_char=11	_	_	MOT
 3	suis	être	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	aux:tense	_	start_char=12|end_char=16	_	_	MOT
 4	maman	maman	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	start_char=17|end_char=22	_	_	MOT
-5	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	ccomp	_	start_char=23|end_char=28	_	_	MOT
-6	.	.	PUNCT	_	_	1	punct	_	start_char=29|end_char=30	_	_	MOT
+5	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=23|end_char=28	_	_	MOT
+6	.	.	PUNCT	_	_	5	punct	_	start_char=29|end_char=30	_	_	MOT
 
 #sent_id = MOT <au13>
 #text = allez hop .
 1	allez	aller	VERB	_	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	MOT
-2	hop	hop	ADV	_	_	1	advmod	_	start_char=6|end_char=9	_	_	MOT
+2	hop	hop	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=6|end_char=9	_	_	MOT
 3	.	.	PUNCT	_	_	1	punct	_	start_char=10|end_char=11	_	_	MOT
 
 #sent_id = MOT <au14>
 #text = viens mon coeur .
-1	viens	venir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	MOT
-2	mon	son	DET	_	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	start_char=6|end_char=9	_	_	MOT
-3	coeur	coeur	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=10|end_char=15	_	_	MOT
+1	viens	venir	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=0|end_char=5	_	_	MOT
+2	mon	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=1|Poss=Yes|PronType=Prs	3	det	_	start_char=6|end_char=9	_	_	MOT
+3	coeur	cœur	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=10|end_char=15	_	_	MOT
 4	.	.	PUNCT	_	_	1	punct	_	start_char=16|end_char=17	_	_	MOT
 
