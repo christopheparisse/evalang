@@ -10,6 +10,23 @@ import os
 import re
 
 
+def generic_test(sentence, motif, where, exceptions, prt=False):
+    tab = re.findall(motif, sentence)
+    nb = 0
+    for f in tab:
+        if f[where] not in exceptions:
+            if prt is True:
+                # print(sentence)
+                print(f)
+            nb = nb + 1
+    return nb
+
+
+def generic_count(sentence, motif):
+    nb = len(re.findall(motif, sentence))
+    return nb
+
+
 def temps_verbal(sentence):
     nb = len(re.findall("§VERB§.*?Tense=Fut", sentence))
     nb = nb + len(re.findall("§VERB§.*?Tense=Imp", sentence))
@@ -25,8 +42,86 @@ def n_de_n_de_n(sentence):
     return nb
 
 
-headers = ["filename", "sentence", "somme", "temps_verbal", "n_de_n_de_n"]
-funs = [temps_verbal, n_de_n_de_n]
+def sujet_nominal(sentence):
+    nb = len(re.findall("§p§(NOUN)\S+§d§nsubj", sentence))
+    return nb
+
+
+def sujet_indefini(sentence):
+    nb = len(re.findall("PronType=(Neg|Ind)\S*§d§nsubj", sentence))
+    return nb
+
+
+def cleft(sentence):
+    nb = len(re.findall("§p§(VERB)\S+§d§advcl:cleft", sentence))
+    return nb
+
+
+def vflechi_vinf_vinf(sentence):
+    nb = len(re.findall("VerbForm=Fin.*?VerbForm=Inf\S*\s+\S*VerbForm=Inf", sentence))
+    return nb
+
+
+def prep_vinf(sentence):
+    tab = re.findall("§l§(\S+?)§p§ADP§f§\S*\s+\S*§l§(\S+?)§p§\S+?VerbForm=Inf", sentence)
+    nb = 0
+    for f in tab:
+        if f[0] != 'à' and f[0] != "de":
+            nb = nb + 1
+    return nb
+
+
+def auxmod_adv_vppvinf(sentence):
+    tab = re.findall("VerbForm=Fin\S+\s+\S+§l§(\S+)§p§ADV§\S+\s+\S+VerbForm=(Inf|Part)", sentence)
+    nb = 0
+    for f in tab:
+        # print("aux,mod_adv_vpp,vinf", f)
+        nb = nb + 1
+    return nb
+
+
+def adv_que(sentence):
+    tab = re.findall("§l§(\S+)§p§ADV§\S+\s+que§", sentence)
+    nb = 0
+    for f in tab:
+        # print("adv_que", f)
+        nb = nb + 1
+    return nb
+
+
+def adv_ment(sentence):
+    tab = re.findall("§l§(\S+ment)§p§ADV§f§", sentence)
+    nb = 0
+    for f in tab:
+        # print("adv_ment", f)
+        nb = nb + 1
+    return nb
+
+
+def pro_obj(sentence):
+    return generic_test(sentence, "§p§PRON\S+§d§(obj)\s+\S+§l§(\S+)§p§", 1, ['mettre', 'faire', 'prendre'], False)
+
+
+def pro_y(sentence):
+    return generic_test(sentence, "§l§(y|en)§p§PRON\S+§d§(obl:mod|expl)\s+\S+§l§(\S+)§p§", 2,
+                        ['mettre', 'faire', 'prendre'], False)
+
+
+def pro_poss(sentence):
+    return generic_count(sentence,
+                         "§l§le§p§DET§\S+\s+(mien|tien|sien|nôtre|vôtre|notre|votre|leur|miens|tiens|siens|nôtres|vôtres|notres|votres|leurs)§l§")
+
+
+def adj_epi(sentence):
+    return generic_count(sentence, "§p§ADJ\S+§d§amod")
+
+
+headers = ["filename", "sentence", "somme", "temps_verbal", "n_de_n_de_n", "sujet_nominal", "sujet_indefini",
+           "cleft", "vflechi_vinf_vinf", "prep_vinf", "aux,mod_adv_vpp,vinf", "adv_que", "adv_ment", "pro_obj",
+           "pro_poss", "pro_y", "adj_epi"]
+funs = [temps_verbal, n_de_n_de_n, sujet_nominal, sujet_indefini, cleft, vflechi_vinf_vinf, prep_vinf,
+        auxmod_adv_vppvinf,
+        adv_que, adv_ment, pro_obj, pro_poss, pro_y, adj_epi]
 
 
 def getrules(input_name, output):
