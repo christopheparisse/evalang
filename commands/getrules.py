@@ -99,7 +99,7 @@ def adv_ment(sentence):
 
 
 def pro_obj(sentence):
-    return generic_test(sentence, "§p§PRON\S+§d§(obj)\s+\S+§l§(\S+)§p§", 1, ['mettre', 'faire', 'prendre'], False)
+    return generic_test(sentence, "§p§PRON\S+PronType=Prs\S+§d§(obj)\s+\S+§l§(\S+)§p§", 1, ['mettre', 'faire', 'prendre'], False)
 
 
 def pro_y(sentence):
@@ -116,7 +116,7 @@ def adj_epi(sentence):
     return generic_count(sentence, "§p§ADJ\S+§d§amod")
 
 
-headers = ["filename", "sentence", "somme", "temps_verbal", "n_de_n_de_n", "sujet_nominal", "sujet_indefini",
+headers = ["filename", "loc", "sentence", "somme", "temps_verbal", "n_de_n_de_n", "sujet_nominal", "sujet_indefini",
            "cleft", "vflechi_vinf_vinf", "prep_vinf", "aux,mod_adv_vpp,vinf", "adv_que", "adv_ment", "pro_obj",
            "pro_poss", "pro_y", "adj_epi"]
 funs = [temps_verbal, n_de_n_de_n, sujet_nominal, sujet_indefini, cleft, vflechi_vinf_vinf, prep_vinf,
@@ -129,11 +129,14 @@ def getrules(input_name, output):
     for line in input.readlines():
         # recupérer lignes %morph
         words = line.split()
+        #words = re.split('\s+', line)
         if words[0][0] == '*':
+            car = words[0][1:-1]
             cdr = " ".join(words[1:])
             continue
-        if words[0] == "%morph:":
+        if words[0] == "%morph:" and len(cdr.split()) > 2:
             output.write(f"{input_name}")
+            output.write(f"\t{car}")
             output.write(f"\t{cdr}")
             scores = []
             for f in funs:
