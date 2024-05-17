@@ -67,7 +67,7 @@ if __name__ == "__main__":
 			display = "verbose"
 
 	import stanza
-	nlp = stanza.Pipeline('fr', download_method=None)
+	nlp = stanza.Pipeline('fr', download_method=None, use_gpu=True)
 	if len(inputs) < 1:
 		doc = nlp('il a fait du bleu !')
 		stanza_display(doc, display)

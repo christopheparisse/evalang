@@ -10,14 +10,26 @@ import os
 import re
 
 
-def generic_test(sentence, motif, where, exceptions, prt=False):
+def generic_test(sentence, motif, where, exceptions, prt=''):
     tab = re.findall(motif, sentence)
     nb = 0
     for f in tab:
         if f[where] not in exceptions:
-            if prt is True:
+            if prt != '':
                 # print(sentence)
-                print(f)
+                print(prt, f)
+            nb = nb + 1
+    return nb
+
+
+def generic_test2(sentence, motif, where1, exceptions1, where2, exceptions2, prt=''):
+    tab = re.findall(motif, sentence)
+    nb = 0
+    for f in tab:
+        if f[where1] not in exceptions1 and f[where2] not in exceptions2:
+            if prt != '':
+                # print(sentence)
+                print(prt, f)
             nb = nb + 1
     return nb
 
@@ -48,8 +60,8 @@ def sujet_nominal(sentence):
 
 
 def sujet_indefini(sentence):
-    nb = len(re.findall("PronType=(Neg|Ind)\S*§d§nsubj", sentence))
-    return nb
+    return generic_test(sentence, "\s+(\S+)§l§(\S+?)§f§\S+?PronType=(Neg|Ind)\S*§d§nsubj", 0,
+                        ['on'], '')  # 'Sujet Indef')
 
 
 def cleft(sentence):
@@ -99,12 +111,13 @@ def adv_ment(sentence):
 
 
 def pro_obj(sentence):
-    return generic_test(sentence, "§p§PRON\S+PronType=Prs\S+§d§(obj)\s+\S+§l§(\S+)§p§", 1, ['mettre', 'faire', 'prendre'], False)
+    return generic_test(sentence, "§p§PRON\S+PronType=Prs\S+§d§(obj)\s+\S+§l§(\S+)§p§", 1,
+                        ['mettre', 'faire', 'prendre'], '')
 
 
 def pro_y(sentence):
-    return generic_test(sentence, "§l§(y|en)§p§PRON\S+§d§(obl:mod|expl)\s+\S+§l§(\S+)§p§", 2,
-                        ['mettre', 'faire', 'prendre'], False)
+    return generic_test2(sentence, "§l§(y|en)§p§PRON\S+§d§(obl:mod|expl)\s+(\S+)§l§(\S+)§p§", 2,
+                        ['a'], 3, ['mettre', 'faire', 'prendre'], '')
 
 
 def pro_poss(sentence):
@@ -112,30 +125,105 @@ def pro_poss(sentence):
                          "§l§le§p§DET§\S+\s+(mien|tien|sien|nôtre|vôtre|notre|votre|leur|miens|tiens|siens|nôtres|vôtres|notres|votres|leurs)§l§")
 
 
-def adj_epi(sentence):
-    return generic_count(sentence, "§p§ADJ\S+§d§amod")
+def adj_epi_post(sentence):
+    return generic_test2(sentence, "§l§(\S+)§p§NOUN(\S+)\s+\S+§l§(\S+)§p§ADJ§f§\S+§d§amod", 0, ['siègex'], 2, ['auto'], '')  # "adjpost")
+
+def adj_epi_prev(sentence):
+    return generic_test2(sentence, "§l§(\S+)§p§ADJ\S+§d§amod\s+(\S+)§l§(\S+)§p§NOUN", 0, ['petit'], 2, ['frère', 'soeur'], '')  # "adjprev")
 
 
-headers = ["filename", "loc", "sentence", "somme", "temps_verbal", "n_de_n_de_n", "sujet_nominal", "sujet_indefini",
+def subord_que(sentence):
+    return generic_count(sentence, "§l§(\S+)§p§VERB§f§(.*?)(§p§SCONJ§f§_§d§mark)")
+    # , 1, ['', ''], 'SUBORD_QUE')
+
+
+def subord_parceque(sentence):
+    return generic_count(sentence,
+                         "§l§(\S+)§p§VERB§f§(.*?)(parce§l§parce§p§ADV§f§_§d§mark\s+que§l§que§p§SCONJ§f§_§d§fixed)")
+    # 1, ['', ''], 'PARCEQUE')
+
+
+def subord_comment(sentence):
+    return generic_count(sentence, "§l§(\S+)§p§VERB§f§(.*?)(§l§comment§p§)")
+
+
+def relative(sentence):
+    return generic_count(sentence, "§p§PRON§f§PronType=Rel§")
+
+
+def meme_que(sentence):
+    return generic_test(sentence, "(\S+)§l§même§p§(.*?)\S+§l§(\S+)§p§SCONJ§f§_§d§case", 1,
+                        ['', ''], '')  # 'MEME QUE')
+
+
+def les_plus(sentence):
+    return generic_test(sentence, "(\S+)§l§le§p§(.*?)(\S+)§l§plus§l§", 1,
+                        ['', ''], '')  # 'LES PLUS')
+
+
+def les_moins(sentence):
+    return generic_test(sentence, "(\S+)§l§le§p§(.*?)(\S+)§l§moins§l§", 1,
+                        ['', ''], '')  # 'LES MOINS')
+
+
+def comme(sentence):
+    return generic_count(sentence, "§l§comme§p§SCONJ§f§")
+
+
+def se_faire(sentence):
+    return generic_test(sentence, "(\S+)§l§se§p§PRON§(\S+)\s+(\S+)§l§faire§p§AUX§(\S+)\s+", 1,
+                        ['', ''], '')  # 'SE FAIRE')
+
+
+def se_faire_passe(sentence):
+    return generic_test(sentence, "(\S+)§l§se§p§PRON§(\S+)\s+(\S+)§p§AUX§(\S+)\s+(\S+)§l§faire§p§AUX§(\S+)\s+", 1,
+                        ['', ''], '')  # 'S ETRE FAIT')
+
+
+def dit_x(sentence):
+    #    return generic_test2(sentence, "§p§(\S+)§f§\S+\s+\S+§l§dire§p§VERB§(\S+)\s+(\S+)§l§(\S+)§p§", 0,
+    #                        ['AUX'], 2, ['il'], 'DIT X')  # 'DIT X')
+    return generic_test(sentence, "§p§(\S+)§f§\S+\s+\S+§l§dire§p§VERB§f§\S+\s+(\S+)§l§(\S+)§p§(PRON|PROPN|DET)§f§", 1,
+                        ['il'], '')  # 'DIT X')
+
+
+headers = ["filename", "group", "age", "loc", "sentence", "somme", "temps_verbal", "n_de_n_de_n", "sujet_nominal", "sujet_indefini",
            "cleft", "vflechi_vinf_vinf", "prep_vinf", "aux,mod_adv_vpp,vinf", "adv_que", "adv_ment", "pro_obj",
-           "pro_poss", "pro_y", "adj_epi"]
+           "pro_poss", "pro_y", "adj_epi_prev", "adj_epi_post", "subord_que", "subord_parceque", "subord_comment", "relative",
+           "meme_que", "les_plus", "les_moins", "comme", "se_faire", "se_faire_passe", "dit_x"]
 funs = [temps_verbal, n_de_n_de_n, sujet_nominal, sujet_indefini, cleft, vflechi_vinf_vinf, prep_vinf,
-        auxmod_adv_vppvinf,
-        adv_que, adv_ment, pro_obj, pro_poss, pro_y, adj_epi]
+        auxmod_adv_vppvinf, adv_que, adv_ment, pro_obj, pro_poss, pro_y, adj_epi_prev, adj_epi_post, subord_que, subord_parceque,
+        subord_comment, relative, meme_que, les_plus, les_moins, comme, se_faire, se_faire_passe, dit_x]
 
 
 def getrules(input_name, output):
     input = open(input_name, "r", encoding="utf-8")
+    ini = input_name.index("/")
+    if ini > 0:
+        short_input_name = input_name[ini+1:]
+    else:
+        short_input_name = input_name
+    name_elt = short_input_name.split('_')
+    if len(name_elt) > 2:
+        name_age = name_elt[1]
+    else:
+        name_age = 'UNK'
+    if len(name_elt) > 1:
+        name_cat = name_elt[0]
+    else:
+        name_cat = 'UNK'
     for line in input.readlines():
         # recupérer lignes %morph
         words = line.split()
-        #words = re.split('\s+', line)
+        # words = re.split('\s+', line)
         if words[0][0] == '*':
             car = words[0][1:-1]
             cdr = " ".join(words[1:])
             continue
         if words[0] == "%morph:" and len(cdr.split()) > 2:
             output.write(f"{input_name}")
+            output.write(f"\t{name_cat}")
+            output.write(f"\t{name_age}")
             output.write(f"\t{car}")
             output.write(f"\t{cdr}")
             scores = []

@@ -30,7 +30,7 @@ def run_stanza(pack, input_file, output_file):
     with open(input_file, "r", encoding="utf-8") as f,\
         open(output_file, "w", encoding="utf-8") as g : 
         # invoquer le Pipeline selon le modele souhaité 
-        nlp = stanza.Pipeline("fr", package=pack, processors='tokenize,mwt,pos,lemma,depparse')
+        nlp = stanza.Pipeline("fr", package=pack, processors='tokenize,mwt,pos,lemma,depparse', use_gpu=True)
         # creer un objet de type Document annoté avec stanza pour le fichier d'entree
         doc = nlp(f.read())
         # convertir le Document en Python Object 
