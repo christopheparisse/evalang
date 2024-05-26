@@ -117,7 +117,7 @@ def pro_obj(sentence):
 
 def pro_y(sentence):
     return generic_test2(sentence, "§l§(y|en)§p§PRON\S+§d§(obl:mod|expl)\s+(\S+)§l§(\S+)§p§", 2,
-                        ['a'], 3, ['mettre', 'faire', 'prendre'], '')
+                         ['a'], 3, ['mettre', 'faire', 'prendre'], '')
 
 
 def pro_poss(sentence):
@@ -126,10 +126,13 @@ def pro_poss(sentence):
 
 
 def adj_epi_post(sentence):
-    return generic_test2(sentence, "§l§(\S+)§p§NOUN(\S+)\s+\S+§l§(\S+)§p§ADJ§f§\S+§d§amod", 0, ['siègex'], 2, ['auto'], '')  # "adjpost")
+    return generic_test2(sentence, "§l§(\S+)§p§NOUN(\S+)\s+\S+§l§(\S+)§p§ADJ§f§\S+§d§amod", 0, ['siègex'], 2, ['auto'],
+                         '')  # "adjpost")
+
 
 def adj_epi_prev(sentence):
-    return generic_test2(sentence, "§l§(\S+)§p§ADJ\S+§d§amod\s+(\S+)§l§(\S+)§p§NOUN", 0, ['petit'], 2, ['frère', 'soeur'], '')  # "adjprev")
+    return generic_test2(sentence, "§l§(\S+)§p§ADJ\S+§d§amod\s+(\S+)§l§(\S+)§p§NOUN", 0, ['petit'], 2,
+                         ['frère', 'soeur'], '')  # "adjprev")
 
 
 def subord_que(sentence):
@@ -187,31 +190,53 @@ def dit_x(sentence):
                         ['il'], '')  # 'DIT X')
 
 
-headers = ["filename", "group", "age", "loc", "sentence", "somme", "temps_verbal", "n_de_n_de_n", "sujet_nominal", "sujet_indefini",
+headers = ["filename", "group", "age", "loc", "sentence", "somme", "temps_verbal", "n_de_n_de_n", "sujet_nominal",
+           "sujet_indefini",
            "cleft", "vflechi_vinf_vinf", "prep_vinf", "aux,mod_adv_vpp,vinf", "adv_que", "adv_ment", "pro_obj",
-           "pro_poss", "pro_y", "adj_epi_prev", "adj_epi_post", "subord_que", "subord_parceque", "subord_comment", "relative",
+           "pro_poss", "pro_y", "adj_epi_prev", "adj_epi_post", "subord_que", "subord_parceque", "subord_comment",
+           "relative",
            "meme_que", "les_plus", "les_moins", "comme", "se_faire", "se_faire_passe", "dit_x"]
 funs = [temps_verbal, n_de_n_de_n, sujet_nominal, sujet_indefini, cleft, vflechi_vinf_vinf, prep_vinf,
-        auxmod_adv_vppvinf, adv_que, adv_ment, pro_obj, pro_poss, pro_y, adj_epi_prev, adj_epi_post, subord_que, subord_parceque,
+        auxmod_adv_vppvinf, adv_que, adv_ment, pro_obj, pro_poss, pro_y, adj_epi_prev, adj_epi_post, subord_que,
+        subord_parceque,
         subord_comment, relative, meme_que, les_plus, les_moins, comme, se_faire, se_faire_passe, dit_x]
 
 
-def getrules(input_name, output):
+def getrules(input_name, output, corpus_type="evalang"):
     input = open(input_name, "r", encoding="utf-8")
     ini = input_name.index("/")
     if ini > 0:
-        short_input_name = input_name[ini+1:]
+        short_input_name = input_name[ini + 1:]
     else:
         short_input_name = input_name
-    name_elt = short_input_name.split('_')
-    if len(name_elt) > 2:
-        name_age = name_elt[1]
+    if corpus_type == "evalang":
+        name_elt = short_input_name.split('_')
+        if len(name_elt) > 2:
+            name_age = name_elt[1]
+        else:
+            name_age = 'UNK'
+        if len(name_elt) > 1:
+            name_cat = name_elt[0]
+        else:
+            name_cat = 'UNK'
+    elif corpus_type == "colaje":
+        name_elt = short_input_name.split('-')
+        if len(name_elt) > 2:
+            #  name_age = name_elt[2][0:7]
+            ans = name_elt[2][0:1]
+            mois = name_elt[2][2:4]
+            jour = name_elt[2][5:7]
+            name_age = str(int(ans) * 12 + int(mois))
+        else:
+            name_age = 'UNK'
+        if len(name_elt) > 1:
+            name_cat = name_elt[0]
+        else:
+            name_cat = 'UNK'
     else:
         name_age = 'UNK'
-    if len(name_elt) > 1:
-        name_cat = name_elt[0]
-    else:
         name_cat = 'UNK'
+
     for line in input.readlines():
         # recupérer lignes %morph
         words = line.split()
@@ -243,19 +268,25 @@ import sys, os, getopt
 def help():
     print('Get number of rules applied to each utterance in CLAN files (containing %morph info from Stanza)')
     print('Only chat result files .cex are processed')
-    print("getrules.py -o output_tab_file ...(list of chat files or folders)")
+    print("getrules.py -o output_tab_file -a age_format ...(list of chat files or folders)")
 
 
 def main(args):
     if len(args) > 1:
         #        optlist, arguments = getopt.gnu_getopt(args, 'ho:e:', ['help', 'output=', 'extension='])
-        optlist, arguments = getopt.gnu_getopt(args, 'ho:', ['help', 'output='])
+        optlist, arguments = getopt.gnu_getopt(args, 'ho:a:', ['help', 'output=', 'age='])
         extension = '.cex'
         output_file_name = ''
+        ageformat = 'evalang'
         for oarg in optlist:
             if oarg[0] == '-h' or oarg[0] == '--help':
                 help()
                 sys.exit(1)
+            if oarg[0] == '-a' or oarg[0] == '--age':
+                ageformat = oarg[1].lower()
+                if ageformat != "colaje" and ageformat != "evalang":
+                    print("Bad format name for age (not evalang or colaje): ", ageformat)
+                    sys.exit(1)
             if oarg[0] == '-o' or oarg[0] == '--output':
                 output_file_name = oarg[1]
         #            if oarg[0] == '-e' or oarg[0] == '--extension':
@@ -271,7 +302,7 @@ def main(args):
         input_folder_files = arguments[1:]
         file_paths = []
         for iff in input_folder_files:
-            if (os.path.isfile(iff)):
+            if os.path.isfile(iff):
                 file_paths.append(iff)
             else:
                 for (dir_path, dir_names, file_names) in os.walk(iff):
@@ -281,7 +312,7 @@ def main(args):
         file_paths.sort()
 
         for f in file_paths:
-            getrules(f, output)
+            getrules(f, output, ageformat)
         output.close()
 
 
